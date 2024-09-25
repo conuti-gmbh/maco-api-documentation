@@ -1,6 +1,6 @@
 get:
-  description: Lesen einer MeLo mittels LokationsId (Parameter1) zum Zeitpunkt (Parameter2)
-    | Reading a MeLo using location ID (Parameter1) at the time (Parameter2)
+  description: Lesen einer MeLo mittels LokationsId (Parameter1) zum Zeitpunkt (Parameter2) \
+    \ Reading a MeLo using location ID (Parameter1) at the time (Parameter2)
   operationId: LESEN_MESSLOKATION_BASIS
   parameters:
   - description: Name der Operation | Name of the operation
@@ -35,6 +35,18 @@ get:
             $ref: '../schemas/Messlokation.yml'
       description: Erfolgreiches Lesen der Messlokation | Successful reading of the
         metering location
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_MESSLOKATION_BASIS
   tags:
   - LESEN | READ

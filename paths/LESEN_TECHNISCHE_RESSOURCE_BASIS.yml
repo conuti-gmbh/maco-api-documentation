@@ -36,6 +36,18 @@ get:
             $ref: '../schemas/TechnischeRessource.yml'
       description: Erfolgreiches Lesen der technischen Ressource | Successful reading
         of the technical resource
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_TECHNISCHE_RESSOURCE_BASIS
   tags:
   - LESEN | READ

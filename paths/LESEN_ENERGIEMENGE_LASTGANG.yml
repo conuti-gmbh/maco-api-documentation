@@ -53,6 +53,18 @@ get:
             $ref: '../schemas/Energiemenge.yml'
       description: Erfolgreiches Lesen des Lastgangs | Successful reading of the load
         profile
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_ENERGIEMENGE_LASTGANG
   tags:
   - LESEN | READ

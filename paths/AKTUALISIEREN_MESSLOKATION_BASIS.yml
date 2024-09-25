@@ -41,6 +41,19 @@ post:
             $ref: '../schemas/Messlokation.yml'
       description: Erfolgreiches Aktualisieren der Messlokation | Successful updating
         of the metering location
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
+
   summary: AKTUALISIEREN_MESSLOKATION_BASIS
   tags:
   - AKTUALISIEREN | UPDATE

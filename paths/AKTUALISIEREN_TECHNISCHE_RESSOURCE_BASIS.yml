@@ -42,6 +42,19 @@ post:
             $ref: '../schemas/TechnischeRessource.yml'
       description: Erfolgreiches Aktualisieren der technischen Ressource | Successful
         updating of the technical resource
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
+
   summary: AKTUALISIEREN_TECHNISCHE_RESSOURCE_BASIS
   tags:
   - AKTUALISIEREN | UPDATE

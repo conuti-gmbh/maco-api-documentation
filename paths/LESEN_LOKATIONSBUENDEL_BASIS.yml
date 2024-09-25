@@ -36,6 +36,18 @@ get:
             $ref: '../schemas/Lokationsbuendel.yml'
       description: "Erfolgreiches Lesen des Lokationsb\xFCndels | Successful reading\
         \ of the location bundle"
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_LOKATIONSBUENDEL_BASIS
   tags:
   - LESEN | READ

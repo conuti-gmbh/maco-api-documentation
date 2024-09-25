@@ -53,6 +53,18 @@ get:
             $ref: '../schemas/Energiemenge.yml'
       description: "Erfolgreiches Lesen der Z\xE4hlerst\xE4nde | Successful reading\
         \ of the meter readings"
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_ENERGIEMENGE_ZAEHLERSTAND
   tags:
   - LESEN | READ

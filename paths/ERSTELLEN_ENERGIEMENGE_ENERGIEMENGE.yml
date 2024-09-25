@@ -59,6 +59,19 @@ post:
             $ref: '../schemas/Energiemenge.yml'
       description: Erfolgreiches Schreiben der Energiemenge | Successful writing of
         the energy quantity
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
+
   summary: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
   tags:
   - ERSTELLEN | CREATE
