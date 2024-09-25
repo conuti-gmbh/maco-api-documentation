@@ -32,7 +32,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Messlokation'
+            $ref: '../schemas/Messlokation.yml'
       description: Erfolgreiches Lesen der Messlokation | Successful reading of the
         metering location
   summary: LESEN_MESSLOKATION_BASIS

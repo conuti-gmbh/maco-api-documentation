@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Lokationsbuendel'
+            $ref: '../schemas/Lokationsbuendel.yml'
       description: "Erfolgreiches Lesen des Lokationsb\xFCndels | Successful reading\
         \ of the location bundle"
   summary: LESEN_LOKATIONSBUENDEL_BASIS

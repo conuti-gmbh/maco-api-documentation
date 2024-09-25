@@ -1,0 +1,107 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: TRANCHE
+  versionStruktur:
+    type: string
+    default: "1"
+  tranchenId:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  bilanzierungsmethode:
+    $ref: "Bilanzierungsmethode.yml"
+  verbrauchsart:
+    $ref: "Verbrauchsart.yml"
+  unterbrechbar:
+    type: boolean
+  netzebene:
+    $ref: "Netzebene.yml"
+  netzbetreiberCodeNr:
+    type: string
+  gebietTyp:
+    $ref: "Gebiettyp.yml"
+  netzgebietNr:
+    type: string
+  bilanzierungsgebiet:
+    type: string
+  grundversorgerCodeNr:
+    type: string
+  gasqualitaet:
+    $ref: "Gasqualitaet.yml"
+  endkunde:
+    $ref: "Geschaeftspartner.yml"
+  lokationsadresse:
+    $ref: "Adresse.yml"
+  katasterinformation:
+    $ref: "Katasteradresse.yml"
+  regelzone:
+    type: string
+  marktgebiet:
+    type: string
+  zeitreihentyp:
+    $ref: "Zeitreihentyp.yml"
+  messtechnischeEinordnung:
+    $ref: "MesstechnischeEinordnung.yml"
+  sperrstatus:
+    $ref: "Sperrstatus.yml"
+  referenzMarktlokationsId:
+    type: string
+  versorgungsart:
+    $ref: "Versorgungsart.yml"
+  fernsteuerbarkeit:
+    $ref: "Fernsteuerbarkeit.yml"
+  verguetungEmpfaenger:
+    $ref: "VerguetungEmpfaenger.yml"
+  foerderungsLand:
+    type: string
+  statusErzeugendeMalo:
+    $ref: "StatusErzeugendeMarktlokation.yml"
+  referenzTranche:
+    type: string
+  aufteilungsmenge:
+    $ref: "Menge.yml"
+  bilanzkreis:
+    type: string
+  bildungTranchengroesse:
+    $ref: "BildungTranchengroesse.yml"
+  zukuenftigerMeldepunkt:
+    type: boolean
+  lokationszuordnung:
+    $ref: "Lokationszuordnung.yml"
+  beteiligterMarktpartner:
+    $ref: "Marktteilnehmer.yml"
+  marktrollen:
+    type: array
+    items:
+      $ref: "Marktteilnehmer.yml"
+  zaehlwerke:
+    type: array
+    items:
+      $ref: "Zaehlwerk.yml"
+  zaehlwerkeBeteiligteMarktrolle:
+    type: array
+    items:
+      $ref: "Marktrolle.yml"
+  verbrauchsmenge:
+    type: array
+    items:
+      $ref: "Verbrauch.yml"
+  zugehoerigeMesslokationen:
+    type: array
+    items:
+      $ref: "Messlokationszuordnung.yml"
+  netznutzungsabrechnungsdaten:
+    type: array
+    items:
+      $ref: "Netznutzungsabrechnungsdaten.yml"
+  energieherkunft:
+    type: array
+    items:
+      $ref: "Energieherkunft.yml"
+required:
+- boTyp
+- versionStruktur

@@ -32,7 +32,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Netzlokation'
+            $ref: '../schemas/Netzlokation.yml'
       description: Erfolgreiches Lesen der Netzlokation | Successful reading of the
         network location
   summary: LESEN_NETZLOKATION_BASIS

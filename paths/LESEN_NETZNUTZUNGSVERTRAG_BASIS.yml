@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Vertrag'
+            $ref: '../schemas/Vertrag.yml'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
   summary: LESEN_NETZNUTZUNGSVERTRAG_BASIS

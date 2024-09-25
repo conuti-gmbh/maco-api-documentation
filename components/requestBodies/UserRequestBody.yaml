@@ -2,5 +2,5 @@ description: The user to create
 content:
   application/json:
     schema:
-      $ref: '../schemas/User.yaml'
+      $ref: '../schemas/User.yml'
 required: true

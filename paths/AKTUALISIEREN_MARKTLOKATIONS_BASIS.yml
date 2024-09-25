@@ -48,27 +48,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Lokationsbuendel'
+          $ref: '../schemas/Lokationsbuendel.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Lokationsbuendel'
+            $ref: '../schemas/Lokationsbuendel.yml'
       description: "Erfolgreiches Aktualisieren des Lokationsb\xFCndels | Successful\
         \ updating of the location bundle"
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: AKTUALISIEREN_MARKTLOKATIONS_BASIS
   tags:

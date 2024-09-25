@@ -33,35 +33,35 @@ post:
       application/json:
         examples:
           'PI 55004 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55004'
+            $ref: '../components/examples/PI_55004.yml'
           'PI 55005 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55005'
+            $ref: '../components/examples/PI_55005.yml'
           'PI 55007 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55007'
+            $ref: '../components/examples/PI_55007.yml'
           'PI 55008 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55008'
+            $ref: '../components/examples/PI_55008.yml'
         schema:
-          $ref: '../schemas/STAMMDATEN_LIEFERENDE'
+          $ref: '../schemas/STAMMDATEN_LIEFERENDE.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/OK_RESPONSE'
+            $ref: '../schemas/OK_RESPONSE.yml'
       description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: ERSTELLEN_PROZESSDATEN_LIEFERENDE
   tags:

@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Messlokation'
+            $ref: '../schemas/Messlokation.yml'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
   summary: LESEN_MESSLOKATIONS_BASIS

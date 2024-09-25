@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/SteuerbareRessource'
+            $ref: '../schemas/SteuerbareRessource.yml'
       description: Erfolgreiches Lesen der steuerbaren Ressource | Successful reading
         of the controllable resource
   summary: LESEN_STEUERBARE_RESSOURCE_BASIS

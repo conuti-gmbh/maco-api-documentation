@@ -50,7 +50,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Energiemenge'
+            $ref: '../schemas/Energiemenge.yml'
       description: "Erfolgreiches Lesen der Z\xE4hlerst\xE4nde | Successful reading\
         \ of the meter readings"
   summary: LESEN_ENERGIEMENGE_ZAEHLERSTAND

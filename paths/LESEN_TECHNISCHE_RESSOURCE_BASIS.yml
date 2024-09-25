@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/TechnischeRessource'
+            $ref: '../schemas/TechnischeRessource.yml'
       description: Erfolgreiches Lesen der technischen Ressource | Successful reading
         of the technical resource
   summary: LESEN_TECHNISCHE_RESSOURCE_BASIS

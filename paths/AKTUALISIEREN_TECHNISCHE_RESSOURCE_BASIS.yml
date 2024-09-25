@@ -32,14 +32,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/TechnischeRessource'
+          $ref: '../schemas/TechnischeRessource.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/TechnischeRessource'
+            $ref: '../schemas/TechnischeRessource.yml'
       description: Erfolgreiches Aktualisieren der technischen Ressource | Successful
         updating of the technical resource
   summary: AKTUALISIEREN_TECHNISCHE_RESSOURCE_BASIS

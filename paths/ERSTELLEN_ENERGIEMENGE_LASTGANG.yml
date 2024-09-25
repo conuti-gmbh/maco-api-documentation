@@ -49,14 +49,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Energiemenge'
+          $ref: '../schemas/Energiemenge.yml'
     required: true
   responses:
     '201':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Energiemenge'
+            $ref: '../schemas/Energiemenge.yml'
       description: Erfolgreiches Schreiben des Lastgangs | Successful writing of the
         load profile
   summary: ERSTELLEN_ENERGIEMENGE_LASTGANG

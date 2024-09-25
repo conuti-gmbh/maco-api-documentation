@@ -1,0 +1,73 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      BILANZIERUNG:
+        type: array
+        items:
+          $ref: "Bilanzierung.yml"
+      MARKTLOKATION:
+        type: array
+        items:
+          $ref: "Marktlokation.yml"
+      MESSLOKATION:
+        type: array
+        items:
+          $ref: "Messlokation.yml"
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          $ref: "Vertrag.yml"
+      MESSSTELLENBETRIEBSVERTRAG:
+        type: array
+        items:
+          $ref: "Vertrag.yml"
+      ENERGIEMENGE:
+        type: array
+        items:
+          $ref: "Energiemenge.yml"
+      ZAEHLER:
+        type: array
+        items:
+          $ref: "Zaehler.yml"
+      TRANCHE:
+        type: array
+        items:
+          $ref: "Tranche.yml"
+      NETZLOKATION:
+        type: array
+        items:
+          $ref: "Netzlokation.yml"
+      STEUERBARE_RESSOURCE:
+        type: array
+        items:
+          $ref: "SteuerbareRessource.yml"
+      TECHNISCHE_RESSOURCE:
+        type: array
+        items:
+          $ref: "TechnischeRessource.yml"
+      LOKATIONSBUENDEL:
+        type: array
+        items:
+          $ref: "Lokationsbuendel.yml"
+      AD_HOC_STEUERKANAL:
+        type: array
+        items:
+          $ref: "AdHocSteuerkanal.yml"
+      WERTE_NACH_TYP2:
+        type: array
+        items:
+          $ref: "WerteNachTyp2.yml"
+      RUHENDE_MARKTLOKATION:
+        type: array
+        items:
+          $ref: "Marktlokation.yml"
+      MARKTLOKATION_KUNDENANLAGE:
+        type: array
+        items:
+          $ref: "Marktlokation.yml"
+      VERWENDUNGSZEITRAUM:
+        type: array
+        items:
+          $ref: "Verwendungszeitraum.yml"

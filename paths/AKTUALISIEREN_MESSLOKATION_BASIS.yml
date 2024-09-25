@@ -31,14 +31,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Messlokation'
+          $ref: '../schemas/Messlokation.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Messlokation'
+            $ref: '../schemas/Messlokation.yml'
       description: Erfolgreiches Aktualisieren der Messlokation | Successful updating
         of the metering location
   summary: AKTUALISIEREN_MESSLOKATION_BASIS

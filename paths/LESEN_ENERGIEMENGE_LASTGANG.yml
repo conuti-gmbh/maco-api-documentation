@@ -50,7 +50,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Energiemenge'
+            $ref: '../schemas/Energiemenge.yml'
       description: Erfolgreiches Lesen des Lastgangs | Successful reading of the load
         profile
   summary: LESEN_ENERGIEMENGE_LASTGANG

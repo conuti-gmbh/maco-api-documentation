@@ -31,14 +31,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Marktlokation'
+          $ref: '../schemas/Marktlokation.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Marktlokation'
+            $ref: '../schemas/Marktlokation.yml'
       description: Erfolgreiches Aktualisieren der Marktlokation | Successful updating
         of the market location
   summary: AKTUALISIEREN_MARKTLOKATION_BASIS

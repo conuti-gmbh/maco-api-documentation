@@ -50,7 +50,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Energiemenge'
+            $ref: '../schemas/Energiemenge.yml'
       description: Erfolgreiches Lesen der Energiemenge | Successful reading of the
         energy quantity
   summary: LESEN_ENERGIEMENGE_ENERGIEMENGE

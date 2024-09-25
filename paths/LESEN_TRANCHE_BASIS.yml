@@ -32,7 +32,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Tranche'
+            $ref: '../schemas/Tranche.yml'
       description: Erfolgreiches Lesen der Tranche | Successful reading of the tranche
   summary: LESEN_TRANCHE_BASIS
   tags:

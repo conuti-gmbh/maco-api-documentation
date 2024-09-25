@@ -1,0 +1,31 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: STEUERBARE_RESSOURCE
+  versionStruktur:
+    type: string
+    default: "1"
+  ressourcenId:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  lokationszuordnung:
+    $ref: "Lokationszuordnung.yml"
+  konfigurationsprodukt:
+    type: string
+  steuerkanal:
+    $ref: "Steuerkanal.yml"
+  produktdatenRelevanteRolle:
+    $ref: "Marktrolle.yml"
+  auftraggebenderMarktpartner:
+    $ref: "Marktteilnehmer.yml"
+  zugeordneteDefinition:
+    $ref: "ZugeordneteDefinition.yml"
+  marktrollen:
+    type: array
+    items:
+      $ref: "Marktteilnehmer.yml"
+required:
+- boTyp
+- versionStruktur

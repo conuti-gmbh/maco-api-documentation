@@ -33,31 +33,31 @@ post:
       application/json:
         examples:
           'PI 55001 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55001'
+            $ref: '../components/examples/PI_55001.yml'
           'PI 55002 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55002'
+            $ref: '../components/examples/PI_55002.yml'
         schema:
-          $ref: '../schemas/STAMMDATEN_LIEFERBEGINN'
+          $ref: '../schemas/STAMMDATEN_LIEFERBEGINN.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/OK_RESPONSE'
+            $ref: '../schemas/OK_RESPONSE.yml'
       description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE'
+            $ref: '../schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
   tags:

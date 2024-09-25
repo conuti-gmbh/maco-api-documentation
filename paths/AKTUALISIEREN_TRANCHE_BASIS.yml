@@ -32,14 +32,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Tranche'
+          $ref: '../schemas/Tranche.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Tranche'
+            $ref: '../schemas/Tranche.yml'
       description: Erfolgreiches Aktualisieren der Tranche | Successful updating of
         the tranche
   summary: AKTUALISIEREN_TRANCHE_BASIS
