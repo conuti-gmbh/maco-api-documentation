@@ -1,183 +1,185 @@
-type: object
+description: "Schema für start MARKTTEILNEHMER | Scheme for start MARKET PARTICIPANTS"
 properties:
-  boTyp:
-    type: string
-    example: MARKTTEILNEHMER
-  versionStruktur:
-    type: string
-    example: "1"
-  marktrolle:
-    type: string
-    example: ENUM_Marktrolle
-    description: https://github.com/Hochfrequenz/BO4E-dotnet/blob/af2b42a517493cfbef31f21da080fd727850f032/BO4E/ENUM/Marktrolle.cs
-  rollencodenummer:
-    type: string
-    example: "9900051000002"
-  rollencodetyp:
-    type: string
-    example: BDEW
-    description: https://bo4e.github.io/BO4E-python/stable/api/bo4e.enum.html#bo4e.enum.rollencodetyp.Rollencodetyp
-  makoadresse:
-    type: string
-    example: <string>
-  downloadlinkZertifikat:
-    type: string
-    example: <string>
-  weiterverpflichtet:
-    $ref: 'weiterverpflichtet.yml'
-  messstellenbetreiberEigenschaft:
-    $ref: 'MSBEigenschaft.yml'
-  kommunikationsparameter:
-    type: object
+  marktteilnehmer:
     properties:
-      zieladresse:
-        type: object
+      amtsgericht:
+        example: <string>
+        type: string
+      anrede:
+        example: <string>
+        type: string
+      bankverbindung:
+        items:
+          properties:
+            bic:
+              example: <string>
+              type: string
+            iban:
+              example: <string>
+              type: string
+            kontoinhaber:
+              example: <string>
+              type: string
+            kreditinstitut:
+              example: <string>
+              type: string
+            verwendungszweck:
+              description: 'ENUMs: ''BV_ZAHLUNG_NNA'', ''BV_ZAHLUNG_MMMA'', ''BV_ZAHLUNG_MSB_ABRECHNNUNG'',
+                ''BV_ZAHLUNG_ENT_SPERREN_ABRECHNUNG'', ''BV_SONSTIGE'''
+              example: BV_ZAHLUNG_NNA
+              type: string
+          type: object
+        type: array
+      boTyp:
+        example: MARKTTEILNEHMER
+        type: string
+      downloadlinkZertifikat:
+        example: <string>
+        type: string
+      erreichbarkeit:
+        items:
+          properties:
+            verfuegbarkeit:
+              description: 'ENUMs: ''DIENSTAG'', ''MITTWOCH'', ''DONNERSTAG'', ''FREITAG'',
+                ''PAUSE'''
+              example: MONTAG
+              type: string
+            zeit:
+              example: 08:00-17:00
+              type: string
+          type: object
+        type: array
+      faxnummer:
+        example: <string>
+        type: string
+      gewerbekennzeichnung:
+        example: true
+        type: boolean
+      hrnummer:
+        example: <string>
+        type: string
+      kommunikationsparameter:
         properties:
-          zieladresse1:
-            type: string
-            example: <string>
-          zieladresse2:
-            type: string
-            example: <string>
-          zieladresse3:
-            type: string
-            example: <string>
-          zieladresse4:
-            type: string
-            example: <string>
-          zieladresse5:
-            type: string
-            example: <string>
-      zertifikatsAussteller:
+          zertifikatsAussteller:
+            properties:
+              zertifikatsAussteller1:
+                example: <string>
+                type: string
+              zertifikatsAussteller2:
+                example: <string>
+                type: string
+              zertifikatsAussteller3:
+                example: <string>
+                type: string
+              zertifikatsAussteller4:
+                example: <string>
+                type: string
+              zertifikatsAussteller5:
+                example: <string>
+                type: string
+            type: object
+          zertifikatsNutzer:
+            properties:
+              zertifikatsNutzer1:
+                example: <string>
+                type: string
+              zertifikatsNutzer2:
+                example: <string>
+                type: string
+              zertifikatsNutzer3:
+                example: <string>
+                type: string
+              zertifikatsNutzer4:
+                example: <string>
+                type: string
+              zertifikatsNutzer5:
+                example: <string>
+                type: string
+            type: object
+          zieladresse:
+            properties:
+              zieladresse1:
+                example: <string>
+                type: string
+              zieladresse2:
+                example: <string>
+                type: string
+              zieladresse3:
+                example: <string>
+                type: string
+              zieladresse4:
+                example: <string>
+                type: string
+              zieladresse5:
+                example: <string>
+                type: string
+            type: object
         type: object
+      makoadresse:
+        example: <string>
+        type: string
+      marktrolle:
+        description: https://github.com/Hochfrequenz/BO4E-dotnet/blob/af2b42a517493cfbef31f21da080fd727850f032/BO4E/ENUM/Marktrolle.cs
+        example: ENUM_Marktrolle
+        type: string
+      name1:
+        example: <string>
+        type: string
+      name2:
+        example: <string>
+        type: string
+      name3:
+        example: <string>
+        type: string
+      name4:
+        example: <string>
+        type: string
+      partneradresse:
         properties:
-          zertifikatsAussteller1:
-            type: string
+          adresszusatz:
             example: <string>
-          zertifikatsAussteller2:
             type: string
+          coErgaenzung:
             example: <string>
-          zertifikatsAussteller3:
             type: string
+          hausnummer:
             example: <string>
-          zertifikatsAussteller4:
             type: string
-            example: <string>
-          zertifikatsAussteller5:
+          landescode:
+            description: https://github.com/Hochfrequenz/BO4E-dotnet/blob/main/BO4E/ENUM/Landescode.cs
+            example: ENUM_Landescode
             type: string
+          ort:
             example: <string>
-      zertifikatsNutzer:
+            type: string
+          ortsteil:
+            example: <string>
+            type: string
+          postfach:
+            example: <string>
+            type: string
+          postleitzahl:
+            example: <string>
+            type: string
+          strasse:
+            example: <string>
+            type: string
         type: object
-        properties:
-          zertifikatsNutzer1:
-            type: string
-            example: <string>
-          zertifikatsNutzer2:
-            type: string
-            example: <string>
-          zertifikatsNutzer3:
-            type: string
-            example: <string>
-          zertifikatsNutzer4:
-            type: string
-            example: <string>
-          zertifikatsNutzer5:
-            type: string
-            example: <string>
-  bankverbindung:
-    type: array
-    items:
-      type: object
-      properties:
-        verwendungszweck:
-          type: string
-          example: BV_ZAHLUNG_NNA
-          description: "ENUMs: 'BV_ZAHLUNG_NNA', 'BV_ZAHLUNG_MMMA', 'BV_ZAHLUNG_MSB_ABRECHNNUNG', 'BV_ZAHLUNG_ENT_SPERREN_ABRECHNUNG', 'BV_SONSTIGE'"
-        iban:
-          type: string
-          example: <string>
-        kontoinhaber:
-          type: string
-          example: <string>
-        bic:
-          type: string
-          example: <string>
-        kreditinstitut:
-          type: string
-          example: <string>
-  erreichbarkeit:
-    type: array
-    items:
-      type: object
-      properties:
-        verfuegbarkeit:
-          type: string
-          example: MONTAG
-          description: "ENUMs: 'DIENSTAG', 'MITTWOCH', 'DONNERSTAG', 'FREITAG', 'PAUSE'"
-        zeit:
-          type: string
-          example: 08:00-17:00
-  anrede:
-    type: string
-    example: <string>
-  name1:
-    type: string
-    example: <string>
-  name2:
-    type: string
-    example: <string>
-  name3:
-    type: string
-    example: <string>
-  name4:
-    type: string
-    example: <string>
-  gewerbekennzeichnung:
-    type: boolean
-    example: true
-  hrnummer:
-    type: string
-    example: <string>
-  amtsgericht:
-    type: string
-    example: <string>
-  umsatzsteuerId:
-    type: string
-    example: <string>
-  website:
-    type: string
-    example: <string>
-  faxnummer:
-    type: string
-    example: <string>
-  partneradresse:
+      rollencodenummer:
+        example: '9900051000002'
+        type: string
+      rollencodetyp:
+        description: https://bo4e.github.io/BO4E-python/stable/api/bo4e.enum.html#bo4e.enum.rollencodetyp.Rollencodetyp
+        example: BDEW
+        type: string
+      umsatzsteuerId:
+        example: <string>
+        type: string
+      versionStruktur:
+        example: '1'
+        type: string
+      website:
+        example: <string>
+        type: string
     type: object
-    properties:
-      postleitzahl:
-        type: string
-        example: <string>
-      ort:
-        type: string
-        example: <string>
-      strasse:
-        type: string
-        example: <string>
-      hausnummer:
-        type: string
-        example: <string>
-      postfach:
-        type: string
-        example: <string>
-      adresszusatz:
-        type: string
-        example: <string>
-      coErgaenzung:
-        type: string
-        example: <string>
-      landescode:
-        type: string
-        example: ENUM_Landescode
-        description: https://github.com/Hochfrequenz/BO4E-dotnet/blob/main/BO4E/ENUM/Landescode.cs
-      ortsteil:
-        type: string
-        example: <string>
+type: object
