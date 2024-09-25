@@ -1,0 +1,84 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  bilanzierungsgebiet:
+    type: string
+    default: "SOME_STRING"
+  regelzone:
+    type: string
+    default: "SOME_STRING"
+  vertragsart:
+    type: string
+    default: "SOME_STRING"
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  lokationsTyp:
+    type: string
+    default: "74018657187"
+  bezeichnung:
+    type: string
+    default: "SOME_STRING"
+  verfahren:
+    type: string
+    default: "SOME_STRING"
+  einspeisung:
+    type: string
+    default: "SOME_STRING"
+  profilart:
+    type: string
+    default: "SOME_STRING"
+  herausgeber:
+    type: string
+    default: "SOME_STRING"
+  jahresverbrauchsprognose:
+    type: object
+    properties:
+      wert:
+        type: string
+        default: "SOME_STRING"
+      einheit:
+        type: string
+        default: "SOME_STRING"
+  aggregationsverantwortung:
+    type: string
+    default: "SOME_STRING"
+  zeitreihentyp:
+    type: string
+    default: "SOME_STRING"
+  wahlrechtPrognosegrundlage:
+    type: string
+    default: "SOME_STRING"
+  grundWahlrechtPrognosegrundlage:
+    type: string
+    default: "SOME_STRING"
+  prognosegrundlage:
+    type: string
+    default: "SOME_STRING"
+  detailsPrognosegrundlage:
+    type: array
+    items:
+      type: string
+      default: "SOME_STRING"
+  abwicklungsmodell:
+    type: string
+    default: "SOME_STRING"
+  empfaengerLf:
+    type: string
+    default: "SOME_STRING"
+  empfaengerMsb:
+    type: string
+    default: "SOME_STRING"
+  absender:
+    type: string
+    default: "9900321000005"
+  sparte:
+    $ref: "Sparte.yml"
+  gueltigAb:
+    type: string
+    default: "SOME_STRING"

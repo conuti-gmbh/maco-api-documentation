@@ -1,0 +1,8 @@
+type: object
+properties:
+  aufnahme:
+    type: number
+    format: float
+  abgabe:
+    type: number
+    format: float

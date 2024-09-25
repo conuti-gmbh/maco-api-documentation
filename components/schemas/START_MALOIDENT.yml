@@ -1,14 +1,20 @@
 type: object
-description: Schema für Lieferende | Scheme for termination
+description: Schema für start Malo Ident | Scheme for start Malo Ident
 properties:
   marktlokationsId:
     type: string
     default: "74018657187"
   sparte:
-    $ref: "Sparte.yml.yml"
+    $ref: "Sparte.yml"
   zaehlernummer:
     type: string
     default: "123456789"
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  vertragsende:
+    type: string
+    default: "2024-04-01T07:40:00Z"
   vertragsart:
     type: string
     default: ENERGIELIEFERVERTRAG
@@ -18,3 +24,6 @@ properties:
   empfaenger:
     type: string
     default: "9900321000005"
+  transaktionsgrund:
+    type: string
+    default: E01

@@ -1,0 +1,21 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: STATUSMITTEILUNG
+  versionStruktur:
+    type: string
+    default: "1"
+  statusObjekt:
+    $ref: "Statusobjekt.yml"
+  statusanlass:
+    $ref: "Status.yml"
+  auftragsstatus:
+    $ref: "Auftragsstatus.yml"
+  positionsdaten:
+    type: array
+    items:
+      $ref: "StatusmitteilungPosition.yml"
+required:
+  - boTyp
+  - versionStruktur

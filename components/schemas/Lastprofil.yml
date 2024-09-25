@@ -1,0 +1,16 @@
+type: object
+properties:
+  bezeichnung:
+    type: string
+  verfahren:
+    $ref: "Profilverfahren.yml"
+  profilart:
+    $ref: "Profilart.yml"
+  profilschar:
+    type: string
+  einspeisung:
+    type: boolean
+  herausgeber:
+    type: string
+  tagesparameter:
+    $ref: "Tagesparameter.yml"

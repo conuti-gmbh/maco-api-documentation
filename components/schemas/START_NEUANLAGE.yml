@@ -1,0 +1,70 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  marktmarktlokationsId:
+    type: string
+    default: "74018657187"
+  sparte:
+    $ref: "Sparte.yml"
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  vertragsende:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  haushaltskunde:
+    type: string
+    default: "SOME_STRING"
+  gewerbekennzeichnung:
+    type: string
+    default: "SOME_STRING"
+  vpanrede:
+    type: string
+    default: "SOME_STRING"
+  vpname1:
+    type: string
+    default: "SOME_STRING"
+  vpname2:
+    type: string
+    default: "SOME_STRING"
+  kename2:
+    type: string
+    default: "SOME_STRING"
+  kegewerbekennzeichnung:
+    type: string
+    default: "SOME_STRING"
+  keplz:
+    type: string
+    default: "SOME_STRING"
+  keort:
+    type: string
+    default: "Berlin"
+  kestrasse:
+    type: string
+    default: "SOME_STRING"
+  kehausnummer:
+    type: string
+    default: "123"
+  keLandescode:
+    type: string
+    default: "de"
+  keortsteil:
+    type: string
+    default: "SOME_STRING"
+  messageReceiver:
+    type: string
+    default: "SOME_STRING"
+  transaktonsgrund:
+    type: string
+    default: "SOME_STRING"
+  transaktionsgrundergaenzung:
+    type: string
+    default: "SOME_STRING"
+  transaktionsgrundergaenzungBefristeteAnmeldung:
+    type: string
+    default: "SOME_STRING"
+  messageSender:
+    type: string
+    default: "SOME_STRING"

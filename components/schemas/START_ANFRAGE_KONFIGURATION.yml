@@ -1,0 +1,29 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  sparte:
+    $ref: "Sparte.yml"
+  ressourcenId:
+    type: string
+    default: "SOME_STRING"
+  code:
+    type: string
+    default: "SOME_STRING"
+  konfigurationsprodukt:
+    type: string
+    default: "SOME_STRING"
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  lieferdatum:
+    type: string
+    default: "SOME_STRING"
+  nachrichtenReferenzBestellbestaetigung:
+    type: string
+    default: "SOME_STRING"
+  vorgangsReferenzBestellbestaetigung:
+    type: string
+    default: "SOME_STRING"

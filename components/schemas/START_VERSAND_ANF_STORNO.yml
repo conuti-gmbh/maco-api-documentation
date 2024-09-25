@@ -1,0 +1,19 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  sparte:
+    $ref: "Sparte.yml"
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  kategorie:
+    type: string
+    default: "SOME_STRING"
+  vorgangsreferenznummer:
+    type: string
+    default: "SOME_STRING"

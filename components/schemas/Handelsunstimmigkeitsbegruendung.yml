@@ -1,0 +1,18 @@
+type: object
+properties:
+  richtigkeit:
+    $ref: "Handelsunstimmigkeitsrichtigkeit.yml"
+  referenzDar:
+    type: string
+  referenznummer:
+    type: string
+  bestaetigungDar:
+    type: string
+  grund:
+    $ref: "Handelsunstimmigkeitsgrund.yml"
+  hinweis:
+    type: string
+  referenzen:
+    type: array
+    items:
+      type: string

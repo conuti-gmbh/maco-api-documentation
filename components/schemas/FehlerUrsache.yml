@@ -1,0 +1,14 @@
+type: object
+properties:
+  dokument:
+    type: string
+  nachricht:
+    type: string
+  transaktion:
+    type: string
+  gruppe:
+    $ref: "Gruppe.yml"
+  segment:
+    type: string
+  beschreibung:
+    $ref: "Beschreibung.yml"

@@ -1,0 +1,12 @@
+type: object
+properties:
+  wert:
+    type: number
+    format: float
+  einheit:
+    type: string
+  typ:
+    type: string
+  bemessungsgrundlage:
+    type: number
+    format: float

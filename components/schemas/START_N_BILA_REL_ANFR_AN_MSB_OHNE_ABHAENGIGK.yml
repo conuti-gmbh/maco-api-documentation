@@ -1,0 +1,123 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  messlokationsId:
+    type: string
+    default: "SOME_STRING"
+  sparte:
+    type: string
+    default: "SOME_STRING"
+  messadressePostleitzahl:
+    type: string
+    default: "SOME_STRING"
+  messadresseOrt:
+    type: string
+    default: "SOME_STRING"
+  messadresseStrasse:
+    type: string
+    default: "SOME_STRING"
+  messadresseHausnummer:
+    type: string
+    default: "SOME_STRING"
+  messadresseLandescode:
+    type: string
+    default: "SOME_STRING"
+  messadresseZusatz1:
+    type: string
+    default: "SOME_STRING"
+  messadresseZusatz2:
+    type: string
+    default: "SOME_STRING"
+  aleGeschaeftspartnerrolle:
+    type: string
+    default: "SOME_STRING"
+  aleGewerbekennzeichnung:
+    type: string
+    default: "SOME_STRING"
+  aleName1:
+    type: string
+    default: "SOME_STRING"
+  aleName2:
+    type: string
+    default: "SOME_STRING"
+  alePostleitzahl:
+    type: string
+    default: "SOME_STRING"
+  aleOrt:
+    type: string
+    default: "SOME_STRING"
+  aleStrasse:
+    type: string
+    default: "SOME_STRING"
+  aleHausnummer:
+    type: string
+    default: "SOME_STRING"
+  aleLandescode:
+    type: string
+    default: "SOME_STRING"
+  vertragsartNn:
+    type: string
+    default: "SOME_STRING"
+  vertragsbeginn:
+    type: string
+    default: "SOME_STRING"
+  lokationsId:
+    type: string
+    default: "SOME_STRING"
+  lokationsTyp:
+    type: string
+    default: "SOME_STRING"
+  vertragsartMsb:
+    type: string
+    default: "SOME_STRING"
+  vp2Geschaeftspartnerrolle:
+    type: string
+    default: "SOME_STRING"
+  vp2Gewerbekennzeichnung:
+    type: string
+    default: "SOME_STRING"
+  vp2Name1:
+    type: string
+    default: "SOME_STRING"
+  vp2Name2:
+    type: string
+    default: "SOME_STRING"
+  kpName1:
+    type: string
+    default: "SOME_STRING"
+  kpName2:
+    type: string
+    default: "SOME_STRING"
+  kpGewerbekennzeichnung:
+    type: string
+    default: "SOME_STRING"
+  kpPostleitzahl:
+    type: string
+    default: "SOME_STRING"
+  kpOrt:
+    type: string
+    default: "SOME_STRING"
+  kpStrasse:
+    type: string
+    default: "SOME_STRING"
+  kpHausnummer:
+    type: string
+    default: "SOME_STRING"
+  landescode:
+    type: string
+    default: "SOME_STRING"
+  empfaenger:
+    type: string
+    default: "SOME_STRING"
+  rollencodetypEmpfaenger:
+    type: string
+    default: "SOME_STRING"
+  absender:
+    type: string
+    default: "SOME_STRING"
+  rollencodetypAbsender:
+    type: string
+    default: "SOME_STRING"
+  gueltigAb:
+    type: string
+    default: "SOME_STRING"

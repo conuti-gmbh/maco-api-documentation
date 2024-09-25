@@ -1,0 +1,22 @@
+type: object
+properties:
+  postleitzahl:
+    type: string
+  ort:
+    type: string
+  strasse:
+    type: string
+  hausnummer:
+    type: string
+  postfach:
+    type: string
+  adresszusatz:
+    type: string
+  coErgaenzung:
+    type: string
+  landescode:
+    $ref: "Landescode.yml"
+  ortsteil:
+    type: string
+  zusatzInformation:
+    $ref: "AdresszusatzInformation.yml"

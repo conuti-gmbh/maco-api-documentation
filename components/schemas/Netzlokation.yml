@@ -1,0 +1,45 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: NETZLOKATION
+  versionStruktur:
+    type: string
+    default: "1"
+  netzlokationsId:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  netzanschlussleistung:
+    type: string
+  grundzustaendigerMSBCodeNr:
+    type: string
+  steuerkanal:
+    type: boolean
+  lokationszuordnung:
+    $ref: "Lokationszuordnung.yml"
+  produktdatenRelevanteRolle:
+    $ref: "Marktrolle.yml"
+  auftraggebenderMarktpartner:
+    $ref: "Marktteilnehmer.yml"
+  konfigurationsprodukt:
+    type: string
+  keinKonfigurationsprodukt:
+    type: boolean
+  leistungskurvendefinition:
+    type: string
+  marktrollen:
+    type: array
+    items:
+      $ref: "Marktteilnehmer.yml"
+  zaehlwerke:
+    type: array
+    items:
+      $ref: "Zaehlwerk.yml"
+  abrechnungsdaten:
+    type: array
+    items:
+      $ref: "Netznutzungsabrechnungsdaten.yml"
+required:
+  - boTyp
+  - versionStruktur

@@ -1,0 +1,32 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  sparte:
+    $ref: "Sparte.yml"
+  messlokationsId:
+    type: string
+    default: "DE12345678901234567890123456789012"
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  lokationsTyp:
+    type: string
+    default: "74018657187"
+  anfragekategorie:
+    type: string
+    default: "SOME_STRING"
+  anfragetyp:
+    type: string
+    default: "SOME_STRING"
+  startdatum:
+    type: string
+    default: "2024-01-01T07:40:00Z"
+  enddatum:
+    type: string
+    default: "2024-01-01T07:40:00Z"
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"

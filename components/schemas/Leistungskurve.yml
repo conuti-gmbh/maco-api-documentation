@@ -1,0 +1,15 @@
+type: object
+properties:
+  code:
+    type: string
+  aenderungszeitpunkt:
+    type: string
+    format: date-time
+  haeufigkeit:
+    $ref: "HaeufigkeitLeistungskurve.yml"
+  uebermittelbarkeit:
+    $ref: "UebermittelbarkeitLeistungskurve.yml"
+  schwellwert:
+    $ref: "Schwellwert.yml"
+  konfigurationsprodukt:
+    type: string

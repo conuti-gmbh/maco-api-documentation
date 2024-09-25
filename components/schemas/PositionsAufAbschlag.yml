@@ -1,0 +1,13 @@
+type: object
+properties:
+  bezeichnung:
+    type: string
+  beschreibung:
+    type: string
+  aufAbschlagstyp:
+    $ref: "AufAbschlagstyp.yml"
+  aufAbschlagswert:
+    type: number
+    format: float
+  aufAbschlagswaehrung:
+    $ref: "Waehrungseinheit.yml"

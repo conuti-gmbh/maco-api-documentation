@@ -1,0 +1,40 @@
+type: object
+properties:
+  berechnungsmethode:
+    $ref: "Kalkulationsmethode.yml"
+  leistungstyp:
+    $ref: "Leistungstyp.yml"
+  leistungsbezeichnung:
+    type: string
+  preiseinheit:
+    $ref: "Waehrungseinheit.yml"
+  bezugsgroesse:
+    $ref: "Mengeneinheit.yml"
+  zeitbasis:
+    $ref: "Zeiteinheit.yml"
+  tarifzeit:
+    $ref: "Tarifzeit.yml"
+  bdewArtikelnummer:
+    $ref: "BDEWArtikelnummer.yml"
+  zonungsgroesse:
+    $ref: "Bemessungsgroesse.yml"
+  preisschluesselstamm:
+    type: string
+  positionsnummer:
+    type: integer
+  messebene:
+    $ref: "Netzebene.yml"
+  beschreibung:
+    type: string
+  verarbeitungszeitraum:
+    $ref: "Zeitraum.yml"
+  artikelId:
+    type: string
+  zu_abschlaege:
+    type: array
+    items:
+      $ref: "PositionsAufAbschlag.yml"
+  preisstaffeln:
+    type: array
+    items:
+      $ref: "Preisstaffel.yml"

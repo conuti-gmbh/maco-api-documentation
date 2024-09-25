@@ -1,0 +1,11 @@
+type: object
+properties:
+  wert:
+    type: number
+    format: float
+  einheit:
+    $ref: "Waehrungseinheit.yml"
+  bezugswert:
+    $ref: "Mengeneinheit.yml"
+  status:
+    $ref: "Preisstatus.yml"

@@ -1,0 +1,68 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: MESSLOKATION
+  versionStruktur:
+    type: string
+    default: "1"
+  messlokationsId:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  netzebenemessung:
+    $ref: "Netzebene.yml"
+  messgebietNr:
+    type: string
+  grundzustaendigerMSBCodeNr:
+    type: string
+  messadresse:
+    $ref: "Adresse.yml"
+  bilanzierungsmethode:
+    $ref: "Bilanzierungsmethode.yml"
+  abrechnungmessstellenbetriebnna:
+    type: boolean
+  gasqualitaet:
+    $ref: "Gasqualitaet.yml"
+  verlustfaktor:
+    type: number
+    format: float
+  betriebszustand:
+    $ref: "Betriebszustand.yml"
+  ablesekartenempfaenger:
+    $ref: "Geschaeftspartner.yml"
+  referenzMarktlokationsId:
+    type: string
+  verwendungsumfang:
+    $ref: "Verwendungsumfang.yml"
+  zukuenftigerMeldepunkt:
+    type: boolean
+  lokationszuordnung:
+    $ref: "Lokationszuordnung.yml"
+  beteiligterMarktpartner:
+    $ref: "Marktteilnehmer.yml"
+  geraete:
+    type: array
+    items:
+      $ref: "Geraet.yml"
+  messdienstleistung:
+    type: array
+    items:
+      $ref: "Dienstleistung.yml"
+  messlokationszaehler:
+    type: array
+    items:
+      type: string
+  zaehlwerke:
+    type: array
+    items:
+      $ref: "Zaehlwerk.yml"
+  marktrollen:
+    type: array
+    items:
+      $ref: "Marktteilnehmer.yml"
+required:
+  - boTyp
+  - versionStruktur

@@ -8,11 +8,11 @@ properties:
     type: string
     default: "74018657187"
   sparte:
-    $ref: "Sparte.yml"
+    $ref: "Sparte.yml.yml"
   energierichtung:
-    $ref: "Energierichtung.yml"
+    $ref: "Energierichtung.yml.yml"
   verguetungEmpfaenger:
-    $ref: "VerguetungEmpfaenger.yml"
+    $ref: "VerguetungEmpfaenger.yml.yml"
   bilanzkreis:
     type: string
     default: 11X----123456

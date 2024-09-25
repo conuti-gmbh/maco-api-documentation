@@ -1,0 +1,23 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  netzlokationsId:
+    type: string
+    default: "SOME_STRING"
+  sparte:
+    $ref: "Sparte.yml"
+  zahlerBlindarbeit:
+    type: string
+    default: "GAS"
+  vertragsart:
+    type: string
+    default: "ENERGIELIEFERVERTRAG"
+  empfaenger:
+    type: string
+    default: "SOME_STRING"
+  absender:
+    type: string
+    default: "SOME_STRING"
+  gueltigAb:
+    type: string
+    default: "SOME_STRING"

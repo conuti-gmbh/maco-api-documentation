@@ -1,0 +1,9 @@
+type: object
+properties:
+  satz:
+    $ref: "AbgabeArt.yml"
+  kosten:
+    type: number
+    format: float
+  kategorie:
+    type: string

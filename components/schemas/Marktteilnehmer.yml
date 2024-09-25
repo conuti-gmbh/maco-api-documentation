@@ -1,0 +1,69 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: MARKTTEILNEHMER
+  versionStruktur:
+    type: string
+    default: "1"
+  geschaeftspartnerrolle:
+    $ref: "Geschaeftspartnerrolle.yml"
+  anrede:
+    type: string
+  name1:
+    type: string
+  name2:
+    type: string
+  name3:
+    type: string
+  name4:
+    type: string
+  partneradresse:
+    $ref: "Adresse.yml"
+  gewerbekennzeichnung:
+    type: boolean
+  externeKundenummerLieferant:
+    type: string
+  marktrolle:
+    $ref: "Marktrolle.yml"
+  rollencodenummer:
+    type: string
+  rollencodetyp:
+    type: string
+  umsatzsteuerId:
+    type: string
+  steuernummer:
+    type: string
+  ansprechpartner:
+    $ref: "Ansprechpartner.yml"
+  makoadresse:
+    type: string
+  downloadlinkZertifikat:
+    type: string
+  amtsgericht:
+    type: string
+  hrnummer:
+    type: string
+  website:
+    type: string
+  faxnummer:
+    type: string
+  kommunikationsrolle:
+    $ref: "Kommunikationsrolle.yml"
+  weiterverpflichtet:
+    type: boolean
+  kommunikationsparameter:
+    $ref: "Kommunikationsparameter.yml"
+  messstellenbetreiberEigenschaft:
+    $ref: "MSBEigenschaft.yml"
+  bankverbindung:
+    type: array
+    items:
+      $ref: "Bankverbindung.yml"
+  erreichbarkeit:
+    type: array
+    items:
+      $ref: "Erreichbarkeit.yml"
+required:
+  - boTyp
+  - versionStruktur

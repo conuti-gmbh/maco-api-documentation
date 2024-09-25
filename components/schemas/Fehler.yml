@@ -1,0 +1,8 @@
+type: object
+properties:
+  typ:
+    $ref: "FehlerTyp.yml"
+  fehlerDetails:
+    type: array
+    items:
+      $ref: "FehlerDetail.yml"

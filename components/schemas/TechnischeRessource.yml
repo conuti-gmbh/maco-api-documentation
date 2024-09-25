@@ -1,0 +1,50 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: TECHNISCHE_RESSOURCE
+  versionStruktur:
+    type: string
+    default: "1"
+  ressourcenId:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  lokationszuordnung:
+    $ref: "Lokationszuordnung.yml"
+  referenzMesslokation:
+    type: string
+  referenzMarktlokation:
+    type: string
+  referenzNetzlokation:
+    type: string
+  referenzSteuerbareRessource:
+    type: string
+  nennleistung:
+    $ref: "Nennleistung.yml"
+  speicherkapazitaet:
+    type: number
+    format: float
+  verbrauchsart:
+    $ref: "Verbrauchsart.yml"
+  waermenutzung:
+    $ref: "Waermenutzung.yml"
+  artEMobilitaet:
+    $ref: "ArtEmobilitaet.yml"
+  erzeugungsart:
+    $ref: "Erzeugungsart.yml"
+  speicherart:
+    $ref: "Speicherart.yml"
+  enwg:
+    type: boolean
+  inbetriebsetzungsdatum:
+    $ref: "Inbetriebsetzung.yml"
+  einordnung:
+    $ref: "RessourceWechselmoeglichkeit.yml"
+  weitereEinrichtung:
+    type: boolean
+  art:
+    $ref: "TechnischeRessourceArt.yml"
+required:
+  - boTyp
+  - versionStruktur

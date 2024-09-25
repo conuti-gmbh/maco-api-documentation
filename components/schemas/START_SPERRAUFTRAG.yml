@@ -1,0 +1,56 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  marktmarktlokationsId:
+    type: string
+    default: "74018657187"
+  sparte:
+    $ref: "Sparte.yml"
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  lokationsTyp:
+    type: string
+    default: "74018657187"
+  anfragekategorie:
+    type: string
+    default: "SOME_STRING"
+  startdatum:
+    type: string
+    default: "2024-01-01T07:40:00Z"
+  Postleitzahl:
+    type: string
+    default: "12345"
+  ort:
+    type: string
+    default: "Berlin"
+  strasse:
+    type: string
+    default: "SOME_STRING"
+  hausnummer:
+    type: string
+    default: "123"
+  Landescode:
+    type: string
+    default: "de"
+  zusatz1:
+    type: string
+    default: "SOME_STRING"
+  zusatz2:
+    type: string
+    default: "SOME_STRING"
+  zusatz3:
+    type: string
+    default: "SOME_STRING"
+  zusatz4:
+    type: string
+    default: "SOME_STRING"
+  zusatz5:
+    type: string
+    default: "SOME_STRING"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  absender:
+    type: string
+    default: "9900321000005"

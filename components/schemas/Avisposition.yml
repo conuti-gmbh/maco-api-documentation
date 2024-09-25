@@ -1,0 +1,25 @@
+type: object
+properties:
+  rechnungsNummer:
+    type: string
+  rechnungsDatum:
+    type: string
+    format: date-time
+  istStorno:
+    type: boolean
+  istSelbstausgestellt:
+    type: boolean
+  gesamtBrutto:
+    $ref: "Betrag.yml"
+  zuZahlen:
+    $ref: "Betrag.yml"
+  referenz:
+    type: string
+  abweichung:
+    type: array
+    items:
+      $ref: "Abweichung.yml"
+  positionen:
+    type: array
+    items:
+      $ref: "Rueckmeldungsposition.yml"

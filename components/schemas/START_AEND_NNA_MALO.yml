@@ -1,0 +1,32 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  artikelId:
+    type: string
+    default: "SOME_STRING"
+  artikelIdTyp:
+    type: string
+    default: "SOME_STRING"
+  gemeinderabatt:
+    type: string
+    default: "SOME_STRING"
+  vertragsart:
+    type: string
+    default: "SOME_STRING"
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  absender:
+    type: string
+    default: "9900321000005"
+  sparte:
+    $ref: "Sparte.yml"
+  gueltigAb:
+    type: string
+    default: "SOME_STRING"

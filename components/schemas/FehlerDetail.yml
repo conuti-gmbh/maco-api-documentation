@@ -1,0 +1,8 @@
+type: object
+properties:
+  code:
+    $ref: "FehlerCode.yml"
+  ursache:
+    $ref: "FehlerUrsache.yml"
+  beschreibung:
+    $ref: "Beschreibung.yml"

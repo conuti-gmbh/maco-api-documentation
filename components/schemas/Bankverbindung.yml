@@ -1,0 +1,12 @@
+type: object
+properties:
+  verwendungszweck:
+    $ref: "BankverbindungVerwendungszweck.yml"
+  iban:
+    type: string
+  kontoinhaber:
+    type: string
+  bic:
+    type: string
+  kreditinstitut:
+    type: string

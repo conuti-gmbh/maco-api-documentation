@@ -1,0 +1,16 @@
+type: object
+properties:
+  messstellenbetriebsabrechnung:
+    type: boolean
+  artikelId:
+    type: string
+  artikelIdTyp:
+    $ref: "ArtikelIdTyp.yml"
+  anzahl:
+    type: integer
+  zuschlag:
+    type: number
+    format: float
+  abschlag:
+    type: number
+    format: float

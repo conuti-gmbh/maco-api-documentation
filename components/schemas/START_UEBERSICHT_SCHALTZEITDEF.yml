@@ -1,0 +1,53 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  beginndatum:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  version:
+    type: string
+    default: "SOME_STRING"
+  notwendigkeit:
+    type: string
+    default: "SOME_STRING"
+  code:
+    type: string
+    default: "SOME_STRING"
+  haeufigkeit:
+    type: string
+    default: "SOME_STRING"
+  uebermittelbarkeit:
+    type: string
+    default: "SOME_STRING"
+  ermittlungLeistungsmaximum:
+    type: string
+    default: "SOME_STRING"
+  istBestellbar:
+    type: string
+    default: "SOME_STRING"
+  typ:
+    type: string
+    default: "SOME_STRING"
+  beschreibungTyp:
+    type: string
+    default: "SOME_STRING"
+  zaehlzeitDefinition:
+    type: string
+    default: "SOME_STRING"
+  register:
+    type: string
+    default: "SOME_STRING"
+  schwachlastfaehig:
+    type: string
+    default: "SOME_STRING"
+  sparte:
+    $ref: "Sparte.yml"
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  anfrageReferenz:
+    type: string
+    default: "SOME_STRING"

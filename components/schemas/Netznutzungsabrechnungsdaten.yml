@@ -1,0 +1,31 @@
+type: object
+properties:
+  artikelId:
+    type: string
+  artikelIdTyp:
+    $ref: "ArtikelIdTyp.yml"
+  anzahl:
+    type: integer
+  gemeinderabatt:
+    type: number
+    format: float
+  zuschlag:
+    type: number
+    format: float
+  abschlag:
+    type: number
+    format: float
+  singulaereBetriebsmittel:
+    $ref: "Menge.yml"
+  preisSingulaereBetriebsmittel:
+    $ref: "Preis.yml"
+  abrechnungBlindarbeit:
+    type: boolean
+  zahlerBlindarbeit:
+    $ref: "ZahlerBlindarbeit.yml"
+  zahlerBlindarbeitLf:
+    type: boolean
+  differenzDaten:
+    type: boolean
+  zaehlzeiten:
+    $ref: "Zaehlzeitregister.yml"

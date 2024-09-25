@@ -1,0 +1,20 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  sparte:
+    $ref: "Sparte.yml"
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  kategorie:
+    type: string
+    default: "SOME_STRING"
+  vorgangsreferenznummer:
+    type: string
+    default: "SOME_STRING"

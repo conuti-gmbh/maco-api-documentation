@@ -1,0 +1,12 @@
+type: object
+properties:
+  aussteller1:
+    type: string
+  aussteller2:
+    type: string
+  aussteller3:
+    type: string
+  aussteller4:
+    type: string
+  aussteller5:
+    type: string

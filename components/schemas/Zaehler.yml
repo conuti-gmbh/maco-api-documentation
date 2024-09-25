@@ -1,0 +1,67 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: ZAEHLER
+  versionStruktur:
+    type: string
+    default: "1"
+  zaehlernummer:
+    type: string
+  sparte:
+    $ref: "Sparte.yml"
+  zaehlerauspraegung:
+    $ref: "Zaehlerauspraegung.yml"
+  zaehlertyp:
+    $ref: "Zaehlertyp.yml"
+  tarifart:
+    $ref: "Tarifart.yml"
+  zaehlerkonstante:
+    type: number
+    format: float
+  eichungBis:
+    type: string
+    format: date-time
+  zaehlerhersteller:
+    $ref: "Geschaeftspartner.yml"
+  gateway:
+    type: string
+  fernschaltung:
+    $ref: "Fernschaltung.yml"
+  messwerterfassung:
+    $ref: "Messwerterfassung.yml"
+  zaehlertypspezifikation:
+    $ref: "ZaehlertypSpezifikation.yml"
+  befestigungsart:
+    $ref: "Befestigungsart.yml"
+  zaehlergroesse:
+    $ref: "Geraetemerkmal.yml"
+  mengenumwertertyp:
+    $ref: "Mengenumwertertyp.yml"
+  volumenerfassung:
+    $ref: "Volumenerfassung.yml"
+  serialnummer:
+    type: string
+  geraetemerkmal:
+    $ref: "Geraetemerkmal.yml"
+  herstellungsdatum:
+    type: string
+    format: date-time
+  baujahr:
+    type: string
+    description: DTM+Z03
+  messlokationsId:
+    type: string
+  marktlokationsId:
+    type: string
+  geraete:
+    type: array
+    items:
+      $ref: "Geraet.yml"
+  zaehlwerke:
+    type: array
+    items:
+      $ref: "Zaehlwerk.yml"
+required:
+  - boTyp
+  - versionStruktur

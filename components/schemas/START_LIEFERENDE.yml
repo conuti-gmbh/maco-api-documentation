@@ -1,11 +1,11 @@
 type: object
-description: Schema für Lieferende | Scheme for termination
+description: Schema für Lieferende | Scheme for Delivery end
 properties:
   marktlokationsId:
     type: string
     default: "74018657187"
   sparte:
-    $ref: "Sparte.yml.yml"
+    $ref: "Sparte.yml"
   zaehlernummer:
     type: string
     default: "123456789"
@@ -18,3 +18,9 @@ properties:
   empfaenger:
     type: string
     default: "9900321000005"
+  transaktionsgrund:
+    type: string
+    default: E01
+  transaktionsgrundergaenzung:
+    type: string
+    default: transaktionsgrundergaenzung

@@ -1,0 +1,30 @@
+type: object
+properties:
+  positionsnummer:
+    type: integer
+  positionsnummerAngebot:
+    type: string
+  energieerfassung:
+    $ref: "Energieerfassung.yml"
+  artikelnummer:
+    $ref: "BDEWArtikelnummer.yml"
+  positionsbetrag:
+    type: string
+  startdatum:
+    type: string
+    format: date-time
+  enddatum:
+    type: string
+    format: date-time
+  istBestand:
+    type: string
+  obiskennzahl:
+    type: string
+  anfragegrund:
+    $ref: "Anfragegrund.yml"
+  allgemeineInformationen:
+    $ref: "AllgemeineInformationen.yml"
+  infoAbweichung:
+    $ref: "InfoAbweichung.yml"
+  definitionsTyp:
+    $ref: "DefinitionsTyp.yml"

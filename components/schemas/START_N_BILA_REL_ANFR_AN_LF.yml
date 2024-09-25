@@ -1,0 +1,122 @@
+type: object
+description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+properties:
+  messlokationsId:
+    type: string
+    default: "DE12345678901234567890123456789012"
+  sparte:
+    $ref: "Sparte.yml"
+  messadressePostleitzahl:
+    type: string
+    default: "12345"
+  messadresseort:
+    type: string
+    default: "Berlin"
+  messadresseStrasse:
+    type: string
+    default: "SOME_STRING"
+  messadressehausnummer:
+    type: string
+    default: "123"
+  messadresseLandescode:
+    type: string
+    default: "de"
+  messadresseZusatz1:
+    type: string
+    default: "SOME_STRING"
+  messadresseZusatz2:
+    type: string
+    default: "SOME_STRING"
+  aleGeschaeftspartnerrolle:
+    type: string
+    default: "SOME_STRING"
+  aleGewerbekennzeichnung:
+    type: string
+    default: "gewerbekennzeichnung"
+  aleName1:
+    type: string
+    default: "SOME_STRING"
+  aleName2:
+    type: string
+    default: "SOME_STRING"
+  alePostleitzahl:
+    type: string
+    default: "12345"
+  aleort:
+    type: string
+    default: "Berlin"
+  aleStrasse:
+    type: string
+    default: "SOME_STRING"
+  alehausnummer:
+    type: string
+    default: "123"
+  aleLandescode:
+    type: string
+    default: "de"
+  vertragsartNn:
+    type: string
+    default: "SOME_STRING"
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  lokationsTyp:
+    type: string
+    default: "74018657187"
+  vertragsartMsb:
+    type: string
+    default: "SOME_STRING"
+  vp2Geschaeftspartnerrolle:
+    type: string
+    default: "SOME_STRING"
+  vp2Gewerbekennzeichnung:
+    type: string
+    default: "gewerbekennzeichnung"
+  vp2Name1:
+    type: string
+    default: "SOME_STRING"
+  vp2Name2:
+    type: string
+    default: "SOME_STRING"
+  kpName1:
+    type: string
+    default: "SOME_STRING"
+  kpName2:
+    type: string
+    default: "SOME_STRING"
+  kpGewerbekennzeichnung:
+    type: string
+    default: "gewerbekennzeichnung"
+  kpPostleitzahl:
+    type: string
+    default: "12345"
+  kport:
+    type: string
+    default: "Berlin"
+  kpStrasse:
+    type: string
+    default: "SOME_STRING"
+  kphausnummer:
+    type: string
+    default: "123"
+  Landescode:
+    type: string
+    default: "de"
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  rollencodetypempfaenger:
+    type: string
+    default: "9900321000005"
+  absender:
+    type: string
+    default: "9900321000005"
+  rollencodetypabsender:
+    type: string
+    default: "9900321000005"
+  gueltigAb:
+    type: string
+    default: "SOME_STRING"

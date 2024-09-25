@@ -1,0 +1,9 @@
+type: object
+properties:
+  geraetetyp:
+    $ref: "Geraetetyp.yml"
+  geraetemerkmal:
+    $ref: "Geraetemerkmal.yml"
+  faktor:
+    type: number
+    format: float

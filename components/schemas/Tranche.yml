@@ -2,14 +2,14 @@ type: object
 properties:
   boTyp:
     type: string
-    default: MARKTLOKATION
+    default: TRANCHE
   versionStruktur:
     type: string
     default: "1"
-  marktlokationsId:
+  tranchenId:
     type: string
   sparte:
-    type: string
+    $ref: "Sparte.yml"
   energierichtung:
     $ref: "Energierichtung.yml"
   bilanzierungsmethode:
@@ -19,8 +19,6 @@ properties:
   unterbrechbar:
     type: boolean
   netzebene:
-    $ref: "Netzebene.yml"
-  umspannung:
     $ref: "Netzebene.yml"
   netzbetreiberCodeNr:
     type: string
@@ -54,38 +52,28 @@ properties:
     type: string
   versorgungsart:
     $ref: "Versorgungsart.yml"
-  eigentuemer:
-    $ref: "Geschaeftspartner.yml"
-  hausverwalter:
-    $ref: "Geschaeftspartner.yml"
-  verguetungEmpfaenger:
-    $ref: "VerguetungEmpfaenger.yml"
-  statusErzeugendeMalo:
-    $ref: "StatusErzeugendeMarktlokation.yml"
   fernsteuerbarkeit:
     $ref: "Fernsteuerbarkeit.yml"
+  verguetungEmpfaenger:
+    $ref: "VerguetungEmpfaenger.yml"
   foerderungsLand:
     type: string
-  redispatch:
-    type: boolean
+  statusErzeugendeMalo:
+    $ref: "StatusErzeugendeMarktlokation.yml"
+  referenzTranche:
+    type: string
+  aufteilungsmenge:
+    $ref: "Menge.yml"
+  bilanzkreis:
+    type: string
+  bildungTranchengroesse:
+    $ref: "BildungTranchengroesse.yml"
   zukuenftigerMeldepunkt:
     type: boolean
   lokationszuordnung:
     $ref: "Lokationszuordnung.yml"
-  konfigurationsprodukt:
-    type: string
-  leistungskurvendefinition:
-    type: string
-  produktdatenRelevanteRolle:
-    $ref: "Marktrolle.yml"
   beteiligterMarktpartner:
     $ref: "Marktteilnehmer.yml"
-  modulNetzentgelte:
-    $ref: "ModulNetzentgelte.yml"
-  datenqualitaet:
-    $ref: "Datenqualitaet.yml"
-  zeitraumId:
-    type: integer
   marktrollen:
     type: array
     items:
@@ -110,10 +98,6 @@ properties:
     type: array
     items:
       $ref: "Netznutzungsabrechnungsdaten.yml"
-  messstellenbetriebsabrechnungsdaten:
-    type: array
-    items:
-      $ref: "Messstellenbetriebsabrechnungsdaten.yml"
   energieherkunft:
     type: array
     items:
