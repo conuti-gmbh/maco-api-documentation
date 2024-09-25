@@ -1,0 +1,16 @@
+properties:
+  bezeichnung:
+    type: string
+  einspeisung:
+    type: boolean
+  herausgeber:
+    type: string
+  profilart:
+    $ref: '#/components/schemas/Profilart'
+  profilschar:
+    type: string
+  tagesparameter:
+    $ref: '#/components/schemas/Tagesparameter'
+  verfahren:
+    $ref: '#/components/schemas/Profilverfahren'
+type: object

@@ -1,0 +1,26 @@
+description: "Schema f\xFCr Lieferende | Scheme for Delivery end"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  transaktionsgrund:
+    default: E01
+    type: string
+  transaktionsgrundergaenzung:
+    default: transaktionsgrundergaenzung
+    type: string
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zaehlernummer:
+    default: '123456789'
+    type: string
+type: object

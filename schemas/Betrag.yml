@@ -1,0 +1,7 @@
+properties:
+  waehrung:
+    type: string
+  wert:
+    format: float
+    type: number
+type: object

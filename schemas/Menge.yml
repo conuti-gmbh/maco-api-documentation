@@ -1,0 +1,7 @@
+properties:
+  einheit:
+    $ref: '#/components/schemas/Mengeneinheit'
+  wert:
+    format: float
+    type: number
+type: object

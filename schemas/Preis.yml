@@ -1,0 +1,11 @@
+properties:
+  bezugswert:
+    $ref: '#/components/schemas/Mengeneinheit'
+  einheit:
+    $ref: '#/components/schemas/Waehrungseinheit'
+  status:
+    $ref: '#/components/schemas/Preisstatus'
+  wert:
+    format: float
+    type: number
+type: object

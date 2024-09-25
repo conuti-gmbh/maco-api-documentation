@@ -1,0 +1,74 @@
+properties:
+  ausfuehrungsdatum:
+    format: date-time
+    type: string
+  bearbeitungsdatum:
+    format: date-time
+    type: string
+  beginnPeriodeBilanzierung:
+    format: date-time
+    type: string
+  boTyp:
+    default: RECHNUNG
+    type: string
+  datumVorgaengerrechnung:
+    format: date-time
+    type: string
+  endePeriodeNetznutzung:
+    format: date-time
+    type: string
+  energierichtung:
+    $ref: '#/components/schemas/Energierichtung'
+  faelligkeitsdatum:
+    format: date-time
+    type: string
+  gemeinderabatt:
+    $ref: '#/components/schemas/Gemeinderabatt'
+  gesamtbrutto:
+    $ref: '#/components/schemas/Betrag'
+  istReverseCharge:
+    type: boolean
+  istSelbstausgestellt:
+    type: boolean
+  netzkonto:
+    type: string
+  originalRechnungsnummer:
+    type: string
+  rechnungsdatum:
+    format: date-time
+    type: string
+  rechnungsperiode:
+    $ref: '#/components/schemas/Zeitraum'
+  rechnungspositionen:
+    items:
+      $ref: '#/components/schemas/Rechnungsposition'
+    type: array
+  rechnungsstatus:
+    $ref: '#/components/schemas/Rechnungsstatus'
+  rechnungstyp:
+    $ref: '#/components/schemas/Rechnungstyp'
+  referenzDokumentennummer:
+    type: string
+  referenzNachrichtendatum:
+    type: string
+  referenzVorgaengerrechnung:
+    type: string
+  sonderrechnungsart:
+    $ref: '#/components/schemas/SonderrechnungsArt'
+  steuerbetraege:
+    items:
+      $ref: '#/components/schemas/Steuerbetrag'
+    type: array
+  versionStruktur:
+    default: '1'
+    type: string
+  vorausgezahlt:
+    $ref: '#/components/schemas/Betrag'
+  vorlaeufigerAbrechnungszeitraum:
+    $ref: '#/components/schemas/Zeitraum'
+  zuZahlen:
+    $ref: '#/components/schemas/Betrag'
+required:
+- boTyp
+- versionStruktur
+type: object

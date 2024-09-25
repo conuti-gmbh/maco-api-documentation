@@ -1,0 +1,32 @@
+properties:
+  bezeichnung:
+    type: string
+  bilanzierungsdatum:
+    format: date-time
+    type: string
+  boTyp:
+    default: PREISBLATT
+    type: string
+  gueltigkeit:
+    $ref: '#/components/schemas/Zeitraum'
+  leistungstyp:
+    $ref: '#/components/schemas/Leistungstyp'
+  nichtGenutzt:
+    type: boolean
+  preispositionen:
+    items:
+      $ref: '#/components/schemas/Preisposition'
+    type: array
+  preisstatus:
+    $ref: '#/components/schemas/Preisstatus'
+  regelzone:
+    type: string
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  versionStruktur:
+    default: '1'
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

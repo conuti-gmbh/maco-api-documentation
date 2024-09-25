@@ -1,0 +1,8 @@
+properties:
+  fehlerDetails:
+    items:
+      $ref: '#/components/schemas/FehlerDetail'
+    type: array
+  typ:
+    $ref: '#/components/schemas/FehlerTyp'
+type: object

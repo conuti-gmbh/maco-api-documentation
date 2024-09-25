@@ -1,0 +1,25 @@
+properties:
+  boTyp:
+    default: REKLAMATION
+    type: string
+  konfiguration:
+    type: string
+  lokationsId:
+    type: string
+  lokationsTyp:
+    $ref: '#/components/schemas/Lokationstyp'
+  obiskennzahl:
+    type: string
+  reklamationsgrund:
+    $ref: '#/components/schemas/Reklamationsgrund'
+  reklamationsgrundBemerkung:
+    $ref: '#/components/schemas/ReklamationsgrundBemerkung'
+  versionStruktur:
+    default: '1'
+    type: string
+  zeitraumMesswertanfrage:
+    $ref: '#/components/schemas/Zeitraum'
+required:
+- boTyp
+- versionStruktur
+type: object

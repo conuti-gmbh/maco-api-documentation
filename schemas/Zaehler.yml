@@ -1,0 +1,67 @@
+properties:
+  baujahr:
+    description: DTM+Z03
+    type: string
+  befestigungsart:
+    $ref: '#/components/schemas/Befestigungsart'
+  boTyp:
+    default: ZAEHLER
+    type: string
+  eichungBis:
+    format: date-time
+    type: string
+  fernschaltung:
+    $ref: '#/components/schemas/Fernschaltung'
+  gateway:
+    type: string
+  geraete:
+    items:
+      $ref: '#/components/schemas/Geraet'
+    type: array
+  geraetemerkmal:
+    $ref: '#/components/schemas/Geraetemerkmal'
+  herstellungsdatum:
+    format: date-time
+    type: string
+  marktlokationsId:
+    type: string
+  mengenumwertertyp:
+    $ref: '#/components/schemas/Mengenumwertertyp'
+  messlokationsId:
+    type: string
+  messwerterfassung:
+    $ref: '#/components/schemas/Messwerterfassung'
+  serialnummer:
+    type: string
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  tarifart:
+    $ref: '#/components/schemas/Tarifart'
+  versionStruktur:
+    default: '1'
+    type: string
+  volumenerfassung:
+    $ref: '#/components/schemas/Volumenerfassung'
+  zaehlerauspraegung:
+    $ref: '#/components/schemas/Zaehlerauspraegung'
+  zaehlergroesse:
+    $ref: '#/components/schemas/Geraetemerkmal'
+  zaehlerhersteller:
+    $ref: '#/components/schemas/Geschaeftspartner'
+  zaehlerkonstante:
+    format: float
+    type: number
+  zaehlernummer:
+    type: string
+  zaehlertyp:
+    $ref: '#/components/schemas/Zaehlertyp'
+  zaehlertypspezifikation:
+    $ref: '#/components/schemas/ZaehlertypSpezifikation'
+  zaehlwerke:
+    items:
+      $ref: '#/components/schemas/Zaehlwerk'
+    type: array
+required:
+- boTyp
+- versionStruktur
+type: object

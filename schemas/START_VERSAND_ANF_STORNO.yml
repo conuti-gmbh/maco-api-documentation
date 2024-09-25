@@ -1,0 +1,20 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  energierichtung:
+    $ref: '#/components/schemas/Energierichtung'
+  kategorie:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  vorgangsreferenznummer:
+    default: SOME_STRING
+    type: string
+type: object

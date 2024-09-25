@@ -1,0 +1,21 @@
+properties:
+  auftragsstatus:
+    $ref: '#/components/schemas/Auftragsstatus'
+  boTyp:
+    default: STATUSMITTEILUNG
+    type: string
+  positionsdaten:
+    items:
+      $ref: '#/components/schemas/StatusmitteilungPosition'
+    type: array
+  statusObjekt:
+    $ref: '#/components/schemas/Statusobjekt'
+  statusanlass:
+    $ref: '#/components/schemas/Status'
+  versionStruktur:
+    default: '1'
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

@@ -1,0 +1,20 @@
+properties:
+  boTyp:
+    default: STATUSBERICHT
+    type: string
+  datumPruefung:
+    format: date-time
+    type: string
+  fehler:
+    $ref: '#/components/schemas/Fehler'
+  pruefgegenstand:
+    type: string
+  status:
+    $ref: '#/components/schemas/BerichtStatus'
+  versionStruktur:
+    default: '1'
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

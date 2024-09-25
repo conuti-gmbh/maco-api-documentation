@@ -1,0 +1,24 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: SOME_STRING
+    type: string
+  gueltigAb:
+    default: SOME_STRING
+    type: string
+  netzlokationsId:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zahlerBlindarbeit:
+    default: GAS
+    type: string
+type: object

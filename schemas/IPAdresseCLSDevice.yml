@@ -1,0 +1,12 @@
+properties:
+  IPAdresseCLSDevice1:
+    type: string
+  IPAdresseCLSDevice2:
+    type: string
+  IPAdresseCLSDevice3:
+    type: string
+  IPAdresseCLSDevice4:
+    type: string
+  IPAdresseCLSDevice5:
+    type: string
+type: object

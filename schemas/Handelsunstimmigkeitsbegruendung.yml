@@ -1,0 +1,18 @@
+properties:
+  bestaetigungDar:
+    type: string
+  grund:
+    $ref: '#/components/schemas/Handelsunstimmigkeitsgrund'
+  hinweis:
+    type: string
+  referenzDar:
+    type: string
+  referenzen:
+    items:
+      type: string
+    type: array
+  referenznummer:
+    type: string
+  richtigkeit:
+    $ref: '#/components/schemas/Handelsunstimmigkeitsrichtigkeit'
+type: object

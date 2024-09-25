@@ -1,0 +1,15 @@
+properties:
+  aenderungszeitpunkt:
+    format: date-time
+    type: string
+  code:
+    type: string
+  haeufigkeit:
+    $ref: '#/components/schemas/HaeufigkeitLeistungskurve'
+  konfigurationsprodukt:
+    type: string
+  schwellwert:
+    $ref: '#/components/schemas/Schwellwert'
+  uebermittelbarkeit:
+    $ref: '#/components/schemas/UebermittelbarkeitLeistungskurve'
+type: object

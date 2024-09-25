@@ -1,0 +1,13 @@
+properties:
+  aufAbschlagstyp:
+    $ref: '#/components/schemas/AufAbschlagstyp'
+  aufAbschlagswaehrung:
+    $ref: '#/components/schemas/Waehrungseinheit'
+  aufAbschlagswert:
+    format: float
+    type: number
+  beschreibung:
+    type: string
+  bezeichnung:
+    type: string
+type: object

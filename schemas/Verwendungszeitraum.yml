@@ -1,0 +1,21 @@
+properties:
+  boTyp:
+    default: VERWENDUNGSZEITRAUM
+    type: string
+  qualitaet:
+    $ref: '#/components/schemas/Verwendungszeitraumqualitaet'
+  versionStruktur:
+    default: '1'
+    type: string
+  verwendungAb:
+    format: date-time
+    type: string
+  verwendungBis:
+    format: date-time
+    type: string
+  zeitraumId:
+    type: integer
+required:
+- boTyp
+- versionStruktur
+type: object

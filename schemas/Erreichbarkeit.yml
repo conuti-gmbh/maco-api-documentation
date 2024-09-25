@@ -1,0 +1,6 @@
+properties:
+  verfuegbarkeit:
+    $ref: '#/components/schemas/Verfuegbarkeit'
+  zeit:
+    type: string
+type: object

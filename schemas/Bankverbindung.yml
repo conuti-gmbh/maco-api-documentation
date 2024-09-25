@@ -1,0 +1,12 @@
+properties:
+  bic:
+    type: string
+  iban:
+    type: string
+  kontoinhaber:
+    type: string
+  kreditinstitut:
+    type: string
+  verwendungszweck:
+    $ref: '#/components/schemas/BankverbindungVerwendungszweck'
+type: object

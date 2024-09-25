@@ -1,0 +1,40 @@
+properties:
+  artikelId:
+    type: string
+  bdewArtikelnummer:
+    $ref: '#/components/schemas/BDEWArtikelnummer'
+  berechnungsmethode:
+    $ref: '#/components/schemas/Kalkulationsmethode'
+  beschreibung:
+    type: string
+  bezugsgroesse:
+    $ref: '#/components/schemas/Mengeneinheit'
+  leistungsbezeichnung:
+    type: string
+  leistungstyp:
+    $ref: '#/components/schemas/Leistungstyp'
+  messebene:
+    $ref: '#/components/schemas/Netzebene'
+  positionsnummer:
+    type: integer
+  preiseinheit:
+    $ref: '#/components/schemas/Waehrungseinheit'
+  preisschluesselstamm:
+    type: string
+  preisstaffeln:
+    items:
+      $ref: '#/components/schemas/Preisstaffel'
+    type: array
+  tarifzeit:
+    $ref: '#/components/schemas/Tarifzeit'
+  verarbeitungszeitraum:
+    $ref: '#/components/schemas/Zeitraum'
+  zeitbasis:
+    $ref: '#/components/schemas/Zeiteinheit'
+  zonungsgroesse:
+    $ref: '#/components/schemas/Bemessungsgroesse'
+  zu_abschlaege:
+    items:
+      $ref: '#/components/schemas/PositionsAufAbschlag'
+    type: array
+type: object

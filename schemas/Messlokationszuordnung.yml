@@ -1,0 +1,12 @@
+properties:
+  arithmetik:
+    $ref: '#/components/schemas/ArithmetischeOperation'
+  gueltigBis:
+    format: date-time
+    type: string
+  gueltigSeit:
+    format: date-time
+    type: string
+  messlokationsId:
+    type: string
+type: object

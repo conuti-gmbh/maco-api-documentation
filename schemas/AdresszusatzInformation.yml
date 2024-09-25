@@ -1,0 +1,12 @@
+properties:
+  zusatz1:
+    type: string
+  zusatz2:
+    type: string
+  zusatz3:
+    type: string
+  zusatz4:
+    type: string
+  zusatz5:
+    type: string
+type: object

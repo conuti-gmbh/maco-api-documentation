@@ -1,0 +1,18 @@
+properties:
+  bezeichnung:
+    type: string
+  geraeteeigenschaften:
+    $ref: '#/components/schemas/Geraeteeigenschaften'
+  geraetenummer:
+    type: string
+  geraetereferenz:
+    type: string
+  geraetetyp:
+    $ref: '#/components/schemas/Geraetetyp'
+  volumenerfassung:
+    $ref: '#/components/schemas/Volumenerfassung'
+  weitereGeraetenummern:
+    items:
+      type: string
+    type: array
+type: object

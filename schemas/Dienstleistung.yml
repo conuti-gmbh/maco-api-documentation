@@ -1,0 +1,6 @@
+properties:
+  bezeichnung:
+    type: string
+  dienstleistungstyp:
+    $ref: '#/components/schemas/Dienstleistungstyp'
+type: object

@@ -1,0 +1,22 @@
+properties:
+  adresszusatz:
+    type: string
+  coErgaenzung:
+    type: string
+  hausnummer:
+    type: string
+  landescode:
+    $ref: '#/components/schemas/Landescode'
+  ort:
+    type: string
+  ortsteil:
+    type: string
+  postfach:
+    type: string
+  postleitzahl:
+    type: string
+  strasse:
+    type: string
+  zusatzInformation:
+    $ref: '#/components/schemas/AdresszusatzInformation'
+type: object

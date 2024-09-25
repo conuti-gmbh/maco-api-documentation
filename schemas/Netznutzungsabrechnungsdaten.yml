@@ -1,0 +1,31 @@
+properties:
+  abrechnungBlindarbeit:
+    type: boolean
+  abschlag:
+    format: float
+    type: number
+  anzahl:
+    type: integer
+  artikelId:
+    type: string
+  artikelIdTyp:
+    $ref: '#/components/schemas/ArtikelIdTyp'
+  differenzDaten:
+    type: boolean
+  gemeinderabatt:
+    format: float
+    type: number
+  preisSingulaereBetriebsmittel:
+    $ref: '#/components/schemas/Preis'
+  singulaereBetriebsmittel:
+    $ref: '#/components/schemas/Menge'
+  zaehlzeiten:
+    $ref: '#/components/schemas/Zaehlzeitregister'
+  zahlerBlindarbeit:
+    $ref: '#/components/schemas/ZahlerBlindarbeit'
+  zahlerBlindarbeitLf:
+    type: boolean
+  zuschlag:
+    format: float
+    type: number
+type: object

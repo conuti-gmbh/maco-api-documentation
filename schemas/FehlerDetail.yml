@@ -1,0 +1,8 @@
+properties:
+  beschreibung:
+    $ref: '#/components/schemas/Beschreibung'
+  code:
+    $ref: '#/components/schemas/FehlerCode'
+  ursache:
+    $ref: '#/components/schemas/FehlerUrsache'
+type: object

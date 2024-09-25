@@ -1,0 +1,18 @@
+properties:
+  artikelId:
+    items:
+      type: string
+    type: array
+  artikelnummer:
+    $ref: '#/components/schemas/BDEWArtikelnummer'
+  positionsbetrag:
+    $ref: '#/components/schemas/Betrag'
+  positionsbezeichung:
+    type: string
+  positionsmenge:
+    $ref: '#/components/schemas/Menge'
+  positionspreis:
+    $ref: '#/components/schemas/Preis'
+  preisschluesselstamm:
+    type: string
+type: object

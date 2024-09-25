@@ -1,0 +1,14 @@
+properties:
+  beschreibung:
+    $ref: '#/components/schemas/Beschreibung'
+  dokument:
+    type: string
+  gruppe:
+    $ref: '#/components/schemas/Gruppe'
+  nachricht:
+    type: string
+  segment:
+    type: string
+  transaktion:
+    type: string
+type: object

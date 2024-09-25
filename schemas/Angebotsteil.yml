@@ -1,0 +1,20 @@
+properties:
+  anfrageSubreferenz:
+    type: string
+  gesamtkostenangebotsteil:
+    $ref: '#/components/schemas/Betrag'
+  gesamtmengeangebotsteil:
+    $ref: '#/components/schemas/Menge'
+  lieferstellenangebotsteil:
+    items:
+      $ref: '#/components/schemas/Marktlokation'
+    type: array
+  lieferzeitraum:
+    $ref: '#/components/schemas/Zeitraum'
+  positionen:
+    items:
+      $ref: '#/components/schemas/Angebotsposition'
+    type: array
+  verweisKatalognummer:
+    $ref: '#/components/schemas/Katalogverweis'
+type: object

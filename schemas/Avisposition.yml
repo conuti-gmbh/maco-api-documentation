@@ -1,0 +1,25 @@
+properties:
+  abweichung:
+    items:
+      $ref: '#/components/schemas/Abweichung'
+    type: array
+  gesamtBrutto:
+    $ref: '#/components/schemas/Betrag'
+  istSelbstausgestellt:
+    type: boolean
+  istStorno:
+    type: boolean
+  positionen:
+    items:
+      $ref: '#/components/schemas/Rueckmeldungsposition'
+    type: array
+  rechnungsDatum:
+    format: date-time
+    type: string
+  rechnungsNummer:
+    type: string
+  referenz:
+    type: string
+  zuZahlen:
+    $ref: '#/components/schemas/Betrag'
+type: object

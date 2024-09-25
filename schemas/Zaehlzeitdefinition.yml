@@ -1,0 +1,34 @@
+properties:
+  beginndatum:
+    format: date-time
+    type: string
+  boTyp:
+    default: ZAEHLZEITDEFINITION
+    type: string
+  code:
+    type: string
+  endedatum:
+    format: date-time
+    type: string
+  notwendigkeit:
+    $ref: '#/components/schemas/DefinitionenNotwendigkeit'
+  version:
+    format: date-time
+    type: string
+  versionStruktur:
+    default: '1'
+    type: string
+  versionsangabe:
+    type: string
+  zaehlzeiten:
+    items:
+      $ref: '#/components/schemas/Zaehlzeit'
+    type: array
+  zaehlzeitregister:
+    items:
+      $ref: '#/components/schemas/Zaehlzeitregister'
+    type: array
+required:
+- boTyp
+- versionStruktur
+type: object

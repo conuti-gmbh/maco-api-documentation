@@ -1,0 +1,8 @@
+properties:
+  zertifikatsAussteller:
+    $ref: '#/components/schemas/ZertifikatsAussteller'
+  zertifikatsNutzer:
+    $ref: '#/components/schemas/ZertifikatsNutzer'
+  zieladresse:
+    $ref: '#/components/schemas/Zieladresse'
+type: object

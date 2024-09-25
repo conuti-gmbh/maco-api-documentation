@@ -1,0 +1,61 @@
+properties:
+  abwicklungsmodell:
+    $ref: '#/components/schemas/Abwicklungsmodell'
+  aggregationsverantwortung:
+    $ref: '#/components/schemas/Aggregationsverantwortung'
+  bilanzierungsbeginn:
+    format: date-time
+    type: string
+  bilanzierungsende:
+    format: date-time
+    type: string
+  bilanzkreis:
+    type: string
+  boTyp:
+    default: BILANZIERUNG
+    type: string
+  datenqualitaet:
+    $ref: '#/components/schemas/Datenqualitaet'
+  detailsPrognosegrundlage:
+    items:
+      $ref: '#/components/schemas/Profiltyp'
+    type: array
+  fallgruppenzuordnung:
+    $ref: '#/components/schemas/Fallgruppenzuordnung'
+  grundWahlrechtPrognosegrundlage:
+    $ref: '#/components/schemas/WahlrechtPrognosegrundlage'
+  jahresverbrauchsprognose:
+    $ref: '#/components/schemas/Menge'
+  kundenwert:
+    $ref: '#/components/schemas/Menge'
+  lastprofile:
+    items:
+      $ref: '#/components/schemas/Lastprofil'
+    type: array
+  lastprofileBilanzierungsbeteiligter:
+    items:
+      $ref: '#/components/schemas/Lastprofil'
+    type: array
+  marktlokationsId:
+    type: string
+  prognosegrundlage:
+    $ref: '#/components/schemas/Prognosegrundlage'
+  temperaturarbeit:
+    $ref: '#/components/schemas/Menge'
+  verbrauchsaufteilung:
+    $ref: '#/components/schemas/Menge'
+  versionStruktur:
+    default: '1'
+    type: string
+  vorjahresverbrauch:
+    $ref: '#/components/schemas/Menge'
+  wahlrechtPrognosegrundlage:
+    $ref: '#/components/schemas/WahlrechtPrognosegrundlage'
+  zeitraumId:
+    type: integer
+  zeitreihentyp:
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

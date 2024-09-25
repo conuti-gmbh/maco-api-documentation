@@ -1,0 +1,7 @@
+properties:
+  anteilProzent:
+    format: float
+    type: number
+  erzeugungsart:
+    $ref: '#/components/schemas/Erzeugungsart'
+type: object

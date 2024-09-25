@@ -1,0 +1,9 @@
+properties:
+  kategorie:
+    type: string
+  kosten:
+    format: float
+    type: number
+  satz:
+    $ref: '#/components/schemas/AbgabeArt'
+type: object

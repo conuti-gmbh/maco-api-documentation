@@ -1,0 +1,45 @@
+properties:
+  abrechnungsdaten:
+    items:
+      $ref: '#/components/schemas/Netznutzungsabrechnungsdaten'
+    type: array
+  auftraggebenderMarktpartner:
+    $ref: '#/components/schemas/Marktteilnehmer'
+  boTyp:
+    default: NETZLOKATION
+    type: string
+  grundzustaendigerMSBCodeNr:
+    type: string
+  keinKonfigurationsprodukt:
+    type: boolean
+  konfigurationsprodukt:
+    type: string
+  leistungskurvendefinition:
+    type: string
+  lokationszuordnung:
+    $ref: '#/components/schemas/Lokationszuordnung'
+  marktrollen:
+    items:
+      $ref: '#/components/schemas/Marktteilnehmer'
+    type: array
+  netzanschlussleistung:
+    type: string
+  netzlokationsId:
+    type: string
+  produktdatenRelevanteRolle:
+    $ref: '#/components/schemas/Marktrolle'
+  sparte:
+    $ref: '#/components/schemas/Sparte'
+  steuerkanal:
+    type: boolean
+  versionStruktur:
+    default: '1'
+    type: string
+  zaehlwerke:
+    items:
+      $ref: '#/components/schemas/Zaehlwerk'
+    type: array
+required:
+- boTyp
+- versionStruktur
+type: object

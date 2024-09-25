@@ -1,0 +1,6 @@
+properties:
+  beschreibung1:
+    type: string
+  beschreibung2:
+    type: string
+type: object

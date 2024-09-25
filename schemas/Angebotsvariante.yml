@@ -1,0 +1,20 @@
+properties:
+  angebotsstatus:
+    $ref: '#/components/schemas/Angebotsstatus'
+  beschreibung:
+    type: string
+  bindefrist:
+    format: date-time
+    type: string
+  erstelldatum:
+    format: date-time
+    type: string
+  gesamtkosten:
+    $ref: '#/components/schemas/Betrag'
+  gesamtmenge:
+    $ref: '#/components/schemas/Menge'
+  teile:
+    items:
+      $ref: '#/components/schemas/Angebotsteil'
+    type: array
+type: object

@@ -1,0 +1,9 @@
+properties:
+  faktor:
+    format: float
+    type: number
+  geraetemerkmal:
+    $ref: '#/components/schemas/Geraetemerkmal'
+  geraetetyp:
+    $ref: '#/components/schemas/Geraetetyp'
+type: object

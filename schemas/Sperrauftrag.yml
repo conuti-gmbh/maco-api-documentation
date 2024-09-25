@@ -1,0 +1,25 @@
+properties:
+  boTyp:
+    default: SPERRAUFTRAG
+    type: string
+  istVomGerichtsvollzieherAngeordnet:
+    type: boolean
+  sperrauftragsablehngrund:
+    $ref: '#/components/schemas/Sperrauftragsablehngrund'
+  sperrauftragsart:
+    $ref: '#/components/schemas/Sperrauftragsart'
+  sperrauftragsstatus:
+    $ref: '#/components/schemas/Auftragsstatus'
+  sperrauftragsverhinderungsgrund:
+    $ref: '#/components/schemas/Sperrauftragsverhinderungsgrund'
+  treffpunkt:
+    $ref: '#/components/schemas/Adresse'
+  versionStruktur:
+    default: '1'
+    type: string
+  zaehlernummer:
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

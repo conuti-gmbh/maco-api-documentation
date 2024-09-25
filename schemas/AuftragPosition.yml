@@ -1,0 +1,30 @@
+properties:
+  allgemeineInformationen:
+    $ref: '#/components/schemas/AllgemeineInformationen'
+  anfragegrund:
+    $ref: '#/components/schemas/Anfragegrund'
+  artikelnummer:
+    $ref: '#/components/schemas/BDEWArtikelnummer'
+  definitionsTyp:
+    $ref: '#/components/schemas/DefinitionsTyp'
+  enddatum:
+    format: date-time
+    type: string
+  energieerfassung:
+    $ref: '#/components/schemas/Energieerfassung'
+  infoAbweichung:
+    $ref: '#/components/schemas/InfoAbweichung'
+  istBestand:
+    type: string
+  obiskennzahl:
+    type: string
+  positionsbetrag:
+    type: string
+  positionsnummer:
+    type: integer
+  positionsnummerAngebot:
+    type: string
+  startdatum:
+    format: date-time
+    type: string
+type: object

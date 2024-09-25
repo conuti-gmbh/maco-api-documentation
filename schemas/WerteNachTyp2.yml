@@ -1,0 +1,27 @@
+properties:
+  aenderungsmoeglichkeitKonfiguration:
+    $ref: '#/components/schemas/AenderungsmoeglichkeitKonfiguration'
+  aussteller:
+    $ref: '#/components/schemas/Aussteller'
+  boTyp:
+    default: WERTE_NACH_TYP2
+    type: string
+  konfigurationsprodukt:
+    type: string
+  messprodukt:
+    type: string
+  schwellwerte:
+    items:
+      $ref: '#/components/schemas/Schwellwert'
+    type: array
+  versionStruktur:
+    default: '1'
+    type: string
+  zertifikatsNutzer:
+    $ref: '#/components/schemas/ZertifikatsNutzer'
+  zieladresse:
+    $ref: '#/components/schemas/Zieladresse'
+required:
+- boTyp
+- versionStruktur
+type: object
