@@ -1694,10 +1694,6 @@ paths:
                             versionStruktur: '1'
                             rollencodenummer: '4045399000077'
                             marktrolle: UENB
-                          - boTyp: MARKTTEILNEHMER
-                            versionStruktur: '1'
-                            rollencodenummer: '1234567890128'
-                            marktrolle: MSB
                             weiterverpflichtet: false
                             messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
                         regelzone: 10YDE-RWENET---I
@@ -4738,6 +4734,14 @@ paths:
                 downloadlinkZertifikat:
                   type: string
                   example: <string>
+                weiterverpflichtet:
+                  type: boolean
+                messstellenbetreiberEigenschaft:
+                  enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  type: string
                 kommunikationsparameter:
                   type: object
                   properties:

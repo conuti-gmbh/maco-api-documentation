@@ -23,6 +23,10 @@ properties:
   downloadlinkZertifikat:
     type: string
     example: <string>
+  weiterverpflichtet:
+    $ref: 'weiterverpflichtet.yml'
+  messstellenbetreiberEigenschaft:
+    $ref: 'MSBEigenschaft.yml'
   kommunikationsparameter:
     type: object
     properties:

@@ -20,10 +20,6 @@ value:
             versionStruktur: "1"
             rollencodenummer: "4045399000077"
             marktrolle: UENB
-          - boTyp: MARKTTEILNEHMER
-            versionStruktur: "1"
-            rollencodenummer: "1234567890128"
-            marktrolle: MSB
             weiterverpflichtet: false
             messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
         regelzone: 10YDE-RWENET---I

@@ -51,7 +51,7 @@ properties:
   kommunikationsrolle:
     $ref: "Kommunikationsrolle.yml"
   weiterverpflichtet:
-    type: boolean
+    $ref: "weiterverpflichtet.yml"
   kommunikationsparameter:
     $ref: "Kommunikationsparameter.yml"
   messstellenbetreiberEigenschaft:

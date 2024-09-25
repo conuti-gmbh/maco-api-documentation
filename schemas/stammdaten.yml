@@ -1,0 +1,8 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+  transaktionsdaten:
+    type: object
+  zusatzdaten:
+    type: object

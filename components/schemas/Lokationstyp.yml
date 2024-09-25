@@ -1,0 +1,7 @@
+Lokationstyp:
+  type: string
+  enum:
+    - MALO
+    - MELO
+    - NELO
+    - TECHNISCHE_RESSOURCE

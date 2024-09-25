@@ -106,8 +106,7 @@ properties:
     default: Berlin
     type: string
   lokationsTyp:
-    default: '74018657187'
-    type: string
+    ref : "Lokationstyp.yml"
   lokationsadresseHausnr:
     default: SOME_STRING
     type: string
@@ -276,8 +275,7 @@ properties:
     default: SOME_STRING
     type: string
   weiterverpflichtet:
-    default: SOME_STRING
-    type: string
+    $ref: "weiterverpflichtet.yml"
   wertegranularitaet:
     default: SOME_STRING
     type: string
