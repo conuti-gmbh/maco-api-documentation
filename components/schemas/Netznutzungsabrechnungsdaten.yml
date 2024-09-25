@@ -1,31 +1,31 @@
-type: object
 properties:
+  abrechnungBlindarbeit:
+    type: boolean
+  abschlag:
+    format: float
+    type: number
+  anzahl:
+    type: integer
   artikelId:
     type: string
   artikelIdTyp:
-    $ref: "ArtikelIdTyp.yml"
-  anzahl:
-    type: integer
-  gemeinderabatt:
-    type: number
-    format: float
-  zuschlag:
-    type: number
-    format: float
-  abschlag:
-    type: number
-    format: float
-  singulaereBetriebsmittel:
-    $ref: "Menge.yml"
-  preisSingulaereBetriebsmittel:
-    $ref: "Preis.yml"
-  abrechnungBlindarbeit:
-    type: boolean
-  zahlerBlindarbeit:
-    $ref: "ZahlerBlindarbeit.yml"
-  zahlerBlindarbeitLf:
-    type: boolean
+    $ref: 'ArtikelIdTyp.yml'
   differenzDaten:
     type: boolean
+  gemeinderabatt:
+    format: float
+    type: number
+  preisSingulaereBetriebsmittel:
+    $ref: 'Preis.yml'
+  singulaereBetriebsmittel:
+    $ref: 'Menge.yml'
   zaehlzeiten:
-    $ref: "Zaehlzeitregister.yml"
+    $ref: 'Zaehlzeitregister.yml'
+  zahlerBlindarbeit:
+    $ref: 'ZahlerBlindarbeit.yml'
+  zahlerBlindarbeitLf:
+    type: boolean
+  zuschlag:
+    format: float
+    type: number
+type: object

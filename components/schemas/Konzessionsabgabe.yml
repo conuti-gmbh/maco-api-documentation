@@ -1,9 +1,9 @@
-type: object
 properties:
-  satz:
-    $ref: "AbgabeArt.yml"
-  kosten:
-    type: number
-    format: float
   kategorie:
     type: string
+  kosten:
+    format: float
+    type: number
+  satz:
+    $ref: 'AbgabeArt.yml'
+type: object

@@ -1,20 +1,20 @@
-type: object
 properties:
   anfrageSubreferenz:
     type: string
-  gesamtmengeangebotsteil:
-    $ref: "Menge.yml"
   gesamtkostenangebotsteil:
-    $ref: "Betrag.yml"
-  lieferzeitraum:
-    $ref: "Zeitraum.yml"
-  verweisKatalognummer:
-    $ref: "Katalogverweis.yml"
+    $ref: 'Betrag.yml'
+  gesamtmengeangebotsteil:
+    $ref: 'Menge.yml'
   lieferstellenangebotsteil:
-    type: array
     items:
-      $ref: "Marktlokation.yml"
+      $ref: 'Marktlokation.yml'
+    type: array
+  lieferzeitraum:
+    $ref: 'Zeitraum.yml'
   positionen:
-    type: array
     items:
-      $ref: "Angebotsposition.yml"
+      $ref: 'Angebotsposition.yml'
+    type: array
+  verweisKatalognummer:
+    $ref: 'Katalogverweis.yml'
+type: object

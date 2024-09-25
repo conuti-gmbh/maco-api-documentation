@@ -1,61 +1,61 @@
-type: object
 properties:
-  boTyp:
-    type: string
-    default: BILANZIERUNG
-  versionStruktur:
-    type: string
-    default: "1"
-  marktlokationsId:
-    type: string
+  abwicklungsmodell:
+    $ref: 'Abwicklungsmodell.yml'
   aggregationsverantwortung:
-    $ref: "Aggregationsverantwortung.yml"
-  zeitreihentyp:
-    type: string
-  prognosegrundlage:
-    $ref: "Prognosegrundlage.yml"
+    $ref: 'Aggregationsverantwortung.yml'
   bilanzierungsbeginn:
-    type: string
     format: date-time
+    type: string
   bilanzierungsende:
-    type: string
     format: date-time
+    type: string
   bilanzkreis:
     type: string
-  fallgruppenzuordnung:
-    $ref: "Fallgruppenzuordnung.yml"
-  temperaturarbeit:
-    $ref: "Menge.yml"
-  jahresverbrauchsprognose:
-    $ref: "Menge.yml"
-  kundenwert:
-    $ref: "Menge.yml"
-  verbrauchsaufteilung:
-    $ref: "Menge.yml"
-  wahlrechtPrognosegrundlage:
-    $ref: "WahlrechtPrognosegrundlage.yml"
-  grundWahlrechtPrognosegrundlage:
-    $ref: "WahlrechtPrognosegrundlage.yml"
-  abwicklungsmodell:
-    $ref: "Abwicklungsmodell.yml"
-  vorjahresverbrauch:
-    $ref: "Menge.yml"
+  boTyp:
+    default: BILANZIERUNG
+    type: string
   datenqualitaet:
-    $ref: "Datenqualitaet.yml"
+    $ref: 'Datenqualitaet.yml'
+  detailsPrognosegrundlage:
+    items:
+      $ref: 'Profiltyp.yml'
+    type: array
+  fallgruppenzuordnung:
+    $ref: 'Fallgruppenzuordnung.yml'
+  grundWahlrechtPrognosegrundlage:
+    $ref: 'WahlrechtPrognosegrundlage.yml'
+  jahresverbrauchsprognose:
+    $ref: 'Menge.yml'
+  kundenwert:
+    $ref: 'Menge.yml'
+  lastprofile:
+    items:
+      $ref: 'Lastprofil.yml'
+    type: array
+  lastprofileBilanzierungsbeteiligter:
+    items:
+      $ref: 'Lastprofil.yml'
+    type: array
+  marktlokationsId:
+    type: string
+  prognosegrundlage:
+    $ref: 'Prognosegrundlage.yml'
+  temperaturarbeit:
+    $ref: 'Menge.yml'
+  verbrauchsaufteilung:
+    $ref: 'Menge.yml'
+  versionStruktur:
+    default: '1'
+    type: string
+  vorjahresverbrauch:
+    $ref: 'Menge.yml'
+  wahlrechtPrognosegrundlage:
+    $ref: 'WahlrechtPrognosegrundlage.yml'
   zeitraumId:
     type: integer
-  lastprofile:
-    type: array
-    items:
-      $ref: "Lastprofil.yml"
-  lastprofileBilanzierungsbeteiligter:
-    type: array
-    items:
-      $ref: "Lastprofil.yml"
-  detailsPrognosegrundlage:
-    type: array
-    items:
-      $ref: "Profiltyp.yml"
+  zeitreihentyp:
+    type: string
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

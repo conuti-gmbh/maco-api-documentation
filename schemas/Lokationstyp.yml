@@ -1,6 +1,0 @@
-enum:
-- MALO
-- MELO
-- NELO
-- TECHNISCHE_RESSOURCE
-type: string

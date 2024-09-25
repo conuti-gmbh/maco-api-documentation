@@ -1,67 +1,67 @@
-type: object
 properties:
+  baujahr:
+    description: DTM+Z03
+    type: string
+  befestigungsart:
+    $ref: 'Befestigungsart.yml'
   boTyp:
-    type: string
     default: ZAEHLER
-  versionStruktur:
     type: string
-    default: "1"
-  zaehlernummer:
-    type: string
-  sparte:
-    $ref: "Sparte.yml"
-  zaehlerauspraegung:
-    $ref: "Zaehlerauspraegung.yml"
-  zaehlertyp:
-    $ref: "Zaehlertyp.yml"
-  tarifart:
-    $ref: "Tarifart.yml"
-  zaehlerkonstante:
-    type: number
-    format: float
   eichungBis:
-    type: string
     format: date-time
-  zaehlerhersteller:
-    $ref: "Geschaeftspartner.yml"
-  gateway:
     type: string
   fernschaltung:
-    $ref: "Fernschaltung.yml"
-  messwerterfassung:
-    $ref: "Messwerterfassung.yml"
-  zaehlertypspezifikation:
-    $ref: "ZaehlertypSpezifikation.yml"
-  befestigungsart:
-    $ref: "Befestigungsart.yml"
-  zaehlergroesse:
-    $ref: "Geraetemerkmal.yml"
-  mengenumwertertyp:
-    $ref: "Mengenumwertertyp.yml"
-  volumenerfassung:
-    $ref: "Volumenerfassung.yml"
-  serialnummer:
+    $ref: 'Fernschaltung.yml'
+  gateway:
     type: string
+  geraete:
+    items:
+      $ref: 'Geraet.yml'
+    type: array
   geraetemerkmal:
-    $ref: "Geraetemerkmal.yml"
+    $ref: 'Geraetemerkmal.yml'
   herstellungsdatum:
-    type: string
     format: date-time
-  baujahr:
-    type: string
-    description: DTM+Z03
-  messlokationsId:
     type: string
   marktlokationsId:
     type: string
-  geraete:
-    type: array
-    items:
-      $ref: "Geraet.yml"
+  mengenumwertertyp:
+    $ref: 'Mengenumwertertyp.yml'
+  messlokationsId:
+    type: string
+  messwerterfassung:
+    $ref: 'Messwerterfassung.yml'
+  serialnummer:
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  tarifart:
+    $ref: 'Tarifart.yml'
+  versionStruktur:
+    default: '1'
+    type: string
+  volumenerfassung:
+    $ref: 'Volumenerfassung.yml'
+  zaehlerauspraegung:
+    $ref: 'Zaehlerauspraegung.yml'
+  zaehlergroesse:
+    $ref: 'Geraetemerkmal.yml'
+  zaehlerhersteller:
+    $ref: 'Geschaeftspartner.yml'
+  zaehlerkonstante:
+    format: float
+    type: number
+  zaehlernummer:
+    type: string
+  zaehlertyp:
+    $ref: 'Zaehlertyp.yml'
+  zaehlertypspezifikation:
+    $ref: 'ZaehlertypSpezifikation.yml'
   zaehlwerke:
-    type: array
     items:
-      $ref: "Zaehlwerk.yml"
+      $ref: 'Zaehlwerk.yml'
+    type: array
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

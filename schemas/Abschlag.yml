@@ -1,7 +1,0 @@
-properties:
-  prozent:
-    format: float
-    type: number
-  typ:
-    $ref: 'AbschlagTyp.yml'
-type: object

@@ -1,6 +1,6 @@
-type: object
 properties:
-  dienstleistungstyp:
-    $ref: "Dienstleistungstyp.yml"
   bezeichnung:
     type: string
+  dienstleistungstyp:
+    $ref: 'Dienstleistungstyp.yml'
+type: object

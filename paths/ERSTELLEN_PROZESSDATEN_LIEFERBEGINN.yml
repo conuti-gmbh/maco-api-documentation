@@ -37,27 +37,27 @@ post:
           'PI 55002 - ROLLE LF : DATEN AUS ANTWORT NB':
             $ref: '../components/examples/PI_55002.yml'
         schema:
-          $ref: '../schemas/STAMMDATEN_LIEFERBEGINN.yml'
+          $ref: '../components/schemas/STAMMDATEN_LIEFERBEGINN.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/OK_RESPONSE.yml'
+            $ref: '../components/schemas/OK_RESPONSE.yml'
       description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
   tags:

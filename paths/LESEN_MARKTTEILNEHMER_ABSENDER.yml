@@ -33,20 +33,20 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/MARKTTEILNEHMER.yml'
+            $ref: '../components/schemas/MARKTTEILNEHMER.yml'
       description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_MARKTTEILNEHMER_ABSENDER
   tags:

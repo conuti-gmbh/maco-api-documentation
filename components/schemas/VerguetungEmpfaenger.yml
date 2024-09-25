@@ -1,4 +1,4 @@
-type: string
 enum:
-  - KUNDE
-  - LIEFERANT
+- KUNDE
+- LIEFERANT
+type: string

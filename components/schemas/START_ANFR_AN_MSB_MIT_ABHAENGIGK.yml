@@ -1,88 +1,89 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktmarktlokationsId:
-    type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
-  energierichtung:
-    $ref: "Energierichtung.yml"
-  obisKennzahl:
-    type: string
-    default: "SOME_STRING"
-  marktrolle:
-    type: string
-    default: "SOME_STRING"
-  zweck1:
-    type: string
-    default: "SOME_STRING"
-  zweck2:
-    type: string
-    default: "SOME_STRING"
-  marktrolle2:
-    type: string
-    default: "SOME_STRING"
-  zweck3:
-    type: string
-    default: "SOME_STRING"
-  zweck4:
-    type: string
-    default: "SOME_STRING"
-  wertegranularitaet:
-    type: string
-    default: "SOME_STRING"
-  messlokationsId:
-    type: string
-    default: "DE12345678901234567890123456789012"
-  vertragsart:
-    type: string
-    default: "SOME_STRING"
-  vertragsbeginn:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  lokationsTyp:
-    type: string
-    default: "74018657187"
-  zaehlernummer:
-    type: string
-    default: "SOME_STRING"
-  zaehlertyp:
-    type: string
-    default: "SOME_STRING"
-  vorkommastelle:
-    type: string
-    default: "SOME_STRING"
-  nachkommastelle:
-    type: string
-    default: "SOME_STRING"
-  messwerterfassung:
-    type: string
-    default: "SOME_STRING"
-  befestigungsart:
-    type: string
-    default: "SOME_STRING"
-  zaehlergroesse:
-    type: string
-    default: "SOME_STRING"
-  geraetenummer:
-    type: string
-    default: "SOME_STRING"
-  rollencodenummer:
-    type: string
-    default: "SOME_STRING"
-  rollencodetypempfaenger:
-    type: string
-    default: "9900321000005"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
-  rolldencodenummer:
+  befestigungsart:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  rollencodetypabsender:
+  energierichtung:
+    $ref: 'Energierichtung.yml'
+  geraetenummer:
+    default: SOME_STRING
     type: string
-    default: "9900321000005"
   gueltigAb:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  marktrolle:
+    default: SOME_STRING
+    type: string
+  marktrolle2:
+    default: SOME_STRING
+    type: string
+  messlokationsId:
+    default: DE12345678901234567890123456789012
+    type: string
+  messwerterfassung:
+    default: SOME_STRING
+    type: string
+  nachkommastelle:
+    default: SOME_STRING
+    type: string
+  obisKennzahl:
+    default: SOME_STRING
+    type: string
+  rolldencodenummer:
+    default: SOME_STRING
+    type: string
+  rollencodenummer:
+    default: SOME_STRING
+    type: string
+  rollencodetypabsender:
+    default: '9900321000005'
+    type: string
+  rollencodetypempfaenger:
+    default: '9900321000005'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vorkommastelle:
+    default: SOME_STRING
+    type: string
+  wertegranularitaet:
+    default: SOME_STRING
+    type: string
+  zaehlergroesse:
+    default: SOME_STRING
+    type: string
+  zaehlernummer:
+    default: SOME_STRING
+    type: string
+  zaehlertyp:
+    default: SOME_STRING
+    type: string
+  zweck1:
+    default: SOME_STRING
+    type: string
+  zweck2:
+    default: SOME_STRING
+    type: string
+  zweck3:
+    default: SOME_STRING
+    type: string
+  zweck4:
+    default: SOME_STRING
+    type: string
+type: object

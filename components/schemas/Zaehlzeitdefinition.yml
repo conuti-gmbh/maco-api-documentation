@@ -1,34 +1,34 @@
-type: object
 properties:
-  boTyp:
-    type: string
-    default: ZAEHLZEITDEFINITION
-  versionStruktur:
-    type: string
-    default: "1"
   beginndatum:
-    type: string
     format: date-time
-  endedatum:
     type: string
-    format: date-time
-  version:
-    type: string
-    format: date-time
-  notwendigkeit:
-    $ref: "DefinitionenNotwendigkeit.yml"
-  versionsangabe:
+  boTyp:
+    default: ZAEHLZEITDEFINITION
     type: string
   code:
     type: string
+  endedatum:
+    format: date-time
+    type: string
+  notwendigkeit:
+    $ref: 'DefinitionenNotwendigkeit.yml'
+  version:
+    format: date-time
+    type: string
+  versionStruktur:
+    default: '1'
+    type: string
+  versionsangabe:
+    type: string
   zaehlzeiten:
-    type: array
     items:
-      $ref: "Zaehlzeit.yml"
+      $ref: 'Zaehlzeit.yml'
+    type: array
   zaehlzeitregister:
-    type: array
     items:
-      $ref: "Zaehlzeitregister.yml"
+      $ref: 'Zaehlzeitregister.yml'
+    type: array
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

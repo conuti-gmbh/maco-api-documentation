@@ -1,38 +1,39 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktlokationsId:
-    type: string
-    default: "74018657187"
-  lokationsTyp:
-    type: string
-    default: "74018657187"
-  startdatum:
-    type: string
-    default: "2024-01-01T07:40:00Z"
-  enddatum:
-    type: string
-    default: "2024-01-01T07:40:00Z"
-  messwertstatus:
-    type: string
-    default: "SOME_STRING"
-  obiskennzahl:
-    type: string
-    default: "SOME_STRING"
-  wert:
-    type: string
-    default: "SOME_STRING"
-  position:
-    type: string
-    default: "SOME_STRING"
-  leistungsperiode:
-    type: string
-    default: "SOME_STRING"
-  sparte:
-    $ref: "Sparte.yml"
-  empfaenger:
-    type: string
-    default: "9900321000005"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  enddatum:
+    default: '2024-01-01T07:40:00Z'
+    type: string
+  leistungsperiode:
+    default: SOME_STRING
+    type: string
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  messwertstatus:
+    default: SOME_STRING
+    type: string
+  obiskennzahl:
+    default: SOME_STRING
+    type: string
+  position:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  startdatum:
+    default: '2024-01-01T07:40:00Z'
+    type: string
+  wert:
+    default: SOME_STRING
+    type: string
+type: object

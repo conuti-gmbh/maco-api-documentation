@@ -1,83 +1,84 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktlokationsId:
-    type: string
-    default: "9900321000005"
-  sparte:
-    $ref: "Sparte.yml"
-  energierichtung:
-    type: string
-    default: "GAS"
-  vertragsart:
-    type: string
-    default: ENERGIELIEFERVERTRAG
-  vertragsbeginn:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  vertragspartner2Anrede:
-    type: string
-    default: "Herr"
-  vertragspartner2Name1:
-    type: string
-    default: "Mueler"
-  vertragspartner2Name2:
-    type: string
-    default: "Mueler"
-  vertragspartner2Name3:
-    type: string
-    default: "Mueler"
-  vertragspartner2Name4:
-    type: string
-    default: "Mueler"
-  gewerbekennzeichnung:
-    type: string
-    default: "gewerbekennzeichnung"
-  geschaeftspartnerrolle:
-    type: string
-    default: "gewerbekennzeichnung"
-  korrespondenzpartnerAnrede:
-    type: string
-    default: "Herr"
-  korrespondenzpartnerName1:
-    type: string
-    default: "Mueler"
-  korrespondenzpartnerName2:
-    type: string
-    default: "Mueler"
-  korrespondenzpartnerName3:
-    type: string
-    default: "Mueler"
-  korrespondenzpartnerName4:
-    type: string
-    default: "Mueler"
-  postleitzahl:
-    type: string
-    default: "01452"
-  ort:
-    type: string
-    default: "Berlin"
-  strasse:
-    type: string
-    default: "stadtstrasse"
-  hausnummer:
-    type: string
-    default: "1"
-  landescode:
-    type: string
-    default: "de"
-  lokationsId:
-    type: string
-    default: "9900321000005"
-  lokationsTyp:
-    type: string
-    default: "Malo"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  energierichtung:
+    default: GAS
+    type: string
+  geschaeftspartnerrolle:
+    default: gewerbekennzeichnung
+    type: string
+  gewerbekennzeichnung:
+    default: gewerbekennzeichnung
+    type: string
   gueltigAb:
-    type: string
     default: E01
+    type: string
+  hausnummer:
+    default: '1'
+    type: string
+  korrespondenzpartnerAnrede:
+    default: Herr
+    type: string
+  korrespondenzpartnerName1:
+    default: Mueler
+    type: string
+  korrespondenzpartnerName2:
+    default: Mueler
+    type: string
+  korrespondenzpartnerName3:
+    default: Mueler
+    type: string
+  korrespondenzpartnerName4:
+    default: Mueler
+    type: string
+  landescode:
+    default: de
+    type: string
+  lokationsId:
+    default: '9900321000005'
+    type: string
+  lokationsTyp:
+    default: Malo
+    type: string
+  marktlokationsId:
+    default: '9900321000005'
+    type: string
+  ort:
+    default: Berlin
+    type: string
+  postleitzahl:
+    default: '01452'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  strasse:
+    default: stadtstrasse
+    type: string
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vertragspartner2Anrede:
+    default: Herr
+    type: string
+  vertragspartner2Name1:
+    default: Mueler
+    type: string
+  vertragspartner2Name2:
+    default: Mueler
+    type: string
+  vertragspartner2Name3:
+    default: Mueler
+    type: string
+  vertragspartner2Name4:
+    default: Mueler
+    type: string
+type: object

@@ -1,21 +1,21 @@
-type: object
 properties:
   boTyp:
-    type: string
     default: VERWENDUNGSZEITRAUM
+    type: string
+  qualitaet:
+    $ref: 'Verwendungszeitraumqualitaet.yml'
   versionStruktur:
+    default: '1'
     type: string
-    default: "1"
   verwendungAb:
-    type: string
     format: date-time
+    type: string
   verwendungBis:
-    type: string
     format: date-time
+    type: string
   zeitraumId:
     type: integer
-  qualitaet:
-    $ref: "Verwendungszeitraumqualitaet.yml"
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

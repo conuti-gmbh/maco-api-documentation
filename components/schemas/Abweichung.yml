@@ -1,12 +1,21 @@
-type: object
 properties:
+  abschlagsrechnungen:
+    items:
+      type: string
+    type: array
   abweichungsgrund:
-    $ref: "Abweichungsgrund.yml"
+    $ref: 'Abweichungsgrund.yml'
   abweichungsgrundBemerkung:
     type: string
-  zugehoerigeRechnung:
+  abweichungsgrundBemerkung1:
     type: string
-  zugehoerigeBestellung:
+  abweichungsgrundBemerkung2:
+    type: string
+  abweichungsgrundBemerkung3:
+    type: string
+  abweichungsgrundBemerkung4:
+    type: string
+  abweichungsgrundBemerkung5:
     type: string
   abweichungsgrundCode:
     type: string
@@ -22,19 +31,10 @@ properties:
     type: string
   fehlendePositionen5:
     type: string
-  abweichungsgrundBemerkung1:
-    type: string
-  abweichungsgrundBemerkung2:
-    type: string
-  abweichungsgrundBemerkung3:
-    type: string
-  abweichungsgrundBemerkung4:
-    type: string
-  abweichungsgrundBemerkung5:
-    type: string
   referenz:
     type: string
-  abschlagsrechnungen:
-    type: array
-    items:
-      type: string
+  zugehoerigeBestellung:
+    type: string
+  zugehoerigeRechnung:
+    type: string
+type: object

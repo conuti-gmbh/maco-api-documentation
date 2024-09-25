@@ -1,6 +1,6 @@
-type: object
 properties:
-  objectcode:
-    type: string
   lokationsbuendelNummer:
     type: integer
+  objectcode:
+    type: string
+type: object

@@ -33,20 +33,20 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Vertrag.yml'
+            $ref: '../components/schemas/Vertrag.yml'
       description: Erfolgreiches Lesen des Messstellenbetriebsvertrages | Successful
         reading of metering contract
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
   tags:

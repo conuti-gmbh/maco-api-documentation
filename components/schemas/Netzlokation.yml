@@ -1,45 +1,45 @@
-type: object
 properties:
+  abrechnungsdaten:
+    items:
+      $ref: 'Netznutzungsabrechnungsdaten.yml'
+    type: array
+  auftraggebenderMarktpartner:
+    $ref: 'Marktteilnehmer.yml'
   boTyp:
-    type: string
     default: NETZLOKATION
-  versionStruktur:
-    type: string
-    default: "1"
-  netzlokationsId:
-    type: string
-  sparte:
-    $ref: "Sparte.yml"
-  netzanschlussleistung:
     type: string
   grundzustaendigerMSBCodeNr:
     type: string
-  steuerkanal:
-    type: boolean
-  lokationszuordnung:
-    $ref: "Lokationszuordnung.yml"
-  produktdatenRelevanteRolle:
-    $ref: "Marktrolle.yml"
-  auftraggebenderMarktpartner:
-    $ref: "Marktteilnehmer.yml"
-  konfigurationsprodukt:
-    type: string
   keinKonfigurationsprodukt:
     type: boolean
+  konfigurationsprodukt:
+    type: string
   leistungskurvendefinition:
     type: string
+  lokationszuordnung:
+    $ref: 'Lokationszuordnung.yml'
   marktrollen:
-    type: array
     items:
-      $ref: "Marktteilnehmer.yml"
+      $ref: 'Marktteilnehmer.yml'
+    type: array
+  netzanschlussleistung:
+    type: string
+  netzlokationsId:
+    type: string
+  produktdatenRelevanteRolle:
+    $ref: 'Marktrolle.yml'
+  sparte:
+    $ref: 'Sparte.yml'
+  steuerkanal:
+    type: boolean
+  versionStruktur:
+    default: '1'
+    type: string
   zaehlwerke:
-    type: array
     items:
-      $ref: "Zaehlwerk.yml"
-  abrechnungsdaten:
+      $ref: 'Zaehlwerk.yml'
     type: array
-    items:
-      $ref: "Netznutzungsabrechnungsdaten.yml"
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

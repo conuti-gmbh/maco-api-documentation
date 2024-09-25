@@ -1,12 +1,12 @@
-type: object
 properties:
+  abweichungsgrundBemerkung:
+    type: string
   abweichungsgrundCode:
     type: string
   abweichungsgrundCodeliste:
     type: string
-  abweichungsgrundBemerkung:
+  zugehoerigeBestellung:
     type: string
   zugehoerigeRechnung:
     type: string
-  zugehoerigeBestellung:
-    type: string
+type: object

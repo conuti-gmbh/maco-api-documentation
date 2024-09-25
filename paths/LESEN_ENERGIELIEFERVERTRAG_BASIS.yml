@@ -33,20 +33,20 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/ENERGIEVERTRAG.yml'
+            $ref: '../components/schemas/ENERGIEVERTRAG.yml'
       description: Erfolgreiches Lesen des Energieliefervertrages | Successful reading
         of energy delivery contract
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_ENERGIELIEFERVERTRAG_BASIS
   tags:

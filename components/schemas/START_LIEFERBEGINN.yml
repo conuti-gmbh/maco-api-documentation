@@ -1,68 +1,68 @@
-type: object
-description: Schema für Lieferbeginn | Schema for the delivery start
+description: "Schema f\xFCr Lieferbeginn | Schema for the delivery start"
 properties:
-  id:
+  absender:
+    default: '9900321000005'
     type: string
-    example: "110000000605"
-  marktlokationsId:
+  anrede:
+    default: Musteranrede
     type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
-  energierichtung:
-    $ref: "Energierichtung.yml"
-  verguetungEmpfaenger:
-    $ref: "VerguetungEmpfaenger.yml"
   bilanzkreis:
-    type: string
     default: 11X----123456
-  vertragsbeginn:
     type: string
-    default: "2024-04-01T07:40:00Z"
-  vertragsende:
+  empfaenger:
+    default: '9900321000005'
     type: string
-    default: "2024-04-01T07:40:00Z"
-  haushaltskunde:
-    type: boolean
+  energierichtung:
+    $ref: 'Energierichtung.yml'
   gewerbekennzeichnung:
     type: boolean
-  anrede:
-    type: string
-    default: Musteranrede
-  name1:
-    type: string
-    default: Mustername1
-  name2:
-    type: string
-    default: Mustername2
-  postleitzahl:
-    type: string
-    default: "12345"
-  ort:
-    type: string
-    default: Musterort
-  strasse:
-    type: string
-    default: Musterstrasse
+  haushaltskunde:
+    type: boolean
   hausnummer:
-    type: string
     default: 11a
+    type: string
+  id:
+    example: '110000000605'
+    type: string
   landescode:
-    type: string
     default: DE
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  name1:
+    default: Mustername1
+    type: string
+  name2:
+    default: Mustername2
+    type: string
+  ort:
+    default: Musterort
+    type: string
   ortsteil:
-    type: string
     default: Musterortsteil
-  empfaenger:
     type: string
-    default: "9900321000005"
+  postleitzahl:
+    default: '12345'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  strasse:
+    default: Musterstrasse
+    type: string
   transaktionsgrund:
-    type: string
     default: E01
+    type: string
   transaktionsgrundergaenzung:
     type: string
   transaktionsgrundergaenzungBefristeteAnmeldung:
     type: string
-  absender:
+  verguetungEmpfaenger:
+    $ref: 'VerguetungEmpfaenger.yml'
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
     type: string
-    default: "9900321000005"
+  vertragsende:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+type: object

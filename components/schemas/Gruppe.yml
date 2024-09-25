@@ -1,6 +1,6 @@
-type: object
 properties:
   gruppe1:
     type: string
   gruppe2:
     type: string
+type: object

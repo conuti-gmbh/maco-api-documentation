@@ -1,123 +1,124 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  messlokationsId:
-    type: string
-    default: "SOME_STRING"
-  sparte:
-    type: string
-    default: "SOME_STRING"
-  messadressePostleitzahl:
-    type: string
-    default: "SOME_STRING"
-  messadresseOrt:
-    type: string
-    default: "SOME_STRING"
-  messadresseStrasse:
-    type: string
-    default: "SOME_STRING"
-  messadresseHausnummer:
-    type: string
-    default: "SOME_STRING"
-  messadresseLandescode:
-    type: string
-    default: "SOME_STRING"
-  messadresseZusatz1:
-    type: string
-    default: "SOME_STRING"
-  messadresseZusatz2:
-    type: string
-    default: "SOME_STRING"
-  aleGeschaeftspartnerrolle:
-    type: string
-    default: "SOME_STRING"
-  aleGewerbekennzeichnung:
-    type: string
-    default: "SOME_STRING"
-  aleName1:
-    type: string
-    default: "SOME_STRING"
-  aleName2:
-    type: string
-    default: "SOME_STRING"
-  alePostleitzahl:
-    type: string
-    default: "SOME_STRING"
-  aleOrt:
-    type: string
-    default: "SOME_STRING"
-  aleStrasse:
-    type: string
-    default: "SOME_STRING"
-  aleHausnummer:
-    type: string
-    default: "SOME_STRING"
-  aleLandescode:
-    type: string
-    default: "SOME_STRING"
-  vertragsartNn:
-    type: string
-    default: "SOME_STRING"
-  vertragsbeginn:
-    type: string
-    default: "SOME_STRING"
-  lokationsId:
-    type: string
-    default: "SOME_STRING"
-  lokationsTyp:
-    type: string
-    default: "SOME_STRING"
-  vertragsartMsb:
-    type: string
-    default: "SOME_STRING"
-  vp2Geschaeftspartnerrolle:
-    type: string
-    default: "SOME_STRING"
-  vp2Gewerbekennzeichnung:
-    type: string
-    default: "SOME_STRING"
-  vp2Name1:
-    type: string
-    default: "SOME_STRING"
-  vp2Name2:
-    type: string
-    default: "SOME_STRING"
-  kpName1:
-    type: string
-    default: "SOME_STRING"
-  kpName2:
-    type: string
-    default: "SOME_STRING"
-  kpGewerbekennzeichnung:
-    type: string
-    default: "SOME_STRING"
-  kpPostleitzahl:
-    type: string
-    default: "SOME_STRING"
-  kpOrt:
-    type: string
-    default: "SOME_STRING"
-  kpStrasse:
-    type: string
-    default: "SOME_STRING"
-  kpHausnummer:
-    type: string
-    default: "SOME_STRING"
-  landescode:
-    type: string
-    default: "SOME_STRING"
-  empfaenger:
-    type: string
-    default: "SOME_STRING"
-  rollencodetypEmpfaenger:
-    type: string
-    default: "SOME_STRING"
   absender:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  rollencodetypAbsender:
+  aleGeschaeftspartnerrolle:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  aleGewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  aleHausnummer:
+    default: SOME_STRING
+    type: string
+  aleLandescode:
+    default: SOME_STRING
+    type: string
+  aleName1:
+    default: SOME_STRING
+    type: string
+  aleName2:
+    default: SOME_STRING
+    type: string
+  aleOrt:
+    default: SOME_STRING
+    type: string
+  alePostleitzahl:
+    default: SOME_STRING
+    type: string
+  aleStrasse:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: SOME_STRING
+    type: string
   gueltigAb:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  kpGewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  kpHausnummer:
+    default: SOME_STRING
+    type: string
+  kpName1:
+    default: SOME_STRING
+    type: string
+  kpName2:
+    default: SOME_STRING
+    type: string
+  kpOrt:
+    default: SOME_STRING
+    type: string
+  kpPostleitzahl:
+    default: SOME_STRING
+    type: string
+  kpStrasse:
+    default: SOME_STRING
+    type: string
+  landescode:
+    default: SOME_STRING
+    type: string
+  lokationsId:
+    default: SOME_STRING
+    type: string
+  lokationsTyp:
+    default: SOME_STRING
+    type: string
+  messadresseHausnummer:
+    default: SOME_STRING
+    type: string
+  messadresseLandescode:
+    default: SOME_STRING
+    type: string
+  messadresseOrt:
+    default: SOME_STRING
+    type: string
+  messadressePostleitzahl:
+    default: SOME_STRING
+    type: string
+  messadresseStrasse:
+    default: SOME_STRING
+    type: string
+  messadresseZusatz1:
+    default: SOME_STRING
+    type: string
+  messadresseZusatz2:
+    default: SOME_STRING
+    type: string
+  messlokationsId:
+    default: SOME_STRING
+    type: string
+  rollencodetypAbsender:
+    default: SOME_STRING
+    type: string
+  rollencodetypEmpfaenger:
+    default: SOME_STRING
+    type: string
+  sparte:
+    default: SOME_STRING
+    type: string
+  vertragsartMsb:
+    default: SOME_STRING
+    type: string
+  vertragsartNn:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: SOME_STRING
+    type: string
+  vp2Geschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  vp2Gewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  vp2Name1:
+    default: SOME_STRING
+    type: string
+  vp2Name2:
+    default: SOME_STRING
+    type: string
+type: object

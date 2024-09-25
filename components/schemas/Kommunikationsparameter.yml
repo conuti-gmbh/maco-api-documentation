@@ -1,8 +1,8 @@
-type: object
 properties:
-  zieladresse:
-    $ref: "Zieladresse.yml"
   zertifikatsAussteller:
-    $ref: "ZertifikatsAussteller.yml"
+    $ref: 'ZertifikatsAussteller.yml'
   zertifikatsNutzer:
-    $ref: "ZertifikatsNutzer.yml"
+    $ref: 'ZertifikatsNutzer.yml'
+  zieladresse:
+    $ref: 'Zieladresse.yml'
+type: object

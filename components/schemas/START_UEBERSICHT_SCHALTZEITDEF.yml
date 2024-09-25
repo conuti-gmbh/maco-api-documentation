@@ -1,53 +1,54 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  beginndatum:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  version:
-    type: string
-    default: "SOME_STRING"
-  notwendigkeit:
-    type: string
-    default: "SOME_STRING"
-  code:
-    type: string
-    default: "SOME_STRING"
-  haeufigkeit:
-    type: string
-    default: "SOME_STRING"
-  uebermittelbarkeit:
-    type: string
-    default: "SOME_STRING"
-  ermittlungLeistungsmaximum:
-    type: string
-    default: "SOME_STRING"
-  istBestellbar:
-    type: string
-    default: "SOME_STRING"
-  typ:
-    type: string
-    default: "SOME_STRING"
-  beschreibungTyp:
-    type: string
-    default: "SOME_STRING"
-  zaehlzeitDefinition:
-    type: string
-    default: "SOME_STRING"
-  register:
-    type: string
-    default: "SOME_STRING"
-  schwachlastfaehig:
-    type: string
-    default: "SOME_STRING"
-  sparte:
-    $ref: "Sparte.yml"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
-  empfaenger:
-    type: string
-    default: "9900321000005"
   anfrageReferenz:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  beginndatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  beschreibungTyp:
+    default: SOME_STRING
+    type: string
+  code:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  ermittlungLeistungsmaximum:
+    default: SOME_STRING
+    type: string
+  haeufigkeit:
+    default: SOME_STRING
+    type: string
+  istBestellbar:
+    default: SOME_STRING
+    type: string
+  notwendigkeit:
+    default: SOME_STRING
+    type: string
+  register:
+    default: SOME_STRING
+    type: string
+  schwachlastfaehig:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  typ:
+    default: SOME_STRING
+    type: string
+  uebermittelbarkeit:
+    default: SOME_STRING
+    type: string
+  version:
+    default: SOME_STRING
+    type: string
+  zaehlzeitDefinition:
+    default: SOME_STRING
+    type: string
+type: object

@@ -1,12 +1,12 @@
-type: object
 properties:
+  arithmetik:
+    $ref: 'ArithmetischeOperation.yml'
+  gueltigBis:
+    format: date-time
+    type: string
+  gueltigSeit:
+    format: date-time
+    type: string
   messlokationsId:
     type: string
-  arithmetik:
-    $ref: "ArithmetischeOperation.yml"
-  gueltigSeit:
-    type: string
-    format: date-time
-  gueltigBis:
-    type: string
-    format: date-time
+type: object

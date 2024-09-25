@@ -1,18 +1,18 @@
-type: object
 properties:
-  geraetetyp:
-    $ref: "Geraetetyp.yml"
   bezeichnung:
     type: string
+  geraeteeigenschaften:
+    $ref: 'Geraeteeigenschaften.yml'
   geraetenummer:
     type: string
   geraetereferenz:
     type: string
-  geraeteeigenschaften:
-    $ref: "Geraeteeigenschaften.yml"
+  geraetetyp:
+    $ref: 'Geraetetyp.yml'
   volumenerfassung:
-    $ref: "Volumenerfassung.yml"
+    $ref: 'Volumenerfassung.yml'
   weitereGeraetenummern:
-    type: array
     items:
       type: string
+    type: array
+type: object

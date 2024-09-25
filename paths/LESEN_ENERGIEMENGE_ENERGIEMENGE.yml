@@ -1,4 +1,5 @@
 get:
+  summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
   description:
     "Lesen einer Energiemenge \xFCber eine Lokation (Parameter1) in einer\
     \ Range (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4 optional)\
@@ -51,7 +52,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../schemas/Energiemenge.yml"
+            $ref: '../components/schemas/Energiemenge.yml'
       description:
         Erfolgreiches Lesen der Energiemenge | Successful reading of the
         energy quantity
@@ -59,14 +60,11 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../schemas/ERROR_RESPONSE.yml"
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     "422":
       content:
         application/json:
           schema:
-            $ref: "../schemas/ERROR_RESPONSE.yml"
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
-  summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
-  tags:
-    - LESEN | READ
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request

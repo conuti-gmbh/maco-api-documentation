@@ -1,25 +1,25 @@
-type: object
 properties:
   boTyp:
-    type: string
     default: REKLAMATION
-  versionStruktur:
     type: string
-    default: "1"
+  konfiguration:
+    type: string
   lokationsId:
     type: string
   lokationsTyp:
-    $ref: "Lokationstyp.yml"
+    $ref: 'Lokationstyp.yml'
   obiskennzahl:
     type: string
-  zeitraumMesswertanfrage:
-    $ref: "Zeitraum.yml"
   reklamationsgrund:
-    $ref: "Reklamationsgrund.yml"
+    $ref: 'Reklamationsgrund.yml'
   reklamationsgrundBemerkung:
-    $ref: "ReklamationsgrundBemerkung.yml"
-  konfiguration:
+    $ref: 'ReklamationsgrundBemerkung.yml'
+  versionStruktur:
+    default: '1'
     type: string
+  zeitraumMesswertanfrage:
+    $ref: 'Zeitraum.yml'
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

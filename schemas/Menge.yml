@@ -1,7 +1,0 @@
-properties:
-  einheit:
-    $ref: 'Mengeneinheit.yml'
-  wert:
-    format: float
-    type: number
-type: object

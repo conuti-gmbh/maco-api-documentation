@@ -54,10 +54,10 @@ post:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/Error.yml"
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
     "422":
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/Error.yml"
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'

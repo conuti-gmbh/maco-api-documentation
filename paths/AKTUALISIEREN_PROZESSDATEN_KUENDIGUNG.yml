@@ -31,27 +31,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Marktteilnehmer.yml'
+          $ref: '../components/schemas/Marktteilnehmer.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Kommunikationsdaten.yml'
+            $ref: '../components/schemas/Kommunikationsdaten.yml'
       description: Erfolgreiches Aktualisieren der Kommunikationsdaten | Successful
         updating of communication data
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
   tags:

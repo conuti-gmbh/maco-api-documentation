@@ -1,38 +1,39 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  netzlokationsId:
-    type: string
-    default: "9900321000005"
-  marktrolle:
-    type: string
-    default: "malo"
-  gewerbekennzeichnung:
-    type: string
-    default: "gewerbekennzeichnung"
-  rollencodenummer:
-    type: string
-    default: "9900321000005"
-  rollencodetyp:
-    type: string
-    default: "test"
-  messstellenbetreiberEigenschaft:
-    type: string
-    default: "messstellenbetreiberEigenschaft"
-  vertragsart:
-    type: string
-    default: "ENERGIELIEFERVERTRAG"
-  vertragsbeginn:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  empfaenger:
-    type: string
-    default: "9900321000005"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
-  sparte:
-    $ref: "Sparte.yml"
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  gewerbekennzeichnung:
+    default: gewerbekennzeichnung
+    type: string
   gueltigAb:
+    default: E01
     type: string
-    default: "E01"
+  marktrolle:
+    default: malo
+    type: string
+  messstellenbetreiberEigenschaft:
+    default: messstellenbetreiberEigenschaft
+    type: string
+  netzlokationsId:
+    default: '9900321000005'
+    type: string
+  rollencodenummer:
+    default: '9900321000005'
+    type: string
+  rollencodetyp:
+    default: test
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+type: object

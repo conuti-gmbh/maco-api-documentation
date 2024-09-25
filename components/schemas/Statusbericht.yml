@@ -1,20 +1,20 @@
-type: object
 properties:
   boTyp:
-    type: string
     default: STATUSBERICHT
-  versionStruktur:
-    type: string
-    default: "1"
-  status:
-    $ref: "BerichtStatus.yml"
-  pruefgegenstand:
     type: string
   datumPruefung:
-    type: string
     format: date-time
+    type: string
   fehler:
-    $ref: "Fehler.yml"
+    $ref: 'Fehler.yml'
+  pruefgegenstand:
+    type: string
+  status:
+    $ref: 'BerichtStatus.yml'
+  versionStruktur:
+    default: '1'
+    type: string
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

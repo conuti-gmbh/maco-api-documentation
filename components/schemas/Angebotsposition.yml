@@ -1,18 +1,18 @@
-type: object
 properties:
+  artikelId:
+    items:
+      type: string
+    type: array
+  artikelnummer:
+    $ref: 'BDEWArtikelnummer.yml'
+  positionsbetrag:
+    $ref: 'Betrag.yml'
   positionsbezeichung:
     type: string
   positionsmenge:
-    $ref: "Menge.yml"
+    $ref: 'Menge.yml'
   positionspreis:
-    $ref: "Preis.yml"
-  positionsbetrag:
-    $ref: "Betrag.yml"
+    $ref: 'Preis.yml'
   preisschluesselstamm:
     type: string
-  artikelnummer:
-    $ref: "BDEWArtikelnummer.yml"
-  artikelId:
-    type: array
-    items:
-      type: string
+type: object

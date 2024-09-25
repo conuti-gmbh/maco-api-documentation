@@ -32,27 +32,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Marktteilnehmer.yml'
+          $ref: '../components/schemas/Marktteilnehmer.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/OK_RESPONSE.yml'
+            $ref: '../components/schemas/OK_RESPONSE.yml'
       description: "Erfolgreiches L\xF6schen der Kommunikationsdaten | Successful\
         \ deleting of communication data"
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
   tags:

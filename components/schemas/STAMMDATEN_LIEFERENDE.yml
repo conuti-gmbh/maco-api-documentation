@@ -23,10 +23,6 @@ properties:
         type: array
         items:
           $ref: "Vertrag.yml"
-      ENERGIELIEFERVERTRAG:
-        type: array
-        items:
-          $ref: "Vertrag.yml"
       ENERGIEMENGE:
         type: array
         items:

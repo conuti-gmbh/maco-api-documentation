@@ -49,27 +49,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Lokationsbuendel.yml'
+          $ref: '../components/schemas/Lokationsbuendel.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Lokationsbuendel.yml'
+            $ref: '../components/schemas/Lokationsbuendel.yml'
       description: "Erfolgreiches Aktualisieren des Lokationsb\xFCndels | Successful\
         \ updating of the location bundle"
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: AKTUALISIEREN_NETZNUTZUNGSVERTRAG_BASIS
   tags:

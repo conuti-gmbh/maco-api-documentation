@@ -1,35 +1,36 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  netzmarktlokationsId:
-    type: string
-    default: "74018657187"
-  artikelId:
-    type: string
-    default: "SOME_STRING"
-  artikelIdTyp:
-    type: string
-    default: "SOME_STRING"
   abrechnungBlindarbeit:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  zahlerBlindarbeit:
-    type: string
-    default: "SOME_STRING"
-  vertragsart:
-    type: string
-    default: "SOME_STRING"
-  vertragsbeginn:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  empfaenger:
-    type: string
-    default: "9900321000005"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
-  sparte:
-    $ref: "Sparte.yml"
+  artikelId:
+    default: SOME_STRING
+    type: string
+  artikelIdTyp:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
   gueltigAb:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  netzmarktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  zahlerBlindarbeit:
+    default: SOME_STRING
+    type: string
+type: object

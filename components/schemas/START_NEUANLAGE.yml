@@ -1,70 +1,71 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktmarktlokationsId:
-    type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
   energierichtung:
-    $ref: "Energierichtung.yml"
-  vertragsbeginn:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  vertragsende:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  haushaltskunde:
-    type: string
-    default: "SOME_STRING"
+    $ref: 'Energierichtung.yml'
   gewerbekennzeichnung:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  vpanrede:
+  haushaltskunde:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  vpname1:
-    type: string
-    default: "SOME_STRING"
-  vpname2:
-    type: string
-    default: "SOME_STRING"
-  kename2:
-    type: string
-    default: "SOME_STRING"
-  kegewerbekennzeichnung:
-    type: string
-    default: "SOME_STRING"
-  keplz:
-    type: string
-    default: "SOME_STRING"
-  keort:
-    type: string
-    default: "Berlin"
-  kestrasse:
-    type: string
-    default: "SOME_STRING"
-  kehausnummer:
-    type: string
-    default: "123"
   keLandescode:
+    default: de
     type: string
-    default: "de"
+  kegewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  kehausnummer:
+    default: '123'
+    type: string
+  kename2:
+    default: SOME_STRING
+    type: string
+  keort:
+    default: Berlin
+    type: string
   keortsteil:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  keplz:
+    default: SOME_STRING
+    type: string
+  kestrasse:
+    default: SOME_STRING
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
   messageReceiver:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
-  transaktonsgrund:
-    type: string
-    default: "SOME_STRING"
-  transaktionsgrundergaenzung:
-    type: string
-    default: "SOME_STRING"
-  transaktionsgrundergaenzungBefristeteAnmeldung:
-    type: string
-    default: "SOME_STRING"
   messageSender:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  sparte:
+    $ref: 'Sparte.yml'
+  transaktionsgrundergaenzung:
+    default: SOME_STRING
+    type: string
+  transaktionsgrundergaenzungBefristeteAnmeldung:
+    default: SOME_STRING
+    type: string
+  transaktonsgrund:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vertragsende:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vpanrede:
+    default: SOME_STRING
+    type: string
+  vpname1:
+    default: SOME_STRING
+    type: string
+  vpname2:
+    default: SOME_STRING
+    type: string
+type: object

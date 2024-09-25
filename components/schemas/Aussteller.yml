@@ -1,4 +1,3 @@
-type: object
 properties:
   aussteller1:
     type: string
@@ -10,3 +9,4 @@ properties:
     type: string
   aussteller5:
     type: string
+type: object

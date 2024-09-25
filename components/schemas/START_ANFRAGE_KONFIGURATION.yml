@@ -1,29 +1,30 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  sparte:
-    $ref: "Sparte.yml"
-  ressourcenId:
-    type: string
-    default: "SOME_STRING"
-  code:
-    type: string
-    default: "SOME_STRING"
-  konfigurationsprodukt:
-    type: string
-    default: "SOME_STRING"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  code:
+    default: SOME_STRING
+    type: string
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  konfigurationsprodukt:
+    default: SOME_STRING
+    type: string
   lieferdatum:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
   nachrichtenReferenzBestellbestaetigung:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  ressourcenId:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
   vorgangsReferenzBestellbestaetigung:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+type: object

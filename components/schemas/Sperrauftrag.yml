@@ -1,25 +1,25 @@
-type: object
 properties:
   boTyp:
-    type: string
     default: SPERRAUFTRAG
-  versionStruktur:
-    type: string
-    default: "1"
-  treffpunkt:
-    $ref: "Adresse.yml"
-  sperrauftragsart:
-    $ref: "Sperrauftragsart.yml"
-  sperrauftragsstatus:
-    $ref: "Auftragsstatus.yml"
-  sperrauftragsablehngrund:
-    $ref: "Sperrauftragsablehngrund.yml"
-  sperrauftragsverhinderungsgrund:
-    $ref: "Sperrauftragsverhinderungsgrund.yml"
-  zaehlernummer:
     type: string
   istVomGerichtsvollzieherAngeordnet:
     type: boolean
+  sperrauftragsablehngrund:
+    $ref: 'Sperrauftragsablehngrund.yml'
+  sperrauftragsart:
+    $ref: 'Sperrauftragsart.yml'
+  sperrauftragsstatus:
+    $ref: 'Auftragsstatus.yml'
+  sperrauftragsverhinderungsgrund:
+    $ref: 'Sperrauftragsverhinderungsgrund.yml'
+  treffpunkt:
+    $ref: 'Adresse.yml'
+  versionStruktur:
+    default: '1'
+    type: string
+  zaehlernummer:
+    type: string
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

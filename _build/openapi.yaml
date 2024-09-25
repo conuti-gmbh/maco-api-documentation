@@ -428,6 +428,7 @@ paths:
         - AKTUALISIEREN | UPDATE
   /LESEN_ENERGIEMENGE_ENERGIEMENGE:
     get:
+      summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
       description: Lesen einer Energiemenge über eine Lokation (Parameter1) in einer Range (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4 optional) | Reading an energy quantity for a location (Parameter1) in a range (Parameter2/Parameter3) and an OBIS code (Parameter4 optional)
       operationId: LESEN_ENERGIEMENGE_ENERGIEMENGE
       parameters:
@@ -489,10 +490,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/paths/~1LESEN_AVIS_BASIS/get/responses/400/content/application~1json/schema'
-          description: Nicht verarbeitbare Anfrage | Unprocessable Request
-      summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
-      tags:
-        - LESEN | READ
+          description: Fehlerhafte Anfrage | Bad Request
   /ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND:
     post:
       description: Schreiben eines Zählerstands über eine Lokation (Parameter1) zu einem Zeitpunkt (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4) | Writing a meter reading for a location (Parameter1) at a point in time (Parameter2/Parameter3) and an OBIS code (Parameter4)
@@ -3338,80 +3336,74 @@ paths:
         content:
           application/json:
             schema:
-              type: object
               description: Schema für Lieferbeginn | Schema for the delivery start
               properties:
-                id:
+                absender:
+                  default: '9900321000005'
                   type: string
-                  example: '110000000605'
-                marktlokationsId:
+                anrede:
+                  default: Musteranrede
                   type: string
-                  default: '74018657187'
-                sparte:
-                  $ref: '#/paths/~1LESEN_EVENT_START_KUENDIGUNG/post/requestBody/content/application~1json/schema/properties/sparte'
-                energierichtung:
-                  type: string
-                  enum:
-                    - AUSSP
-                    - EINSP
-                verguetungEmpfaenger:
-                  type: string
-                  enum:
-                    - KUNDE
-                    - LIEFERANT
                 bilanzkreis:
-                  type: string
                   default: 11X----123456
-                vertragsbeginn:
                   type: string
-                  default: '2024-04-01T07:40:00Z'
-                vertragsende:
+                empfaenger:
+                  default: '9900321000005'
                   type: string
-                  default: '2024-04-01T07:40:00Z'
-                haushaltskunde:
-                  type: boolean
+                energierichtung:
+                  $ref: '#/paths/~1AKTUALISIEREN_TRANCHE_BASIS/post/requestBody/content/application~1json/schema/properties/energierichtung'
                 gewerbekennzeichnung:
                   type: boolean
-                anrede:
-                  type: string
-                  default: Musteranrede
-                name1:
-                  type: string
-                  default: Mustername1
-                name2:
-                  type: string
-                  default: Mustername2
-                postleitzahl:
-                  type: string
-                  default: '12345'
-                ort:
-                  type: string
-                  default: Musterort
-                strasse:
-                  type: string
-                  default: Musterstrasse
+                haushaltskunde:
+                  type: boolean
                 hausnummer:
-                  type: string
                   default: 11a
+                  type: string
+                id:
+                  example: '110000000605'
+                  type: string
                 landescode:
-                  type: string
                   default: DE
+                  type: string
+                marktlokationsId:
+                  default: '74018657187'
+                  type: string
+                name1:
+                  default: Mustername1
+                  type: string
+                name2:
+                  default: Mustername2
+                  type: string
+                ort:
+                  default: Musterort
+                  type: string
                 ortsteil:
-                  type: string
                   default: Musterortsteil
-                empfaenger:
                   type: string
-                  default: '9900321000005'
+                postleitzahl:
+                  default: '12345'
+                  type: string
+                sparte:
+                  $ref: '#/paths/~1AKTUALISIEREN_TRANCHE_BASIS/post/requestBody/content/application~1json/schema/properties/sparte'
+                strasse:
+                  default: Musterstrasse
+                  type: string
                 transaktionsgrund:
-                  type: string
                   default: E01
+                  type: string
                 transaktionsgrundergaenzung:
                   type: string
                 transaktionsgrundergaenzungBefristeteAnmeldung:
                   type: string
-                absender:
+                verguetungEmpfaenger:
+                  $ref: '#/paths/~1AKTUALISIEREN_TRANCHE_BASIS/post/requestBody/content/application~1json/schema/properties/verguetungEmpfaenger'
+                vertragsbeginn:
+                  default: '2024-04-01T07:40:00Z'
                   type: string
-                  default: '9900321000005'
+                vertragsende:
+                  default: '2024-04-01T07:40:00Z'
+                  type: string
+              type: object
       responses:
         '200':
           description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading of communication data
@@ -3424,38 +3416,13 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                description: Fehlermeldung auf Prozessdaten API Aufruf | Error message on process data API call
-                properties:
-                  errorCode:
-                    type: string
-                    description: Error identifier
-                    example: '400'
-                  message:
-                    type: string
-                    description: Technische Meldung | Technische Meldung
-                    example: Validation Failed
-                  errors:
-                    type: array
-                    description: Sammlung von Fehlercodes in einem Bucket | Collection of error codes in a bucket
-                    items:
-                      type: object
-                      properties:
-                        code:
-                          type: string
-                          example: 5432
-                        field:
-                          type: string
-                          example: first_name
-                        message:
-                          type: string
-                          example: First name cannot have fancy characters
+                $ref: '#/paths/~1LESEN_AVIS_BASIS/get/responses/400/content/application~1json/schema'
         '422':
           description: Nicht verarbeitbare Anfrage | Unprocessable Request
           content:
             application/json:
               schema:
-                $ref: '#/paths/~1LESEN_EVENT_START_LIEFERBEGINN/post/responses/400/content/application~1json/schema'
+                $ref: '#/paths/~1LESEN_AVIS_BASIS/get/responses/400/content/application~1json/schema'
   /LESEN_MESSLOKATIONS_BASIS:
     get:
       description: Ändert einen Netznutzungsvertrag mittels LokationsId  (Parameter1)  zum Zeitpunkt (Parameter2) | Changes a network usage contract using LocationId (Parameter1) at time (Parameter2)
@@ -4524,33 +4491,26 @@ paths:
         content:
           application/json:
             schema:
-              type: object
               description: Schema für Lieferende | Scheme for termination
               properties:
-                marktlokationsId:
-                  type: string
-                  default: '74018657187'
-                sparte:
-                  type: string
-                  enum:
-                    - STROM
-                    - GAS
-                    - FERNWAERME
-                    - NAHWAERME
-                    - WASSER
-                    - ABWASSER
-                zaehlernummer:
-                  type: string
-                  default: '123456789'
-                vertragsart:
-                  type: string
-                  default: ENERGIELIEFERVERTRAG
                 absender:
-                  type: string
                   default: '9900321000005'
+                  type: string
                 empfaenger:
-                  type: string
                   default: '9900321000005'
+                  type: string
+                marktlokationsId:
+                  default: '74018657187'
+                  type: string
+                sparte:
+                  $ref: '#/paths/~1AKTUALISIEREN_TRANCHE_BASIS/post/requestBody/content/application~1json/schema/properties/sparte'
+                vertragsart:
+                  default: ENERGIELIEFERVERTRAG
+                  type: string
+                zaehlernummer:
+                  default: '123456789'
+                  type: string
+              type: object
       responses:
         '200':
           description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading of communication data
@@ -4563,24 +4523,13 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  error:
-                    type: string
-                  message:
-                    type: string
-                  statusCode:
-                    type: integer
-                required:
-                  - error
-                  - message
-                  - statusCode
+                $ref: '#/paths/~1LESEN_AVIS_BASIS/get/responses/400/content/application~1json/schema'
         '422':
           description: Nicht verarbeitbare Anfrage | Unprocessable Request
           content:
             application/json:
               schema:
-                $ref: '#/paths/~1LESEN_EVENT_START_KUENDIGUNG/post/responses/400/content/application~1json/schema'
+                $ref: '#/paths/~1LESEN_AVIS_BASIS/get/responses/400/content/application~1json/schema'
   /LESEN_NETZLOKATION_BASIS:
     get:
       description: Lesen einer NeLo mittels LokationsId (Parameter1) zum Zeitpunkt (Parameter2)\ \ Reading a NeLo using location ID (Parameter1) at the time (Parameter2)

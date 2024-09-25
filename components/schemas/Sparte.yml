@@ -1,8 +1,8 @@
-type: string
 enum:
-  - STROM
-  - GAS
-  - FERNWAERME
-  - NAHWAERME
-  - WASSER
-  - ABWASSER
+- STROM
+- GAS
+- FERNWAERME
+- NAHWAERME
+- WASSER
+- ABWASSER
+type: string

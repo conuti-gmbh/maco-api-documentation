@@ -1,23 +1,24 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  netzlokationsId:
-    type: string
-    default: "SOME_STRING"
-  sparte:
-    $ref: "Sparte.yml"
-  zahlerBlindarbeit:
-    type: string
-    default: "GAS"
-  vertragsart:
-    type: string
-    default: "ENERGIELIEFERVERTRAG"
-  empfaenger:
-    type: string
-    default: "SOME_STRING"
   absender:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  empfaenger:
+    default: SOME_STRING
+    type: string
   gueltigAb:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  netzlokationsId:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zahlerBlindarbeit:
+    default: GAS
+    type: string
+type: object

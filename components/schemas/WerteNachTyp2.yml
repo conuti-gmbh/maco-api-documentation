@@ -1,27 +1,27 @@
-type: object
 properties:
+  aenderungsmoeglichkeitKonfiguration:
+    $ref: 'AenderungsmoeglichkeitKonfiguration.yml'
+  aussteller:
+    $ref: 'Aussteller.yml'
   boTyp:
-    type: string
     default: WERTE_NACH_TYP2
-  versionStruktur:
     type: string
-    default: "1"
   konfigurationsprodukt:
     type: string
   messprodukt:
     type: string
-  zieladresse:
-    $ref: "Zieladresse.yml"
-  aussteller:
-    $ref: "Aussteller.yml"
-  zertifikatsNutzer:
-    $ref: "ZertifikatsNutzer.yml"
-  aenderungsmoeglichkeitKonfiguration:
-    $ref: "AenderungsmoeglichkeitKonfiguration.yml"
   schwellwerte:
-    type: array
     items:
-      $ref: "Schwellwert.yml"
+      $ref: 'Schwellwert.yml'
+    type: array
+  versionStruktur:
+    default: '1'
+    type: string
+  zertifikatsNutzer:
+    $ref: 'ZertifikatsNutzer.yml'
+  zieladresse:
+    $ref: 'Zieladresse.yml'
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

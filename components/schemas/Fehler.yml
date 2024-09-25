@@ -1,8 +1,8 @@
-type: object
 properties:
-  typ:
-    $ref: "FehlerTyp.yml"
   fehlerDetails:
-    type: array
     items:
-      $ref: "FehlerDetail.yml"
+      $ref: 'FehlerDetail.yml'
+    type: array
+  typ:
+    $ref: 'FehlerTyp.yml'
+type: object

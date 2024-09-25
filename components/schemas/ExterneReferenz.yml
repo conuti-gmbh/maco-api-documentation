@@ -1,9 +1,9 @@
-type: object
 properties:
   exRefName:
-    type: string
     enum:
-      - Kundennummer beim Lieferanten
-      - Kundennummer beim Altlieferanten
+    - Kundennummer beim Lieferanten
+    - Kundennummer beim Altlieferanten
+    type: string
   exRefWert:
     type: string
+type: object

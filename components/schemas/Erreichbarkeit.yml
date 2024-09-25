@@ -1,6 +1,6 @@
-type: object
 properties:
   verfuegbarkeit:
-    $ref: "Verfuegbarkeit.yml"
+    $ref: 'Verfuegbarkeit.yml'
   zeit:
     type: string
+type: object

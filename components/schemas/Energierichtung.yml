@@ -1,4 +1,4 @@
-type: string
 enum:
-  - AUSSP
-  - EINSP
+- AUSSP
+- EINSP
+type: string

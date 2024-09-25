@@ -32,27 +32,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Tranche.yml'
+          $ref: '../components/schemas/Tranche.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Tranche.yml'
+            $ref: '../components/schemas/Tranche.yml'
       description: Erfolgreiches Aktualisieren der Tranche | Successful updating of
         the tranche
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
 
   summary: AKTUALISIEREN_TRANCHE_BASIS

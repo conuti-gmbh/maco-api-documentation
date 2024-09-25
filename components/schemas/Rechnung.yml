@@ -1,74 +1,74 @@
-type: object
 properties:
-  boTyp:
+  ausfuehrungsdatum:
+    format: date-time
     type: string
-    default: RECHNUNG
-  versionStruktur:
-    type: string
-    default: "1"
-  istSelbstausgestellt:
-    type: boolean
   bearbeitungsdatum:
-    type: string
     format: date-time
-  rechnungsdatum:
     type: string
+  beginnPeriodeBilanzierung:
     format: date-time
+    type: string
+  boTyp:
+    default: RECHNUNG
+    type: string
+  datumVorgaengerrechnung:
+    format: date-time
+    type: string
+  endePeriodeNetznutzung:
+    format: date-time
+    type: string
+  energierichtung:
+    $ref: 'Energierichtung.yml'
   faelligkeitsdatum:
-    type: string
     format: date-time
-  rechnungsstatus:
-    $ref: "Rechnungsstatus.yml"
-  vorlaeufigerAbrechnungszeitraum:
-    $ref: "Zeitraum.yml"
-  rechnungsperiode:
-    $ref: "Zeitraum.yml"
-  rechnungstyp:
-    $ref: "Rechnungstyp.yml"
+    type: string
+  gemeinderabatt:
+    $ref: 'Gemeinderabatt.yml'
+  gesamtbrutto:
+    $ref: 'Betrag.yml'
   istReverseCharge:
     type: boolean
-  gesamtbrutto:
-    $ref: "Betrag.yml"
-  zuZahlen:
-    $ref: "Betrag.yml"
+  istSelbstausgestellt:
+    type: boolean
+  netzkonto:
+    type: string
   originalRechnungsnummer:
+    type: string
+  rechnungsdatum:
+    format: date-time
+    type: string
+  rechnungsperiode:
+    $ref: 'Zeitraum.yml'
+  rechnungspositionen:
+    items:
+      $ref: 'Rechnungsposition.yml'
+    type: array
+  rechnungsstatus:
+    $ref: 'Rechnungsstatus.yml'
+  rechnungstyp:
+    $ref: 'Rechnungstyp.yml'
+  referenzDokumentennummer:
     type: string
   referenzNachrichtendatum:
     type: string
-  referenzDokumentennummer:
-    type: string
   referenzVorgaengerrechnung:
     type: string
-  datumVorgaengerrechnung:
-    type: string
-    format: date-time
-  netzkonto:
+  sonderrechnungsart:
+    $ref: 'SonderrechnungsArt.yml'
+  steuerbetraege:
+    items:
+      $ref: 'Steuerbetrag.yml'
+    type: array
+  versionStruktur:
+    default: '1'
     type: string
   vorausgezahlt:
-    $ref: "Betrag.yml"
-  gemeinderabatt:
-    $ref: "Gemeinderabatt.yml"
-  ausfuehrungsdatum:
-    type: string
-    format: date-time
-  sonderrechnungsart:
-    $ref: "SonderrechnungsArt.yml"
-  energierichtung:
-    $ref: "Energierichtung.yml"
-  beginnPeriodeBilanzierung:
-    type: string
-    format: date-time
-  endePeriodeNetznutzung:
-    type: string
-    format: date-time
-  steuerbetraege:
-    type: array
-    items:
-      $ref: "Steuerbetrag.yml"
-  rechnungspositionen:
-    type: array
-    items:
-      $ref: "Rechnungsposition.yml"
+    $ref: 'Betrag.yml'
+  vorlaeufigerAbrechnungszeitraum:
+    $ref: 'Zeitraum.yml'
+  zuZahlen:
+    $ref: 'Betrag.yml'
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur
+type: object

@@ -1,20 +1,21 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktlokationsId:
-    type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   kategorie:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
   vorgangsreferenznummer:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+type: object

@@ -33,20 +33,20 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/SteuerbareRessource.yml'
+            $ref: '../components/schemas/SteuerbareRessource.yml'
       description: Erfolgreiches Lesen der steuerbaren Ressource | Successful reading
         of the controllable resource
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_STEUERBARE_RESSOURCE_BASIS
   tags:

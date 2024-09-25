@@ -1,46 +1,47 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  sparte:
-    $ref: "Sparte.yml"
-  zaehlernummer:
-    type: string
-    default: "123456789"
-  lokationsId:
-    type: string
-    default: "74018657187"
-  energieverbrauch:
-    $ref: "ENERGIEVERBRAUCH.yml"
-  lokationsTyp:
-    type: string
-    default: "74018657187"
-  fertigstellungsdatum:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  startdatum:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  enddatum:
-    type: string
-    default: "2024-04-01T07:40:00Z"
-  vertragsart:
-    type: string
-    default: ENERGIELIEFERVERTRAG
-  kategorie:
-    type: string
-    default: "kategorie"
-  typ:
-    type: string
-    default: "kategorie"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   anfrageReferenz:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  enddatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  energieverbrauch:
+    $ref: 'ENERGIEVERBRAUCH.yml'
+  fertigstellungsdatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  kategorie:
+    default: kategorie
+    type: string
+  lokationsId:
+    default: '74018657187'
+    type: string
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  startdatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
   transaktionsgrund:
-    type: string
     default: E01
+    type: string
+  typ:
+    default: kategorie
+    type: string
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zaehlernummer:
+    default: '123456789'
+    type: string
+type: object

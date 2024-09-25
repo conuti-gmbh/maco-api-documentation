@@ -119,5 +119,5 @@ properties:
     items:
       $ref: "Energieherkunft.yml"
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur

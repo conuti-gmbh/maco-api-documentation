@@ -33,7 +33,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Vertrag.yml'
+            $ref: '../components/schemas/Vertrag.yml'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
     '400':

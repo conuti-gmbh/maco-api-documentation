@@ -64,5 +64,5 @@ properties:
     items:
       $ref: "Marktteilnehmer.yml"
 required:
-  - boTyp
-  - versionStruktur
+- boTyp
+- versionStruktur

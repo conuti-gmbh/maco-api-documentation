@@ -32,27 +32,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Vertrag.yml'
+          $ref: '../components/schemas/Vertrag.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/OK_RESPONSE.yml'
+            $ref: '../components/schemas/OK_RESPONSE.yml'
       description: Erfolgreiches Erstellen des Energieliefervertrages | Successful
         creating of energy delivery contract
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS
   tags:

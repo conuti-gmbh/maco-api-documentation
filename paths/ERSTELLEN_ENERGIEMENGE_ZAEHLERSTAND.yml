@@ -49,27 +49,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Energiemenge.yml'
+          $ref: '../components/schemas/Energiemenge.yml'
     required: true
   responses:
     '201':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Energiemenge.yml'
+            $ref: '../components/schemas/Energiemenge.yml'
       description: "Erfolgreiches Schreiben des Z\xE4hlerstands | Successful writing\
         \ of the meter reading"
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
 
   summary: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND

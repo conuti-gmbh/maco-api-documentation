@@ -31,27 +31,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../schemas/Marktlokation.yml'
+          $ref: '../components/schemas/Marktlokation.yml'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../schemas/Marktlokation.yml'
+            $ref: '../components/schemas/Marktlokation.yml'
       description: Erfolgreiches Aktualisieren der Marktlokation | Successful updating
         of the market location
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
 
   summary: AKTUALISIEREN_MARKTLOKATION_BASIS

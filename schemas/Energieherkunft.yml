@@ -1,7 +1,0 @@
-properties:
-  anteilProzent:
-    format: float
-    type: number
-  erzeugungsart:
-    $ref: 'Erzeugungsart.yml'
-type: object

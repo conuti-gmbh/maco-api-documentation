@@ -1,26 +1,26 @@
-type: object
-description: Schema für Lieferende | Scheme for Delivery end
+description: "Schema f\xFCr Lieferende | Scheme for Delivery end"
 properties:
-  marktlokationsId:
-    type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
-  zaehlernummer:
-    type: string
-    default: "123456789"
-  vertragsart:
-    type: string
-    default: ENERGIELIEFERVERTRAG
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
   transaktionsgrund:
-    type: string
     default: E01
-  transaktionsgrundergaenzung:
     type: string
+  transaktionsgrundergaenzung:
     default: transaktionsgrundergaenzung
+    type: string
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zaehlernummer:
+    default: '123456789'
+    type: string
+type: object

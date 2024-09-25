@@ -1,12 +1,12 @@
-type: object
 properties:
-  verwendungszweck:
-    $ref: "BankverbindungVerwendungszweck.yml"
+  bic:
+    type: string
   iban:
     type: string
   kontoinhaber:
     type: string
-  bic:
-    type: string
   kreditinstitut:
     type: string
+  verwendungszweck:
+    $ref: 'BankverbindungVerwendungszweck.yml'
+type: object

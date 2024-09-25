@@ -33,20 +33,20 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../schemas/Messlokation.yml'
+            $ref: '../components/schemas/Messlokation.yml'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
     '400':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_MESSLOKATIONS_BASIS
   tags:

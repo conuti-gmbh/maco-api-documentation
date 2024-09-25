@@ -1,20 +1,20 @@
-type: object
 properties:
   angebotsstatus:
-    $ref: "Angebotsstatus.yml"
+    $ref: 'Angebotsstatus.yml'
   beschreibung:
     type: string
-  erstelldatum:
-    type: string
-    format: date-time
   bindefrist:
-    type: string
     format: date-time
-  gesamtmenge:
-    $ref: "Menge.yml"
+    type: string
+  erstelldatum:
+    format: date-time
+    type: string
   gesamtkosten:
-    $ref: "Betrag.yml"
+    $ref: 'Betrag.yml'
+  gesamtmenge:
+    $ref: 'Menge.yml'
   teile:
-    type: array
     items:
-      $ref: "Angebotsteil.yml"
+      $ref: 'Angebotsteil.yml'
+    type: array
+type: object

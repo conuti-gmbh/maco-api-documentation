@@ -1,52 +1,53 @@
-type: object
-description: Schema für start messwertuebermittlung | Scheme for start of measurement value transmission
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
 properties:
-  marktmarktlokationsId:
-    type: string
-    default: "74018657187"
-  sparte:
-    $ref: "Sparte.yml"
-  energierichtung:
-    $ref: "Energierichtung.yml"
-  netzbetreiberCodeNr:
-    type: string
-    default: "SOME_STRING"
-  rollencodenummerMA:
-    type: string
-    default: "SOME_STRING"
-  marktrolleMA:
-    type: string
-    default: "SOME_STRING"
-  vertragsart:
-    type: string
-    default: "SOME_STRING"
-  marktlokationsId:
-    type: string
-    default: "74018657187"
-  lokationsTyp:
-    type: string
-    default: "74018657187"
-  tranchenId:
-    type: string
-    default: "SOME_STRING"
-  rollencodenummerTR:
-    type: string
-    default: "SOME_STRING"
-  marktrolleTR:
-    type: string
-    default: "SOME_STRING"
-  referenzTranche:
-    type: string
-    default: "SOME_STRING"
-  transaktionsgrund:
-    type: string
-    default: "SOME_STRING"
   absender:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
   empfaenger:
+    default: '9900321000005'
     type: string
-    default: "9900321000005"
+  energierichtung:
+    $ref: 'Energierichtung.yml'
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  marktrolleMA:
+    default: SOME_STRING
+    type: string
+  marktrolleTR:
+    default: SOME_STRING
+    type: string
+  netzbetreiberCodeNr:
+    default: SOME_STRING
+    type: string
+  referenzTranche:
+    default: SOME_STRING
+    type: string
+  rollencodenummerMA:
+    default: SOME_STRING
+    type: string
+  rollencodenummerTR:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'Sparte.yml'
+  tranchenId:
+    default: SOME_STRING
+    type: string
+  transaktionsgrund:
+    default: SOME_STRING
+    type: string
+  vertragsart:
+    default: SOME_STRING
+    type: string
   verwendungBis:
+    default: SOME_STRING
     type: string
-    default: "SOME_STRING"
+type: object
