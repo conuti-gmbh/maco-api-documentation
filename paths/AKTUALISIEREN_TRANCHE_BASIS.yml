@@ -1,0 +1,47 @@
+post:
+  description: "\xC4ndern einer Tranche mittels LokationsId (Parameter1) zum Zeitpunkt\
+    \ (Parameter2) | Changing a tranche using location ID (Parameter1) at the time\
+    \ (Parameter2)"
+  operationId: AKTUALISIEREN_TRANCHE_BASIS
+  parameters:
+  - description: Name der Operation | Name of the operation
+    in: query
+    name: command
+    required: true
+    schema:
+      default: AKTUALISIEREN_TRANCHE_BASIS
+      example: NOCODB_AKTUALISIEREN_TRANCHE_BASIS
+      type: string
+  - description: LokationsId | Location ID
+    in: query
+    name: parameter1
+    required: true
+    schema:
+      example: '74018657187'
+      type: string
+  - description: Stichtag | Key date
+    in: query
+    name: parameter2
+    required: true
+    schema:
+      example: '2024-06-28T12:18:00Z'
+      format: date-time
+      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+      type: string
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../schemas/Tranche'
+    required: true
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../schemas/Tranche'
+      description: Erfolgreiches Aktualisieren der Tranche | Successful updating of
+        the tranche
+  summary: AKTUALISIEREN_TRANCHE_BASIS
+  tags:
+  - AKTUALISIEREN | UPDATE

@@ -1,16 +1,16 @@
 post:
-  description: Beenden einer Liefersituation zum gegebenen Datum (Parameter1) an der
-    gegebenen marktlokationsId (Parameter2) | Start a delivery end on the given date
+  description: Starten eines Lieferbeginns zum gegebenen Datum (Parameter1) an der
+    gegeben marktlokationsId (Parameter2) | Start a delivery start on the given date
     (Parameter1)  at the given market location ID (Parameter2)
-  operationId: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+  operationId: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
   parameters:
   - description: Name der Operation | Name of the operation (MACO APP interal assignment
       between process and interface)
     in: query
     name: command
     schema:
-      default: ERSTELLEN_PROZESSDATEN_LIEFERENDE
-      example: NOCODB_ERSTELLEN_PROZESSDATEN_LIEFERENDE
+      default: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
+      example: NOCODB_ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
       type: string
   - description: marktlokationsId | market location identifier
     in: query
@@ -32,16 +32,12 @@ post:
     content:
       application/json:
         examples:
-          'PI 55004 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55004'
-          'PI 55005 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55005'
-          'PI 55007 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55007'
-          'PI 55008 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55008'
+          'PI 55001 - ROLLE NB : DATEN AUS ANFRAGE LF':
+            $ref: '#/components/examples/PI_55001'
+          'PI 55002 - ROLLE LF : DATEN AUS ANTWORT NB':
+            $ref: '#/components/examples/PI_55002'
         schema:
-          $ref: '../schemas/STAMMDATEN_LIEFERENDE'
+          $ref: '../schemas/STAMMDATEN_LIEFERBEGINN'
     required: true
   responses:
     '200':
@@ -63,6 +59,6 @@ post:
           schema:
             $ref: '../schemas/ERROR_RESPONSE'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
-  summary: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+  summary: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
   tags:
   - PROZESSDATEN | PROCESSING DATA

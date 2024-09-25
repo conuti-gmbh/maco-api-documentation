@@ -1,18 +1,18 @@
 post:
-  description: Beenden einer Liefersituation zum gegebenen Datum (Parameter1) an der
-    gegebenen marktlokationsId (Parameter2) | Start a delivery end on the given date
-    (Parameter1)  at the given market location ID (Parameter2)
-  operationId: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+  description: Erstellen des Energieliefervertrages einer Lokation (Parameter1) zum
+    Zeitpunkt (Parameter2) | Create the energy delivery contract of a location (Parameter1)
+    at the time (Parameter2)
+  operationId: ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS
   parameters:
   - description: Name der Operation | Name of the operation (MACO APP interal assignment
       between process and interface)
     in: query
     name: command
     schema:
-      default: ERSTELLEN_PROZESSDATEN_LIEFERENDE
-      example: NOCODB_ERSTELLEN_PROZESSDATEN_LIEFERENDE
+      default: ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS
+      example: NOCODB_ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS
       type: string
-  - description: marktlokationsId | market location identifier
+  - description: LokationsId | Location ID
     in: query
     name: parameter1
     required: true
@@ -31,17 +31,8 @@ post:
   requestBody:
     content:
       application/json:
-        examples:
-          'PI 55004 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55004'
-          'PI 55005 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55005'
-          'PI 55007 - ROLLE LF : DATEN AUS ANTWORT NB':
-            $ref: '#/components/examples/PI_55007'
-          'PI 55008 - ROLLE NB : DATEN AUS ANFRAGE LF':
-            $ref: '#/components/examples/PI_55008'
         schema:
-          $ref: '../schemas/STAMMDATEN_LIEFERENDE'
+          $ref: '../schemas/Vertrag'
     required: true
   responses:
     '200':
@@ -49,8 +40,8 @@ post:
         application/json:
           schema:
             $ref: '../schemas/OK_RESPONSE'
-      description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
-        of communication data
+      description: Erfolgreiches Erstellen des Energieliefervertrages | Successful
+        creating of energy delivery contract
     '400':
       content:
         application/json:
@@ -63,6 +54,6 @@ post:
           schema:
             $ref: '../schemas/ERROR_RESPONSE'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
-  summary: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+  summary: ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS
   tags:
-  - PROZESSDATEN | PROCESSING DATA
+  - ERSTELLEN | CREATE
