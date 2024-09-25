@@ -5,7 +5,7 @@ properties:
     type: string
     default: "74018657187"
   sparte:
-    $ref: "Sparte.yml.yml"
+    $ref: "Sparte.yml"
   zaehlernummer:
     type: string
     default: "123456789"

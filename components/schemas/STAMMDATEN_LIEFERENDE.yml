@@ -6,72 +6,72 @@ properties:
       BILANZIERUNG:
         type: array
         items:
-          $ref: "Bilanzierung.yml.yml"
+          $ref: "Bilanzierung.yml"
       MARKTLOKATION:
         type: array
         items:
-          $ref: "Marktlokation.yml.yml"
+          $ref: "Marktlokation.yml"
       MESSLOKATION:
         type: array
         items:
-          $ref: "Messlokation.yml.yml"
+          $ref: "Messlokation.yml"
       NETZNUTZUNGSVERTRAG:
         type: array
         items:
-          $ref: "Vertrag.yml.yml"
+          $ref: "Vertrag.yml"
       MESSSTELLENBETRIEBSVERTRAG:
         type: array
         items:
-          $ref: "Vertrag.yml.yml"
+          $ref: "Vertrag.yml"
       ENERGIELIEFERVERTRAG:
         type: array
         items:
-          $ref: "Vertrag.yml.yml"
+          $ref: "Vertrag.yml"
       ENERGIEMENGE:
         type: array
         items:
-          $ref: "Energiemenge.yml.yml"
+          $ref: "Energiemenge.yml"
       ZAEHLER:
         type: array
         items:
-          $ref: "Zaehler.yml.yml"
+          $ref: "Zaehler.yml"
       TRANCHE:
         type: array
         items:
-          $ref: "Tranche.yml.yml"
+          $ref: "Tranche.yml"
       NETZLOKATION:
         type: array
         items:
-          $ref: "Netzlokation.yml.yml"
+          $ref: "Netzlokation.yml"
       STEUERBARE_RESSOURCE:
         type: array
         items:
-          $ref: "SteuerbareRessource.yml.yml"
+          $ref: "SteuerbareRessource.yml"
       TECHNISCHE_RESSOURCE:
         type: array
         items:
-          $ref: "TechnischeRessource.yml.yml"
+          $ref: "TechnischeRessource.yml"
       LOKATIONSBUENDEL:
         type: array
         items:
-          $ref: "Lokationsbuendel.yml.yml"
+          $ref: "Lokationsbuendel.yml"
       AD_HOC_STEUERKANAL:
         type: array
         items:
-          $ref: "AdHocSteuerkanal.yml.yml"
+          $ref: "AdHocSteuerkanal.yml"
       WERTE_NACH_TYP2:
         type: array
         items:
-          $ref: "WerteNachTyp2.yml.yml"
+          $ref: "WerteNachTyp2.yml"
       RUHENDE_MARKTLOKATION:
         type: array
         items:
-          $ref: "Marktlokation.yml.yml"
+          $ref: "Marktlokation.yml"
       MARKTLOKATION_KUNDENANLAGE:
         type: array
         items:
-          $ref: "Marktlokation.yml.yml"
+          $ref: "Marktlokation.yml"
       VERWENDUNGSZEITRAUM:
         type: array
         items:
-          $ref: "Verwendungszeitraum.yml.yml"
+          $ref: "Verwendungszeitraum.yml"
