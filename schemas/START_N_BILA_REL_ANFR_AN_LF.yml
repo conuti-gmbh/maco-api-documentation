@@ -98,7 +98,7 @@ properties:
     default: '9900321000005'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   vertragsartMsb:
     default: SOME_STRING
     type: string

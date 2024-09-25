@@ -3,7 +3,7 @@ properties:
     description: DTM+Z03
     type: string
   befestigungsart:
-    $ref: '#/components/schemas/Befestigungsart'
+    $ref: 'Befestigungsart.yml'
   boTyp:
     default: ZAEHLER
     type: string
@@ -11,55 +11,55 @@ properties:
     format: date-time
     type: string
   fernschaltung:
-    $ref: '#/components/schemas/Fernschaltung'
+    $ref: 'Fernschaltung.yml'
   gateway:
     type: string
   geraete:
     items:
-      $ref: '#/components/schemas/Geraet'
+      $ref: 'Geraet.yml'
     type: array
   geraetemerkmal:
-    $ref: '#/components/schemas/Geraetemerkmal'
+    $ref: 'Geraetemerkmal.yml'
   herstellungsdatum:
     format: date-time
     type: string
   marktlokationsId:
     type: string
   mengenumwertertyp:
-    $ref: '#/components/schemas/Mengenumwertertyp'
+    $ref: 'Mengenumwertertyp.yml'
   messlokationsId:
     type: string
   messwerterfassung:
-    $ref: '#/components/schemas/Messwerterfassung'
+    $ref: 'Messwerterfassung.yml'
   serialnummer:
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   tarifart:
-    $ref: '#/components/schemas/Tarifart'
+    $ref: 'Tarifart.yml'
   versionStruktur:
     default: '1'
     type: string
   volumenerfassung:
-    $ref: '#/components/schemas/Volumenerfassung'
+    $ref: 'Volumenerfassung.yml'
   zaehlerauspraegung:
-    $ref: '#/components/schemas/Zaehlerauspraegung'
+    $ref: 'Zaehlerauspraegung.yml'
   zaehlergroesse:
-    $ref: '#/components/schemas/Geraetemerkmal'
+    $ref: 'Geraetemerkmal.yml'
   zaehlerhersteller:
-    $ref: '#/components/schemas/Geschaeftspartner'
+    $ref: 'Geschaeftspartner.yml'
   zaehlerkonstante:
     format: float
     type: number
   zaehlernummer:
     type: string
   zaehlertyp:
-    $ref: '#/components/schemas/Zaehlertyp'
+    $ref: 'Zaehlertyp.yml'
   zaehlertypspezifikation:
-    $ref: '#/components/schemas/ZaehlertypSpezifikation'
+    $ref: 'ZaehlertypSpezifikation.yml'
   zaehlwerke:
     items:
-      $ref: '#/components/schemas/Zaehlwerk'
+      $ref: 'Zaehlwerk.yml'
     type: array
 required:
 - boTyp

@@ -3,7 +3,7 @@ properties:
     default: VERWENDUNGSZEITRAUM
     type: string
   qualitaet:
-    $ref: '#/components/schemas/Verwendungszeitraumqualitaet'
+    $ref: 'Verwendungszeitraumqualitaet.yml'
   versionStruktur:
     default: '1'
     type: string

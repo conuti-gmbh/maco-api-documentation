@@ -5,15 +5,15 @@ properties:
   istVomGerichtsvollzieherAngeordnet:
     type: boolean
   sperrauftragsablehngrund:
-    $ref: '#/components/schemas/Sperrauftragsablehngrund'
+    $ref: 'Sperrauftragsablehngrund.yml'
   sperrauftragsart:
-    $ref: '#/components/schemas/Sperrauftragsart'
+    $ref: 'Sperrauftragsart.yml'
   sperrauftragsstatus:
-    $ref: '#/components/schemas/Auftragsstatus'
+    $ref: 'Auftragsstatus.yml'
   sperrauftragsverhinderungsgrund:
-    $ref: '#/components/schemas/Sperrauftragsverhinderungsgrund'
+    $ref: 'Sperrauftragsverhinderungsgrund.yml'
   treffpunkt:
-    $ref: '#/components/schemas/Adresse'
+    $ref: 'Adresse.yml'
   versionStruktur:
     default: '1'
     type: string

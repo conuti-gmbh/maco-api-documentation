@@ -1,10 +1,10 @@
 properties:
   abrechnungsdaten:
     items:
-      $ref: '#/components/schemas/Netznutzungsabrechnungsdaten'
+      $ref: 'Netznutzungsabrechnungsdaten.yml'
     type: array
   auftraggebenderMarktpartner:
-    $ref: '#/components/schemas/Marktteilnehmer'
+    $ref: 'Marktteilnehmer.yml'
   boTyp:
     default: NETZLOKATION
     type: string
@@ -17,19 +17,19 @@ properties:
   leistungskurvendefinition:
     type: string
   lokationszuordnung:
-    $ref: '#/components/schemas/Lokationszuordnung'
+    $ref: 'Lokationszuordnung.yml'
   marktrollen:
     items:
-      $ref: '#/components/schemas/Marktteilnehmer'
+      $ref: 'Marktteilnehmer.yml'
     type: array
   netzanschlussleistung:
     type: string
   netzlokationsId:
     type: string
   produktdatenRelevanteRolle:
-    $ref: '#/components/schemas/Marktrolle'
+    $ref: 'Marktrolle.yml'
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   steuerkanal:
     type: boolean
   versionStruktur:
@@ -37,7 +37,7 @@ properties:
     type: string
   zaehlwerke:
     items:
-      $ref: '#/components/schemas/Zaehlwerk'
+      $ref: 'Zaehlwerk.yml'
     type: array
 required:
 - boTyp

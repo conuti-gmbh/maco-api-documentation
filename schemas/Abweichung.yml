@@ -4,7 +4,7 @@ properties:
       type: string
     type: array
   abweichungsgrund:
-    $ref: '#/components/schemas/Abweichungsgrund'
+    $ref: 'Abweichungsgrund.yml'
   abweichungsgrundBemerkung:
     type: string
   abweichungsgrundBemerkung1:

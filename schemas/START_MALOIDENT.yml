@@ -10,7 +10,7 @@ properties:
     default: '74018657187'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   transaktionsgrund:
     default: E01
     type: string

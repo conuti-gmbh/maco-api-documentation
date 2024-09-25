@@ -13,7 +13,7 @@ properties:
     default: '9900321000005'
     type: string
   energierichtung:
-    $ref: '#/components/schemas/Energierichtung'
+    $ref: 'Energierichtung.yml'
   gewerbekennzeichnung:
     type: boolean
   haushaltskunde:
@@ -46,7 +46,7 @@ properties:
     default: '12345'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   strasse:
     default: Musterstrasse
     type: string
@@ -58,7 +58,7 @@ properties:
   transaktionsgrundergaenzungBefristeteAnmeldung:
     type: string
   verguetungEmpfaenger:
-    $ref: '#/components/schemas/VerguetungEmpfaenger'
+    $ref: 'VerguetungEmpfaenger.yml'
   vertragsbeginn:
     default: '2024-04-01T07:40:00Z'
     type: string

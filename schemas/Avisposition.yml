@@ -1,17 +1,17 @@
 properties:
   abweichung:
     items:
-      $ref: '#/components/schemas/Abweichung'
+      $ref: 'Abweichung.yml'
     type: array
   gesamtBrutto:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
   istSelbstausgestellt:
     type: boolean
   istStorno:
     type: boolean
   positionen:
     items:
-      $ref: '#/components/schemas/Rueckmeldungsposition'
+      $ref: 'Rueckmeldungsposition.yml'
     type: array
   rechnungsDatum:
     format: date-time
@@ -21,5 +21,5 @@ properties:
   referenz:
     type: string
   zuZahlen:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
 type: object

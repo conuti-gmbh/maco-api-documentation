@@ -1,6 +1,6 @@
 properties:
   einheit:
-    $ref: '#/components/schemas/Mengeneinheit'
+    $ref: 'Mengeneinheit.yml'
   wert:
     format: float
     type: number

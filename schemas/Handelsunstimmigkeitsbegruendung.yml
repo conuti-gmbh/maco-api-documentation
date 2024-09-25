@@ -2,7 +2,7 @@ properties:
   bestaetigungDar:
     type: string
   grund:
-    $ref: '#/components/schemas/Handelsunstimmigkeitsgrund'
+    $ref: 'Handelsunstimmigkeitsgrund.yml'
   hinweis:
     type: string
   referenzDar:
@@ -14,5 +14,5 @@ properties:
   referenznummer:
     type: string
   richtigkeit:
-    $ref: '#/components/schemas/Handelsunstimmigkeitsrichtigkeit'
+    $ref: 'Handelsunstimmigkeitsrichtigkeit.yml'
 type: object

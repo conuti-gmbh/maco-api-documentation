@@ -1,19 +1,19 @@
 properties:
   allgemeineInformationen:
-    $ref: '#/components/schemas/AllgemeineInformationen'
+    $ref: 'AllgemeineInformationen.yml'
   anfragegrund:
-    $ref: '#/components/schemas/Anfragegrund'
+    $ref: 'Anfragegrund.yml'
   artikelnummer:
-    $ref: '#/components/schemas/BDEWArtikelnummer'
+    $ref: 'BDEWArtikelnummer.yml'
   definitionsTyp:
-    $ref: '#/components/schemas/DefinitionsTyp'
+    $ref: 'DefinitionsTyp.yml'
   enddatum:
     format: date-time
     type: string
   energieerfassung:
-    $ref: '#/components/schemas/Energieerfassung'
+    $ref: 'Energieerfassung.yml'
   infoAbweichung:
-    $ref: '#/components/schemas/InfoAbweichung'
+    $ref: 'InfoAbweichung.yml'
   istBestand:
     type: string
   obiskennzahl:

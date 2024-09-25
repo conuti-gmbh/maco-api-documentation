@@ -1,17 +1,17 @@
 properties:
   auftragsstatus:
-    $ref: '#/components/schemas/Auftragsstatus'
+    $ref: 'Auftragsstatus.yml'
   boTyp:
     default: STATUSMITTEILUNG
     type: string
   positionsdaten:
     items:
-      $ref: '#/components/schemas/StatusmitteilungPosition'
+      $ref: 'StatusmitteilungPosition.yml'
     type: array
   statusObjekt:
-    $ref: '#/components/schemas/Statusobjekt'
+    $ref: 'Statusobjekt.yml'
   statusanlass:
-    $ref: '#/components/schemas/Status'
+    $ref: 'Status.yml'
   versionStruktur:
     default: '1'
     type: string

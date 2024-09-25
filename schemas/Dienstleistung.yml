@@ -2,5 +2,5 @@ properties:
   bezeichnung:
     type: string
   dienstleistungstyp:
-    $ref: '#/components/schemas/Dienstleistungstyp'
+    $ref: 'Dienstleistungstyp.yml'
 type: object

@@ -8,21 +8,21 @@ properties:
     default: PREISBLATT
     type: string
   gueltigkeit:
-    $ref: '#/components/schemas/Zeitraum'
+    $ref: 'Zeitraum.yml'
   leistungstyp:
-    $ref: '#/components/schemas/Leistungstyp'
+    $ref: 'Leistungstyp.yml'
   nichtGenutzt:
     type: boolean
   preispositionen:
     items:
-      $ref: '#/components/schemas/Preisposition'
+      $ref: 'Preisposition.yml'
     type: array
   preisstatus:
-    $ref: '#/components/schemas/Preisstatus'
+    $ref: 'Preisstatus.yml'
   regelzone:
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   versionStruktur:
     default: '1'
     type: string

@@ -8,5 +8,5 @@ properties:
   kreditinstitut:
     type: string
   verwendungszweck:
-    $ref: '#/components/schemas/BankverbindungVerwendungszweck'
+    $ref: 'BankverbindungVerwendungszweck.yml'
 type: object

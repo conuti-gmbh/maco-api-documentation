@@ -1,8 +1,8 @@
 properties:
   abwicklungsmodell:
-    $ref: '#/components/schemas/Abwicklungsmodell'
+    $ref: 'Abwicklungsmodell.yml'
   aggregationsverantwortung:
-    $ref: '#/components/schemas/Aggregationsverantwortung'
+    $ref: 'Aggregationsverantwortung.yml'
   bilanzierungsbeginn:
     format: date-time
     type: string
@@ -15,42 +15,42 @@ properties:
     default: BILANZIERUNG
     type: string
   datenqualitaet:
-    $ref: '#/components/schemas/Datenqualitaet'
+    $ref: 'Datenqualitaet.yml'
   detailsPrognosegrundlage:
     items:
-      $ref: '#/components/schemas/Profiltyp'
+      $ref: 'Profiltyp.yml'
     type: array
   fallgruppenzuordnung:
-    $ref: '#/components/schemas/Fallgruppenzuordnung'
+    $ref: 'Fallgruppenzuordnung.yml'
   grundWahlrechtPrognosegrundlage:
-    $ref: '#/components/schemas/WahlrechtPrognosegrundlage'
+    $ref: 'WahlrechtPrognosegrundlage.yml'
   jahresverbrauchsprognose:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   kundenwert:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   lastprofile:
     items:
-      $ref: '#/components/schemas/Lastprofil'
+      $ref: 'Lastprofil.yml'
     type: array
   lastprofileBilanzierungsbeteiligter:
     items:
-      $ref: '#/components/schemas/Lastprofil'
+      $ref: 'Lastprofil.yml'
     type: array
   marktlokationsId:
     type: string
   prognosegrundlage:
-    $ref: '#/components/schemas/Prognosegrundlage'
+    $ref: 'Prognosegrundlage.yml'
   temperaturarbeit:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   verbrauchsaufteilung:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   versionStruktur:
     default: '1'
     type: string
   vorjahresverbrauch:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   wahlrechtPrognosegrundlage:
-    $ref: '#/components/schemas/WahlrechtPrognosegrundlage'
+    $ref: 'WahlrechtPrognosegrundlage.yml'
   zeitraumId:
     type: integer
   zeitreihentyp:

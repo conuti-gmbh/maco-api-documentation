@@ -4,15 +4,15 @@ properties:
       type: string
     type: array
   artikelnummer:
-    $ref: '#/components/schemas/BDEWArtikelnummer'
+    $ref: 'BDEWArtikelnummer.yml'
   positionsbetrag:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
   positionsbezeichung:
     type: string
   positionsmenge:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   positionspreis:
-    $ref: '#/components/schemas/Preis'
+    $ref: 'Preis.yml'
   preisschluesselstamm:
     type: string
 type: object

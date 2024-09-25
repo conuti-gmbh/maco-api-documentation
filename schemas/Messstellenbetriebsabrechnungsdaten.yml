@@ -7,7 +7,7 @@ properties:
   artikelId:
     type: string
   artikelIdTyp:
-    $ref: '#/components/schemas/ArtikelIdTyp'
+    $ref: 'ArtikelIdTyp.yml'
   messstellenbetriebsabrechnung:
     type: boolean
   zuschlag:

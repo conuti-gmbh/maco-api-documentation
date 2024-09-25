@@ -6,11 +6,11 @@ properties:
     format: date-time
     type: string
   fehler:
-    $ref: '#/components/schemas/Fehler'
+    $ref: 'Fehler.yml'
   pruefgegenstand:
     type: string
   status:
-    $ref: '#/components/schemas/BerichtStatus'
+    $ref: 'BerichtStatus.yml'
   versionStruktur:
     default: '1'
     type: string

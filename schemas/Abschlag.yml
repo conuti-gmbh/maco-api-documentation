@@ -3,5 +3,5 @@ properties:
     format: float
     type: number
   typ:
-    $ref: '#/components/schemas/AbschlagTyp'
+    $ref: 'AbschlagTyp.yml'
 type: object

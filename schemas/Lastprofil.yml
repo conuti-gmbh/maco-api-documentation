@@ -6,11 +6,11 @@ properties:
   herausgeber:
     type: string
   profilart:
-    $ref: '#/components/schemas/Profilart'
+    $ref: 'Profilart.yml'
   profilschar:
     type: string
   tagesparameter:
-    $ref: '#/components/schemas/Tagesparameter'
+    $ref: 'Tagesparameter.yml'
   verfahren:
-    $ref: '#/components/schemas/Profilverfahren'
+    $ref: 'Profilverfahren.yml'
 type: object

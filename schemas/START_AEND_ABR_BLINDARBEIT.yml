@@ -23,7 +23,7 @@ properties:
     default: '74018657187'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   vertragsart:
     default: SOME_STRING
     type: string

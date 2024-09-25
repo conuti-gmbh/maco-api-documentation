@@ -18,14 +18,14 @@ properties:
     format: date-time
     type: string
   energierichtung:
-    $ref: '#/components/schemas/Energierichtung'
+    $ref: 'Energierichtung.yml'
   faelligkeitsdatum:
     format: date-time
     type: string
   gemeinderabatt:
-    $ref: '#/components/schemas/Gemeinderabatt'
+    $ref: 'Gemeinderabatt.yml'
   gesamtbrutto:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
   istReverseCharge:
     type: boolean
   istSelbstausgestellt:
@@ -38,15 +38,15 @@ properties:
     format: date-time
     type: string
   rechnungsperiode:
-    $ref: '#/components/schemas/Zeitraum'
+    $ref: 'Zeitraum.yml'
   rechnungspositionen:
     items:
-      $ref: '#/components/schemas/Rechnungsposition'
+      $ref: 'Rechnungsposition.yml'
     type: array
   rechnungsstatus:
-    $ref: '#/components/schemas/Rechnungsstatus'
+    $ref: 'Rechnungsstatus.yml'
   rechnungstyp:
-    $ref: '#/components/schemas/Rechnungstyp'
+    $ref: 'Rechnungstyp.yml'
   referenzDokumentennummer:
     type: string
   referenzNachrichtendatum:
@@ -54,20 +54,20 @@ properties:
   referenzVorgaengerrechnung:
     type: string
   sonderrechnungsart:
-    $ref: '#/components/schemas/SonderrechnungsArt'
+    $ref: 'SonderrechnungsArt.yml'
   steuerbetraege:
     items:
-      $ref: '#/components/schemas/Steuerbetrag'
+      $ref: 'Steuerbetrag.yml'
     type: array
   versionStruktur:
     default: '1'
     type: string
   vorausgezahlt:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
   vorlaeufigerAbrechnungszeitraum:
-    $ref: '#/components/schemas/Zeitraum'
+    $ref: 'Zeitraum.yml'
   zuZahlen:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
 required:
 - boTyp
 - versionStruktur

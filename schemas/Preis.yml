@@ -1,10 +1,10 @@
 properties:
   bezugswert:
-    $ref: '#/components/schemas/Mengeneinheit'
+    $ref: 'Mengeneinheit.yml'
   einheit:
-    $ref: '#/components/schemas/Waehrungseinheit'
+    $ref: 'Waehrungseinheit.yml'
   status:
-    $ref: '#/components/schemas/Preisstatus'
+    $ref: 'Preisstatus.yml'
   wert:
     format: float
     type: number

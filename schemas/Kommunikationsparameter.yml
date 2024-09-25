@@ -1,8 +1,8 @@
 properties:
   zertifikatsAussteller:
-    $ref: '#/components/schemas/ZertifikatsAussteller'
+    $ref: 'ZertifikatsAussteller.yml'
   zertifikatsNutzer:
-    $ref: '#/components/schemas/ZertifikatsNutzer'
+    $ref: 'ZertifikatsNutzer.yml'
   zieladresse:
-    $ref: '#/components/schemas/Zieladresse'
+    $ref: 'Zieladresse.yml'
 type: object

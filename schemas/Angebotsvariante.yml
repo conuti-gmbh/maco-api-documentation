@@ -1,6 +1,6 @@
 properties:
   angebotsstatus:
-    $ref: '#/components/schemas/Angebotsstatus'
+    $ref: 'Angebotsstatus.yml'
   beschreibung:
     type: string
   bindefrist:
@@ -10,11 +10,11 @@ properties:
     format: date-time
     type: string
   gesamtkosten:
-    $ref: '#/components/schemas/Betrag'
+    $ref: 'Betrag.yml'
   gesamtmenge:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   teile:
     items:
-      $ref: '#/components/schemas/Angebotsteil'
+      $ref: 'Angebotsteil.yml'
     type: array
 type: object

@@ -29,7 +29,7 @@ properties:
     default: test
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   vertragsart:
     default: ENERGIELIEFERVERTRAG
     type: string

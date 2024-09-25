@@ -20,7 +20,7 @@ properties:
     default: '74018657187'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   vertragsbeginn:
     default: '2024-04-01T07:40:00Z'
     type: string

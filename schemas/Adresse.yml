@@ -6,7 +6,7 @@ properties:
   hausnummer:
     type: string
   landescode:
-    $ref: '#/components/schemas/Landescode'
+    $ref: 'Landescode.yml'
   ort:
     type: string
   ortsteil:
@@ -18,5 +18,5 @@ properties:
   strasse:
     type: string
   zusatzInformation:
-    $ref: '#/components/schemas/AdresszusatzInformation'
+    $ref: 'AdresszusatzInformation.yml'
 type: object

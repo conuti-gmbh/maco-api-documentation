@@ -1,8 +1,8 @@
 properties:
   grund:
     items:
-      $ref: '#/components/schemas/GrundlageVerringerungUmlagenGrund'
+      $ref: 'GrundlageVerringerungUmlagenGrund.yml'
     type: array
   grundlageVerringerungUmlagen:
-    $ref: '#/components/schemas/GrundlageVerringerungUmlagen'
+    $ref: 'GrundlageVerringerungUmlagen.yml'
 type: object

@@ -11,7 +11,7 @@ properties:
     format: date-time
     type: string
   notwendigkeit:
-    $ref: '#/components/schemas/DefinitionenNotwendigkeit'
+    $ref: 'DefinitionenNotwendigkeit.yml'
   version:
     format: date-time
     type: string
@@ -22,11 +22,11 @@ properties:
     type: string
   zaehlzeiten:
     items:
-      $ref: '#/components/schemas/Zaehlzeit'
+      $ref: 'Zaehlzeit.yml'
     type: array
   zaehlzeitregister:
     items:
-      $ref: '#/components/schemas/Zaehlzeitregister'
+      $ref: 'Zaehlzeitregister.yml'
     type: array
 required:
 - boTyp

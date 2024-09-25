@@ -3,5 +3,5 @@ properties:
     format: float
     type: number
   erzeugungsart:
-    $ref: '#/components/schemas/Erzeugungsart'
+    $ref: 'Erzeugungsart.yml'
 type: object

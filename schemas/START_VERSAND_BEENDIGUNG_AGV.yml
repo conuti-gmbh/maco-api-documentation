@@ -8,7 +8,7 @@ properties:
     default: '9900321000005'
     type: string
   energierichtung:
-    $ref: '#/components/schemas/Energierichtung'
+    $ref: 'Energierichtung.yml'
   lokationsTyp:
     default: '74018657187'
     type: string
@@ -37,7 +37,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   tranchenId:
     default: SOME_STRING
     type: string

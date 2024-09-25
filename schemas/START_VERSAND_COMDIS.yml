@@ -17,7 +17,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   typ:
     default: SOME_STRING
     type: string

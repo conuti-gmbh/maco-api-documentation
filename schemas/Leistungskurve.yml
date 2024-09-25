@@ -5,11 +5,11 @@ properties:
   code:
     type: string
   haeufigkeit:
-    $ref: '#/components/schemas/HaeufigkeitLeistungskurve'
+    $ref: 'HaeufigkeitLeistungskurve.yml'
   konfigurationsprodukt:
     type: string
   schwellwert:
-    $ref: '#/components/schemas/Schwellwert'
+    $ref: 'Schwellwert.yml'
   uebermittelbarkeit:
-    $ref: '#/components/schemas/UebermittelbarkeitLeistungskurve'
+    $ref: 'UebermittelbarkeitLeistungskurve.yml'
 type: object

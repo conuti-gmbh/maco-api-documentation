@@ -1,10 +1,10 @@
 properties:
   beschreibung:
-    $ref: '#/components/schemas/Beschreibung'
+    $ref: 'Beschreibung.yml'
   dokument:
     type: string
   gruppe:
-    $ref: '#/components/schemas/Gruppe'
+    $ref: 'Gruppe.yml'
   nachricht:
     type: string
   segment:

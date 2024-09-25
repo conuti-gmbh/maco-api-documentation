@@ -11,10 +11,10 @@ properties:
     format: date-time
     type: string
   notwendigkeit:
-    $ref: '#/components/schemas/DefinitionenNotwendigkeit'
+    $ref: 'DefinitionenNotwendigkeit.yml'
   schaltzeiten:
     items:
-      $ref: '#/components/schemas/Schaltzeit'
+      $ref: 'Schaltzeit.yml'
     type: array
   version:
     format: date-time

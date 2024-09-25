@@ -7,18 +7,18 @@ properties:
   lokationsId:
     type: string
   lokationsTyp:
-    $ref: '#/components/schemas/Lokationstyp'
+    $ref: 'Lokationstyp.yml'
   obiskennzahl:
     type: string
   reklamationsgrund:
-    $ref: '#/components/schemas/Reklamationsgrund'
+    $ref: 'Reklamationsgrund.yml'
   reklamationsgrundBemerkung:
-    $ref: '#/components/schemas/ReklamationsgrundBemerkung'
+    $ref: 'ReklamationsgrundBemerkung.yml'
   versionStruktur:
     default: '1'
     type: string
   zeitraumMesswertanfrage:
-    $ref: '#/components/schemas/Zeitraum'
+    $ref: 'Zeitraum.yml'
 required:
 - boTyp
 - versionStruktur

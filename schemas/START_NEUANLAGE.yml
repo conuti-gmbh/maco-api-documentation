@@ -2,7 +2,7 @@ description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of me
   \ value transmission"
 properties:
   energierichtung:
-    $ref: '#/components/schemas/Energierichtung'
+    $ref: 'Energierichtung.yml'
   gewerbekennzeichnung:
     default: SOME_STRING
     type: string
@@ -43,7 +43,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   transaktionsgrundergaenzung:
     default: SOME_STRING
     type: string

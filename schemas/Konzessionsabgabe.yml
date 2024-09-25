@@ -5,5 +5,5 @@ properties:
     format: float
     type: number
   satz:
-    $ref: '#/components/schemas/AbgabeArt'
+    $ref: 'AbgabeArt.yml'
 type: object

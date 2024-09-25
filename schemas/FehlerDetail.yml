@@ -1,8 +1,8 @@
 properties:
   beschreibung:
-    $ref: '#/components/schemas/Beschreibung'
+    $ref: 'Beschreibung.yml'
   code:
-    $ref: '#/components/schemas/FehlerCode'
+    $ref: 'FehlerCode.yml'
   ursache:
-    $ref: '#/components/schemas/FehlerUrsache'
+    $ref: 'FehlerUrsache.yml'
 type: object

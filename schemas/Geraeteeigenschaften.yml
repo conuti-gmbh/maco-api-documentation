@@ -3,7 +3,7 @@ properties:
     format: float
     type: number
   geraetemerkmal:
-    $ref: '#/components/schemas/Geraetemerkmal'
+    $ref: 'Geraetemerkmal.yml'
   geraetetyp:
-    $ref: '#/components/schemas/Geraetetyp'
+    $ref: 'Geraetetyp.yml'
 type: object

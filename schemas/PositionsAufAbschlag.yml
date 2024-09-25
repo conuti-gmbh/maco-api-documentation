@@ -1,8 +1,8 @@
 properties:
   aufAbschlagstyp:
-    $ref: '#/components/schemas/AufAbschlagstyp'
+    $ref: 'AufAbschlagstyp.yml'
   aufAbschlagswaehrung:
-    $ref: '#/components/schemas/Waehrungseinheit'
+    $ref: 'Waehrungseinheit.yml'
   aufAbschlagswert:
     format: float
     type: number

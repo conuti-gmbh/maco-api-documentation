@@ -9,20 +9,20 @@ properties:
   artikelId:
     type: string
   artikelIdTyp:
-    $ref: '#/components/schemas/ArtikelIdTyp'
+    $ref: 'ArtikelIdTyp.yml'
   differenzDaten:
     type: boolean
   gemeinderabatt:
     format: float
     type: number
   preisSingulaereBetriebsmittel:
-    $ref: '#/components/schemas/Preis'
+    $ref: 'Preis.yml'
   singulaereBetriebsmittel:
-    $ref: '#/components/schemas/Menge'
+    $ref: 'Menge.yml'
   zaehlzeiten:
-    $ref: '#/components/schemas/Zaehlzeitregister'
+    $ref: 'Zaehlzeitregister.yml'
   zahlerBlindarbeit:
-    $ref: '#/components/schemas/ZahlerBlindarbeit'
+    $ref: 'ZahlerBlindarbeit.yml'
   zahlerBlindarbeitLf:
     type: boolean
   zuschlag:

@@ -1,6 +1,6 @@
 properties:
   arithmetik:
-    $ref: '#/components/schemas/ArithmetischeOperation'
+    $ref: 'ArithmetischeOperation.yml'
   gueltigBis:
     format: date-time
     type: string

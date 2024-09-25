@@ -2,39 +2,39 @@ properties:
   artikelId:
     type: string
   bdewArtikelnummer:
-    $ref: '#/components/schemas/BDEWArtikelnummer'
+    $ref: 'BDEWArtikelnummer.yml'
   berechnungsmethode:
-    $ref: '#/components/schemas/Kalkulationsmethode'
+    $ref: 'Kalkulationsmethode.yml'
   beschreibung:
     type: string
   bezugsgroesse:
-    $ref: '#/components/schemas/Mengeneinheit'
+    $ref: 'Mengeneinheit.yml'
   leistungsbezeichnung:
     type: string
   leistungstyp:
-    $ref: '#/components/schemas/Leistungstyp'
+    $ref: 'Leistungstyp.yml'
   messebene:
-    $ref: '#/components/schemas/Netzebene'
+    $ref: 'Netzebene.yml'
   positionsnummer:
     type: integer
   preiseinheit:
-    $ref: '#/components/schemas/Waehrungseinheit'
+    $ref: 'Waehrungseinheit.yml'
   preisschluesselstamm:
     type: string
   preisstaffeln:
     items:
-      $ref: '#/components/schemas/Preisstaffel'
+      $ref: 'Preisstaffel.yml'
     type: array
   tarifzeit:
-    $ref: '#/components/schemas/Tarifzeit'
+    $ref: 'Tarifzeit.yml'
   verarbeitungszeitraum:
-    $ref: '#/components/schemas/Zeitraum'
+    $ref: 'Zeitraum.yml'
   zeitbasis:
-    $ref: '#/components/schemas/Zeiteinheit'
+    $ref: 'Zeiteinheit.yml'
   zonungsgroesse:
-    $ref: '#/components/schemas/Bemessungsgroesse'
+    $ref: 'Bemessungsgroesse.yml'
   zu_abschlaege:
     items:
-      $ref: '#/components/schemas/PositionsAufAbschlag'
+      $ref: 'PositionsAufAbschlag.yml'
     type: array
 type: object

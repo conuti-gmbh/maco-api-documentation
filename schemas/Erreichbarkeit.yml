@@ -1,6 +1,6 @@
 properties:
   verfuegbarkeit:
-    $ref: '#/components/schemas/Verfuegbarkeit'
+    $ref: 'Verfuegbarkeit.yml'
   zeit:
     type: string
 type: object

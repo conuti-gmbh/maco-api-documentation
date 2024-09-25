@@ -56,7 +56,7 @@ properties:
     default: '01452'
     type: string
   sparte:
-    $ref: '#/components/schemas/Sparte'
+    $ref: 'Sparte.yml'
   strasse:
     default: stadtstrasse
     type: string
