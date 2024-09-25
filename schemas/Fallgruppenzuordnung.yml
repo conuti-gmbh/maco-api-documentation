@@ -1,0 +1,5 @@
+enum:
+- GABI_RLMmT
+- GABI_RLMoT
+- GABI_RLMNEV
+type: string

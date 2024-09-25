@@ -1,0 +1,30 @@
+properties:
+  beginndatum:
+    format: date-time
+    type: string
+  boTyp:
+    default: BERECHNUNGSFORMEL
+    type: string
+  lieferrichtung:
+    $ref: 'Energierichtung.yml'
+  notwendigkeit:
+    $ref: 'BerechnungsformelNotwendigkeit.yml'
+  rechenschritt:
+    $ref: 'Rechenschritt.yml'
+  rechenschrittId:
+    type: integer
+  rechenschritte:
+    items:
+      $ref: 'Rechenschritt.yml'
+    type: array
+  versionStruktur:
+    default: '1'
+    type: string
+  verwendungszweck:
+    items:
+      $ref: 'Verwendungszweck.yml'
+    type: array
+required:
+- boTyp
+- versionStruktur
+type: object

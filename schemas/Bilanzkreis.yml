@@ -1,0 +1,12 @@
+properties:
+  bezeichnung:
+    type: string
+  boTyp:
+    default: BILANZKREIS
+    type: string
+  prioritaet:
+    type: integer
+  versionStruktur:
+    default: '1'
+    type: string
+type: object

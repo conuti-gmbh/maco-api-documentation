@@ -1,0 +1,4 @@
+enum:
+- WERTE
+- PROFILE
+type: string

@@ -1,0 +1,7 @@
+enum:
+- ANSCHREIBEN
+- TELEFONAT
+- FAX
+- E_MAIL
+- SMS
+type: string

@@ -1,0 +1,8 @@
+enum:
+- MONTAG
+- DIENSTAG
+- MITTWOCH
+- DONNERSTAG
+- FREITAG
+- PAUSE
+type: string

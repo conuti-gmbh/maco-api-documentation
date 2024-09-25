@@ -1,0 +1,37 @@
+properties:
+  abschlag:
+    $ref: 'Abschlag.yml'
+  artikelnummer:
+    type: string
+  ausfuehrungsdatum:
+    format: date-time
+    type: string
+  einzelpreis:
+    $ref: 'Preis.yml'
+  gemeinderabatt:
+    $ref: 'Gemeinderabatt.yml'
+  gesamtZuAbschlagsbetrag:
+    format: float
+    type: number
+  korrekturfaktor:
+    format: float
+    type: number
+  lieferungBis:
+    format: date-time
+    type: string
+  lieferungVon:
+    format: date-time
+    type: string
+  positionsMenge:
+    $ref: 'Menge.yml'
+  positionsnummer:
+    type: integer
+  teilsummeNetto:
+    $ref: 'Betrag.yml'
+  teilsummeSteuer:
+    $ref: 'Steuerbetrag.yml'
+  zeitbezogeneMenge:
+    $ref: 'Menge.yml'
+  zuschlag:
+    $ref: 'Zuschlag.yml'
+type: object

@@ -1,0 +1,30 @@
+properties:
+  abonnement:
+    $ref: 'Abonnement.yml'
+  allgemeineInformationen:
+    type: string
+  anfragekategorie:
+    $ref: 'Anfragekategorie.yml'
+  anfragereferenz:
+    type: string
+  anfragetyp:
+    $ref: 'Anfragetyp.yml'
+  boTyp:
+    default: ANFRAGE
+    type: string
+  energierichtung:
+    $ref: 'Energierichtung.yml'
+  gueltigAb:
+    format: date-time
+    type: string
+  gueltigkeitszeitspanne:
+    type: string
+  lokationsId:
+    type: string
+  versionStruktur:
+    default: '1'
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

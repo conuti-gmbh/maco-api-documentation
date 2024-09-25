@@ -1,0 +1,22 @@
+properties:
+  boTyp:
+    default: KOMMUNIKATIONSDATEN
+    type: string
+  gueltigkeit:
+    format: date-time
+    type: string
+  kommunikationsDatenBlattInaktiv:
+    type: boolean
+  kommunikationsangaben:
+    items:
+      $ref: 'Marktteilnehmer.yml'
+    type: array
+  marktteilnehmer:
+    $ref: 'Marktteilnehmer.yml'
+  versionStruktur:
+    default: '1'
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

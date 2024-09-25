@@ -1,0 +1,4 @@
+enum:
+- KUNDEN_NB
+- LIEFERANTEN_NB
+type: string

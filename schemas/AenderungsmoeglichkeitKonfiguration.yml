@@ -1,0 +1,4 @@
+enum:
+- ERFORDERLICH
+- NICHT_ERFORDERLICH
+type: string

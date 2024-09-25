@@ -1,0 +1,21 @@
+enum:
+- W
+- WH
+- KW
+- KWH
+- KVARH
+- MW
+- MWH
+- STUECK
+- KUBIKMETER
+- STUNDE
+- TAG
+- MONAT
+- JAHR
+- PROZENT
+- ANZAHL
+- VAR
+- KVAR
+- VARH
+- KWHK
+type: string

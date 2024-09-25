@@ -1,0 +1,6 @@
+properties:
+  art:
+    $ref: 'StatusArt.yml'
+  status:
+    $ref: 'Status.yml'
+type: object

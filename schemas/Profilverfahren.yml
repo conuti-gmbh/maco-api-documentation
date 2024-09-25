@@ -1,0 +1,4 @@
+enum:
+- SYNTHETISCH
+- ANALYTISCH
+type: string

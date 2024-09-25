@@ -1,0 +1,12 @@
+enum:
+- SEKUNDE
+- MINUTE
+- STUNDE
+- VIERTEL_STUNDE
+- TAG
+- WOCHE
+- MONAT
+- QUARTAL
+- HALBJAHR
+- JAHR
+type: string

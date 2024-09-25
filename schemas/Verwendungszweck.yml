@@ -1,0 +1,8 @@
+properties:
+  marktrolle:
+    $ref: 'Marktrolle.yml'
+  zweck:
+    items:
+      $ref: 'VerwendungszweckValue.yml'
+    type: array
+type: object

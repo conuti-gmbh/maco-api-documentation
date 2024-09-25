@@ -1,0 +1,204 @@
+description: "Schema für start ENERGIEVERTRAG | Scheme for start ENERGY CONTRACT"
+properties:
+  beschreibung:
+    example: <string>
+    type: string
+  boTyp:
+    example: VERTRAG
+    type: string
+  datenqualitaet:
+    example: ENUM_qualitaet
+    type: string
+  enFG:
+    items:
+      properties:
+        grund:
+          items:
+            example: grund1
+            type: string
+          type: array
+        grundlageVerringerungUmlagen:
+          example: ENUM
+          type: string
+      type: object
+    type: array
+  korrespondenzpartner:
+    properties:
+      anrede:
+        example: Name_Z04_5
+        type: string
+      boTyp:
+        example: GESCHAEFTSPARTNER
+        type: string
+      gewerbekennzeichnung:
+        example: true
+        type: boolean
+      name1:
+        example: Name_Z04_1
+        type: string
+      name2:
+        example: Name_Z04_2
+        type: string
+      name3:
+        example: Name_Z04_3
+        type: string
+      name4:
+        example: Name_Z04_4
+        type: string
+      partneradresse:
+        properties:
+          adresszusatz:
+            example: <string>
+            type: string
+          coErgaenzung:
+            example: <string>
+            type: string
+          hausnummer:
+            example: <string>
+            type: string
+          landescode:
+            example: ENUM_Landescode
+            type: string
+          ort:
+            example: <string>
+            type: string
+          ortsteil:
+            example: <string>
+            type: string
+          postfach:
+            example: <string>
+            type: string
+          postleitzahl:
+            example: <string>
+            type: string
+          strasse:
+            example: <string>
+            type: string
+        type: object
+      versionStruktur:
+        example: '1'
+        type: string
+    type: object
+  lokationsId:
+    example: <string>
+    type: string
+  lokationsTyp:
+    example: ENUM_Lokationstyp
+    type: string
+  sparte:
+    example: ENUM_Sparte
+    type: string
+  versionStruktur:
+    example: '1'
+    type: string
+  vertragsart:
+    example: ENERGIELIEFERVERTRAG
+    type: string
+  vertragsbeginn:
+    example: '0001-01-01T00:00:00Z'
+    format: date-time
+    type: string
+  vertragsende:
+    example: '2023-12-31T23:00:00Z'
+    format: date-time
+    type: string
+  vertragskonditionen:
+    properties:
+      abrechnungsintervall:
+        example: 12
+        type: integer
+      kuendigungsfrist:
+        properties:
+          zeitraumText:
+            example: <string>
+            type: string
+        type: object
+      kuendigungstermin:
+        example: <string>
+        type: string
+    type: object
+  vertragsnummer:
+    example: <string>
+    type: string
+  vertragspartner2:
+    items:
+      properties:
+        anrede:
+          example: Name_Z09_5
+          type: string
+        boTyp:
+          example: GESCHAEFTSPARTNER
+          type: string
+        externeReferenzen:
+          items:
+            properties:
+              exRefName:
+                example: Kundennummer beim Altlieferanten
+                type: string
+              exRefWert:
+                example: NummerLFA123456_Z01
+                type: string
+            type: object
+          type: array
+        geschaeftspartnerrolle:
+          items:
+            example: ENUM_rolle1
+            type: string
+          type: array
+        gewerbekennzeichnung:
+          example: false
+          type: boolean
+        name1:
+          example: Name_Z09_1
+          type: string
+        name2:
+          example: Name_Z09_2
+          type: string
+        name3:
+          example: Name_Z09_3
+          type: string
+        name4:
+          example: Name_Z09_4
+          type: string
+        partneradresse:
+          properties:
+            adresszusatz:
+              example: <string>
+              type: string
+            coErgaenzung:
+              example: <string>
+              type: string
+            hausnummer:
+              example: <string>
+              type: string
+            landescode:
+              example: ENUM_Landescode
+              type: string
+            ort:
+              example: <string>
+              type: string
+            ortsteil:
+              example: <string>
+              type: string
+            postfach:
+              example: <string>
+              type: string
+            postleitzahl:
+              example: <string>
+              type: string
+            strasse:
+              example: <string>
+              type: string
+          type: object
+        versionStruktur:
+          example: '1'
+          type: string
+      type: object
+    type: array
+  vertragstatus:
+    example: ENUM_Vertragstatus
+    type: string
+  zeitraumId:
+    example: 2
+    type: integer
+type: object

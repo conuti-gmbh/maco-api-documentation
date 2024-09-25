@@ -1,0 +1,4 @@
+enum:
+- ERFOLGREICH
+- FEHLER
+type: string

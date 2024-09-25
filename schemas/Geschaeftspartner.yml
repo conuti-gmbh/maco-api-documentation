@@ -1,0 +1,51 @@
+properties:
+  amtsgericht:
+    type: string
+  anrede:
+    type: string
+  boTyp:
+    default: GESCHAEFTSPARTNER
+    type: string
+  emailAdresse:
+    type: string
+  externeKundenummerLieferant:
+    type: string
+  externeReferenzen:
+    items:
+      $ref: 'ExterneReferenz.yml'
+    type: array
+  geschaeftspartnerrolle:
+    items:
+      $ref: 'Geschaeftspartnerrolle.yml'
+    type: array
+  gewerbekennzeichnung:
+    type: boolean
+  glaeubigerId:
+    type: string
+  hrnummer:
+    type: string
+  kontaktweg:
+    items:
+      $ref: 'Kontaktart.yml'
+    type: array
+  name1:
+    type: string
+  name2:
+    type: string
+  name3:
+    type: string
+  name4:
+    type: string
+  partneradresse:
+    $ref: 'Adresse.yml'
+  umsatzsteuerId:
+    type: string
+  versionStruktur:
+    default: '1'
+    type: string
+  website:
+    type: string
+required:
+- boTyp
+- versionStruktur
+type: object

@@ -1,0 +1,18 @@
+properties:
+  basiswert:
+    format: float
+    type: number
+  basiswertVorausbezahlt:
+    format: float
+    type: number
+  steuerkennzeichen:
+    type: string
+  steuerwert:
+    format: float
+    type: number
+  steuerwertVorausbezahhlt:
+    format: float
+    type: number
+  waehrung:
+    type: string
+type: object

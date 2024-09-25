@@ -1,0 +1,4 @@
+enum:
+- EINMALIG
+- JAEHRLICH
+type: string

@@ -1,0 +1,4 @@
+enum:
+- UENB
+- VNB
+type: string

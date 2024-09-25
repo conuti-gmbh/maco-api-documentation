@@ -1,0 +1,6 @@
+properties:
+  leistungskurvendefinition:
+    type: string
+  schaltzeitdefinition:
+    type: string
+type: object

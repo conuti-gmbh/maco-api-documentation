@@ -1,0 +1,18 @@
+properties:
+  objectcode:
+    items:
+      $ref: 'Objectcode.yml'
+    type: array
+  referenzLokationsId:
+    type: string
+  referenzLokationsTyp:
+    $ref: 'Lokationstyp.yml'
+  referenzMarktlokationTechnischeRessource:
+    items:
+      type: string
+    type: array
+  vorgelagerteLokationId:
+    type: string
+  vorgelagerteLokationTyp:
+    $ref: 'Lokationstyp.yml'
+type: object

@@ -1,0 +1,12 @@
+properties:
+  zieladresse1:
+    type: string
+  zieladresse2:
+    type: string
+  zieladresse3:
+    type: string
+  zieladresse4:
+    type: string
+  zieladresse5:
+    type: string
+type: object

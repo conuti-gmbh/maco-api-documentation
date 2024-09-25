@@ -1,0 +1,15 @@
+properties:
+  aenderungszeitpunkt:
+    format: date-time
+    type: string
+  code:
+    type: string
+  haeufigkeit:
+    $ref: 'HaeufigkeitSchaltzeit.yml'
+  konfigurationsprodukt:
+    type: string
+  schalthandlung:
+    $ref: 'Schalthandlung.yml'
+  uebermittelbarkeit:
+    $ref: 'UebermittelbarkeitSchaltzeit.yml'
+type: object

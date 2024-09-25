@@ -1,0 +1,7 @@
+properties:
+  prozent:
+    format: float
+    type: number
+  typ:
+    $ref: 'ZuschlagTyp.yml'
+type: object

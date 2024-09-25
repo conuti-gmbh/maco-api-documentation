@@ -1,0 +1,13 @@
+properties:
+  einheitspreis:
+    format: float
+    type: number
+  sigmoidparameter:
+    $ref: 'Sigmoidparameter.yml'
+  staffelgrenzeBis:
+    format: float
+    type: number
+  staffelgrenzeVon:
+    format: float
+    type: number
+type: object

@@ -1,0 +1,5 @@
+enum:
+- STROMERZEUGUNG
+- STROMVERBRAUCH
+- SPEICHER
+type: string

@@ -1,0 +1,39 @@
+properties:
+  allgemeineInformationen:
+    $ref: 'AllgemeineInformationen.yml'
+  antwortstatus:
+    type: string
+  auftragsStatusListe:
+    items:
+      $ref: 'Auftragsstatus.yml'
+    type: array
+  auftragsstatus:
+    $ref: 'Auftragsstatus.yml'
+  bearbeitungsdatum:
+    format: date-time
+    type: string
+  begruendung:
+    $ref: 'Begruendung.yml'
+  enddatum:
+    format: date-time
+    type: string
+  fehlerbeschreibung:
+    $ref: 'Fehlerbeschreibung.yml'
+  lokationsId:
+    type: string
+  positionsnummer:
+    type: integer
+  referenzMelo:
+    type: string
+  statusVeraenderungsZeitpunkt:
+    format: date-time
+    type: string
+  statusanlass:
+    $ref: 'Statusanlass.yml'
+  verwendungAb:
+    format: date-time
+    type: string
+  verwendungBis:
+    format: date-time
+    type: string
+type: object

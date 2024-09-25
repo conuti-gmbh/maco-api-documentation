@@ -1,0 +1,11 @@
+enum:
+- EGS
+- LGS
+- NZR
+- SES
+- SLS
+- TES
+- TLS
+- SLS_TLS
+- SES_TES
+type: string

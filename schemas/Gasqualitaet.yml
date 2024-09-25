@@ -1,0 +1,4 @@
+enum:
+- H_GAS
+- L_GAS
+type: string

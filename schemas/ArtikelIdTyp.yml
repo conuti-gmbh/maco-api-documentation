@@ -1,0 +1,4 @@
+enum:
+- ARTIKELID
+- GRUPPENARTIKELID
+type: string

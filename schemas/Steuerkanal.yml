@@ -1,0 +1,4 @@
+enum:
+- AN_AUS
+- GESTUFT
+type: string

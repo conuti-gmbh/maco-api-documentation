@@ -1,0 +1,21 @@
+properties:
+  avisNummer:
+    type: string
+  avisTyp:
+    $ref: 'AvisTyp.yml'
+  boTyp:
+    default: AVIS
+    type: string
+  positionen:
+    items:
+      $ref: 'Avisposition.yml'
+    type: array
+  versionStruktur:
+    default: '1'
+    type: string
+  zuZahlen:
+    $ref: 'Betrag.yml'
+required:
+- boTyp
+- versionStruktur
+type: object

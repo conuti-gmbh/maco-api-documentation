@@ -1,0 +1,6 @@
+enum:
+- JAEHRLICH
+- HALBJAEHRLICH
+- QUARTALSWEISE
+- MONATLICH
+type: string

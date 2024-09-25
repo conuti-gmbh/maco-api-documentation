@@ -1,0 +1,4 @@
+enum:
+- FERNAUSLESBAR
+- MANUELL_AUSGELESENE
+type: string

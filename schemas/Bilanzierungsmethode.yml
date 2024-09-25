@@ -1,0 +1,8 @@
+enum:
+- RLM
+- SLP
+- TLP_GEMEINSAM
+- TLP_GETRENNT
+- PAUSCHAL
+- IMS
+type: string

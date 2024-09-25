@@ -1,0 +1,10 @@
+properties:
+  konfigurationsprodukt:
+    type: string
+  obererSchwellwert:
+    format: float
+    type: number
+  untererSchwellwert:
+    format: float
+    type: number
+type: object

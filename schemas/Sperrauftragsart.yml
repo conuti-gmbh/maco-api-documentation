@@ -1,0 +1,4 @@
+enum:
+- SPERREN
+- ENTSPERREN
+type: string

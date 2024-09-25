@@ -1,0 +1,5 @@
+enum:
+- GESPERRT_NICHT_ENTSPERREN
+- GESPERRT
+- REGELBETRIEB
+type: string

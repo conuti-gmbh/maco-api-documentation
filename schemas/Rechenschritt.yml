@@ -1,0 +1,21 @@
+properties:
+  aufteilungsfaktorEnergiemenge:
+    format: float
+    type: number
+  energieflussrichtung:
+    $ref: 'Energierichtung.yml'
+  messlokationsId:
+    type: string
+  operation:
+    $ref: 'ArithmetischeOperation.yml'
+  rechenschrittBestandteilId:
+    type: integer
+  referenzRechenschrittId:
+    type: integer
+  verlustfaktorLeitung:
+    format: float
+    type: number
+  verlustfaktorTrafo:
+    format: float
+    type: number
+type: object

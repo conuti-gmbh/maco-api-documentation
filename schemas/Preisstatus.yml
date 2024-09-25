@@ -1,0 +1,4 @@
+enum:
+- VORLAEUFIG
+- ENDGUELTIG
+type: string

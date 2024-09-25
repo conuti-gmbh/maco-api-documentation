@@ -1,0 +1,5 @@
+enum:
+- UNVERAENDERT
+- BEGINNT
+- ENDET
+type: string

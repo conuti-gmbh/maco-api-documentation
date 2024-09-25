@@ -1,0 +1,40 @@
+properties:
+  ablesedatum:
+    format: date-time
+    type: string
+  ausfuehrungszeitpunkt:
+    format: date-time
+    type: string
+  einheit:
+    $ref: 'Mengeneinheit.yml'
+  enddatum:
+    format: date-time
+    type: string
+  leistungsperiode:
+    type: string
+  messwertstatus:
+    $ref: 'Messwertstatus.yml'
+  nutzungszeitpunkt:
+    format: date-time
+    type: string
+  obiskennzahl:
+    type: string
+  position:
+    type: integer
+  startdatum:
+    format: date-time
+    type: string
+  statuszusatzinformationen:
+    items:
+      $ref: 'StatusZusatzInformation.yml'
+    type: array
+  tarifstufe:
+    $ref: 'Tarifstufe.yml'
+  type:
+    $ref: 'Verbrauchsmengetyp.yml'
+  wert:
+    format: float
+    type: number
+  wertermittlungsverfahren:
+    $ref: 'Wertermittlungsverfahren.yml'
+type: object
