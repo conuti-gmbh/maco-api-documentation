@@ -1,0 +1,20 @@
+type: object
+description: Schema für Lieferende | Scheme for termination
+properties:
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  sparte:
+    $ref: "Sparte.yml"
+  zaehlernummer:
+    type: string
+    default: "123456789"
+  vertragsart:
+    type: string
+    default: ENERGIELIEFERVERTRAG
+  absender:
+    type: string
+    default: "9900321000005"
+  empfaenger:
+    type: string
+    default: "9900321000005"

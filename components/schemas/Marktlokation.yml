@@ -1,0 +1,123 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: MARKTLOKATION
+  versionStruktur:
+    type: string
+    default: "1"
+  marktlokationsId:
+    type: string
+  sparte:
+    type: string
+  energierichtung:
+    $ref: "#/components/schemas/Energierichtung"
+  bilanzierungsmethode:
+    $ref: "#/components/schemas/Bilanzierungsmethode"
+  verbrauchsart:
+    $ref: "#/components/schemas/Verbrauchsart"
+  unterbrechbar:
+    type: boolean
+  netzebene:
+    $ref: "#/components/schemas/Netzebene"
+  umspannung:
+    $ref: "#/components/schemas/Netzebene"
+  netzbetreiberCodeNr:
+    type: string
+  gebietTyp:
+    $ref: "#/components/schemas/Gebiettyp"
+  netzgebietNr:
+    type: string
+  bilanzierungsgebiet:
+    type: string
+  grundversorgerCodeNr:
+    type: string
+  gasqualitaet:
+    $ref: "#/components/schemas/Gasqualitaet"
+  endkunde:
+    $ref: "#/components/schemas/Geschaeftspartner"
+  lokationsadresse:
+    $ref: "#/components/schemas/Adresse"
+  katasterinformation:
+    $ref: "#/components/schemas/Katasteradresse"
+  regelzone:
+    type: string
+  marktgebiet:
+    type: string
+  zeitreihentyp:
+    $ref: "#/components/schemas/Zeitreihentyp"
+  messtechnischeEinordnung:
+    $ref: "#/components/schemas/MesstechnischeEinordnung"
+  sperrstatus:
+    $ref: "#/components/schemas/Sperrstatus"
+  referenzMarktlokationsId:
+    type: string
+  versorgungsart:
+    $ref: "#/components/schemas/Versorgungsart"
+  eigentuemer:
+    $ref: "#/components/schemas/Geschaeftspartner"
+  hausverwalter:
+    $ref: "#/components/schemas/Geschaeftspartner"
+  verguetungEmpfaenger:
+    $ref: "#/components/schemas/VerguetungEmpfaenger"
+  statusErzeugendeMalo:
+    $ref: "#/components/schemas/StatusErzeugendeMarktlokation"
+  fernsteuerbarkeit:
+    $ref: "#/components/schemas/Fernsteuerbarkeit"
+  foerderungsLand:
+    type: string
+  redispatch:
+    type: boolean
+  zukuenftigerMeldepunkt:
+    type: boolean
+  lokationszuordnung:
+    $ref: "#/components/schemas/Lokationszuordnung"
+  konfigurationsprodukt:
+    type: string
+  leistungskurvendefinition:
+    type: string
+  produktdatenRelevanteRolle:
+    $ref: "#/components/schemas/Marktrolle"
+  beteiligterMarktpartner:
+    $ref: "#/components/schemas/Marktteilnehmer"
+  modulNetzentgelte:
+    $ref: "#/components/schemas/ModulNetzentgelte"
+  datenqualitaet:
+    $ref: "#/components/schemas/Datenqualitaet"
+  zeitraumId:
+    type: integer
+  marktrollen:
+    type: array
+    items:
+      $ref: "#/components/schemas/Marktteilnehmer"
+  zaehlwerke:
+    type: array
+    items:
+      $ref: "#/components/schemas/Zaehlwerk"
+  zaehlwerkeBeteiligteMarktrolle:
+    type: array
+    items:
+      $ref: "#/components/schemas/Marktrolle"
+  verbrauchsmenge:
+    type: array
+    items:
+      $ref: "#/components/schemas/Verbrauch"
+  zugehoerigeMesslokationen:
+    type: array
+    items:
+      $ref: "#/components/schemas/Messlokationszuordnung"
+  netznutzungsabrechnungsdaten:
+    type: array
+    items:
+      $ref: "#/components/schemas/Netznutzungsabrechnungsdaten"
+  messstellenbetriebsabrechnungsdaten:
+    type: array
+    items:
+      $ref: "#/components/schemas/Messstellenbetriebsabrechnungsdaten"
+  energieherkunft:
+    type: array
+    items:
+      $ref: "#/components/schemas/Energieherkunft"
+required:
+  - boTyp
+  - versionStruktur

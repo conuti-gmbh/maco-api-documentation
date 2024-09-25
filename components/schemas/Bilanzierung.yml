@@ -1,0 +1,61 @@
+type: object
+properties:
+  boTyp:
+    type: string
+    default: BILANZIERUNG
+  versionStruktur:
+    type: string
+    default: "1"
+  marktlokationsId:
+    type: string
+  aggregationsverantwortung:
+    $ref: "#/components/schemas/Aggregationsverantwortung"
+  zeitreihentyp:
+    type: string
+  prognosegrundlage:
+    $ref: "#/components/schemas/Prognosegrundlage"
+  bilanzierungsbeginn:
+    type: string
+    format: date-time
+  bilanzierungsende:
+    type: string
+    format: date-time
+  bilanzkreis:
+    type: string
+  fallgruppenzuordnung:
+    $ref: "#/components/schemas/Fallgruppenzuordnung"
+  temperaturarbeit:
+    $ref: "#/components/schemas/Menge"
+  jahresverbrauchsprognose:
+    $ref: "#/components/schemas/Menge"
+  kundenwert:
+    $ref: "#/components/schemas/Menge"
+  verbrauchsaufteilung:
+    $ref: "#/components/schemas/Menge"
+  wahlrechtPrognosegrundlage:
+    $ref: "#/components/schemas/WahlrechtPrognosegrundlage"
+  grundWahlrechtPrognosegrundlage:
+    $ref: "#/components/schemas/WahlrechtPrognosegrundlage"
+  abwicklungsmodell:
+    $ref: "#/components/schemas/Abwicklungsmodell"
+  vorjahresverbrauch:
+    $ref: "#/components/schemas/Menge"
+  datenqualitaet:
+    $ref: "#/components/schemas/Datenqualitaet"
+  zeitraumId:
+    type: integer
+  lastprofile:
+    type: array
+    items:
+      $ref: "#/components/schemas/Lastprofil"
+  lastprofileBilanzierungsbeteiligter:
+    type: array
+    items:
+      $ref: "#/components/schemas/Lastprofil"
+  detailsPrognosegrundlage:
+    type: array
+    items:
+      $ref: "#/components/schemas/Profiltyp"
+required:
+  - boTyp
+  - versionStruktur

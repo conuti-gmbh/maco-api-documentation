@@ -1,0 +1,68 @@
+type: object
+description: Schema für Lieferbeginn | Schema for the delivery start
+properties:
+  id:
+    type: string
+    example: "110000000605"
+  marktlokationsId:
+    type: string
+    default: "74018657187"
+  sparte:
+    $ref: "Sparte.yml"
+  energierichtung:
+    $ref: "Energierichtung.yml"
+  verguetungEmpfaenger:
+    $ref: "VerguetungEmpfaenger.yml"
+  bilanzkreis:
+    type: string
+    default: 11X----123456
+  vertragsbeginn:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  vertragsende:
+    type: string
+    default: "2024-04-01T07:40:00Z"
+  haushaltskunde:
+    type: boolean
+  gewerbekennzeichnung:
+    type: boolean
+  anrede:
+    type: string
+    default: Musteranrede
+  name1:
+    type: string
+    default: Mustername1
+  name2:
+    type: string
+    default: Mustername2
+  postleitzahl:
+    type: string
+    default: "12345"
+  ort:
+    type: string
+    default: Musterort
+  strasse:
+    type: string
+    default: Musterstrasse
+  hausnummer:
+    type: string
+    default: 11a
+  landescode:
+    type: string
+    default: DE
+  ortsteil:
+    type: string
+    default: Musterortsteil
+  empfaenger:
+    type: string
+    default: "9900321000005"
+  transaktionsgrund:
+    type: string
+    default: E01
+  transaktionsgrundergaenzung:
+    type: string
+  transaktionsgrundergaenzungBefristeteAnmeldung:
+    type: string
+  absender:
+    type: string
+    default: "9900321000005"
