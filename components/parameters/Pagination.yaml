@@ -1,0 +1,20 @@
+name: pagination
+in: query
+description: Pagination parameters
+required: false
+schema:
+  type: object
+  properties:
+    limit:
+      type: integer
+      description: Maximum number of items to return
+      default: 10
+    offset:
+      type: integer
+      description: Offset from which to start returning items
+      default: 0
+    page:
+      type: integer
+      description: Page number to return
+      default: 1
+  additionalProperties: false

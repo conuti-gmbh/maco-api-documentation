@@ -1,0 +1,21 @@
+post:
+  operationId: userWebhook
+  summary: summary
+  requestBody:
+    description: Webhook payload
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            id:
+              type: integer
+              format: int64
+            name:
+              type: string
+            email:
+              type: string
+              format: email
+  responses:
+    '200':
+      description: Webhook successful

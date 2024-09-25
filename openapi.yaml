@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Sample API
+  version: 1.0.1
+  description: API description
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: "https://api.macoapp.de"
+    description: Mock-Umgebung | Mock environment
+tags:
+  - name: users
+    description: Operations related to users
+security: []
+paths:
+  /users:
+    $ref: "./paths/users.yaml"
+  /user/{userId}:
+    $ref: "./paths/UserId.yaml"
