@@ -35,7 +35,7 @@ properties:
   abrechnungUeberNna:
     type: boolean
   datenqualitaet:
-    $ref: "Datenqualitaet"
+    $ref: "Datenqualitaet.yml"
   zeitraumId:
     type: integer
   vertragspartner1:
