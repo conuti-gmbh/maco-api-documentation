@@ -230,6 +230,19 @@ paths:
               schema:
                 $ref: '#/paths/~1ERSTELLEN_ENERGIELIEFERVERTRAG_BASIS/post/requestBody/content/application~1json/schema'
           description: Erfolgreiches Lesen der Marktlokation | Successful reading of the market location
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                  code:
+                    type: integer
+                    description: Error code
       summary: LESEN_NETZNUTZUNGSVERTRAG_BASIS
       tags:
         - LESEN | READ
@@ -1476,7 +1489,29 @@ paths:
         '200':
           content:
             application/json:
-              schema: null
+              schema:
+                type: object
+                description: Erfolgsmeldung auf Prozessdaten API Aufruf | Success message on process data API call
+                properties:
+                  messages:
+                    description: Fachliche Rückmeldungen zur Anzeige in der Oberfläche | Professional feedback on the display in the user interface
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        objectId:
+                          type: string
+                          example: DE63653316530AEOJQLMHUW55UC6J5513
+                        objectType:
+                          type: string
+                          example: Messlokation
+                        message:
+                          type: string
+                          example: Messlokation DE63653316530AEOJQLMHUW55UC6J5513 wurde der Marktlokation 84043719589 zugeordnet
+                  message:
+                    type: string
+                    description: Technische Meldung | Technische Meldung
+                    example: meterlocation assigned.
           description: Erfolgreiches Lesen der Kommunikationsdaten | Successful reading of communication data
         '400':
           content:

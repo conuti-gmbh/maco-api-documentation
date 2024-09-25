@@ -36,6 +36,8 @@ get:
             $ref: '../schemas/Vertrag.yml'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
+    '400':
+      $ref: '../components/responses/BadRequest.yml'
   summary: LESEN_NETZNUTZUNGSVERTRAG_BASIS
   tags:
   - LESEN | READ
