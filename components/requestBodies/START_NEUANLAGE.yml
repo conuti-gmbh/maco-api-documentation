@@ -1,4 +1,4 @@
-description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
   \ value transmission"
 properties:
   energierichtung:

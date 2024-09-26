@@ -1,4 +1,4 @@
-description: "Schema f\xFCr Lieferende | Scheme for Delivery end"
+description: "Schema für Lieferende | Scheme for Delivery end"
 properties:
   absender:
     default: '9900321000005'

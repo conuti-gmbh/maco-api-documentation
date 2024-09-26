@@ -1,4 +1,4 @@
-description: "Schema f\xFCr start Malo Ident | Scheme for start Malo Ident"
+description: "Schema für start Malo Ident | Scheme for start Malo Ident"
 properties:
   absender:
     default: '9900321000005'

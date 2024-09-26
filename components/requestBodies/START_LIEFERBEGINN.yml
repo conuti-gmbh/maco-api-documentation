@@ -1,4 +1,4 @@
-description: "Schema f\xFCr Lieferbeginn | Schema for the delivery start"
+description: "Schema für Lieferbeginn | Schema for the delivery start"
 properties:
   absender:
     default: '9900321000005'
