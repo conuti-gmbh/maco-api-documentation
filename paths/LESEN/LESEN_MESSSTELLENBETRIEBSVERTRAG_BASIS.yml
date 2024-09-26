@@ -1,53 +1,56 @@
 get:
-  description: Lesen des Messstellenbetriebsvertrages einer Lokation (Parameter1)
+  description:
+    Lesen des Messstellenbetriebsvertrages einer Lokation (Parameter1)
     zum Zeitpunkt (Parameter2) | Reading the metering contract of a location (Parameter1)
     at the time (Parameter2)
   operationId: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
   parameters:
-  - description: Name der Operation | Name of the operation (MACO APP interal assignment
-      between process and interface)
-    in: query
-    name: command
-    schema:
-      default: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
-      example: SAP_LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
-      type: string
-  - description: LokationsId | Location ID
-    in: query
-    name: parameter1
-    required: true
-    schema:
-      example: DE00056266802AO6G56M11SN51G21M24S
-      type: string
-  - description: "Datum (G\xFCltig ab) | Date (Valid from)"
-    in: query
-    name: parameter2
-    required: true
-    schema:
-      example: '2024-06-28T12:18:00Z'
-      format: date-time
-      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-      type: string
+    - description:
+        Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
+      in: query
+      name: command
+      schema:
+        default: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
+        example: SAP_LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
+        type: string
+    - description: LokationsId | Location ID
+      in: query
+      name: parameter1
+      required: true
+      schema:
+        example: DE00056266802AO6G56M11SN51G21M24S
+        type: string
+    - description: "Datum (Gültig ab) | Date (Valid from)"
+      in: query
+      name: parameter2
+      required: true
+      schema:
+        example: "2024-06-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
   responses:
-    '200':
+    "200":
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/Vertrag.schema.json'
-      description: Erfolgreiches Lesen des Messstellenbetriebsvertrages | Successful
+            $ref: "../../components/schemas/v1/bo/Vertrag.schema.json"
+      description:
+        Erfolgreiches Lesen des Messstellenbetriebsvertrages | Successful
         reading of metering contract
-    '400':
+    "400":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    '422':
+    "422":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
   tags:
-  - LESEN | READ
+    - LESEN | READ

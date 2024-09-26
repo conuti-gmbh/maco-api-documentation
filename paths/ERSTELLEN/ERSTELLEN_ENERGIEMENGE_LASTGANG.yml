@@ -1,77 +1,79 @@
 post:
-  description: "Schreiben eines Lastgangs \xFCber eine Lokation (Parameter1) zu einem\
+  description:
+    "Schreiben eines Lastgangs über eine Lokation (Parameter1) zu einem\
     \ Zeitintervall (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4) |\
     \ Writing a load profile for a location (Parameter1) over a time interval (Parameter2/Parameter3)\
     \ and an OBIS code (Parameter4)"
   operationId: ERSTELLEN_ENERGIEMENGE_LASTGANG
   parameters:
-  - description: Name der Operation | Name of the operation
-    in: query
-    name: command
-    required: true
-    schema:
-      default: ERSTELLEN_ENERGIEMENGE_LASTGANG
-      example: NOCODB_ERSTELLEN_ENERGIEMENGE_LASTGANG
-      type: string
-  - description: LokationsId | Location ID
-    in: query
-    name: parameter1
-    required: true
-    schema:
-      example: '74018657187'
-      type: string
-  - description: Datum (ab) | Date (from)
-    in: query
-    name: parameter2
-    required: true
-    schema:
-      example: '2024-05-28T12:18:00Z'
-      format: date-time
-      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-      type: string
-  - description: Datum (bis) | Date (until)
-    in: query
-    name: parameter3
-    required: true
-    schema:
-      example: '2024-05-28T12:18:00Z'
-      format: date-time
-      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-      type: string
-  - description: OBIS Kennzahl | OBIS code
-    in: query
-    name: parameter4
-    required: false
-    schema:
-      example: 1-1:1.9.0
-      type: string
+    - description: Name der Operation | Name of the operation
+      in: query
+      name: command
+      required: true
+      schema:
+        default: ERSTELLEN_ENERGIEMENGE_LASTGANG
+        example: NOCODB_ERSTELLEN_ENERGIEMENGE_LASTGANG
+        type: string
+    - description: LokationsId | Location ID
+      in: query
+      name: parameter1
+      required: true
+      schema:
+        example: "74018657187"
+        type: string
+    - description: Datum (ab) | Date (from)
+      in: query
+      name: parameter2
+      required: true
+      schema:
+        example: "2024-05-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
+    - description: Datum (bis) | Date (until)
+      in: query
+      name: parameter3
+      required: true
+      schema:
+        example: "2024-05-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
+    - description: OBIS Kennzahl | OBIS code
+      in: query
+      name: parameter4
+      required: false
+      schema:
+        example: 1-1:1.9.0
+        type: string
   requestBody:
     content:
       application/json:
         schema:
-          $ref: '../../components/schemas/v1/bo/Energiemenge.schema.json'
+          $ref: "../../components/schemas/v1/bo/Energiemenge.schema.json"
     required: true
   responses:
-    '201':
+    "201":
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/Energiemenge.schema.json'
-      description: Erfolgreiches Schreiben des Lastgangs | Successful writing of the
+            $ref: "../../components/schemas/v1/bo/Energiemenge.schema.json"
+      description:
+        Erfolgreiches Schreiben des Lastgangs | Successful writing of the
         load profile
-    '400':
+    "400":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    '422':
+    "422":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
 
   summary: ERSTELLEN_ENERGIEMENGE_LASTGANG
   tags:
-  - ERSTELLEN | CREATE
+    - ERSTELLEN | CREATE

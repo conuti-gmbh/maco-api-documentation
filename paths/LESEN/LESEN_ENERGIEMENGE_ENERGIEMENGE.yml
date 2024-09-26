@@ -1,7 +1,7 @@
 get:
   summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
   description:
-    "Lesen einer Energiemenge \xFCber eine Lokation (Parameter1) in einer\
+    "Lesen einer Energiemenge über eine Lokation (Parameter1) in einer\
     \ Range (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4 optional)\
     \ | Reading an energy quantity for a location (Parameter1) in a range (Parameter2/Parameter3)\
     \ and an OBIS code (Parameter4 optional)"
@@ -52,7 +52,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/Energiemenge.schema.json'
+            $ref: "../../components/schemas/v1/bo/Energiemenge.schema.json"
       description:
         Erfolgreiches Lesen der Energiemenge | Successful reading of the
         energy quantity
@@ -60,13 +60,13 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/OK_RESPONSE.yml'
+            $ref: "../../components/responses/OK_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
     "422":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/OK_RESPONSE.yml'
+            $ref: "../../components/responses/OK_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
   tags:
-  - LESEN | READ
+    - LESEN | READ
