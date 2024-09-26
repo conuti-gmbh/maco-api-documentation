@@ -1,0 +1,52 @@
+get:
+  description: Lesen des Avises mittels Avisnummer (Parameter1) zum Zeitpunkt (Parameter2)
+    Reading the avis via avisnumber (Parameter1) at the time (Parameter2)
+  operationId: LESEN_AVIS_BASIS
+  parameters:
+  - description: Name der Operation | Name of the operation (MACO APP interal assignment
+      between process and interface)
+    in: query
+    name: command
+    schema:
+      default: LESEN_AVIS_BASIS
+      example: SAP_LESEN_AVIS_BASIS
+      type: string
+  - description: avisNummer | avis Number
+    in: query
+    name: parameter1
+    required: true
+    schema:
+      example: '123456'
+      type: string
+  - description: "Datum (G\xFCltig ab) | Date (Valid from)"
+    in: query
+    name: parameter2
+    required: true
+    schema:
+      example: '2024-06-28T12:18:00Z'
+      format: date-time
+      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+      type: string
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/v1/bo/Avis.schema.json'
+      description: Erfolgreiches Lesen des Avises | Successful reading of energy delivery
+        contract
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
+  summary: LESEN_AVIS_BASIS
+  tags:
+  - LESEN | READ
