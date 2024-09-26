@@ -17,6 +17,10 @@ info:
 
     <summary>Changelog</summary>
 
+    
+    **Version 1.1.0** - *26. September 2024* - _Autor: Tu Quy Nguyen_
+    - refactor openapi document
+
     **Version 1.0.5** - *18. September 2024* - _Autor: DAS_
     - Update Default Command auf SAP_ statt NOCODB_
     - Update Default Beispiel MaloId auf 50074561188
