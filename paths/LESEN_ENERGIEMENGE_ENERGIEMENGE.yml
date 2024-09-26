@@ -68,3 +68,5 @@ get:
           schema:
             $ref: '../components/schemas/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
+  tags:
+  - LESEN | READ

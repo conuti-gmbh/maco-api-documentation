@@ -1,6 +1,6 @@
 get:
   description: Lesen des Avises mittels Avisnummer (Parameter1) zum Zeitpunkt (Parameter2)
-    | Reading the avis via avisnumber (Parameter1) at the time (Parameter2)
+    Reading the avis via avisnumber (Parameter1) at the time (Parameter2)
   operationId: LESEN_AVIS_BASIS
   parameters:
   - description: Name der Operation | Name of the operation (MACO APP interal assignment
