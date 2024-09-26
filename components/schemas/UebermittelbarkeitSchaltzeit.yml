@@ -1,4 +1,0 @@
-enum:
-- ELEKTRONISCH
-- NICHT_ELEKTRONISCH
-type: string

@@ -1,0 +1,20 @@
+{
+    "title": "Messlokationszuordnung",
+    "type": "object",
+    "properties": {
+        "messlokationsId": {
+            "type": "string"
+        },
+        "arithmetik": {
+            "$ref": "../enum/ArithmetischeOperation.schema.json"
+        },
+        "gueltigSeit": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "gueltigBis": {
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}

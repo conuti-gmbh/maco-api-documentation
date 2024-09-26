@@ -1,0 +1,30 @@
+{
+    "title": "ZuordnungObjectcode",
+    "type": "object",
+    "properties": {
+        "referenzLokationsTyp": {
+            "$ref": "../enum/Lokationstyp.schema.json"
+        },
+        "referenzLokationsId": {
+            "type": "string"
+        },
+        "vorgelagerteLokationTyp": {
+            "$ref": "../enum/Lokationstyp.schema.json"
+        },
+        "vorgelagerteLokationId": {
+            "type": "string"
+        },
+        "objectcode": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Objectcode.schema.json"
+            }
+        },
+        "referenzMarktlokationTechnischeRessource": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

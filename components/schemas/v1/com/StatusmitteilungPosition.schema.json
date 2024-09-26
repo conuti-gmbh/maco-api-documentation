@@ -1,0 +1,59 @@
+{
+    "title": "StatusmitteilungPosition",
+    "type": "object",
+    "properties": {
+        "positionsnummer": {
+            "type": "integer"
+        },
+        "bearbeitungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "verwendungAb": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "verwendungBis": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "enddatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "auftragsstatus": {
+            "$ref": "../enum/Auftragsstatus.schema.json"
+        },
+        "statusanlass": {
+            "$ref": "../enum/Statusanlass.schema.json"
+        },
+        "antwortstatus": {
+            "type": "string"
+        },
+        "fehlerbeschreibung": {
+            "$ref": "../com/Fehlerbeschreibung.schema.json"
+        },
+        "begruendung": {
+            "$ref": "../com/Begruendung.schema.json"
+        },
+        "lokationsId": {
+            "type": "string"
+        },
+        "referenzMelo": {
+            "type": "string"
+        },
+        "allgemeineInformationen": {
+            "$ref": "../com/AllgemeineInformationen.schema.json"
+        },
+        "statusVeraenderungsZeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "auftragsStatusListe": {
+            "type": "array",
+            "items": {
+                "$ref": "../enum/Auftragsstatus.schema.json"
+            }
+        }
+    }
+}

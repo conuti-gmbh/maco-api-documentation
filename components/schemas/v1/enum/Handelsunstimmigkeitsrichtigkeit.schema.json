@@ -1,0 +1,13 @@
+{
+    "title": "Handelsunstimmigkeitsrichtigkeit",
+    "type": "string",
+    "enum": [
+        "MSCONS",
+        "UTILMD",
+        "INVOIC",
+        "ORDERS",
+        "PRICAT",
+        "IFTSTA",
+        "ORDCHG"
+    ]
+}

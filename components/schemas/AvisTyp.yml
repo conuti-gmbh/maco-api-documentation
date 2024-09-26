@@ -1,4 +1,0 @@
-enum:
-- ABGELEHNTE_FORDERUNG
-- ZAHLUNGSAVIS
-type: string

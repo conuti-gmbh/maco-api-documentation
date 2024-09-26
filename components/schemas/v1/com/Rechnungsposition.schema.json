@@ -1,0 +1,56 @@
+{
+    "title": "Rechnungsposition",
+    "type": "object",
+    "properties": {
+        "einzelpreis": {
+            "$ref": "../com/Preis.schema.json"
+        },
+        "lieferungBis": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "lieferungVon": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "positionsMenge": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "positionsnummer": {
+            "type": "integer"
+        },
+        "artikelnummer": {
+            "type": "string"
+        },
+        "teilsummeNetto": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "teilsummeSteuer": {
+            "$ref": "../com/Steuerbetrag.schema.json"
+        },
+        "zeitbezogeneMenge": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "abschlag": {
+            "$ref": "../com/Abschlag.schema.json"
+        },
+        "zuschlag": {
+            "$ref": "../com/Zuschlag.schema.json"
+        },
+        "gemeinderabatt": {
+            "$ref": "../com/Gemeinderabatt.schema.json"
+        },
+        "gesamtZuAbschlagsbetrag": {
+            "type": "number",
+            "format": "float"
+        },
+        "korrekturfaktor": {
+            "type": "number",
+            "format": "float"
+        },
+        "ausfuehrungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}

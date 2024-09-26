@@ -1,0 +1,18 @@
+{
+    "title": "Tagesparameter",
+    "type": "object",
+    "properties": {
+        "klimazone": {
+            "type": "string"
+        },
+        "temperaturmessstelle": {
+            "type": "string"
+        },
+        "dienstanbieter": {
+            "type": "string"
+        },
+        "herausgeber": {
+            "$ref": "../enum/Herausgeber.schema.json"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Messwertstatus",
+    "type": "string",
+    "enum": [
+        "ABGELESEN",
+        "ERSATZWERT",
+        "VORSCHLAGSWERT",
+        "NICHT_VERWENDBAR",
+        "PROGNOSEWERT",
+        "ENERGIEMENGESUMMIERT",
+        "VOLAEUFIGERWERT",
+        "FEHLT",
+        "ANGABE_FUER_LIEFERSCHEIN",
+        "GRUNDLAGE_POG_ERMITTLUNG"
+    ]
+}

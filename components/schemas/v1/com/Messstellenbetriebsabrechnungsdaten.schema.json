@@ -1,0 +1,26 @@
+{
+    "title": "Messstellenbetriebsabrechnungsdaten",
+    "type": "object",
+    "properties": {
+        "messstellenbetriebsabrechnung": {
+            "type": "boolean"
+        },
+        "artikelId": {
+            "type": "string"
+        },
+        "artikelIdTyp": {
+            "$ref": "../enum/ArtikelIdTyp.schema.json"
+        },
+        "anzahl": {
+            "type": "integer"
+        },
+        "zuschlag": {
+            "type": "number",
+            "format": "float"
+        },
+        "abschlag": {
+            "type": "number",
+            "format": "float"
+        }
+    }
+}

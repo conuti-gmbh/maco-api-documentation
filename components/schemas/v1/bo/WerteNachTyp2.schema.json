@@ -1,0 +1,42 @@
+{
+    "title": "WerteNachTyp2",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "WERTE_NACH_TYP2"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        },
+        "messprodukt": {
+            "type": "string"
+        },
+        "zieladresse": {
+            "$ref": "../com/Zieladresse.schema.json"
+        },
+        "aussteller": {
+            "$ref": "../com/Aussteller.schema.json"
+        },
+        "zertifikatsNutzer": {
+            "$ref": "../com/ZertifikatsNutzer.schema.json"
+        },
+        "aenderungsmoeglichkeitKonfiguration": {
+            "$ref": "../enum/AenderungsmoeglichkeitKonfiguration.schema.json"
+        },
+        "schwellwerte": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Schwellwert.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

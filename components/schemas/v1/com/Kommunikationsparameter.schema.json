@@ -1,0 +1,15 @@
+{
+    "title": "Kommunikationsparameter",
+    "type": "object",
+    "properties": {
+        "zieladresse": {
+            "$ref": "../com/Zieladresse.schema.json"
+        },
+        "zertifikatsAussteller": {
+            "$ref": "../com/ZertifikatsAussteller.schema.json"
+        },
+        "zertifikatsNutzer": {
+            "$ref": "../com/ZertifikatsNutzer.schema.json"
+        }
+    }
+}

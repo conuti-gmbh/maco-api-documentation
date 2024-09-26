@@ -1,8 +1,0 @@
-properties:
-  register:
-    type: string
-  schwachlastfaehig:
-    $ref: 'Schwachlastfaehig.yml'
-  zaehlzeitDefinition:
-    type: string
-type: object

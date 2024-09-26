@@ -1,0 +1,15 @@
+{
+    "title": "Zaehlzeitregister",
+    "type": "object",
+    "properties": {
+        "register": {
+            "type": "string"
+        },
+        "zaehlzeitDefinition": {
+            "type": "string"
+        },
+        "schwachlastfaehig": {
+            "$ref": "../enum/Schwachlastfaehig.schema.json"
+        }
+    }
+}

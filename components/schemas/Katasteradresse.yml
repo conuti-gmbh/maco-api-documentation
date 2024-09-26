@@ -1,6 +1,0 @@
-properties:
-  flurstueck:
-    type: string
-  gemarkung_flur:
-    type: string
-type: object

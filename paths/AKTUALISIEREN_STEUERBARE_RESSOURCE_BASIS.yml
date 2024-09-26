@@ -32,14 +32,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/SteuerbareRessource.yml'
+          $ref: '../components/schemas/v1/bo/SteuerbareRessource.schema.json'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/SteuerbareRessource.yml'
+            $ref: '../components/schemas/v1/bo/SteuerbareRessource.schema.json'
       description: Erfolgreiches Aktualisieren der steuerbaren Ressource | Successful
         updating of the controllable resource
     '400':

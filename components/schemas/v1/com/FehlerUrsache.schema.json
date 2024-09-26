@@ -1,0 +1,24 @@
+{
+    "title": "FehlerUrsache",
+    "type": "object",
+    "properties": {
+        "dokument": {
+            "type": "string"
+        },
+        "nachricht": {
+            "type": "string"
+        },
+        "transaktion": {
+            "type": "string"
+        },
+        "gruppe": {
+            "$ref": "../com/Gruppe.schema.json"
+        },
+        "segment": {
+            "type": "string"
+        },
+        "beschreibung": {
+            "$ref": "../com/Beschreibung.schema.json"
+        }
+    }
+}

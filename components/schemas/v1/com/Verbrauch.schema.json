@@ -1,0 +1,60 @@
+{
+    "title": "Verbrauch",
+    "type": "object",
+    "properties": {
+        "startdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "enddatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "wertermittlungsverfahren": {
+            "$ref": "../enum/Wertermittlungsverfahren.schema.json"
+        },
+        "messwertstatus": {
+            "$ref": "../enum/Messwertstatus.schema.json"
+        },
+        "obiskennzahl": {
+            "type": "string"
+        },
+        "wert": {
+            "type": "number",
+            "format": "float"
+        },
+        "einheit": {
+            "$ref": "../enum/Mengeneinheit.schema.json"
+        },
+        "type": {
+            "$ref": "../enum/Verbrauchsmengetyp.schema.json"
+        },
+        "tarifstufe": {
+            "$ref": "../enum/Tarifstufe.schema.json"
+        },
+        "nutzungszeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "ausfuehrungszeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "position": {
+            "type": "integer"
+        },
+        "ablesedatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "leistungsperiode": {
+            "type": "string"
+        },
+        "statuszusatzinformationen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/StatusZusatzInformation.schema.json"
+            }
+        }
+    }
+}

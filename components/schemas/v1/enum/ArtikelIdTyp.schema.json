@@ -1,0 +1,8 @@
+{
+    "title": "ArtikelIdTyp",
+    "type": "string",
+    "enum": [
+        "ARTIKELID",
+        "GRUPPENARTIKELID"
+    ]
+}

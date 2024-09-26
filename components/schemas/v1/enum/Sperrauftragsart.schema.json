@@ -1,0 +1,8 @@
+{
+    "title": "Sperrauftragsart",
+    "type": "string",
+    "enum": [
+        "SPERREN",
+        "ENTSPERREN"
+    ]
+}

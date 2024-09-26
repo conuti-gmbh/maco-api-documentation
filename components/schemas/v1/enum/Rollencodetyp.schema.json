@@ -1,0 +1,10 @@
+{
+    "title": "Rollencodetyp",
+    "type": "string",
+    "enum": [
+        "BDEW",
+        "GS1",
+        "GLN",
+        "DVGW"
+    ]
+}

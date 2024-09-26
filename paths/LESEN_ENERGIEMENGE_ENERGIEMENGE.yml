@@ -52,7 +52,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Energiemenge.yml'
+            $ref: '../components/schemas/v1/bo/Energiemenge.schema.json'
       description:
         Erfolgreiches Lesen der Energiemenge | Successful reading of the
         energy quantity
@@ -60,13 +60,13 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/OK_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     "422":
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/OK_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
   tags:
   - LESEN | READ

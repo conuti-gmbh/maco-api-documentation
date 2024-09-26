@@ -1,0 +1,8 @@
+{
+    "title": "UebermittelbarkeitZaehlzeit",
+    "type": "string",
+    "enum": [
+        "ELEKTRONISCH",
+        "NICHT_ELEKTRONISCH"
+    ]
+}

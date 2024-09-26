@@ -1,0 +1,16 @@
+{
+    "title": "Konzessionsabgabe",
+    "type": "object",
+    "properties": {
+        "satz": {
+            "$ref": "../enum/AbgabeArt.schema.json"
+        },
+        "kosten": {
+            "type": "number",
+            "format": "float"
+        },
+        "kategorie": {
+            "type": "string"
+        }
+    }
+}

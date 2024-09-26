@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "enwg": {
+            "type": "boolean"
+        },
+        "inbetriebsetzungsdatum": {
+            "$ref": "../enum/Inbetriebsetzung.schema.json"
+        },
+        "einordnung": {
+            "$ref": "../enum/RessourceWechselmoeglichkeit.schema.json"
+        }
+    }
+}

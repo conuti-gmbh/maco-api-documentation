@@ -1,0 +1,21 @@
+{
+    "title": "InfoAbweichung",
+    "type": "object",
+    "properties": {
+        "abweichung1": {
+            "type": "string"
+        },
+        "abweichung2": {
+            "type": "string"
+        },
+        "abweichung3": {
+            "type": "string"
+        },
+        "abweichung4": {
+            "type": "string"
+        },
+        "abweichung5": {
+            "type": "string"
+        }
+    }
+}

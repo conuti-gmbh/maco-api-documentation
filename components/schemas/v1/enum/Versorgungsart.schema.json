@@ -1,0 +1,9 @@
+{
+    "title": "Versorgungsart",
+    "type": "string",
+    "enum": [
+        "ERSATZVERSORGUNG",
+        "GRUNDVERSORGUNG",
+        "ERSATZBELIEFERUNG"
+    ]
+}

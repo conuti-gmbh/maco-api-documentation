@@ -1,4 +1,0 @@
-enum:
-- VERTRAG_AN_MSB
-- VERTRAGSBEENDIGUNG_MSB
-type: string

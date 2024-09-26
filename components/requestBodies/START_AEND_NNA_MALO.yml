@@ -1,0 +1,33 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  artikelId:
+    default: SOME_STRING
+    type: string
+  artikelIdTyp:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  gemeinderabatt:
+    default: SOME_STRING
+    type: string
+  gueltigAb:
+    default: SOME_STRING
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+type: object

@@ -1,0 +1,109 @@
+{
+    "title": "Rechnung",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "RECHNUNG"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "istSelbstausgestellt": {
+            "type": "boolean"
+        },
+        "bearbeitungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "rechnungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "faelligkeitsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "rechnungsstatus": {
+            "$ref": "../enum/Rechnungsstatus.schema.json"
+        },
+        "vorlaeufigerAbrechnungszeitraum": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "rechnungsperiode": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "rechnungstyp": {
+            "$ref": "../enum/Rechnungstyp.schema.json"
+        },
+        "istReverseCharge": {
+            "type": "boolean"
+        },
+        "gesamtbrutto": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "zuZahlen": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "originalRechnungsnummer": {
+            "type": "string"
+        },
+        "referenzNachrichtendatum": {
+            "type": "string"
+        },
+        "referenzDokumentennummer": {
+            "type": "string"
+        },
+        "referenzVorgaengerrechnung": {
+            "type": "string"
+        },
+        "datumVorgaengerrechnung": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "netzkonto": {
+            "type": "string"
+        },
+        "vorausgezahlt": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "gemeinderabatt": {
+            "$ref": "../com/Gemeinderabatt.schema.json"
+        },
+        "ausfuehrungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "sonderrechnungsart": {
+            "$ref": "../enum/SonderrechnungsArt.schema.json"
+        },
+        "energierichtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        },
+        "beginnPeriodeBilanzierung": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "endePeriodeNetznutzung": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "steuerbetraege": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Steuerbetrag.schema.json"
+            }
+        },
+        "rechnungspositionen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Rechnungsposition.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

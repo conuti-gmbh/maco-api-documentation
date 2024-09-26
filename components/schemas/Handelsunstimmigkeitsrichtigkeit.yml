@@ -1,9 +1,0 @@
-enum:
-- MSCONS
-- UTILMD
-- INVOIC
-- ORDERS
-- PRICAT
-- IFTSTA
-- ORDCHG
-type: string

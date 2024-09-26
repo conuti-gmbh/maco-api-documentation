@@ -1,0 +1,13 @@
+{
+    "title": "Energieherkunft",
+    "type": "object",
+    "properties": {
+        "erzeugungsart": {
+            "$ref": "../enum/Erzeugungsart.schema.json"
+        },
+        "anteilProzent": {
+            "type": "number",
+            "format": "float"
+        }
+    }
+}

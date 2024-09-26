@@ -1,4 +1,0 @@
-enum:
-- LIEFERSCHEIN
-- ABWEICHENDE_GRUNDLAGE
-type: string

@@ -1,4 +1,0 @@
-enum:
-- VORHANDEN
-- NICHT_VORHANDEN
-type: string

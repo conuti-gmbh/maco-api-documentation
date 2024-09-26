@@ -1,8 +1,0 @@
-properties:
-  katalognummer:
-    type: string
-  versionsnummer:
-    type: string
-  zeilennummer:
-    type: string
-type: object

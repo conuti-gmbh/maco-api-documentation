@@ -1,0 +1,40 @@
+{
+    "title": "Avisposition",
+    "type": "object",
+    "properties": {
+        "rechnungsNummer": {
+            "type": "string"
+        },
+        "rechnungsDatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "istStorno": {
+            "type": "boolean"
+        },
+        "istSelbstausgestellt": {
+            "type": "boolean"
+        },
+        "gesamtBrutto": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "zuZahlen": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "referenz": {
+            "type": "string"
+        },
+        "abweichung": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Abweichung.schema.json"
+            }
+        },
+        "positionen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Rueckmeldungsposition.schema.json"
+            }
+        }
+    }
+}

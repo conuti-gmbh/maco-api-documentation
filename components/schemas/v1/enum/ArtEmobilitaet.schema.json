@@ -1,0 +1,9 @@
+{
+    "title": "ArtEmobilitaet",
+    "type": "string",
+    "enum": [
+        "WB",
+        "LS",
+        "LP"
+    ]
+}

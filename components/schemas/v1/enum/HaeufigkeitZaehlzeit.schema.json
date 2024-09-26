@@ -1,0 +1,8 @@
+{
+    "title": "HaeufigkeitZaehlzeit",
+    "type": "string",
+    "enum": [
+        "EINMALIG",
+        "JAEHRLICH"
+    ]
+}

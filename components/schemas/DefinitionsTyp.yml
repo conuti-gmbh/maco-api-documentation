@@ -1,5 +1,0 @@
-enum:
-- ZAEHLZEIT
-- SCHALTZEIT
-- LEISTUNGSKURVEN
-type: string

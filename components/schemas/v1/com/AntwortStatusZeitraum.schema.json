@@ -1,0 +1,18 @@
+{
+    "title": "AntwortStatusZeitraum",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string"
+        },
+        "liste": {
+            "type": "string"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        },
+        "freitext": {
+            "$ref": "../com/Freitext.schema.json"
+        }
+    }
+}

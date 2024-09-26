@@ -1,0 +1,8 @@
+{
+    "title": "Messwerterfassung",
+    "type": "string",
+    "enum": [
+        "FERNAUSLESBAR",
+        "MANUELL_AUSGELESENE"
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "title": "Zaehlwerk",
+    "type": "object",
+    "properties": {
+        "zaehlwerkId": {
+            "type": "string"
+        },
+        "bezeichnung": {
+            "type": "string"
+        },
+        "richtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        },
+        "obisKennzahl": {
+            "type": "string"
+        },
+        "wandlerfaktor": {
+            "type": "number",
+            "format": "float"
+        },
+        "einheit": {
+            "$ref": "../enum/Mengeneinheit.schema.json"
+        },
+        "schwachlastfaehig": {
+            "$ref": "../enum/Schwachlastfaehig.schema.json"
+        },
+        "verbrauchsart": {
+            "$ref": "../enum/Verbrauchsart.schema.json"
+        },
+        "unterbrechbarkeit": {
+            "$ref": "../enum/Unterbrechbarkeit.schema.json"
+        },
+        "waermenutzung": {
+            "$ref": "../enum/Waermenutzung.schema.json"
+        },
+        "konzessionsabgabe": {
+            "$ref": "../com/Konzessionsabgabe.schema.json"
+        },
+        "steuerbefreit": {
+            "type": "boolean"
+        },
+        "vorkommastelle": {
+            "type": "integer"
+        },
+        "nachkommastelle": {
+            "type": "integer"
+        },
+        "abrechnungsrelevant": {
+            "type": "boolean"
+        },
+        "anzahlAblesungen": {
+            "type": "integer"
+        },
+        "zaehlzeiten": {
+            "$ref": "../com/Zaehlzeitregister.schema.json"
+        },
+        "konfiguration": {
+            "type": "string"
+        },
+        "messprodukt": {
+            "type": "string"
+        },
+        "wertegranularitaet": {
+            "$ref": "../enum/Wertegranularitaet.schema.json"
+        },
+        "notwendigkeitZweiteMessung": {
+            "$ref": "../enum/NotwendigkeitZweiteMessung.schema.json"
+        },
+        "werteuebermittlungVerwendungszweck": {
+            "$ref": "../enum/WerteuebermittlungVerwendungszweck.schema.json"
+        },
+        "artEMobilitaet": {
+            "$ref": "../enum/ArtEmobilitaet.schema.json"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        },
+        "keinKonfigurationsprodukt": {
+            "type": "boolean"
+        },
+        "leistungskurvendefinition": {
+            "type": "string"
+        },
+        "verwendungszwecke": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Verwendungszweck.schema.json"
+            }
+        }
+    }
+}

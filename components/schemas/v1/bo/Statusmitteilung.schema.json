@@ -1,0 +1,33 @@
+{
+    "title": "Statusmitteilung",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "STATUSMITTEILUNG"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "statusObjekt": {
+            "$ref": "../enum/Statusobjekt.schema.json"
+        },
+        "statusanlass": {
+            "$ref": "../enum/Status.schema.json"
+        },
+        "auftragsstatus": {
+            "$ref": "../enum/Auftragsstatus.schema.json"
+        },
+        "positionsdaten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/StatusmitteilungPosition.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

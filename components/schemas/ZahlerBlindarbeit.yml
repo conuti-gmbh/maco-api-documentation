@@ -1,5 +1,0 @@
-enum:
-- ANSCHLUSSNUTZER
-- LIEFERANT
-- NICHT_FESTGELEGT
-type: string

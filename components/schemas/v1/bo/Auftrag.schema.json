@@ -1,0 +1,82 @@
+{
+    "title": "Auftrag",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "AUFTRAG"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "ausfuehrungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "fertigstellungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "startdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "sparte": {
+            "$ref": "../enum/Sparte.schema.json"
+        },
+        "lieferanschrift": {
+            "$ref": "../com/Adresse.schema.json"
+        },
+        "marktlokationsId": {
+            "type": "string"
+        },
+        "mindestpreis": {
+            "$ref": "../com/Preis.schema.json"
+        },
+        "hoechstpreis": {
+            "$ref": "../com/Preis.schema.json"
+        },
+        "energierichtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        },
+        "berechnungspreis": {
+            "type": "number",
+            "format": "float"
+        },
+        "summeGesamt": {
+            "type": "number",
+            "format": "float"
+        },
+        "verschobenerAbmeldetermin": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "behebungsZeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "lieferadresseAltgeraete": {
+            "$ref": "Geschaeftspartner.schema.json"
+        },
+        "definitionsTyp": {
+            "$ref": "../enum/DefinitionsTyp.schema.json"
+        },
+        "positionsdaten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/AuftragPosition.schema.json"
+            }
+        },
+        "bemerkungen": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

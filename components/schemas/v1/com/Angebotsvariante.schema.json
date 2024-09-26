@@ -1,0 +1,32 @@
+{
+    "title": "Angebotsvariante",
+    "type": "object",
+    "properties": {
+        "angebotsstatus": {
+            "$ref": "../enum/Angebotsstatus.schema.json"
+        },
+        "beschreibung": {
+            "type": "string"
+        },
+        "erstelldatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "bindefrist": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "gesamtmenge": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "gesamtkosten": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "teile": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Angebotsteil.schema.json"
+            }
+        }
+    }
+}

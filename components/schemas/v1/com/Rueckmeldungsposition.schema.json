@@ -1,0 +1,15 @@
+{
+    "title": "Rueckmeldungsposition",
+    "type": "object",
+    "properties": {
+        "positionsnummer": {
+            "type": "integer"
+        },
+        "abweichung": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Abweichung.schema.json"
+            }
+        }
+    }
+}

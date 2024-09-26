@@ -1,0 +1,30 @@
+{
+    "title": "Ansprechpartner",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "ANSPRECHPARTNER"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "nachname": {
+            "type": "string"
+        },
+        "eMailAdresse": {
+            "type": "string"
+        },
+        "rufnummern": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Rufnummer.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

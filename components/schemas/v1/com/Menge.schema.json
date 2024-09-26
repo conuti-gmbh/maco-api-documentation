@@ -1,0 +1,13 @@
+{
+    "title": "Menge",
+    "type": "object",
+    "properties": {
+        "wert": {
+            "type": "number",
+            "format": "float"
+        },
+        "einheit": {
+            "$ref": "../enum/Mengeneinheit.schema.json"
+        }
+    }
+}

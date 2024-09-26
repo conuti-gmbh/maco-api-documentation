@@ -1,8 +1,0 @@
-properties:
-  abweichung:
-    items:
-      $ref: 'Abweichung.yml'
-    type: array
-  positionsnummer:
-    type: integer
-type: object

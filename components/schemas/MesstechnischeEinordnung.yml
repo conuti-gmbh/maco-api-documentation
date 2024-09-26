@@ -1,5 +1,0 @@
-enum:
-- IMS
-- KME_MME
-- KEINE_MESSUNG
-type: string

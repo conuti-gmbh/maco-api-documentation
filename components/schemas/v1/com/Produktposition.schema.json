@@ -1,0 +1,12 @@
+{
+    "title": "Produktposition",
+    "type": "object",
+    "properties": {
+        "positionscode": {
+            "type": "string"
+        },
+        "wertedetails": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "title": "Bilanzierung",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "BILANZIERUNG"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "marktlokationsId": {
+            "type": "string"
+        },
+        "aggregationsverantwortung": {
+            "$ref": "../enum/Aggregationsverantwortung.schema.json"
+        },
+        "zeitreihentyp": {
+            "type": "string"
+        },
+        "prognosegrundlage": {
+            "$ref": "../enum/Prognosegrundlage.schema.json"
+        },
+        "bilanzierungsbeginn": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "bilanzierungsende": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "bilanzkreis": {
+            "type": "string"
+        },
+        "fallgruppenzuordnung": {
+            "$ref": "../enum/Fallgruppenzuordnung.schema.json"
+        },
+        "temperaturarbeit": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "jahresverbrauchsprognose": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "kundenwert": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "verbrauchsaufteilung": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "wahlrechtPrognosegrundlage": {
+            "$ref": "../enum/WahlrechtPrognosegrundlage.schema.json"
+        },
+        "grundWahlrechtPrognosegrundlage": {
+            "$ref": "../enum/WahlrechtPrognosegrundlage.schema.json"
+        },
+        "abwicklungsmodell": {
+            "$ref": "../enum/Abwicklungsmodell.schema.json"
+        },
+        "vorjahresverbrauch": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "datenqualitaet": {
+            "$ref": "../enum/Datenqualitaet.schema.json"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        },
+        "lastprofile": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Lastprofil.schema.json"
+            }
+        },
+        "lastprofileBilanzierungsbeteiligter": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Lastprofil.schema.json"
+            }
+        },
+        "detailsPrognosegrundlage": {
+            "type": "array",
+            "items": {
+                "$ref": "../enum/Profiltyp.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

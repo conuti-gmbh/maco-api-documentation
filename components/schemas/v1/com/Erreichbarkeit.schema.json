@@ -1,0 +1,12 @@
+{
+    "title": "Erreichbarkeit",
+    "type": "object",
+    "properties": {
+        "verfuegbarkeit": {
+            "$ref": "../enum/Verfuegbarkeit.schema.json"
+        },
+        "zeit": {
+            "type": "string"
+        }
+    }
+}

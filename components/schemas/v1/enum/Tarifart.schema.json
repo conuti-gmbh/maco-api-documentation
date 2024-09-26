@@ -1,0 +1,11 @@
+{
+    "title": "Tarifart",
+    "type": "string",
+    "enum": [
+        "EINTARIF",
+        "ZWEITARIF",
+        "MEHRTARIF",
+        "SMART_METER",
+        "LEISTUNGSGEMESSEN"
+    ]
+}

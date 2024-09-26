@@ -1,0 +1,51 @@
+{
+    "title": "Zaehlzeitdefinition",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "ZAEHLZEITDEFINITION"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "beginndatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "endedatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "version": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "notwendigkeit": {
+            "$ref": "../enum/DefinitionenNotwendigkeit.schema.json"
+        },
+        "versionsangabe": {
+            "type": "string"
+        },
+        "code": {
+            "type": "string"
+        },
+        "zaehlzeiten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Zaehlzeit.schema.json"
+            }
+        },
+        "zaehlzeitregister": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Zaehlzeitregister.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

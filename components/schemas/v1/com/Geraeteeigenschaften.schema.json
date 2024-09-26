@@ -1,0 +1,16 @@
+{
+    "title": "Geraeteeigenschaften",
+    "type": "object",
+    "properties": {
+        "geraetetyp": {
+            "$ref": "../enum/Geraetetyp.schema.json"
+        },
+        "geraetemerkmal": {
+            "$ref": "../enum/Geraetemerkmal.schema.json"
+        },
+        "faktor": {
+            "type": "number",
+            "format": "float"
+        }
+    }
+}

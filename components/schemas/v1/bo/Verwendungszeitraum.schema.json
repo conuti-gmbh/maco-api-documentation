@@ -1,0 +1,32 @@
+{
+    "title": "Verwendungszeitraum",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "VERWENDUNGSZEITRAUM"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "verwendungAb": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "verwendungBis": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        },
+        "datenqualitaet": {
+            "$ref": "../enum/Datenqualitaet.schema.json"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

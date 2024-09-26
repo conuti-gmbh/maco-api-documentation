@@ -1,0 +1,8 @@
+{
+    "title": "Bilanzkreiszuordnung",
+    "type": "string",
+    "enum": [
+        "ERFOLGREICH",
+        "GESCHEITERT"
+    ]
+}

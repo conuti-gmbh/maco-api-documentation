@@ -33,11 +33,15 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Vertrag.yml'
+            $ref: '../components/schemas/v1/bo/Vertrag.schema.json'
       description: Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
     '400':
-      $ref: '../components/responses/BadRequest.yml'
+      content:
+        application/json:
+          schema:
+            $ref: '../components/responses/ERROR_RESPONSE.yml'
+      description: Fehlerhafte Anfrage | Bad Request
   summary: LESEN_NETZNUTZUNGSVERTRAG_BASIS
   tags:
   - LESEN | READ

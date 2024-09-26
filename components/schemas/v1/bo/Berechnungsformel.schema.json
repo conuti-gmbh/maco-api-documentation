@@ -1,0 +1,49 @@
+{
+    "title": "Berechnungsformel",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "BERECHNUNGSFORMEL"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "beginndatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "notwendigkeit": {
+            "$ref": "../enum/BerechnungsformelNotwendigkeit.schema.json"
+        },
+        "lieferrichtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        },
+        "rechenschrittId": {
+            "type": "integer"
+        },
+        "rechenschritt": {
+            "$ref": "../com/Rechenschritt.schema.json"
+        },
+        "rechenschritte": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Rechenschritt.schema.json"
+            }
+        },
+        "verwendungszweck": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Verwendungszweck.schema.json"
+            }
+        },
+        "zeitraumId": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

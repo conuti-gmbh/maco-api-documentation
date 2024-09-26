@@ -1,0 +1,42 @@
+{
+    "title": "Schaltzeitdefinition",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "SCHALTZEITDEFINITION"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "beginndatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "endedatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "version": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "code": {
+            "type": "string"
+        },
+        "notwendigkeit": {
+            "$ref": "../enum/DefinitionenNotwendigkeit.schema.json"
+        },
+        "schaltzeiten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Schaltzeit.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

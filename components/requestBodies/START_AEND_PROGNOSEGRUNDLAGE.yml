@@ -1,0 +1,85 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  abwicklungsmodell:
+    default: SOME_STRING
+    type: string
+  aggregationsverantwortung:
+    default: SOME_STRING
+    type: string
+  bezeichnung:
+    default: SOME_STRING
+    type: string
+  bilanzierungsgebiet:
+    default: SOME_STRING
+    type: string
+  detailsPrognosegrundlage:
+    items:
+      default: SOME_STRING
+      type: string
+    type: array
+  einspeisung:
+    default: SOME_STRING
+    type: string
+  empfaengerLf:
+    default: SOME_STRING
+    type: string
+  empfaengerMsb:
+    default: SOME_STRING
+    type: string
+  energierichtung:
+    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+  grundWahlrechtPrognosegrundlage:
+    default: SOME_STRING
+    type: string
+  gueltigAb:
+    default: SOME_STRING
+    type: string
+  herausgeber:
+    default: SOME_STRING
+    type: string
+  jahresverbrauchsprognose:
+    properties:
+      einheit:
+        default: SOME_STRING
+        type: string
+      wert:
+        default: SOME_STRING
+        type: string
+    type: object
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  profilart:
+    default: SOME_STRING
+    type: string
+  prognosegrundlage:
+    default: SOME_STRING
+    type: string
+  regelzone:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  verfahren:
+    default: SOME_STRING
+    type: string
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  wahlrechtPrognosegrundlage:
+    default: SOME_STRING
+    type: string
+  zeitreihentyp:
+    default: SOME_STRING
+    type: string
+type: object

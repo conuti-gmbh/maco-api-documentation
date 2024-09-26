@@ -1,0 +1,15 @@
+{
+    "title": "Produkt",
+    "type": "object",
+    "properties": {
+        "produktCode": {
+            "type": "string"
+        },
+        "codeProdukteigenschaft": {
+            "type": "string"
+        },
+        "wertedetails": {
+            "type": "string"
+        }
+    }
+}

@@ -1,8 +1,0 @@
-properties:
-  grund:
-    items:
-      $ref: 'GrundlageVerringerungUmlagenGrund.yml'
-    type: array
-  grundlageVerringerungUmlagen:
-    $ref: 'GrundlageVerringerungUmlagen.yml'
-type: object

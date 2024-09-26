@@ -1,0 +1,12 @@
+{
+    "title": "Dienstleistung",
+    "type": "object",
+    "properties": {
+        "dienstleistungstyp": {
+            "$ref": "../enum/Dienstleistungstyp.schema.json"
+        },
+        "bezeichnung": {
+            "type": "string"
+        }
+    }
+}

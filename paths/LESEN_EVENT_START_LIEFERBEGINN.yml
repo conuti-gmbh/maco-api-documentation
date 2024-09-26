@@ -39,7 +39,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../components/schemas/START_LIEFERBEGINN.yml"
+          $ref: "../components/requestBodies/START_LIEFERBEGINN.yml"
   responses:
     "200":
       description: >-
@@ -48,16 +48,16 @@ post:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/START_LIEFERBEGINN.yml"
+            $ref: "../components/requestBodies/START_LIEFERBEGINN.yml"
     "400":
       description: Fehlerhafte Anfrage | Bad Request
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/ERROR_RESPONSE.yml"
+            $ref: "../components/responses/ERROR_RESPONSE.yml"
     "422":
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/ERROR_RESPONSE.yml"
+            $ref: "../components/responses/ERROR_RESPONSE.yml"

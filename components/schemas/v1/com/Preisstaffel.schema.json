@@ -1,0 +1,21 @@
+{
+    "title": "Preisstaffel",
+    "type": "object",
+    "properties": {
+        "einheitspreis": {
+            "type": "number",
+            "format": "float"
+        },
+        "staffelgrenzeVon": {
+            "type": "number",
+            "format": "float"
+        },
+        "staffelgrenzeBis": {
+            "type": "number",
+            "format": "float"
+        },
+        "sigmoidparameter": {
+            "$ref": "../com/Sigmoidparameter.schema.json"
+        }
+    }
+}

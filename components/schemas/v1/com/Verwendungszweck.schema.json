@@ -1,0 +1,15 @@
+{
+    "title": "Verwendungszweck",
+    "type": "object",
+    "properties": {
+        "marktrolle": {
+            "$ref": "../enum/Marktrolle.schema.json"
+        },
+        "zweck": {
+            "type": "array",
+            "items": {
+                "$ref": "../enum/VerwendungszweckValue.schema.json"
+            }
+        }
+    }
+}

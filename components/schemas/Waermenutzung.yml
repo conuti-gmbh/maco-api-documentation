@@ -1,5 +1,0 @@
-enum:
-- SPEICHERHEIZUNG
-- WAERMEPUMPE
-- DIREKTHEIZUNG
-type: string

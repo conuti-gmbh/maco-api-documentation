@@ -1,7 +1,6 @@
 {
     "watch": ["."],
-    "ext": "yaml, yml",
+    "ext": "yaml, yml, json",
     "exec": "swagger-cli bundle openapi.yaml --outfile _build/openapi.yaml --dereference --type yaml",
     "ignore": ["_build/*"]
-
   }

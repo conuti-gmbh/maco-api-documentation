@@ -1,0 +1,8 @@
+{
+    "title": "FehlerTyp",
+    "type": "string",
+    "enum": [
+        "VERARBEITUNG",
+        "SYNTAX"
+    ]
+}

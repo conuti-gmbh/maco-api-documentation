@@ -1,0 +1,32 @@
+{
+    "title": "Zeitraum",
+    "type": "object",
+    "properties": {
+        "zeiteinheit": {
+            "$ref": "../enum/Zeiteinheit.schema.json"
+        },
+        "dauer": {
+            "type": "integer"
+        },
+        "startdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "enddatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "einheit": {
+            "$ref": "../enum/Zeiteinheit.schema.json"
+        },
+        "ableseZeitraum": {
+            "type": "string"
+        },
+        "abrechnungsZeitraum": {
+            "type": "string"
+        },
+        "zeitraumText": {
+            "type": "string"
+        }
+    }
+}

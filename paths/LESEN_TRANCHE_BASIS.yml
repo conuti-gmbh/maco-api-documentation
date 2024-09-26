@@ -32,19 +32,19 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Tranche.yml'
+            $ref: '../components/schemas/v1/bo/Tranche.schema.json'
       description: Erfolgreiches Lesen der Tranche | Successful reading of the tranche
     '400':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LESEN_TRANCHE_BASIS
   tags:

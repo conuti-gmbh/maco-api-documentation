@@ -1,0 +1,8 @@
+{
+    "title": "Netznutzungsabrechnungsvariante",
+    "type": "string",
+    "enum": [
+        "ARBEITSPREIS_GRUNDPREIS",
+        "ARBEITSPREIS_LEISTUNGSPREIS"
+    ]
+}

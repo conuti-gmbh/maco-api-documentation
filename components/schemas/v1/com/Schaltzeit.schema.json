@@ -1,0 +1,25 @@
+{
+    "title": "Schaltzeit",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string"
+        },
+        "aenderungszeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "haeufigkeit": {
+            "$ref": "../enum/HaeufigkeitSchaltzeit.schema.json"
+        },
+        "uebermittelbarkeit": {
+            "$ref": "../enum/UebermittelbarkeitSchaltzeit.schema.json"
+        },
+        "schalthandlung": {
+            "$ref": "../enum/Schalthandlung.schema.json"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        }
+    }
+}

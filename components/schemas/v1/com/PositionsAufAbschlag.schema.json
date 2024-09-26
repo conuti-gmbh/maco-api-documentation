@@ -1,0 +1,22 @@
+{
+    "title": "PositionsAufAbschlag",
+    "type": "object",
+    "properties": {
+        "bezeichnung": {
+            "type": "string"
+        },
+        "beschreibung": {
+            "type": "string"
+        },
+        "aufAbschlagstyp": {
+            "$ref": "../enum/AufAbschlagstyp.schema.json"
+        },
+        "aufAbschlagswert": {
+            "type": "number",
+            "format": "float"
+        },
+        "aufAbschlagswaehrung": {
+            "$ref": "../enum/Waehrungseinheit.schema.json"
+        }
+    }
+}

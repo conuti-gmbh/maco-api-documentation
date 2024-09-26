@@ -1,6 +1,0 @@
-description: The user to create
-content:
-  application/json:
-    schema:
-      $ref: '../schemas/User.yml'
-required: true

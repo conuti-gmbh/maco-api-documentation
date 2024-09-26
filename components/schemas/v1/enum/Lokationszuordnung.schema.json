@@ -1,0 +1,9 @@
+{
+    "title": "Lokationszuordnung",
+    "type": "string",
+    "enum": [
+        "UNVERAENDERT",
+        "BEGINNT",
+        "ENDET"
+    ]
+}

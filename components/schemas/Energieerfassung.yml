@@ -1,4 +1,0 @@
-enum:
-- SEPARAT_ERFASSEN
-- NICHT_SEPARAT_ERFASSEN
-type: string

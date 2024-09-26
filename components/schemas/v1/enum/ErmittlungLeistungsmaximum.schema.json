@@ -1,0 +1,8 @@
+{
+    "title": "ErmittlungLeistungsmaximum",
+    "type": "string",
+    "enum": [
+        "VERWENDUNG_HOCHLASTFENSTER",
+        "KEINE_VERWENDUNG_HOCHLASTFENSTER"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "title": "SteuerbareRessource",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "STEUERBARE_RESSOURCE"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "ressourcenId": {
+            "type": "string"
+        },
+        "sparte": {
+            "$ref": "../enum/Sparte.schema.json"
+        },
+        "lokationszuordnung": {
+            "$ref": "../enum/Lokationszuordnung.schema.json"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        },
+        "steuerkanal": {
+            "$ref": "../enum/Steuerkanal.schema.json"
+        },
+        "produktdatenRelevanteRolle": {
+            "$ref": "../enum/Marktrolle.schema.json"
+        },
+        "auftraggebenderMarktpartner": {
+            "$ref": "./Marktteilnehmer.schema.json"
+        },
+        "zugeordneteDefinition": {
+            "$ref": "../com/ZugeordneteDefinition.schema.json"
+        },
+        "marktrollen": {
+            "type": "array",
+            "items": {
+                "$ref": "./Marktteilnehmer.schema.json"
+            }
+        },
+        "datenqualitaet": {
+            "$ref": "../enum/Datenqualitaet.schema.json"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

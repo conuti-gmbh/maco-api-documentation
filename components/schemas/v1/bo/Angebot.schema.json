@@ -1,0 +1,59 @@
+{
+    "title": "Angebot",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "ANGEBOT"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "angebotsnummer": {
+            "type": "string"
+        },
+        "anfragereferenz": {
+            "type": "string"
+        },
+        "angebotsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "sparte": {
+            "$ref": "../enum/Sparte.schema.json"
+        },
+        "bindefrist": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "angebotgeber": {
+            "$ref": "Geschaeftspartner.schema.json"
+        },
+        "angebotnehmer": {
+            "$ref": "Geschaeftspartner.schema.json"
+        },
+        "unterzeichnerAngebotsnehmer": {
+            "$ref": "Ansprechpartner.schema.json"
+        },
+        "unterzeichnerAngebotsgeber": {
+            "$ref": "Ansprechpartner.schema.json"
+        },
+        "zeitspanneEinrichtungUebermittlungWerte": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "bindefristAngebot": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "varianten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Angebotsvariante.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

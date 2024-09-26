@@ -1,0 +1,15 @@
+{
+    "title": "Fehler",
+    "type": "object",
+    "properties": {
+        "typ": {
+            "$ref": "../enum/FehlerTyp.schema.json"
+        },
+        "fehlerDetails": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/FehlerDetail.schema.json"
+            }
+        }
+    }
+}

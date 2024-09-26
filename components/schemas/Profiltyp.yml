@@ -1,5 +1,0 @@
-enum:
-- SLP_SEP
-- TLP_TEP
-- TEP
-type: string

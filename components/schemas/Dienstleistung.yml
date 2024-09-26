@@ -1,6 +1,0 @@
-properties:
-  bezeichnung:
-    type: string
-  dienstleistungstyp:
-    $ref: 'Dienstleistungstyp.yml'
-type: object

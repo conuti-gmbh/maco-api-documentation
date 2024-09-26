@@ -31,27 +31,27 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/Messlokation.yml'
+          $ref: '../components/schemas/v1/bo/Messlokation.schema.json'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Messlokation.yml'
+            $ref: '../components/schemas/v1/bo/Messlokation.schema.json'
       description: Erfolgreiches Aktualisieren der Messlokation | Successful updating
         of the metering location
     '400':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/ERROR_RESPONSE.yml'
       description: Fehlerhafte Anfrage | Bad Request
     '422':
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ERROR_RESPONSE.yml'
+            $ref: '../components/responses/ERROR_RESPONSE.yml'
       description: Nicht verarbeitbare Anfrage | Unprocessable Request
 
   summary: AKTUALISIEREN_MESSLOKATION_BASIS

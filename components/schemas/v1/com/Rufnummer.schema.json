@@ -1,0 +1,12 @@
+{
+    "title": "Rufnummer",
+    "type": "object",
+    "properties": {
+        "nummerntyp": {
+            "$ref": "../enum/Rufnummernart.schema.json"
+        },
+        "rufnummer": {
+            "type": "string"
+        }
+    }
+}

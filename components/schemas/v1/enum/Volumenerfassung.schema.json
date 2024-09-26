@@ -1,0 +1,9 @@
+{
+    "title": "Volumenerfassung",
+    "type": "string",
+    "enum": [
+        "HOCHFREQUENZSONDE",
+        "KENNLINIENKORREKTUR",
+        "SCHLEICHMENGENUNTERDRUECKUNG"
+    ]
+}

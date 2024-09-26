@@ -1,6 +1,0 @@
-properties:
-  verfuegbarkeit:
-    $ref: 'Verfuegbarkeit.yml'
-  zeit:
-    type: string
-type: object

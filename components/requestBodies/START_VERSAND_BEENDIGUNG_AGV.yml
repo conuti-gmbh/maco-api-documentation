@@ -1,0 +1,53 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  energierichtung:
+    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  marktrolleMA:
+    default: SOME_STRING
+    type: string
+  marktrolleTR:
+    default: SOME_STRING
+    type: string
+  netzbetreiberCodeNr:
+    default: SOME_STRING
+    type: string
+  referenzTranche:
+    default: SOME_STRING
+    type: string
+  rollencodenummerMA:
+    default: SOME_STRING
+    type: string
+  rollencodenummerTR:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  tranchenId:
+    default: SOME_STRING
+    type: string
+  transaktionsgrund:
+    default: SOME_STRING
+    type: string
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  verwendungBis:
+    default: SOME_STRING
+    type: string
+type: object

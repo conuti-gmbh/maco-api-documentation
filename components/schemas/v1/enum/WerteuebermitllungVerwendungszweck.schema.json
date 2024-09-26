@@ -1,0 +1,7 @@
+{
+    "type": "string",
+    "enum": [
+        "VORHANDEN",
+        "NICHT_VORHANDEN"
+    ]
+}

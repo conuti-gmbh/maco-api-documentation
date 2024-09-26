@@ -1,4 +1,0 @@
-enum:
-- LEISTUNG_AN
-- LEISTUNG_AUS
-type: string

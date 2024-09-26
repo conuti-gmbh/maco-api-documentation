@@ -1,0 +1,12 @@
+{
+    "title": "Verbrauchsart",
+    "type": "string",
+    "enum": [
+        "KL",
+        "W",
+        "EMOB",
+        "SB",
+        "SW",
+        "WK"
+    ]
+}

@@ -1,0 +1,33 @@
+description: "Schema f\xFCr start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  anfrageReferenz:
+    default: SOME_STRING
+    type: string
+  beginndatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  code:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  haeufigkeit:
+    default: SOME_STRING
+    type: string
+  notwendigkeit:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  uebermittelbarkeit:
+    default: SOME_STRING
+    type: string
+  version:
+    default: SOME_STRING
+    type: string
+type: object

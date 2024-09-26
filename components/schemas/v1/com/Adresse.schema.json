@@ -1,0 +1,36 @@
+{
+    "title": "Adresse",
+    "type": "object",
+    "properties": {
+        "postleitzahl": {
+            "type": "string"
+        },
+        "ort": {
+            "type": "string"
+        },
+        "strasse": {
+            "type": "string"
+        },
+        "hausnummer": {
+            "type": "string"
+        },
+        "postfach": {
+            "type": "string"
+        },
+        "adresszusatz": {
+            "type": "string"
+        },
+        "coErgaenzung": {
+            "type": "string"
+        },
+        "landescode": {
+            "$ref": "../enum/Landescode.schema.json"
+        },
+        "ortsteil": {
+            "type": "string"
+        },
+        "zusatzInformation": {
+            "$ref": "../com/AdresszusatzInformation.schema.json"
+        }
+    }
+}

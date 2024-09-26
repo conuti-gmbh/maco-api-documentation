@@ -1,0 +1,11 @@
+{
+    "title": "Vertragsart",
+    "type": "string",
+    "enum": [
+        "ENERGIELIEFERVERTRAG",
+        "NETZNUTZUNGSVERTRAG",
+        "BILANZIERUNGSVERTRAG",
+        "MESSSTELLENBETRIEBSVERTRAG",
+        "BUENDELVERTRAG"
+    ]
+}

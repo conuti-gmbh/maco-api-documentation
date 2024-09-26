@@ -1,0 +1,30 @@
+{
+    "title": "Angebotsposition",
+    "type": "object",
+    "properties": {
+        "positionsbezeichung": {
+            "type": "string"
+        },
+        "positionsmenge": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "positionspreis": {
+            "$ref": "../com/Preis.schema.json"
+        },
+        "positionsbetrag": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "preisschluesselstamm": {
+            "type": "string"
+        },
+        "artikelnummer": {
+            "$ref": "../enum/BDEWArtikelnummer.schema.json"
+        },
+        "artikelId": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
