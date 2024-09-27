@@ -19,7 +19,7 @@ nodemon
 
 ### Build _build/openapi.yaml
 ```
-swagger-cli bundle bo4e-openapi.yaml --outfile _build/bo4e-openapi.yaml --dereference  --type yaml
+swagger-cli bundle bo4e-openapi.yaml --outfile _build/bo4e-openapi.json --dereference  --type json
 ```
 
 ## How to install swagger-cli
