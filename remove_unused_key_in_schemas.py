@@ -2,7 +2,7 @@ import json
 import os
 
 def remove_keys(file_path):
-    keys_to_remove = ['$schema', '$id', 'faker']
+    keys_to_remove = ['$schema', '$id', 'faker', '$comment']
     with open(file_path, 'r') as file:
         data = json.load(file)
 

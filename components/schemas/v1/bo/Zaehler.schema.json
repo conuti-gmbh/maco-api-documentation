@@ -71,8 +71,7 @@
             "format": "date-time"
         },
         "baujahr": {
-            "type": "string",
-            "$comment": "DTM+Z03"
+            "type": "string"
         },
         "messlokationsId": {
             "type": "string"
