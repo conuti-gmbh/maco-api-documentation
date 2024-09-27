@@ -1,0 +1,42 @@
+START_LIEFERBEGINN_STROM:
+  description: "Schema zum Starten des Lieferbeginns f\xFCr Strom | Schema for starting\
+    \ the delivery of electricity"
+  properties:
+    absender:
+      description: Rollencodenummer des Absenders | Role code number of the sender
+      example: '9903790000002'
+      type: string
+    empfaenger:
+      description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
+      example: '9900321000005'
+      type: string
+    energierichtung:
+      description: Energierichtung, z.B. AUSSP | Energy direction, e.g., AUSSP
+      example: AUSSP
+      type: string
+    eventName:
+      description: Name des Events | Name of the event
+      example: START_LIEFERBEGINN
+      type: string
+    id:
+      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+        of the data record in the table in the backend
+      example: 110000000408
+      type: string
+    marktlokationsId:
+      description: Marktlokations-ID | Market location ID
+      example: '50074561188'
+      type: string
+    sparte:
+      description: Sparte, z.B. Strom | Sector, e.g., electricity
+      example: STROM
+      type: string
+    vertragsbeginn:
+      description: Beginn des Vertrags | Start of the contract
+      example: '2024-09-30T22:00:00Z'
+      format: date-time
+      type: string
+  required:
+  - id, eventName, marktlokationsId, sparte, energierichtung, vertragsbeginn, absender,
+    empfaenger
+  type: object

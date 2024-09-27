@@ -1,0 +1,11 @@
+START_LIEFERBEGINN_GAS:
+  summary: "Beispiel f\xFCr einen START_LIEFERBEGINN_GAS Event | Example for a START_LIEFERBEGINN_GAS\
+    \ event"
+  value:
+    absender: '9800044300007'
+    empfaenger: '9870013800007'
+    eventName: START_LIEFERBEGINN
+    id: 110000000611
+    marktlokationsId: '50074561188'
+    sparte: GAS
+    vertragsbeginn: '2024-06-01T04:00:00Z'

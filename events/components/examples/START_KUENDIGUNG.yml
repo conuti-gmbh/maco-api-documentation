@@ -1,0 +1,6 @@
+START_KUENDIGUNG:
+  summary: "Beispiel f\xFCr einen START_KUENDIGUNG Event | Example for a START_KUENDIGUNG\
+    \ event"
+  value:
+    eventName: START_KUENDIGUNG
+    id: 110000000500

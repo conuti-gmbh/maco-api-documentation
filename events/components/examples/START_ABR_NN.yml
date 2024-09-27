@@ -1,0 +1,12 @@
+START_ABR_NN:
+  summary: "START_ABR_NN Versand Netznutzungsabrechnung ausl\xF6sen | Trigger dispatch\
+    \ grid usage billing"
+  value:
+    absender: '9900321000005'
+    artikelId: 1-02-0-001
+    empfaenger: '9903790000002'
+    eventName: START_ABR_NN
+    id: 110000000409
+    marktlokationsId: '50074561188'
+    sparte: STROM
+    vertragsbeginn: '2024-10-31T23:00:00Z'

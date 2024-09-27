@@ -1,0 +1,10 @@
+START_SPERRAUFTRAG:
+  summary: "START_SPERRAUFTRAG Versand Sperrauftrag ausl\xF6sen | Trigger shipping\
+    \ blocking order"
+  value:
+    absender: '9903790000002'
+    empfaenger: '9900321000005'
+    eventName: START_SPERRAUFTRAG
+    id: STARTSPERRAUFTRAG1
+    marktlokationsId: '50000083216'
+    sparte: STROM

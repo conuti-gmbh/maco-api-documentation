@@ -1,0 +1,62 @@
+/inbound[EXTENDED]:
+  post:
+    deprecated: false
+    description: Erhalte Event vom Backend | Receive Event From Backend
+    operationId: inbound
+    parameters: []
+    requestBody:
+      content:
+        application/json:
+          examples:
+            START_ABR_NN:
+              $ref: '../components/examples/START_ABR_NN.yml'
+            START_DEFINITION_LEISTUNGSKURVE:
+              $ref: '../components/examples/START_DEFINITION_LEISTUNGSKURVE.yml'
+            START_DEFINITION_SCHALTZEIT:
+              $ref: '../components/examples/START_DEFINITION_SCHALTZEIT.yml'
+            START_DEFINITION_ZAEHLZEIT:
+              $ref: '../components/examples/START_DEFINITION_ZAEHLZEIT.yml'
+            START_KUENDIGUNG:
+              $ref: '../components/examples/START_KUENDIGUNG.yml'
+            START_LIEFERBEGINN_GAS:
+              $ref: '../components/examples/START_LIEFERBEGINN_GAS.yml'
+            START_LIEFERBEGINN_STROM:
+              $ref: '../components/examples/START_LIEFERBEGINN_STROM.yml'
+            START_SPERRAUFTRAG:
+              $ref: '../components/examples/START_SPERRAUFTRAG.yml'
+          schema:
+            oneOf:
+            - $ref: '../components/schemas/START_SPERRAUFTRAG.yml'
+            - $ref: '../components/schemas/START_LIEFERBEGINN_STROM.yml'
+            - $ref: '../components/schemas/START_LIEFERBEGINN_GAS.yml'
+            - $ref: '../components/schemas/START_ABR_NN.yml'
+            - $ref: '../components/schemas/START_DEFINITION_SCHALTZEIT.yml'
+            - $ref: '../components/schemas/START_DEFINITION_LEISTUNGSKURVE.yml'
+            - $ref: '../components/schemas/START_DEFINITION_ZAEHLZEIT.yml'
+            - $ref: '../components/schemas/START_KUENDIGUNG.yml'
+    responses:
+      '201':
+        content:
+          application/json:
+            schema:
+              properties:
+                businessKey:
+                  description: "Einzigartige Kennung des Gesch\xE4ftsprozesses | Unique\
+                    \ identifier of the business process"
+                  format: uuid
+                  type: string
+                message:
+                  description: "Nachricht mit Details zum ausgel\xF6sten Event | Message\
+                    \ with details about the triggered event"
+                  example: received event START_LIEFERBEGINN_STROM with id at 2024-08-08T12:58:22Z
+                    and started process with businessKey 4c7170ed-3518-41ee-8582-39ab65b00107
+                  type: string
+              required:
+              - businessKey
+              - message
+              type: object
+        description: Erfolg | Success
+    security: []
+    summary: Trigger Events
+    tags:
+    - EXTENDED EVENTS

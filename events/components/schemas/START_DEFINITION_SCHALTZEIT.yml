@@ -1,0 +1,38 @@
+START_DEFINITION_SCHALTZEIT:
+  description: Schema zur Definition von Schaltzeiten | Schema for defining switching
+    times
+  properties:
+    beginndatum:
+      description: Beginndatum der Schaltzeit | Start date of the switching time
+      example: '2024-06-30T22:00:00Z'
+      format: date-time
+      type: string
+    code:
+      description: "Code f\xFCr die Schaltzeit | Code for the switching time"
+      example: AC
+      type: string
+    endedatum:
+      description: Enddatum der Schaltzeit | End date of the switching time
+      example: '2024-08-30T22:00:00Z'
+      format: date-time
+      type: string
+    eventName:
+      description: Name des Events | Name of the event
+      example: START_DEFINITION_SCHALTZEIT
+      type: string
+    haeufigkeit:
+      description: "H\xE4ufigkeit der Schaltzeit | Frequency of the switching time"
+      example: JAEHRLICH
+      type: string
+    id:
+      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+        of the data record in the table in the backend
+      example: 110000000406
+      type: string
+    schalthandlung:
+      description: Art der Schalthandlung | Type of switching action
+      example: LEISTUNG_AN
+      type: string
+  required:
+  - id, eventName, code, beginndatum, endedatum, haeufigkeit, schalthandlung
+  type: object

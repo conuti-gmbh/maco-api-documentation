@@ -1,0 +1,37 @@
+/START_ENERGIEMENGE:
+  post:
+    deprecated: false
+    description: Erhalte Event vom Backend | Receive Event From Backend
+    operationId: START_ENERGIEMENGE
+    parameters: []
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/START_ENERGIEMENGE.yml'
+    responses:
+      '201':
+        content:
+          application/json:
+            schema:
+              properties:
+                businessKey:
+                  description: "Einzigartige Kennung des Gesch\xE4ftsprozesses | Unique\
+                    \ identifier of the business process"
+                  format: uuid
+                  type: string
+                message:
+                  description: "Nachricht mit Details zum ausgel\xF6sten Event | Message\
+                    \ with details about the triggered event"
+                  example: received event START_ENERGIEMENGE_STROM with id at 2024-08-08T12:58:22Z
+                    and started process with businessKey 4c7170ed-3518-41ee-8582-39ab65b00107
+                  type: string
+              required:
+              - businessKey
+              - message
+              type: object
+        description: Erfolg | Success
+    security: []
+    summary: START_ENERGIEMENGE
+    tags:
+    - SLIM EVENTS

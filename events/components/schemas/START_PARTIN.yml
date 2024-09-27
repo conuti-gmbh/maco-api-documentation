@@ -1,0 +1,14 @@
+START_PARTIN:
+  description: "Schema f\xFCr partin | Schema for the partin"
+  properties:
+    eventName:
+      default: START_PARTIN
+      type: string
+    id:
+      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+        of the data record in the table in the backend
+      example: '110000000605'
+      type: string
+  required:
+  - id, eventName
+  type: object

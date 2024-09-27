@@ -1,0 +1,34 @@
+START_SPERRAUFTRAG:
+  description: Schema zum Sperren einer Marktlokation | Schema for locking a market
+    location
+  properties:
+    absender:
+      description: Rollencodenummer des Absenders | Role code number of the sender
+      example: '9903790000002'
+      type: string
+    empfaenger:
+      description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
+      example: '9900321000005'
+      type: string
+    eventName:
+      description: Name des Events | Name of the event
+      enum:
+      - START_SPERRAUFTRAG
+      example: START_SPERRAUFTRAG
+      type: string
+    id:
+      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+        of the data record in the table in the backend
+      example: STARTSPERRAUFTRAG1
+      type: string
+    marktlokationsId:
+      description: Marktlokations-ID | Market location ID
+      example: '50000083216'
+      type: string
+    sparte:
+      description: Sparte, z.B. Strom oder Gas | Sector, e.g., electricity or gas
+      example: STROM
+      type: string
+  required:
+  - id, eventName, marktlokationsId, sparte, absender, empfaenger
+  type: object
