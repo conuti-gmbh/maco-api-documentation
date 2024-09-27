@@ -1,5 +1,5 @@
 START_KUENDIGUNG:
-  description: "Schema f\xFCr die K\xFCndigung eines Vertrags | Schema for the termination\
+  description: "Schema für die K\xFCndigung eines Vertrags | Schema for the termination\
     \ of a contract"
   properties:
     absender:

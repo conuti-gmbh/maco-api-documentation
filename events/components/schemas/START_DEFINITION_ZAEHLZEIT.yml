@@ -8,7 +8,7 @@ START_DEFINITION_ZAEHLZEIT:
       format: date-time
       type: string
     code:
-      description: "Code f\xFCr die Z\xE4hlzeit | Code for the metering time"
+      description: "Code für die Z\xE4hlzeit | Code for the metering time"
       example: ABC
       type: string
     endedatum:

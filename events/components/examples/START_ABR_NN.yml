@@ -1,5 +1,5 @@
 START_ABR_NN:
-  summary: "START_ABR_NN Versand Netznutzungsabrechnung ausl\xF6sen | Trigger dispatch\
+  summary: "START_ABR_NN Versand Netznutzungsabrechnung auslösen | Trigger dispatch\
     \ grid usage billing"
   value:
     absender: '9900321000005'

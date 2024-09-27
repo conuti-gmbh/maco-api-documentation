@@ -1,5 +1,5 @@
 START_LASTGANG:
-  description: "Schema f\xFCr Lastgang | Schema for the lastgang"
+  description: "Schema für Lastgang | Schema for the lastgang"
   properties:
     eventName:
       default: START_LASTGANG

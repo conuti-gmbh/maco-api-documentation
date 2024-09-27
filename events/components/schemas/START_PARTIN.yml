@@ -1,5 +1,5 @@
 START_PARTIN:
-  description: "Schema f\xFCr partin | Schema for the partin"
+  description: "Schema für partin | Schema for the partin"
   properties:
     eventName:
       default: START_PARTIN

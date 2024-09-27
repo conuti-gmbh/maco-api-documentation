@@ -1,5 +1,5 @@
 START_NACHRICHTENEINGANG:
-  description: "Schema f\xFCr Nachrichteingang | Schema for the inbound message"
+  description: "Schema für Nachrichteingang | Schema for the inbound message"
   properties:
     eventName:
       default: START_NACHRICHTENEINGANG

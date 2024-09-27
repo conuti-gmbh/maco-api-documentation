@@ -1,5 +1,5 @@
 START_DEFINITION_LEISTUNGSKURVE:
-  summary: "Beispiel f\xFCr einen START_DEFINITION_LEISTUNGSKURVE Event | Example\
+  summary: "Beispiel für einen START_DEFINITION_LEISTUNGSKURVE Event | Example\
     \ for a START_DEFINITION_LEISTUNGSKURVE event"
   value:
     beginndatum: '2024-06-30T22:00:00Z'

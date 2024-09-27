@@ -1,5 +1,5 @@
 START_ENERGIEMENGE:
-  description: "Schema f\xFCr Energiemenge | Schema for the Energiemenge"
+  description: "Schema für Energiemenge | Schema for the Energiemenge"
   properties:
     eventName:
       default: START_ENERGIEMENGE

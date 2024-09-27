@@ -1,5 +1,5 @@
 START_LIEFERBEGINN_GAS:
-  summary: "Beispiel f\xFCr einen START_LIEFERBEGINN_GAS Event | Example for a START_LIEFERBEGINN_GAS\
+  summary: "Beispiel für einen START_LIEFERBEGINN_GAS Event | Example for a START_LIEFERBEGINN_GAS\
     \ event"
   value:
     absender: '9800044300007'

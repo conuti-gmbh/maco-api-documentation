@@ -8,7 +8,7 @@ START_DEFINITION_SCHALTZEIT:
       format: date-time
       type: string
     code:
-      description: "Code f\xFCr die Schaltzeit | Code for the switching time"
+      description: "Code für die Schaltzeit | Code for the switching time"
       example: AC
       type: string
     endedatum:

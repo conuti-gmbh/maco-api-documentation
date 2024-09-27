@@ -1,5 +1,5 @@
 START_ZAEHLERSTAND:
-  description: "Schema f\xFCr Zaehlerstand | Schema for the Zaehlerstand"
+  description: "Schema für Zaehlerstand | Schema for the Zaehlerstand"
   properties:
     eventName:
       default: START_ZAEHLERSTAND

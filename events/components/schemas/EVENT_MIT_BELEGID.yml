@@ -1,5 +1,5 @@
 EVENT_MIT_BELEGID:
-  description: "Generisches Schema f\xFCr Events, die eine BelegID erfordern | Generic\
+  description: "Generisches Schema für Events, die eine BelegID erfordern | Generic\
     \ schema for events that require a DocumentID"
   properties:
     eventName:

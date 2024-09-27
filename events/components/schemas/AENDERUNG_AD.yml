@@ -1,5 +1,5 @@
 AENDERUNG_AD:
-  description: "Schema f\xFCr \xC4nderung | Schema for the update of object"
+  description: "Schema für \xC4nderung | Schema for the update of object"
   properties:
     eventName:
       default: AENDERUNG_AD

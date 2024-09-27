@@ -9,7 +9,7 @@ START_DEFINITION_LEISTUNGSKURVE:
       format: date-time
       type: string
     code:
-      description: "Code f\xFCr die Leistungskurve | Code for the performance curve"
+      description: "Code für die Leistungskurve | Code for the performance curve"
       example: ABC
       type: string
     endedatum:
@@ -27,7 +27,7 @@ START_DEFINITION_LEISTUNGSKURVE:
       example: 110000000405
       type: string
     obererSchwellwert:
-      description: "Oberer Schwellwert f\xFCr die Leistungskurve | Upper threshold\
+      description: "Oberer Schwellwert für die Leistungskurve | Upper threshold\
         \ for the performance curve"
       example: 50
       type: number

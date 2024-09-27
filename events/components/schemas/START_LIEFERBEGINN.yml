@@ -1,5 +1,5 @@
 START_LIEFERBEGINN:
-  description: "Schema f\xFCr Lieferbeginn | Schema for the delivery start"
+  description: "Schema für Lieferbeginn | Schema for the delivery start"
   properties:
     eventName:
       default: START_LIEFERBEGINN

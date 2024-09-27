@@ -1,5 +1,5 @@
 START_LIEFERBEGINN_STROM:
-  description: "Schema zum Starten des Lieferbeginns f\xFCr Strom | Schema for starting\
+  description: "Schema zum Starten des Lieferbeginns für Strom | Schema for starting\
     \ the delivery of electricity"
   properties:
     absender:

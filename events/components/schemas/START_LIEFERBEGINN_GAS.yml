@@ -1,5 +1,5 @@
 START_LIEFERBEGINN_GAS:
-  description: "Schema zum Starten des Lieferbeginns f\xFCr Gas | Schema for starting\
+  description: "Schema zum Starten des Lieferbeginns für Gas | Schema for starting\
     \ the delivery of gas"
   properties:
     absender:
