@@ -1,4 +1,8 @@
 ## How to generate a single openapi.yaml file from multiple openapi.yaml files using swagger-cli
+the files will be merged into one file. The files are located in the components/schemas/v1 directory. The merged file will be located in the _build directory.
+```
+_build/bo4e-openapi.yaml
+```
 
 ### requiments
 - nodejs
