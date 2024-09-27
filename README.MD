@@ -1,8 +1,14 @@
 ## How to generate a single openapi.yaml file from multiple openapi.yaml files using swagger-cli
 
+### requiments
+- nodejs
+- nodemon
+- swagger-cli
+- python3
 
 
 ### Developing
+if you need to change some thing in this repo, you can run the following command to start the development server.
 ```
 nodemon
 ```
@@ -26,3 +32,21 @@ nodemon
 ```
 npm install -g swagger-cli
 ```
+
+## How to install nodemon
+```
+npm install -g nodemon
+```
+
+## How to install nodejs
+```
+sudo apt install nodejs
+```
+
+## How to install python3
+```
+sudo apt install python3
+```
+
+## Notes
+All files in components/schemas/v1 are generated from github.com:conuti-gmbh/bo4e-schema.git
