@@ -15,7 +15,7 @@ nodemon
 
 ### Build _build/openapi.yaml
 ```
-swagger-cli bundle openapi.yaml --outfile _build/openapi.yaml --dereference  --type yaml
+swagger-cli bundle openapi.yaml --outfile _build/bo4e-openapi.yaml --dereference  --type yaml
 ```
 
 
