@@ -15,17 +15,7 @@ nodemon
 
 ### Build _build/openapi.yaml
 ```
-swagger-cli bundle openapi.yaml --outfile _build/bo4e-openapi.yaml --dereference  --type yaml
-```
-
-
-### updates schemas from bo4e-schema
-```
-git clone git@github.com:conuti-gmbh/bo4e-schema.git && \
-cp -r bo4e-schema/schemas components && \
-rm -rf bo4e-schema/ && \
-python3 remove_unused_key_in_schemas.py && \ 
-nodemon
+swagger-cli bundle bo4e-openapi.yaml --outfile _build/bo4e-openapi.yaml --dereference  --type yaml
 ```
 
 ## How to install swagger-cli
@@ -49,4 +39,13 @@ sudo apt install python3
 ```
 
 ## Notes
-All files in components/schemas/v1 are generated from github.com:conuti-gmbh/bo4e-schema.git
+All files in components/schemas/v1 are generated from github.com:conuti-gmbh/bo4e-schema.git. We try to keep them up to date.
+
+### run this updates schemas from bo4e-schema
+```
+git clone git@github.com:conuti-gmbh/bo4e-schema.git && \
+cp -r bo4e-schema/schemas components && \
+rm -rf bo4e-schema/ && \
+python3 remove_unused_key_in_schemas.py && \ 
+nodemon
+```
