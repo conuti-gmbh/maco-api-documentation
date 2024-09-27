@@ -50,7 +50,40 @@ servers:
   - url: "https://api.macoapp.de"
     description: Mock-Umgebung | Mock environment
 tags:
-  $ref: "./tags/_Index.yml"
+  - name: LESEN | READ
+    description: Lesender Zugriff auf Geschäftsobjekte | Reading access to business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: AKTUALISIEREN | UPDATE
+    description: |
+      Aktualisierung bestehender Geschäftsobjekte | 
+      Updating existing business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: ERSTELLEN | CREATE
+    description: Erstellen von Geschäftsobjekten | Creating business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: LÖSCHEN | DELETE
+    description: Löschen von Geschäftsobjekten | Deleting business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: PROZESSDATEN | PROCESSING DATA
+    description: |
+      Auslösen von Prozessen im ERP System | 
+      Triggering processes in the ERP system
+
+  - name: EVENTDATEN | EVENT DATA
+    description: Lesen von Eventdaten im ERP System | Reading event data in the ERP system
+
 security: []
 paths:
   $ref: "./paths/_Index.yaml"
