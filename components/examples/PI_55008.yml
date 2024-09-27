@@ -42,4 +42,7 @@ value:
     anfragereferenznummer: ABC1234567
     antwortstatus: A10
     antwortstatusCodeliste: E_0502
-  zusatzdaten: null
+  zusatzdaten:
+    datenaustauschreferenz: "117398"
+    sparte: STROM
+    transaktionsgrund: E01

@@ -40,4 +40,7 @@ value:
     nachrichtenreferenznummer: "796205"
     freitext:
       freitext1: ABC
-  zusatzdaten: null
+  zusatzdaten: 
+    datenaustauschreferenz: "117398"
+    sparte: STROM
+    transaktionsgrund: E01

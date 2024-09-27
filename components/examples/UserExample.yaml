@@ -1,6 +1,0 @@
-summary: User example
-description: An example of a user
-value:
-  - id: 1
-    name: John Doe
-    email: johndoe@example.com

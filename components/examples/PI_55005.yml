@@ -47,4 +47,7 @@ value:
     anfragereferenznummer: PCL_5923100909360499050790000005011
     antwortstatus: A06
     antwortstatusCodeliste: E_0401
-  zusatzdaten: null
+  zusatzdaten: 
+    datenaustauschreferenz: "117398"
+    sparte: STROM
+    transaktionsgrund: E01

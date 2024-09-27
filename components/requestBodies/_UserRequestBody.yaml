@@ -1,6 +1,0 @@
-description: The user to create
-content:
-  application/json:
-    schema:
-      $ref: '../schemas/v1/enum/../schemas/User.schema.json'
-required: true

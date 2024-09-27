@@ -71,3 +71,19 @@ properties:
         type: array
         items:
           $ref: "../schemas/v1/bo/Verwendungszeitraum.schema.json"
+  transaktionsdaten:
+    type: object
+    properties:
+      datenaustauschreferenz: 
+        type: string
+      sparte:  
+        type: string
+    unevaluatedProperties: true
+  zusatzdaten:
+    type: object
+    properties:
+      datenaustauschreferenz: 
+        type: string
+      sparte:  
+        type: string
+    unevaluatedProperties: true
