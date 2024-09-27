@@ -1,0 +1,46 @@
+{
+    "title": "Anfrage",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "ANFRAGE"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "lokationsId": {
+            "type": "string"
+        },
+        "anfragetyp": {
+            "$ref": "../enum/Anfragetyp.schema.json"
+        },
+        "abonnement": {
+            "$ref": "../enum/Abonnement.schema.json"
+        },
+        "anfragereferenz": {
+            "type": "string"
+        },
+        "allgemeineInformationen": {
+            "type": "string"
+        },
+        "anfragekategorie": {
+            "$ref": "../enum/Anfragekategorie.schema.json"
+        },
+        "energierichtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        },
+        "gueltigkeitszeitspanne": {
+            "type": "string"
+        },
+        "gueltigAb": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

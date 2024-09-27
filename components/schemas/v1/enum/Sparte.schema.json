@@ -1,0 +1,12 @@
+{
+    "title": "Sparte",
+    "type": "string",
+    "enum": [
+        "STROM",
+        "GAS",
+        "FERNWAERME",
+        "NAHWAERME",
+        "WASSER",
+        "ABWASSER"
+    ]
+}

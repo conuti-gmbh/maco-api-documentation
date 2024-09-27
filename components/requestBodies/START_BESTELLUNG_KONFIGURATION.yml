@@ -1,0 +1,40 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  anfragekategorie:
+    default: SOME_STRING
+    type: string
+  aussteller1:
+    default: SOME_STRING
+    type: string
+  beteiligterMarktpartner:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  konfigurationsprodukt:
+    default: SOME_STRING
+    type: string
+  lokationsId:
+    default: SOME_STRING
+    type: string
+  netzlokationsId:
+    default: SOME_STRING
+    type: string
+  sparte:
+    default: SOME_STRING
+    type: string
+  vorgangsreferenznummer:
+    default: SOME_STRING
+    type: string
+  zertifikatsNutzer1:
+    default: SOME_STRING
+    type: string
+  zieladresse1:
+    default: SOME_STRING
+    type: string
+type: object

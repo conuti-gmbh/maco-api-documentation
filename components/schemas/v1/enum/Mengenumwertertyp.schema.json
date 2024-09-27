@@ -1,0 +1,9 @@
+{
+    "title": "Mengenumwertertyp",
+    "type": "string",
+    "enum": [
+        "DICHTEMENGENUMWERTER",
+        "TEMPERATURMENGENUMWERTER",
+        "ZUSTANDSMENGENUMWERTER"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Tariftyp",
+    "type": "string",
+    "enum": [
+        "ERSATZVERSORGUNG",
+        "GRUNDVERSORGUNG",
+        "GRUND_ERSATZVERSORGUNG",
+        "SONDERTARIF"
+    ]
+}

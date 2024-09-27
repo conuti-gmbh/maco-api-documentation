@@ -1,0 +1,20 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  energierichtung:
+    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+  kategorie:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  vorgangsreferenznummer:
+    default: SOME_STRING
+    type: string
+type: object

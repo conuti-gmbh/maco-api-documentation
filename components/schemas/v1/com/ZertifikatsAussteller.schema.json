@@ -1,0 +1,21 @@
+{
+    "title": "ZertifikatsAussteller",
+    "type": "object",
+    "properties": {
+        "zertifikatsAussteller1": {
+            "type": "string"
+        },
+        "zertifikatsAussteller2": {
+            "type": "string"
+        },
+        "zertifikatsAussteller3": {
+            "type": "string"
+        },
+        "zertifikatsAussteller4": {
+            "type": "string"
+        },
+        "zertifikatsAussteller5": {
+            "type": "string"
+        }
+    }
+}

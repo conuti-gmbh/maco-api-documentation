@@ -1,0 +1,25 @@
+{
+    "title": "Leistungskurve",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string"
+        },
+        "aenderungszeitpunkt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "haeufigkeit": {
+            "$ref": "../enum/HaeufigkeitLeistungskurve.schema.json"
+        },
+        "uebermittelbarkeit": {
+            "$ref": "../enum/UebermittelbarkeitLeistungskurve.schema.json"
+        },
+        "schwellwert": {
+            "$ref": "../com/Schwellwert.schema.json"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        }
+    }
+}

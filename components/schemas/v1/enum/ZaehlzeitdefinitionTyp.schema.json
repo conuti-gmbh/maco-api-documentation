@@ -1,0 +1,11 @@
+{
+    "title": "ZaehlzeitdefinitionTyp",
+    "type": "string",
+    "enum": [
+        "WAERMEPUMPE",
+        "NACHTSPEICHERHEIZUNG",
+        "SCHWACHLASTZEITFENSTER",
+        "SONSTIGE",
+        "HOCHLASTZEITFENSTER"
+    ]
+}

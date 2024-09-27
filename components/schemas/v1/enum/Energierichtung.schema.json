@@ -1,0 +1,8 @@
+{
+    "title": "Energierichtung",
+    "type": "string",
+    "enum": [
+        "AUSSP",
+        "EINSP"
+    ]
+}

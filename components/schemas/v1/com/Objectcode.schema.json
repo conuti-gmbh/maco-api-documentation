@@ -1,0 +1,12 @@
+{
+    "title": "Objectcode",
+    "type": "object",
+    "properties": {
+        "objectcode": {
+            "type": "string"
+        },
+        "lokationsbuendelNummer": {
+            "type": "integer"
+        }
+    }
+}

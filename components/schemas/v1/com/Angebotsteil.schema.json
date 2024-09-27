@@ -1,0 +1,33 @@
+{
+    "title": "Angebotsteil",
+    "type": "object",
+    "properties": {
+        "anfrageSubreferenz": {
+            "type": "string"
+        },
+        "gesamtmengeangebotsteil": {
+            "$ref": "../com/Menge.schema.json"
+        },
+        "gesamtkostenangebotsteil": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "lieferzeitraum": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "verweisKatalognummer": {
+            "$ref": "../com/Katalogverweis.schema.json"
+        },
+        "lieferstellenangebotsteil": {
+            "type": "array",
+            "items": {
+                "$ref": "../bo/Marktlokation.schema.json"
+            }
+        },
+        "positionen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Angebotsposition.schema.json"
+            }
+        }
+    }
+}

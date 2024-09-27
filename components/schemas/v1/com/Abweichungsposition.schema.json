@@ -1,0 +1,21 @@
+{
+    "title": "Abweichungsposition",
+    "type": "object",
+    "properties": {
+        "abweichungsgrundCode": {
+            "type": "string"
+        },
+        "abweichungsgrundCodeliste": {
+            "type": "string"
+        },
+        "abweichungsgrundBemerkung": {
+            "type": "string"
+        },
+        "zugehoerigeRechnung": {
+            "type": "string"
+        },
+        "zugehoerigeBestellung": {
+            "type": "string"
+        }
+    }
+}

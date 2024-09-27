@@ -1,0 +1,34 @@
+{
+    "title": "Kommunikationsdaten",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "KOMMUNIKATIONSDATEN"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "gueltigkeit": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "kommunikationsDatenBlattInaktiv": {
+            "type": "boolean"
+        },
+        "marktteilnehmer": {
+            "$ref": "../bo/Marktteilnehmer.schema.json"
+        },
+        "kommunikationsangaben": {
+            "type": "array",
+            "items": {
+                "$ref": "../bo/Marktteilnehmer.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

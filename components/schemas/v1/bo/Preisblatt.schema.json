@@ -1,0 +1,49 @@
+{
+    "title": "Preisblatt",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "PREISBLATT"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "bezeichnung": {
+            "type": "string"
+        },
+        "gueltigkeit": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "preisstatus": {
+            "$ref": "../enum/Preisstatus.schema.json"
+        },
+        "sparte": {
+            "$ref": "../enum/Sparte.schema.json"
+        },
+        "bilanzierungsdatum": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "regelzone": {
+            "type": "string"
+        },
+        "leistungstyp": {
+            "$ref": "../enum/Leistungstyp.schema.json"
+        },
+        "nichtGenutzt": {
+            "type": "boolean"
+        },
+        "preispositionen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Preisposition.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

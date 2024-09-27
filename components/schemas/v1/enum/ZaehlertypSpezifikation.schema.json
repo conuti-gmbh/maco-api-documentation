@@ -1,0 +1,11 @@
+{
+    "title": "ZaehlertypSpezifikation",
+    "type": "string",
+    "enum": [
+        "EDL40",
+        "EDL21",
+        "SONSTIGER_EHZ",
+        "MME_STANDARD",
+        "MME_MEDA"
+    ]
+}

@@ -1,0 +1,51 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  gueltigAb:
+    default: SOME_STRING
+    type: string
+  lokationszuordnungMelo:
+    default: SOME_STRING
+    type: string
+  lokationszuordnungNelo:
+    default: SOME_STRING
+    type: string
+  lokationszuordnungSr:
+    default: SOME_STRING
+    type: string
+  lokationszuordnungTr:
+    default: SOME_STRING
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  messlokationsId:
+    default: DE12345678901234567890123456789012
+    type: string
+  netzmarktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  steuerbareRessourcenId:
+    default: SOME_STRING
+    type: string
+  technischeRessourcenId:
+    default: SOME_STRING
+    type: string
+  tranchenId:
+    default: SOME_STRING
+    type: string
+  vertragsart:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+type: object

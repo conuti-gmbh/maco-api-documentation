@@ -1,0 +1,8 @@
+{
+    "title": "Verwendungsumfang",
+    "type": "string",
+    "enum": [
+        "MESSLOKATION_PROZESSUAL_BEHANDELT",
+        "MESSLOKATION_LOKATIONSBUENDEL"
+    ]
+}

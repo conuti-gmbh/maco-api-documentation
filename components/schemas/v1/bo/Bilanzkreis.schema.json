@@ -1,0 +1,20 @@
+{
+    "title": "Bilanzkreis",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "BILANZKREIS"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "bezeichnung": {
+            "type": "string"
+        },
+        "prioritaet": {
+            "type": "integer"
+        }
+    }
+}

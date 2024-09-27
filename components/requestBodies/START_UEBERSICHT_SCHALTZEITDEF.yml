@@ -1,0 +1,54 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  anfrageReferenz:
+    default: SOME_STRING
+    type: string
+  beginndatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  beschreibungTyp:
+    default: SOME_STRING
+    type: string
+  code:
+    default: SOME_STRING
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  ermittlungLeistungsmaximum:
+    default: SOME_STRING
+    type: string
+  haeufigkeit:
+    default: SOME_STRING
+    type: string
+  istBestellbar:
+    default: SOME_STRING
+    type: string
+  notwendigkeit:
+    default: SOME_STRING
+    type: string
+  register:
+    default: SOME_STRING
+    type: string
+  schwachlastfaehig:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  typ:
+    default: SOME_STRING
+    type: string
+  uebermittelbarkeit:
+    default: SOME_STRING
+    type: string
+  version:
+    default: SOME_STRING
+    type: string
+  zaehlzeitDefinition:
+    default: SOME_STRING
+    type: string
+type: object

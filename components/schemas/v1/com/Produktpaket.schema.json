@@ -1,0 +1,21 @@
+{
+    "title": "Produktpaket",
+    "type": "object",
+    "properties": {
+        "produktpaketId": {
+            "type": "integer"
+        },
+        "produkt": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Produkt.schema.json"
+            }
+        },
+        "umsetzungsgradvorgabe": {
+            "$ref": "../enum/Umsetzungsgradvorgabe.schema.json"
+        },
+        "priorisierung": {
+            "$ref": "../enum/Priorisierung.schema.json"
+        }
+    }
+}

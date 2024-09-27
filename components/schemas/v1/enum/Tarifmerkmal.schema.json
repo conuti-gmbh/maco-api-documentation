@@ -1,0 +1,15 @@
+{
+    "title": "Tarifmerkmal",
+    "type": "string",
+    "enum": [
+        "BAUSTROM",
+        "FESTPREIS",
+        "HAUSLICHT",
+        "HEIZSTROM",
+        "KOMBI",
+        "ONLINE",
+        "PAKET",
+        "STANDARD",
+        "VORKASSE"
+    ]
+}

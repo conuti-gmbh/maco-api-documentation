@@ -1,0 +1,21 @@
+{
+    "title": "ReklamationsgrundBemerkung",
+    "type": "object",
+    "properties": {
+        "bemerkung1": {
+            "type": "string"
+        },
+        "bemerkung2": {
+            "type": "string"
+        },
+        "bemerkung3": {
+            "type": "string"
+        },
+        "bemerkung4": {
+            "type": "string"
+        },
+        "bemerkung5": {
+            "type": "string"
+        }
+    }
+}

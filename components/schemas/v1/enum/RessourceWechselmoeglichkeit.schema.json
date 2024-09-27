@@ -1,0 +1,10 @@
+{
+    "title": "RessourceWechselmoeglichkeit",
+    "type": "string",
+    "enum": [
+        "WECHSELMOEGLICHKEIT_EINMALIG_NOCH_MOEGLICH",
+        "WECHSELMOEGLICHKEIT_NICHT_MOEGLICH",
+        "BEFRISTET_OHNE_WECHSELMOEGLICHKEIT",
+        "WECHSEL_WURDE_DURCHGEFUEHRT"
+    ]
+}

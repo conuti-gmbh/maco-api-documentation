@@ -1,0 +1,39 @@
+{
+    "title": "Lokationsbuendel",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "LOKATIONSBUENDEL"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "lokationsbuendelstrukturId": {
+            "type": "string"
+        },
+        "lokationsbuendelNummer": {
+            "type": "integer"
+        },
+        "standardisierteLokationsbuendelstruktur": {
+            "type": "boolean"
+        },
+        "datenqualitaet": {
+            "$ref": "../enum/Datenqualitaet.schema.json"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        },
+        "zuordnungObjectcode": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/ZuordnungObjectcode.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

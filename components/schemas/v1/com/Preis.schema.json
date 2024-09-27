@@ -1,0 +1,19 @@
+{
+    "title": "Preis",
+    "type": "object",
+    "properties": {
+        "wert": {
+            "type": "number",
+            "format": "float"
+        },
+        "einheit": {
+            "$ref": "../enum/Waehrungseinheit.schema.json"
+        },
+        "bezugswert": {
+            "$ref": "../enum/Mengeneinheit.schema.json"
+        },
+        "status": {
+            "$ref": "../enum/Preisstatus.schema.json"
+        }
+    }
+}

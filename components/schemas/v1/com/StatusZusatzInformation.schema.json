@@ -1,0 +1,12 @@
+{
+    "title": "StatusZusatzInformation",
+    "type": "object",
+    "properties": {
+        "art": {
+            "$ref": "../enum/StatusArt.schema.json"
+        },
+        "status": {
+            "$ref": "../enum/Status.schema.json"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "IpRange",
+    "type": "object",
+    "properties": {
+        "untereGrenze": {
+            "type": "string"
+        },
+        "obereGrenze": {
+            "type": "string"
+        }
+    }
+}

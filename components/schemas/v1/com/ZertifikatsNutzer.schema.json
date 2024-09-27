@@ -1,0 +1,21 @@
+{
+    "title": "ZertifikatsNutzer",
+    "type": "object",
+    "properties": {
+        "zertifikatsNutzer1": {
+            "type": "string"
+        },
+        "zertifikatsNutzer2": {
+            "type": "string"
+        },
+        "zertifikatsNutzer3": {
+            "type": "string"
+        },
+        "zertifikatsNutzer4": {
+            "type": "string"
+        },
+        "zertifikatsNutzer5": {
+            "type": "string"
+        }
+    }
+}

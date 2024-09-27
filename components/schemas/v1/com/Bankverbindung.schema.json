@@ -1,0 +1,21 @@
+{
+    "title": "Bankverbindung",
+    "type": "object",
+    "properties": {
+        "verwendungszweck": {
+            "$ref": "../enum/BankverbindungVerwendungszweck.schema.json"
+        },
+        "iban": {
+            "type": "string"
+        },
+        "kontoinhaber": {
+            "type": "string"
+        },
+        "bic": {
+            "type": "string"
+        },
+        "kreditinstitut": {
+            "type": "string"
+        }
+    }
+}

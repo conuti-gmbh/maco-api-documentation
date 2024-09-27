@@ -1,0 +1,12 @@
+{
+    "title": "Verfuegbarkeit",
+    "type": "string",
+    "enum": [
+        "MONTAG",
+        "DIENSTAG",
+        "MITTWOCH",
+        "DONNERSTAG",
+        "FREITAG",
+        "PAUSE"
+    ]
+}

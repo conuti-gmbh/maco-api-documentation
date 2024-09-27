@@ -1,0 +1,8 @@
+{
+    "title": "BerichtStatus",
+    "type": "string",
+    "enum": [
+        "ERFOLGREICH",
+        "FEHLER"
+    ]
+}

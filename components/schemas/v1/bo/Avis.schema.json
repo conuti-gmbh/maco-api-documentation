@@ -1,0 +1,33 @@
+{
+    "title": "Avis",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "AVIS"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "avisNummer": {
+            "type": "string"
+        },
+        "avisTyp": {
+            "$ref": "../enum/AvisTyp.schema.json"
+        },
+        "zuZahlen": {
+            "$ref": "../com/Betrag.schema.json"
+        },
+        "positionen": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Avisposition.schema.json"
+            }
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

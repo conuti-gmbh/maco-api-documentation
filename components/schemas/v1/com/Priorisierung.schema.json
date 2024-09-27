@@ -1,0 +1,12 @@
+{
+    "title": "Priorisierung",
+    "type": "object",
+    "properties": {
+        "notwendigkeitProduktpaket": {
+            "$ref": "../enum/NotwendigkeitProduktpaket.schema.json"
+        },
+        "priorisierungErforderlichesProduktpaket": {
+            "$ref": "../enum/PriorisierungErforderlichesProduktpaket.schema.json"
+        }
+    }
+}

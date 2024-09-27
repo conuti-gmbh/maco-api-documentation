@@ -1,0 +1,10 @@
+{
+    "title": "Wertegranularitaet",
+    "type": "string",
+    "enum": [
+        "JAEHRLICH",
+        "HALBJAEHRLICH",
+        "QUARTALSWEISE",
+        "MONATLICH"
+    ]
+}

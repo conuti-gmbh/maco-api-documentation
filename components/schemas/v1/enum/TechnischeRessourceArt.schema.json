@@ -1,0 +1,9 @@
+{
+    "title": "TechnischeRessourceArt",
+    "type": "string",
+    "enum": [
+        "STROMERZEUGUNG",
+        "STROMVERBRAUCH",
+        "SPEICHER"
+    ]
+}

@@ -1,0 +1,47 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  anfrageReferenz:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  enddatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  energieverbrauch:
+    $ref: '../schemas/v1/enum/ENERGIEVERBRAUCH.schema.json'
+  fertigstellungsdatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  kategorie:
+    default: kategorie
+    type: string
+  lokationsId:
+    default: '74018657187'
+    type: string
+  lokationsTyp:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  startdatum:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  transaktionsgrund:
+    default: E01
+    type: string
+  typ:
+    default: kategorie
+    type: string
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zaehlernummer:
+    default: '123456789'
+    type: string
+type: object

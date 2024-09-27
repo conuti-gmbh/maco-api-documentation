@@ -1,0 +1,15 @@
+{
+    "title": "FehlerDetail",
+    "type": "object",
+    "properties": {
+        "code": {
+            "$ref": "../enum/FehlerCode.schema.json"
+        },
+        "ursache": {
+            "$ref": "../com/FehlerUrsache.schema.json"
+        },
+        "beschreibung": {
+            "$ref": "../com/Beschreibung.schema.json"
+        }
+    }
+}

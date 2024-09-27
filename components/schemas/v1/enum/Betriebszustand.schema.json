@@ -1,0 +1,9 @@
+{
+    "title": "Betriebszustand",
+    "type": "string",
+    "enum": [
+        "GESPERRT_NICHT_ENTSPERREN",
+        "GESPERRT",
+        "REGELBETRIEB"
+    ]
+}

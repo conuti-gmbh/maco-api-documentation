@@ -1,0 +1,11 @@
+{
+    "title": "Kontaktart",
+    "type": "string",
+    "enum": [
+        "ANSCHREIBEN",
+        "TELEFONAT",
+        "FAX",
+        "E_MAIL",
+        "SMS"
+    ]
+}

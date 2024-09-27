@@ -1,0 +1,15 @@
+{
+    "title": "EnFG",
+    "type": "object",
+    "properties": {
+        "grundlageVerringerungUmlagen": {
+            "$ref": "../enum/GrundlageVerringerungUmlagen.schema.json"
+        },
+        "grund": {
+            "type": "array",
+            "items": {
+                "$ref": "../enum/GrundlageVerringerungUmlagenGrund.schema.json"
+            }
+        }
+    }
+}

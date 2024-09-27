@@ -1,0 +1,71 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  energierichtung:
+    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+  gewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  haushaltskunde:
+    default: SOME_STRING
+    type: string
+  keLandescode:
+    default: de
+    type: string
+  kegewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  kehausnummer:
+    default: '123'
+    type: string
+  kename2:
+    default: SOME_STRING
+    type: string
+  keort:
+    default: Berlin
+    type: string
+  keortsteil:
+    default: SOME_STRING
+    type: string
+  keplz:
+    default: SOME_STRING
+    type: string
+  kestrasse:
+    default: SOME_STRING
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  messageReceiver:
+    default: SOME_STRING
+    type: string
+  messageSender:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  transaktionsgrundergaenzung:
+    default: SOME_STRING
+    type: string
+  transaktionsgrundergaenzungBefristeteAnmeldung:
+    default: SOME_STRING
+    type: string
+  transaktonsgrund:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vertragsende:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vpanrede:
+    default: SOME_STRING
+    type: string
+  vpname1:
+    default: SOME_STRING
+    type: string
+  vpname2:
+    default: SOME_STRING
+    type: string
+type: object

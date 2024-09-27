@@ -1,0 +1,68 @@
+description: "Schema für Lieferbeginn | Schema for the delivery start"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  anrede:
+    default: Musteranrede
+    type: string
+  bilanzkreis:
+    default: 11X----123456
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  energierichtung:
+    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+  gewerbekennzeichnung:
+    type: boolean
+  haushaltskunde:
+    type: boolean
+  hausnummer:
+    default: 11a
+    type: string
+  id:
+    example: '110000000605'
+    type: string
+  landescode:
+    default: DE
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  name1:
+    default: Mustername1
+    type: string
+  name2:
+    default: Mustername2
+    type: string
+  ort:
+    default: Musterort
+    type: string
+  ortsteil:
+    default: Musterortsteil
+    type: string
+  postleitzahl:
+    default: '12345'
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+  strasse:
+    default: Musterstrasse
+    type: string
+  transaktionsgrund:
+    default: E01
+    type: string
+  transaktionsgrundergaenzung:
+    type: string
+  transaktionsgrundergaenzungBefristeteAnmeldung:
+    type: string
+  verguetungEmpfaenger:
+    $ref: '../schemas/v1/enum/VerguetungEmpfaenger.schema.json'
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vertragsende:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+type: object

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "produkt": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Produkt.schema.json"
+            }
+        },
+        "priorisierung": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Priorisierung.schema.json"
+            }
+        }
+    }
+}

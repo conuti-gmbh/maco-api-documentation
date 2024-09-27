@@ -1,0 +1,31 @@
+{
+    "title": "Statusbericht",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "STATUSBERICHT"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "status": {
+            "$ref": "../enum/BerichtStatus.schema.json"
+        },
+        "pruefgegenstand": {
+            "type": "string"
+        },
+        "datumPruefung": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "fehler": {
+            "$ref": "../com/Fehler.schema.json"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

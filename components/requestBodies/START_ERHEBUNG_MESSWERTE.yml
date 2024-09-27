@@ -1,0 +1,15 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: '../schemas/v1/enum/Sparte.schema.json'
+type: object

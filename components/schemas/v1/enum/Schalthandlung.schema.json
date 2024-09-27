@@ -1,0 +1,8 @@
+{
+    "title": "Schalthandlung",
+    "type": "string",
+    "enum": [
+        "LEISTUNG_AN",
+        "LEISTUNG_AUS"
+    ]
+}

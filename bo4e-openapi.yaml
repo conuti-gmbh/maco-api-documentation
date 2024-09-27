@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: >-
+    MACO APP - erforderliche ERP Schnittstellen | MACO APP - needed ERP
+    interfaces
+  license:
+    name: MIT
+    url: "https://opensource.org/licenses/MIT"
+  description: >
+    Übersicht der erforderlichen BO4E- und Prozessschnittstellen, die die MACO
+    APP für die Ausführung der Marktprozesse benötigt. | Overview of the
+    necessary BO4E and process interfaces that the MACO APP requires to execute
+    market processes.
+
+
+    <details>
+
+    <summary>Changelog</summary>
+
+    
+    **Version 1.1.0** - *26. September 2024* - _Autor: Tu Quy Nguyen_
+    - refactor openapi document
+
+    **Version 1.0.5** - *18. September 2024* - _Autor: DAS_
+    - Update Default Command auf SAP_ statt NOCODB_
+    - Update Default Beispiel MaloId auf 50074561188
+
+    **Version 1.0.4** - *13. September 2024* - _Autor: Tu Quy Nguyen_
+    - Update Formatierungen
+
+    **Version 1.0.3** - *28. August 2024* - _Autor: Tu Quy Nguyen_
+    - Aktualisierung Parameter LESEN Schnittstellen
+
+    **Version 1.0.2** - *20. August 2024* - _Autor: Tu Quy Nguyen_
+    - Schema ergänzt für START_N_BILA_REL_AEND_VON_NB, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_MESSWERTUEBERMITTLUNG, START_MALOIDENT, START_LIEFERENDE, START_KUENDIGUNG
+
+    **Version 1.0.1** - *08. August 2024* - _Autor: DAS_
+
+    - Hinzufügen von mehrsprachigen Beschreibungen und Changelog.
+    - Anpassung der Schema-Beschreibungen in Deutsch und Englisch.
+
+    **Version 1.0** - *01. August 2024* - _Autor: DAS_
+
+    - Initiale Version der API-Dokumentation.
+
+
+    </details>
+  version: 1.0.5
+servers:
+  - url: "https://api.macoapp.de"
+    description: Mock-Umgebung | Mock environment
+tags:
+  - name: LESEN | READ
+    description: Lesender Zugriff auf Geschäftsobjekte | Reading access to business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: AKTUALISIEREN | UPDATE
+    description: |
+      Aktualisierung bestehender Geschäftsobjekte | 
+      Updating existing business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: ERSTELLEN | CREATE
+    description: Erstellen von Geschäftsobjekten | Creating business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: LÖSCHEN | DELETE
+    description: Löschen von Geschäftsobjekten | Deleting business objects
+    externalDocs:
+      description: BO4E JSON Schema
+      url: "https://github.com/conuti-gmbh/bo4e-schema"
+
+  - name: PROZESSDATEN | PROCESSING DATA
+    description: |
+      Auslösen von Prozessen im ERP System | 
+      Triggering processes in the ERP system
+
+  - name: EVENTDATEN | EVENT DATA
+    description: Lesen von Eventdaten im ERP System | Reading event data in the ERP system
+
+security: []
+paths:
+  $ref: "./paths/_Index.yaml"

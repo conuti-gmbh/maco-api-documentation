@@ -1,0 +1,13 @@
+{
+    "title": "Zuschlag",
+    "type": "object",
+    "properties": {
+        "typ": {
+            "$ref": "../enum/ZuschlagTyp.schema.json"
+        },
+        "prozent": {
+            "type": "number",
+            "format": "float"
+        }
+    }
+}

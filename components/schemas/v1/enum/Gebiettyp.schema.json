@@ -1,0 +1,15 @@
+{
+    "title": "Gebiettyp",
+    "type": "string",
+    "enum": [
+        "REGELZONE",
+        "MARKTGEBIET",
+        "BILANZIERUNGSGEBIET",
+        "VERTEILNETZ",
+        "TRANSPORTNETZ",
+        "REGIONALNETZ",
+        "AREALNETZ",
+        "GRUNDVERSORGUNGSGEBIET",
+        "VERSORGUNGSGEBIET"
+    ]
+}

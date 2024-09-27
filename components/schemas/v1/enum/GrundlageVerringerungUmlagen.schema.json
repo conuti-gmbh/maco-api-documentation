@@ -1,0 +1,9 @@
+{
+    "title": "GrundlageVerringerungUmlagen",
+    "type": "string",
+    "enum": [
+        "ERFUELLT_VORAUSSETZUNG_NACH_ENFG",
+        "ERFUELLT_NICHT_VORAUSSETZUNG_NACH_ENFG",
+        "KEINE_ANGABE"
+    ]
+}

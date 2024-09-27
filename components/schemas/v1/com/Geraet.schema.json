@@ -1,0 +1,30 @@
+{
+    "title": "Geraet",
+    "type": "object",
+    "properties": {
+        "geraetetyp": {
+            "$ref": "../enum/Geraetetyp.schema.json"
+        },
+        "bezeichnung": {
+            "type": "string"
+        },
+        "geraetenummer": {
+            "type": "string"
+        },
+        "geraetereferenz": {
+            "type": "string"
+        },
+        "geraeteeigenschaften": {
+            "$ref": "../com/Geraeteeigenschaften.schema.json"
+        },
+        "volumenerfassung": {
+            "$ref": "../enum/Volumenerfassung.schema.json"
+        },
+        "weitereGeraetenummern": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

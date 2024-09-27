@@ -1,0 +1,12 @@
+{
+    "title": "ZugeordneteDefinition",
+    "type": "object",
+    "properties": {
+        "schaltzeitdefinition": {
+            "type": "string"
+        },
+        "leistungskurvendefinition": {
+            "type": "string"
+        }
+    }
+}

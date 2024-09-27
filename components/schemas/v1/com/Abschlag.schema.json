@@ -1,0 +1,13 @@
+{
+    "title": "Abschlag",
+    "type": "object",
+    "properties": {
+        "typ": {
+            "$ref": "../enum/AbschlagTyp.schema.json"
+        },
+        "prozent": {
+            "type": "number",
+            "format": "float"
+        }
+    }
+}

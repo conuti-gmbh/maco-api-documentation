@@ -1,0 +1,33 @@
+{
+    "title": "Rechenschritt",
+    "type": "object",
+    "properties": {
+        "rechenschrittBestandteilId": {
+            "type": "integer"
+        },
+        "referenzRechenschrittId": {
+            "type": "integer"
+        },
+        "operation": {
+            "$ref": "../enum/ArithmetischeOperation.schema.json"
+        },
+        "verlustfaktorTrafo": {
+            "type": "number",
+            "format": "float"
+        },
+        "verlustfaktorLeitung": {
+            "type": "number",
+            "format": "float"
+        },
+        "aufteilungsfaktorEnergiemenge": {
+            "type": "number",
+            "format": "float"
+        },
+        "messlokationsId": {
+            "type": "string"
+        },
+        "energieflussrichtung": {
+            "$ref": "../enum/Energierichtung.schema.json"
+        }
+    }
+}

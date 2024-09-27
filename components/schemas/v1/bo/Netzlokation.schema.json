@@ -1,0 +1,75 @@
+{
+    "title": "Netzlokation",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "NETZLOKATION"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "netzlokationsId": {
+            "type": "string"
+        },
+        "sparte": {
+            "$ref": "../enum/Sparte.schema.json"
+        },
+        "netzanschlussleistung": {
+            "type": "string"
+        },
+        "grundzustaendigerMSBCodeNr": {
+            "type": "string"
+        },
+        "steuerkanal": {
+            "type": "boolean"
+        },
+        "lokationszuordnung": {
+            "$ref": "../enum/Lokationszuordnung.schema.json"
+        },
+        "produktdatenRelevanteRolle": {
+            "$ref": "../enum/Marktrolle.schema.json"
+        },
+        "auftraggebenderMarktpartner": {
+            "$ref": "./Marktteilnehmer.schema.json"
+        },
+        "konfigurationsprodukt": {
+            "type": "string"
+        },
+        "keinKonfigurationsprodukt": {
+            "type": "boolean"
+        },
+        "leistungskurvendefinition": {
+            "type": "string"
+        },
+        "marktrollen": {
+            "type": "array",
+            "items": {
+                "$ref": "./Marktteilnehmer.schema.json"
+            }
+        },
+        "zaehlwerke": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Zaehlwerk.schema.json"
+            }
+        },
+        "abrechnungsdaten": {
+            "type": "array",
+            "items": {
+                "$ref": "../com/Netznutzungsabrechnungsdaten.schema.json"
+            }
+        },
+        "datenqualitaet": {
+            "$ref": "../enum/Datenqualitaet.schema.json"
+        },
+        "zeitraumId": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}

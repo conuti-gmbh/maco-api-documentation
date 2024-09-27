@@ -1,0 +1,39 @@
+{
+    "title": "Reklamation",
+    "type": "object",
+    "properties": {
+        "boTyp": {
+            "$ref": "../enum/BOTyp.schema.json",
+            "default": "REKLAMATION"
+        },
+        "versionStruktur": {
+            "type": "string",
+            "default": "1"
+        },
+        "lokationsId": {
+            "type": "string"
+        },
+        "lokationsTyp": {
+            "$ref": "../enum/Lokationstyp.schema.json"
+        },
+        "obiskennzahl": {
+            "type": "string"
+        },
+        "zeitraumMesswertanfrage": {
+            "$ref": "../com/Zeitraum.schema.json"
+        },
+        "reklamationsgrund": {
+            "$ref": "../enum/Reklamationsgrund.schema.json"
+        },
+        "reklamationsgrundBemerkung": {
+            "$ref": "../com/ReklamationsgrundBemerkung.schema.json"
+        },
+        "konfiguration": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "boTyp",
+        "versionStruktur"
+    ]
+}
