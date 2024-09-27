@@ -1,0 +1,77 @@
+post:
+  description:
+    "\xC4ndern eines Lokationsbündels mittels LokationsId (Parameter1)\
+    \ zum Zeitpunkt (Parameter2) | Changing a location bundle using location ID (Parameter1)\
+    \ at the time (Parameter2)"
+  operationId: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+  parameters:
+    - description: Name der Operation | Name of the operation
+      in: query
+      name: command
+      required: true
+      schema:
+        default: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+        example: NOCODB_AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+        type: string
+    - description: LokationsId | Location ID
+      in: query
+      name: parameter1
+      required: true
+      schema:
+        example: "74018657187"
+        type: string
+    - description: Stichtag | Key date
+      in: query
+      name: parameter2
+      required: true
+      schema:
+        example: "2024-06-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
+    - description: Stichtag | Key date
+      in: query
+      name: parameter3
+      required: true
+      schema:
+        example: "2024-06-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
+    - description: OBIS | OBIS
+      in: query
+      name: parameter4
+      required: true
+      schema:
+        example: "123456789"
+        type: string
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../components/schemas/v1/bo/Lokationsbuendel.schema.json"
+    required: true
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/schemas/v1/bo/Lokationsbuendel.schema.json"
+      description:
+        "Erfolgreiches Aktualisieren des Lokationsbündels | Successful\
+        \ updating of the location bundle"
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+    "422":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Nicht verarbeitbare Anfrage | Unprocessable Request
+  summary: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+  tags:
+    - AKTUALISIEREN | UPDATE
