@@ -302,6 +302,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "title": "START_KUENDIGUNG",
                 "description": "Schema für die Kündigung eines Vertrags | Schema for the termination of a contract",
                 "properties": {
                   "absender": {
@@ -311,17 +312,59 @@
                   },
                   "empfaenger": {
                     "description": "Rollencodenummer des Empfängers | Role code number of the recipient",
-                    "example": "9870013800007",
+                    "example": "9903790000002",
                     "type": "string"
                   },
                   "eventName": {
                     "description": "Name des Events | Name of the event",
-                    "example": "START_KUENDIGUNG",
-                    "type": "string"
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": 110000000605,
+                    "example": 110000000409,
                     "type": "string"
                   },
                   "marktlokationsId": {
@@ -330,8 +373,8 @@
                     "type": "string"
                   },
                   "sparte": {
-                    "description": "Sparte, z.B. Gas | Sector, e.g., gas",
-                    "example": "GAS",
+                    "description": "Sparte, z.B. Strom | Sector, e.g., electricity",
+                    "example": "STROM",
                     "type": "string"
                   },
                   "vertragsart": {
@@ -1189,6 +1232,7 @@
               "schema": {
                 "oneOf": [
                   {
+                    "title": "START_SPERRAUFTRAG",
                     "description": "Schema zum Sperren einer Marktlokation | Schema for locking a market location",
                     "properties": {
                       "absender": {
@@ -1275,6 +1319,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_LIEFERBEGINN_STROM",
                     "description": "Schema zum Starten des Lieferbeginns für Strom | Schema for starting the delivery of electricity",
                     "properties": {
                       "absender": {
@@ -1374,6 +1419,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_LIEFERBEGINN_STROM",
                     "description": "Schema zum Starten des Lieferbeginns für Gas | Schema for starting the delivery of gas",
                     "properties": {
                       "absender": {
@@ -1467,6 +1513,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_ABR_NN",
                     "description": "Schema zum Starten der Netznutzungsabrechnung | Schema for starting network usage billing",
                     "properties": {
                       "adsender": {
@@ -1566,6 +1613,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_DEFINITION_SCHALTZEIT",
                     "description": "Schema zur Definition von Schaltzeiten | Schema for defining switching times",
                     "properties": {
                       "beginndatum": {
@@ -1660,6 +1708,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_DEFINITION_LEISTUNGSKURVE",
                     "description": "Schema zur Definition der Leistungskurve | Schema for defining the performance curve",
                     "properties": {
                       "beginndatum": {
@@ -1748,6 +1797,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_DEFINITION_ZAEHLZEIT",
                     "description": "Schema zur Definition der Zählzeit | Schema for defining the metering time",
                     "properties": {
                       "beginndatum": {
@@ -1836,6 +1886,7 @@
                     "type": "object"
                   },
                   {
+                    "title": "START_KUENDIGUNG",
                     "description": "Schema für die Kündigung eines Vertrags | Schema for the termination of a contract",
                     "properties": {
                       "absender": {
@@ -1845,17 +1896,59 @@
                       },
                       "empfaenger": {
                         "description": "Rollencodenummer des Empfängers | Role code number of the recipient",
-                        "example": "9870013800007",
+                        "example": "9903790000002",
                         "type": "string"
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_KUENDIGUNG",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000605,
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "marktlokationsId": {
@@ -1864,8 +1957,8 @@
                         "type": "string"
                       },
                       "sparte": {
-                        "description": "Sparte, z.B. Gas | Sector, e.g., gas",
-                        "example": "GAS",
+                        "description": "Sparte, z.B. Strom | Sector, e.g., electricity",
+                        "example": "STROM",
                         "type": "string"
                       },
                       "vertragsart": {

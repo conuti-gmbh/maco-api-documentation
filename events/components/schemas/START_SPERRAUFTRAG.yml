@@ -1,3 +1,4 @@
+title: START_SPERRAUFTRAG
 description: Schema zum Sperren einer Marktlokation | Schema for locking a market location
 properties:
   absender:

@@ -1,3 +1,4 @@
+title: START_DEFINITION_ZAEHLZEIT
 description: Schema zur Definition der Zählzeit | Schema for defining the metering time
 properties:
   beginndatum:

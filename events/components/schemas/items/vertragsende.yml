@@ -1,0 +1,4 @@
+description: Ende des Vertrags | End of the contract
+example: "2024-06-01T04:00:00Z"
+format: date-time
+type: string

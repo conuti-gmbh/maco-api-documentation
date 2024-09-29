@@ -1,41 +1,22 @@
-description:
-  "Schema für die Kündigung eines Vertrags | Schema for the termination\
-  \ of a contract"
+title: START_KUENDIGUNG
+description: Schema für die Kündigung eines Vertrags | Schema for the termination of a contract
 properties:
   absender:
-    description: Rollencodenummer des Absenders | Role code number of the sender
-    example: "9800044300007"
-    type: string
+    $ref: items/absender.yml
   empfaenger:
-    description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
-    example: "9870013800007"
-    type: string
+    $ref: items/empfaenger.yml
   eventName:
-    description: Name des Events | Name of the event
-    example: START_KUENDIGUNG
-    type: string
+    $ref: items/eventName.yml
   id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: 110000000605
-    type: string
+    $ref: items/id.yml
   marktlokationsId:
-    description: Marktlokations-ID | Market location ID
-    example: "50074561188"
-    type: string
+    $ref: items/marktlokationsId.yml
   sparte:
-    description: Sparte, z.B. Gas | Sector, e.g., gas
-    example: GAS
-    type: string
+    $ref: items/sparte.yml
   vertragsart:
-    description: Art des Vertrags | Type of contract
-    example: ENERGIELIEFERVERTRAG
-    type: string
+    $ref: items/vertragsart.yml
   vertragsende:
-    description: Ende des Vertrags | End of the contract
-    example: "2024-06-01T04:00:00Z"
-    format: date-time
-    type: string
+    $ref: items/vertragsende.yml
 required:
   - id
   - eventName
