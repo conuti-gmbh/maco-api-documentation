@@ -49,7 +49,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -138,7 +139,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -259,7 +261,14 @@
                   }
                 },
                 "required": [
-                  "id, eventName, marktlokationsId, sparte, vertragsart, vertragsende, empfaenger, absender"
+                  "id",
+                  "eventName",
+                  "marktlokationsId",
+                  "sparte",
+                  "vertragsart",
+                  "vertragsende",
+                  "empfaenger",
+                  "absender"
                 ],
                 "type": "object"
               }
@@ -348,7 +357,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -437,7 +447,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -526,7 +537,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -615,7 +627,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -704,7 +717,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }
@@ -911,7 +925,12 @@
                       }
                     },
                     "required": [
-                      "id, eventName, marktlokationsId, sparte, absender, empfaenger"
+                      "id",
+                      "eventName",
+                      "marktlokationsId",
+                      "sparte",
+                      "absender",
+                      "empfaenger"
                     ],
                     "type": "object"
                   },
@@ -961,7 +980,14 @@
                       }
                     },
                     "required": [
-                      "id, eventName, marktlokationsId, sparte, energierichtung, vertragsbeginn, absender, empfaenger"
+                      "id",
+                      "eventName",
+                      "marktlokationsId",
+                      "sparte",
+                      "energierichtung",
+                      "vertragsbeginn",
+                      "absender",
+                      "empfaenger"
                     ],
                     "type": "object"
                   },
@@ -1006,7 +1032,13 @@
                       }
                     },
                     "required": [
-                      "id, eventName, marktlokationsId, sparte, vertragsbeginn, absender, empfaenger"
+                      "id",
+                      "eventName",
+                      "marktlokationsId",
+                      "sparte",
+                      "vertragsbeginn",
+                      "absender",
+                      "empfaenger"
                     ],
                     "type": "object"
                   },
@@ -1056,7 +1088,14 @@
                       }
                     },
                     "required": [
-                      "id, eventName, marktlokationsId, sparte, artikelId, vertragsbeginn, absender, empfaenger"
+                      "id",
+                      "eventName",
+                      "marktlokationsId",
+                      "sparte",
+                      "artikelId",
+                      "vertragsbeginn",
+                      "absender",
+                      "empfaenger"
                     ],
                     "type": "object"
                   },
@@ -1102,7 +1141,13 @@
                       }
                     },
                     "required": [
-                      "id, eventName, code, beginndatum, endedatum, haeufigkeit, schalthandlung"
+                      "id",
+                      "eventName",
+                      "code",
+                      "beginndatum",
+                      "endedatum",
+                      "haeufigkeit",
+                      "schalthandlung"
                     ],
                     "type": "object"
                   },
@@ -1143,7 +1188,12 @@
                       }
                     },
                     "required": [
-                      "id, eventName, code, beginndatum, endedatum, obererSchwellwert"
+                      "id",
+                      "eventName",
+                      "code",
+                      "beginndatum",
+                      "endedatum",
+                      "obererSchwellwert"
                     ],
                     "type": "object"
                   },
@@ -1184,7 +1234,12 @@
                       }
                     },
                     "required": [
-                      "id, eventName, code, beginndatum, endedatum, haeufigkeit"
+                      "id",
+                      "eventName",
+                      "code",
+                      "beginndatum",
+                      "endedatum",
+                      "haeufigkeit"
                     ],
                     "type": "object"
                   },
@@ -1234,7 +1289,14 @@
                       }
                     },
                     "required": [
-                      "id, eventName, marktlokationsId, sparte, vertragsart, vertragsende, empfaenger, absender"
+                      "id",
+                      "eventName",
+                      "marktlokationsId",
+                      "sparte",
+                      "vertragsart",
+                      "vertragsende",
+                      "empfaenger",
+                      "absender"
                     ],
                     "type": "object"
                   }
@@ -1368,7 +1430,8 @@
                   }
                 },
                 "required": [
-                  "id, eventName"
+                  "id",
+                  "eventName"
                 ],
                 "type": "object"
               }

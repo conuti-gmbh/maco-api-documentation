@@ -30,5 +30,10 @@ properties:
     example: 110000000404
     type: string
 required:
-  - id, eventName, code, beginndatum, endedatum, haeufigkeit
+  - id
+  - eventName
+  - code
+  - beginndatum
+  - endedatum
+  - haeufigkeit
 type: object

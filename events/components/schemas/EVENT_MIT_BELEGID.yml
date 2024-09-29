@@ -51,5 +51,6 @@ properties:
     example: "110000000500"
     type: string
 required:
-  - id, eventName
+  - id
+  - eventName
 type: object

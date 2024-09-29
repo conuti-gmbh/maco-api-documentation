@@ -31,5 +31,10 @@ properties:
     example: 50
     type: number
 required:
-  - id, eventName, code, beginndatum, endedatum, obererSchwellwert
+  - id
+  - eventName
+  - code
+  - beginndatum
+  - endedatum
+  - obererSchwellwert
 type: object

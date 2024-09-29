@@ -36,5 +36,12 @@ properties:
     format: date-time
     type: string
 required:
-  - id, eventName, marktlokationsId, sparte, artikelId, vertragsbeginn, absender, empfaenger
+  - id
+  - eventName
+  - marktlokationsId
+  - sparte
+  - artikelId
+  - vertragsbeginn
+  - absender
+  - empfaenger
 type: object

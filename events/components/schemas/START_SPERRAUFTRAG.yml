@@ -28,5 +28,10 @@ properties:
     example: STROM
     type: string
 required:
-  - id, eventName, marktlokationsId, sparte, absender, empfaenger
+  - id
+  - eventName
+  - marktlokationsId
+  - sparte
+  - absender
+  - empfaenger
 type: object

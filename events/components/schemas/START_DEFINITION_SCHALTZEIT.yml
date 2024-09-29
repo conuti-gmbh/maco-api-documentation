@@ -34,5 +34,11 @@ properties:
     example: LEISTUNG_AN
     type: string
 required:
-  - id, eventName, code, beginndatum, endedatum, haeufigkeit, schalthandlung
+  - id
+  - eventName 
+  - code
+  - beginndatum
+  - endedatum
+  - haeufigkeit
+  - schalthandlung
 type: object
