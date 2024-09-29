@@ -1,0 +1,4 @@
+description: Beginndatum der Leistungskurve | Start date of the performance curve
+example: "2024-06-30T22:00:00Z"
+format: date-time
+type: string

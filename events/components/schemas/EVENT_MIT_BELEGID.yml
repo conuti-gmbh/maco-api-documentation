@@ -1,55 +1,9 @@
 description: Generisches Schema für Events, die eine BelegID erfordern | Generic schema for events that require a DocumentID
 properties:
   eventName:
-    description: Name des Events | Name of the event
-    enum:
-      - START_LIEFERBEGINN
-      - START_ABR_NN
-      - START_DEFINITION_SCHALTZEIT
-      - START_DEFINITION_LEISTUNGSKURVE
-      - START_DEFINITION_ZÄHLZEIT
-      - START_KUENDIGUNG
-      - START_ERHEBUNG_MESSWERTE
-      - START_AEND_MALO_STRUKTUR_LF
-      - START_AEND_NNA_MALO
-      - START_AEND_ABR_BLINDARBEIT
-      - START_AEND_PROGNOSEGRUNDLAGE
-      - START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK
-      - START_N_BILA_REL_AEND_VON_NB
-      - START_N_BILA_REL_AEND_VON_LF
-      - START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF
-      - START_BILA_REL_ANFR_AN_LF
-      - START_N_BILA_REL_ANFR_AN_LF
-      - START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK
-      - START_ANFR_AN_MSB_MIT_ABHAENGIGK
-      - START_BESTELLUNG_ZAEHLZEITDEFINITION
-      - START_BESTELLUNG_ANGEBOT_KONFIGURATION
-      - START_BESTELLUNG_KONFIGURATION
-      - START_VERSAND_STORNO_MSCONS
-      - START_VERSAND_LIEFERSCHEIN
-      - START_VERSAND_COMDIS
-      - START_LIEFERENDE
-      - START_UEBERSICHT_ZAEHLZEITDEF
-      - START_UEBERSICHT_SCHALTZEITDEF
-      - START_UEBERSICHT_LEISTUNGSKURVENDEF
-      - START_ANFRAGE_STAMMDATEN_MALO
-      - START_ANFRAGE_MESSWERTE
-      - START_ANFRAGE_STAMMDATEN_TRANCHE
-      - START_EOG
-      - START_VERSAND_BEENDIGUNG_AGV
-      - START_VERSAND_ANF_STORNO
-      - START_PREISBLATT
-      - START_LIEFERBEGINN
-      - START_AUFTRAGSSTATUS
-      - START_ANFRAGE_STAMMDATENAENDERUNG
-      - START_UEBERM_DEFINITION
-    example: START_LIEFERBEGINN
-    type: string
+    $ref: items/eventName.yml
   id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: "110000000500"
-    type: string
+    $ref: items/id.yml
 required:
   - id
   - eventName

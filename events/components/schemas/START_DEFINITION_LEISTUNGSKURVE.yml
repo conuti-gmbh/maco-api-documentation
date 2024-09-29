@@ -2,34 +2,17 @@ description: Schema zur Definition der Leistungskurve | Schema for defining the
   performance curve
 properties:
   beginndatum:
-    description: Beginndatum der Leistungskurve | Start date of the performance
-      curve
-    example: "2024-06-30T22:00:00Z"
-    format: date-time
-    type: string
+    $ref:  items/beginndatum.yml
   code:
-    description: "Code für die Leistungskurve | Code for the performance curve"
-    example: ABC
-    type: string
+    $ref:  items/code.yml
   endedatum:
-    description: Enddatum der Leistungskurve | End date of the performance curve
-    example: "2024-08-30T22:00:00Z"
-    format: date-time
-    type: string
+    $ref:  items/endedatum.yml
   eventName:
-    description: Name des Events | Name of the event
-    example: START_DEFINITION_LEISTUNGSKURVE
-    type: string
+    $ref:  items/eventName.yml
   id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: 110000000405
-    type: string
+    $ref:  items/id.yml
   obererSchwellwert:
-    description: "Oberer Schwellwert für die Leistungskurve | Upper threshold\
-      \ for the performance curve"
-    example: 50
-    type: number
+    $ref:  items/obererSchwellwert.yml
 required:
   - id
   - eventName

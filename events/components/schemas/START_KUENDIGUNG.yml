@@ -1,5 +1,5 @@
 description:
-  "Schema für die K\xFCndigung eines Vertrags | Schema for the termination\
+  "Schema für die Kündigung eines Vertrags | Schema for the termination\
   \ of a contract"
 properties:
   absender:

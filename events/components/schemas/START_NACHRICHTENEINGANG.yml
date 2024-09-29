@@ -1,13 +1,9 @@
 description: "Schema für Nachrichteingang | Schema for the inbound message"
 properties:
-  eventName:
-    default: START_NACHRICHTENEINGANG
-    type: string
-  id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: "110000000605"
-    type: string
+    eventName:
+      $ref: items/eventName.yml
+    id:
+      $ref: items/id.yml
 required:
   - id
   - eventName

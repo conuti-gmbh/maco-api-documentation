@@ -1,13 +1,9 @@
 description: "Schema für Änderung | Schema for the update of object"
 properties:
     eventName:
-      default: AENDERUNG_AD
-      type: string
+      $ref: items/eventName.yml
     id:
-      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-        of the data record in the table in the backend
-      example: '110000000605'
-      type: string
+      $ref: items/id.yml
 required:
   - id
   - eventName

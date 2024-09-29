@@ -1,0 +1,4 @@
+description: "Häufigkeit der Zählzeit | Frequency of the metering time"
+example: JAEHRLICH
+type: string
+

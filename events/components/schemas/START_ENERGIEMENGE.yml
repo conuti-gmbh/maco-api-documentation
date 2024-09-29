@@ -1,13 +1,9 @@
 description: "Schema für Energiemenge | Schema for the Energiemenge"
 properties:
-  eventName:
-    default: START_ENERGIEMENGE
-    type: string
-  id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: "110000000605"
-    type: string
+    eventName:
+      $ref: items/eventName.yml
+    id:
+      $ref: items/id.yml
 required:
   - id
   - eventName

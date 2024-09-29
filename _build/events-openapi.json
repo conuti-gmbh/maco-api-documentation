@@ -39,12 +39,55 @@
                 "description": "Schema für Änderung | Schema for the update of object",
                 "properties": {
                   "eventName": {
-                    "default": "AENDERUNG_AD",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -129,12 +172,55 @@
                 "description": "Schema für Energiemenge | Schema for the Energiemenge",
                 "properties": {
                   "eventName": {
-                    "default": "START_ENERGIEMENGE",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -347,12 +433,55 @@
                 "description": "Schema für Lastgang | Schema for the lastgang",
                 "properties": {
                   "eventName": {
-                    "default": "START_LASTGANG",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -437,12 +566,55 @@
                 "description": "Schema für Lieferbeginn | Schema for the delivery start",
                 "properties": {
                   "eventName": {
-                    "default": "START_LIEFERBEGINN",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -527,12 +699,55 @@
                 "description": "Schema für Nachrichteingang | Schema for the inbound message",
                 "properties": {
                   "eventName": {
-                    "default": "START_NACHRICHTENEINGANG",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -617,12 +832,55 @@
                 "description": "Schema für partin | Schema for the partin",
                 "properties": {
                   "eventName": {
-                    "default": "START_PARTIN",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -707,12 +965,55 @@
                 "description": "Schema für Zaehlerstand | Schema for the Zaehlerstand",
                 "properties": {
                   "eventName": {
-                    "default": "START_ZAEHLERSTAND",
-                    "type": "string"
+                    "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
+                    "enum": [
+                      "START_LIEFERBEGINN",
+                      "START_ABR_NN",
+                      "START_DEFINITION_SCHALTZEIT",
+                      "START_DEFINITION_LEISTUNGSKURVE",
+                      "START_DEFINITION_ZÄHLZEIT",
+                      "START_KUENDIGUNG",
+                      "START_ERHEBUNG_MESSWERTE",
+                      "START_AEND_MALO_STRUKTUR_LF",
+                      "START_AEND_NNA_MALO",
+                      "START_AEND_ABR_BLINDARBEIT",
+                      "START_AEND_PROGNOSEGRUNDLAGE",
+                      "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                      "START_N_BILA_REL_AEND_VON_NB",
+                      "START_N_BILA_REL_AEND_VON_LF",
+                      "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                      "START_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_LF",
+                      "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                      "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                      "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                      "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                      "START_BESTELLUNG_KONFIGURATION",
+                      "START_VERSAND_STORNO_MSCONS",
+                      "START_VERSAND_LIEFERSCHEIN",
+                      "START_VERSAND_COMDIS",
+                      "START_LIEFERENDE",
+                      "START_UEBERSICHT_ZAEHLZEITDEF",
+                      "START_UEBERSICHT_SCHALTZEITDEF",
+                      "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                      "START_ANFRAGE_STAMMDATEN_MALO",
+                      "START_ANFRAGE_MESSWERTE",
+                      "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                      "START_EOG",
+                      "START_VERSAND_BEENDIGUNG_AGV",
+                      "START_VERSAND_ANF_STORNO",
+                      "START_PREISBLATT",
+                      "START_LIEFERBEGINN",
+                      "START_AUFTRAGSSTATUS",
+                      "START_ANFRAGE_STAMMDATENAENDERUNG",
+                      "START_UEBERM_DEFINITION"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000605",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },
@@ -892,34 +1193,73 @@
                     "properties": {
                       "absender": {
                         "description": "Rollencodenummer des Absenders | Role code number of the sender",
-                        "example": "9903790000002",
+                        "example": "9800044300007",
                         "type": "string"
                       },
                       "empfaenger": {
                         "description": "Rollencodenummer des Empfängers | Role code number of the recipient",
-                        "example": "9900321000005",
+                        "example": "9903790000002",
                         "type": "string"
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
+                        "example": "START_ABR_NN",
+                        "type": "string",
                         "enum": [
-                          "START_SPERRAUFTRAG"
-                        ],
-                        "example": "START_SPERRAUFTRAG",
-                        "type": "string"
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": "STARTSPERRAUFTRAG1",
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "marktlokationsId": {
                         "description": "Marktlokations-ID | Market location ID",
-                        "example": "50000083216",
+                        "example": "50074561188",
                         "type": "string"
                       },
                       "sparte": {
-                        "description": "Sparte, z.B. Strom oder Gas | Sector, e.g., electricity or gas",
+                        "description": "Sparte, z.B. Strom | Sector, e.g., electricity",
                         "example": "STROM",
                         "type": "string"
                       }
@@ -939,12 +1279,12 @@
                     "properties": {
                       "absender": {
                         "description": "Rollencodenummer des Absenders | Role code number of the sender",
-                        "example": "9903790000002",
+                        "example": "9800044300007",
                         "type": "string"
                       },
                       "empfaenger": {
                         "description": "Rollencodenummer des Empfängers | Role code number of the recipient",
-                        "example": "9900321000005",
+                        "example": "9903790000002",
                         "type": "string"
                       },
                       "energierichtung": {
@@ -954,12 +1294,54 @@
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_LIEFERBEGINN",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000408,
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "marktlokationsId": {
@@ -974,7 +1356,7 @@
                       },
                       "vertragsbeginn": {
                         "description": "Beginn des Vertrags | Start of the contract",
-                        "example": "2024-09-30T22:00:00Z",
+                        "example": "2024-10-31T23:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       }
@@ -1001,17 +1383,59 @@
                       },
                       "empfaenger": {
                         "description": "Rollencodenummer des Empfängers | Role code number of the recipient",
-                        "example": "9870013800007",
+                        "example": "9903790000002",
                         "type": "string"
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_LIEFERBEGINN",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000611,
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "marktlokationsId": {
@@ -1020,13 +1444,13 @@
                         "type": "string"
                       },
                       "sparte": {
-                        "description": "Sparte, z.B. Gas | Sector, e.g., gas",
-                        "example": "GAS",
+                        "description": "Sparte, z.B. Strom | Sector, e.g., electricity",
+                        "example": "STROM",
                         "type": "string"
                       },
                       "vertragsbeginn": {
                         "description": "Beginn des Vertrags | Start of the contract",
-                        "example": "2024-06-01T04:00:00Z",
+                        "example": "2024-10-31T23:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       }
@@ -1045,13 +1469,13 @@
                   {
                     "description": "Schema zum Starten der Netznutzungsabrechnung | Schema for starting network usage billing",
                     "properties": {
-                      "absender": {
+                      "adsender": {
                         "description": "Rollencodenummer des Absenders | Role code number of the sender",
                         "example": "9900321000005",
                         "type": "string"
                       },
                       "artikelId": {
-                        "description": "Artikel-ID | Article ID",
+                        "description": "sssssss Artikel-ID | Article ID",
                         "example": "1-02-0-001",
                         "type": "string"
                       },
@@ -1063,7 +1487,49 @@
                       "eventName": {
                         "description": "Name des Events | Name of the event",
                         "example": "START_ABR_NN",
-                        "type": "string"
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
@@ -1103,35 +1569,77 @@
                     "description": "Schema zur Definition von Schaltzeiten | Schema for defining switching times",
                     "properties": {
                       "beginndatum": {
-                        "description": "Beginndatum der Schaltzeit | Start date of the switching time",
+                        "description": "Beginndatum der Leistungskurve | Start date of the performance curve",
                         "example": "2024-06-30T22:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       },
                       "code": {
-                        "description": "Code für die Schaltzeit | Code for the switching time",
-                        "example": "AC",
+                        "description": "Code für die Leistungskurve | Code for the performance curve",
+                        "example": "ABC",
                         "type": "string"
                       },
                       "endedatum": {
-                        "description": "Enddatum der Schaltzeit | End date of the switching time",
+                        "description": "Enddatum der Leistungskurve | End date of the performance curve",
                         "example": "2024-08-30T22:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_DEFINITION_SCHALTZEIT",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "haeufigkeit": {
-                        "description": "Häufigkeit der Schaltzeit | Frequency of the switching time",
+                        "description": "Häufigkeit der Zählzeit | Frequency of the metering time",
                         "example": "JAEHRLICH",
                         "type": "string"
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000406,
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "schalthandlung": {
@@ -1173,12 +1681,54 @@
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_DEFINITION_LEISTUNGSKURVE",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000405,
+                        "example": 110000000409,
                         "type": "string"
                       },
                       "obererSchwellwert": {
@@ -1201,26 +1751,68 @@
                     "description": "Schema zur Definition der Zählzeit | Schema for defining the metering time",
                     "properties": {
                       "beginndatum": {
-                        "description": "Beginndatum der Zählzeit | Start date of the metering time",
+                        "description": "Beginndatum der Leistungskurve | Start date of the performance curve",
                         "example": "2024-06-30T22:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       },
                       "code": {
-                        "description": "Code für die Zählzeit | Code for the metering time",
+                        "description": "Code für die Leistungskurve | Code for the performance curve",
                         "example": "ABC",
                         "type": "string"
                       },
                       "endedatum": {
-                        "description": "Enddatum der Zählzeit | End date of the metering time",
+                        "description": "Enddatum der Leistungskurve | End date of the performance curve",
                         "example": "2024-08-30T22:00:00Z",
                         "format": "date-time",
                         "type": "string"
                       },
                       "eventName": {
                         "description": "Name des Events | Name of the event",
-                        "example": "START_DEFINITION_ZAEHLZEIT",
-                        "type": "string"
+                        "example": "START_ABR_NN",
+                        "type": "string",
+                        "enum": [
+                          "START_LIEFERBEGINN",
+                          "START_ABR_NN",
+                          "START_DEFINITION_SCHALTZEIT",
+                          "START_DEFINITION_LEISTUNGSKURVE",
+                          "START_DEFINITION_ZÄHLZEIT",
+                          "START_KUENDIGUNG",
+                          "START_ERHEBUNG_MESSWERTE",
+                          "START_AEND_MALO_STRUKTUR_LF",
+                          "START_AEND_NNA_MALO",
+                          "START_AEND_ABR_BLINDARBEIT",
+                          "START_AEND_PROGNOSEGRUNDLAGE",
+                          "START_BILA_REL_AEND_VON_NB_MIT_ABHAENGIGK",
+                          "START_N_BILA_REL_AEND_VON_NB",
+                          "START_N_BILA_REL_AEND_VON_LF",
+                          "START_N_BILA_REL_ANFR_ABR_BLINDARBEIT_AN_LF",
+                          "START_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_LF",
+                          "START_N_BILA_REL_ANFR_AN_MSB_OHNE_ABHAENGIGK",
+                          "START_ANFR_AN_MSB_MIT_ABHAENGIGK",
+                          "START_BESTELLUNG_ZAEHLZEITDEFINITION",
+                          "START_BESTELLUNG_ANGEBOT_KONFIGURATION",
+                          "START_BESTELLUNG_KONFIGURATION",
+                          "START_VERSAND_STORNO_MSCONS",
+                          "START_VERSAND_LIEFERSCHEIN",
+                          "START_VERSAND_COMDIS",
+                          "START_LIEFERENDE",
+                          "START_UEBERSICHT_ZAEHLZEITDEF",
+                          "START_UEBERSICHT_SCHALTZEITDEF",
+                          "START_UEBERSICHT_LEISTUNGSKURVENDEF",
+                          "START_ANFRAGE_STAMMDATEN_MALO",
+                          "START_ANFRAGE_MESSWERTE",
+                          "START_ANFRAGE_STAMMDATEN_TRANCHE",
+                          "START_EOG",
+                          "START_VERSAND_BEENDIGUNG_AGV",
+                          "START_VERSAND_ANF_STORNO",
+                          "START_PREISBLATT",
+                          "START_LIEFERBEGINN",
+                          "START_AUFTRAGSSTATUS",
+                          "START_ANFRAGE_STAMMDATENAENDERUNG",
+                          "START_UEBERM_DEFINITION"
+                        ]
                       },
                       "haeufigkeit": {
                         "description": "Häufigkeit der Zählzeit | Frequency of the metering time",
@@ -1229,7 +1821,7 @@
                       },
                       "id": {
                         "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                        "example": 110000000404,
+                        "example": 110000000409,
                         "type": "string"
                       }
                     },
@@ -1378,6 +1970,8 @@
                 "properties": {
                   "eventName": {
                     "description": "Name des Events | Name of the event",
+                    "example": "START_ABR_NN",
+                    "type": "string",
                     "enum": [
                       "START_LIEFERBEGINN",
                       "START_ABR_NN",
@@ -1419,13 +2013,11 @@
                       "START_AUFTRAGSSTATUS",
                       "START_ANFRAGE_STAMMDATENAENDERUNG",
                       "START_UEBERM_DEFINITION"
-                    ],
-                    "example": "START_LIEFERBEGINN",
-                    "type": "string"
+                    ]
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",
-                    "example": "110000000500",
+                    "example": 110000000409,
                     "type": "string"
                   }
                 },

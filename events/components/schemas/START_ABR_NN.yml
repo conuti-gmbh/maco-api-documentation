@@ -1,40 +1,22 @@
 description: Schema zum Starten der Netznutzungsabrechnung | Schema for starting
   network usage billing
 properties:
-  absender:
-    description: Rollencodenummer des Absenders | Role code number of the sender
-    example: "9900321000005"
-    type: string
+  adsender:
+    $ref: items/adsender.yml
   artikelId:
-    description: Artikel-ID | Article ID
-    example: 1-02-0-001
-    type: string
+    $ref: items/artikelId.yml
   empfaenger:
-    description: "Rollencodenummer des Empfängers | Role code number of the recipient"
-    example: "9903790000002"
-    type: string
+    $ref: items/empfaenger.yml
   eventName:
-    description: Name des Events | Name of the event
-    example: START_ABR_NN
-    type: string
+    $ref: items/eventName.yml
   id:
-    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-      of the data record in the table in the backend
-    example: 110000000409
-    type: string
+    $ref: items/id.yml
   marktlokationsId:
-    description: Marktlokations-ID | Market location ID
-    example: "50074561188"
-    type: string
+    $ref: items/marktlokationsId.yml
   sparte:
-    description: Sparte, z.B. Strom | Sector, e.g., electricity
-    example: STROM
-    type: string
+    $ref: items/sparte.yml
   vertragsbeginn:
-    description: Beginn des Vertrags | Start of the contract
-    example: "2024-10-31T23:00:00Z"
-    format: date-time
-    type: string
+    $ref: items/vertragsbeginn.yml
 required:
   - id
   - eventName
