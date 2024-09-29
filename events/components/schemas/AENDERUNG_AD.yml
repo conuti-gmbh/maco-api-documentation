@@ -1,4 +1,4 @@
-description: "Schema für \xC4nderung | Schema for the update of object"
+description: "Schema für Änderung | Schema for the update of object"
 properties:
     eventName:
       default: AENDERUNG_AD

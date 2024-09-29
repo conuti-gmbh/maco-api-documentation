@@ -1,6 +1,4 @@
-description:
-  "Generisches Schema für Events, die eine BelegID erfordern | Generic\
-  \ schema for events that require a DocumentID"
+description: Generisches Schema für Events, die eine BelegID erfordern | Generic schema for events that require a DocumentID
 properties:
   eventName:
     description: Name des Events | Name of the event
@@ -9,7 +7,7 @@ properties:
       - START_ABR_NN
       - START_DEFINITION_SCHALTZEIT
       - START_DEFINITION_LEISTUNGSKURVE
-      - "START_DEFINITION_Z\xC4HLZEIT"
+      - START_DEFINITION_ZÄHLZEIT
       - START_KUENDIGUNG
       - START_ERHEBUNG_MESSWERTE
       - START_AEND_MALO_STRUKTUR_LF
