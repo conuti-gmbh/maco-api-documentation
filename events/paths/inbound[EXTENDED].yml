@@ -34,18 +34,18 @@ post:
             - $ref: "../components/schemas/START_DEFINITION_ZAEHLZEIT.yml"
             - $ref: "../components/schemas/START_KUENDIGUNG.yml"
   responses:
-    "201":
+    '201':
       content:
         application/json:
           schema:
-            $ref: "../components/responses/inbound[EXTENDED]_response.yml"
+            $ref: '../components/responses/event_responses_success.yml'
       description: Erfolg | Success
     "400":
       content:
         application/json:
           schema:
-            $ref: "../components/responses/ERROR_RESPONSE.yml"
-      description: Erfolg | Success
+            $ref: "../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
   security: []
   summary: Trigger Events
   tags:

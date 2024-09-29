@@ -1,5 +1,4 @@
-summary: "Beispiel für einen START_DEFINITION_ZAEHLZEIT Event | Example for a\
-  \ START_DEFINITION_ZAEHLZEIT event"
+summary: "Beispiel für einen START_DEFINITION_ZAEHLZEIT Event | Example for a START_DEFINITION_ZAEHLZEIT event"
 value:
   beginndatum: "2024-06-30T22:00:00Z"
   code: ABC

@@ -1,6 +1,5 @@
 START_LIEFERBEGINN:
-  summary: "Beispiel für einen START_KUENDIGUNG Event | Example for a START_KUENDIGUNG\
-    \ event"
+  summary: Beispiel für einen START_KUENDIGUNG Event | Example for a START_KUENDIGUNG event
   value:
     eventName: START_LIEFERBEGINN
     id: '110000000605'

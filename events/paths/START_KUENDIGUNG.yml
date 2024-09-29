@@ -9,30 +9,18 @@ post:
         schema:
           $ref: "../components/schemas/START_KUENDIGUNG.yml"
   responses:
-    "201":
+    '201':
       content:
         application/json:
           schema:
-            properties:
-              businessKey:
-                description:
-                  "Einzigartige Kennung des Geschäftsprozesses | Unique\
-                  \ identifier of the business process"
-                format: uuid
-                type: string
-              message:
-                description:
-                  "Nachricht mit Details zum ausgelösten Event | Message\
-                  \ with details about the triggered event"
-                example:
-                  received event START_KUENDIGUNG_STROM with id at 2024-08-08T12:58:22Z
-                  and started process with businessKey 4c7170ed-3518-41ee-8582-39ab65b00107
-                type: string
-            required:
-              - businessKey
-              - message
-            type: object
+            $ref: '../components/responses/event_responses_success.yml'
       description: Erfolg | Success
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
   security: []
   summary: START_KUENDIGUNG
   tags:
