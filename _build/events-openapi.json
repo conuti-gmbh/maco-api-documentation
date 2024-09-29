@@ -1055,6 +1055,8 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "object",
+                  "description": "Erfolgsmeldung auf Prozessdaten API Aufruf | Success message on process data API call",
                   "properties": {
                     "businessKey": {
                       "description": "Einzigartige Kennung des Geschäftsprozesses | Unique identifier of the business process",
@@ -1070,8 +1072,51 @@
                   "required": [
                     "businessKey",
                     "message"
-                  ],
-                  "type": "object"
+                  ]
+                }
+              }
+            },
+            "description": "Erfolg | Success"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Fehlermeldung auf Prozessdaten API Aufruf | Error message on process data API call",
+                  "properties": {
+                    "errorCode": {
+                      "type": "string",
+                      "description": "Error identifier",
+                      "example": "400"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Technische Meldung | Technische Meldung",
+                      "example": "Validation Failed"
+                    },
+                    "errors": {
+                      "type": "array",
+                      "description": "Sammlung von Fehlercodes in einem Bucket | Collection of error codes in a bucket",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string",
+                            "example": 5432
+                          },
+                          "field": {
+                            "type": "string",
+                            "example": "first_name"
+                          },
+                          "message": {
+                            "type": "string",
+                            "example": "First name cannot have fancy characters"
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             },
