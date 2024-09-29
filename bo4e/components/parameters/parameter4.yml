@@ -1,7 +1,7 @@
-description: LokationsId | Location ID
+description: OBIS | OBIS
 in: query
-name: parameter1
+name: parameter4
 required: true
 schema:
-  example: "74018657187"
+  example: "123456789"
   type: string

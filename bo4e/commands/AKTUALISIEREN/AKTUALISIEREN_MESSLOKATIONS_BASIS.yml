@@ -5,46 +5,11 @@ post:
     \ and an OBIS code (Parameter4)"
   operationId: AKTUALISIEREN_MESSLOKATIONS_BASIS
   parameters:
-    - description: Name der Operation | Name of the operation
-      in: query
-      name: command
-      required: true
-      schema:
-        default: AKTUALISIEREN_MESSLOKATIONS_BASIS
-        example: NOCODB_AKTUALISIEREN_MESSLOKATIONS_BASIS
-        type: string
-    - description: LokationsId | Location ID
-      in: query
-      name: parameter1
-      required: true
-      schema:
-        example: "74018657187"
-        type: string
-    - description: Stichtag | Key date
-      in: query
-      name: parameter2
-      required: true
-      schema:
-        example: "2024-06-28T12:18:00Z"
-        format: date-time
-        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-        type: string
-    - description: Stichtag | Key date
-      in: query
-      name: parameter3
-      required: true
-      schema:
-        example: "2024-06-28T12:18:00Z"
-        format: date-time
-        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-        type: string
-    - description: OBIS | OBIS
-      in: query
-      name: parameter4
-      required: true
-      schema:
-        example: "123456789"
-        type: string
+    - $ref: ../../components/parameters/command.yml
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
   requestBody:
     content:
       application/json:

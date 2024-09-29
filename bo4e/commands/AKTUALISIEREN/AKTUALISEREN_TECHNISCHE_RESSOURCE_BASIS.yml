@@ -5,9 +5,9 @@ post:
     (parameter 1)  at the time (parameter 2)
   operationId: AKTUALISEREN_TECHNISCHE_RESSOURCE_BASIS
   parameters:
-    - $ref: ../components/parameters/command.yml
-    - $ref: ../components/parameters/parameter1.yml
-    - $ref: ../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/command.yml
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
   responses:
     "200":
       content:
