@@ -1,10 +1,9 @@
-START_DEFINITION_LEISTUNGSKURVE:
-  summary: "Beispiel für einen START_DEFINITION_LEISTUNGSKURVE Event | Example\
-    \ for a START_DEFINITION_LEISTUNGSKURVE event"
-  value:
-    beginndatum: '2024-06-30T22:00:00Z'
-    code: ABC
-    endedatum: '2024-08-30T22:00:00Z'
-    eventName: START_DEFINITION_LEISTUNGSKURVE
-    id: 110000000405
-    obererSchwellwert: 50
+summary: "Beispiel für einen START_DEFINITION_LEISTUNGSKURVE Event | Example\
+  \ for a START_DEFINITION_LEISTUNGSKURVE event"
+value:
+  beginndatum: "2024-06-30T22:00:00Z"
+  code: ABC
+  endedatum: "2024-08-30T22:00:00Z"
+  eventName: START_DEFINITION_LEISTUNGSKURVE
+  id: 110000000405
+  obererSchwellwert: 50

@@ -1,37 +1,37 @@
-START_LIEFERBEGINN_GAS:
-  description: "Schema zum Starten des Lieferbeginns für Gas | Schema for starting\
-    \ the delivery of gas"
-  properties:
-    absender:
-      description: Rollencodenummer des Absenders | Role code number of the sender
-      example: '9800044300007'
-      type: string
-    empfaenger:
-      description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
-      example: '9870013800007'
-      type: string
-    eventName:
-      description: Name des Events | Name of the event
-      example: START_LIEFERBEGINN
-      type: string
-    id:
-      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-        of the data record in the table in the backend
-      example: 110000000611
-      type: string
-    marktlokationsId:
-      description: Marktlokations-ID | Market location ID
-      example: '50074561188'
-      type: string
-    sparte:
-      description: Sparte, z.B. Gas | Sector, e.g., gas
-      example: GAS
-      type: string
-    vertragsbeginn:
-      description: Beginn des Vertrags | Start of the contract
-      example: '2024-06-01T04:00:00Z'
-      format: date-time
-      type: string
-  required:
+description:
+  "Schema zum Starten des Lieferbeginns für Gas | Schema for starting\
+  \ the delivery of gas"
+properties:
+  absender:
+    description: Rollencodenummer des Absenders | Role code number of the sender
+    example: "9800044300007"
+    type: string
+  empfaenger:
+    description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
+    example: "9870013800007"
+    type: string
+  eventName:
+    description: Name des Events | Name of the event
+    example: START_LIEFERBEGINN
+    type: string
+  id:
+    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+      of the data record in the table in the backend
+    example: 110000000611
+    type: string
+  marktlokationsId:
+    description: Marktlokations-ID | Market location ID
+    example: "50074561188"
+    type: string
+  sparte:
+    description: Sparte, z.B. Gas | Sector, e.g., gas
+    example: GAS
+    type: string
+  vertragsbeginn:
+    description: Beginn des Vertrags | Start of the contract
+    example: "2024-06-01T04:00:00Z"
+    format: date-time
+    type: string
+required:
   - id, eventName, marktlokationsId, sparte, vertragsbeginn, absender, empfaenger
-  type: object
+type: object

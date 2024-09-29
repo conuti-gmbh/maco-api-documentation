@@ -1,34 +1,34 @@
-START_DEFINITION_ZAEHLZEIT:
-  description: "Schema zur Definition der Z\xE4hlzeit | Schema for defining the metering\
-    \ time"
-  properties:
-    beginndatum:
-      description: "Beginndatum der Z\xE4hlzeit | Start date of the metering time"
-      example: '2024-06-30T22:00:00Z'
-      format: date-time
-      type: string
-    code:
-      description: "Code für die Z\xE4hlzeit | Code for the metering time"
-      example: ABC
-      type: string
-    endedatum:
-      description: "Enddatum der Z\xE4hlzeit | End date of the metering time"
-      example: '2024-08-30T22:00:00Z'
-      format: date-time
-      type: string
-    eventName:
-      description: Name des Events | Name of the event
-      example: START_DEFINITION_ZAEHLZEIT
-      type: string
-    haeufigkeit:
-      description: "H\xE4ufigkeit der Z\xE4hlzeit | Frequency of the metering time"
-      example: JAEHRLICH
-      type: string
-    id:
-      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-        of the data record in the table in the backend
-      example: 110000000404
-      type: string
-  required:
+description:
+  "Schema zur Definition der Z\xE4hlzeit | Schema for defining the metering\
+  \ time"
+properties:
+  beginndatum:
+    description: "Beginndatum der Z\xE4hlzeit | Start date of the metering time"
+    example: "2024-06-30T22:00:00Z"
+    format: date-time
+    type: string
+  code:
+    description: "Code für die Z\xE4hlzeit | Code for the metering time"
+    example: ABC
+    type: string
+  endedatum:
+    description: "Enddatum der Z\xE4hlzeit | End date of the metering time"
+    example: "2024-08-30T22:00:00Z"
+    format: date-time
+    type: string
+  eventName:
+    description: Name des Events | Name of the event
+    example: START_DEFINITION_ZAEHLZEIT
+    type: string
+  haeufigkeit:
+    description: "H\xE4ufigkeit der Z\xE4hlzeit | Frequency of the metering time"
+    example: JAEHRLICH
+    type: string
+  id:
+    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+      of the data record in the table in the backend
+    example: 110000000404
+    type: string
+required:
   - id, eventName, code, beginndatum, endedatum, haeufigkeit
-  type: object
+type: object

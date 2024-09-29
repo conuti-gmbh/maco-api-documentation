@@ -1,14 +1,13 @@
-START_LASTGANG:
-  description: "Schema für Lastgang | Schema for the lastgang"
-  properties:
-    eventName:
-      default: START_LASTGANG
-      type: string
-    id:
-      description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
-        of the data record in the table in the backend
-      example: '110000000605'
-      type: string
-  required:
+description: "Schema für Lastgang | Schema for the lastgang"
+properties:
+  eventName:
+    default: START_LASTGANG
+    type: string
+  id:
+    description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId
+      of the data record in the table in the backend
+    example: "110000000605"
+    type: string
+required:
   - id, eventName
-  type: object
+type: object

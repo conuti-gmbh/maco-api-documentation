@@ -1,6 +1,5 @@
-AENDERUNG_AD:
-  description: "Schema für \xC4nderung | Schema for the update of object"
-  properties:
+description: "Schema für \xC4nderung | Schema for the update of object"
+properties:
     eventName:
       default: AENDERUNG_AD
       type: string
@@ -9,6 +8,6 @@ AENDERUNG_AD:
         of the data record in the table in the backend
       example: '110000000605'
       type: string
-  required:
+required:
   - id, eventName
-  type: object
+type: object

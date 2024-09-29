@@ -1,10 +1,9 @@
-START_DEFINITION_ZAEHLZEIT:
-  summary: "Beispiel für einen START_DEFINITION_ZAEHLZEIT Event | Example for a\
-    \ START_DEFINITION_ZAEHLZEIT event"
-  value:
-    beginndatum: '2024-06-30T22:00:00Z'
-    code: ABC
-    endedatum: '2024-08-30T22:00:00Z'
-    eventName: START_DEFINITION_ZAEHLZEIT
-    haeufigkeit: JAEHRLICH
-    id: 110000000404
+summary: "Beispiel für einen START_DEFINITION_ZAEHLZEIT Event | Example for a\
+  \ START_DEFINITION_ZAEHLZEIT event"
+value:
+  beginndatum: "2024-06-30T22:00:00Z"
+  code: ABC
+  endedatum: "2024-08-30T22:00:00Z"
+  eventName: START_DEFINITION_ZAEHLZEIT
+  haeufigkeit: JAEHRLICH
+  id: 110000000404
