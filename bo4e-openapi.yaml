@@ -81,4 +81,4 @@ tags:
 
 security: []
 paths:
-  $ref: "./commands/_index.yml"
+  $ref: "bo4e/commands/_index.yml"
