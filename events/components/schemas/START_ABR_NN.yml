@@ -10,7 +10,7 @@ properties:
     example: 1-02-0-001
     type: string
   empfaenger:
-    description: "Rollencodenummer des Empf\xE4ngers | Role code number of the recipient"
+    description: "Rollencodenummer des Empfängers | Role code number of the recipient"
     example: "9903790000002"
     type: string
   eventName:
@@ -36,6 +36,5 @@ properties:
     format: date-time
     type: string
 required:
-  - id, eventName, marktlokationsId, sparte, artikelId, vertragsbeginn, absender,
-    empfaenger
+  - id, eventName, marktlokationsId, sparte, artikelId, vertragsbeginn, absender, empfaenger
 type: object

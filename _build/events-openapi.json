@@ -781,6 +781,7 @@
             "application/json": {
               "examples": {
                 "START_ABR_NN": {
+                  "summary": "Beispiel für einen START_ABR_NN Event | Example for a START_ABR_NN event",
                   "value": {
                     "absender": "9900321000005",
                     "artikelId": "1-02-0-001",

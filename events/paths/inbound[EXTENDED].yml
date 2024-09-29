@@ -8,43 +8,43 @@ post:
       application/json:
         examples:
           START_ABR_NN:
-            $ref: "../components/examples/example_START_ABR_NN.yml"
+            $ref: ../components/examples/example_START_ABR_NN.yml
           START_DEFINITION_LEISTUNGSKURVE:
-            $ref: "../components/examples/example_START_DEFINITION_LEISTUNGSKURVE.yml"
+            $ref: ../components/examples/example_START_DEFINITION_LEISTUNGSKURVE.yml
           START_DEFINITION_SCHALTZEIT:
-            $ref: "../components/examples/example_START_DEFINITION_SCHALTZEIT.yml"
+            $ref: ../components/examples/example_START_DEFINITION_SCHALTZEIT.yml
           START_DEFINITION_ZAEHLZEIT:
-            $ref: "../components/examples/example_START_DEFINITION_ZAEHLZEIT.yml"
+            $ref: ../components/examples/example_START_DEFINITION_ZAEHLZEIT.yml
           START_KUENDIGUNG:
-            $ref: "../components/examples/example_START_KUENDIGUNG.yml"
+            $ref: ../components/examples/example_START_KUENDIGUNG.yml
           START_LIEFERBEGINN_GAS:
-            $ref: "../components/examples/example_START_LIEFERBEGINN_GAS.yml"
+            $ref: ../components/examples/example_START_LIEFERBEGINN_GAS.yml
           START_LIEFERBEGINN_STROM:
-            $ref: "../components/examples/example_START_LIEFERBEGINN_STROM.yml"
+            $ref: ../components/examples/example_START_LIEFERBEGINN_STROM.yml
           START_SPERRAUFTRAG:
-            $ref: "../components/examples/example_START_SPERRAUFTRAG.yml"
+            $ref: ../components/examples/example_START_SPERRAUFTRAG.yml
         schema:
           oneOf:
-            - $ref: "../components/schemas/START_SPERRAUFTRAG.yml"
-            - $ref: "../components/schemas/START_LIEFERBEGINN_STROM.yml"
-            - $ref: "../components/schemas/START_LIEFERBEGINN_GAS.yml"
-            - $ref: "../components/schemas/START_ABR_NN.yml"
-            - $ref: "../components/schemas/START_DEFINITION_SCHALTZEIT.yml"
-            - $ref: "../components/schemas/START_DEFINITION_LEISTUNGSKURVE.yml"
-            - $ref: "../components/schemas/START_DEFINITION_ZAEHLZEIT.yml"
-            - $ref: "../components/schemas/START_KUENDIGUNG.yml"
+            - $ref: ../components/schemas/START_SPERRAUFTRAG.yml
+            - $ref: ../components/schemas/START_LIEFERBEGINN_STROM.yml
+            - $ref: ../components/schemas/START_LIEFERBEGINN_GAS.yml
+            - $ref: ../components/schemas/START_ABR_NN.yml
+            - $ref: ../components/schemas/START_DEFINITION_SCHALTZEIT.yml
+            - $ref: ../components/schemas/START_DEFINITION_LEISTUNGSKURVE.yml
+            - $ref: ../components/schemas/START_DEFINITION_ZAEHLZEIT.yml
+            - $ref: ../components/schemas/START_KUENDIGUNG.yml
   responses:
-    '201':
+    201:
       content:
         application/json:
           schema:
             $ref: '../components/responses/event_responses_success.yml'
       description: Erfolg | Success
-    "400":
+    400:
       content:
         application/json:
           schema:
-            $ref: "../components/responses/event_response_fail.yml"
+            $ref: ../components/responses/event_response_fail.yml
       description: Fehler | Fail
   security: []
   summary: Trigger Events
