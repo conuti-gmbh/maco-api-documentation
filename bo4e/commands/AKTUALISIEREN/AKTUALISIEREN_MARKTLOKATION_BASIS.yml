@@ -1,5 +1,5 @@
 post:
-  description: "\xC4ndern einer MaLo mittels LokationsId (Parameter1) zum Zeitpunkt\
+  description: "Ändern einer MaLo mittels LokationsId (Parameter1) zum Zeitpunkt\
     \ (Parameter2) | Changing a MaLo using location ID (Parameter1) at the time (Parameter2)"
   operationId: AKTUALISIEREN_MARKTLOKATION_BASIS
   parameters:

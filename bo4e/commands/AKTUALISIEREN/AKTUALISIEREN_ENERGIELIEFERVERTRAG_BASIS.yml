@@ -1,7 +1,7 @@
 post:
   description:
     "Aktualisieren der Kommunikationsdaten des Serviceanbieters (Parameter1)\
-    \  zum Zeitpunkt (Parameter2) | Updating the service provider\u2019s communication\
+    \  zum Zeitpunkt (Parameter2) | Updating the service provider's communication\
     \ data (Parameter1)  at time (Parameter2)"
   operationId: AKTUALISIEREN_ENERGIELIEFERVERTRAG_BASIS
   parameters:
