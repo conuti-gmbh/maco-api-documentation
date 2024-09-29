@@ -47,6 +47,6 @@ post:
             $ref: ../components/responses/event_response_fail.yml
       description: Fehler | Fail
   security: []
-  summary: Trigger Events
+  summary: Extended Events
   tags:
     - EXTENDED EVENTS

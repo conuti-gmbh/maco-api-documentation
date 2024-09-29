@@ -2043,7 +2043,7 @@
           }
         },
         "security": [],
-        "summary": "Trigger Events",
+        "summary": "Extended Events",
         "tags": [
           "EXTENDED EVENTS"
         ]
@@ -2176,7 +2176,7 @@
           }
         },
         "security": [],
-        "summary": "Trigger Events",
+        "summary": "Slim Events",
         "tags": [
           "SLIM EVENTS"
         ]
