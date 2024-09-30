@@ -28,20 +28,7 @@ post:
           $ref: "../../components/schemas/v1/bo/Marktteilnehmer.schema.json"
     required: true
   responses:
-    "200":
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/OK_RESPONSE.yml"
-      description:
-        "Erfolgreiches Löschen der Kommunikationsdaten | Successful\
-        \ deleting of communication data"
-    "400":
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/ERROR_RESPONSE.yml"
-      description: Fehlerhafte Anfrage | Bad Request
+    $ref: "../../components/responses/default_response.yml"
   summary: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
   tags:
     - "LÖSCHEN | DELETE"
