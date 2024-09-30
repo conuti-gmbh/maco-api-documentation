@@ -1,0 +1,33 @@
+/Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Mitteilung Beendigung BK-Zuordnung der NB-DZR | NB | BIKO | -- | -- | 1
+      |
+
+      | → ref: Deaktivierung eines MaBiS-Zählpunkts für die Abrechnungssummenzeitreihe
+      vom BIKO an NB | BIKO | -- | -- | -- | 2 |
+
+      | → ref: Deaktivierung eines MaBiS-Zählpunkts für die Abrechnungssummenzeitreihe
+      vom BIKO an BKV | BIKO | -- | -- | -- | 3 |
+
+      | → Ablehnung auf Mitteilung Beendigung BK-Zuordnung der NB-DZR | BIKO | NB
+      | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_NB
+    tags:
+    - MaBiS

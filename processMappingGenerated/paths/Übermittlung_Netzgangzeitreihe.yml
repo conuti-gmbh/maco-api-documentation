@@ -1,0 +1,49 @@
+/Übermittlung_Netzgangzeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13018 | NB (verantwortlicher NB) | NB (benachbarter NB) | Lastgang Messlokation,
+      Netzkoppelpunkt, Netzlokation | -- | 1 |
+
+      | → (manuelle Fehlerklärung) | NB (benachbarter NB) | NB (verantwortlicher NB)
+      | -- | -- | 2 |
+
+      | PI13018 | NB (verantwortlicher NB) | ÜNB | Lastgang Messlokation, Netzkoppelpunkt,
+      Netzlokation | -- | 3 |
+
+      | → (manuelle Fehlerklärung) | NB (benachbarter NB) | NB (verantwortlicher NB)
+      | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (benachbarter NB)] LESENDE API: ''
+                  AN [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [NB (verantwortlicher NB)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [NB (verantwortlicher NB)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13018'
+              - $ref: '#/components/schemas/PI13018'
+        description: ''
+    summary: Übermittlung_Netzgangzeitreihe
+    tags:
+    - MaBiS BK6-19-218 Bilanzkreistreue

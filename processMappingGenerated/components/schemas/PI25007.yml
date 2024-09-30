@@ -1,0 +1,29 @@
+PI25007:
+  description: "25007 NB\u2192LF \xDCbermittlung \xDCbersicht Leistungskurvendefinitionen"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

@@ -1,0 +1,23 @@
+/default_path_8870:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Ggf. Prüfung der Meldungen, bzw. Änderungen | -- | -- | -- | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_8870
+    tags:
+    - Prozessbeschreibung zur Kapazitätsabrechnung an Ausspeisepunkten zu Letztverbrauchern

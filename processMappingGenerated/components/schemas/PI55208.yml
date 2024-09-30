@@ -1,0 +1,29 @@
+PI55208:
+  description: "55208 BIKO\u2192BKV (des LF) Weiterleitung Deaktivierung ZP"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - BKV (des LF)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV (des LF)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+  type: object

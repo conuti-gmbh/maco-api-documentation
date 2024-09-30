@@ -1,0 +1,30 @@
+/default_path_12800:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI33001 | LF | NB | Bestätigung | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI33001'
+        description: ''
+    summary: default_path_12800
+    tags:
+    - Anwendungshilfe Sperrprozesse Gas

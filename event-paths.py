@@ -2,10 +2,16 @@ import yaml
 import os
 
 def create_path_files(openapi_file):
-    with open(openapi_file, 'r') as f:
+    """
+    Create separate YAML files for each path in the OpenAPI file.
+
+    Args:
+        openapi_file (str): Path to the OpenAPI YAML file.
+    """
+    with open(openapi_file, 'r', encoding='utf-8') as f:
         openapi_data = yaml.safe_load(f)
 
-    paths_dir = 'paths'
+    paths_dir = 'processMappingGenerated/paths'
     if not os.path.exists(paths_dir):
         os.makedirs(paths_dir)
 
@@ -21,15 +27,15 @@ def create_path_files(openapi_file):
             os.makedirs(path_dir)
 
         # Create a file for the path
-        with open(os.path.join(paths_dir, path[1:] + '.yml'), 'w') as f:
-            yaml.dump({path: path_data}, f, default_flow_style=False)
+        with open(os.path.join(paths_dir, path[1:] + '.yml'), 'w', encoding='utf-8') as f:
+            yaml.dump({path: path_data}, f, default_flow_style=False, allow_unicode=True)
 
         # Add the file to the index
         index_data[path] = {'$ref': path[1:] + '.yml'}
 
     # Create the _index.yml file
-    with open(os.path.join(paths_dir, '_index.yml'), 'w') as f:
-        yaml.dump(index_data, f, default_flow_style=False)
+    with open(os.path.join(paths_dir, '_index.yml'), 'w', encoding='utf-8') as f:
+        yaml.dump(index_data, f, default_flow_style=False, allow_unicode=True)
 
 if __name__ == '__main__':
-    create_path_files('events-openapi.yaml')
+    create_path_files('processMappingGenerated.yaml')

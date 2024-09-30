@@ -23,4 +23,4 @@ def create_schema_files(openapi_file):
         yaml.dump(index_data, f, default_flow_style=False)
 
 if __name__ == '__main__':
-    create_schema_files('events-openapi.yaml')
+    create_schema_files('processMappingGenerated.yaml')

@@ -1,0 +1,30 @@
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55062 | ÜNB | NB | Aktivierung von ZP | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55062 Aktivierung von ZP
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55062'
+        description: ''
+    summary: Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB
+    tags:
+    - MaBiS

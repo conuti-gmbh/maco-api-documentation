@@ -1,0 +1,77 @@
+/Weiterleitung_von_EEG-Überführungszeitreihen:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13005 | BIKO | BKV (NB) | EEG-Überf.-ZR | -- | 1 |
+
+      | PI13026 | BIKO | BKV (NB) | EEG-Überf.-ZR Aufgrund Ausfallarbeit | -- | 1
+      |
+
+      | PI13005 | BIKO | BKV (ÜNB) | EEG-Überf.-ZR | -- | 2 |
+
+      | PI13026 | BIKO | BKV (ÜNB) | EEG-Überf.-ZR Aufgrund Ausfallarbeit | -- | 2
+      |
+
+      | PI13005 | BIKO | NB | EEG-Überf.-ZR | -- | 3 |
+
+      | PI13026 | BIKO | NB | EEG-Überf.-ZR Aufgrund Ausfallarbeit | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BKV (NB)] LESENDE API: ''
+                  AN [BKV (NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13005 EEG-Überf.-ZR
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [BKV (NB)] LESENDE API: ''
+                  AN [BKV (NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13026 EEG-Überf.-ZR Aufgrund Ausfallarbeit
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [BKV (ÜNB)] LESENDE API: ''
+                  AN [BKV (ÜNB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13005 EEG-Überf.-ZR
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [BKV (ÜNB)] LESENDE API: ''
+                  AN [BKV (ÜNB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13026 EEG-Überf.-ZR Aufgrund Ausfallarbeit
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13005 EEG-Überf.-ZR
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13026 EEG-Überf.-ZR Aufgrund Ausfallarbeit
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13005'
+              - $ref: '#/components/schemas/PI13026'
+              - $ref: '#/components/schemas/PI13005'
+              - $ref: '#/components/schemas/PI13026'
+              - $ref: '#/components/schemas/PI13005'
+              - $ref: '#/components/schemas/PI13026'
+        description: ''
+    summary: Weiterleitung_von_EEG-Überführungszeitreihen
+    tags:
+    - Geschäftsprozesse für EEG-Überführungszeitreihen V1.0

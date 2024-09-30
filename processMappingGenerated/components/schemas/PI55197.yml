@@ -1,0 +1,29 @@
+PI55197:
+  description: "55197 NB (ANB)\u2192\xDCNB Aktivierung ZP t\xE4gliche AA\xDCZ"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+  type: object

@@ -1,0 +1,24 @@
+/Steuerbefehl_vom_LF_an_MSB_(UF_B016):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Bestellung Steuerbefehl vom LF an MSB | LF | MSB | /steuerbefehl/konfiguration/
+      | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Steuerbefehl_vom_LF_an_MSB_(UF_B016)
+    tags:
+    - GPKE Teil 3

@@ -1,0 +1,29 @@
+PI17003:
+  description: "17003 LF\u2192MSB Beauftragung \xC4nderung Technik"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LF
+      type: string
+  type: object

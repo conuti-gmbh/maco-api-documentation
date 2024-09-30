@@ -1,0 +1,51 @@
+/Stornierung_und_Rückabwicklung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55022 | Beteiligte wie bei Ursprungsnachricht,  | Beteiligte wie bei Ursprungsnachricht
+      | Anfrage nach Stornierung | -- |  |
+
+      | PI55023 | Empfänger einer Stornierungsanfrage,  | Sender einer Stornierungsanfrage
+      | Bestätigung Anfrage Stornierung | -- |  |
+
+      | PI55024 | Empfänger einer Stornierungsanfrage,  | Sender einer Stornierungsanfrage
+      | Ablehnung Anfrage Stornierung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [Beteiligte wie bei Ursprungsnachricht] LESENDE API: ''
+                  AN [Beteiligte wie bei Ursprungsnachricht] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55022 Anfrage nach Stornierung
+                  VON [Beteiligte wie bei Ursprungsnachricht, ] LESENDE API: ''
+                  VON [Beteiligte wie bei Ursprungsnachricht, ] SCHREIBENDE API: ''
+                  VON [Beteiligte wie bei Ursprungsnachricht, ] TRIGGER EVENT: ''
+                - AN [Sender einer Stornierungsanfrage] LESENDE API: ''
+                  AN [Sender einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55023 Bestätigung Anfrage Stornierung
+                  VON [Empfänger einer Stornierungsanfrage, ] LESENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage, ] SCHREIBENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage, ] TRIGGER EVENT: ''
+                - AN [Sender einer Stornierungsanfrage] LESENDE API: ''
+                  AN [Sender einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55024 Ablehnung Anfrage Stornierung
+                  VON [Empfänger einer Stornierungsanfrage, ] LESENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage, ] SCHREIBENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage, ] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55022'
+              - $ref: '#/components/schemas/PI55023'
+              - $ref: '#/components/schemas/PI55024'
+        description: ''
+    summary: Stornierung_und_Rückabwicklung
+    tags:
+    - GPKE Teil 4

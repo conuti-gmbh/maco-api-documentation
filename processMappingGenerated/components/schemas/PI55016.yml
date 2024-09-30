@@ -1,0 +1,29 @@
+PI55016:
+  description: "55016 LFN\u2192LFA K\xFCndigung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_ENERGIELIEFERVERTAG_BASIS
+      enum:
+      - LFA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_ENERGIELIEFERVERTAG_BASIS
+      enum:
+      - LFA
+      type: string
+    VON:LESENDE_API:
+      description: '-'
+      enum:
+      - LFN
+      type: string
+    VON:SCHREIBENDE_API:
+      description: '-'
+      enum:
+      - LFN
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_KUENDIGUNG
+      enum:
+      - LFN
+      type: string
+  type: object

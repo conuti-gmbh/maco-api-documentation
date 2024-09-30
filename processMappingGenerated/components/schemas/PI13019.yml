@@ -1,0 +1,29 @@
+PI13019:
+  description: "13019 NB\u2192RB HKN-R Energiemenge (Strom)"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

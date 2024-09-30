@@ -1,0 +1,29 @@
+PI37003:
+  description: "37003 BKV\u2192NB \xDCbermittlung Kommunikationsdaten des BKV"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BKV
+      type: string
+  type: object

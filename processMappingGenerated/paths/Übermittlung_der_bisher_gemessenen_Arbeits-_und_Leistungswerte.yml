@@ -1,0 +1,32 @@
+/Übermittlung_der_bisher_gemessenen_Arbeits-_und_Leistungswerte:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13015 | NB | LF | Arbeit Leistungsmax. Kalenderjahr vor, Lieferbeginn |
+      -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13015 Arbeit Leistungsmax. Kalenderjahr vor,
+                    Lieferbeginn
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13015'
+        description: ''
+    summary: Übermittlung_der_bisher_gemessenen_Arbeits-_und_Leistungswerte
+    tags:
+    - GPKE Teil 2

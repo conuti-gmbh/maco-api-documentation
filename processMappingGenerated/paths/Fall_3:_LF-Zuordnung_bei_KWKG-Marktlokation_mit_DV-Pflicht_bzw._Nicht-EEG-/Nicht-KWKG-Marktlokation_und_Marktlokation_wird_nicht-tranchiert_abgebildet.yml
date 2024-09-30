@@ -1,0 +1,85 @@
+? /Fall_3:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_nicht-tranchiert_abgebildet
+: options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55607 | NB | LFN | Ankündigung Zuordnung / Zuordnung des LF zur MaLo/ Tranche
+      | -- | 1 |
+
+      | PI55608 | LFN | NB | Bestätigung Zuordnung des LF zur MaLo/ Tranche | -- |
+      2 |
+
+      | PI55609 | LFN | NB | Ablehnung Zuordnung des LF zur MaLo/ Tranche | -- | 2
+      |
+
+      | PI55607 | NB | LFN | Ankündigung Zuordnung / Zuordnung des LF zur MaLo/ Tranche
+      | -- | 3 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 4 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 5 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 6 |
+
+      | → ref Einrichtung der Konfigurationen aufgrund einer Zuordnung eines LF zu
+      einer Marktlokation bzw. Tranche | NB | -- | -- | -- | 7 |
+
+      | PI55037 | NB | LFA | Beendigung der Zuordnung | -- | 8 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 9 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55607 Ankündigung Zuordnung / Zuordnung des
+                    LF zur MaLo/ Tranche
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55608 Bestätigung Zuordnung des LF zur MaLo/
+                    Tranche
+                  VON [LFN] LESENDE API: ''
+                  VON [LFN] SCHREIBENDE API: ''
+                  VON [LFN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55609 Ablehnung Zuordnung des LF zur MaLo/
+                    Tranche
+                  VON [LFN] LESENDE API: ''
+                  VON [LFN] SCHREIBENDE API: ''
+                  VON [LFN] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55607 Ankündigung Zuordnung / Zuordnung des
+                    LF zur MaLo/ Tranche
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFA] LESENDE API: ''
+                  AN [LFA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55037 Beendigung der Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55607'
+              - $ref: '#/components/schemas/PI55608'
+              - $ref: '#/components/schemas/PI55609'
+              - $ref: '#/components/schemas/PI55607'
+              - $ref: '#/components/schemas/PI55037'
+        description: ''
+    summary: Fall_3:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_nicht-tranchiert_abgebildet
+    tags:
+    - GPKE Teil 2

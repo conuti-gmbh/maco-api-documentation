@@ -1,0 +1,24 @@
+/default_path_8691:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → (Kontaktdaten der DB) | NB (entspricht NBA) | NB (entspricht NBN) | -- |
+      -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_8691
+    tags:
+    - Leitfaden Marktprozesse Netzbetreiberwechsel

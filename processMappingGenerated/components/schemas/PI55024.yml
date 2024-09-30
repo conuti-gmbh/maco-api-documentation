@@ -1,0 +1,30 @@
+PI55024:
+  description: "55024 Empf\xE4nger einer Stornierungsanfrage, \u2192Sender einer Stornierungsanfrage\
+    \ Ablehnung Anfrage Stornierung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - Sender einer Stornierungsanfrage
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - Sender einer Stornierungsanfrage
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "Empf\xE4nger einer Stornierungsanfrage, "
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "Empf\xE4nger einer Stornierungsanfrage, "
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "Empf\xE4nger einer Stornierungsanfrage, "
+      type: string
+  type: object

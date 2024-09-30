@@ -1,0 +1,30 @@
+PI55169:
+  description: "55169 MSB (entspricht gMSB am Objekt Messlokation)\u2192NB Best\xE4\
+    tigung Verpflichtungsanfrage, "
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht gMSB am Objekt Messlokation)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht gMSB am Objekt Messlokation)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB (entspricht gMSB am Objekt Messlokation)
+      type: string
+  type: object

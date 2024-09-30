@@ -1,0 +1,29 @@
+PI55650:
+  description: "55650 MSB\u2192LF \xC4nderung Daten der MaLo "
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_MARKTLOKATION_BASIS
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - MSB
+      type: string
+  type: object

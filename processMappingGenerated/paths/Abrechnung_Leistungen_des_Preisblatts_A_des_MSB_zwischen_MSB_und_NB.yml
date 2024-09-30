@@ -1,0 +1,120 @@
+/Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31009 | MSB | NB | MSB-Rechnung | -- | 1 |
+
+      | PI33001 | NB | MSB | Bestätigung | -- | 2 |
+
+      | PI33003 | NB | MSB | Strom Abweisung Kopf und Summe | -- | 2 |
+
+      | PI33004 | NB | MSB | Strom Abweisung Position | -- | 2 |
+
+      | PI29001 | MSB | NB | Ablehnung REMADV | -- | 3 |
+
+      | PI33001 | NB | MSB | Bestätigung | -- | 4 |
+
+      | PI33003 | NB | MSB | Strom Abweisung Kopf und Summe | -- | 4 |
+
+      | PI33004 | NB | MSB | Strom Abweisung Position | -- | 4 |
+
+      | PI31004 | MSB | NB | Stornorechnung | -- | 5 |
+
+      | PI33001 | NB | MSB | Bestätigung | -- | 6 |
+
+      | PI33002 | NB | MSB | Abweisung | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31009 MSB-Rechnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI29001 Ablehnung REMADV
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31009'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI29001'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_NB
+    tags:
+    - GPKE Teil 3

@@ -1,0 +1,173 @@
+/Beginn_Messstellenbetrieb:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55042 | MSBN | NB | Anmeldung MSB | -- | 1 |
+
+      | PI55043 | NB | MSBN | Bestätigung Anmeldung MSB | -- | 2 |
+
+      | PI55044 | NB | MSBN | Ablehnung Anmeldung MSB | -- | 2 |
+
+      | PI21007 | NB | MSBA | Statusmeldung | -- | 3 |
+
+      | PI21007 | NB | LF | Statusmeldung | -- | 4 |
+
+      | → ref Gerätewechsel | MSBN | -- | -- | -- | 5 |
+
+      | → ref Geräteübernahme | MSBN | -- | -- | -- | 6 |
+
+      | PI21009 | MSBN | NB | Statusmeldung | -- | 7 |
+
+      | PI21010 | MSBN | NB | Statusmeldung | -- | 7 |
+
+      | PI21011 | NB | MSBN | Statusmeldung | -- | 8 |
+
+      | PI21012 | NB | MSBN | Statusmeldung | -- | 8 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 9 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 10 |
+
+      | → ref Beendigung der Übermittlung von Werten an ESA durch MSB | MSBA | --
+      | -- | -- | 11 |
+
+      | → ref Beendigung einer Konfiguration vom MSB | MSBA | -- | -- | -- | 12 |
+
+      | → ref Bestellung Beendigung einer Konfiguration an MSB | MSBA | -- | -- |
+      -- | 13 |
+
+      | PI21011 | NB | MSBA | Statusmeldung | -- | 14 |
+
+      | PI21011 | NB | LF | Statusmeldung | -- | 15 |
+
+      | PI21013 | NB | MSBN | Statusmeldung | -- | 16 |
+
+      | PI21013 | NB | MSBN | Statusmeldung | -- | 16 |
+
+      | PI21013 | NB | MSBA | Statusmeldung | -- | 17 |
+
+      | PI21013 | NB | LF | Statusmeldung | -- | 18 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55042 Anmeldung MSB
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55043 Bestätigung Anmeldung MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55044 Ablehnung Anmeldung MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21007 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21007 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21009 Statusmeldung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21010 Statusmeldung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21011 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21012 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21011 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21011 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55042'
+              - $ref: '#/components/schemas/PI55043'
+              - $ref: '#/components/schemas/PI55044'
+              - $ref: '#/components/schemas/PI21007'
+              - $ref: '#/components/schemas/PI21007'
+              - $ref: '#/components/schemas/PI21009'
+              - $ref: '#/components/schemas/PI21010'
+              - $ref: '#/components/schemas/PI21011'
+              - $ref: '#/components/schemas/PI21012'
+              - $ref: '#/components/schemas/PI21011'
+              - $ref: '#/components/schemas/PI21011'
+              - $ref: '#/components/schemas/PI21013'
+              - $ref: '#/components/schemas/PI21013'
+              - $ref: '#/components/schemas/PI21013'
+              - $ref: '#/components/schemas/PI21013'
+        description: ''
+    summary: Beginn_Messstellenbetrieb
+    tags:
+    - WiM Strom Teil 1

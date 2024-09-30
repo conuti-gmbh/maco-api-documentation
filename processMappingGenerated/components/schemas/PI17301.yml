@@ -1,0 +1,29 @@
+PI17301:
+  description: "17301 RB HKN-R\u2192NB Anforderung von Stammdaten bzw. Messwerten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+  type: object

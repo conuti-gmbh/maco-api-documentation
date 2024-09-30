@@ -1,0 +1,30 @@
+/default_path_12790:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31004 | NB | LF | Stornorechnung  | -- | 5 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI31004 Stornorechnung '
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31004'
+        description: ''
+    summary: default_path_12790
+    tags:
+    - Anwendungshilfe Sperrprozesse Gas

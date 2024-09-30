@@ -1,0 +1,29 @@
+PI19116:
+  description: "19116 NB\u2192LF Best\xE4tigung Sperr-/Entsperrauftrag"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

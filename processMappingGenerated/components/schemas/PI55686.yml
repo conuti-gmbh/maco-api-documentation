@@ -1,0 +1,29 @@
+PI55686:
+  description: "55686 MSB\u2192\xDCNB \xC4nderung Daten der Tranche"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_TRANCHE_BASIS
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - MSB
+      type: string
+  type: object

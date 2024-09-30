@@ -1,0 +1,29 @@
+PI13017:
+  description: "13017 NB\u2192RB HKN-R Z\xE4hlerstand (Strom)"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - RB HKN-R
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: "R\xFCckgabe DAR falls notwendig"
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_ZAEHLERSTAND
+      enum:
+      - NB
+      type: string
+  type: object

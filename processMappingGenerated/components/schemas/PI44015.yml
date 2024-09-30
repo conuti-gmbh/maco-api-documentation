@@ -1,0 +1,29 @@
+PI44015:
+  description: "44015 E/G\u2192NB Ablehnung EoG Anmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - E/G
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - E/G
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - E/G
+      type: string
+  type: object

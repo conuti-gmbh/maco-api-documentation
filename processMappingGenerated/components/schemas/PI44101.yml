@@ -1,0 +1,29 @@
+PI44101:
+  description: "44101 NB (entspricht NBN)\u2192MSB Stammdaten zur Messlokation"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+  type: object

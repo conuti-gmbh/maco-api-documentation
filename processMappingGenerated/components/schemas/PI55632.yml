@@ -1,0 +1,29 @@
+PI55632:
+  description: "55632 NB\u2192MSB \xC4nderung Daten der MeLo"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MESSLOKATION_BASIS
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_MESSLOKATION_BASIS
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MESSLOKATION_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - NB
+      type: string
+  type: object

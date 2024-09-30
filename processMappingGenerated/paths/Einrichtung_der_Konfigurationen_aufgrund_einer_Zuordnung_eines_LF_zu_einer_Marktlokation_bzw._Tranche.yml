@@ -1,0 +1,55 @@
+/Einrichtung_der_Konfigurationen_aufgrund_einer_Zuordnung_eines_LF_zu_einer_Marktlokation_bzw._Tranche:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17134 | NB | MSB | Einrichtung Konfiguration Zuordnung LF von NB | -- |
+      1 |
+
+      | PI17135 | MSB | weiterer MSB | Einrichtung Konfiguration Zuordnung LF von
+      MSB | -- | 2 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | weiterer MSB
+      | -- | -- | -- | 3 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      weiterer MSB | -- | -- | -- | 4 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB | -- | --
+      | -- | 5 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB | -- | -- | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17134 Einrichtung Konfiguration Zuordnung
+                    LF von NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17135 Einrichtung Konfiguration Zuordnung
+                    LF von MSB
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17134'
+              - $ref: '#/components/schemas/PI17135'
+        description: ''
+    summary: Einrichtung_der_Konfigurationen_aufgrund_einer_Zuordnung_eines_LF_zu_einer_Marktlokation_bzw._Tranche
+    tags:
+    - GPKE Teil 3

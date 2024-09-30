@@ -1,0 +1,30 @@
+PI44104:
+  description: "44104 NB (entspricht NBN)\u2192LF Aktualisierte Stammdaten zur verbrauchenden\
+    \ Marktlokation"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (entspricht NBN)
+      type: string
+  type: object

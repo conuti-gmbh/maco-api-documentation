@@ -1,0 +1,29 @@
+PI55624:
+  description: "55624 LF\u2192NB R\xFCckmeldung/Anfrage Daten der SR"
+  properties:
+    AN:LESENDE_API:
+      description: n.v.
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_STEUERBARE_RESSOURCE_BASIS
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LF
+      type: string
+  type: object

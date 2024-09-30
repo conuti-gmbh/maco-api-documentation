@@ -1,0 +1,30 @@
+PI13014:
+  description: "13014 \xDCNB\u2192NB Marktlokationsscharfe bilanzierte Menge Strom/Gas\
+    \ (MMMA)"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+  type: object

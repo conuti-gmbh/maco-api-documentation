@@ -1,0 +1,61 @@
+/Verpflichtung_gMSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Gerätewechsel | MSB (entspricht gMSB am Objekt Messlokation) | -- |
+      -- | -- | 1 |
+
+      | → ref Geräteübernahme | MSB (entspricht gMSB am Objekt Messlokation) | --
+      | -- | -- | 2 |
+
+      | PI21010 | MSB (entspricht gMSB am Objekt Messlokation) | NB | Statusmeldung
+      | -- | 3 |
+
+      | PI21018 | NB | MSB (entspricht MSBA am Objekt Messlokation) | Statusmeldung
+      | -- | 4 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 5 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 6 |
+
+      | → ref Beendigung der Übermittlung von Werten an ESA durch MSB | MSB (entspricht
+      MSBA am Objekt Messlokation) | -- | -- | -- | 7 |
+
+      | → ref Beendigung einer Konfiguration vom MSB | MSB (entspricht MSBA am Objekt
+      Messlokation) | -- | -- | -- | 8 |
+
+      | → ref Bestellung Beendigung einer Konfiguration an MSB | MSB (entspricht MSBA
+      am Objekt Messlokation) | -- | -- | -- | 9 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21010 Statusmeldung
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21018 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21010'
+              - $ref: '#/components/schemas/PI21018'
+        description: ''
+    summary: Verpflichtung_gMSB
+    tags:
+    - WiM Strom Teil 1

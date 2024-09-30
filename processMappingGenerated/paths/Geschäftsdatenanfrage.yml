@@ -1,0 +1,243 @@
+/Geschäftsdatenanfrage:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17132 | LF | NB | Anfrage Stammdaten (Strom) | -- | 1 |
+
+      | PI17132 | MSB | NB | Anfrage Stammdaten (Strom) | -- | 1 |
+
+      | PI17104 | MSB (Gas) | NB (Strom) | Anfrage vom MSB Gas | -- | 1 |
+
+      | PI55035 | NB | LF | Antwort auf GDA verb. MaLo | -- | 2 |
+
+      | PI55060 | NB | MSB | Antwort auf GDA | -- | 2 |
+
+      | PI55095 | NB | LF | Antwort auf GDA erz. MaLo | -- | 2 |
+
+      | PI55194 | NB (Strom) | MSB (Gas) | Antowrt auf GDA (Strom an Gas) | -- | 2
+      |
+
+      | PI19101 | NB | MSB | Ablehnung der Anfrage Stammdaten | -- | 2 |
+
+      | PI19101 | NB | LF | Ablehnung der Anfrage Stammdaten | -- | 2 |
+
+      | PI17102 | LF | MSB | Anfrage von Werten | -- | 3 |
+
+      | PI17102 | NB | MSB | Anfrage von Werten | -- | 3 |
+
+      | PI19102 | MSB | NB | Ablehnung der Anfrage Werte | -- | 4 |
+
+      | PI19102 | MSB | LF | Ablehnung der Anfrage Werte | -- | 4 |
+
+      | PI13018 | MSB | LF | Lastgang Messlokation, Netzkoppelpunkt, Netzlokation
+      | -- | 4 |
+
+      | PI13018 | MSB | NB | Lastgang Messlokation, Netzkoppelpunkt, Netzlokation
+      | -- | 4 |
+
+      | PI13017 | MSB | NB | Zählerstand (Strom) | -- | 4 |
+
+      | PI13017 | MSB | LF | Zählerstand (Strom) | -- | 4 |
+
+      | PI13019 | MSB | NB | Energiemenge (Strom) | -- | 4 |
+
+      | PI13019 | MSB | LF | Energiemenge (Strom) | -- | 4 |
+
+      | PI13016 | MSB | NB | Energiemenge u. Leistungsmax. (Strom) | -- | 4 |
+
+      | PI13016 | MSB | LF | Energiemenge u. Leistungsmax. (Strom) | -- | 4 |
+
+      | PI13025 | MSB | NB | Lastgang Marktlokation, Tranche | -- | 4 |
+
+      | PI13025 | MSB | LF | Lastgang Marktlokation, Tranche | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17132 Anfrage Stammdaten (Strom)
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17132 Anfrage Stammdaten (Strom)
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB (Strom)] LESENDE API: ''
+                  AN [NB (Strom)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17104 Anfrage vom MSB Gas
+                  VON [MSB (Gas)] LESENDE API: LESEN_MESSLOKATION_BASIS
+                  VON [MSB (Gas)] SCHREIBENDE API: ''
+                  VON [MSB (Gas)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55035 Antwort auf GDA verb. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55060 Antwort auf GDA
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55095 Antwort auf GDA erz. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB (Gas)] LESENDE API: ''
+                  AN [MSB (Gas)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55194 Antowrt auf GDA (Strom an Gas)
+                  VON [NB (Strom)] LESENDE API: ''
+                  VON [NB (Strom)] SCHREIBENDE API: ''
+                  VON [NB (Strom)] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19101 Ablehnung der Anfrage Stammdaten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19101 Ablehnung der Anfrage Stammdaten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17102 Anfrage von Werten
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17102 Anfrage von Werten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19102 Ablehnung der Anfrage Werte
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19102 Ablehnung der Anfrage Werte
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_LASTGANG
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_LASTGANG
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13019 Energiemenge (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13019 Energiemenge (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13016 Energiemenge u. Leistungsmax. (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13016 Energiemenge u. Leistungsmax. (Strom)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: PI13025 Lastgang Marktlokation, Tranche
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_LASTGANG
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: PI13025 Lastgang Marktlokation, Tranche
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_LASTGANG
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17132'
+              - $ref: '#/components/schemas/PI17132'
+              - $ref: '#/components/schemas/PI17104'
+              - $ref: '#/components/schemas/PI55035'
+              - $ref: '#/components/schemas/PI55060'
+              - $ref: '#/components/schemas/PI55095'
+              - $ref: '#/components/schemas/PI55194'
+              - $ref: '#/components/schemas/PI19101'
+              - $ref: '#/components/schemas/PI19101'
+              - $ref: '#/components/schemas/PI17102'
+              - $ref: '#/components/schemas/PI17102'
+              - $ref: '#/components/schemas/PI19102'
+              - $ref: '#/components/schemas/PI19102'
+              - $ref: '#/components/schemas/PI13018'
+              - $ref: '#/components/schemas/PI13018'
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI13019'
+              - $ref: '#/components/schemas/PI13019'
+              - $ref: '#/components/schemas/PI13016'
+              - $ref: '#/components/schemas/PI13016'
+              - $ref: '#/components/schemas/PI13025'
+              - $ref: '#/components/schemas/PI13025'
+        description: ''
+    summary: Geschäftsdatenanfrage
+    tags:
+    - GPKE Teil 4

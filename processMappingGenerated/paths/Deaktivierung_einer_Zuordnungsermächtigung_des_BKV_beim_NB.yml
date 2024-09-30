@@ -1,0 +1,32 @@
+/Deaktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55072 | BKV | NB | Deaktivierung der Zuordnungsermächtigung | -- | 1 |
+
+      | → manuelle Fehlerklärung | NB | BKV | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55072 Deaktivierung der Zuordnungsermächtigung
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55072'
+        description: ''
+    summary: Deaktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB
+    tags:
+    - MaBiS

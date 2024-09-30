@@ -1,0 +1,30 @@
+/default_path_12050:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI19110 | NB | LF | Ablehnung der Anforderung Allokationsliste | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19110 Ablehnung der Anforderung Allokationsliste
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI19110'
+        description: ''
+    summary: default_path_12050
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

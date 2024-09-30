@@ -1,0 +1,30 @@
+/default_path_12226:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31004 | NB | MGV | Stornorechnung | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MGV] LESENDE API: ''
+                  AN [MGV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31004'
+        description: ''
+    summary: default_path_12226
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

@@ -1,0 +1,120 @@
+/Kap._B_4.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44051 | MSBA | NB | Ende MSB | -- |  |
+
+      | PI44112 | NB | LF | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      | PI44053 | NB | MSBA | Ablehnung Ende MSB | -- |  |
+
+      | PI44052 | NB | MSBA | Bestätigung Ende MSB | -- |  |
+
+      | PI17002 | NB | MSB | Weiterverpflichtung | -- |  |
+
+      | PI19003 | MSB | NB | Bestätigung Weiterverpflichtung | -- |  |
+
+      | PI19004 | MSB | NB | Ablehnung Weiterverpflichtung | -- |  |
+
+      | PI44168 | NB | gMSB | Verpflichtungsanfrage / Aufforderung | -- |  |
+
+      | PI44169 | gMSB | NB | Bestätigung Verpflichtungsanfrage,  | -- |  |
+
+      | PI44170 | gMSB | NB | Ablehnung Verpflichtungsanfrage | -- |  |
+
+      | PI21018 | NB | MSBA | Statusmeldung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44051 Ende MSB
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44112 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44053 Ablehnung Ende MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44052 Bestätigung Ende MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17002 Weiterverpflichtung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19003 Bestätigung Weiterverpflichtung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19004 Ablehnung Weiterverpflichtung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [gMSB] LESENDE API: ''
+                  AN [gMSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44168 Verpflichtungsanfrage / Aufforderung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI44169 Bestätigung Verpflichtungsanfrage, '
+                  VON [gMSB] LESENDE API: ''
+                  VON [gMSB] SCHREIBENDE API: ''
+                  VON [gMSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44170 Ablehnung Verpflichtungsanfrage
+                  VON [gMSB] LESENDE API: ''
+                  VON [gMSB] SCHREIBENDE API: ''
+                  VON [gMSB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21018 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44051'
+              - $ref: '#/components/schemas/PI44112'
+              - $ref: '#/components/schemas/PI44053'
+              - $ref: '#/components/schemas/PI44052'
+              - $ref: '#/components/schemas/PI17002'
+              - $ref: '#/components/schemas/PI19003'
+              - $ref: '#/components/schemas/PI19004'
+              - $ref: '#/components/schemas/PI44168'
+              - $ref: '#/components/schemas/PI44169'
+              - $ref: '#/components/schemas/PI44170'
+              - $ref: '#/components/schemas/PI21018'
+        description: ''
+    summary: Kap._B_4.3_Nr.
+    tags:
+    - WiM Gas

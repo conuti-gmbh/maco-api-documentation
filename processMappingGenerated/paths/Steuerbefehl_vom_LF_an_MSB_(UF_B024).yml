@@ -1,0 +1,54 @@
+/Steuerbefehl_vom_LF_an_MSB_(UF_B024):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Bestellung Steuerbefehl vom LF an MSB | LF | MSB | /steuerbefehl/initialZustand/
+      | -- | 1 |
+
+      | → Mitteilung zum weiteren Vorgehen | MSB | LF | /steuerbefehl/vorleaufigePositiveAntwort/
+      | -- | 2 |
+
+      | → Mitteilung zum weiteren Vorgehen | MSB | LF | /steuerbefehl/vorleaufigeNegativeAntwort/
+      | -- | 2 |
+
+      | → Antwort auf Bestellung | MSB | LF | /steuerbefehl/positiveAntwort/ | --
+      | 3 |
+
+      | → Antwort auf Bestellung | MSB | LF | /steuerbefehl/negativeAntwort/ | --
+      | 3 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | NB | /steuerbefehl/informationAnweisung/ | -- | 4 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | weiterer MSB | /steuerbefehl/positiveAntwort/ | -- | 5 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | weiterer MSB | /steuerbefehl/negativeAntwort/ | -- | 5 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | NB | /steuerbefehl/information/ | -- | 6 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | MSB (weiterer) | /steuerbefehl/information/ | -- | 7 |
+
+      | → Information über erfolgreiche Einrichtung eines Steuerbefehls des LF | MSB
+      | ÜNB | /steuerbefehl/information/ | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Steuerbefehl_vom_LF_an_MSB_(UF_B024)
+    tags:
+    - GPKE Teil 3

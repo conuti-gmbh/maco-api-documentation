@@ -1,0 +1,48 @@
+/Wiederherstellung_der_Anschlussnutzung_bei_Lieferbeginn:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21040 | NB | MSB | Info Entsperrauftrag | -- | 1 |
+
+      | PI21039 | NB | MSB | Auftragsstatus (Sperren) | -- | 2 |
+
+      | PI21039 | NB | ÜNB | Auftragsstatus (Sperren) | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21040 Info Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21039 Auftragsstatus (Sperren)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21039 Auftragsstatus (Sperren)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21040'
+              - $ref: '#/components/schemas/PI21039'
+              - $ref: '#/components/schemas/PI21039'
+        description: ''
+    summary: Wiederherstellung_der_Anschlussnutzung_bei_Lieferbeginn
+    tags:
+    - GPKE Teil 2

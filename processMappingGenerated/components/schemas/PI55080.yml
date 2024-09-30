@@ -1,0 +1,29 @@
+PI55080:
+  description: "55080 NB\u2192LFN Ablehnung Anmeldung erz. MaLo"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+      enum:
+      - LFN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

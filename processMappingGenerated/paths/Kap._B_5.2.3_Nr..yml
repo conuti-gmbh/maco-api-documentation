@@ -1,0 +1,66 @@
+/Kap._B_5.2.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI35001 | MSBN | MSBA | Anfrage Geräteübernahmeangebot | -- |  |
+
+      | PI15001 | MSBA | MSBN | Angebot Geräteübernahme | -- |  |
+
+      | PI17001 | MSBN | MSBA | Bestellung Geräteübernahmeangebot | -- |  |
+
+      | PI19001 | MSBA | MSBN | Bestätigung Bestellung,  | -- |  |
+
+      | PI19002 | MSBA | MSBN | Ablehnung Bestellung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI35001 Anfrage Geräteübernahmeangebot
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI15001 Angebot Geräteübernahme
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17001 Bestellung Geräteübernahmeangebot
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19001 Bestätigung Bestellung, '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19002 Ablehnung Bestellung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI35001'
+              - $ref: '#/components/schemas/PI15001'
+              - $ref: '#/components/schemas/PI17001'
+              - $ref: '#/components/schemas/PI19001'
+              - $ref: '#/components/schemas/PI19002'
+        description: ''
+    summary: Kap._B_5.2.3_Nr.
+    tags:
+    - WiM Gas

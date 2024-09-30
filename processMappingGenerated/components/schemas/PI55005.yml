@@ -1,0 +1,29 @@
+PI55005:
+  description: "55005 NB\u2192LF Best\xE4tigung Abmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ERSTELLEN_PROZESS_LIEFERENDE
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

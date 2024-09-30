@@ -1,0 +1,120 @@
+/Abrechnung_einer_für_den_ESA_erbrachten_Leistung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31009 | MSB | ESA | MSB-Rechnung | -- | 1 |
+
+      | PI33001 | ESA | MSB | Bestätigung | -- | 2 |
+
+      | PI33003 | ESA | MSB | Strom Abweisung Kopf und Summe | -- | 2 |
+
+      | PI33004 | ESA | MSB | Strom Abweisung Position | -- | 2 |
+
+      | PI29001 | MSB | ESA | Ablehnung REMADV | -- | 3 |
+
+      | PI33001 | ESA | MSB | Bestätigung | -- | 4 |
+
+      | PI33003 | ESA | MSB | Strom Abweisung Kopf und Summe | -- | 4 |
+
+      | PI33004 | ESA | MSB | Strom Abweisung Position | -- | 4 |
+
+      | PI31004 | MSB | ESA | Stornorechnung | -- | 5 |
+
+      | PI33001 | ESA | MSB | Bestätigung | -- | 6 |
+
+      | PI33002 | ESA | MSB | Abweisung | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31009 MSB-Rechnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI29001 Ablehnung REMADV
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31009'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI29001'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Abrechnung_einer_für_den_ESA_erbrachten_Leistung
+    tags:
+    - WiM Strom Teil 2

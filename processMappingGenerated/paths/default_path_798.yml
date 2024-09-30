@@ -1,0 +1,31 @@
+/default_path_798:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI19301 | NB | RB HKN-R | Abl. der Anforderung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [RB HKN-R] LESENDE API: ''
+                  AN [RB HKN-R] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19301 Abl. der Anforderung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI19301'
+        description: ''
+    summary: default_path_798
+    tags:
+    - Prozesse zum Informationsaustausch zwischen Netzbetreiber und Herkunftsnachweis-register
+      (HKN-R) des Umweltbundesamts (UBA)

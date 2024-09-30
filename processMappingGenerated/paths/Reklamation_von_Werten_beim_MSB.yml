@@ -1,0 +1,34 @@
+/Reklamation_von_Werten_beim_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Reklamation vom NB | NB | -- | -- | -- | 1 |
+
+      | → ref Reklamation vom LF | LF | -- | -- | -- | 2 |
+
+      | → ref Reklamation vom ÜNBref MSB der Messlokation stellt selbst | ÜNB | --
+      | -- | -- | 3 |
+
+      | → ref MSB der Messlokation stellt selbst Reklamationsbedarf fest | MSB (entspricht
+      MSB am Objekt Messlokation) | -- | -- | -- | 4 |
+
+      | → ref MSB der Marktlokation stellt selbst Reklamationsbedarf fest | MSB (entspricht
+      MSB am Objekt Marktlokation) | -- | -- | -- | 5 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Reklamation_von_Werten_beim_MSB
+    tags:
+    - WiM Strom Teil 2

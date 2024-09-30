@@ -1,0 +1,81 @@
+/Übermittlung_einer_Definition_des_NB_durch_den_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI25005 | NB | LF | Übermittlung einer ausgerollten Zählzeitdefinition | --
+      | 1 |
+
+      | PI25008 | NB | LF | Übermittlung einer ausgerollten Schaltzeitdefinition |
+      -- | 1 |
+
+      | PI25009 | NB | LF | Übermittlung einer ausgerollten Leistungskurvendefinition
+      | -- | 1 |
+
+      | PI25009 | NB | MSB | Übermittlung einer ausgerollten Leistungskurvendefinition
+      | -- | 2 |
+
+      | PI25005 | NB | MSB | Übermittlung einer ausgerollten Zählzeitdefinition |
+      -- | 2 |
+
+      | PI25008 | NB | MSB | Übermittlung einer ausgerollten Schaltzeitdefinition
+      | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25005 Übermittlung einer ausgerollten Zählzeitdefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25008 Übermittlung einer ausgerollten Schaltzeitdefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25009 Übermittlung einer ausgerollten Leistungskurvendefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25009 Übermittlung einer ausgerollten Leistungskurvendefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25005 Übermittlung einer ausgerollten Zählzeitdefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI25008 Übermittlung einer ausgerollten Schaltzeitdefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI25005'
+              - $ref: '#/components/schemas/PI25008'
+              - $ref: '#/components/schemas/PI25009'
+              - $ref: '#/components/schemas/PI25009'
+              - $ref: '#/components/schemas/PI25005'
+              - $ref: '#/components/schemas/PI25008'
+        description: ''
+    summary: Übermittlung_einer_Definition_des_NB_durch_den_NB
+    tags:
+    - GPKE Teil 3

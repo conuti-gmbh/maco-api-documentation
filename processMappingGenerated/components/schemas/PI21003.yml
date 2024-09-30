@@ -1,0 +1,29 @@
+PI21003:
+  description: "21003 BIKO\u2192\xDCNB Statusmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+  type: object

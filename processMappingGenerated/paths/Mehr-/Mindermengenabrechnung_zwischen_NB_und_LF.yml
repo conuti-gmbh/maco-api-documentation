@@ -1,0 +1,104 @@
+/Mehr-/Mindermengenabrechnung_zwischen_NB_und_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13014 | NB | LF | Marktlokationsscharfe bilanzierte Menge Strom/Gas (MMMA)
+      | -- | 1 |
+
+      | PI31005 | NB | LF | MMM-Rechnung | -- | 2 |
+
+      | PI31006 | NB | LF | MMM-selbst ausgest. Rechnung | -- | 2 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 3 |
+
+      | PI33002 | LF | NB | Abweisung | -- | 3 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 5 |
+
+      | PI31004 | NB | LF | Stornorechnung | -- | 6 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 7 |
+
+      | PI33002 | LF | NB | Abweisung | -- | 7 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13014 Marktlokationsscharfe bilanzierte Menge
+                    Strom/Gas (MMMA)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31005 MMM-Rechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31006 MMM-selbst ausgest. Rechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13014'
+              - $ref: '#/components/schemas/PI31005'
+              - $ref: '#/components/schemas/PI31006'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Mehr-/Mindermengenabrechnung_zwischen_NB_und_LF
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

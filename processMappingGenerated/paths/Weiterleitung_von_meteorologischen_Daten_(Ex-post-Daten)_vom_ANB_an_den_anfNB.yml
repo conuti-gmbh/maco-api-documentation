@@ -1,0 +1,31 @@
+/Weiterleitung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_ANB_an_den_anfNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13021 | NB (ANB) | NB (anf. NB) | Übermittlung von meteorologischen Daten
+      | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (anf. NB)] LESENDE API: ''
+                  AN [NB (anf. NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13021 Übermittlung von meteorologischen Daten
+                  VON [NB (ANB)] LESENDE API: ''
+                  VON [NB (ANB)] SCHREIBENDE API: ''
+                  VON [NB (ANB)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13021'
+        description: ''
+    summary: Weiterleitung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_ANB_an_den_anfNB
+    tags:
+    - Kommunikationsprozesse Redispatch

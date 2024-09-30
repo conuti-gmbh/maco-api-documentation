@@ -1,0 +1,29 @@
+PI55630:
+  description: "55630 NB\u2192MSB \xC4nderung Daten der SR"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_STEUERBARE_RESSOURCE_BASIS
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_STEUERBARE_RESSOURCE_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - NB
+      type: string
+  type: object

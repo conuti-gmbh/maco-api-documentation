@@ -1,0 +1,89 @@
+/Geräteübernahme:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI35001 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Anfrage Geräteübernahmeangebot | -- | 1 |
+
+      | PI15001 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Angebot Geräteübernahme | -- | 2 |
+
+      | PI17001 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Bestellung Geräteübernahmeangebot | -- | 3 |
+
+      | PI19001 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Bestätigung Bestellung,  | -- | 4 |
+
+      | PI19002 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Ablehnung Bestellung | -- | 4 |
+
+      | PI13017 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Zählerstand (Strom) | -- | 5 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSBN am Objekt Messlokation) | -- | -- | -- | 6 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSBA am Objekt Messlokation) | -- | -- | -- | 7 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI35001 Anfrage Geräteübernahmeangebot
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI15001 Angebot Geräteübernahme
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17001 Bestellung Geräteübernahmeangebot
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19001 Bestätigung Bestellung, '
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19002 Ablehnung Bestellung
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: LESEN_MARKTLOKATION_BASIS,
+                    LESEN_MESSLOKATIONS_BASIS, LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: Rückgabe
+                    DAR falls notwendig
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: START_ZAEHLERSTAND
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI35001'
+              - $ref: '#/components/schemas/PI15001'
+              - $ref: '#/components/schemas/PI17001'
+              - $ref: '#/components/schemas/PI19001'
+              - $ref: '#/components/schemas/PI19002'
+              - $ref: '#/components/schemas/PI13017'
+        description: ''
+    summary: Geräteübernahme
+    tags:
+    - WiM Strom Teil 1

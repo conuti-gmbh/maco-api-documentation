@@ -1,0 +1,30 @@
+/Übermittlung_Preisblatt_NB_an_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI27003 | NB | LF | Preisblatt GPKE | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI27003 Preisblatt GPKE
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI27003'
+        description: ''
+    summary: Übermittlung_Preisblatt_NB_an_LF
+    tags:
+    - GPKE Teil 2

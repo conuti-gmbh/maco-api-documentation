@@ -1,0 +1,52 @@
+/Kündigung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55016 | LFN | LFA | Kündigung | -- | 1 |
+
+      | PI55017 | LFA | LFN | Bestätigung Kündigung | -- | 2 |
+
+      | PI55018 | LFA | LFN | Ablehnung Kündigung | -- | 2 |
+
+      | → ref Lieferende von LF an NB | LFA | -- | -- | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LFA] LESENDE API: LESEN_ENERGIELIEFERVERTAG_BASIS
+                  AN [LFA] SCHREIBENDE API: AKTUALISIEREN_ENERGIELIEFERVERTAG_BASIS
+                  PRUEFIDENTIFIKATOR: PI55016 Kündigung
+                  VON [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LFN] SCHREIBENDE API: '-'
+                  VON [LFN] TRIGGER EVENT: START_KUENDIGUNG
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
+                  PRUEFIDENTIFIKATOR: PI55017 Bestätigung Kündigung
+                  VON [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55018 Ablehnung Kündigung
+                  VON [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55016'
+              - $ref: '#/components/schemas/PI55017'
+              - $ref: '#/components/schemas/PI55018'
+        description: ''
+    summary: Kündigung
+    tags:
+    - GPKE Teil 2

@@ -1,0 +1,29 @@
+PI31008:
+  description: "31008 NB\u2192MGV Aggreg. MMM-selbst ausgest. Rechnung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MGV
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MGV
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

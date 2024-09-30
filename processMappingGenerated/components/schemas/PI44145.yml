@@ -1,0 +1,29 @@
+PI44145:
+  description: "44145 NB [Verteiler]\u2192LF Antwort auf Anfrage"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+  type: object

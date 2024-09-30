@@ -1,0 +1,29 @@
+PI17203:
+  description: "17203 BKV\u2192NB Anforder. Bilanzkreiszuordnungsliste"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BKV
+      type: string
+  type: object

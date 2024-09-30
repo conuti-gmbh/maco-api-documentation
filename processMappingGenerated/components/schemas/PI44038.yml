@@ -1,0 +1,29 @@
+PI44038:
+  description: "44038 NB\u2192LF Informationsmeldung zur Aufhebung einer zuk. Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

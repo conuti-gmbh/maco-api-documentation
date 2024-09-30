@@ -1,0 +1,29 @@
+PI55012:
+  description: "55012 LFA\u2192NB Ablehnung Beendigung der Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFA
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFA
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LFA
+      type: string
+  type: object

@@ -1,0 +1,67 @@
+/Messlokationsänderung_vom_NB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17003 | NB | MSB (entspricht MSB am Objekt Messlokation) | Beauftragung
+      Änderung Technik | -- | 1 |
+
+      | PI19005 | MSB (entspricht MSB am Objekt Messlokation) | NB | Bestätigung Auftrag
+      Änderung Technik | -- | 2 |
+
+      | PI19006 | MSB (entspricht MSB am Objekt Messlokation) | NB | Ablehnung Auftrag
+      Änderung Technik | -- | 2 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB (entspricht
+      MSB am Objekt Messlokation) | -- | -- | -- | 3 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSB am Objekt Messlokation) | -- | -- | -- | 4 |
+
+      | PI21027 | MSB (entspricht MSB am Objekt Messlokation) | NB | Statusmeldung
+      | -- | 5 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17003 Beauftragung Änderung Technik
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19005 Bestätigung Auftrag Änderung Technik
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19006 Ablehnung Auftrag Änderung Technik
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21027 Statusmeldung
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17003'
+              - $ref: '#/components/schemas/PI19005'
+              - $ref: '#/components/schemas/PI19006'
+              - $ref: '#/components/schemas/PI21027'
+        description: ''
+    summary: Messlokationsänderung_vom_NB_an_MSB
+    tags:
+    - WiM Strom Teil 1

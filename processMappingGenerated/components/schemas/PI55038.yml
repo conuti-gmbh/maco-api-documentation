@@ -1,0 +1,29 @@
+PI55038:
+  description: "55038 NB\u2192LFZ Aufhebung einer zuk. Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFZ
+      type: string
+    AN:SCHREIBENDE_API:
+      description: LOESCHEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFZ
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

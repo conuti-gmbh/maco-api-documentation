@@ -1,0 +1,29 @@
+PI17130:
+  description: "17130 NB\u2192MSB Bestellung einer Konfiguration"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI55238:
+  description: "55238 NB (LPB)\u2192NB (VNB) Anmeldung in Modell 2"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (VNB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (VNB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (LPB)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (LPB)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (LPB)
+      type: string
+  type: object

@@ -1,0 +1,84 @@
+/Wiederherstellung_der_Anschlussnutzung_(Entsperren)_auf_Anweisung_des_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17117 | LF | NB | Entsperrauftrag | -- | 1 |
+
+      | PI19116 | NB | LF | Bestätigung Sperr-/Entsperrauftrag | -- | 2 |
+
+      | PI19117 | NB | LF | Ablehnung Sperr-/Entsperrauftrag | -- | 2 |
+
+      | PI21040 | NB | MSB | Info Entsperrauftrag | -- | 3 |
+
+      | PI21039 | NB | LF | Auftragsstatus (Sperren) | -- | 4 |
+
+      | PI21039 | NB | MSB | Auftragsstatus (Sperren) | -- | 5 |
+
+      | PI21039 | NB | ÜNB | Auftragsstatus (Sperren) | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17117 Entsperrauftrag
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19116 Bestätigung Sperr-/Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19117 Ablehnung Sperr-/Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21040 Info Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21039 Auftragsstatus (Sperren)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21039 Auftragsstatus (Sperren)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21039 Auftragsstatus (Sperren)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17117'
+              - $ref: '#/components/schemas/PI19116'
+              - $ref: '#/components/schemas/PI19117'
+              - $ref: '#/components/schemas/PI21040'
+              - $ref: '#/components/schemas/PI21039'
+              - $ref: '#/components/schemas/PI21039'
+              - $ref: '#/components/schemas/PI21039'
+        description: ''
+    summary: Wiederherstellung_der_Anschlussnutzung_(Entsperren)_auf_Anweisung_des_LF
+    tags:
+    - GPKE Teil 2

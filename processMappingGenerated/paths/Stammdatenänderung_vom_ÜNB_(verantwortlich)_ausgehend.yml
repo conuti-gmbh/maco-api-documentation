@@ -1,0 +1,58 @@
+/Stammdatenänderung_vom_ÜNB_(verantwortlich)_ausgehend:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Änderung vom ÜNB an NB | ÜNB | NB | Hinweis: ÜNB ist aktuell für kein Stammdatum
+      verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | -- | 1 |
+
+      | → Rückmeldung auf Änderung | NB | ÜNB | Hinweis: ÜNB ist aktuell für kein
+      Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | --
+      | 2 |
+
+      | → Bearbeitungsstand zur Rückmeldung | ÜNB | NB | Hinweis: ÜNB ist aktuell
+      für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 3 |
+
+      | → Änderung vom ÜNB an LF | ÜNB | LF | Hinweis: ÜNB ist aktuell für kein Stammdatum
+      verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | -- | 4 |
+
+      | → Rückmeldung auf Änderung | LF | ÜNB | Hinweis: ÜNB ist aktuell für kein
+      Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | --
+      | 5 |
+
+      | → Bearbeitungsstand zur Rückmeldung | ÜNB | LF | Hinweis: ÜNB ist aktuell
+      für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 6 |
+
+      | → Änderung vom ÜNB an MSB | ÜNB | MSB | Hinweis: ÜNB ist aktuell für kein
+      Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | --
+      | 7 |
+
+      | → Rückmeldung auf Änderung | MSB | ÜNB | Hinweis: ÜNB ist aktuell für kein
+      Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut. | --
+      | 8 |
+
+      | → Bearbeitungsstand zur Rückmeldung | ÜNB | MSB | Hinweis: ÜNB ist aktuell
+      für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 9 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB | -- | -- | -- | 10 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Stammdatenänderung_vom_ÜNB_(verantwortlich)_ausgehend
+    tags:
+    - GPKE Teil 4

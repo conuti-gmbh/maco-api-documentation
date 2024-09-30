@@ -1,0 +1,30 @@
+PI13009:
+  description: "13009 NB\u2192LF Energiemenge (Gas)"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS, LESEN_NETZLOKATION_BASIS,
+        LESEN_TRANCHE_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_ENERGIEMENGE_ENERGIEMENGE
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: "R\xFCckgabe DAR falls notwendig"
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_ENERGIEMENGE
+      enum:
+      - NB
+      type: string
+  type: object

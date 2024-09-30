@@ -1,0 +1,30 @@
+/Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55063 | ÜNB | BKV | Deaktivierung von ZP | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55063 Deaktivierung von ZP
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55063'
+        description: ''
+    summary: Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV
+    tags:
+    - MaBiS

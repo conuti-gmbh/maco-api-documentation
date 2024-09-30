@@ -1,0 +1,29 @@
+PI44148:
+  description: "44148 NB\u2192MSB Anfrage an MSB mit Abh\xE4ngigkeiten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

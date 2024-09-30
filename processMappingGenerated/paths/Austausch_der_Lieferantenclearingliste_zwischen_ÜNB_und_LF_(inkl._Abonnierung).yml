@@ -1,0 +1,48 @@
+/Austausch_der_Lieferantenclearingliste_zwischen_ÜNB_und_LF_(inkl._Abonnierung):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17202 | LF | ÜNB | Anforder. Lieferantenclearingliste | -- | 1 |
+
+      | PI55065 | ÜNB | LF | Lieferantenclearingliste | -- | 2 |
+
+      | PI55066 | LF | ÜNB | Korrekturliste zu Lieferantenclearingliste | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17202 Anforder. Lieferantenclearingliste
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55065 Lieferantenclearingliste
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55066 Korrekturliste zu Lieferantenclearingliste
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17202'
+              - $ref: '#/components/schemas/PI55065'
+              - $ref: '#/components/schemas/PI55066'
+        description: ''
+    summary: Austausch_der_Lieferantenclearingliste_zwischen_ÜNB_und_LF_(inkl._Abonnierung)
+    tags:
+    - MaBiS

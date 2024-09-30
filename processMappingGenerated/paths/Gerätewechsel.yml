@@ -1,0 +1,92 @@
+/Gerätewechsel:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17009 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Anzeige Gerätewechselabsicht | -- | 1 |
+
+      | PI19015 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Bestätigung Gerätewechselabsicht  | -- | 2 |
+
+      | PI19016 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Ablehnung Gerätewechselabsicht  | -- | 2 |
+
+      | PI21010 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Statusmeldung | -- | 3 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB (entspricht
+      MSBN am Objekt Messlokation) | -- | -- | -- | 4 |
+
+      | PI13017 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Zählerstand (Strom) | -- | 5 |
+
+      | PI21036 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Statusmeldung | -- | 6 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSBN am Objekt Messlokation) | -- | -- | -- | 7 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSBA am Objekt Messlokation) | -- | -- | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17009 Anzeige Gerätewechselabsicht
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19015 Bestätigung Gerätewechselabsicht '
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19016 Ablehnung Gerätewechselabsicht '
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21010 Statusmeldung
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: LESEN_MARKTLOKATION_BASIS,
+                    LESEN_MESSLOKATIONS_BASIS, LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: Rückgabe
+                    DAR falls notwendig
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21036 Statusmeldung
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17009'
+              - $ref: '#/components/schemas/PI19015'
+              - $ref: '#/components/schemas/PI19016'
+              - $ref: '#/components/schemas/PI21010'
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI21036'
+        description: ''
+    summary: Gerätewechsel
+    tags:
+    - WiM Strom Teil 1

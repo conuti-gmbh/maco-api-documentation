@@ -1,0 +1,29 @@
+PI19006:
+  description: "19006 MSB\u2192LF Ablehnung Auftrag \xC4nderung Technik"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

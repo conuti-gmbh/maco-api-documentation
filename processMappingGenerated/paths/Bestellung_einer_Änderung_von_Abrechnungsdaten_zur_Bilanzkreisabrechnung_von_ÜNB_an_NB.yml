@@ -1,0 +1,54 @@
+/Bestellung_einer_Änderung_von_Abrechnungsdaten_zur_Bilanzkreisabrechnung_von_ÜNB_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55614 | ÜNB | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. verb. MaLo | --
+      | 1 |
+
+      | PI55675 | ÜNB | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. erz. Malo | --
+      | 1 |
+
+      | PI21047 | NB | ÜNB | Bearbeitungsstandsmeldung | -- | 2 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55614 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    verb. MaLo
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55675 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    erz. Malo
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55614'
+              - $ref: '#/components/schemas/PI55675'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Bestellung_einer_Änderung_von_Abrechnungsdaten_zur_Bilanzkreisabrechnung_von_ÜNB_an_NB
+    tags:
+    - GPKE Teil 2

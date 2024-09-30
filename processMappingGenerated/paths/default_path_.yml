@@ -1,0 +1,23 @@
+/default_path_:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → (manuelle Fehlerklärung) | -- | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

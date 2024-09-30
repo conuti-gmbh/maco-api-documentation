@@ -1,0 +1,41 @@
+/Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21004 | BIKO | BKV (des LF) | Statusmeldung | -- | 1 |
+
+      | PI21003 | BIKO | NB (ANB) | Statusmeldung | -- | 2 |
+
+      | → (Manuelle Fehlerklärung) | NB (ANB) | BKV (des LF) | Manuell | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BKV (des LF)] LESENDE API: ''
+                  AN [BKV (des LF)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21004 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB (ANB)] LESENDE API: ''
+                  AN [NB (ANB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21003 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21004'
+              - $ref: '#/components/schemas/PI21003'
+        description: ''
+    summary: Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)
+    tags:
+    - MaBiS

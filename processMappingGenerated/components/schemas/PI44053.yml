@@ -1,0 +1,29 @@
+PI44053:
+  description: "44053 NB\u2192MSBA Ablehnung Ende MSB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI17008:
+  description: "17008 ESA\u2192MSB Abbestellung von Werten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - ESA
+      type: string
+  type: object

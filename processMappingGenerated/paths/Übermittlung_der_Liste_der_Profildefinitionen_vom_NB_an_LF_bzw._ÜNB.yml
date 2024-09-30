@@ -1,0 +1,39 @@
+/Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_LF_bzw._ÜNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55073 | NB | LF | Übermittlung der Profildefinitionen | -- | 1 |
+
+      | PI55073 | NB | ÜNB | Übermittlung der Profildefinitionen | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55073 Übermittlung der Profildefinitionen
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55073 Übermittlung der Profildefinitionen
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55073'
+              - $ref: '#/components/schemas/PI55073'
+        description: ''
+    summary: Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_LF_bzw._ÜNB
+    tags:
+    - MaBiS

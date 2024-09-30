@@ -1,0 +1,51 @@
+/Kap._A_8:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44022 | Sender einer Stornierungsanfrage | Empfänger einer Stornierungsanfrage
+      | Anfrage nach Stornierung | -- |  |
+
+      | PI44023 | Empfänger einer Stornierungsanfrage | Sender einer Stornierungsanfrage
+      | Bestätigung Anfrage Stornierung | -- |  |
+
+      | PI44024 | Empfänger einer Stornierungsanfrage | Sender einer Stornierungsanfrage
+      | Ablehnung Anfrage Stornierung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [Empfänger einer Stornierungsanfrage] LESENDE API: ''
+                  AN [Empfänger einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44022 Anfrage nach Stornierung
+                  VON [Sender einer Stornierungsanfrage] LESENDE API: ''
+                  VON [Sender einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  VON [Sender einer Stornierungsanfrage] TRIGGER EVENT: ''
+                - AN [Sender einer Stornierungsanfrage] LESENDE API: ''
+                  AN [Sender einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44023 Bestätigung Anfrage Stornierung
+                  VON [Empfänger einer Stornierungsanfrage] LESENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage] TRIGGER EVENT: ''
+                - AN [Sender einer Stornierungsanfrage] LESENDE API: ''
+                  AN [Sender einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44024 Ablehnung Anfrage Stornierung
+                  VON [Empfänger einer Stornierungsanfrage] LESENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage] SCHREIBENDE API: ''
+                  VON [Empfänger einer Stornierungsanfrage] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44022'
+              - $ref: '#/components/schemas/PI44023'
+              - $ref: '#/components/schemas/PI44024'
+        description: ''
+    summary: Kap._A_8
+    tags:
+    - WiM Gas

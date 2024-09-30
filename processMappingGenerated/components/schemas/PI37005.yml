@@ -1,0 +1,30 @@
+PI37005:
+  description: "37005 \xDCNB\u2192NB \xDCbermittlung Kommunikationsdaten des \xDC\
+    NB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+  type: object

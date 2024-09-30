@@ -1,0 +1,30 @@
+PI21031:
+  description: "21031 MSB (entspricht wMSB am Objekt Messlokation)\u2192MSB (entspricht\
+    \ gMSB am Objekt Messlokation) Bestandss. / Eigenausbau iMS"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht gMSB am Objekt Messlokation)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht gMSB am Objekt Messlokation)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht wMSB am Objekt Messlokation)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht wMSB am Objekt Messlokation)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB (entspricht wMSB am Objekt Messlokation)
+      type: string
+  type: object

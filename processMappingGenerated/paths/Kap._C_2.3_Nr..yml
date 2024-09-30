@@ -1,0 +1,147 @@
+/Kap._C_2.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44013 | NB | E/G | Anmeldung EoG | -- |  |
+
+      | PI44014 | E/G | NB | Bestätigung EoG Anmeldung | -- |  |
+
+      | PI44015 | E/G | NB | Ablehnung EoG Anmeldung | -- |  |
+
+      | PI44019 | NB | LF | Bestandsliste zugeordnete Marktlokationen | -- |  |
+
+      | PI23001 | LF | MSB | Störungsmeldung | -- |  |
+
+      | PI23001 | NB | MSB | Störungsmeldung | -- |  |
+
+      | PI23003 | MSB | LF | Ablehnung | -- |  |
+
+      | PI23003 | MSB | NB | Ablehnung | -- |  |
+
+      | PI23004 | MSB | LF | Bestätigung | -- |  |
+
+      | PI23004 | MSB | NB | Bestätigung | -- |  |
+
+      | PI23005 | MSB | NB | Informationsmeldung | -- |  |
+
+      | PI23008 | MSB | LF | Ergebnisbericht | -- |  |
+
+      | PI23008 | MSB | NB | Ergebnisbericht | -- |  |
+
+      | PI23009 | MSB | NB | Informationsmeldung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [E/G] LESENDE API: ''
+                  AN [E/G] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44013 Anmeldung EoG
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44014 Bestätigung EoG Anmeldung
+                  VON [E/G] LESENDE API: ''
+                  VON [E/G] SCHREIBENDE API: ''
+                  VON [E/G] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44015 Ablehnung EoG Anmeldung
+                  VON [E/G] LESENDE API: ''
+                  VON [E/G] SCHREIBENDE API: ''
+                  VON [E/G] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44019 Bestandsliste zugeordnete Marktlokationen
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23001 Störungsmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23001 Störungsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23003 Ablehnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23003 Ablehnung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23004 Bestätigung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23004 Bestätigung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23005 Informationsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23008 Ergebnisbericht
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23008 Ergebnisbericht
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23009 Informationsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44013'
+              - $ref: '#/components/schemas/PI44014'
+              - $ref: '#/components/schemas/PI44015'
+              - $ref: '#/components/schemas/PI44019'
+              - $ref: '#/components/schemas/PI23001'
+              - $ref: '#/components/schemas/PI23001'
+              - $ref: '#/components/schemas/PI23003'
+              - $ref: '#/components/schemas/PI23003'
+              - $ref: '#/components/schemas/PI23004'
+              - $ref: '#/components/schemas/PI23004'
+              - $ref: '#/components/schemas/PI23005'
+              - $ref: '#/components/schemas/PI23008'
+              - $ref: '#/components/schemas/PI23008'
+              - $ref: '#/components/schemas/PI23009'
+        description: ''
+    summary: Kap._C_2.3_Nr.
+    tags:
+    - GeLi Gas

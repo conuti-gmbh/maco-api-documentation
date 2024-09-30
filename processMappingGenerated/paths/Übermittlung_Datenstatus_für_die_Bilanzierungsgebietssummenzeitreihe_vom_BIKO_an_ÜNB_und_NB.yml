@@ -1,0 +1,41 @@
+/Übermittlung_Datenstatus_für_die_Bilanzierungsgebietssummenzeitreihe_vom_BIKO_an_ÜNB_und_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21004 | BIKO | NB | Statusmeldung | -- | 1 |
+
+      | PI21003 | BIKO | ÜNB | Statusmeldung | -- | 2 |
+
+      | → manuelle Fehlerklärung | ÜNB | NB | -- | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21004 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21003 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21004'
+              - $ref: '#/components/schemas/PI21003'
+        description: ''
+    summary: Übermittlung_Datenstatus_für_die_Bilanzierungsgebietssummenzeitreihe_vom_BIKO_an_ÜNB_und_NB
+    tags:
+    - MaBiS

@@ -1,0 +1,70 @@
+/Übermittlung_des_Lieferscheins_zur_Netznutzungsabrechnung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13016 | NB | LF | Energiemenge u. Leistungsmax. (Strom) | -- | 1 |
+
+      | PI13019 | NB | LF | Energiemenge (Strom) | -- | 1 |
+
+      | PI21035 | LF | NB | Rückmeld. a. Liefers. | -- | 2 |
+
+      | PI29002 | NB | LF | Ablehnung IFTSTA | -- | 3 |
+
+      | PI13006 | NB | LF | Messwert Storno | -- | 4 |
+
+      | → ref Netznutzungsabrechnung | NB | -- | -- | -- | 5 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13016 Energiemenge u. Leistungsmax. (Strom)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13019 Energiemenge (Strom)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21035 Rückmeld. a. Liefers.
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI29002 Ablehnung IFTSTA
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13016'
+              - $ref: '#/components/schemas/PI13019'
+              - $ref: '#/components/schemas/PI21035'
+              - $ref: '#/components/schemas/PI29002'
+              - $ref: '#/components/schemas/PI13006'
+        description: ''
+    summary: Übermittlung_des_Lieferscheins_zur_Netznutzungsabrechnung
+    tags:
+    - GPKE Teil 2

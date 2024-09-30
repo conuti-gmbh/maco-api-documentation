@@ -1,0 +1,30 @@
+/Ermittlung_der_MaLo-ID_der_Marktlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Ermittlung der MaLo-ID der Marktlokation | LF | NB | /maloID/anfrage/ |
+      -- | 1 |
+
+      | → Rückmeldung auf Anfrage | NB | LF | /maloId/dataForMarketLocationNegative/
+      | -- | 2 |
+
+      | → Rückmeldung auf Anfrage | NB | LF | /maloId/dataForMarketLocationPositive/
+      | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Ermittlung_der_MaLo-ID_der_Marktlokation
+    tags:
+    - GPKE Teil 2

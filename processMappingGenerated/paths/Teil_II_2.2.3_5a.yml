@@ -1,0 +1,30 @@
+/Teil_II_2.2.3_5a:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44112 | NB | LF | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44112 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44112'
+        description: ''
+    summary: Teil_II_2.2.3_5a
+    tags:
+    - Marktraumumstellung

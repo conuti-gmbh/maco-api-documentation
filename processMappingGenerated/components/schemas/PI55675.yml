@@ -1,0 +1,30 @@
+PI55675:
+  description: "55675 \xDCNB\u2192NB R\xFCckmeldung/Anfrage Abr.-Daten BK-Abr. erz.\
+    \ Malo"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI17001:
+  description: "17001 MSBN\u2192MSBA Bestellung Ger\xE4te\xFCbernahmeangebot"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+  type: object

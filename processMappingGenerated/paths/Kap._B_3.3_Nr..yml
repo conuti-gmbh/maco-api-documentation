@@ -1,0 +1,214 @@
+/Kap._B_3.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44001 | LF | NB | Anmeldung NN | -- |  |
+
+      | PI44036 | NB | LFN | Informationsmeldung über existierende Zuordnung | --
+      |  |
+
+      | PI44010 | NB | LF | Abmeldungsanfrage des NB | -- |  |
+
+      | PI44011 | LF | NB | Bestätigung Abmeldungsanfrage | -- |  |
+
+      | PI44012 | LF | NB | Ablehnung Abmeldungsanfrage | -- |  |
+
+      | PI44037 | NB | LFA | Informationsmeldung zur Beendigung der Zuordnung | --
+      |  |
+
+      | PI44003 | NB | LF | Ablehnung Anmeldung | -- |  |
+
+      | PI44002 | NB | LF | Bestätigung Anmeldung | -- |  |
+
+      | PI44019 | NB | LF | Bestandsliste zugeordnete Marktlokationen | -- |  |
+
+      | PI44042 | MSBN | NB | Anmeldung MSB | -- |  |
+
+      | PI21012 | NB | MSBN | Statusmeldung | -- |  |
+
+      | PI21013 | NB | MSBA | Statusmeldung | -- |  |
+
+      | PI21015 | NB | MSBA | Informationsmeldung | -- |  |
+
+      | PI44112 | NB | LF | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      | PI44044 | NB | MSBN | Ablehnung Anmeldung MSB | -- |  |
+
+      | PI44043 | NB | MSBN | Bestätigung Anmeldung MSB | -- |  |
+
+      | PI21007 | NB | MSBA | Statusmeldung | -- |  |
+
+      | PI21009 | MSBN | NB | Statusmeldung | -- |  |
+
+      | PI21010 | MSBN | NB | Statusmeldung | -- |  |
+
+      | PI21013 | NB | MSBN | Statusmeldung | -- |  |
+
+      | PI21011 | NB | MSBN | Statusmeldung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44001 Anmeldung NN
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44036 Informationsmeldung über existierende
+                    Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44010 Abmeldungsanfrage des NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44011 Bestätigung Abmeldungsanfrage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44012 Ablehnung Abmeldungsanfrage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LFA] LESENDE API: ''
+                  AN [LFA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44037 Informationsmeldung zur Beendigung der
+                    Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44003 Ablehnung Anmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44002 Bestätigung Anmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44019 Bestandsliste zugeordnete Marktlokationen
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44042 Anmeldung MSB
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21012 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21015 Informationsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44112 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44044 Ablehnung Anmeldung MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44043 Bestätigung Anmeldung MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21007 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21009 Statusmeldung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21010 Statusmeldung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21013 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21011 Statusmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44001'
+              - $ref: '#/components/schemas/PI44036'
+              - $ref: '#/components/schemas/PI44010'
+              - $ref: '#/components/schemas/PI44011'
+              - $ref: '#/components/schemas/PI44012'
+              - $ref: '#/components/schemas/PI44037'
+              - $ref: '#/components/schemas/PI44003'
+              - $ref: '#/components/schemas/PI44002'
+              - $ref: '#/components/schemas/PI44019'
+              - $ref: '#/components/schemas/PI44042'
+              - $ref: '#/components/schemas/PI21012'
+              - $ref: '#/components/schemas/PI21013'
+              - $ref: '#/components/schemas/PI21015'
+              - $ref: '#/components/schemas/PI44112'
+              - $ref: '#/components/schemas/PI44044'
+              - $ref: '#/components/schemas/PI44043'
+              - $ref: '#/components/schemas/PI21007'
+              - $ref: '#/components/schemas/PI21009'
+              - $ref: '#/components/schemas/PI21010'
+              - $ref: '#/components/schemas/PI21013'
+              - $ref: '#/components/schemas/PI21011'
+        description: ''
+    summary: Kap._B_3.3_Nr.
+    tags:
+    - GeLi Gas

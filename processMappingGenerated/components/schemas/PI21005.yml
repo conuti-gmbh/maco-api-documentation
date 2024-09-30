@@ -1,0 +1,29 @@
+PI21005:
+  description: "21005 NB\u2192BIKO Statusmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

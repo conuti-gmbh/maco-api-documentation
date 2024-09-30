@@ -1,0 +1,31 @@
+PI55078:
+  description: "55078 NB\u2192LFN Best\xE4tigung Anmeldung erz. MaLo"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS, LESEN_NETZLOKATION_BASIS,
+        LESEN_TRANCHE_BASIS, LESEN_ZAEHLER_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS,
+        LESEN_NETZNUTZUNGSVERTRAG_BASIS, LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS, LESEN_LOKATIONSBUENDEL_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

@@ -1,0 +1,48 @@
+/Stammdaten_zur_Bilanzkreistreue:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55670 | NB | ÜNB | Stammdaten BK-Treue | x | 1 |
+
+      | PI55671 | ÜNB | NB | Rückmeldung auf Stammdaten BK-Treue | 55670 | 2 |
+
+      | PI21047 | NB | ÜNB | Bearbeitungsstandsmeldung | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55670 Stammdaten BK-Treue
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55671 Rückmeldung auf Stammdaten BK-Treue
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55670'
+              - $ref: '#/components/schemas/PI55671'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Stammdaten_zur_Bilanzkreistreue
+    tags:
+    - GPKE Teil 4

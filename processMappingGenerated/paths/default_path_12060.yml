@@ -1,0 +1,32 @@
+/default_path_12060:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13013 | NB | LF | Marktlokationsscharfe Allokationsliste Gas (MMMA) | --
+      | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13013 Marktlokationsscharfe Allokationsliste
+                    Gas (MMMA)
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13013'
+        description: ''
+    summary: default_path_12060
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

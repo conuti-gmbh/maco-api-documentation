@@ -1,0 +1,132 @@
+/Netznutzungsabrechnung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31001 | NB | LF | Abschlagsrechnung | -- | 1 |
+
+      | PI31002 | NB | LF | NN-Rechnung | -- | 1 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 2 |
+
+      | PI33003 | LF | NB | Strom Abweisung Kopf und Summe | -- | 2 |
+
+      | PI33004 | LF | NB | Strom Abweisung Position | -- | 2 |
+
+      | PI29001 | NB | LF | Ablehnung REMADV | -- | 3 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 4 |
+
+      | PI33003 | LF | NB | Strom Abweisung Kopf und Summe | -- | 4 |
+
+      | PI33004 | LF | NB | Strom Abweisung Position | -- | 4 |
+
+      | PI31004 | NB | LF | Stornorechnung  | -- | 5 |
+
+      | PI33001 | LF | NB | Bestätigung | -- | 6 |
+
+      | PI33002 | LF | NB | Abweisung | -- | 6 |
+
+      | → ref Übermittlung des Lieferscheins zur Netznutzungsabrechnung | NB | --
+      | -- | -- | 7 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31001 Abschlagsrechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31002 NN-Rechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI29001 Ablehnung REMADV
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI31004 Stornorechnung '
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31001'
+              - $ref: '#/components/schemas/PI31002'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI29001'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Netznutzungsabrechnung
+    tags:
+    - GPKE Teil 2

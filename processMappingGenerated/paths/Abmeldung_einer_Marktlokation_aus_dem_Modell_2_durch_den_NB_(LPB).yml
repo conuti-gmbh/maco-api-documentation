@@ -1,0 +1,44 @@
+/Abmeldung_einer_Marktlokation_aus_dem_Modell_2_durch_den_NB_(LPB):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55242 | NB (LPB) | NB (VNB) | Abmeldung aus dem Modell 2 | -- | 1 |
+
+      | PI55243 | NB (VNB) | NB (LPB) | Antwort auf Abmeldung | -- | 2 |
+
+      | → ref. Stammdatenänderung vom NB (verantwortlich) ausgehend | NB (VNB) | --
+      | -- | -- | 3 |
+
+      | → ref. Beginn der Ersatz-/ Grundversorgung | NB (VNB) | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (VNB)] LESENDE API: ''
+                  AN [NB (VNB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55242 Abmeldung aus dem Modell 2
+                  VON [NB (LPB)] LESENDE API: ''
+                  VON [NB (LPB)] SCHREIBENDE API: ''
+                  VON [NB (LPB)] TRIGGER EVENT: ''
+                - AN [NB (LPB)] LESENDE API: ''
+                  AN [NB (LPB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55243 Antwort auf Abmeldung
+                  VON [NB (VNB)] LESENDE API: ''
+                  VON [NB (VNB)] SCHREIBENDE API: ''
+                  VON [NB (VNB)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55242'
+              - $ref: '#/components/schemas/PI55243'
+        description: ''
+    summary: Abmeldung_einer_Marktlokation_aus_dem_Modell_2_durch_den_NB_(LPB)
+    tags:
+    - AWH Modell 2 ladev.scharf., bila., Energie.zuord.möglichkeit

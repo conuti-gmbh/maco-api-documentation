@@ -1,0 +1,48 @@
+/Bestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_die_Ebene_der_Regelzone:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17207 | BKV | ÜNB | Ab-/Bestellung BK-SZR auf Aggregationsebene RZ | --
+      | 1 |
+
+      | PI19204 | ÜNB | BKV | Ablehnung Ab-/Bestellung der Aggregationsebene | --
+      | 2 |
+
+      | → ref: Aktivierung eines MaBiS-Zählpunkts für die Bilanzkreissummenzeitreihe
+      vom ÜNB an BIKO und BKV | ÜNB | -- | -- | -- | 3 |
+
+      | → ref: Aktivierung eines MaBiS-Zählpunkts für die Lieferantensummenzeitreihe
+      vom ÜNB an LF | ÜNB | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17207 Ab-/Bestellung BK-SZR auf Aggregationsebene
+                    RZ
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19204 Ablehnung Ab-/Bestellung der Aggregationsebene
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17207'
+              - $ref: '#/components/schemas/PI19204'
+        description: ''
+    summary: Bestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_die_Ebene_der_Regelzone
+    tags:
+    - MaBiS

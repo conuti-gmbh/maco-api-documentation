@@ -1,0 +1,87 @@
+/Bestellung_einer_Konfiguration_vom_LF_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17123 | LF | NB | Bestellung Änderung Zählzeitdefinition | x | 1 |
+
+      | PI17120 | LF | NB | Bestellung Änderung Prognosegrundlage | x | 1 |
+
+      | PI19121 | NB | LF | Mitteilung zur Änderung Prognosegrundlage | 17120 | 2
+      |
+
+      | PI19124 | NB | LF | Mitteilung zur Änderung Zählzeitdefinition | 17123 | 2
+      |
+
+      | → ref Bestellung einer Konfiguration vom NB an MSB | NB | -- | -- | -- | 3
+      |
+
+      | PI21043 | NB | LF | Bestellungsantwort / -mitteilung | -- | 4 |
+
+      | PI21043 | NB | LF | Bestellungsantwort / -mitteilung | -- | 5 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 6 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 7 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17123 Bestellung Änderung Zählzeitdefinition
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17120 Bestellung Änderung Prognosegrundlage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19121 Mitteilung zur Änderung Prognosegrundlage
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19124 Mitteilung zur Änderung Zählzeitdefinition
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21043 Bestellungsantwort / -mitteilung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21043 Bestellungsantwort / -mitteilung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17123'
+              - $ref: '#/components/schemas/PI17120'
+              - $ref: '#/components/schemas/PI19121'
+              - $ref: '#/components/schemas/PI19124'
+              - $ref: '#/components/schemas/PI21043'
+              - $ref: '#/components/schemas/PI21043'
+        description: ''
+    summary: Bestellung_einer_Konfiguration_vom_LF_an_NB
+    tags:
+    - GPKE Teil 3

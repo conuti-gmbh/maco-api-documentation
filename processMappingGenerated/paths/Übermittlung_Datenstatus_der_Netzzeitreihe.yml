@@ -1,0 +1,39 @@
+/Übermittlung_Datenstatus_der_Netzzeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21004 | BIKO | NB (verantwortlicher NB) | Statusmeldung | -- | 1 |
+
+      | PI21004 | BIKO | NB (benachbarter NB) | Statusmeldung | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (verantwortlicher NB)] LESENDE API: ''
+                  AN [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21004 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB (benachbarter NB)] LESENDE API: ''
+                  AN [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21004 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21004'
+              - $ref: '#/components/schemas/PI21004'
+        description: ''
+    summary: Übermittlung_Datenstatus_der_Netzzeitreihe
+    tags:
+    - MaBiS

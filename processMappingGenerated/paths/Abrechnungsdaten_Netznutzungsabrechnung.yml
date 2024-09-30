@@ -1,0 +1,51 @@
+/Abrechnungsdaten_Netznutzungsabrechnung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55218 | NB | LF | Abr.-Daten NNA | x | 1 |
+
+      | PI55220 | LF | NB | Rückmeldung/Anfrage Abr.-Daten NNA | 55218 | 2 |
+
+      | PI21047 | NB | LF | Bearbeitungsstandsmeldung | -- | 3 |
+
+      | → ref Übermittlung der bisher gemessenen Arbeits- und Leistungswerte | NB
+      | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55218 Abr.-Daten NNA
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55220 Rückmeldung/Anfrage Abr.-Daten NNA
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55218'
+              - $ref: '#/components/schemas/PI55220'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Abrechnungsdaten_Netznutzungsabrechnung
+    tags:
+    - GPKE Teil 2

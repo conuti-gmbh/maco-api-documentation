@@ -1,0 +1,30 @@
+PI15002:
+  description: "15002 MSB (entspricht MSB am Objekt Marktlokation)\u2192LF Angebot\
+    \ Abrechnung Messstellenbetrieb MSB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht MSB am Objekt Marktlokation)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht MSB am Objekt Marktlokation)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB (entspricht MSB am Objekt Marktlokation)
+      type: string
+  type: object

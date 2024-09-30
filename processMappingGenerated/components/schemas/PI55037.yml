@@ -1,0 +1,30 @@
+PI55037:
+  description: "55037 NB\u2192LFA Beendigung der Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_MARKTLOKATION_BASIS, AKTUALISIEREN_NETZNUTZUNGSVERTRAG_BASIS,
+        AKTUALISIEREN_BILANZIERUNG_BASIS
+      enum:
+      - LFA
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI55655:
+  description: "55655 LF\u2192MSB R\xFCckmeldung/Anfrage Daten der MaLo "
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LF
+      type: string
+  type: object

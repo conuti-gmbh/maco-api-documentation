@@ -1,0 +1,29 @@
+PI55177:
+  description: "55177 MSB\u2192NB R\xFCckmeldung/Anfrage Lokationsb\xFCndelstruktur"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

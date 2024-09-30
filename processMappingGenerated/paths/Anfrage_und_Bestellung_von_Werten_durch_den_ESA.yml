@@ -1,0 +1,104 @@
+/Anfrage_und_Bestellung_von_Werten_durch_den_ESA:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI35003 | ESA | MSB | Anfrage von Werten | -- | 1 |
+
+      | PI15003 | MSB | ESA | Angebot zur Anfrage von Werten | -- | 2 |
+
+      | PI21033 | MSB | ESA | Ablehnung der Anfrage | -- | 2 |
+
+      | PI17007 | ESA | MSB | Bestellung von Werten | -- | 3 |
+
+      | PI19011 | MSB | ESA | Bestätigung der Ab-/Bestellung von Werten | -- | 4 |
+
+      | PI19012 | MSB | ESA | Ablehnung der Ab-/Bestellung von Werten | -- | 4 |
+
+      | PI39002 | ESA | MSB | Stornierung der Bestellung | -- | 5 |
+
+      | PI19013 | MSB | ESA | Bestätigung der Stornierung einer Bestellung | -- |
+      6 |
+
+      | PI19014 | MSB | ESA | Ablehnung der Stornierung einer Bestellung | -- | 6
+      |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI35003 Anfrage von Werten
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI15003 Angebot zur Anfrage von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21033 Ablehnung der Anfrage
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17007 Bestellung von Werten
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19011 Bestätigung der Ab-/Bestellung von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19012 Ablehnung der Ab-/Bestellung von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI39002 Stornierung der Bestellung
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19013 Bestätigung der Stornierung einer Bestellung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19014 Ablehnung der Stornierung einer Bestellung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI35003'
+              - $ref: '#/components/schemas/PI15003'
+              - $ref: '#/components/schemas/PI21033'
+              - $ref: '#/components/schemas/PI17007'
+              - $ref: '#/components/schemas/PI19011'
+              - $ref: '#/components/schemas/PI19012'
+              - $ref: '#/components/schemas/PI39002'
+              - $ref: '#/components/schemas/PI19013'
+              - $ref: '#/components/schemas/PI19014'
+        description: ''
+    summary: Anfrage_und_Bestellung_von_Werten_durch_den_ESA
+    tags:
+    - WiM Strom Teil 2

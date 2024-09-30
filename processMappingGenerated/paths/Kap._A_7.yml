@@ -1,0 +1,39 @@
+/Kap._A_7:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44020 | LF | NB | Änderungsmeldung zur Bestandsliste | -- |  |
+
+      | PI44021 | NB | LF | Antwort auf Änderungsmeldung zur Bestandsliste | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44020 Änderungsmeldung zur Bestandsliste
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44021 Antwort auf Änderungsmeldung zur Bestandsliste
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44020'
+              - $ref: '#/components/schemas/PI44021'
+        description: ''
+    summary: Kap._A_7
+    tags:
+    - GeLi Gas

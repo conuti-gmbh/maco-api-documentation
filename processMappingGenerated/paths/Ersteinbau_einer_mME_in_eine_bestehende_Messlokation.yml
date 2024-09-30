@@ -1,0 +1,31 @@
+/Ersteinbau_einer_mME_in_eine_bestehende_Messlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21029 | MSB (entspricht gMSB am Objekt Messlokation) | LF | Vorabinformation
+      | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21029 Vorabinformation
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21029'
+        description: ''
+    summary: Ersteinbau_einer_mME_in_eine_bestehende_Messlokation
+    tags:
+    - WiM Strom Teil 1

@@ -1,0 +1,40 @@
+/Reklamation_einer_Konfiguration_vom_NB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17128 | NB | MSB | Reklamation einer Konfiguration | -- | 1 |
+
+      | PI19130 | MSB | NB | Bearbeitungsstand Reklamation Konfiguration | -- | 2
+      |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17128 Reklamation einer Konfiguration
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19130 Bearbeitungsstand Reklamation Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17128'
+              - $ref: '#/components/schemas/PI19130'
+        description: ''
+    summary: Reklamation_einer_Konfiguration_vom_NB_an_MSB
+    tags:
+    - GPKE Teil 3

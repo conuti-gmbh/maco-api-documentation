@@ -1,0 +1,103 @@
+/Lieferende_von_NB_an_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55007 | NB | LF | Abmeldung / Beendigung der Zuordnung | -- | 1 |
+
+      | PI55008 | LF | NB | Bestätigung Abmeldung | -- | 2 |
+
+      | PI55009 | LF | NB | Ablehnung Abmeldung | -- | 2 |
+
+      | PI55007 | NB | LF | Abmeldung / Beendigung der Zuordnung | -- | 3 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 4 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 5 |
+
+      | → ref Beginn der Ersatz-/Grundversorgung | NB | -- | -- | -- | 6 |
+
+      | → ref Herstellung einer 100% LF-Zuordnung zu einer erzeugenden Marktlokation
+      | NB | -- | -- | -- | 7 |
+
+      | PI55038 | NB | LFZ | Aufhebung einer zuk. Zuordnung | -- | 8 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 9 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 10 |
+
+      | PI55611 | NB | MSB | Beendigung der Zuordnung | -- | 11 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB | -- | -- | -- | 12 |
+
+      | PI55611 | NB | MSBZ | Beendigung der Zuordnung | -- | 13 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 14 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55007 Abmeldung / Beendigung der Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55008 Bestätigung Abmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55009 Ablehnung Abmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55007 Abmeldung / Beendigung der Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFZ] LESENDE API: ''
+                  AN [LFZ] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55038 Aufhebung einer zuk. Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55611 Beendigung der Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBZ] LESENDE API: ''
+                  AN [MSBZ] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55611 Beendigung der Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55007'
+              - $ref: '#/components/schemas/PI55008'
+              - $ref: '#/components/schemas/PI55009'
+              - $ref: '#/components/schemas/PI55007'
+              - $ref: '#/components/schemas/PI55038'
+              - $ref: '#/components/schemas/PI55611'
+              - $ref: '#/components/schemas/PI55611'
+        description: ''
+    summary: Lieferende_von_NB_an_LF
+    tags:
+    - GPKE Teil 2

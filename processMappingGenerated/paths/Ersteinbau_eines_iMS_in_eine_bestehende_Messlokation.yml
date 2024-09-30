@@ -1,0 +1,110 @@
+/Ersteinbau_eines_iMS_in_eine_bestehende_Messlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21029 | MSB (entspricht gMSB am Objekt Messlokation) | MSB (entspricht wMSB
+      am Objekt Messlokation) | Vorabinformation | -- | 1 |
+
+      | PI21030 | MSB (entspricht wMSB am Objekt Messlokation) | MSB (entspricht gMSB
+      am Objekt Messlokation) | iMS-Ersteinbauzust. | -- | 2 |
+
+      | PI21031 | MSB (entspricht wMSB am Objekt Messlokation) | MSB (entspricht gMSB
+      am Objekt Messlokation) | Bestandss. / Eigenausbau iMS | -- | 2 |
+
+      | PI21029 | MSB (entspricht gMSB am Objekt Messlokation) | LF | Vorabinformation
+      | -- | 3 |
+
+      | PI21029 | MSB (entspricht gMSB am Objekt Messlokation) | NB | Vorabinformation
+      | -- | 4 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB (entspricht
+      wMSB am Objekt Messlokation) | -- | -- | -- | 5 |
+
+      | PI21027 | MSB (entspricht wMSB am Objekt Messlokation) | MSB (entspricht gMSB
+      am Objekt Messlokation) | Statusmeldung | -- | 6 |
+
+      | → ref Beginn Messstellenbetrieb | MSB (entspricht gMSB am Objekt Messlokation)
+      | -- | -- | -- | 7 |
+
+      | → ref Beginn Messstellenbetrieb | MSB (entspricht gMSB am Objekt Messlokation)
+      | -- | -- | -- | 8 |
+
+      | PI21025 | MSB (entspricht gMSB am Objekt Messlokation) | LF | Statusmeldung
+      | -- | 9 |
+
+      | PI21027 | MSB (entspricht gMSB am Objekt Messlokation) | NB | Statusmeldung
+      | -- | 10 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht wMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht wMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21029 Vorabinformation
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21030 iMS-Ersteinbauzust.
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21031 Bestandss. / Eigenausbau iMS
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21029 Vorabinformation
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21029 Vorabinformation
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21027 Statusmeldung
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht wMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21025 Statusmeldung
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21027 Statusmeldung
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21029'
+              - $ref: '#/components/schemas/PI21030'
+              - $ref: '#/components/schemas/PI21031'
+              - $ref: '#/components/schemas/PI21029'
+              - $ref: '#/components/schemas/PI21029'
+              - $ref: '#/components/schemas/PI21027'
+              - $ref: '#/components/schemas/PI21025'
+              - $ref: '#/components/schemas/PI21027'
+        description: ''
+    summary: Ersteinbau_eines_iMS_in_eine_bestehende_Messlokation
+    tags:
+    - WiM Strom Teil 1

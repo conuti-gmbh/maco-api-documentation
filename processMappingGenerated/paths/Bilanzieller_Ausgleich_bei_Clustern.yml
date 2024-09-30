@@ -1,0 +1,25 @@
+/Bilanzieller_Ausgleich_bei_Clustern:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Ausgleichsfahrplan | BKV (anf NB) | ÜNB | -- | -- | 1 |
+
+      | → Ausgleichsfahrplan | BKV (clusternder NB) | ÜNB | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Bilanzieller_Ausgleich_bei_Clustern
+    tags:
+    - MaBiS

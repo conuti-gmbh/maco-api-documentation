@@ -1,0 +1,27 @@
+/Wechsel_des_Bilanzierungsmodells:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → (Neues Bilanzierungsmodell) | EIV | NB (ANB) | Manuell | -- | 1 |
+
+      | → (Bestätigung) | NB (ANB) | EIV | Manuell | -- | 2 |
+
+      | → (Ablehnung) | NB (ANB) | EIV | Manuell | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Wechsel_des_Bilanzierungsmodells
+    tags:
+    - Kommunikationsprozesse Redispatch

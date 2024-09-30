@@ -1,0 +1,29 @@
+PI55666:
+  description: "55666 weiterer MSB\u2192MSB R\xFCckmeldung/Anfrage Daten der SR"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - weiterer MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - weiterer MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - weiterer MSB
+      type: string
+  type: object

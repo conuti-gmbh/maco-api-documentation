@@ -1,0 +1,29 @@
+PI55687:
+  description: "55687 \xDCNB\u2192MSB R\xFCckmeldung/Anfrage Daten der Tranche"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+  type: object

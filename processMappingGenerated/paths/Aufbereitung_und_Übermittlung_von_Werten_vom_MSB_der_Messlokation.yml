@@ -1,0 +1,48 @@
+/Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Messlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13017 | MSB (entspricht dem MSB am Objekt Messlokation) | MSB (entspricht
+      dem MSB am Objekt Marktlokation) | Zählerstand (Strom) | -- | 1 |
+
+      | PI13018 | MSB (entspricht dem MSB am Objekt Messlokation) | MSB (entspricht
+      dem MSB am Objekt Marktlokation) | Lastgang Messlokation, Netzkoppelpunkt, Netzlokation
+      | -- | 1 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Marktlokation |
+      MSB (entspricht dem MSB am Objekt Marktlokation) | -- | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: LESEN_MARKTLOKATION_BASIS,
+                    LESEN_MESSLOKATIONS_BASIS, LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] SCHREIBENDE API: Rückgabe
+                    DAR falls notwendig
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI13018'
+        description: ''
+    summary: Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Messlokation
+    tags:
+    - WiM Strom Teil 2

@@ -1,0 +1,256 @@
+/Bestellung_zur_Stammdatenänderung_an_MSB_(verantwortlich):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55559 | NB | MSB | Rückmeldung/Anfrage MSB-Abr.-Daten der MaLo | -- | 1
+      |
+
+      | PI55555 | NB | MSB | Anfrage Daten der individuellen Bestellung | -- | 1 |
+
+      | PI55644 | NB | MSB | Rückmeldung/Anfrage Daten der NeLo | -- | 1 |
+
+      | PI55645 | NB | MSB | Rückmeldung/Anfrage Daten der MaLo  | -- | 1 |
+
+      | PI55646 | NB | MSB | Rückmeldung/Anfrage Daten der SR | -- | 1 |
+
+      | PI55647 | NB | MSB | Rückmeldung/Anfrage Daten der Tranche | -- | 1 |
+
+      | PI55648 | NB | MSB | Rückmeldung/Anfrage Daten der MeLo | -- | 1 |
+
+      | PI21047 | MSB | NB | Bearbeitungsstandsmeldung | -- | 2 |
+
+      | PI55654 | LF | MSB | Rückmeldung/Anfrage Daten der NeLo | -- | 3 |
+
+      | PI55555 | LF | MSB | Anfrage Daten der individuellen Bestellung | -- | 3 |
+
+      | PI55655 | LF | MSB | Rückmeldung/Anfrage Daten der MaLo  | -- | 3 |
+
+      | PI55656 | LF | MSB | Rückmeldung/Anfrage Daten der SR | -- | 3 |
+
+      | PI55657 | LF | MSB | Rückmeldung/Anfrage Daten der Tranche | -- | 3 |
+
+      | PI55658 | LF | MSB | Rückmeldung/Anfrage Daten der MeLo | -- | 3 |
+
+      | PI21047 | MSB | LF | Bearbeitungsstandsmeldung | -- | 4 |
+
+      | PI55664 | weiterer MSB | MSB | Rückmeldung/Anfrage Daten der NeLo | -- | 5
+      |
+
+      | PI55555 | weiterer MSB | MSB | Anfrage Daten der individuellen Bestellung
+      | -- | 5 |
+
+      | PI55665 | weiterer MSB | MSB | Rückmeldung/Anfrage Daten der MaLo | -- | 5
+      |
+
+      | PI55666 | weiterer MSB | MSB | Rückmeldung/Anfrage Daten der SR | -- | 5 |
+
+      | PI55667 | weiterer MSB | MSB | Rückmeldung/Anfrage Daten der Tranche | --
+      | 5 |
+
+      | PI55669 | weiterer MSB | MSB | Rückmeldung/Anfrage Daten der MeLo | -- | 5
+      |
+
+      | PI21047 | MSB | weiterer MSB | Bearbeitungsstandsmeldung | -- | 6 |
+
+      | PI55685 | ÜNB | MSB | Rückmeldung/Anfrage Daten der MaLo  | -- | 7 |
+
+      | PI55687 | ÜNB | MSB | Rückmeldung/Anfrage Daten der Tranche | -- | 7 |
+
+      | PI21047 | MSB | ÜNB | Bearbeitungsstandsmeldung | -- | 8 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB | -- | --
+      | -- | 9 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55559 Rückmeldung/Anfrage MSB-Abr.-Daten der
+                    MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55555 Anfrage Daten der individuellen Bestellung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55644 Rückmeldung/Anfrage Daten der NeLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55645 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55646 Rückmeldung/Anfrage Daten der SR
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55647 Rückmeldung/Anfrage Daten der Tranche
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55648 Rückmeldung/Anfrage Daten der MeLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55654 Rückmeldung/Anfrage Daten der NeLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55555 Anfrage Daten der individuellen Bestellung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55655 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55656 Rückmeldung/Anfrage Daten der SR
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55657 Rückmeldung/Anfrage Daten der Tranche
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55658 Rückmeldung/Anfrage Daten der MeLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55664 Rückmeldung/Anfrage Daten der NeLo
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55555 Anfrage Daten der individuellen Bestellung
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55665 Rückmeldung/Anfrage Daten der MaLo
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55666 Rückmeldung/Anfrage Daten der SR
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55667 Rückmeldung/Anfrage Daten der Tranche
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55669 Rückmeldung/Anfrage Daten der MeLo
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55685 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55687 Rückmeldung/Anfrage Daten der Tranche
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55559'
+              - $ref: '#/components/schemas/PI55555'
+              - $ref: '#/components/schemas/PI55644'
+              - $ref: '#/components/schemas/PI55645'
+              - $ref: '#/components/schemas/PI55646'
+              - $ref: '#/components/schemas/PI55647'
+              - $ref: '#/components/schemas/PI55648'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55654'
+              - $ref: '#/components/schemas/PI55555'
+              - $ref: '#/components/schemas/PI55655'
+              - $ref: '#/components/schemas/PI55656'
+              - $ref: '#/components/schemas/PI55657'
+              - $ref: '#/components/schemas/PI55658'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55664'
+              - $ref: '#/components/schemas/PI55555'
+              - $ref: '#/components/schemas/PI55665'
+              - $ref: '#/components/schemas/PI55666'
+              - $ref: '#/components/schemas/PI55667'
+              - $ref: '#/components/schemas/PI55669'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55685'
+              - $ref: '#/components/schemas/PI55687'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Bestellung_zur_Stammdatenänderung_an_MSB_(verantwortlich)
+    tags:
+    - GPKE Teil 4

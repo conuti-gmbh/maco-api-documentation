@@ -1,0 +1,35 @@
+/Abruf_im_Aufforderungsfall_mit_Delta-/Sollwertanweisung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → RD-Abruf | NB (anweisender NB) | DP | -- | -- | 1 |
+
+      | → Weiterleitung RD-Abruf | DP | EIV | -- | -- | 2 |
+
+      | → ref Übermittlung von, Planungsdaten im, Planwertmodell | EIV | -- | -- |
+      -- | 3 |
+
+      | → Information RD-Abruf | NB (anweisender NB) | DP | -- | -- | 4 |
+
+      | → Weiterleitung Information, über RD-Abruf | DP | LF | -- | -- | 5 |
+
+      | → Weiterleitung Infomation, über RD-Abruf | LF | BKV (des LF) | -- | -- |
+      6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Abruf_im_Aufforderungsfall_mit_Delta-/Sollwertanweisung
+    tags:
+    - Kommunikationsprozesse Redispatch

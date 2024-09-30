@@ -1,0 +1,31 @@
+/default_path_779:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55074 | NB | RB HKN-R | Stammdaten auf eine ORDERS | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [RB HKN-R] LESENDE API: ''
+                  AN [RB HKN-R] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55074 Stammdaten auf eine ORDERS
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55074'
+        description: ''
+    summary: default_path_779
+    tags:
+    - Prozesse zum Informationsaustausch zwischen Netzbetreiber und Herkunftsnachweis-register
+      (HKN-R) des Umweltbundesamts (UBA)

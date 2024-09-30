@@ -1,0 +1,30 @@
+/Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13003 | NB (LPB) | ÜNB | Summenzeitreihe | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13003 Summenzeitreihe
+                  VON [NB (LPB)] LESENDE API: ''
+                  VON [NB (LPB)] SCHREIBENDE API: ''
+                  VON [NB (LPB)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13003'
+        description: ''
+    summary: Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB
+    tags:
+    - AWH Modell 2 ladev.scharf., bila., Energie.zuord.möglichkeit

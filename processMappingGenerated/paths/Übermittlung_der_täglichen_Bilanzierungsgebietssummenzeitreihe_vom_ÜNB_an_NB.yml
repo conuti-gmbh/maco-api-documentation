@@ -1,0 +1,30 @@
+/Übermittlung_der_täglichen_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13003 | ÜNB | NB | Summenzeitreihe | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13003 Summenzeitreihe
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13003'
+        description: ''
+    summary: Übermittlung_der_täglichen_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB
+    tags:
+    - MaBiS

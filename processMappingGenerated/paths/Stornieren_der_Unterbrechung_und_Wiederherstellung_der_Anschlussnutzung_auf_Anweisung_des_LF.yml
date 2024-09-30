@@ -1,0 +1,59 @@
+/Stornieren_der_Unterbrechung_und_Wiederherstellung_der_Anschlussnutzung_auf_Anweisung_des_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI39000 | LF | NB | Stornierung Sperr-/Entsperrauftrag | -- | 1 |
+
+      | PI19128 | NB | LF | Bestätigung Stornierung Sperr-/Entsperrauftrag | -- |
+      2 |
+
+      | PI19129 | NB | LF | Ablehnung Stornierung Sperr-/Entsperrauftrag | -- | 2
+      |
+
+      | PI39001 | NB | MSB | Weiterleitung der Stornierung | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI39000 Stornierung Sperr-/Entsperrauftrag
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19128 Bestätigung Stornierung Sperr-/Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19129 Ablehnung Stornierung Sperr-/Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI39001 Weiterleitung der Stornierung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI39000'
+              - $ref: '#/components/schemas/PI19128'
+              - $ref: '#/components/schemas/PI19129'
+              - $ref: '#/components/schemas/PI39001'
+        description: ''
+    summary: Stornieren_der_Unterbrechung_und_Wiederherstellung_der_Anschlussnutzung_auf_Anweisung_des_LF
+    tags:
+    - GPKE Teil 2

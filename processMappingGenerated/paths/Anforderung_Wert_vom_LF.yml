@@ -1,0 +1,77 @@
+/Anforderung_Wert_vom_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17004 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Anforderung
+      von Werten | -- | 1 |
+
+      | PI19007 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Ablehnung Anforderung
+      Werte | -- | 2 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Marktlokation |
+      MSB (entspricht MSB am Objekt Marktlokation) | -- | -- | -- | 3 |
+
+      | PI17004 | MSB (entspricht MSB am Objekt Marktlokation) | MSB (entspricht MSB
+      am Objekt Messlokation) | Anforderung von Werten | -- | 4 |
+
+      | PI19007 | MSB (entspricht MSB am Objekt Messlokation) | MSB (entspricht MSB
+      am Objekt Marktlokation) | Ablehnung Anforderung Werte | -- | 5 |
+
+      | PI19007 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Ablehnung Anforderung
+      Werte | -- | 6 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSB am Objekt Messlokation) | -- | -- | -- | 7 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17004 Anforderung von Werten
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19007 Ablehnung Anforderung Werte
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17004 Anforderung von Werten
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19007 Ablehnung Anforderung Werte
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19007 Ablehnung Anforderung Werte
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17004'
+              - $ref: '#/components/schemas/PI19007'
+              - $ref: '#/components/schemas/PI17004'
+              - $ref: '#/components/schemas/PI19007'
+              - $ref: '#/components/schemas/PI19007'
+        description: ''
+    summary: Anforderung_Wert_vom_LF
+    tags:
+    - WiM Strom Teil 2

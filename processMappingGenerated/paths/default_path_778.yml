@@ -1,0 +1,32 @@
+/default_path_778:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17301 | RB HKN-R | NB | Anforderung von Stammdaten bzw. Messwerten | --
+      |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17301 Anforderung von Stammdaten bzw. Messwerten
+                  VON [RB HKN-R] LESENDE API: ''
+                  VON [RB HKN-R] SCHREIBENDE API: ''
+                  VON [RB HKN-R] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17301'
+        description: ''
+    summary: default_path_778
+    tags:
+    - Prozesse zum Informationsaustausch zwischen Netzbetreiber und Herkunftsnachweis-register
+      (HKN-R) des Umweltbundesamts (UBA)

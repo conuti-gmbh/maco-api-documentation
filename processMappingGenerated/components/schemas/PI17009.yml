@@ -1,0 +1,29 @@
+PI17009:
+  description: "17009 MSBN\u2192MSBA Anzeige Ger\xE4tewechselabsicht"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+  type: object

@@ -1,0 +1,125 @@
+/Bestellung_Beendigung_einer_Konfiguration_vom_weiteren_MSB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17129 | weiterer MSB | MSB | Bestellung Beendigung einer Konfiguration |
+      x | 1 |
+
+      | PI17118 | weiterer MSB | MSB | Bestellung einer Konfigurationsänderung | x
+      | 1 |
+
+      | PI19131 | MSB | weiterer MSB | Mitteilung zur Beendigung Konfiguration | 17129
+      | 2 |
+
+      | PI19127 | MSB | weiterer MSB | Mitteilung zur Konfigurationsänderung | 17118
+      | 2 |
+
+      | PI21044 | MSB | NB | Bestellungsbeendigung | -- | 3 |
+
+      | PI21044 | MSB | LF | Bestellungsbeendigung | -- | 4 |
+
+      | PI17129 | MSB | weiterer MSB | Bestellung Beendigung einer Konfiguration |
+      x | 5 |
+
+      | PI17118 | MSB | weiterer MSB | Bestellung einer Konfigurationsänderung | x
+      | 5 |
+
+      | PI19131 | weiterer MSB | MSB | Mitteilung zur Beendigung Konfiguration | 17129
+      | 6 |
+
+      | PI19127 | weiterer MSB | MSB | Mitteilung zur Konfigurationsänderung | 17118
+      | 6 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | weiterer MSB
+      | -- | -- | -- | 7 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB | -- | --
+      | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17129 Bestellung Beendigung einer Konfiguration
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17118 Bestellung einer Konfigurationsänderung
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19131 Mitteilung zur Beendigung Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19127 Mitteilung zur Konfigurationsänderung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21044 Bestellungsbeendigung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21044 Bestellungsbeendigung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17129 Bestellung Beendigung einer Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17118 Bestellung einer Konfigurationsänderung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19131 Mitteilung zur Beendigung Konfiguration
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19127 Mitteilung zur Konfigurationsänderung
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17129'
+              - $ref: '#/components/schemas/PI17118'
+              - $ref: '#/components/schemas/PI19131'
+              - $ref: '#/components/schemas/PI19127'
+              - $ref: '#/components/schemas/PI21044'
+              - $ref: '#/components/schemas/PI21044'
+              - $ref: '#/components/schemas/PI17129'
+              - $ref: '#/components/schemas/PI17118'
+              - $ref: '#/components/schemas/PI19131'
+              - $ref: '#/components/schemas/PI19127'
+        description: ''
+    summary: Bestellung_Beendigung_einer_Konfiguration_vom_weiteren_MSB_an_MSB
+    tags:
+    - GPKE Teil 3

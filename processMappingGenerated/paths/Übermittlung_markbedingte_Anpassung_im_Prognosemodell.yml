@@ -1,0 +1,26 @@
+/Übermittlung_markbedingte_Anpassung_im_Prognosemodell:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Marktbedingte Anpassung | EIV | DP | -- | -- | 1 |
+
+      | → Weiterleitung marktbedingte Anpassung | DP | NB (betroffene NB) | -- | --
+      | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Übermittlung_markbedingte_Anpassung_im_Prognosemodell
+    tags:
+    - Kommunikationsprozesse Redispatch

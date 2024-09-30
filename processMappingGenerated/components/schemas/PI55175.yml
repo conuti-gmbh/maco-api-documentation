@@ -1,0 +1,29 @@
+PI55175:
+  description: "55175 NB\u2192LF \xC4nderung der Lokationsb\xFCndelstruktur"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_LOKATIONSBUENDEL_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_LOKATIONSBUENDEL_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - NB
+      type: string
+  type: object

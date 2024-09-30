@@ -1,0 +1,29 @@
+PI17204:
+  description: "17204 BKV\u2192BIKO Anforder. Clearingliste BAS"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BKV
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI55214:
+  description: "55214 BIKO\u2192BKV (des anfNB) Weiterleitung Deaktivierung ZP"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - BKV (des anfNB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV (des anfNB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+  type: object

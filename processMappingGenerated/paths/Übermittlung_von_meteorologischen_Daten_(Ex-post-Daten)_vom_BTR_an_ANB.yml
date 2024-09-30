@@ -1,0 +1,31 @@
+/Übermittlung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_BTR_an_ANB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13021 | BTR | NB (ANB) | Übermittlung von meteorologischen Daten | -- |
+      1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (ANB)] LESENDE API: ''
+                  AN [NB (ANB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13021 Übermittlung von meteorologischen Daten
+                  VON [BTR] LESENDE API: ''
+                  VON [BTR] SCHREIBENDE API: ''
+                  VON [BTR] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13021'
+        description: ''
+    summary: Übermittlung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_BTR_an_ANB
+    tags:
+    - Kommunikationsprozesse Redispatch

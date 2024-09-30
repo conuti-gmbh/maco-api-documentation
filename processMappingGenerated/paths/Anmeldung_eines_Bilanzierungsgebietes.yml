@@ -1,0 +1,31 @@
+/Anmeldung_eines_Bilanzierungsgebietes:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Anmeldung neues BG | NB | BIKO | -- | -- | 1 |
+
+      | → Neuer BG EIC | BIKO | NB | -- | -- | 2 |
+
+      | → Information neues BG | NB | BKV | -- | -- | 3 |
+
+      | → Information neues BG | NB | LF | -- | -- | 4 |
+
+      | → Information neues BG | NB | ÜNB | -- | -- | 5 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Anmeldung_eines_Bilanzierungsgebietes
+    tags:
+    - MaBiS

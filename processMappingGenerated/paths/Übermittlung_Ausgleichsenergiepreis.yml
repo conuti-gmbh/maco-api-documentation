@@ -1,0 +1,30 @@
+/Übermittlung_Ausgleichsenergiepreis:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI27001 | BIKO | BKV | Übermittlung Ausgleichsenergiepreis | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI27001 Übermittlung Ausgleichsenergiepreis
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI27001'
+        description: ''
+    summary: Übermittlung_Ausgleichsenergiepreis
+    tags:
+    - MaBiS

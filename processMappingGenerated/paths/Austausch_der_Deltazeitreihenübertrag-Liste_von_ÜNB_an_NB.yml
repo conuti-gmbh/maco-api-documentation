@@ -1,0 +1,33 @@
+/Austausch_der_Deltazeitreihenübertrag-Liste_von_ÜNB_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55223 | ÜNB | NB | DZÜ-Liste | -- | 1 |
+
+      | → ref: Übermittlung des Deltazeitreihenüber-trags vom ÜNB an BIKO und NB |
+      ÜNB | -- | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55223 DZÜ-Liste
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55223'
+        description: ''
+    summary: Austausch_der_Deltazeitreihenübertrag-Liste_von_ÜNB_an_NB
+    tags:
+    - MaBiS

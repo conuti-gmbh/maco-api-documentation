@@ -1,0 +1,31 @@
+/Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Mitteilung BK für die ÜNB-DZR | ÜNB | BIKO | -- | -- | 1 |
+
+      | → ref: Aktivierung eines MaBiS-Zählpunkts für die Abrechnungssum-menzeitreihe
+      vom BIKO an ÜNB | BIKO | -- | -- | -- | 2 |
+
+      | → ref: Aktivierung eines MaBiS-Zählpunkts für die Abrechnungssummenzeitreihe
+      vom BIKO an BKV | BIKO | -- | -- | -- | 3 |
+
+      | → Ablehnung auf Mitteilung BK für die ÜNB-DZR | BIKO | ÜNB | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe
+    tags:
+    - MaBiS

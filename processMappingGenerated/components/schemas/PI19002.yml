@@ -1,0 +1,29 @@
+PI19002:
+  description: "19002 MSBA\u2192MSBN Ablehnung Bestellung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSBA
+      type: string
+  type: object

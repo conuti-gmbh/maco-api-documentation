@@ -1,0 +1,29 @@
+PI55109:
+  description: "55109 LF\u2192NB \xC4nderung Daten der MaLo"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_MARKTLOKATION_BASIS
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v.
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_SD
+      enum:
+      - LF
+      type: string
+  type: object

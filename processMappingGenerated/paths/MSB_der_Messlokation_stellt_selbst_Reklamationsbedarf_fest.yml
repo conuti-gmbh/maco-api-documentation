@@ -1,0 +1,27 @@
+/MSB_der_Messlokation_stellt_selbst_Reklamationsbedarf_fest:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Stornierung Werte vom MSB der Messlokation | MSB (entspricht MSB am
+      Objekt Messlokation) | -- | -- | -- | 1 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSB am Objekt Messlokation) | -- | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: MSB_der_Messlokation_stellt_selbst_Reklamationsbedarf_fest
+    tags:
+    - WiM Strom Teil 2

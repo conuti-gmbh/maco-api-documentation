@@ -1,0 +1,30 @@
+"PIPr\xFCfidentifikator":
+  description: "Pr\xFCfidentifikator Kommunikation von\u2192Kommunikation an Beschreibung\
+    \ des Anwendungsfalls aus dem AHB (EDIFACT), API-Webservice (API)"
+  properties:
+    AN:LESENDE_API:
+      description: 'Kommunikation an: , Lesende Schnittstellen'
+      enum:
+      - Kommunikation an
+      type: string
+    AN:SCHREIBENDE_API:
+      description: 'Kommunikation an: , Schreibende Schnittstellen'
+      enum:
+      - Kommunikation an
+      type: string
+    VON:LESENDE_API:
+      description: 'Kommunikation von: , Lesende Schnittstellen'
+      enum:
+      - Kommunikation von
+      type: string
+    VON:SCHREIBENDE_API:
+      description: 'Kommunikation von: , Schreibende Schnittstellen'
+      enum:
+      - Kommunikation von
+      type: string
+    VON:TRIGGER_EVENT:
+      description: "Kommunikation von : , Ausl\xF6sende Events"
+      enum:
+      - Kommunikation von
+      type: string
+  type: object

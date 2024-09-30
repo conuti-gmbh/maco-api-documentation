@@ -1,0 +1,103 @@
+/Kap._D_2.2.1_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44112 | NB | LF | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      | PI44123 | NB | LF | Bila.rel. Änderung vom NB mit Abhängigkeiten  | -- |  |
+
+      | PI44113 | NB | MSB | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      | PI44175 | NB | MSB | Änderung der Marktlokationsstruktur | -- |  |
+
+      | PI44115 | LF | NB | Antwort auf Änderung vom NB | -- |  |
+
+      | PI44124 | LF | NB | Antwort auf Änderung vom NB | -- |  |
+
+      | PI44115 | MSB | NB | Antwort auf Änderung vom NB | -- |  |
+
+      | PI44176 | MSB | NB [Verteiler] | Antwort auf Änderung der , Marktlokationsstruktur
+      | -- |  |
+
+      | PI44175 | NB | MSB | Änderung der Marktlokationsstruktur | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44112 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44123 Bila.rel. Änderung vom NB mit Abhängigkeiten 
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44113 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44175 Änderung der Marktlokationsstruktur
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44115 Antwort auf Änderung vom NB
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44124 Antwort auf Änderung vom NB
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44115 Antwort auf Änderung vom NB
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB [Verteiler]] LESENDE API: ''
+                  AN [NB [Verteiler]] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44176 Antwort auf Änderung der , Marktlokationsstruktur
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44175 Änderung der Marktlokationsstruktur
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44112'
+              - $ref: '#/components/schemas/PI44123'
+              - $ref: '#/components/schemas/PI44113'
+              - $ref: '#/components/schemas/PI44175'
+              - $ref: '#/components/schemas/PI44115'
+              - $ref: '#/components/schemas/PI44124'
+              - $ref: '#/components/schemas/PI44115'
+              - $ref: '#/components/schemas/PI44176'
+              - $ref: '#/components/schemas/PI44175'
+        description: ''
+    summary: Kap._D_2.2.1_Nr.
+    tags:
+    - GeLi Gas

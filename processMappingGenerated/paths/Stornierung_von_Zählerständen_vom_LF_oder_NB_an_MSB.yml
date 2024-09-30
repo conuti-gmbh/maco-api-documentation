@@ -1,0 +1,25 @@
+/Stornierung_von_Zählerständen_vom_LF_oder_NB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Stornierung von Zählerständen vom LF | LF | -- | -- | -- | 1 |
+
+      | → ref Stornierung von Zählerständen vom NB | NB | -- | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Stornierung_von_Zählerständen_vom_LF_oder_NB_an_MSB
+    tags:
+    - WiM Strom Teil 2

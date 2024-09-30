@@ -1,0 +1,29 @@
+PI44147:
+  description: "44147 NB [Verteiler]\u2192MSB Anfrage an MSB mit Abh\xE4ngigkeiten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+  type: object

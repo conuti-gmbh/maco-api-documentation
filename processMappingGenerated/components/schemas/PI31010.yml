@@ -1,0 +1,29 @@
+PI31010:
+  description: "31010 NB\u2192KN Kapazit\xE4tsrechnung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - KN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - KN
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

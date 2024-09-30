@@ -1,0 +1,41 @@
+/Übermittlung_Preisblatt_A_des_MSB_vom_MSB_an_NB_und_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI27002 | MSB | NB | Preisblatt Messstellenbetrieb / Konfigurationen | --
+      | 1 |
+
+      | PI27002 | MSB | LF | Preisblatt Messstellenbetrieb / Konfigurationen | --
+      | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI27002 Preisblatt Messstellenbetrieb / Konfigurationen
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI27002 Preisblatt Messstellenbetrieb / Konfigurationen
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI27002'
+              - $ref: '#/components/schemas/PI27002'
+        description: ''
+    summary: Übermittlung_Preisblatt_A_des_MSB_vom_MSB_an_NB_und_LF
+    tags:
+    - GPKE Teil 3

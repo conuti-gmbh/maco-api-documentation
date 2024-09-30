@@ -1,0 +1,90 @@
+/Neuanlage:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55600 | LF | NB | Anmeldung neuer verb. MaLo | x | 1 |
+
+      | PI55601 | LF | NB | Anmeldung neuer erz. MaLo | x | 1 |
+
+      | PI55602 | NB | LF | Bestätigung Anmeldung neuer verb. MaLo | 55600 | 2 |
+
+      | PI55603 | NB | LF | Bestätigung Anmeldung neuer erz. MaLo | 55601 | 2 |
+
+      | PI55604 | NB | LF | Ablehnung Anmeldung neuer verb. MaLo | 55600 | 3 |
+
+      | PI55605 | NB | LF | Ablehnung Anmeldung neuer erz. MaLo | 55601 | 3 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 4 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 5 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 6 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 7 |
+
+      | → ref Einrichtung der Konfigurationen aufgrund einer Zuordnung eines LF zu
+      einer Marktlokation bzw. Tranche | NB | -- | -- | -- | 8 |
+
+      | → ref Herstellung einer 100% LF-Zuordnung zu einer erzeugenden Marktlokation
+      | NB | -- | -- | -- | 9 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55600 Anmeldung neuer verb. MaLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55601 Anmeldung neuer erz. MaLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55602 Bestätigung Anmeldung neuer verb. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55603 Bestätigung Anmeldung neuer erz. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55604 Ablehnung Anmeldung neuer verb. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55605 Ablehnung Anmeldung neuer erz. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55600'
+              - $ref: '#/components/schemas/PI55601'
+              - $ref: '#/components/schemas/PI55602'
+              - $ref: '#/components/schemas/PI55603'
+              - $ref: '#/components/schemas/PI55604'
+              - $ref: '#/components/schemas/PI55605'
+        description: ''
+    summary: Neuanlage
+    tags:
+    - GPKE Teil 2

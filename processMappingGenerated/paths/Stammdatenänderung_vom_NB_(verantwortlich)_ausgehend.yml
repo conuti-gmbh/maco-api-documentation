@@ -1,0 +1,343 @@
+/Stammdatenänderung_vom_NB_(verantwortlich)_ausgehend:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55615 | NB | LF | Änderung Daten der NeLo | x | 1 |
+
+      | PI55620 | NB | LF | Änderung Daten der MeLo  | x | 1 |
+
+      | PI55175 | NB | LF | Änderung der Lokationsbündelstruktur | x | 1 |
+
+      | PI55225 | NB | LF | Änderung Blindabr.-Daten der NeLo | x | 1 |
+
+      | PI55616 | NB | LF | Änderung Daten der MaLo | x | 1 |
+
+      | PI55617 | NB | LF | Änderung Daten der TR | x | 1 |
+
+      | PI55618 | NB | LF | Änderung Daten der SR | x | 1 |
+
+      | PI55619 | NB | LF | Änderung Daten der Tranche | x | 1 |
+
+      | PI55621 | LF | NB | Rückmeldung/Anfrage Daten zur NeLo | 55615 | 2 |
+
+      | PI55180 | LF | NB | Rückmeldung/Anfrage Lokationsbündelstruktur | 55175 |
+      2 |
+
+      | PI55227 | LF | NB | Rückmeldung/Anfrage Blindabr.-Daten der NeLo | 55225 |
+      2 |
+
+      | PI55622 | LF | NB | Rückmeldung/Anfrage Daten der MaLo  | 55616 | 2 |
+
+      | PI55623 | LF | NB | Rückmeldung/Anfrage Daten der TR | 55617 | 2 |
+
+      | PI55624 | LF | NB | Rückmeldung/Anfrage Daten der SR | 55618 | 2 |
+
+      | PI55625 | LF | NB | Rückmeldung/Anfrage Daten der Tranche | 55619 | 2 |
+
+      | PI55626 | LF | NB | Rückmeldung/Anfrage Daten der MeLo | 55620 | 2 |
+
+      | PI21047 | NB | LF | Bearbeitungsstandsmeldung | -- | 3 |
+
+      | PI55627 | NB | MSB | Änderung Daten der NeLo | x | 4 |
+
+      | PI55173 | NB | MSB | Änderung der Lokationsbündelstruktur | x | 4 |
+
+      | PI55628 | NB | MSB | Änderung Daten der MaLo | x | 4 |
+
+      | PI55629 | NB | MSB | Änderung Daten der TR | x | 4 |
+
+      | PI55630 | NB | MSB | Änderung Daten der SR | x | 4 |
+
+      | PI55631 | NB | MSB | Änderung Daten der Tranche | x | 4 |
+
+      | PI55632 | NB | MSB | Änderung Daten der MeLo | x | 4 |
+
+      | PI55633 | MSB | NB | Rückmeldung/Anfrage Daten zur NeLo | 55627 | 5 |
+
+      | PI55177 | MSB | NB | Rückmeldung/Anfrage Lokationsbündelstruktur | 55173 |
+      5 |
+
+      | PI55634 | MSB | NB | Rückmeldung/Anfrage Daten der MaLo | 55628 | 5 |
+
+      | PI55635 | MSB | NB | Rückmeldung/Anfrage Daten der TR | 55629 | 5 |
+
+      | PI55636 | MSB | NB | Rückmeldung/Anfrage Daten der SR | 55630 | 5 |
+
+      | PI55637 | MSB | NB | Rückmeldung/Anfrage Daten der Tranche | 55631 | 5 |
+
+      | PI55638 | MSB | NB | Rückmeldung/Anfrage Daten der MeLo | 55632 | 5 |
+
+      | PI21047 | NB | MSB | Bearbeitungsstandsmeldung | -- | 6 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB des Messlokation |
+      MSB | -- | -- | -- | 7 |
+
+      | PI55688 | NB | ÜNB | Änderung Daten der MaLo  | -- | 8 |
+
+      | PI55689 | ÜNB | NB | Rückmeldung/Anfrage Daten der MaLo  | -- | 9 |
+
+      | PI21047 | NB | ÜNB | Bearbeitungsstandsmeldung | -- | 10 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_NETZLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55615 Änderung Daten der NeLo
+                  VON [NB] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_MESSLOKATION_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_MESSLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: 'PI55620 Änderung Daten der MeLo '
+                  VON [NB] LESENDE API: LESEN_MESSLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_LOKATIONSBUENDEL_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+                  PRUEFIDENTIFIKATOR: PI55175 Änderung der Lokationsbündelstruktur
+                  VON [NB] LESENDE API: LESEN_LOKATIONSBUENDEL_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_NETZLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55225 Änderung Blindabr.-Daten der NeLo
+                  VON [NB] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v
+                  VON [NB] TRIGGER EVENT: AENDERUNG_AD
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_MARKTLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55616 Änderung Daten der MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_TECHNISCHE_RESSOURCE_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_TECHNISCHE_RESSOURCE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55617 Änderung Daten der TR
+                  VON [NB] LESENDE API: LESEN_TECHNISCHE_RESSOURCE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_STEUERBARE_RESSOURCE_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55618 Änderung Daten der SR
+                  VON [NB] LESENDE API: LESEN_STEUERBARE_RESSOURCE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_TRANCHE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55619 Änderung Daten der Tranche
+                  VON [NB] LESENDE API: LESEN_TRANCHE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55621 Rückmeldung/Anfrage Daten zur NeLo
+                  VON [LF] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55180 Rückmeldung/Anfrage Lokationsbündelstruktur
+                  VON [LF] LESENDE API: LESEN_LOKATIONSBUENDEL_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55227 Rückmeldung/Anfrage Blindabr.-Daten
+                    der NeLo
+                  VON [LF] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: 'PI55622 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55623 Rückmeldung/Anfrage Daten der TR
+                  VON [LF] LESENDE API: LESEN_TECHNISCHE_RESSOURCE_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55624 Rückmeldung/Anfrage Daten der SR
+                  VON [LF] LESENDE API: LESEN_STEUERBARE_RESSOURCE_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55625 Rückmeldung/Anfrage Daten der Tranche
+                  VON [LF] LESENDE API: LESEN_TRANCHE_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: n.v.
+                  AN [NB] SCHREIBENDE API: n.v.
+                  PRUEFIDENTIFIKATOR: PI55626 Rückmeldung/Anfrage Daten der MeLo
+                  VON [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_NETZLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55627 Änderung Daten der NeLo
+                  VON [NB] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_LOKATIONSBUENDEL_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_LOKATIONSBUENDEL_BASIS
+                  PRUEFIDENTIFIKATOR: PI55173 Änderung der Lokationsbündelstruktur
+                  VON [NB] LESENDE API: LESEN_LOKATIONSBUENDEL_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_MARKTLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55628 Änderung Daten der MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_TECHNISCHE_RESSOURCE_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_TECHNISCHE_RESSOURCE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55629 Änderung Daten der TR
+                  VON [NB] LESENDE API: LESEN_TECHNISCHE_RESSOURCE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_STEUERBARE_RESSOURCE_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55630 Änderung Daten der SR
+                  VON [NB] LESENDE API: LESEN_STEUERBARE_RESSOURCE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_TRANCHE_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_TRANCHE_BASIS
+                  PRUEFIDENTIFIKATOR: PI55631 Änderung Daten der Tranche
+                  VON [NB] LESENDE API: LESEN_TRANCHE_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [MSB] LESENDE API: LESEN_MESSLOKATION_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_MESSLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55632 Änderung Daten der MeLo
+                  VON [NB] LESENDE API: LESEN_MESSLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55633 Rückmeldung/Anfrage Daten zur NeLo
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55177 Rückmeldung/Anfrage Lokationsbündelstruktur
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55634 Rückmeldung/Anfrage Daten der MaLo
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55635 Rückmeldung/Anfrage Daten der TR
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55636 Rückmeldung/Anfrage Daten der SR
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55637 Rückmeldung/Anfrage Daten der Tranche
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55638 Rückmeldung/Anfrage Daten der MeLo
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55688 Änderung Daten der MaLo '
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: n.v.
+                  VON [NB] TRIGGER EVENT: AENDERUNG_SD
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55689 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55615'
+              - $ref: '#/components/schemas/PI55620'
+              - $ref: '#/components/schemas/PI55175'
+              - $ref: '#/components/schemas/PI55225'
+              - $ref: '#/components/schemas/PI55616'
+              - $ref: '#/components/schemas/PI55617'
+              - $ref: '#/components/schemas/PI55618'
+              - $ref: '#/components/schemas/PI55619'
+              - $ref: '#/components/schemas/PI55621'
+              - $ref: '#/components/schemas/PI55180'
+              - $ref: '#/components/schemas/PI55227'
+              - $ref: '#/components/schemas/PI55622'
+              - $ref: '#/components/schemas/PI55623'
+              - $ref: '#/components/schemas/PI55624'
+              - $ref: '#/components/schemas/PI55625'
+              - $ref: '#/components/schemas/PI55626'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55627'
+              - $ref: '#/components/schemas/PI55173'
+              - $ref: '#/components/schemas/PI55628'
+              - $ref: '#/components/schemas/PI55629'
+              - $ref: '#/components/schemas/PI55630'
+              - $ref: '#/components/schemas/PI55631'
+              - $ref: '#/components/schemas/PI55632'
+              - $ref: '#/components/schemas/PI55633'
+              - $ref: '#/components/schemas/PI55177'
+              - $ref: '#/components/schemas/PI55634'
+              - $ref: '#/components/schemas/PI55635'
+              - $ref: '#/components/schemas/PI55636'
+              - $ref: '#/components/schemas/PI55637'
+              - $ref: '#/components/schemas/PI55638'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55688'
+              - $ref: '#/components/schemas/PI55689'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Stammdatenänderung_vom_NB_(verantwortlich)_ausgehend
+    tags:
+    - GPKE Teil 4

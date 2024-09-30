@@ -1,0 +1,39 @@
+/Austausch_der_Lieferantenausfallarbeitsclearingliste:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55201 | NB | LF | LF-AACL | -- | 1 |
+
+      | PI55202 | LF | NB | Korrekturliste LF-AACL | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55201 LF-AACL
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55202 Korrekturliste LF-AACL
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55201'
+              - $ref: '#/components/schemas/PI55202'
+        description: ''
+    summary: Austausch_der_Lieferantenausfallarbeitsclearingliste
+    tags:
+    - MaBiS

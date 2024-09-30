@@ -1,0 +1,130 @@
+/Ende_Messstellenbetrieb:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55051 | MSB (entspricht MSBA am Objekt Messlokation) | NB | Ende MSB | --
+      | 1 |
+
+      | PI55052 | NB | MSB (entspricht MSBA am Objekt Messlokation) | Bestätigung
+      Ende MSB | -- | 2 |
+
+      | PI55053 | NB | MSB (entspricht MSBA am Objekt Messlokation) | Ablehnung Ende
+      MSB | -- | 2 |
+
+      | PI55168 | NB | MSB (entspricht gMSB am Objekt Messlokation) | Verpflichtungsanfrage
+      / Aufforderung | -- | 3 |
+
+      | PI55169 | MSB (entspricht gMSB am Objekt Messlokation) | NB | Bestätigung
+      Verpflichtungsanfrage,  | -- | 4 |
+
+      | PI55170 | MSB (entspricht gMSB am Objekt Messlokation) | NB | Ablehnung Verpflichtungsanfrage
+      | -- | 4 |
+
+      | PI17002 | NB | MSB (entspricht MSBA am Objekt Messlokation) | Weiterverpflichtung
+      | -- | 5 |
+
+      | PI19003 | MSB (entspricht MSBA am Objekt Messlokation) | NB | Bestätigung
+      Weiterverpflichtung | -- | 6 |
+
+      | PI19004 | MSB (entspricht MSBA am Objekt Messlokation) | NB | Ablehnung Weiterverpflichtung
+      | -- | 6 |
+
+      | PI55168 | NB | MSB (entspricht gMSB am Objekt Messlokation) | Verpflichtungsanfrage
+      / Aufforderung | -- | 7 |
+
+      | → ref Verpflichtung gMSB | MSB (entspricht gMSB am Objekt Messlokation) |
+      -- | -- | -- | 8 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 9 |
+
+      | → ref Verpflichtung gMSB | MSB (entspricht gMSB am Objekt Messlokation) |
+      -- | -- | -- | 10 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55051 Ende MSB
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55052 Bestätigung Ende MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55053 Ablehnung Ende MSB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55168 Verpflichtungsanfrage / Aufforderung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55169 Bestätigung Verpflichtungsanfrage, '
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55170 Ablehnung Verpflichtungsanfrage
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17002 Weiterverpflichtung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19003 Bestätigung Weiterverpflichtung
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19004 Ablehnung Weiterverpflichtung
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55168 Verpflichtungsanfrage / Aufforderung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55051'
+              - $ref: '#/components/schemas/PI55052'
+              - $ref: '#/components/schemas/PI55053'
+              - $ref: '#/components/schemas/PI55168'
+              - $ref: '#/components/schemas/PI55169'
+              - $ref: '#/components/schemas/PI55170'
+              - $ref: '#/components/schemas/PI17002'
+              - $ref: '#/components/schemas/PI19003'
+              - $ref: '#/components/schemas/PI19004'
+              - $ref: '#/components/schemas/PI55168'
+        description: ''
+    summary: Ende_Messstellenbetrieb
+    tags:
+    - WiM Strom Teil 1

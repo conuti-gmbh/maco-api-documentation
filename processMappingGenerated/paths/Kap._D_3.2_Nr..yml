@@ -1,0 +1,96 @@
+/Kap._D_3.2_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17101 | LF | NB | Anfrage Stammdaten Marktlokation (Gas),  | -- |  |
+
+      | PI17102 | LF | NB | Anfrage von Werten | -- |  |
+
+      | PI44035 | NB | LF | Antwort auf die Geschäftsdatenanfrage | -- |  |
+
+      | PI19101 | NB | LF | Ablehnung der Anfrage Stammdaten | -- |  |
+
+      | PI19102 | NB | LF | Ablehnung der Anfrage Werte | -- |  |
+
+      | PI13008 | NB | LF | Lastgang (Gas)  | -- |  |
+
+      | PI13009 | NB | LF | Energiemenge (Gas) | -- |  |
+
+      | PI13002 | NB | LF | Zählerstand (Gas) | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI17101 Anfrage Stammdaten Marktlokation (Gas), '
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17102 Anfrage von Werten
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44035 Antwort auf die Geschäftsdatenanfrage
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19101 Ablehnung der Anfrage Stammdaten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19102 Ablehnung der Anfrage Werte
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_LASTGANG
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ENERGIEMENGE
+                  PRUEFIDENTIFIKATOR: PI13009 Energiemenge (Gas)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ENERGIEMENGE
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ENERGIEMENGE
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ZAEHLERSTAND
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17101'
+              - $ref: '#/components/schemas/PI17102'
+              - $ref: '#/components/schemas/PI44035'
+              - $ref: '#/components/schemas/PI19101'
+              - $ref: '#/components/schemas/PI19102'
+              - $ref: '#/components/schemas/PI13008'
+              - $ref: '#/components/schemas/PI13009'
+              - $ref: '#/components/schemas/PI13002'
+        description: ''
+    summary: Kap._D_3.2_Nr.
+    tags:
+    - GeLi Gas

@@ -1,0 +1,29 @@
+PI44169:
+  description: "44169 gMSB\u2192NB Best\xE4tigung Verpflichtungsanfrage, "
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - gMSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - gMSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - gMSB
+      type: string
+  type: object

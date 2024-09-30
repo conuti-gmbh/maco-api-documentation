@@ -1,0 +1,174 @@
+/Lieferbeginn:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55001 | LFN | NB | Anmeldung verb. MaLo | x | 1 |
+
+      | PI55077 | LFN | NB | Anmeldung erz. MaLo | x | 1 |
+
+      | PI55036 | NB | LFN | Existierende Zuordnung | -- | 2 |
+
+      | PI55010 | NB | LFA | Anfrage zur Beendigung der Zuordnung | -- | 3 |
+
+      | PI55011 | LFA | NB | Bestätigung Beendigung der Zuordnung | -- | 4 |
+
+      | PI55012 | LFA | NB | Ablehnung Beendigung der Zuordnung | -- | 4 |
+
+      | PI55002 | NB | LFN | Bestätigung Anmeldung verb. MaLo | 55001 | 5 |
+
+      | PI55078 | NB | LFN | Bestätigung Anmeldung erz. MaLo | 55077 | 5 |
+
+      | PI55003 | NB | LFN | Ablehnung Anmeldung verb. MaLo | 55001 | 6 |
+
+      | PI55080 | NB | LFN | Ablehnung Anmeldung erz. MaLo | 55077 | 6 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 7 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 8 |
+
+      | → ref. Stammdanänderung vom NB (verantwortlich) ausgehend | NB | -- | -- |
+      -- | 9 |
+
+      | PI55037 | NB | LFA | Beendigung der Zuordnung | -- | 10 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 11 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 12 |
+
+      | PI55038 | NB | LFZ | Aufhebung einer zuk. Zuordnung | -- | 13 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 14 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 15 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 16 |
+
+      | → ref Einrichtung der Konfigurationen aufgrund einer Zuordnung eines LF zu
+      einer Marktlokation bzw. Tranche | NB | -- | -- | -- | 17 |
+
+      | → ref Beginn der Ersatz-/Grundversorgung | NB | -- | -- | -- | 18 |
+
+      | → ref Wiederherstellung der Anschlussnutzung bei Lieferbeginn | NB | -- |
+      -- | -- | 19 |
+
+      | → ref Herstellung einer 100% LF-Zuordnung zu einer erzeugenden Marktlokation
+      | NB | -- | -- | -- | 20 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: 'LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS,
+                    LESEN_BILANZIERUNG_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS, '
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
+                  PRUEFIDENTIFIKATOR: PI55001 Anmeldung verb. MaLo
+                  VON [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LFN] SCHREIBENDE API: ''
+                  VON [LFN] TRIGGER EVENT: START_LIEFERBEGINN
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS,
+                    LESEN_BILANZIERUNG_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS,
+                    LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
+                  PRUEFIDENTIFIKATOR: PI55077 Anmeldung erz. MaLo
+                  VON [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  VON [LFN] SCHREIBENDE API: ''
+                  VON [LFN] TRIGGER EVENT: START_LIEFERBEGINN
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: Information im SAP notwendig?
+                  PRUEFIDENTIFIKATOR: PI55036 Existierende Zuordnung
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  AN [LFA] SCHREIBENDE API: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+                  PRUEFIDENTIFIKATOR: PI55010 Anfrage zur Beendigung der Zuordnung
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS,
+                    LESEN_BILANZIERUNG_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+                  PRUEFIDENTIFIKATOR: PI55011 Bestätigung Beendigung der Zuordnung
+                  VON [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55012 Ablehnung Beendigung der Zuordnung
+                  VON [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+                    LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS,
+                    LESEN_ZAEHLER_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS,
+                    LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS, LESEN_LOKATIONSBUENDEL_BASIS
+                  AN [LFN] SCHREIBENDE API: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
+                  PRUEFIDENTIFIKATOR: PI55002 Bestätigung Anmeldung verb. MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS,
+                    LESEN_ZAEHLER_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS,
+                    LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS, LESEN_LOKATIONSBUENDEL_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55078 Bestätigung Anmeldung erz. MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS, LESEN_ZAEHLER_BASIS,
+                    LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS,
+                    LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS, LESEN_LOKATIONSBUENDEL_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55003 Ablehnung Anmeldung verb. MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55080 Ablehnung Anmeldung erz. MaLo
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFA] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  AN [LFA] SCHREIBENDE API: AKTUALISIEREN_MARKTLOKATION_BASIS, AKTUALISIEREN_NETZNUTZUNGSVERTRAG_BASIS,
+                    AKTUALISIEREN_BILANZIERUNG_BASIS
+                  PRUEFIDENTIFIKATOR: PI55037 Beendigung der Zuordnung
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LFZ] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+                  AN [LFZ] SCHREIBENDE API: LOESCHEN_NETZNUTZUNGSVERTRAG_BASIS
+                  PRUEFIDENTIFIKATOR: PI55038 Aufhebung einer zuk. Zuordnung
+                  VON [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55001'
+              - $ref: '#/components/schemas/PI55077'
+              - $ref: '#/components/schemas/PI55036'
+              - $ref: '#/components/schemas/PI55010'
+              - $ref: '#/components/schemas/PI55011'
+              - $ref: '#/components/schemas/PI55012'
+              - $ref: '#/components/schemas/PI55002'
+              - $ref: '#/components/schemas/PI55078'
+              - $ref: '#/components/schemas/PI55003'
+              - $ref: '#/components/schemas/PI55080'
+              - $ref: '#/components/schemas/PI55037'
+              - $ref: '#/components/schemas/PI55038'
+        description: ''
+    summary: Lieferbeginn
+    tags:
+    - GPKE Teil 2

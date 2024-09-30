@@ -1,0 +1,30 @@
+PI55077:
+  description: "55077 LFN\u2192NB Anmeldung erz. MaLo"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS,
+        LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS, LESEN_TRANCHE_BASIS
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS
+      enum:
+      - LFN
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_LIEFERBEGINN
+      enum:
+      - LFN
+      type: string
+  type: object

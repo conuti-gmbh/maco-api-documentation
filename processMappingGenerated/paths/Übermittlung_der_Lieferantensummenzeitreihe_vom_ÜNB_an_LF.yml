@@ -1,0 +1,39 @@
+/Übermittlung_der_Lieferantensummenzeitreihe_vom_ÜNB_an_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13003 | ÜNB | LF | Summenzeitreihe | -- | 1 |
+
+      | PI21000 | LF | ÜNB | Statusmeldung | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13003 Summenzeitreihe
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21000 Statusmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13003'
+              - $ref: '#/components/schemas/PI21000'
+        description: ''
+    summary: Übermittlung_der_Lieferantensummenzeitreihe_vom_ÜNB_an_LF
+    tags:
+    - MaBiS

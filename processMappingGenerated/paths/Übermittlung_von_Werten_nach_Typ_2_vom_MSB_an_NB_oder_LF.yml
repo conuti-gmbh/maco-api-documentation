@@ -1,0 +1,39 @@
+/Übermittlung_von_Werten_nach_Typ_2_vom_MSB_an_NB_oder_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13027 | MSB | NB | Werte nach Typ 2 | -- | 1 |
+
+      | PI13027 | MSB | LF | Werte nach Typ 2 | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13027 Werte nach Typ 2
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13027 Werte nach Typ 2
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13027'
+              - $ref: '#/components/schemas/PI13027'
+        description: ''
+    summary: Übermittlung_von_Werten_nach_Typ_2_vom_MSB_an_NB_oder_LF
+    tags:
+    - WiM Strom Teil 2

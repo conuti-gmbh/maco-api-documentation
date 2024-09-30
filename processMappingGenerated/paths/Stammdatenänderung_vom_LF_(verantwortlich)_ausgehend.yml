@@ -1,0 +1,109 @@
+/Stammdatenänderung_vom_LF_(verantwortlich)_ausgehend:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55109 | LF | NB | Änderung Daten der MaLo | x | 1 |
+
+      | PI55230 | LF | NB | Änderung Blindabr.-Daten der NeLo | x | 1 |
+
+      | PI55137 | NB | LF | Rückmeldung/Anfrage Daten der MaLo  | 55109 | 2 |
+
+      | PI55232 | NB | LF | Rückmeldung/Anfrage Blindabr.-Daten der NeLo | 55230 |
+      2 |
+
+      | PI21047 | LF | NB | Bearbeitungsstandsmeldung | -- | 3 |
+
+      | PI55110 | LF | MSB | Änderung Daten der MaLo | -- | 4 |
+
+      | PI55136 | MSB | LF | Rückmeldung/Anfrage Daten der MaLo  | -- | 5 |
+
+      | PI21047 | LF | MSB | Bearbeitungsstandsmeldung | -- | 6 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB des Messlokation |
+      MSB | -- | -- | -- | 7 |
+
+      | → Änderung vom LF an ÜNB | LF | ÜNB | Hinweis: ÜNB ist aktuell für kein Stammdatum
+      berechtigt, somit wurde keine Anwendungsfall aufgebaut. | -- | 8 |
+
+      | → Rückmeldung auf Änderung | ÜNB | LF | Hinweis: ÜNB ist aktuell für kein
+      Stammdatum berechtigt, somit wurde keine Anwendungsfall aufgebaut. | -- | 9
+      |
+
+      | → Bearbeitungsstand zur Rückmeldung | LF | ÜNB | Hinweis: ÜNB ist aktuell
+      für kein Stammdatum berechtigt, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 10 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_MARKTLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55109 Änderung Daten der MaLo
+                  VON [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: AENDERUNG_SD
+                - AN [NB] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_NETZLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55230 Änderung Blindabr.-Daten der NeLo
+                  VON [LF] LESENDE API: LESEN_NETZLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v
+                  VON [LF] TRIGGER EVENT: AENDERUNG_AD
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55137 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55232 Rückmeldung/Anfrage Blindabr.-Daten
+                    der NeLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_MARKTLOKATION_BASIS
+                  PRUEFIDENTIFIKATOR: PI55110 Änderung Daten der MaLo
+                  VON [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS
+                  VON [LF] SCHREIBENDE API: n.v.
+                  VON [LF] TRIGGER EVENT: AENDERUNG_SD
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55136 Rückmeldung/Anfrage Daten der MaLo '
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55109'
+              - $ref: '#/components/schemas/PI55230'
+              - $ref: '#/components/schemas/PI55137'
+              - $ref: '#/components/schemas/PI55232'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55110'
+              - $ref: '#/components/schemas/PI55136'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Stammdatenänderung_vom_LF_(verantwortlich)_ausgehend
+    tags:
+    - GPKE Teil 4

@@ -1,0 +1,24 @@
+/default_path_8697:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Stammdaten zu Marktlokation, und Messlokation | NB (entspricht NBA) | NB
+      (entspricht NBN) | -- | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_8697
+    tags:
+    - Leitfaden Marktprozesse Netzbetreiberwechsel

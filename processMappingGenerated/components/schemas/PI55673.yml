@@ -1,0 +1,29 @@
+PI55673:
+  description: "55673 LF\u2192NB R\xFCckmeldung/Anfrage Abr.-Daten BK-Abr. erz. Malo"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LF
+      type: string
+  type: object

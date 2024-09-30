@@ -1,0 +1,32 @@
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55062 | BIKO | ÜNB | Aktivierung von ZP | -- | 1 |
+
+      | → manuelle Fehlerklärung | ÜNB | BIKO | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55062 Aktivierung von ZP
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55062'
+        description: ''
+    summary: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB
+    tags:
+    - MaBiS

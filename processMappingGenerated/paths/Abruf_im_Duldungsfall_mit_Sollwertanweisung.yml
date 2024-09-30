@@ -1,0 +1,38 @@
+/Abruf_im_Duldungsfall_mit_Sollwertanweisung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Verbindliche Information, mit Sollwerten | NB (anweisender NB) | DP | --
+      | -- | 1 |
+
+      | → Weiterleitung verbindliche, Information, mit Sollwerten | DP | EIV | --
+      | -- | 2 |
+
+      | → Ref Übermittlung von, Planungsdaten im, Planwertmodell | EIV | -- | -- |
+      -- | 3 |
+
+      | → Verbindliche Information, mit Sollwerten | EIV | BTR | -- | -- | 4 |
+
+      | → Weiterleitung verbindliche, Information, mit Sollwerten | DP | LF | -- |
+      -- | 5 |
+
+      | → Weiterleitung verbindlicher, Information, mit Sollwerten | LF | BKV (des
+      LF) | -- | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Abruf_im_Duldungsfall_mit_Sollwertanweisung
+    tags:
+    - Kommunikationsprozesse Redispatch

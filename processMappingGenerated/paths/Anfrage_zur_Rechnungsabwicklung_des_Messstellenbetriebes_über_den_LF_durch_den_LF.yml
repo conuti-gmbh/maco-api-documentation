@@ -1,0 +1,74 @@
+/Anfrage_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI35002 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Anfrage Rechnungsabwicklung
+      MSB über LF | -- | 1 |
+
+      | PI15002 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Angebot Abrechnung
+      Messstellenbetrieb MSB | -- | 2 |
+
+      | PI21033 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Ablehnung der
+      Anfrage | -- | 2 |
+
+      | PI17005 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Bestellung Rechnungsabwicklung
+      MSB über LF | -- | 3 |
+
+      | PI21032 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Antwort auf
+      das Angebot | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI35002 Anfrage Rechnungsabwicklung MSB über
+                    LF
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI15002 Angebot Abrechnung Messstellenbetrieb
+                    MSB
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21033 Ablehnung der Anfrage
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17005 Bestellung Rechnungsabwicklung MSB über
+                    LF
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21032 Antwort auf das Angebot
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI35002'
+              - $ref: '#/components/schemas/PI15002'
+              - $ref: '#/components/schemas/PI21033'
+              - $ref: '#/components/schemas/PI17005'
+              - $ref: '#/components/schemas/PI21032'
+        description: ''
+    summary: Anfrage_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF
+    tags:
+    - WiM Strom Teil 1

@@ -1,0 +1,29 @@
+PI15003:
+  description: "15003 MSB\u2192ESA Angebot zur Anfrage von Werten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

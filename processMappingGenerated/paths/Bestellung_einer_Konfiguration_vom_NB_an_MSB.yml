@@ -1,0 +1,160 @@
+/Bestellung_einer_Konfiguration_vom_NB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI35004 | NB | MSB | Anfrage einer Konfiguration | -- | 1 |
+
+      | PI15004 | MSB | NB | Angebot  einer Konfiguration | -- | 2 |
+
+      | PI17131 | NB | MSB | Bestellung Angebot einer Konfiguration | -- | 3 |
+
+      | PI17130 | NB | MSB | Bestellung einer Konfiguration | x | 4 |
+
+      | PI17121 | NB | MSB | Bestellung Änderung | x | 4 |
+
+      | PI19132 | MSB | NB | Mitteilung zur Bestellung Konfiguration | 17130 | 5 |
+
+      | PI19120 | MSB | NB | Mitteilung zur Änderung | 17121 | 5 |
+
+      | PI17130 | MSB | weiterer MSB | Bestellung einer Konfiguration | x | 6 |
+
+      | PI17118 | MSB | weiterer MSB | Bestellung einer Konfigurationsänderung | x
+      | 6 |
+
+      | PI19132 | weiterer MSB | MSB | Mitteilung zur Bestellung Konfiguration | 17130
+      | 7 |
+
+      | PI19127 | weiterer MSB | MSB | Mitteilung zur Konfigurationsänderung | 17118
+      | 7 |
+
+      | PI21043 | MSB | weiterer MSB | Bestellungsantwort / -mitteilung | -- | 8 |
+
+      | PI21043 | MSB | NB | Bestellungsantwort / -mitteilung | -- | 9 |
+
+      | PI21043 | MSB | weiterer MSB | Bestellungsantwort / -mitteilung | -- | 10
+      |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | weiterer MSB
+      | -- | -- | -- | 11 |
+
+      | → ref Stammdatenänderung vom MSB (verantwortlich) ausgehend | MSB | -- | --
+      | -- | 12 |
+
+      | → ref Abrechnung Leistungen des Preisblatts A des MSB zwischen MSB und NB
+      | MSB | -- | -- | -- | 13 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI35004 Anfrage einer Konfiguration
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI15004 Angebot  einer Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17131 Bestellung Angebot einer Konfiguration
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17130 Bestellung einer Konfiguration
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17121 Bestellung Änderung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19132 Mitteilung zur Bestellung Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19120 Mitteilung zur Änderung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17130 Bestellung einer Konfiguration
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17118 Bestellung einer Konfigurationsänderung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19132 Mitteilung zur Bestellung Konfiguration
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19127 Mitteilung zur Konfigurationsänderung
+                  VON [weiterer MSB] LESENDE API: ''
+                  VON [weiterer MSB] SCHREIBENDE API: ''
+                  VON [weiterer MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21043 Bestellungsantwort / -mitteilung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21043 Bestellungsantwort / -mitteilung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [weiterer MSB] LESENDE API: ''
+                  AN [weiterer MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21043 Bestellungsantwort / -mitteilung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI35004'
+              - $ref: '#/components/schemas/PI15004'
+              - $ref: '#/components/schemas/PI17131'
+              - $ref: '#/components/schemas/PI17130'
+              - $ref: '#/components/schemas/PI17121'
+              - $ref: '#/components/schemas/PI19132'
+              - $ref: '#/components/schemas/PI19120'
+              - $ref: '#/components/schemas/PI17130'
+              - $ref: '#/components/schemas/PI17118'
+              - $ref: '#/components/schemas/PI19132'
+              - $ref: '#/components/schemas/PI19127'
+              - $ref: '#/components/schemas/PI21043'
+              - $ref: '#/components/schemas/PI21043'
+              - $ref: '#/components/schemas/PI21043'
+        description: ''
+    summary: Bestellung_einer_Konfiguration_vom_NB_an_MSB
+    tags:
+    - GPKE Teil 3

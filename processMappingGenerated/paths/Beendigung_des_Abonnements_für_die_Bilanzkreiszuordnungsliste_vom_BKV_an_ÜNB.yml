@@ -1,0 +1,30 @@
+/Beendigung_des_Abonnements_für_die_Bilanzkreiszuordnungsliste_vom_BKV_an_ÜNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17203 | BKV | ÜNB | Anforder. Bilanzkreiszuordnungsliste | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17203 Anforder. Bilanzkreiszuordnungsliste
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17203'
+        description: ''
+    summary: Beendigung_des_Abonnements_für_die_Bilanzkreiszuordnungsliste_vom_BKV_an_ÜNB
+    tags:
+    - MaBiS

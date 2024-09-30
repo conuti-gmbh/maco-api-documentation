@@ -1,0 +1,29 @@
+PI55613:
+  description: "55613 NB\u2192\xDCNB Abr.-Daten BK-Abr. verb. MaLo"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

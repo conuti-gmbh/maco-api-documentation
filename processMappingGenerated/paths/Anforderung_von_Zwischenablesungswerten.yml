@@ -1,0 +1,28 @@
+/Anforderung_von_Zwischenablesungswerten:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Anforderung Wert vom NB | NB | -- | -- | -- | 1 |
+
+      | → ref Anforderung Wert vom LF | LF | -- | -- | -- | 2 |
+
+      | → ref Anforderung Wert vom MSB der Marktlokation | MSB | -- | -- | -- | 3
+      |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Anforderung_von_Zwischenablesungswerten
+    tags:
+    - WiM Strom Teil 2

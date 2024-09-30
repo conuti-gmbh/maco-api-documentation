@@ -1,0 +1,53 @@
+/MSB_der_Marktlokation_stellt_selbst_Reklamationsbedarf_fest:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → ref Stornierung Werte vom MSB der Marktlokation | MSB (entspricht MSB am
+      Objekt Marktlokation) | -- | -- | -- | 1 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Marktlokation |
+      MSB (entspricht MSB am Objekt Marktlokation) | -- | -- | -- | 2 |
+
+      | PI17113 | MSB (entspricht MSB am Objekt Marktlokation) | MSB (entspricht MSB
+      am Objekt Messlokation) | Reklamation von Werten | -- | 3 |
+
+      | PI19114 | MSB (entspricht MSB am Objekt Messlokation) | MSB (entspricht MSB
+      am Objekt Marktlokation) | Ablehnung Reklamation | -- | 4 |
+
+      | → ref Stornierung Werte vom MSB der Messlokation | MSB (entspricht MSB am
+      Objekt Messlokation) | -- | -- | -- | 5 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSB am Objekt Messlokation) | -- | -- | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17113 Reklamation von Werten
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19114 Ablehnung Reklamation
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17113'
+              - $ref: '#/components/schemas/PI19114'
+        description: ''
+    summary: MSB_der_Marktlokation_stellt_selbst_Reklamationsbedarf_fest
+    tags:
+    - WiM Strom Teil 2

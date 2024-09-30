@@ -1,0 +1,30 @@
+PI13018:
+  description: "13018 NB (verantwortlicher NB)\u2192NB (benachbarter NB) Lastgang\
+    \ Messlokation, Netzkoppelpunkt, Netzlokation"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB)
+      type: string
+  type: object

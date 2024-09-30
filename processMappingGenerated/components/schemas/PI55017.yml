@@ -1,0 +1,30 @@
+PI55017:
+  description: "55017 LFA\u2192LFN Best\xE4tigung K\xFCndigung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
+      enum:
+      - LFN
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS,
+        LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFA
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFA
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LFA
+      type: string
+  type: object

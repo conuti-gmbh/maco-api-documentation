@@ -1,0 +1,39 @@
+/Kap._D_1.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17103 | LF | NB | Anfrage Brennwert / Zustandszahl | -- |  |
+
+      | PI19103 | NB | LF | Ablehnung der Anfrage Brennwert / Zustandszahl | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17103 Anfrage Brennwert / Zustandszahl
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19103 Ablehnung der Anfrage Brennwert / Zustandszahl
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17103'
+              - $ref: '#/components/schemas/PI19103'
+        description: ''
+    summary: Kap._D_1.3_Nr.
+    tags:
+    - GeLi Gas

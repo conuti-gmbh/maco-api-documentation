@@ -1,0 +1,57 @@
+/Kündigung_Messstellenbetrieb:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55039 | MSB (entspricht MSBN am Objekt Messlokation) | MSB (entspricht MSBA
+      am Objekt Messlokation) | Kündigung MSB | -- | 1 |
+
+      | PI55040 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Bestätigung Kündigung MSB | -- | 2 |
+
+      | PI55041 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation) | Ablehnung Kündigung MSB | -- | 2 |
+
+      | → ref Ende Messstellenbetrieb | MSB (entspricht MSBA am Objekt Messlokation)
+      | -- | -- | -- | 3 |
+
+      | → ref Beendigung der Übermittlung von Werten an ESA durch MSB | MSB (entspricht
+      MSBA am Objekt Messlokation) | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55039 Kündigung MSB
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55040 Bestätigung Kündigung MSB
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55041 Ablehnung Kündigung MSB
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55039'
+              - $ref: '#/components/schemas/PI55040'
+              - $ref: '#/components/schemas/PI55041'
+        description: ''
+    summary: Kündigung_Messstellenbetrieb
+    tags:
+    - WiM Strom Teil 1

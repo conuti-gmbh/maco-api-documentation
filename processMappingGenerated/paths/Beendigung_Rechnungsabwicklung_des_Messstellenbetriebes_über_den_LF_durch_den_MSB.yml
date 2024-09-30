@@ -1,0 +1,54 @@
+/Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17006 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Beendigung Rechnungsabwicklung
+      MSB über LF | -- | 1 |
+
+      | PI19009 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Bestätigung
+      Beendigung Rechnungsabwicklung MSB | -- | 2 |
+
+      | PI19010 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Ablehnung Beendigung
+      Rechnungsabwicklung MSB | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17006 Beendigung Rechnungsabwicklung MSB über
+                    LF
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19009 Bestätigung Beendigung Rechnungsabwicklung
+                    MSB
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19010 Ablehnung Beendigung Rechnungsabwicklung
+                    MSB
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17006'
+              - $ref: '#/components/schemas/PI19009'
+              - $ref: '#/components/schemas/PI19010'
+        description: ''
+    summary: Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB
+    tags:
+    - WiM Strom Teil 1

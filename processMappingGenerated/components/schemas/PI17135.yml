@@ -1,0 +1,30 @@
+PI17135:
+  description: "17135 MSB\u2192weiterer MSB Einrichtung Konfiguration Zuordnung LF\
+    \ von MSB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - weiterer MSB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - weiterer MSB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

@@ -1,0 +1,64 @@
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55062 | NB (verantwortlicher NB) | NB (benachbarter NB) | Aktivierung von
+      ZP | -- | 1 |
+
+      | PI55064 | NB (benachbarter NB) | NB (verantwortlicher NB) | Antwort | -- |
+      2 |
+
+      | → manuelle Fehlerklärung | NB (verantwortlicher NB) | NB (benachbarter NB)
+      | -- | -- | 3 |
+
+      | PI55062 | NB (verantwortlicher NB) | BIKO | Aktivierung von ZP | -- | 4 |
+
+      | PI55064 | BIKO | NB (verantwortlicher NB) | Antwort | -- | 5 |
+
+      | → manuelle Fehlerklärung | NB (verantwortlicher NB) | BIKO | -- | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (benachbarter NB)] LESENDE API: ''
+                  AN [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55062 Aktivierung von ZP
+                  VON [NB (verantwortlicher NB)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB)] TRIGGER EVENT: ''
+                - AN [NB (verantwortlicher NB)] LESENDE API: ''
+                  AN [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55064 Antwort
+                  VON [NB (benachbarter NB)] LESENDE API: ''
+                  VON [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  VON [NB (benachbarter NB)] TRIGGER EVENT: ''
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55062 Aktivierung von ZP
+                  VON [NB (verantwortlicher NB)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB)] TRIGGER EVENT: ''
+                - AN [NB (verantwortlicher NB)] LESENDE API: ''
+                  AN [NB (verantwortlicher NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55064 Antwort
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55062'
+              - $ref: '#/components/schemas/PI55064'
+              - $ref: '#/components/schemas/PI55062'
+              - $ref: '#/components/schemas/PI55064'
+        description: ''
+    summary: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe
+    tags:
+    - MaBiS

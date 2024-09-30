@@ -1,0 +1,71 @@
+/Beginn_der_Ersatz-/Grundversorgung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55013 | NB | LF (Notz "entspricht E/G") | Anmeldung / Zuordnung EOG | --
+      | 1 |
+
+      | PI55014 | LF | NB | Bestätigung EOG Anmeldung | -- | 2 |
+
+      | PI55015 | LF | NB | Ablehung EOG Anmeldung | -- | 2 |
+
+      | PI55013 | NB | LF (Notz "entspricht E/G") | Anmeldung / Zuordnung EOG | --
+      | 3 |
+
+      | → ref Übermittlung der Berechnungsformel | NB | -- | -- | -- | 4 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 5 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 6 |
+
+      | → ref Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 7 |
+
+      | → ref Einrichtung der Konfigurationen aufgrund einer Zuordnung eines LF zu
+      einer Marktlokation bzw. Tranche | NB | -- | -- | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF (Notz "entspricht E/G")] LESENDE API: ''
+                  AN [LF (Notz "entspricht E/G")] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55013 Anmeldung / Zuordnung EOG
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55014 Bestätigung EOG Anmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55015 Ablehung EOG Anmeldung
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF (Notz "entspricht E/G")] LESENDE API: ''
+                  AN [LF (Notz "entspricht E/G")] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55013 Anmeldung / Zuordnung EOG
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55013'
+              - $ref: '#/components/schemas/PI55014'
+              - $ref: '#/components/schemas/PI55015'
+              - $ref: '#/components/schemas/PI55013'
+        description: ''
+    summary: Beginn_der_Ersatz-/Grundversorgung
+    tags:
+    - GPKE Teil 2

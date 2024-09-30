@@ -1,0 +1,50 @@
+/Übermittlung_Bilanzierungsgebietsclearingliste_vom_ÜNB_an_NB_(inkl._Abonnierung):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17206 | NB | ÜNB | Anforderung Bilanzierungsgebietsclearingliste | -- |
+      1 |
+
+      | PI55195 | ÜNB | NB | Bilanzierungsgebietsclearingliste | -- | 2 |
+
+      | PI55196 | NB | ÜNB | Antwort auf Bilanzierungsgebietsclearingliste | -- |
+      3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17206 Anforderung Bilanzierungsgebietsclearingliste
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55195 Bilanzierungsgebietsclearingliste
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55196 Antwort auf Bilanzierungsgebietsclearingliste
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17206'
+              - $ref: '#/components/schemas/PI55195'
+              - $ref: '#/components/schemas/PI55196'
+        description: ''
+    summary: Übermittlung_Bilanzierungsgebietsclearingliste_vom_ÜNB_an_NB_(inkl._Abonnierung)
+    tags:
+    - MaBiS

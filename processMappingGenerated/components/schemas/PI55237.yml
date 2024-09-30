@@ -1,0 +1,29 @@
+PI55237:
+  description: "55237 NB (benachbarter NB)\u2192NB (verantwortlicher NB der NGZ) Antwort"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB der NGZ)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB der NGZ)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+  type: object

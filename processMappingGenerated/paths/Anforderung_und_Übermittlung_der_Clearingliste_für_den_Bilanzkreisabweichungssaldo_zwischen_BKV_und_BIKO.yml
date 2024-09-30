@@ -1,0 +1,41 @@
+/Anforderung_und_Übermittlung_der_Clearingliste_für_den_Bilanzkreisabweichungssaldo_zwischen_BKV_und_BIKO:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17204 | BKV | BIKO | Anforder. Clearingliste BAS | -- | 1 |
+
+      | PI55070 | BIKO | BKV | Clearingliste BAS | -- | 3 |
+
+      | → manuelle Fehlerklärung | BKV | BIKO | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17204 Anforder. Clearingliste BAS
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55070 Clearingliste BAS
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17204'
+              - $ref: '#/components/schemas/PI55070'
+        description: ''
+    summary: Anforderung_und_Übermittlung_der_Clearingliste_für_den_Bilanzkreisabweichungssaldo_zwischen_BKV_und_BIKO
+    tags:
+    - MaBiS

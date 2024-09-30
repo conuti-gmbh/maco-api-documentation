@@ -1,0 +1,29 @@
+PI44137:
+  description: "44137 NB [Berechtigter]\u2192LF Nicht Bila. rel. Anfrage an LF"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB [Berechtigter]
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB [Berechtigter]
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB [Berechtigter]
+      type: string
+  type: object

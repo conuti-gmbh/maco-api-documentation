@@ -1,0 +1,30 @@
+PI55607:
+  description: "55607 NB\u2192LFN (Notiz \"LF des Unternehmens Netzbetreiber\") Ank\xFC\
+    ndigung Zuordnung / Zuordnung des LF zur MaLo/ Tranche"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LFN (Notiz "LF des Unternehmens Netzbetreiber")
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFN (Notiz "LF des Unternehmens Netzbetreiber")
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

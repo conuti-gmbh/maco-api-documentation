@@ -1,0 +1,48 @@
+/Kap._B_2.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44039 | MSBN | MSBA | Kündigung MSB | -- |  |
+
+      | PI44041 | MSBA | MSBN | Ablehnung Kündigung MSB | -- |  |
+
+      | PI44040 | MSBA | MSBN | Bestätigung Kündigung MSB | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44039 Kündigung MSB
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44041 Ablehnung Kündigung MSB
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44040 Bestätigung Kündigung MSB
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44039'
+              - $ref: '#/components/schemas/PI44041'
+              - $ref: '#/components/schemas/PI44040'
+        description: ''
+    summary: Kap._B_2.3_Nr.
+    tags:
+    - WiM Gas

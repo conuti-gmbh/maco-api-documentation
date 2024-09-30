@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: >-
+    MACO APP - erforderliche ERP Schnittstellen | MACO APP - needed ERP
+    interfaces
+  license:
+    name: MIT
+    url: "https://opensource.org/licenses/MIT"
+  description: API basierend auf den Schnittstellenprozessen
+  version: 1.0.0
+
+servers:
+  - url: "https://api.macoapp.de"
+    description: Mock-Umgebung | Mock environment
+tags:
+- name: Prozessbeschreibung
+  description: Beschreibung von Prozessen und Abläufen
+- name: GeLi Gas
+  description: API für die Gasmarktliberalisierung
+- name: Geschäftsprozesse für EEG-Überführungszeitreihen V1.0
+  description: Prozesse für die Überführung von EEG-Zeitreihen
+- name: KoV Leitfaden Marktprozesse Bilanzkreismanagement Gas
+  description: Leitfaden für Marktprozesse im Bilanzkreismanagement Gas
+- name: Marktraumumstellung
+  description: Prozesse für die Umstellung von Marktprozessen
+- name: Prozesse zum Informationsaustausch zwischen Netzbetreiber und Herkunftsnachweis-register (HKN-R) des Umweltbundesamts (UBA)
+  description: Prozesse für den Informationsaustausch zwischen Netzbetreibern und dem HKN-R
+- name: WiM Gas
+  description: API für die Gasmarktprozesse
+- name: Marktkommunikation mit der Sicherheitsplattform Gas
+  description: Prozesse für die Marktkommunikation mit der Sicherheitsplattform Gas
+- name: MaBiS
+  description: Prozesse für die Bilanzkreisabrechnung
+- name: MABIS
+  description: Prozesse für die Bilanzkreisabrechnung und -verwaltung
+- name: MaBiS BK6-19-218 Bilanzkreistreue
+  description: Prozesse für die Bilanzkreistreue
+- name: Leitfaden Marktprozesse Netzbetreiberwechsel
+  description: Leitfaden für Marktprozesse bei Netzbetreiberwechsel
+- name: Prozessbeschreibung zur Kapazitätsabrechnung an Ausspeisepunkten zu Letztverbrauchern
+  description: Prozessbeschreibung für die Kapazitätsabrechnung
+- name: Kommunikationsprozesse Redispatch
+  description: Prozesse für die Kommunikation bei Redispatch
+- name: Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas
+  description: Prozesse für die Ermittlung und Abrechnung von Mehr-/Mindermengen
+- name: Anwendungshilfe Sperrprozesse Gas
+  description: Anwendungshilfe für Sperrprozesse Gas
+- name: AWH Modell 2 ladev.scharf., bila., Energie.zuord.möglichkeit
+  description: Anwendungshilfe für das Modell 2
+- name: AWH Erg. d. Marktregeln f. d. Durchfür. d. Bilanzkreisabr. Strom (MaBiS)
+  description: Anwendungshilfe für die Marktregeln
+- name: BDEW-Arbeitshilfe "Messstellenbetriebsabrechnung gegenüber dem Netzbetreiber"
+  description: Arbeitshilfe für die Messstellenbetriebsabrechnung
+- name: GPKE Teil 2
+  description: Prozesse für die GPKE Teil 2
+- name: GPKE Teil 3
+  description: Prozesse für die GPKE Teil 3
+- name: GPKE Teil 4
+  description: Prozesse für die GPKE Teil 4
+- name: WiM Strom Teil 1
+  description: Prozesse für die WiM Strom Teil 1
+- name: WiM Strom Teil 2
+  description: Prozesse für die WiM Strom Teil 2
+
+security: []
+paths:
+  $ref: "processMappingGenerated/paths/_index.yml"
+

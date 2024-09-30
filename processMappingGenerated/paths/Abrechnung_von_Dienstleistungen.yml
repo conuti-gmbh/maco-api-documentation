@@ -1,0 +1,98 @@
+/Abrechnung_von_Dienstleistungen:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31003 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation oder gMSB am Objekt Messlokation) | WiM-Rechnung | --
+      | 1 |
+
+      | PI33003 | MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt
+      Messlokation) | MSB (entspricht MSBA am Objekt Messlokation) | Strom Abweisung
+      Kopf und Summe | -- | 2 |
+
+      | PI33001 | MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt
+      Messlokation) | MSB (entspricht MSBA am Objekt Messlokation) | Bestätigung |
+      -- | 2 |
+
+      | PI33004 | MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt
+      Messlokation) | MSB (entspricht MSBA am Objekt Messlokation) | Strom Abweisung
+      Position | -- | 2 |
+
+      | PI31004 | MSB (entspricht MSBA am Objekt Messlokation) | MSB (entspricht MSBN
+      am Objekt Messlokation oder gMSB am Objekt Messlokation) | Stornorechnung |
+      -- | 3 |
+
+      | PI33001 | MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt
+      Messlokation) | MSB (entspricht MSBA am Objekt Messlokation) | Bestätigung |
+      -- | 4 |
+
+      | PI33002 | MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt
+      Messlokation) | MSB (entspricht MSBA am Objekt Messlokation) | Abweisung | --
+      | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31003 WiM-Rechnung
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33003 Strom Abweisung Kopf und Summe
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33004 Strom Abweisung Position
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBA am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSBA am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSBA am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSBN am Objekt Messlokation oder gMSB am Objekt Messlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31003'
+              - $ref: '#/components/schemas/PI33003'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Abrechnung_von_Dienstleistungen
+    tags:
+    - WiM Strom Teil 1

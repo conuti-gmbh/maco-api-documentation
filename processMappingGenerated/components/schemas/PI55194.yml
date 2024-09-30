@@ -1,0 +1,29 @@
+PI55194:
+  description: "55194 NB (Strom)\u2192MSB (Gas) Antowrt auf GDA (Strom an Gas)"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (Gas)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (Gas)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (Strom)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (Strom)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (Strom)
+      type: string
+  type: object

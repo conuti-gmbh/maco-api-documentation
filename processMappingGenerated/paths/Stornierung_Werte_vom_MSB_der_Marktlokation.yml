@@ -1,0 +1,51 @@
+/Stornierung_Werte_vom_MSB_der_Marktlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13006 | MSB (entspricht MSB am Objekt Marktlokation) | NB | Messwert Storno
+      | -- | 1 |
+
+      | PI13006 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Messwert Storno
+      | -- | 2 |
+
+      | PI13006 | MSB (entspricht MSB am Objekt Marktlokation) | ÜNB | Messwert Storno
+      | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13006'
+              - $ref: '#/components/schemas/PI13006'
+              - $ref: '#/components/schemas/PI13006'
+        description: ''
+    summary: Stornierung_Werte_vom_MSB_der_Marktlokation
+    tags:
+    - WiM Strom Teil 2

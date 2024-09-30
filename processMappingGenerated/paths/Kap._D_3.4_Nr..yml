@@ -1,0 +1,111 @@
+/Kap._D_3.4_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31004 | MSBA | NB | Stornorechnung | -- |  |
+
+      | PI31004 | MSBA | MSBN | Stornorechnung | -- |  |
+
+      | PI31004 | MSBA | NB | Stornorechnung | -- |  |
+
+      | PI31003 | MSBA | NB | WiM-Rechnung | -- |  |
+
+      | PI31003 | MSBA | MSBN | WiM-Rechnung | -- |  |
+
+      | PI31003 | MSBA | NB | WiM-Rechnung | -- |  |
+
+      | PI33001 | NB | MSBA | Bestätigung | -- |  |
+
+      | PI33001 | MSBN | MSBA | Bestätigung | -- |  |
+
+      | PI33002 | NB | MSBA | Abweisung | -- |  |
+
+      | PI33002 | MSBN | MSBA | Abweisung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31004 Stornorechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31003 WiM-Rechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31003 WiM-Rechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31003 WiM-Rechnung
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33001 Bestätigung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI33002 Abweisung
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI31004'
+              - $ref: '#/components/schemas/PI31003'
+              - $ref: '#/components/schemas/PI31003'
+              - $ref: '#/components/schemas/PI31003'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33001'
+              - $ref: '#/components/schemas/PI33002'
+              - $ref: '#/components/schemas/PI33002'
+        description: ''
+    summary: Kap._D_3.4_Nr.
+    tags:
+    - WiM Gas

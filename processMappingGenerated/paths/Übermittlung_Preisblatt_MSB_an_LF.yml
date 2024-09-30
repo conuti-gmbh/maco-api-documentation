@@ -1,0 +1,31 @@
+/Übermittlung_Preisblatt_MSB_an_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI27002 | MSB | LF | Preisblatt Messstellenbetrieb / Konfigurationen | --
+      | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI27002 Preisblatt Messstellenbetrieb / Konfigurationen
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI27002'
+        description: ''
+    summary: Übermittlung_Preisblatt_MSB_an_LF
+    tags:
+    - WiM Strom Teil 1

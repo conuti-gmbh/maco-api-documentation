@@ -1,0 +1,34 @@
+/Übermittlung_von_Zählerständen_vom_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13017 | NB | MSB (Messlokation) | Zählerstand (Strom) | -- | 1 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (Messlokation) | -- | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (Messlokation)] LESENDE API: LESEN_MARKTLOKATION_BASIS,
+                    LESEN_MESSLOKATIONS_BASIS, LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB (Messlokation)] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ZAEHLERSTAND
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13017'
+        description: ''
+    summary: Übermittlung_von_Zählerständen_vom_NB
+    tags:
+    - WiM Strom Teil 2

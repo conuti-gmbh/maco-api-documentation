@@ -1,0 +1,31 @@
+PI55010:
+  description: "55010 NB\u2192LFA Anfrage zur Beendigung der Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_BILANZIERUNG_BASIS, LESEN_ENERGIELIEFERVERTRAG_BASIS,
+        LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - LFA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ERSTELLEN_PROZESSDATEN_LIEFERENDE
+      enum:
+      - LFA
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_TRANCHE_BASIS, LESEN_BILANZIERUNG_BASIS,
+        LESEN_ENERGIELIEFERVERTRAG_BASIS, LESEN_NETZNUTZUNGSVERTRAG_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

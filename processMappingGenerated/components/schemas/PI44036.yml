@@ -1,0 +1,29 @@
+PI44036:
+  description: "44036 NB\u2192LFN Informationsmeldung \xFCber existierende Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFN
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

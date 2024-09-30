@@ -1,0 +1,30 @@
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55063 | NB | LF | Deaktivierung von ZP | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55063 Deaktivierung von ZP
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55063'
+        description: ''
+    summary: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF
+    tags:
+    - MaBiS

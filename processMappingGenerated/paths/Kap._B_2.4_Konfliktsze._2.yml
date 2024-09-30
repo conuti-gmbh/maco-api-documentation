@@ -1,0 +1,32 @@
+/Kap._B_2.4_Konfliktsze._2:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44038 | NB | LF | Informationsmeldung zur Aufhebung einer zuk. Zuordnung
+      | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44038 Informationsmeldung zur Aufhebung einer
+                    zuk. Zuordnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44038'
+        description: ''
+    summary: Kap._B_2.4_Konfliktsze._2
+    tags:
+    - GeLi Gas

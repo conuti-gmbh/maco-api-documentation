@@ -1,0 +1,141 @@
+/Störungsbehebung_in_der_Messlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI23001 | Störungsmelder | MSB (entspricht MSB am Objekt Messlokation) | Störungsmeldung
+      | -- | 1 |
+
+      | PI23003 | MSB (entspricht MSB am Objekt Messlokation) | Störungsmelder | Ablehnung
+      | -- | 2 |
+
+      | PI23004 | MSB (entspricht MSB am Objekt Messlokation) | Störungsmelder | Bestätigung
+      | -- | 2 |
+
+      | PI23005 | MSB (entspricht MSB am Objekt Messlokation) | MSB (entspricht MSB
+      am Objekt Marktlokation) | Informationsmeldung | -- | 3 |
+
+      | PI23011 | MSB (entspricht MSB am Objekt Marktlokation) | NB | Informationsmeldung
+      | -- | 4 |
+
+      | PI23011 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Informationsmeldung
+      | -- | 5 |
+
+      | PI23011 | MSB (entspricht MSB am Objekt Marktlokation) | ÜNB | Informationsmeldung
+      | -- | 6 |
+
+      | PI23008 | MSB (entspricht MSB am Objekt Messlokation) | Störungsmelder | Ergebnisbericht
+      | -- | 7 |
+
+      | PI23009 | MSB (entspricht MSB am Objekt Messlokation) | MSB (entspricht MSB
+      am Objekt Marktlokation) | Informationsmeldung | -- | 8 |
+
+      | PI23012 | MSB (entspricht MSB am Objekt Marktlokation) | NB | Informationsmeldung
+      | -- | 9 |
+
+      | PI23012 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Informationsmeldung
+      | -- | 10 |
+
+      | PI23012 | MSB (entspricht MSB am Objekt Marktlokation) | ÜNB | Informationsmeldung
+      | -- | 11 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23001 Störungsmeldung
+                  VON [Störungsmelder] LESENDE API: ''
+                  VON [Störungsmelder] SCHREIBENDE API: ''
+                  VON [Störungsmelder] TRIGGER EVENT: ''
+                - AN [Störungsmelder] LESENDE API: ''
+                  AN [Störungsmelder] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23003 Ablehnung
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [Störungsmelder] LESENDE API: ''
+                  AN [Störungsmelder] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23004 Bestätigung
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23005 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23011 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23011 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23011 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [Störungsmelder] LESENDE API: ''
+                  AN [Störungsmelder] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23008 Ergebnisbericht
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23009 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23012 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23012 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI23012 Informationsmeldung
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI23001'
+              - $ref: '#/components/schemas/PI23003'
+              - $ref: '#/components/schemas/PI23004'
+              - $ref: '#/components/schemas/PI23005'
+              - $ref: '#/components/schemas/PI23011'
+              - $ref: '#/components/schemas/PI23011'
+              - $ref: '#/components/schemas/PI23011'
+              - $ref: '#/components/schemas/PI23008'
+              - $ref: '#/components/schemas/PI23009'
+              - $ref: '#/components/schemas/PI23012'
+              - $ref: '#/components/schemas/PI23012'
+              - $ref: '#/components/schemas/PI23012'
+        description: ''
+    summary: Störungsbehebung_in_der_Messlokation
+    tags:
+    - WiM Strom Teil 2

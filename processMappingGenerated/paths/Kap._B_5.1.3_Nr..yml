@@ -1,0 +1,195 @@
+/Kap._B_5.1.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13006 | MSBA | NB | Messwert Storno | -- |  |
+
+      | PI13006 | MSBN | NB | Messwert Storno | -- |  |
+
+      | PI17009 | MSBN | MSBA | Anzeige Gerätewechselabsicht | -- |  |
+
+      | PI19015 | MSBA | MSBN | Bestätigung Gerätewechselabsicht  | -- |  |
+
+      | PI19016 | MSBA | MSBN | Ablehnung Gerätewechselabsicht  | -- |  |
+
+      | PI19015 | MSBA | MSBN | Bestätigung Gerätewechselabsicht  | -- |  |
+
+      | PI19016 | MSBA | MSBN | Ablehnung Gerätewechselabsicht  | -- |  |
+
+      | PI13008 | MSBN | NB | Lastgang (Gas)  | -- |  |
+
+      | PI13008 | MSBA | NB | Lastgang (Gas)  | -- |  |
+
+      | PI13002 | MSBN | NB | Zählerstand (Gas) | -- |  |
+
+      | PI13002 | MSBA | NB | Zählerstand (Gas) | -- |  |
+
+      | PI13007 | MSBN | NB | Gasbeschaffenheit | -- |  |
+
+      | PI13007 | MSBA | NB | Gasbeschaffenheit | -- |  |
+
+      | PI13009 | MSBN | NB | Energiemenge (Gas) | -- |  |
+
+      | PI13009 | MSBA | NB | Energiemenge (Gas) | -- |  |
+
+      | PI13008 | MSBN | NB | Lastgang (Gas)  | -- |  |
+
+      | PI13002 | MSBN | NB | Zählerstand (Gas) | -- |  |
+
+      | PI13007 | MSBN | NB | Gasbeschaffenheit | -- |  |
+
+      | PI13006 | MSBN | NB | Messwert Storno | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBA] LESENDE API: ''
+                  AN [MSBA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17009 Anzeige Gerätewechselabsicht
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19015 Bestätigung Gerätewechselabsicht '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19016 Ablehnung Gerätewechselabsicht '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19015 Bestätigung Gerätewechselabsicht '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [MSBN] LESENDE API: ''
+                  AN [MSBN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI19016 Ablehnung Gerätewechselabsicht '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [MSBN] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSBN] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSBN] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [MSBA] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSBA] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSBA] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13007 Gasbeschaffenheit
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13007 Gasbeschaffenheit
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13009 Energiemenge (Gas)
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13009 Energiemenge (Gas)
+                  VON [MSBA] LESENDE API: ''
+                  VON [MSBA] SCHREIBENDE API: ''
+                  VON [MSBA] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [MSBN] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSBN] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSBN] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13007 Gasbeschaffenheit
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [MSBN] LESENDE API: ''
+                  VON [MSBN] SCHREIBENDE API: ''
+                  VON [MSBN] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13006'
+              - $ref: '#/components/schemas/PI13006'
+              - $ref: '#/components/schemas/PI17009'
+              - $ref: '#/components/schemas/PI19015'
+              - $ref: '#/components/schemas/PI19016'
+              - $ref: '#/components/schemas/PI19015'
+              - $ref: '#/components/schemas/PI19016'
+              - $ref: '#/components/schemas/PI13008'
+              - $ref: '#/components/schemas/PI13008'
+              - $ref: '#/components/schemas/PI13002'
+              - $ref: '#/components/schemas/PI13002'
+              - $ref: '#/components/schemas/PI13007'
+              - $ref: '#/components/schemas/PI13007'
+              - $ref: '#/components/schemas/PI13009'
+              - $ref: '#/components/schemas/PI13009'
+              - $ref: '#/components/schemas/PI13008'
+              - $ref: '#/components/schemas/PI13002'
+              - $ref: '#/components/schemas/PI13007'
+              - $ref: '#/components/schemas/PI13006'
+        description: ''
+    summary: Kap._B_5.1.3_Nr.
+    tags:
+    - WiM Gas

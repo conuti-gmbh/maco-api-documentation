@@ -1,0 +1,29 @@
+PI19013:
+  description: "19013 MSB\u2192ESA Best\xE4tigung der Stornierung einer Bestellung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - ESA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

@@ -1,0 +1,48 @@
+/Übermittlung_von_normierten_Profilen_vom_NB_an_MSB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13010 | NB | MSB | normiertes Profil | -- | 1 |
+
+      | PI13011 | NB | MSB | Profilschar | -- | 1 |
+
+      | PI13012 | NB | MSB | TEP vergh. Werte Referenzmessung | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13010 normiertes Profil
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13011 Profilschar
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13012 TEP vergh. Werte Referenzmessung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13010'
+              - $ref: '#/components/schemas/PI13011'
+              - $ref: '#/components/schemas/PI13012'
+        description: ''
+    summary: Übermittlung_von_normierten_Profilen_vom_NB_an_MSB
+    tags:
+    - MaBiS

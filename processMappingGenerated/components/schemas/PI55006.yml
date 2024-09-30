@@ -1,0 +1,29 @@
+PI55006:
+  description: "55006 NB\u2192LF Ablehnung Abmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTAG_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: '?'
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATION_BASIS, LESEN_NETZNUTZUNGSVERTAG_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

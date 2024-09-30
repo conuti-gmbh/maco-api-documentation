@@ -1,0 +1,54 @@
+/Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55235 | NB (verantwortlicher NB der NGZ) | NB (benachbarter NB) | Zuordnung
+      ZP der NGZ zur NZR | -- | 1 |
+
+      | PI55237 | NB (benachbarter NB) | NB (verantwortlicher NB der NGZ) | Antwort
+      | -- | 2 |
+
+      | → manuelle Fehlerklärung | NB (verantwortlicher NB der NGZ) | NB (benachbarter
+      NB) | Manuell | -- | 3 |
+
+      | PI55235 | NB (verantwortlicher NB der NGZ) | ÜNB | Zuordnung ZP der NGZ zur
+      NZR | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB (benachbarter NB)] LESENDE API: ''
+                  AN [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55235 Zuordnung ZP der NGZ zur NZR
+                  VON [NB (verantwortlicher NB der NGZ)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB der NGZ)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB der NGZ)] TRIGGER EVENT: ''
+                - AN [NB (verantwortlicher NB der NGZ)] LESENDE API: ''
+                  AN [NB (verantwortlicher NB der NGZ)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55237 Antwort
+                  VON [NB (benachbarter NB)] LESENDE API: ''
+                  VON [NB (benachbarter NB)] SCHREIBENDE API: ''
+                  VON [NB (benachbarter NB)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55235 Zuordnung ZP der NGZ zur NZR
+                  VON [NB (verantwortlicher NB der NGZ)] LESENDE API: ''
+                  VON [NB (verantwortlicher NB der NGZ)] SCHREIBENDE API: ''
+                  VON [NB (verantwortlicher NB der NGZ)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55235'
+              - $ref: '#/components/schemas/PI55237'
+              - $ref: '#/components/schemas/PI55235'
+        description: ''
+    summary: Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe
+    tags:
+    - AWH Erg. d. Marktregeln f. d. Durchfür. d. Bilanzkreisabr. Strom (MaBiS)

@@ -1,0 +1,29 @@
+PI21038:
+  description: "21038 BTR\u2192NB Ansicht BTR"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BTR
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BTR
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BTR
+      type: string
+  type: object

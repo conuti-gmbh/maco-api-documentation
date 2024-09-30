@@ -1,0 +1,29 @@
+PI21009:
+  description: "21009 MSBN\u2192NB Statusmeldung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSBN
+      type: string
+  type: object

@@ -1,0 +1,33 @@
+/Stornierung_von_Zählerständen_vom_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13006 | NB | MSB (Messlokation) | Messwert Storno | -- | 1 |
+
+      | → ref Stornierung Werte vom MSB der Messlokation | MSB (Messlokation) | --
+      | -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (Messlokation)] LESENDE API: ''
+                  AN [MSB (Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13006 Messwert Storno
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13006'
+        description: ''
+    summary: Stornierung_von_Zählerständen_vom_NB
+    tags:
+    - WiM Strom Teil 2

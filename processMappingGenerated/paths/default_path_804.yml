@@ -1,0 +1,31 @@
+/default_path_804:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55076 | RB HKN-R | NB | Antwort auf Stammdatenänderung  | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI55076 Antwort auf Stammdatenänderung '
+                  VON [RB HKN-R] LESENDE API: ''
+                  VON [RB HKN-R] SCHREIBENDE API: ''
+                  VON [RB HKN-R] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55076'
+        description: ''
+    summary: default_path_804
+    tags:
+    - Prozesse zum Informationsaustausch zwischen Netzbetreiber und Herkunftsnachweis-register
+      (HKN-R) des Umweltbundesamts (UBA)

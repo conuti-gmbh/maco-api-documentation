@@ -1,0 +1,48 @@
+/Bestellung_zur_Stammdatenänderung_an_ÜNB_(verantwortlich):
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Bestellung einer Änderung von Stammdaten vom NB an ÜNB | NB | ÜNB | Hinweis:
+      ÜNB ist aktuell für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall
+      aufgebaut. | -- | 1 |
+
+      | → Bearbeitungsstand zur Bestellung | ÜNB | NB | Hinweis: ÜNB ist aktuell für
+      kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 2 |
+
+      | → Bestellung einer Änderung von Stammdaten vom LF an ÜNB | LF | ÜNB | Hinweis:
+      ÜNB ist aktuell für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall
+      aufgebaut. | -- | 3 |
+
+      | → Bearbeitungsstand zur Bestellung | ÜNB | LF | Hinweis: ÜNB ist aktuell für
+      kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 4 |
+
+      | → Bestellung einer Änderung von Stammdaten vom MSB an ÜNB | MSB | ÜNB | Hinweis:
+      ÜNB ist aktuell für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall
+      aufgebaut. | -- | 5 |
+
+      | → Bearbeitungsstand zur Bestellung | ÜNB | MSB | Hinweis: ÜNB ist aktuell
+      für kein Stammdatum verantwortlich, somit wurde keine Anwendungsfall aufgebaut.
+      | -- | 6 |
+
+      | → ref Stammdatenänderung vom ÜNB (verantwortlich) ausgehend | ÜNB | -- | --
+      | -- | 7 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Bestellung_zur_Stammdatenänderung_an_ÜNB_(verantwortlich)
+    tags:
+    - GPKE Teil 4

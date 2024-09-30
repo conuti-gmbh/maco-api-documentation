@@ -1,0 +1,29 @@
+PI55223:
+  description: "55223 \xDCNB\u2192NB DZ\xDC-Liste"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+  type: object

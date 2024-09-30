@@ -1,0 +1,85 @@
+/Bestellung_einer_Änderung_von_Abrechnungsdaten_von_LF_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55156 | LF | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. verb. MaLo | --
+      | 1 |
+
+      | PI55220 | LF | NB | Rückmeldung/Anfrage Abr.-Daten NNA | -- | 1 |
+
+      | PI55673 | LF | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. erz. Malo | --
+      | 1 |
+
+      | PI17133 | LF | NB | Bestellung Änderung Abrechnungsdaten | -- | 1 |
+
+      | PI19133 | NB | LF | Bearbeitungsstand Bestellung Änderung Abrechnungsdaten
+      | 17133 | 2 |
+
+      | PI21047 | NB | LF | Bearbeitungsstandsmeldung | -- | 2 |
+
+      | → ref Abrechnungsdaten Netznutzungsabrechnung | NB | -- | -- | -- | 3 |
+
+      | → ref Abrechnungsdaten Bilanzkreisabrechnung | NB | -- | -- | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55156 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    verb. MaLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55220 Rückmeldung/Anfrage Abr.-Daten NNA
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55673 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    erz. Malo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17133 Bestellung Änderung Abrechnungsdaten
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19133 Bearbeitungsstand Bestellung Änderung
+                    Abrechnungsdaten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55156'
+              - $ref: '#/components/schemas/PI55220'
+              - $ref: '#/components/schemas/PI55673'
+              - $ref: '#/components/schemas/PI17133'
+              - $ref: '#/components/schemas/PI19133'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Bestellung_einer_Änderung_von_Abrechnungsdaten_von_LF_an_NB
+    tags:
+    - GPKE Teil 2

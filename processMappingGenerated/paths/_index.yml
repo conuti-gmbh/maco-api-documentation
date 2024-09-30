@@ -1,0 +1,824 @@
+/--:
+  $ref: --.yml
+/Abbestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_Ebene_der_Regelzone:
+  $ref: Abbestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_Ebene_der_Regelzone.yml
+/Abmeldung_einer_Marktlokation_aus_dem_Modell_2_durch_den_NB_(LPB):
+  $ref: Abmeldung_einer_Marktlokation_aus_dem_Modell_2_durch_den_NB_(LPB).yml
+/Abmeldung_eines_Bilanzierungsgebietes:
+  $ref: Abmeldung_eines_Bilanzierungsgebietes.yml
+/Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_LF:
+  $ref: Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_LF.yml
+/Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_NB:
+  $ref: Abrechnung_Leistungen_des_Preisblatts_A_des_MSB_zwischen_MSB_und_NB.yml
+/Abrechnung_Messstellenbetrieb_gegenüber_dem_LF:
+  $ref: Abrechnung_Messstellenbetrieb_gegenüber_dem_LF.yml
+/Abrechnung_Messstellenbetrieb_mit_iMS_gegenüber_dem_NB:
+  $ref: Abrechnung_Messstellenbetrieb_mit_iMS_gegenüber_dem_NB.yml
+/Abrechnung_einer_für_den_ESA_erbrachten_Leistung:
+  $ref: Abrechnung_einer_für_den_ESA_erbrachten_Leistung.yml
+/Abrechnung_einer_sonstigen_Leistung:
+  $ref: Abrechnung_einer_sonstigen_Leistung.yml
+/Abrechnung_von_Dienstleistungen:
+  $ref: Abrechnung_von_Dienstleistungen.yml
+/Abrechnungsdaten_Bilanzkreisabrechnung:
+  $ref: Abrechnungsdaten_Bilanzkreisabrechnung.yml
+/Abrechnungsdaten_Netznutzungsabrechnung:
+  $ref: Abrechnungsdaten_Netznutzungsabrechnung.yml
+/Abruf_im_Aufforderungsfall_mit_Delta-/Sollwertanweisung:
+  $ref: Abruf_im_Aufforderungsfall_mit_Delta-/Sollwertanweisung.yml
+/Abruf_im_Duldungsfall_mit_Sollwertanweisung:
+  $ref: Abruf_im_Duldungsfall_mit_Sollwertanweisung.yml
+/Abstimmung_der_Netzzeitreihe:
+  $ref: Abstimmung_der_Netzzeitreihe.yml
+/Aktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB:
+  $ref: Aktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB.yml
+/Aktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe:
+  $ref: Aktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe.yml
+/Aktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB):
+  $ref: Aktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB).yml
+/Aktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(des_LF):
+  $ref: Aktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(des_LF).yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_BKV:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_BKV.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_NB:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_NB.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_BIKO_und_NB:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_BIKO_und_NB.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_ÜNB_an_LF:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_ÜNB_an_LF.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB.yml
+/Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV:
+  $ref: Aktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV.yml
+/Anforderung_Wert_vom_LF:
+  $ref: Anforderung_Wert_vom_LF.yml
+/Anforderung_Wert_vom_MSB_der_Marktlokation:
+  $ref: Anforderung_Wert_vom_MSB_der_Marktlokation.yml
+/Anforderung_Wert_vom_NB:
+  $ref: Anforderung_Wert_vom_NB.yml
+/Anforderung_der_Ausfallarbeit_durch_den_anfNB:
+  $ref: Anforderung_der_Ausfallarbeit_durch_den_anfNB.yml
+/Anforderung_der_Lieferantenausfallarbeitsclearingliste_einmalig_oder_durch_ein_Abonnement:
+  $ref: Anforderung_der_Lieferantenausfallarbeitsclearingliste_einmalig_oder_durch_ein_Abonnement.yml
+/Anforderung_und_Übermittlung_Bilanzkreiszuordnungsliste_zwischen_NB_und_BKV:
+  $ref: Anforderung_und_Übermittlung_Bilanzkreiszuordnungsliste_zwischen_NB_und_BKV.yml
+/Anforderung_und_Übermittlung_Bilanzkreiszuordnungsliste_zwischen_ÜNB_und_BKV:
+  $ref: Anforderung_und_Übermittlung_Bilanzkreiszuordnungsliste_zwischen_ÜNB_und_BKV.yml
+/Anforderung_und_Übermittlung_der_Clearingliste_für_den_Bilanzkreisabweichungssaldo_zwischen_BKV_und_BIKO:
+  $ref: Anforderung_und_Übermittlung_der_Clearingliste_für_den_Bilanzkreisabweichungssaldo_zwischen_BKV_und_BIKO.yml
+/Anforderung_und_Übermittlung_der_Clearingliste_für_die_Netzbetreiber-Deltazeitreihe_zwischen_BIKO_und_NB:
+  $ref: Anforderung_und_Übermittlung_der_Clearingliste_für_die_Netzbetreiber-Deltazeitreihe_zwischen_BIKO_und_NB.yml
+/Anforderung_und_Übermittlung_der_Clearingliste_für_die_Übertragungsnetzbetreiber-Deltazeitreihe_zwischen_BIKO_und_ÜNB:
+  $ref: Anforderung_und_Übermittlung_der_Clearingliste_für_die_Übertragungsnetzbetreiber-Deltazeitreihe_zwischen_BIKO_und_ÜNB.yml
+/Anforderung_von_Zwischenablesungswerten:
+  $ref: Anforderung_von_Zwischenablesungswerten.yml
+/Anfrage_und_Bestellung_von_Werten_durch_den_ESA:
+  $ref: Anfrage_und_Bestellung_von_Werten_durch_den_ESA.yml
+/Anfrage_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF:
+  $ref: Anfrage_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF.yml
+/Angebot_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB:
+  $ref: Angebot_zur_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB.yml
+/Anmeldung_einer_Marktlokation_in_das_Modell_2_durch_den_NB_(LPB):
+  $ref: Anmeldung_einer_Marktlokation_in_das_Modell_2_durch_den_NB_(LPB).yml
+/Anmeldung_eines_Bilanzierungsgebietes:
+  $ref: Anmeldung_eines_Bilanzierungsgebietes.yml
+/Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Marktlokation:
+  $ref: Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Marktlokation.yml
+/Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Messlokation:
+  $ref: Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Messlokation.yml
+/Austausch_der_Deltazeitreihenübertrag-Liste_von_ÜNB_an_NB:
+  $ref: Austausch_der_Deltazeitreihenübertrag-Liste_von_ÜNB_an_NB.yml
+/Austausch_der_Lieferantenausfallarbeitsclearingliste:
+  $ref: Austausch_der_Lieferantenausfallarbeitsclearingliste.yml
+/Austausch_der_Lieferantenclearingliste_zwischen_NB_und_LF_(inkl._Abonnierung):
+  $ref: Austausch_der_Lieferantenclearingliste_zwischen_NB_und_LF_(inkl._Abonnierung).yml
+/Austausch_der_Lieferantenclearingliste_zwischen_ÜNB_und_LF_(inkl._Abonnierung):
+  $ref: Austausch_der_Lieferantenclearingliste_zwischen_ÜNB_und_LF_(inkl._Abonnierung).yml
+/Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF:
+  $ref: Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_LF.yml
+/Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB:
+  $ref: Beendigung_Rechnungsabwicklung_des_Messstellenbetriebes_über_den_LF_durch_den_MSB.yml
+/Beendigung_der_Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe:
+  $ref: Beendigung_der_Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe.yml
+/Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_BKV:
+  $ref: Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_BKV.yml
+/Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_NB:
+  $ref: Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe_vom_NB.yml
+/Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe:
+  $ref: Beendigung_der_Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe.yml
+/Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_ESA:
+  $ref: Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_ESA.yml
+/Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_MSB:
+  $ref: Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_MSB.yml
+/Beendigung_des_Abonnements_für_Bilanzkreiszuordnungsliste_vom_BKV_an_NB:
+  $ref: Beendigung_des_Abonnements_für_Bilanzkreiszuordnungsliste_vom_BKV_an_NB.yml
+/Beendigung_des_Abonnements_für_die_Bilanzierungsgebietsclearingliste_vom_NB_an_ÜNB:
+  $ref: Beendigung_des_Abonnements_für_die_Bilanzierungsgebietsclearingliste_vom_NB_an_ÜNB.yml
+/Beendigung_des_Abonnements_für_die_Bilanzkreiszuordnungsliste_vom_BKV_an_ÜNB:
+  $ref: Beendigung_des_Abonnements_für_die_Bilanzkreiszuordnungsliste_vom_BKV_an_ÜNB.yml
+/Beendigung_des_Abonnements_für_die_Lieferantenausfallarbeitsclearingliste:
+  $ref: Beendigung_des_Abonnements_für_die_Lieferantenausfallarbeitsclearingliste.yml
+/Beendigung_des_Abonnements_für_die_Lieferantenclearingliste_vom_LF_an_NB:
+  $ref: Beendigung_des_Abonnements_für_die_Lieferantenclearingliste_vom_LF_an_NB.yml
+/Beendigung_des_Abonnements_für_die_Lieferantenclearingliste_vom_LF_an_ÜNB:
+  $ref: Beendigung_des_Abonnements_für_die_Lieferantenclearingliste_vom_LF_an_ÜNB.yml
+/Beendigung_einer_Konfiguration_vom_MSB:
+  $ref: Beendigung_einer_Konfiguration_vom_MSB.yml
+/Beendigung_eines_Abonnements_von_normierten_Profilen_und_Profilscharen_vom_LF_bzw._ÜNB_an_NB:
+  $ref: Beendigung_eines_Abonnements_von_normierten_Profilen_und_Profilscharen_vom_LF_bzw._ÜNB_an_NB.yml
+/Beginn_Messstellenbetrieb:
+  $ref: Beginn_Messstellenbetrieb.yml
+/Beginn_der_Ersatz-/Grundversorgung:
+  $ref: Beginn_der_Ersatz-/Grundversorgung.yml
+/Bestellung_Beendigung_einer_Konfiguration_vom_LF_an_MSB:
+  $ref: Bestellung_Beendigung_einer_Konfiguration_vom_LF_an_MSB.yml
+/Bestellung_Beendigung_einer_Konfiguration_vom_NB_an_MSB:
+  $ref: Bestellung_Beendigung_einer_Konfiguration_vom_NB_an_MSB.yml
+/Bestellung_Beendigung_einer_Konfiguration_vom_weiteren_MSB_an_MSB:
+  $ref: Bestellung_Beendigung_einer_Konfiguration_vom_weiteren_MSB_an_MSB.yml
+/Bestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_die_Ebene_der_Regelzone:
+  $ref: Bestellung_der_Aggregationsebene_der_Bilanzkreissummenzeitreihe_auf_die_Ebene_der_Regelzone.yml
+/Bestellung_der_bilanzierten_Menge_beim_ÜNB:
+  $ref: Bestellung_der_bilanzierten_Menge_beim_ÜNB.yml
+/Bestellung_einer_Konfiguration_vom_LF_an_MSB:
+  $ref: Bestellung_einer_Konfiguration_vom_LF_an_MSB.yml
+/Bestellung_einer_Konfiguration_vom_LF_an_NB:
+  $ref: Bestellung_einer_Konfiguration_vom_LF_an_NB.yml
+/Bestellung_einer_Konfiguration_vom_NB_an_MSB:
+  $ref: Bestellung_einer_Konfiguration_vom_NB_an_MSB.yml
+/Bestellung_einer_Änderung_von_Abrechnungsdaten_von_LF_an_NB:
+  $ref: Bestellung_einer_Änderung_von_Abrechnungsdaten_von_LF_an_NB.yml
+/Bestellung_einer_Änderung_von_Abrechnungsdaten_zur_Bilanzkreisabrechnung_von_ÜNB_an_NB:
+  $ref: Bestellung_einer_Änderung_von_Abrechnungsdaten_zur_Bilanzkreisabrechnung_von_ÜNB_an_NB.yml
+/Bestellung_zur_Stammdatenänderung_an_LF_(verantwortlich):
+  $ref: Bestellung_zur_Stammdatenänderung_an_LF_(verantwortlich).yml
+/Bestellung_zur_Stammdatenänderung_an_MSB_(verantwortlich):
+  $ref: Bestellung_zur_Stammdatenänderung_an_MSB_(verantwortlich).yml
+/Bestellung_zur_Stammdatenänderung_an_NB_(verantwortlich):
+  $ref: Bestellung_zur_Stammdatenänderung_an_NB_(verantwortlich).yml
+/Bestellung_zur_Stammdatenänderung_an_ÜNB_(verantwortlich):
+  $ref: Bestellung_zur_Stammdatenänderung_an_ÜNB_(verantwortlich).yml
+/Bezeichnung_aus_Sequenzdiagramm:
+  $ref: Bezeichnung_aus_Sequenzdiagramm.yml
+/Bilanzieller_Ausgleich_bei_Clustern:
+  $ref: Bilanzieller_Ausgleich_bei_Clustern.yml
+/Bilanzieller_Ausgleich_im_Planwertmodell:
+  $ref: Bilanzieller_Ausgleich_im_Planwertmodell.yml
+/Deaktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB:
+  $ref: Deaktivierung_einer_Zuordnungsermächtigung_des_BKV_beim_NB.yml
+/Deaktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe:
+  $ref: Deaktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe.yml
+/Deaktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB):
+  $ref: Deaktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB).yml
+/Deaktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(des_LF):
+  $ref: Deaktivierung_eines_MaBiS-ZP_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(des_LF).yml
+/Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzierungsgebietssummen-zeitreihe_vom_ÜNB_an_NB:
+  $ref: Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzierungsgebietssummen-zeitreihe_vom_ÜNB_an_NB.yml
+/Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV:
+  $ref: Deaktivierung_eines_MaBiS-ZP_für_die_tägliche_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_den_Deltazeitreihenübertrag_vom_ÜNB_an_BIKO_und_NB:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_den_Deltazeitreihenübertrag_vom_ÜNB_an_BIKO_und_NB.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_BKV:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_BKV.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_vom_BIKO_an_ÜNB.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_von_BIKO_an_NB:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Abrechnungssummenzeitreihe_von_BIKO_an_NB.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_BIKO_und_NB:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_BIKO_und_NB.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_NB_an_LF.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_ÜNB_an_LF:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Lieferantensummenzeitreihe_vom_ÜNB_an_LF.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_Netzzeitreihe.yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Deaktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB_,:
+  $ref: Deaktivierung_eines_MaBiS-Zählpunkts_für_die_tägliche_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB_,.yml
+/Einrichtung_der_Konfigurationen_aufgrund_einer_Zuordnung_eines_LF_zu_einer_Marktlokation_bzw._Tranche:
+  $ref: Einrichtung_der_Konfigurationen_aufgrund_einer_Zuordnung_eines_LF_zu_einer_Marktlokation_bzw._Tranche.yml
+/Ende_Messstellenbetrieb:
+  $ref: Ende_Messstellenbetrieb.yml
+/Ermittlung_der_MaLo-ID_der_Marktlokation:
+  $ref: Ermittlung_der_MaLo-ID_der_Marktlokation.yml
+/Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Planwertmodell:
+  $ref: Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Planwertmodell.yml
+/Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Prognosemodell:
+  $ref: Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Prognosemodell.yml
+/Ersteinbau_einer_mME_in_eine_bestehende_Messlokation:
+  $ref: Ersteinbau_einer_mME_in_eine_bestehende_Messlokation.yml
+/Ersteinbau_eines_iMS_in_eine_bestehende_Messlokation:
+  $ref: Ersteinbau_eines_iMS_in_eine_bestehende_Messlokation.yml
+/Eskalationsprozess_im_Falle_einer_fehlenden_Bilanzkreiszuordnung_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe:
+  $ref: Eskalationsprozess_im_Falle_einer_fehlenden_Bilanzkreiszuordnung_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe.yml
+/Fall_1:_LF-Zuordnung_bei_EEG-Marktlokation_ohne_DV-Pflicht_bzw._KWKG-Marktlokation_ohne_DV-Pflicht:
+  $ref: Fall_1:_LF-Zuordnung_bei_EEG-Marktlokation_ohne_DV-Pflicht_bzw._KWKG-Marktlokation_ohne_DV-Pflicht.yml
+/Fall_2:_LF-Zuordnung_bei_EEG-Marktlokation_mit_DV-Pflicht:
+  $ref: Fall_2:_LF-Zuordnung_bei_EEG-Marktlokation_mit_DV-Pflicht.yml
+? /Fall_3:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_nicht-tranchiert_abgebildet
+: $ref: Fall_3:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_nicht-tranchiert_abgebildet.yml
+? /Fall_4:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_tranchiert_abgebildet
+: $ref: Fall_4:_LF-Zuordnung_bei_KWKG-Marktlokation_mit_DV-Pflicht_bzw._Nicht-EEG-/Nicht-KWKG-Marktlokation_und_Marktlokation_wird_tranchiert_abgebildet.yml
+/Gerätewechsel:
+  $ref: Gerätewechsel.yml
+/Geräteübernahme:
+  $ref: Geräteübernahme.yml
+/Geschäftsdatenanfrage:
+  $ref: Geschäftsdatenanfrage.yml
+/Kap._5.3:
+  $ref: Kap._5.3.yml
+/Kap._5.5.5:
+  $ref: Kap._5.5.5.yml
+/Kap._A_7:
+  $ref: Kap._A_7.yml
+/Kap._A_8:
+  $ref: Kap._A_8.yml
+/Kap._A_9:
+  $ref: Kap._A_9.yml
+/Kap._B_1.3_Nr.:
+  $ref: Kap._B_1.3_Nr..yml
+/Kap._B_2.3_Nr.:
+  $ref: Kap._B_2.3_Nr..yml
+/Kap._B_2.4_Konfliktsze._2:
+  $ref: Kap._B_2.4_Konfliktsze._2.yml
+/Kap._B_2.6_Nr.:
+  $ref: Kap._B_2.6_Nr..yml
+/Kap._B_3.3_Nr.:
+  $ref: Kap._B_3.3_Nr..yml
+/Kap._B_4.3_Nr.:
+  $ref: Kap._B_4.3_Nr..yml
+/Kap._B_5.1.3_Nr.:
+  $ref: Kap._B_5.1.3_Nr..yml
+/Kap._B_5.2.3_Nr.:
+  $ref: Kap._B_5.2.3_Nr..yml
+/Kap._C_1.2_Nr.:
+  $ref: Kap._C_1.2_Nr..yml
+/Kap._C_2.3_Nr.:
+  $ref: Kap._C_2.3_Nr..yml
+/Kap._C_4.3.1.2_Nr.:
+  $ref: Kap._C_4.3.1.2_Nr..yml
+/Kap._C_4.3.2.2_Nr.:
+  $ref: Kap._C_4.3.2.2_Nr..yml
+/Kap._C_4.3.3.2_Nr.:
+  $ref: Kap._C_4.3.3.2_Nr..yml
+/Kap._D_1.1.1:
+  $ref: Kap._D_1.1.1.yml
+/Kap._D_1.2.3_Nr.:
+  $ref: Kap._D_1.2.3_Nr..yml
+/Kap._D_1.2.4_Nr.:
+  $ref: Kap._D_1.2.4_Nr..yml
+/Kap._D_1.3_Nr.:
+  $ref: Kap._D_1.3_Nr..yml
+/Kap._D_2.2.1_Nr.:
+  $ref: Kap._D_2.2.1_Nr..yml
+/Kap._D_2.2.2_Nr.:
+  $ref: Kap._D_2.2.2_Nr..yml
+/Kap._D_2.2.3_Nr.:
+  $ref: Kap._D_2.2.3_Nr..yml
+/Kap._D_2.2_Nr.:
+  $ref: Kap._D_2.2_Nr..yml
+/Kap._D_2.3.1_Nr.:
+  $ref: Kap._D_2.3.1_Nr..yml
+/Kap._D_2.3.2_Nr.:
+  $ref: Kap._D_2.3.2_Nr..yml
+/Kap._D_2.3.3_Nr.:
+  $ref: Kap._D_2.3.3_Nr..yml
+/Kap._D_2.3.4_Nr.:
+  $ref: Kap._D_2.3.4_Nr..yml
+/Kap._D_2.3.5_Nr.:
+  $ref: Kap._D_2.3.5_Nr..yml
+/Kap._D_2.3.6_Nr.:
+  $ref: Kap._D_2.3.6_Nr..yml
+/Kap._D_2.3_Nr.:
+  $ref: Kap._D_2.3_Nr..yml
+/Kap._D_3.2_Nr.:
+  $ref: Kap._D_3.2_Nr..yml
+/Kap._D_3.3_Nr.:
+  $ref: Kap._D_3.3_Nr..yml
+/Kap._D_3.4_Nr.:
+  $ref: Kap._D_3.4_Nr..yml
+/Kap._D_4.3_Nr.:
+  $ref: Kap._D_4.3_Nr..yml
+/Kapazitätsabrechnung_an_Ausspeisepunkten_zu_Letztverbrauchern:
+  $ref: Kapazitätsabrechnung_an_Ausspeisepunkten_zu_Letztverbrauchern.yml
+/Kündigung:
+  $ref: Kündigung.yml
+/Kündigung_Messstellenbetrieb:
+  $ref: Kündigung_Messstellenbetrieb.yml
+/Lieferbeginn:
+  $ref: Lieferbeginn.yml
+/Lieferende_von_LF_an_NB:
+  $ref: Lieferende_von_LF_an_NB.yml
+/Lieferende_von_NB_an_LF:
+  $ref: Lieferende_von_NB_an_LF.yml
+/MSB_der_Marktlokation_stellt_selbst_Reklamationsbedarf_fest:
+  $ref: MSB_der_Marktlokation_stellt_selbst_Reklamationsbedarf_fest.yml
+/MSB_der_Messlokation_stellt_selbst_Reklamationsbedarf_fest:
+  $ref: MSB_der_Messlokation_stellt_selbst_Reklamationsbedarf_fest.yml
+/Mehr-/Mindermengenabrechnung_zwischen_NB_und_LF:
+  $ref: Mehr-/Mindermengenabrechnung_zwischen_NB_und_LF.yml
+/Messlokationsänderung_vom_LF_an_MSB:
+  $ref: Messlokationsänderung_vom_LF_an_MSB.yml
+/Messlokationsänderung_vom_NB_an_MSB:
+  $ref: Messlokationsänderung_vom_NB_an_MSB.yml
+/Netznutzungsabrechnung:
+  $ref: Netznutzungsabrechnung.yml
+/Neuanlage:
+  $ref: Neuanlage.yml
+/Prüfmitteilung_für_die_Bilanzkreissummenzeitreihe_vom_BKV_an_BIKO_und_ÜNB:
+  $ref: Prüfmitteilung_für_die_Bilanzkreissummenzeitreihe_vom_BKV_an_BIKO_und_ÜNB.yml
+/Reklamation_der_Übersicht_der_Definitionen_des_LF_vom_MSB_an_LF:
+  $ref: Reklamation_der_Übersicht_der_Definitionen_des_LF_vom_MSB_an_LF.yml
+/Reklamation_der_Übersicht_der_Definitionen_des_LF_vom_NB_an_LF:
+  $ref: Reklamation_der_Übersicht_der_Definitionen_des_LF_vom_NB_an_LF.yml
+/Reklamation_der_Übersicht_der_Definitionen_des_NB_vom_LF_an_NB:
+  $ref: Reklamation_der_Übersicht_der_Definitionen_des_NB_vom_LF_an_NB.yml
+/Reklamation_der_Übersicht_der_Definitionen_des_NB_vom_MSB_an_NB:
+  $ref: Reklamation_der_Übersicht_der_Definitionen_des_NB_vom_MSB_an_NB.yml
+/Reklamation_einer_Definition_des_LF_vom_MSB_an_LF:
+  $ref: Reklamation_einer_Definition_des_LF_vom_MSB_an_LF.yml
+/Reklamation_einer_Definition_des_LF_vom_NB_an_LF:
+  $ref: Reklamation_einer_Definition_des_LF_vom_NB_an_LF.yml
+/Reklamation_einer_Definition_des_NB_vom_LF_an_NB:
+  $ref: Reklamation_einer_Definition_des_NB_vom_LF_an_NB.yml
+/Reklamation_einer_Definition_des_NB_vom_MSB_an_NB:
+  $ref: Reklamation_einer_Definition_des_NB_vom_MSB_an_NB.yml
+/Reklamation_einer_Konfiguration_vom_LF_an_MSB:
+  $ref: Reklamation_einer_Konfiguration_vom_LF_an_MSB.yml
+/Reklamation_einer_Konfiguration_vom_MSB:
+  $ref: Reklamation_einer_Konfiguration_vom_MSB.yml
+/Reklamation_einer_Konfiguration_vom_NB_an_MSB:
+  $ref: Reklamation_einer_Konfiguration_vom_NB_an_MSB.yml
+/Reklamation_vom_LF:
+  $ref: Reklamation_vom_LF.yml
+/Reklamation_vom_NB:
+  $ref: Reklamation_vom_NB.yml
+/Reklamation_vom_ÜNB:
+  $ref: Reklamation_vom_ÜNB.yml
+/Reklamation_von_Werten_beim_MSB:
+  $ref: Reklamation_von_Werten_beim_MSB.yml
+/Stammdaten_zur_Bilanzkreistreue:
+  $ref: Stammdaten_zur_Bilanzkreistreue.yml
+/Stammdatenänderung_vom_LF_(verantwortlich)_ausgehend:
+  $ref: Stammdatenänderung_vom_LF_(verantwortlich)_ausgehend.yml
+/Stammdatenänderung_vom_MSB_(verantwortlich)_ausgehend:
+  $ref: Stammdatenänderung_vom_MSB_(verantwortlich)_ausgehend.yml
+/Stammdatenänderung_vom_NB_(verantwortlich)_ausgehend:
+  $ref: Stammdatenänderung_vom_NB_(verantwortlich)_ausgehend.yml
+/Stammdatenänderung_vom_ÜNB_(verantwortlich)_ausgehend:
+  $ref: Stammdatenänderung_vom_ÜNB_(verantwortlich)_ausgehend.yml
+/Start_eines_Abonnements_von_normierten_Profilen_und_Profilscharen_vom_LF_bzw._ÜNB_an_NB:
+  $ref: Start_eines_Abonnements_von_normierten_Profilen_und_Profilscharen_vom_LF_bzw._ÜNB_an_NB.yml
+/Steuerbefehl_vom_LF_an_MSB_(UF_B016):
+  $ref: Steuerbefehl_vom_LF_an_MSB_(UF_B016).yml
+/Steuerbefehl_vom_LF_an_MSB_(UF_B024):
+  $ref: Steuerbefehl_vom_LF_an_MSB_(UF_B024).yml
+/Steuerbefehl_vom_NB_an_MSB_(UF_B016):
+  $ref: Steuerbefehl_vom_NB_an_MSB_(UF_B016).yml
+/Stornieren_der_Unterbrechung_und_Wiederherstellung_der_Anschlussnutzung_auf_Anweisung_des_LF:
+  $ref: Stornieren_der_Unterbrechung_und_Wiederherstellung_der_Anschlussnutzung_auf_Anweisung_des_LF.yml
+/Stornierung_Werte_vom_MSB_der_Marktlokation:
+  $ref: Stornierung_Werte_vom_MSB_der_Marktlokation.yml
+/Stornierung_Werte_vom_MSB_der_Messlokation:
+  $ref: Stornierung_Werte_vom_MSB_der_Messlokation.yml
+/Stornierung_und_Rückabwicklung:
+  $ref: Stornierung_und_Rückabwicklung.yml
+/Stornierung_von_Zählerständen_vom_LF:
+  $ref: Stornierung_von_Zählerständen_vom_LF.yml
+/Stornierung_von_Zählerständen_vom_LF_oder_NB_an_MSB:
+  $ref: Stornierung_von_Zählerständen_vom_LF_oder_NB_an_MSB.yml
+/Stornierung_von_Zählerständen_vom_NB:
+  $ref: Stornierung_von_Zählerständen_vom_NB.yml
+/Störungsbehebung_in_der_Messlokation:
+  $ref: Störungsbehebung_in_der_Messlokation.yml
+/Teil_II_2.2.3_10a:
+  $ref: Teil_II_2.2.3_10a.yml
+/Teil_II_2.2.3_11a:
+  $ref: Teil_II_2.2.3_11a.yml
+/Teil_II_2.2.3_11b:
+  $ref: Teil_II_2.2.3_11b.yml
+/Teil_II_2.2.3_14a:
+  $ref: Teil_II_2.2.3_14a.yml
+/Teil_II_2.2.3_14b:
+  $ref: Teil_II_2.2.3_14b.yml
+/Teil_II_2.2.3_5a:
+  $ref: Teil_II_2.2.3_5a.yml
+/Teil_II_2.2.3_5b:
+  $ref: Teil_II_2.2.3_5b.yml
+/UF_MaBiS_005_Aktivierung_eines_MaBiS-Zählpunkts_für_den_Deltazeitreihenübertrag_vom_ÜNB_an_BIKO_und_NB:
+  $ref: UF_MaBiS_005_Aktivierung_eines_MaBiS-Zählpunkts_für_den_Deltazeitreihenübertrag_vom_ÜNB_an_BIKO_und_NB.yml
+/UF_MaBiS_005_Übermittlung_der_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB:
+  $ref: UF_MaBiS_005_Übermittlung_der_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB.yml
+/UF_MaBiS_006,_Übermittlung_Netzgangzeitreihe:
+  $ref: UF_MaBiS_006,_Übermittlung_Netzgangzeitreihe.yml
+/Unterbrechung_der_Anschlussnutzung_(Sperren)_auf_Anweisung_des_LF:
+  $ref: Unterbrechung_der_Anschlussnutzung_(Sperren)_auf_Anweisung_des_LF.yml
+/Verpflichtung_gMSB:
+  $ref: Verpflichtung_gMSB.yml
+/Wechsel_des_Abrechnungsmodells:
+  $ref: Wechsel_des_Abrechnungsmodells.yml
+/Wechsel_des_Bilanzierungsmodells:
+  $ref: Wechsel_des_Bilanzierungsmodells.yml
+/Weiterleitung_von_EEG-Überführungszeitreihen:
+  $ref: Weiterleitung_von_EEG-Überführungszeitreihen.yml
+/Weiterleitung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_ANB_an_den_anfNB:
+  $ref: Weiterleitung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_ANB_an_den_anfNB.yml
+/Wiederherstellung_der_Anschlussnutzung_(Entsperren)_auf_Anweisung_des_LF:
+  $ref: Wiederherstellung_der_Anschlussnutzung_(Entsperren)_auf_Anweisung_des_LF.yml
+/Wiederherstellung_der_Anschlussnutzung_bei_Lieferbeginn:
+  $ref: Wiederherstellung_der_Anschlussnutzung_bei_Lieferbeginn.yml
+/Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe:
+  $ref: Zuordnung_einer_Netzgangzeitreihe_zu_einer_Netzzeitreihe.yml
+/Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe:
+  $ref: Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Netzbetreiber-Deltazeitreihe.yml
+/Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe:
+  $ref: Zuordnung_eines_Bilanzkreises_zur_Aufnahme_der_Übertragungsnetzbetreiber-Deltazeitreihe.yml
+/default_path_:
+  $ref: default_path_.yml
+/default_path_1200:
+  $ref: default_path_1200.yml
+/default_path_12040:
+  $ref: default_path_12040.yml
+/default_path_12050:
+  $ref: default_path_12050.yml
+/default_path_12060:
+  $ref: default_path_12060.yml
+/default_path_12070:
+  $ref: default_path_12070.yml
+/default_path_12080:
+  $ref: default_path_12080.yml
+/default_path_12092:
+  $ref: default_path_12092.yml
+/default_path_12105:
+  $ref: default_path_12105.yml
+/default_path_12115:
+  $ref: default_path_12115.yml
+/default_path_12125:
+  $ref: default_path_12125.yml
+/default_path_12135:
+  $ref: default_path_12135.yml
+/default_path_12145:
+  $ref: default_path_12145.yml
+/default_path_12152:
+  $ref: default_path_12152.yml
+/default_path_12157:
+  $ref: default_path_12157.yml
+/default_path_12165:
+  $ref: default_path_12165.yml
+/default_path_12170:
+  $ref: default_path_12170.yml
+/default_path_12180:
+  $ref: default_path_12180.yml
+/default_path_12190:
+  $ref: default_path_12190.yml
+/default_path_12200:
+  $ref: default_path_12200.yml
+/default_path_12210:
+  $ref: default_path_12210.yml
+/default_path_12220:
+  $ref: default_path_12220.yml
+/default_path_12224:
+  $ref: default_path_12224.yml
+/default_path_12226:
+  $ref: default_path_12226.yml
+/default_path_12228:
+  $ref: default_path_12228.yml
+/default_path_12230:
+  $ref: default_path_12230.yml
+/default_path_12300:
+  $ref: default_path_12300.yml
+/default_path_12310:
+  $ref: default_path_12310.yml
+/default_path_12340:
+  $ref: default_path_12340.yml
+/default_path_12350:
+  $ref: default_path_12350.yml
+/default_path_12370:
+  $ref: default_path_12370.yml
+/default_path_12500:
+  $ref: default_path_12500.yml
+/default_path_12510:
+  $ref: default_path_12510.yml
+/default_path_12520:
+  $ref: default_path_12520.yml
+/default_path_12530:
+  $ref: default_path_12530.yml
+/default_path_12540:
+  $ref: default_path_12540.yml
+/default_path_12550:
+  $ref: default_path_12550.yml
+/default_path_12560:
+  $ref: default_path_12560.yml
+/default_path_12570:
+  $ref: default_path_12570.yml
+/default_path_12580:
+  $ref: default_path_12580.yml
+/default_path_12590:
+  $ref: default_path_12590.yml
+/default_path_12600:
+  $ref: default_path_12600.yml
+/default_path_12610:
+  $ref: default_path_12610.yml
+/default_path_12620:
+  $ref: default_path_12620.yml
+/default_path_12630:
+  $ref: default_path_12630.yml
+/default_path_12640:
+  $ref: default_path_12640.yml
+/default_path_12650:
+  $ref: default_path_12650.yml
+/default_path_12660:
+  $ref: default_path_12660.yml
+/default_path_12670:
+  $ref: default_path_12670.yml
+/default_path_12680:
+  $ref: default_path_12680.yml
+/default_path_12690:
+  $ref: default_path_12690.yml
+/default_path_12700:
+  $ref: default_path_12700.yml
+/default_path_12710:
+  $ref: default_path_12710.yml
+/default_path_12720:
+  $ref: default_path_12720.yml
+/default_path_12730:
+  $ref: default_path_12730.yml
+/default_path_12740:
+  $ref: default_path_12740.yml
+/default_path_12750:
+  $ref: default_path_12750.yml
+/default_path_12760:
+  $ref: default_path_12760.yml
+/default_path_12770:
+  $ref: default_path_12770.yml
+/default_path_12780:
+  $ref: default_path_12780.yml
+/default_path_12790:
+  $ref: default_path_12790.yml
+/default_path_12800:
+  $ref: default_path_12800.yml
+/default_path_12810:
+  $ref: default_path_12810.yml
+/default_path_778:
+  $ref: default_path_778.yml
+/default_path_779:
+  $ref: default_path_779.yml
+/default_path_780:
+  $ref: default_path_780.yml
+/default_path_781:
+  $ref: default_path_781.yml
+/default_path_782:
+  $ref: default_path_782.yml
+/default_path_783:
+  $ref: default_path_783.yml
+/default_path_784:
+  $ref: default_path_784.yml
+/default_path_785:
+  $ref: default_path_785.yml
+/default_path_786:
+  $ref: default_path_786.yml
+/default_path_787:
+  $ref: default_path_787.yml
+/default_path_788:
+  $ref: default_path_788.yml
+/default_path_789:
+  $ref: default_path_789.yml
+/default_path_790:
+  $ref: default_path_790.yml
+/default_path_791:
+  $ref: default_path_791.yml
+/default_path_792:
+  $ref: default_path_792.yml
+/default_path_793:
+  $ref: default_path_793.yml
+/default_path_794:
+  $ref: default_path_794.yml
+/default_path_795:
+  $ref: default_path_795.yml
+/default_path_796:
+  $ref: default_path_796.yml
+/default_path_797:
+  $ref: default_path_797.yml
+/default_path_798:
+  $ref: default_path_798.yml
+/default_path_799:
+  $ref: default_path_799.yml
+/default_path_800:
+  $ref: default_path_800.yml
+/default_path_801:
+  $ref: default_path_801.yml
+/default_path_802:
+  $ref: default_path_802.yml
+/default_path_803:
+  $ref: default_path_803.yml
+/default_path_804:
+  $ref: default_path_804.yml
+/default_path_805:
+  $ref: default_path_805.yml
+/default_path_806:
+  $ref: default_path_806.yml
+/default_path_809:
+  $ref: default_path_809.yml
+/default_path_810:
+  $ref: default_path_810.yml
+/default_path_811:
+  $ref: default_path_811.yml
+/default_path_812:
+  $ref: default_path_812.yml
+/default_path_8691:
+  $ref: default_path_8691.yml
+/default_path_8692:
+  $ref: default_path_8692.yml
+/default_path_8693:
+  $ref: default_path_8693.yml
+/default_path_8694:
+  $ref: default_path_8694.yml
+/default_path_8695:
+  $ref: default_path_8695.yml
+/default_path_8696:
+  $ref: default_path_8696.yml
+/default_path_8697:
+  $ref: default_path_8697.yml
+/default_path_8698:
+  $ref: default_path_8698.yml
+/default_path_8790:
+  $ref: default_path_8790.yml
+/default_path_8800:
+  $ref: default_path_8800.yml
+/default_path_8810:
+  $ref: default_path_8810.yml
+/default_path_8820:
+  $ref: default_path_8820.yml
+/default_path_8830:
+  $ref: default_path_8830.yml
+/default_path_8840:
+  $ref: default_path_8840.yml
+/default_path_8850:
+  $ref: default_path_8850.yml
+/default_path_8860:
+  $ref: default_path_8860.yml
+/default_path_8870:
+  $ref: default_path_8870.yml
+/default_path_8880:
+  $ref: default_path_8880.yml
+/default_path_8890:
+  $ref: default_path_8890.yml
+/default_path_8900:
+  $ref: default_path_8900.yml
+/default_path_8910:
+  $ref: default_path_8910.yml
+/default_path_8920:
+  $ref: default_path_8920.yml
+/default_path_8930:
+  $ref: default_path_8930.yml
+/default_path_8940:
+  $ref: default_path_8940.yml
+/default_path_8950:
+  $ref: default_path_8950.yml
+/Überführung_der_Ausfallarbeit_aus_dem_EEG-BK_des_NB_an_den_ÜNB:
+  $ref: Überführung_der_Ausfallarbeit_aus_dem_EEG-BK_des_NB_an_den_ÜNB.yml
+/Übermittlung_Ausgleichsenergiepreis:
+  $ref: Übermittlung_Ausgleichsenergiepreis.yml
+/Übermittlung_Bilanzierungsgebietsclearingliste_vom_ÜNB_an_NB_(inkl._Abonnierung):
+  $ref: Übermittlung_Bilanzierungsgebietsclearingliste_vom_ÜNB_an_NB_(inkl._Abonnierung).yml
+/Übermittlung_Datenstatus_der_Netzzeitreihe:
+  $ref: Übermittlung_Datenstatus_der_Netzzeitreihe.yml
+/Übermittlung_Datenstatus_des_Deltazeitreihenübertrags_vom_BIKO_an_ÜNB_und_NB:
+  $ref: Übermittlung_Datenstatus_des_Deltazeitreihenübertrags_vom_BIKO_an_ÜNB_und_NB.yml
+/Übermittlung_Datenstatus_für_die_Bilanzierungsgebietssummenzeitreihe_vom_BIKO_an_ÜNB_und_NB:
+  $ref: Übermittlung_Datenstatus_für_die_Bilanzierungsgebietssummenzeitreihe_vom_BIKO_an_ÜNB_und_NB.yml
+/Übermittlung_Datenstatus_für_die_Bilanzkreissummenzeitreihe_vom_BIKO_an_NB_und_BKV:
+  $ref: Übermittlung_Datenstatus_für_die_Bilanzkreissummenzeitreihe_vom_BIKO_an_NB_und_BKV.yml
+/Übermittlung_Datenstatus_für_die_Bilanzkreissummenzeitreihe_vom_BIKO_an_ÜNB_und_BKV:
+  $ref: Übermittlung_Datenstatus_für_die_Bilanzkreissummenzeitreihe_vom_BIKO_an_ÜNB_und_BKV.yml
+/Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB):
+  $ref: Übermittlung_Datenstatus_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ)_zwischen_NB_und_BKV_(anfNB).yml
+/Übermittlung_Netzgangzeitreihe:
+  $ref: Übermittlung_Netzgangzeitreihe.yml
+/Übermittlung_Preisblatt_A_des_MSB_vom_MSB_an_NB_und_LF:
+  $ref: Übermittlung_Preisblatt_A_des_MSB_vom_MSB_an_NB_und_LF.yml
+/Übermittlung_Preisblatt_MSB_an_LF:
+  $ref: Übermittlung_Preisblatt_MSB_an_LF.yml
+/Übermittlung_Preisblatt_NB_an_LF:
+  $ref: Übermittlung_Preisblatt_NB_an_LF.yml
+/Übermittlung_Preisblatt_„Messstellenbetrieb_mit_iMS_gegenüber_dem_NB“_vom_MSB_an_NB:
+  $ref: Übermittlung_Preisblatt_„Messstellenbetrieb_mit_iMS_gegenüber_dem_NB“_vom_MSB_an_NB.yml
+/Übermittlung_Prüfmitteilung_des_Deltazeitreihenübertrags_von_NB_über_BIKO_an_ÜNB:
+  $ref: Übermittlung_Prüfmitteilung_des_Deltazeitreihenübertrags_von_NB_über_BIKO_an_ÜNB.yml
+/Übermittlung_Prüfmitteilung_für_die_Ausfallarbeitsüberführungszeitreihe_zwischen_den_BKV_(anfNB)_und_NB:
+  $ref: Übermittlung_Prüfmitteilung_für_die_Ausfallarbeitsüberführungszeitreihe_zwischen_den_BKV_(anfNB)_und_NB.yml
+/Übermittlung_Prüfmitteilung_für_die_Bilanzierungsgebietssummenzeitreihe_an_ÜNB:
+  $ref: Übermittlung_Prüfmitteilung_für_die_Bilanzierungsgebietssummenzeitreihe_an_ÜNB.yml
+/Übermittlung_Prüfmitteilung_für_die_Bilanzkreissummenzeitreihe_vom_BKV_an_BIKO_und_NB:
+  $ref: Übermittlung_Prüfmitteilung_für_die_Bilanzkreissummenzeitreihe_vom_BKV_an_BIKO_und_NB.yml
+/Übermittlung_Prüfmitteilung_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Übermittlung_Prüfmitteilung_für_die_monatliche_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Übermittlung_Stammdatenänderung_vom_(Anschluss-)NB_(verantwortlich)_ausgehend:
+  $ref: Übermittlung_Stammdatenänderung_vom_(Anschluss-)NB_(verantwortlich)_ausgehend.yml
+/Übermittlung_Stammdatenänderung_vom_EIV_(verantwortlich)_ausgehend:
+  $ref: Übermittlung_Stammdatenänderung_vom_EIV_(verantwortlich)_ausgehend.yml
+/Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_BKV:
+  $ref: Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_BKV.yml
+/Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_NB:
+  $ref: Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_NB.yml
+/Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_ÜNB:
+  $ref: Übermittlung_der_Abrechnungssummenzeitreihe_für_Bilanzkreisabrechnung_vom_BIKO_an_ÜNB.yml
+/Übermittlung_der_Berechnungsformel:
+  $ref: Übermittlung_der_Berechnungsformel.yml
+/Übermittlung_der_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV:
+  $ref: Übermittlung_der_Bilanzkreissummenzeitreihe_vom_NB_an_BIKO_und_BKV.yml
+/Übermittlung_der_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV:
+  $ref: Übermittlung_der_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BIKO_und_BKV.yml
+/Übermittlung_der_Energiemengen_als_Grundlage_zur_POG-Ermittlung:
+  $ref: Übermittlung_der_Energiemengen_als_Grundlage_zur_POG-Ermittlung.yml
+/Übermittlung_der_Lieferantenausfallarbeitssummenzeitreihe:
+  $ref: Übermittlung_der_Lieferantenausfallarbeitssummenzeitreihe.yml
+/Übermittlung_der_Lieferantensummenzeitreihe_vom_NB_an_LF:
+  $ref: Übermittlung_der_Lieferantensummenzeitreihe_vom_NB_an_LF.yml
+/Übermittlung_der_Lieferantensummenzeitreihe_vom_ÜNB_an_LF:
+  $ref: Übermittlung_der_Lieferantensummenzeitreihe_vom_ÜNB_an_LF.yml
+/Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_LF_bzw._ÜNB:
+  $ref: Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_LF_bzw._ÜNB.yml
+/Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_MSB:
+  $ref: Übermittlung_der_Liste_der_Profildefinitionen_vom_NB_an_MSB.yml
+/Übermittlung_der_Netzzeitreihe:
+  $ref: Übermittlung_der_Netzzeitreihe.yml
+/Übermittlung_der_bisher_gemessenen_Arbeits-_und_Leistungswerte:
+  $ref: Übermittlung_der_bisher_gemessenen_Arbeits-_und_Leistungswerte.yml
+/Übermittlung_der_monatlichen_Ausfallarbeitszeitreihe_je_Marktlokation:
+  $ref: Übermittlung_der_monatlichen_Ausfallarbeitszeitreihe_je_Marktlokation.yml
+/Übermittlung_der_monatlichen_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Übermittlung_der_monatlichen_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Übermittlung_der_monatlichen_Ausfallarbeitsüberführungszeitreihe_zwischen_ANB_und_BKV_(anfNB):
+  $ref: Übermittlung_der_monatlichen_Ausfallarbeitsüberführungszeitreihe_zwischen_ANB_und_BKV_(anfNB).yml
+/Übermittlung_der_täglichen_Ausfallarbeitsüberführungszeitreihe_(AAÜZ):
+  $ref: Übermittlung_der_täglichen_Ausfallarbeitsüberführungszeitreihe_(AAÜZ).yml
+/Übermittlung_der_täglichen_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB:
+  $ref: Übermittlung_der_täglichen_Bilanzierungsgebietssummenzeitreihe_vom_ÜNB_an_NB.yml
+/Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB:
+  $ref: Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_eMob_vom_NB_(LPB)_an_ÜNB.yml
+/Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV:
+  $ref: Übermittlung_der_täglichen_Bilanzkreissummenzeitreihe_vom_ÜNB_an_BKV.yml
+/Übermittlung_der_Übersicht_der_Definitionen_des_LF_durch_den_LF:
+  $ref: Übermittlung_der_Übersicht_der_Definitionen_des_LF_durch_den_LF.yml
+/Übermittlung_der_Übersicht_der_Definitionen_des_NB_durch_den_NB:
+  $ref: Übermittlung_der_Übersicht_der_Definitionen_des_NB_durch_den_NB.yml
+/Übermittlung_des_Deltazeitreihenübertrags_vom_ÜNB_an_BIKO_und_NB:
+  $ref: Übermittlung_des_Deltazeitreihenübertrags_vom_ÜNB_an_BIKO_und_NB.yml
+/Übermittlung_des_Lieferscheins_zur_Netznutzungsabrechnung:
+  $ref: Übermittlung_des_Lieferscheins_zur_Netznutzungsabrechnung.yml
+/Übermittlung_des_Prognosefahrplans_im,_Prognosemodell:
+  $ref: Übermittlung_des_Prognosefahrplans_im,_Prognosemodell.yml
+/Übermittlung_einer_Definition_des_LF_durch_den_LF:
+  $ref: Übermittlung_einer_Definition_des_LF_durch_den_LF.yml
+/Übermittlung_einer_Definition_des_NB_durch_den_NB:
+  $ref: Übermittlung_einer_Definition_des_NB_durch_den_NB.yml
+/Übermittlung_markbedingte_Anpassung_im_Prognosemodell:
+  $ref: Übermittlung_markbedingte_Anpassung_im_Prognosemodell.yml
+/Übermittlung_von_Informationen:
+  $ref: Übermittlung_von_Informationen.yml
+/Übermittlung_von_Nichtbeanspruchbarkeiten_an_NB:
+  $ref: Übermittlung_von_Nichtbeanspruchbarkeiten_an_NB.yml
+/Übermittlung_von_Planungsdaten_im_Planwertmodell:
+  $ref: Übermittlung_von_Planungsdaten_im_Planwertmodell.yml
+/Übermittlung_von_Werten_nach_Typ_2_vom_MSB_an_NB_oder_LF:
+  $ref: Übermittlung_von_Werten_nach_Typ_2_vom_MSB_an_NB_oder_LF.yml
+/Übermittlung_von_Werten_vom_MSB_an_ESA:
+  $ref: Übermittlung_von_Werten_vom_MSB_an_ESA.yml
+/Übermittlung_von_Zählerständen_vom_LF:
+  $ref: Übermittlung_von_Zählerständen_vom_LF.yml
+/Übermittlung_von_Zählerständen_vom_LF_oder_NB_an_MSB:
+  $ref: Übermittlung_von_Zählerständen_vom_LF_oder_NB_an_MSB.yml
+/Übermittlung_von_Zählerständen_vom_NB:
+  $ref: Übermittlung_von_Zählerständen_vom_NB.yml
+/Übermittlung_von_angereicherten_Stammdaten:
+  $ref: Übermittlung_von_angereicherten_Stammdaten.yml
+/Übermittlung_von_initialen_Stammdaten:
+  $ref: Übermittlung_von_initialen_Stammdaten.yml
+/Übermittlung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_BTR_an_ANB:
+  $ref: Übermittlung_von_meteorologischen_Daten_(Ex-post-Daten)_vom_BTR_an_ANB.yml
+/Übermittlung_von_normierten_Profilen_und_Profilscharen_vom_NB_an_LF_bzw._ÜNB:
+  $ref: Übermittlung_von_normierten_Profilen_und_Profilscharen_vom_NB_an_LF_bzw._ÜNB.yml
+/Übermittlung_von_normierten_Profilen_vom_NB_an_MSB:
+  $ref: Übermittlung_von_normierten_Profilen_vom_NB_an_MSB.yml

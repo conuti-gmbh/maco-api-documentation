@@ -5,7 +5,7 @@ def create_example_files(openapi_file):
     with open(openapi_file, 'r') as f:
         openapi_data = yaml.safe_load(f)
 
-    examples_dir = 'events/components/examples'
+    examples_dir = 'processMappingGenerated/components/examples'
     if not os.path.exists(examples_dir):
         os.makedirs(examples_dir)
 
@@ -23,4 +23,4 @@ def create_example_files(openapi_file):
         yaml.dump(index_data, f, default_flow_style=False)
 
 if __name__ == '__main__':
-    create_example_files('events-openapi.yaml')
+    create_example_files('processMappingGenerated.yaml')

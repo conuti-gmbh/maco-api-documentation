@@ -1,0 +1,30 @@
+/default_path_12190:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI31007 | NB | MGV | Aggreg. MMM-Rechnung | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MGV] LESENDE API: ''
+                  AN [MGV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI31007 Aggreg. MMM-Rechnung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI31007'
+        description: ''
+    summary: default_path_12190
+    tags:
+    - Prozesse zur Ermittlung und Abrechnung von Mehr-/Mindermengen Strom und Gas

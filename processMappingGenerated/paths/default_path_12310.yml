@@ -1,0 +1,31 @@
+/default_path_12310:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44103 | NB (entspricht NBN) | LF | Stammdaten zur verbrauchenden Marktlokation
+      | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44103 Stammdaten zur verbrauchenden Marktlokation
+                  VON [NB (entspricht NBN)] LESENDE API: ''
+                  VON [NB (entspricht NBN)] SCHREIBENDE API: ''
+                  VON [NB (entspricht NBN)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44103'
+        description: ''
+    summary: default_path_12310
+    tags:
+    - Leitfaden Marktprozesse Netzbetreiberwechsel

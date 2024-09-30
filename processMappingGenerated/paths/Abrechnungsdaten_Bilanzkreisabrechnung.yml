@@ -1,0 +1,124 @@
+/Abrechnungsdaten_Bilanzkreisabrechnung:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55126 | NB | LF | Abr.-Daten BK-Abr. verb. MaLo | x | 1 |
+
+      | PI55672 | NB | LF | Abr.-Daten BK-Abr. erz. Malo | x | 1 |
+
+      | PI55156 | LF | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. verb. MaLo | 55126
+      | 2 |
+
+      | PI55673 | LF | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. erz. Malo | 55672
+      | 2 |
+
+      | PI21047 | NB | LF | Bearbeitungsstandsmeldung | -- | 3 |
+
+      | PI55613 | NB | ÜNB | Abr.-Daten BK-Abr. verb. MaLo | x | 4 |
+
+      | PI55674 | NB | ÜNB | Abr.-Daten BK-Abr. erz. Malo | x | 4 |
+
+      | PI55614 | ÜNB | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. verb. MaLo | 55613
+      | 5 |
+
+      | PI55675 | ÜNB | NB | Rückmeldung/Anfrage Abr.-Daten BK-Abr. erz. Malo | 55674
+      | 5 |
+
+      | PI21047 | NB | ÜNB | Bearbeitungsstandsmeldung | -- | 6 |
+
+      | → ref. Stammdatenänderung vom NB (verantwortlich) ausgehend | NB | -- | --
+      | -- | 7 |
+
+      | → ref Stammdaten zur Bilanzkreistreue | NB | -- | -- | -- | 8 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55126 Abr.-Daten BK-Abr. verb. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55672 Abr.-Daten BK-Abr. erz. Malo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55156 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    verb. MaLo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55673 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    erz. Malo
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55613 Abr.-Daten BK-Abr. verb. MaLo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55674 Abr.-Daten BK-Abr. erz. Malo
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55614 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    verb. MaLo
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55675 Rückmeldung/Anfrage Abr.-Daten BK-Abr.
+                    erz. Malo
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21047 Bearbeitungsstandsmeldung
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55126'
+              - $ref: '#/components/schemas/PI55672'
+              - $ref: '#/components/schemas/PI55156'
+              - $ref: '#/components/schemas/PI55673'
+              - $ref: '#/components/schemas/PI21047'
+              - $ref: '#/components/schemas/PI55613'
+              - $ref: '#/components/schemas/PI55674'
+              - $ref: '#/components/schemas/PI55614'
+              - $ref: '#/components/schemas/PI55675'
+              - $ref: '#/components/schemas/PI21047'
+        description: ''
+    summary: Abrechnungsdaten_Bilanzkreisabrechnung
+    tags:
+    - GPKE Teil 2

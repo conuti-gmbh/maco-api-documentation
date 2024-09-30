@@ -1,0 +1,24 @@
+/default_path_8695:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Information des neuen DB über Netzbetreiberwechsel - Abgabe | NB (entspricht
+      NBA) | neuer DB | -- | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_8695
+    tags:
+    - Leitfaden Marktprozesse Netzbetreiberwechsel

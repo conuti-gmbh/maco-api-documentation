@@ -1,0 +1,30 @@
+/default_path_1200:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13008 | NB | MGV | Lastgang (Gas)  | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MGV] LESENDE API: ''
+                  AN [MGV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13008'
+        description: ''
+    summary: default_path_1200
+    tags:
+    - Marktkommunikation mit der Sicherheitsplattform Gas

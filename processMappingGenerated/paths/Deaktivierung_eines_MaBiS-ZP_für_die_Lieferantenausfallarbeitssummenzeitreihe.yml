@@ -1,0 +1,30 @@
+/Deaktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI55200 | NB (ANB) | LF | Deaktivierung ZP LF-AASZR | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI55200 Deaktivierung ZP LF-AASZR
+                  VON [NB (ANB)] LESENDE API: ''
+                  VON [NB (ANB)] SCHREIBENDE API: ''
+                  VON [NB (ANB)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI55200'
+        description: ''
+    summary: Deaktivierung_eines_MaBiS-ZP_für_die_Lieferantenausfallarbeitssummenzeitreihe
+    tags:
+    - MaBiS

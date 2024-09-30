@@ -1,0 +1,137 @@
+/Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Marktlokation:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13016 | MSB (entspricht dem MSB am Objekt Marktlokation) | NB | Energiemenge
+      u. Leistungsmax. (Strom) | -- | 1 |
+
+      | PI13017 | MSB (entspricht dem MSB am Objekt Marktlokation) | NB | Zählerstand
+      (Strom) | -- | 1 |
+
+      | PI13018 | MSB (entspricht dem MSB am Objekt Marktlokation) | NB | Lastgang
+      Messlokation, Netzkoppelpunkt, Netzlokation | -- | 1 |
+
+      | PI13019 | MSB (entspricht dem MSB am Objekt Marktlokation) | NB | Energiemenge
+      (Strom) | -- | 1 |
+
+      | PI13025 | MSB (entspricht dem MSB am Objekt Marktlokation) | NB | Lastgang
+      Marktlokation, Tranche | -- | 1 |
+
+      | PI13017 | MSB (entspricht dem MSB am Objekt Marktlokation) | LF | Zählerstand
+      (Strom) | -- | 2 |
+
+      | PI13016 | MSB (entspricht dem MSB am Objekt Marktlokation) | LF | Energiemenge
+      u. Leistungsmax. (Strom) | -- | 2 |
+
+      | PI13018 | MSB (entspricht dem MSB am Objekt Marktlokation) | LF | Lastgang
+      Messlokation, Netzkoppelpunkt, Netzlokation | -- | 2 |
+
+      | PI13019 | MSB (entspricht dem MSB am Objekt Marktlokation) | LF | Energiemenge
+      (Strom) | -- | 2 |
+
+      | PI13025 | MSB (entspricht dem MSB am Objekt Marktlokation) | LF | Lastgang
+      Marktlokation, Tranche | -- | 2 |
+
+      | PI13025 | MSB (entspricht dem MSB am Objekt Marktlokation) | ÜNB | Lastgang
+      Marktlokation, Tranche | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13016 Energiemenge u. Leistungsmax. (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: Rückgabe
+                    DAR falls notwendig
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13019 Energiemenge (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13025 Lastgang Marktlokation, Tranche
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [LF] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13017 Zählerstand (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: Rückgabe
+                    DAR falls notwendig
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13016 Energiemenge u. Leistungsmax. (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13018 Lastgang Messlokation, Netzkoppelpunkt,
+                    Netzlokation
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13019 Energiemenge (Strom)
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13025 Lastgang Marktlokation, Tranche
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13025 Lastgang Marktlokation, Tranche
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht dem MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13016'
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI13018'
+              - $ref: '#/components/schemas/PI13019'
+              - $ref: '#/components/schemas/PI13025'
+              - $ref: '#/components/schemas/PI13017'
+              - $ref: '#/components/schemas/PI13016'
+              - $ref: '#/components/schemas/PI13018'
+              - $ref: '#/components/schemas/PI13019'
+              - $ref: '#/components/schemas/PI13025'
+              - $ref: '#/components/schemas/PI13025'
+        description: ''
+    summary: Aufbereitung_und_Übermittlung_von_Werten_vom_MSB_der_Marktlokation
+    tags:
+    - WiM Strom Teil 2

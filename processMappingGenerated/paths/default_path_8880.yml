@@ -1,0 +1,26 @@
+/default_path_8880:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Kapazitätsabrechnung, war korrekt., Bei Ablehnung der Kapazitätsabrechnung,
+      durch TK (KN) (Prozessschritt, Nr. 3b) und Prüfergebnis, des NB (Prozessschritt,
+      Nr. 4), dass, die ursprüngliche Kapazitätsabrechnung, korrekt, war. | NB | TK
+      (KN) | -- | -- | 7a |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: default_path_8880
+    tags:
+    - Prozessbeschreibung zur Kapazitätsabrechnung an Ausspeisepunkten zu Letztverbrauchern

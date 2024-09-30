@@ -1,0 +1,81 @@
+/Kap._D_1.2.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17004 | NB | MSB | Anforderung von Werten | -- |  |
+
+      | → Prüfung | MSB | -- | -- | -- |  |
+
+      | PI19007 | NB | MSB | Ablehnung Anforderung Werte | -- |  |
+
+      | → Durchführung der Messung | MSB | -- | -- | -- |  |
+
+      | PI21028 | MSB | NB | Informationsmeldung | -- |  |
+
+      | → Ggf. Messwertumwandlung | MSB | -- | -- | -- |  |
+
+      | PI13002 | MSB | NB | Zählerstand (Gas) | -- |  |
+
+      | → Aufbereitung der Messwert | NB | -- | -- | -- |  |
+
+      | PI13002 | NB | MSB | Zählerstand (Gas) | -- |  |
+
+      | → Aggregation der Messwerte für die Marktlokation, sofern möglich und erforderlich
+      | NB | -- | -- | -- |  |
+
+      | → Messwertübermittlung | NB | LF | -- | -- | -- |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17004 Anforderung von Werten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19007 Ablehnung Anforderung Werte
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21028 Informationsmeldung
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [NB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [MSB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [MSB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [MSB] TRIGGER EVENT: START_ZAEHLERSTAND
+                - AN [MSB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ZAEHLERSTAND
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17004'
+              - $ref: '#/components/schemas/PI19007'
+              - $ref: '#/components/schemas/PI21028'
+              - $ref: '#/components/schemas/PI13002'
+              - $ref: '#/components/schemas/PI13002'
+        description: ''
+    summary: Kap._D_1.2.3_Nr.
+    tags:
+    - GeLi Gas

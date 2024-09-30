@@ -1,0 +1,48 @@
+/Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_ESA:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17008 | ESA | MSB | Abbestellung von Werten | -- | 1 |
+
+      | PI19011 | MSB | ESA | Bestätigung der Ab-/Bestellung von Werten | -- | 2 |
+
+      | PI19012 | MSB | ESA | Ablehnung der Ab-/Bestellung von Werten | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17008 Abbestellung von Werten
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19011 Bestätigung der Ab-/Bestellung von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19012 Ablehnung der Ab-/Bestellung von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17008'
+              - $ref: '#/components/schemas/PI19011'
+              - $ref: '#/components/schemas/PI19012'
+        description: ''
+    summary: Beendigung_der_Übermittlung_von_Werten_an_ESA_durch_ESA
+    tags:
+    - WiM Strom Teil 2

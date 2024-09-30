@@ -1,0 +1,29 @@
+PI44149:
+  description: "44149 MSB\u2192NB [Verteiler] Antwort auf Anfrage"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

@@ -1,0 +1,29 @@
+PI17133:
+  description: "17133 LF\u2192NB Bestellung \xC4nderung Abrechnungsdaten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - LF
+      type: string
+  type: object

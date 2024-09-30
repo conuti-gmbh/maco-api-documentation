@@ -1,0 +1,41 @@
+/Kap._D_2.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13008 | NB | MSB | Lastgang (Gas)  | -- |  |
+
+      | PI13002 | NB | MSB | Zählerstand (Gas) | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_LASTGANG
+                  PRUEFIDENTIFIKATOR: 'PI13008 Lastgang (Gas) '
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_LASTGANG
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_LASTGANG
+                - AN [MSB] LESENDE API: LESEN_MARKTLOKATION_BASIS, LESEN_MESSLOKATIONS_BASIS,
+                    LESEN_NETZLOKATION_BASIS, LESEN_TRANCHE_BASIS
+                  AN [MSB] SCHREIBENDE API: ERSTELLEN_ENERGIEMENGE_ZAEHLERSTAND
+                  PRUEFIDENTIFIKATOR: PI13002 Zählerstand (Gas)
+                  VON [NB] LESENDE API: LESEN_ENERGIEMENGE_ZAEHLERSTAND
+                  VON [NB] SCHREIBENDE API: Rückgabe DAR falls notwendig
+                  VON [NB] TRIGGER EVENT: START_ZAEHLERSTAND
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13008'
+              - $ref: '#/components/schemas/PI13002'
+        description: ''
+    summary: Kap._D_2.3_Nr.
+    tags:
+    - GeLi Gas

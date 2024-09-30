@@ -1,0 +1,29 @@
+PI17209:
+  description: "17209 NB (anfNB)\u2192NB (ANB) Anforderung Ausfallarbeit"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (anfNB)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (anfNB)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (anfNB)
+      type: string
+  type: object

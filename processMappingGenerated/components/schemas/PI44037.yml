@@ -1,0 +1,29 @@
+PI44037:
+  description: "44037 NB\u2192LFA Informationsmeldung zur Beendigung der Zuordnung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LFA
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - LFA
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

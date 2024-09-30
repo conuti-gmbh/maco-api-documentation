@@ -1,0 +1,86 @@
+/Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Planwertmodell:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13022 | BTR | NB | Redispatch 2.0 Einzelzeitreihe Ausfallarbeit | -- | 1
+      |
+
+      | PI21037 | NB | BTR | Ansicht NB | -- | 2 |
+
+      | PI21037 | NB | BTR | Ansicht NB | -- | 3 |
+
+      | PI13022 | NB | BTR | Redispatch 2.0 Einzelzeitreihe Ausfallarbeit | -- | 3
+      |
+
+      | PI21038 | BTR | NB | Ansicht BTR  | -- | 4 |
+
+      | PI21038 | BTR | NB | Ansicht BTR  | -- | 5 |
+
+      | PI21037 | NB | BTR | Ansicht NB | -- | 6 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13022 Redispatch 2.0 Einzelzeitreihe Ausfallarbeit
+                  VON [BTR] LESENDE API: ''
+                  VON [BTR] SCHREIBENDE API: ''
+                  VON [BTR] TRIGGER EVENT: ''
+                - AN [BTR] LESENDE API: ''
+                  AN [BTR] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21037 Ansicht NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [BTR] LESENDE API: ''
+                  AN [BTR] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21037 Ansicht NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [BTR] LESENDE API: ''
+                  AN [BTR] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13022 Redispatch 2.0 Einzelzeitreihe Ausfallarbeit
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI21038 Ansicht BTR '
+                  VON [BTR] LESENDE API: ''
+                  VON [BTR] SCHREIBENDE API: ''
+                  VON [BTR] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: 'PI21038 Ansicht BTR '
+                  VON [BTR] LESENDE API: ''
+                  VON [BTR] SCHREIBENDE API: ''
+                  VON [BTR] TRIGGER EVENT: ''
+                - AN [BTR] LESENDE API: ''
+                  AN [BTR] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21037 Ansicht NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13022'
+              - $ref: '#/components/schemas/PI21037'
+              - $ref: '#/components/schemas/PI21037'
+              - $ref: '#/components/schemas/PI13022'
+              - $ref: '#/components/schemas/PI21038'
+              - $ref: '#/components/schemas/PI21038'
+              - $ref: '#/components/schemas/PI21037'
+        description: ''
+    summary: Ermittlung_und_Abstimmung_der_abrechnungsrelevanten_Ausfallarbeit_–_Planwertmodell
+    tags:
+    - Kommunikationsprozesse Redispatch

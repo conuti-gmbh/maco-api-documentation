@@ -1,0 +1,30 @@
+PI37000:
+  description: "37000 LF\u2192LF \xDCbermittlung Kommunikationsdaten des LF"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: "zu definieren, falls R\xFCckmeldung an BE notwendig (DAR o.\xE4\
+        .)"
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_PARTIN
+      enum:
+      - LF
+      type: string
+  type: object

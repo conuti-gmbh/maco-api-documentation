@@ -1,0 +1,84 @@
+/Kap._D_2.3.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44150 | NB | LF | Bila.-rel. Anfrage an LF | -- |  |
+
+      | PI44137 | NB [Berechtigter] | LF | Nicht Bila. rel. Anfrage an LF | -- |  |
+
+      | PI44151 | LF | NB | Antwort auf Anfrage | -- |  |
+
+      | PI44152 | LF | NB | Ablehnung der Anfrage | -- |  |
+
+      | PI44138 | LF | NB [Berechtigter] | Antwort auf Anfrage | -- |  |
+
+      | PI44113 | NB | MSB | Nicht bila.rel. Änderung vom NB | -- |  |
+
+      | PI44115 | MSB | NB | Antwort auf Änderung vom NB | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44150 Bila.-rel. Anfrage an LF
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44137 Nicht Bila. rel. Anfrage an LF
+                  VON [NB [Berechtigter]] LESENDE API: ''
+                  VON [NB [Berechtigter]] SCHREIBENDE API: ''
+                  VON [NB [Berechtigter]] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44151 Antwort auf Anfrage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44152 Ablehnung der Anfrage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [NB [Berechtigter]] LESENDE API: ''
+                  AN [NB [Berechtigter]] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44138 Antwort auf Anfrage
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44113 Nicht bila.rel. Änderung vom NB
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44115 Antwort auf Änderung vom NB
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44150'
+              - $ref: '#/components/schemas/PI44137'
+              - $ref: '#/components/schemas/PI44151'
+              - $ref: '#/components/schemas/PI44152'
+              - $ref: '#/components/schemas/PI44138'
+              - $ref: '#/components/schemas/PI44113'
+              - $ref: '#/components/schemas/PI44115'
+        description: ''
+    summary: Kap._D_2.3.3_Nr.
+    tags:
+    - GeLi Gas

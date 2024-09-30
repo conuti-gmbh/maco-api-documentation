@@ -1,0 +1,83 @@
+/Reklamation_vom_LF:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17113 | LF | MSB (entspricht MSB am Objekt Marktlokation) | Reklamation
+      von Werten | -- | 1 |
+
+      | PI19114 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Ablehnung Reklamation
+      | -- | 2 |
+
+      | → ref Stornierung Werte vom MSB der Marktlokation | MSB (entspricht MSB am
+      Objekt Marktlokation) | -- | -- | -- | 3 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Marktlokation |
+      MSB (entspricht MSB am Objekt Marktlokation) | -- | -- | -- | 4 |
+
+      | PI17113 | MSB (entspricht MSB am Objekt Marktlokation) | MSB (entspricht MSB
+      am Objekt Messlokation) | Reklamation von Werten | -- | 5 |
+
+      | PI19114 | MSB (entspricht MSB am Objekt Messlokation) | MSB (entspricht MSB
+      am Objekt Marktlokation) | Ablehnung Reklamation | -- | 6 |
+
+      | PI19114 | MSB (entspricht MSB am Objekt Marktlokation) | LF | Ablehnung Reklamation
+      | -- | 7 |
+
+      | → ref Stornierung Werte vom MSB der Messlokation | MSB (entspricht MSB am
+      Objekt Messlokation) | -- | -- | -- | 8 |
+
+      | → ref Aufbereitung und Übermittlung von Werten vom MSB der Messlokation |
+      MSB (entspricht MSB am Objekt Messlokation) | -- | -- | -- | 9 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17113 Reklamation von Werten
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19114 Ablehnung Reklamation
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17113 Reklamation von Werten
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+                - AN [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  AN [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19114 Ablehnung Reklamation
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Messlokation)] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19114 Ablehnung Reklamation
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] LESENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] SCHREIBENDE API: ''
+                  VON [MSB (entspricht MSB am Objekt Marktlokation)] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17113'
+              - $ref: '#/components/schemas/PI19114'
+              - $ref: '#/components/schemas/PI17113'
+              - $ref: '#/components/schemas/PI19114'
+              - $ref: '#/components/schemas/PI19114'
+        description: ''
+    summary: Reklamation_vom_LF
+    tags:
+    - WiM Strom Teil 2

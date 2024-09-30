@@ -1,0 +1,29 @@
+PI55225:
+  description: "55225 NB\u2192LF \xC4nderung Blindabr.-Daten der NeLo"
+  properties:
+    AN:LESENDE_API:
+      description: LESEN_NETZLOKATION_BASIS
+      enum:
+      - LF
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_NETZLOKATION_BASIS
+      enum:
+      - LF
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_NETZLOKATION_BASIS
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: n.v
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: AENDERUNG_AD
+      enum:
+      - NB
+      type: string
+  type: object

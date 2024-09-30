@@ -1,0 +1,30 @@
+PI17207:
+  description: "17207 BKV\u2192\xDCNB Ab-/Bestellung BK-SZR auf Aggregationsebene\
+    \ RZ"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - "\xDCNB"
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BKV
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BKV
+      type: string
+  type: object

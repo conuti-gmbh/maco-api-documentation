@@ -1,0 +1,30 @@
+PI55053:
+  description: "55053 NB\u2192MSB (entspricht MSBA am Objekt Messlokation) Ablehnung\
+    \ Ende MSB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht MSBA am Objekt Messlokation)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (entspricht MSBA am Objekt Messlokation)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB
+      type: string
+  type: object

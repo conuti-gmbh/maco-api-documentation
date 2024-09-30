@@ -1,0 +1,29 @@
+PI17104:
+  description: "17104 MSB (Gas)\u2192NB (Strom) Anfrage vom MSB Gas"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (Strom)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (Strom)
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MESSLOKATION_BASIS
+      enum:
+      - MSB (Gas)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB (Gas)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB (Gas)
+      type: string
+  type: object

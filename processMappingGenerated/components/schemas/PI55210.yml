@@ -1,0 +1,29 @@
+PI55210:
+  description: "55210 BIKO\u2192NB (ANB) Antwort auf Aktiveirung ZP"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (ANB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - BIKO
+      type: string
+  type: object

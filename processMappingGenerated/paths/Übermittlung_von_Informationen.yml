@@ -1,0 +1,347 @@
+/Übermittlung_von_Informationen:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21045 | LF | NB | EnFG Informationen | -- | 1 |
+
+      | PI37000 | LF | LF | Übermittlung Kommunikationsdaten des LF | -- | 1 |
+
+      | PI37000 | LF | NB | Übermittlung Kommunikationsdaten des LF | -- | 1 |
+
+      | PI37000 | LF | MSB | Übermittlung Kommunikationsdaten des LF | -- | 1 |
+
+      | PI37000 | LF | ÜNB | Übermittlung Kommunikationsdaten des LF | -- | 1 |
+
+      | PI37001 | NB | LF | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37001 | NB | MSB | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37001 | NB | NB | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37001 | NB | BKV | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37001 | NB | BIKO | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37001 | NB | ÜNB | Übermittlung Kommunikationsdaten des NB | -- | 1 |
+
+      | PI37002 | MSB | NB | Übermittlung Kommunikationsdaten des MSB | -- | 1 |
+
+      | PI37002 | MSB | LF | Übermittlung Kommunikationsdaten des MSB | -- | 1 |
+
+      | PI37002 | MSB | ÜNB | Übermittlung Kommunikationsdaten des MSB | -- | 1 |
+
+      | PI37002 | MSB | MSB | Übermittlung Kommunikationsdaten des MSB | -- | 1 |
+
+      | PI37002 | MSB | ESA | Übermittlung Kommunikationsdaten des MSB | -- | 1 |
+
+      | PI37003 | BKV | NB | Übermittlung Kommunikationsdaten des BKV | -- | 1 |
+
+      | PI37003 | BKV | BIKO | Übermittlung Kommunikationsdaten des BKV | -- | 1 |
+
+      | PI37003 | BKV | ÜNB | Übermittlung Kommunikationsdaten des BKV | -- | 1 |
+
+      | PI37004 | BIKO | NB | Übermittlung Kommunikationsdaten des BIKO | -- | 1 |
+
+      | PI37004 | BIKO | BKV | Übermittlung Kommunikationsdaten des BIKO | -- | 1
+      |
+
+      | PI37004 | BIKO | ÜNB | Übermittlung Kommunikationsdaten des BIKO | -- | 1
+      |
+
+      | PI37005 | ÜNB | NB | Übermittlung Kommunikationsdaten des ÜNB | -- | 1 |
+
+      | PI37005 | ÜNB | LF | Übermittlung Kommunikationsdaten des ÜNB | -- | 1 |
+
+      | PI37005 | ÜNB | BKV | Übermittlung Kommunikationsdaten des ÜNB | -- | 1 |
+
+      | PI37005 | ÜNB | BIKO | Übermittlung Kommunikationsdaten des ÜNB | -- | 1 |
+
+      | PI37005 | ÜNB | MSB | Übermittlung Kommunikationsdaten des ÜNB | -- | 1 |
+
+      | PI37006 | ESA | MSB | Übermittlung Kommunikationsdaten des ESA | -- | 1 |
+
+      | PI37007 | NB | MSB | Übermittlung Kommunikationsparameter | -- | 1 |
+
+      | PI37007 | MSB | MSB | Übermittlung Kommunikationsparameter | -- | 1 |
+
+      | PI37007 | LF | MSB | Übermittlung Kommunikationsparameter | -- | 1 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21045 EnFG Informationen
+                  VON [LF] LESENDE API: ''
+                  VON [LF] SCHREIBENDE API: ''
+                  VON [LF] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37000 Übermittlung Kommunikationsdaten des
+                    LF
+                  VON [LF] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [LF] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [LF] TRIGGER EVENT: START_PARTIN
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37000 Übermittlung Kommunikationsdaten des
+                    LF
+                  VON [LF] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [LF] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [LF] TRIGGER EVENT: START_PARTIN
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37000 Übermittlung Kommunikationsdaten des
+                    LF
+                  VON [LF] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [LF] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [LF] TRIGGER EVENT: START_PARTIN
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37000 Übermittlung Kommunikationsdaten des
+                    LF
+                  VON [LF] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [LF] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [LF] TRIGGER EVENT: START_PARTIN
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37001 Übermittlung Kommunikationsdaten des
+                    NB
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37002 Übermittlung Kommunikationsdaten des
+                    MSB
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37002 Übermittlung Kommunikationsdaten des
+                    MSB
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37002 Übermittlung Kommunikationsdaten des
+                    MSB
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37002 Übermittlung Kommunikationsdaten des
+                    MSB
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [ESA] LESENDE API: ''
+                  AN [ESA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37002 Übermittlung Kommunikationsdaten des
+                    MSB
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37003 Übermittlung Kommunikationsdaten des
+                    BKV
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37003 Übermittlung Kommunikationsdaten des
+                    BKV
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37003 Übermittlung Kommunikationsdaten des
+                    BKV
+                  VON [BKV] LESENDE API: ''
+                  VON [BKV] SCHREIBENDE API: ''
+                  VON [BKV] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37004 Übermittlung Kommunikationsdaten des
+                    BIKO
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37004 Übermittlung Kommunikationsdaten des
+                    BIKO
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [ÜNB] LESENDE API: ''
+                  AN [ÜNB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37004 Übermittlung Kommunikationsdaten des
+                    BIKO
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37005 Übermittlung Kommunikationsdaten des
+                    ÜNB
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37005 Übermittlung Kommunikationsdaten des
+                    ÜNB
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [BKV] LESENDE API: ''
+                  AN [BKV] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37005 Übermittlung Kommunikationsdaten des
+                    ÜNB
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI37005 Übermittlung Kommunikationsdaten des
+                    ÜNB
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37005 Übermittlung Kommunikationsdaten des
+                    ÜNB
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37006 Übermittlung Kommunikationsdaten des
+                    ESA
+                  VON [ESA] LESENDE API: ''
+                  VON [ESA] SCHREIBENDE API: ''
+                  VON [ESA] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37007 Übermittlung Kommunikationsparameter
+                  VON [NB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [NB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [NB] TRIGGER EVENT: START_PARTIN
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37007 Übermittlung Kommunikationsparameter
+                  VON [MSB] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [MSB] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [MSB] TRIGGER EVENT: START_PARTIN
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+                  PRUEFIDENTIFIKATOR: PI37007 Übermittlung Kommunikationsparameter
+                  VON [LF] LESENDE API: LESEN_KOMMUNIKATIONSDATEN_BASIS
+                  VON [LF] SCHREIBENDE API: zu definieren, falls Rückmeldung an BE
+                    notwendig (DAR o.ä.)
+                  VON [LF] TRIGGER EVENT: START_PARTIN
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21045'
+              - $ref: '#/components/schemas/PI37000'
+              - $ref: '#/components/schemas/PI37000'
+              - $ref: '#/components/schemas/PI37000'
+              - $ref: '#/components/schemas/PI37000'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37001'
+              - $ref: '#/components/schemas/PI37002'
+              - $ref: '#/components/schemas/PI37002'
+              - $ref: '#/components/schemas/PI37002'
+              - $ref: '#/components/schemas/PI37002'
+              - $ref: '#/components/schemas/PI37002'
+              - $ref: '#/components/schemas/PI37003'
+              - $ref: '#/components/schemas/PI37003'
+              - $ref: '#/components/schemas/PI37003'
+              - $ref: '#/components/schemas/PI37004'
+              - $ref: '#/components/schemas/PI37004'
+              - $ref: '#/components/schemas/PI37004'
+              - $ref: '#/components/schemas/PI37005'
+              - $ref: '#/components/schemas/PI37005'
+              - $ref: '#/components/schemas/PI37005'
+              - $ref: '#/components/schemas/PI37005'
+              - $ref: '#/components/schemas/PI37005'
+              - $ref: '#/components/schemas/PI37006'
+              - $ref: '#/components/schemas/PI37007'
+              - $ref: '#/components/schemas/PI37007'
+              - $ref: '#/components/schemas/PI37007'
+        description: ''
+    summary: Übermittlung_von_Informationen
+    tags:
+    - GPKE Teil 4

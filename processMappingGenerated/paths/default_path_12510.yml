@@ -1,0 +1,30 @@
+/default_path_12510:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI19116 | NB | LF | Bestätigung Sperr-/Entsperrauftrag | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LF] LESENDE API: ''
+                  AN [LF] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19116 Bestätigung Sperr-/Entsperrauftrag
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI19116'
+        description: ''
+    summary: default_path_12510
+    tags:
+    - Anwendungshilfe Sperrprozesse Gas

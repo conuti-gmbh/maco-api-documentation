@@ -1,0 +1,30 @@
+PI37002:
+  description: "37002 MSB\u2192NB \xDCbermittlung Kommunikationsdaten des MSB"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_KOMMUNIKATIONSDATEN_BASIS
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: "zu definieren, falls R\xFCckmeldung an BE notwendig (DAR o.\xE4\
+        .)"
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_PARTIN
+      enum:
+      - MSB
+      type: string
+  type: object

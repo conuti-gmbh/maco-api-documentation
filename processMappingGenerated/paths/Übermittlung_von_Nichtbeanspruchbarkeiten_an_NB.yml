@@ -1,0 +1,26 @@
+/Übermittlung_von_Nichtbeanspruchbarkeiten_an_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | → Nichtbeanspruchbar-keiten | EIV | DP | -- | -- | 1 |
+
+      | → Weiterleitung der, Nichtbeanspruchbarkeiten | DP | NB (betroffene NB) |
+      -- | -- | 2 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value: []
+            schema:
+              anyOf: []
+        description: ''
+    summary: Übermittlung_von_Nichtbeanspruchbarkeiten_an_NB
+    tags:
+    - Kommunikationsprozesse Redispatch

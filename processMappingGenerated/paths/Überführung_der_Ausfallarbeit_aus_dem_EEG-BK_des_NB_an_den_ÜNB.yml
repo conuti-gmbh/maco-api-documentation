@@ -1,0 +1,58 @@
+/Überführung_der_Ausfallarbeit_aus_dem_EEG-BK_des_NB_an_den_ÜNB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI13020 | ÜNB | BIKO | Ausfallarbeitsüberführungszeitreihe | -- | 1 |
+
+      | PI13020 | BIKO | BKV (ÜNB) | Ausfallarbeitsüberführungszeitreihe | -- | 2
+      |
+
+      | PI13020 | BIKO | BKV (NB) | Ausfallarbeitsüberführungszeitreihe | -- | 3 |
+
+      | PI13020 | BIKO | NB (ANB) | Ausfallarbeitsüberführungszeitreihe | -- | 4 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13020 Ausfallarbeitsüberführungszeitreihe
+                  VON [ÜNB] LESENDE API: ''
+                  VON [ÜNB] SCHREIBENDE API: ''
+                  VON [ÜNB] TRIGGER EVENT: ''
+                - AN [BKV (ÜNB)] LESENDE API: ''
+                  AN [BKV (ÜNB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13020 Ausfallarbeitsüberführungszeitreihe
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [BKV (NB)] LESENDE API: ''
+                  AN [BKV (NB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13020 Ausfallarbeitsüberführungszeitreihe
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB (ANB)] LESENDE API: ''
+                  AN [NB (ANB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI13020 Ausfallarbeitsüberführungszeitreihe
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI13020'
+              - $ref: '#/components/schemas/PI13020'
+              - $ref: '#/components/schemas/PI13020'
+              - $ref: '#/components/schemas/PI13020'
+        description: ''
+    summary: Überführung_der_Ausfallarbeit_aus_dem_EEG-BK_des_NB_an_den_ÜNB
+    tags:
+    - MaBiS

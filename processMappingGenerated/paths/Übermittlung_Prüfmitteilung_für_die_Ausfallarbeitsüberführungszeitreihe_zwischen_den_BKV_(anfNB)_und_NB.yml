@@ -1,0 +1,48 @@
+/Übermittlung_Prüfmitteilung_für_die_Ausfallarbeitsüberführungszeitreihe_zwischen_den_BKV_(anfNB)_und_NB:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI21005 | BKV (des anfNB) | BIKO | Statusmeldung | -- | 1 |
+
+      | PI21004 | BIKO | BKV (des anfNB) | Statusmeldung | -- | 2 |
+
+      | PI21003 | BIKO | NB (ANB) | Statusmeldung | -- | 3 |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [BIKO] LESENDE API: ''
+                  AN [BIKO] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21005 Statusmeldung
+                  VON [BKV (des anfNB)] LESENDE API: ''
+                  VON [BKV (des anfNB)] SCHREIBENDE API: ''
+                  VON [BKV (des anfNB)] TRIGGER EVENT: ''
+                - AN [BKV (des anfNB)] LESENDE API: ''
+                  AN [BKV (des anfNB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21004 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+                - AN [NB (ANB)] LESENDE API: ''
+                  AN [NB (ANB)] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI21003 Statusmeldung
+                  VON [BIKO] LESENDE API: ''
+                  VON [BIKO] SCHREIBENDE API: ''
+                  VON [BIKO] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI21005'
+              - $ref: '#/components/schemas/PI21004'
+              - $ref: '#/components/schemas/PI21003'
+        description: ''
+    summary: Übermittlung_Prüfmitteilung_für_die_Ausfallarbeitsüberführungszeitreihe_zwischen_den_BKV_(anfNB)_und_NB
+    tags:
+    - MaBiS

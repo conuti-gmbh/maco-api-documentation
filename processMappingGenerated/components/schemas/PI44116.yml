@@ -1,0 +1,29 @@
+PI44116:
+  description: "44116 MSB\u2192NB [Verteiler] \xC4nderung vom MSB mit Abh\xE4ngigkeiten"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB [Verteiler]
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - MSB
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - MSB
+      type: string
+  type: object

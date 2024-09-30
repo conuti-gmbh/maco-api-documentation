@@ -1,0 +1,38 @@
+/Bezeichnung_aus_Sequenzdiagramm:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PIPrüfidentifikator | Kommunikation von | Kommunikation an | Beschreibung
+      des Anwendungsfalls aus dem AHB (EDIFACT), API-Webservice (API) | Reaktion auf
+      Prüfidentifikator | Prozessschritt aus Sequenzdiagramm |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [Kommunikation an] LESENDE API: 'Kommunikation an: , Lesende
+                    Schnittstellen'
+                  AN [Kommunikation an] SCHREIBENDE API: 'Kommunikation an: , Schreibende
+                    Schnittstellen'
+                  PRUEFIDENTIFIKATOR: PIPrüfidentifikator Beschreibung des Anwendungsfalls
+                    aus dem AHB (EDIFACT), API-Webservice (API)
+                  VON [Kommunikation von] LESENDE API: 'Kommunikation von: , Lesende
+                    Schnittstellen'
+                  VON [Kommunikation von] SCHREIBENDE API: 'Kommunikation von: , Schreibende
+                    Schnittstellen'
+                  VON [Kommunikation von] TRIGGER EVENT: 'Kommunikation von : , Auslösende
+                    Events'
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PIPrüfidentifikator'
+        description: ''
+    summary: Bezeichnung_aus_Sequenzdiagramm
+    tags:
+    - Prozessbeschreibung

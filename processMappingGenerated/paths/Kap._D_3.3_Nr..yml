@@ -1,0 +1,57 @@
+/Kap._D_3.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI17126 | MSB | NB | Anfrage Stammdaten Messlokation (Gas) | -- |  |
+
+      | PI17102 | MSB | NB | Anfrage von Werten | -- |  |
+
+      | PI19101 | NB | MSB | Ablehnung der Anfrage Stammdaten | -- |  |
+
+      | PI44060 | NB | MSB | Antwort auf die Geschäftsdatenanfrage | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17126 Anfrage Stammdaten Messlokation (Gas)
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [NB] LESENDE API: ''
+                  AN [NB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI17102 Anfrage von Werten
+                  VON [MSB] LESENDE API: ''
+                  VON [MSB] SCHREIBENDE API: ''
+                  VON [MSB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI19101 Ablehnung der Anfrage Stammdaten
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+                - AN [MSB] LESENDE API: ''
+                  AN [MSB] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44060 Antwort auf die Geschäftsdatenanfrage
+                  VON [NB] LESENDE API: ''
+                  VON [NB] SCHREIBENDE API: ''
+                  VON [NB] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI17126'
+              - $ref: '#/components/schemas/PI17102'
+              - $ref: '#/components/schemas/PI19101'
+              - $ref: '#/components/schemas/PI44060'
+        description: ''
+    summary: Kap._D_3.3_Nr.
+    tags:
+    - GeLi Gas

@@ -1,0 +1,30 @@
+PI55235:
+  description: "55235 NB (verantwortlicher NB der NGZ)\u2192NB (benachbarter NB) Zuordnung\
+    \ ZP der NGZ zur NZR"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (benachbarter NB)
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB der NGZ)
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB der NGZ)
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - NB (verantwortlicher NB der NGZ)
+      type: string
+  type: object

@@ -1,0 +1,30 @@
+PI55022:
+  description: "55022 Beteiligte wie bei Ursprungsnachricht, \u2192Beteiligte wie\
+    \ bei Ursprungsnachricht Anfrage nach Stornierung"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - Beteiligte wie bei Ursprungsnachricht
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - Beteiligte wie bei Ursprungsnachricht
+      type: string
+    VON:LESENDE_API:
+      description: ''
+      enum:
+      - 'Beteiligte wie bei Ursprungsnachricht, '
+      type: string
+    VON:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - 'Beteiligte wie bei Ursprungsnachricht, '
+      type: string
+    VON:TRIGGER_EVENT:
+      description: ''
+      enum:
+      - 'Beteiligte wie bei Ursprungsnachricht, '
+      type: string
+  type: object

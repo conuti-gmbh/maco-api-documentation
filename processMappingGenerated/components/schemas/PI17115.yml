@@ -1,0 +1,29 @@
+PI17115:
+  description: "17115 LF\u2192NB Sperrauftrag"
+  properties:
+    AN:LESENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    AN:SCHREIBENDE_API:
+      description: ''
+      enum:
+      - NB
+      type: string
+    VON:LESENDE_API:
+      description: LESEN_MARKTLOKATIONS_BASIS
+      enum:
+      - LF
+      type: string
+    VON:SCHREIBENDE_API:
+      description: "R\xFCcmeldung Sperrkennzeichen?"
+      enum:
+      - LF
+      type: string
+    VON:TRIGGER_EVENT:
+      description: START_SPERRAUFTRAG
+      enum:
+      - LF
+      type: string
+  type: object

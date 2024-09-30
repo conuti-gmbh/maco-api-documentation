@@ -1,0 +1,48 @@
+/Kap._B_1.3_Nr.:
+  options:
+    description: '| Prüfidentifikator | Von | An | Beschreibung | Reaktion | Prozessschritt
+      |
+
+      |-------------------|-----|----|--------------|----------|----------------|
+
+      | PI44016 | LFN | LFA | Kündigung beim alten Lieferanten | -- |  |
+
+      | PI44018 | LFA | LFN | Ablehnung Kündigung | -- |  |
+
+      | PI44017 | LFA | LFN | Bestätigung Kündigung | -- |  |
+
+      '
+    responses:
+      '200':
+        content:
+          application/json:
+            examples:
+              example:
+                value:
+                - AN [LFA] LESENDE API: ''
+                  AN [LFA] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44016 Kündigung beim alten Lieferanten
+                  VON [LFN] LESENDE API: ''
+                  VON [LFN] SCHREIBENDE API: ''
+                  VON [LFN] TRIGGER EVENT: START_KUENDIGUNG
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44018 Ablehnung Kündigung
+                  VON [LFA] LESENDE API: ''
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+                - AN [LFN] LESENDE API: ''
+                  AN [LFN] SCHREIBENDE API: ''
+                  PRUEFIDENTIFIKATOR: PI44017 Bestätigung Kündigung
+                  VON [LFA] LESENDE API: ''
+                  VON [LFA] SCHREIBENDE API: ''
+                  VON [LFA] TRIGGER EVENT: ''
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/PI44016'
+              - $ref: '#/components/schemas/PI44018'
+              - $ref: '#/components/schemas/PI44017'
+        description: ''
+    summary: Kap._B_1.3_Nr.
+    tags:
+    - GeLi Gas
