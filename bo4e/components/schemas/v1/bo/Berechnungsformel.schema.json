@@ -38,8 +38,8 @@
                 "$ref": "../com/Verwendungszweck.schema.json"
             }
         },
-        "zeitraumId": {
-            "type": "integer"
+        "gueltigkeitszeitraum": {
+            "$ref": "../com/Zeitraum.schema.json"
         }
     },
     "required": [

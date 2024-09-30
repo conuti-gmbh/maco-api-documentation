@@ -27,6 +27,9 @@
         },
         "zeitraumText": {
             "type": "string"
+        },
+        "zeitraumId": {
+            "type": "integer"
         }
     }
 }

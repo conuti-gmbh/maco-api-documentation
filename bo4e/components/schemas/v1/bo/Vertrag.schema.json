@@ -54,8 +54,8 @@
         "datenqualitaet": {
             "$ref": "../enum/Datenqualitaet.schema.json"
         },
-        "zeitraumId": {
-            "type": "integer"
+        "gueltigkeitszeitraum": {
+            "$ref": "../com/Zeitraum.schema.json"
         },
         "vertragspartner1": {
             "type": "array",

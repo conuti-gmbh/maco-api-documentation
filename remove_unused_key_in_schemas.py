@@ -22,7 +22,7 @@ def remove_keys(file_path):
         json.dump(data, file, indent=4)
 
 def main():
-    schemas_dir = 'components/schemas/'
+    schemas_dir = 'bo4e/components/schemas'
     for root, dirs, files in os.walk(schemas_dir):
         for file in files:
             if file.endswith('.json'):
