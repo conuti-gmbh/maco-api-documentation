@@ -1,4 +1,4 @@
-description: Stichtag | Key date
+description: "Datum (Gültig bis) | Date (Valid until)"
 in: query
 name: parameter3
 required: true

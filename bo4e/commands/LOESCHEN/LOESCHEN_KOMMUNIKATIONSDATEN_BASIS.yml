@@ -1,6 +1,6 @@
 post:
   description:
-    "L\xF6schen der Kommunikationsdaten des Serviceanbieters (Parameter1)\
+    "Löschen der Kommunikationsdaten des Serviceanbieters (Parameter1)\
     \ zum Zeitpunkt (Parameter2) | Deleting the communication data of the service\
     \ provider (Parameter1) at the time (Parameter2)"
   operationId: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
@@ -20,15 +20,7 @@ post:
       schema:
         example: "9903790000002"
         type: string
-    - description: "Datum (Gültig ab) | Date (Valid from)"
-      in: query
-      name: parameter2
-      required: true
-      schema:
-        example: "2024-06-28T12:18:00Z"
-        format: date-time
-        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-        type: string
+    - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:
       application/json:
@@ -42,7 +34,7 @@ post:
           schema:
             $ref: "../../components/responses/OK_RESPONSE.yml"
       description:
-        "Erfolgreiches L\xF6schen der Kommunikationsdaten | Successful\
+        "Erfolgreiches Löschen der Kommunikationsdaten | Successful\
         \ deleting of communication data"
     "400":
       content:
@@ -50,12 +42,6 @@ post:
           schema:
             $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    "422":
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/ERROR_RESPONSE.yml"
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
   tags:
-    - "L\xD6SCHEN | DELETE"
+    - "LÖSCHEN | DELETE"

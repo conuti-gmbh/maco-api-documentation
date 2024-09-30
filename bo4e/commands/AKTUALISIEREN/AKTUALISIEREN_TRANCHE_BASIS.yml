@@ -1,39 +1,47 @@
 post:
-  description: "\xC4ndern einer Tranche mittels LokationsId (Parameter1) zum Zeitpunkt\
+  description:
+    "Ändern einer Tranche mittels LokationsId (Parameter1) zum Zeitpunkt\
     \ (Parameter2) | Changing a tranche using location ID (Parameter1) at the time\
     \ (Parameter2)"
   operationId: AKTUALISIEREN_TRANCHE_BASIS
   parameters:
-    - $ref: ../../components/parameters/command.yml
-    - $ref: ../../components/parameters/parameter1.yml
+    - name: command
+      in: query
+      required: true
+      description: Name der Operation | Name of the operation
+      schema:
+        type: string
+        default: AKTUALISIEREN_TRANCHE_BASIS
+        example: NOCODB_AKTUALISIEREN_TRANCHE_BASIS
+    - name: parameter1
+      description: LokationsId | Location ID
+      in: query
+      required: true
+      schema:
+        type: string
+        example: "74018657187"
     - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:
       application/json:
         schema:
-          $ref: '../../components/schemas/v1/bo/Tranche.schema.json'
+          $ref: "../../components/schemas/v1/bo/Tranche.schema.json"
     required: true
   responses:
-    '200':
+    "200":
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/Tranche.schema.json'
-      description: Erfolgreiches Aktualisieren der Tranche | Successful updating of
+            $ref: "../../components/schemas/v1/bo/Tranche.schema.json"
+      description:
+        Erfolgreiches Aktualisieren der Tranche | Successful updating of
         the tranche
-    '400':
+    "400":
       content:
         application/json:
           schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    '422':
-      content:
-        application/json:
-          schema:
-            $ref: '../../components/responses/ERROR_RESPONSE.yml'
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
-
   summary: AKTUALISIEREN_TRANCHE_BASIS
   tags:
-  - AKTUALISIEREN | UPDATE
+    - AKTUALISIEREN | UPDATE

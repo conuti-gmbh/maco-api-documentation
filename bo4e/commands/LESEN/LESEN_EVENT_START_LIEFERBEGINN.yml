@@ -25,15 +25,7 @@ post:
       schema:
         type: string
         example: "110000000605"
-    - name: parameter2
-      description: Datum (Gültig ab) | Date (Valid from)
-      in: query
-      required: true
-      schema:
-        type: string
-        format: date-time
-        example: "2024-06-28T12:18:00Z"
-        pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$'
+    - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     required: true
     content:
@@ -51,12 +43,6 @@ post:
             $ref: "../../components/requestBodies/START_LIEFERBEGINN.yml"
     "400":
       description: Fehlerhafte Anfrage | Bad Request
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/ERROR_RESPONSE.yml"
-    "422":
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
       content:
         application/json:
           schema:

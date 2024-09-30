@@ -20,15 +20,7 @@ post:
       schema:
         example: "9903790000002"
         type: string
-    - description: "Datum (Gültig ab) | Date (Valid from)"
-      in: query
-      name: parameter2
-      required: true
-      schema:
-        example: "2024-06-28T12:18:00Z"
-        format: date-time
-        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
-        type: string
+    - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:
       application/json:
@@ -50,12 +42,6 @@ post:
           schema:
             $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    "422":
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/ERROR_RESPONSE.yml"
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: ERSTELLEN_KOMMUNIKATIONSDATEN_BASIS
   tags:
     - ERSTELLEN | CREATE

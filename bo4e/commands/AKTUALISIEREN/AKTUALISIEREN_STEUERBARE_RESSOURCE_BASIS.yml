@@ -1,11 +1,24 @@
 post:
-  description: "\xC4ndern einer steuerbaren Ressource mittels LokationsId (Parameter1)\
+  description: "Ändern einer steuerbaren Ressource mittels LokationsId (Parameter1)\
     \ zum Zeitpunkt (Parameter2) | Changing a controllable resource using location\
     \ ID (Parameter1) at the time (Parameter2)"
   operationId: AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
   parameters:
-    - $ref: ../../components/parameters/command.yml
-    - $ref: ../../components/parameters/parameter1.yml
+    - name: command
+      in: query
+      required: true
+      description: Name der Operation | Name of the operation
+      schema:
+        type: string
+        default: AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
+        example: NOCODB_AKTUALISIEREN_STEUERBARE_RESSOURCE_BASIS
+    - name: parameter1
+      description: LokationsId | Location ID
+      in: query
+      required: true
+      schema:
+        type: string
+        example: "74018657187"
     - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:

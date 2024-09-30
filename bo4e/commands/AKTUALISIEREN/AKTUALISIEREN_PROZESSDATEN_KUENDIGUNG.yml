@@ -4,8 +4,21 @@ post:
     \ Reading a MaLo using LocationId (Parameter1)  at time (Parameter2)
   operationId: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
   parameters:
-    - $ref: ../../components/parameters/command.yml
-    - $ref: ../../components/parameters/parameter1.yml
+    - name: command
+      in: query
+      required: true
+      description: Name der Operation | Name of the operation
+      schema:
+        type: string
+        default: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
+        example: NOCODB_AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
+    - name: parameter1
+      description: ILN Nummer | ILN number
+      in: query
+      required: true
+      schema:
+        type: string
+        example: "9903790000002"
     - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:
@@ -28,12 +41,6 @@ post:
           schema:
             $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
-    "422":
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/responses/ERROR_RESPONSE.yml"
-      description: Nicht verarbeitbare Anfrage | Unprocessable Request
   summary: AKTUALISIEREN_PROZESSDATEN_KUENDIGUNG
   tags:
     - AKTUALISIEREN | UPDATE

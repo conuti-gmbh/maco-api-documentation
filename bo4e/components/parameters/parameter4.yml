@@ -1,4 +1,4 @@
-description: OBIS | OBIS
+description: OBIS Kennzahl | OBIS code
 in: query
 name: parameter4
 required: true
