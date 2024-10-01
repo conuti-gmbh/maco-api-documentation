@@ -4,7 +4,7 @@
   ],
   "ext": "yaml, yml, json",
   "exec": [
-    "./build-openapi-json.sh"
+    "./scripts/build-openapi-json.sh"
   ],
   "ignore": [
     "_build/*"
