@@ -47,12 +47,5 @@ All files in components/schemas/v1 are generated from github.com:conuti-gmbh/bo4
 
 ### run this for updates schemas from bo4e-schema
 ```
-git clone git@github.com:conuti-gmbh/bo4e-schema.git && \
-cp -r bo4e-schema/schemas/v1 bo4e/components/schemas && \
-rm -rf bo4e-schema/ && \
-python3 remove_unused_key_in_schemas.py && \ 
-./build-openapi-json.sh && \
-git add . && \
-git commit -m "update schemas from bo4e-schema" && \
-git push
+./scripts/auto-update-schema.sh
 ```
