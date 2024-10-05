@@ -1,30 +1,26 @@
 get:
   summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
   description:
-    "Lesen einer Energiemenge über eine Lokation (Parameter1) in einer\
-    \ Range (Parameter2/Parameter3) und einer OBIS Kennzahl (Parameter4 optional)\
+    "Lesen der Energiemengen aus Abrechnungskontext über eine LokationId (Parameter1) udn LokationsTyp (Parameter2) in einer\
+    \ Range (Parameter3/Parameter4) und einer OBIS Kennzahl (Parameter5 optional)\
     \ | Reading an energy quantity for a location (Parameter1) in a range (Parameter2/Parameter3)\
     \ and an OBIS code (Parameter4 optional)"
   operationId: LESEN_ENERGIEMENGE_ENERGIEMENGE
   parameters:
-    - description: Name der Operation | Name of the operation
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
+    - $ref: ../../components/parameters/parameter5.yml    
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
       in: query
       name: command
       required: true
       schema:
         default: LESEN_ENERGIEMENGE_ENERGIEMENGE
         example: SAP_LESEN_ENERGIEMENGE_ENERGIEMENGE
-        type: string
-    - description: LokationsId | Location ID
-      in: query
-      name: parameter1
-      required: true
-      schema:
-        example: "74018657187"
-        type: string
-    - $ref: ../../components/parameters/parameter2.yml
-    - $ref: ../../components/parameters/parameter3.yml
-    - $ref: ../../components/parameters/parameter4.yml
+        type: string    
   responses:
     "200":
       content:

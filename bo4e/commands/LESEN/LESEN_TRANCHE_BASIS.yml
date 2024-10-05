@@ -4,22 +4,20 @@ get:
     (Parameter2) | Reading a tranche using location ID (Parameter1) at the time (Parameter2)
   operationId: LESEN_TRANCHE_BASIS
   parameters:
-    - description: Name der Operation | Name of the operation
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
       in: query
       name: command
       required: true
       schema:
         default: LESEN_TRANCHE_BASIS
         example: SAP_LESEN_TRANCHE_BASIS
-        type: string
-    - description: LokationsId | Location ID
-      in: query
-      name: parameter1
-      required: true
-      schema:
-        example: "74018657187"
-        type: string
-    - $ref: ../../components/parameters/parameter2.yml
+        type: string 
   responses:
     "200":
       content:

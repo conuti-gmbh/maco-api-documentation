@@ -1,7 +1,7 @@
 get:
   description:
     Lesen einen absender(marktteilnehmer) mit LokationsId  (Parameter1)  zum
-    Zeitpunkt (Parameter2) | Read a sender (market participant) with location ID (parameter
+    Zeitpunkt (Parameter2) | Read a sender (market participant)  (parameter
     1) at time (parameter 2)
   operationId: LESEN_MARKTTEILNEHMER_ABSENDER
   parameters:

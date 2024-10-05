@@ -1,7 +1,7 @@
 get:
   description:
-    Lesen des Energieliefervertrages einer Lokation (Parameter1) zum Zeitpunkt
-    (Parameter2) | Reading the energy delivery contract of a location (Parameter1)
+    Lesen des Energieliefervertrages einer Lokation (Parameter1) vom Typ (Parameter2 - default MALO) zum Stichtag
+    (Parameter3) | Reading the energy delivery contract of a location (Parameter1)
     at the time (Parameter2)
   operationId: LESEN_ENERGIELIEFERVERTRAG_BASIS
   parameters:
@@ -14,14 +14,10 @@ get:
         default: LESEN_ENERGIELIEFERVERTRAG_BASIS
         example: SAP_LESEN_ENERGIELIEFERVERTRAG_BASIS
         type: string
-    - description: LokationsId | Location ID
-      in: query
-      name: parameter1
-      required: true
-      schema:
-        example: "74018657187"
-        type: string
+    - $ref: ../../components/parameters/parameter1.yml
     - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
   responses:
     "200":
       content:

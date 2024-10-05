@@ -1,4 +1,4 @@
-description: "Datum (Gültig bis) | Date (Valid until)"
+description: "Datum (Gültig ab) | Date (Valid from)"
 in: query
 name: parameter3
 required: true

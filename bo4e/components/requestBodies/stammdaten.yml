@@ -77,7 +77,5 @@ properties:
           $ref: "../schemas/v1/bo/Verwendungszeitraum.schema.json"
   transaktionsdaten:
     type: object
-    unevaluatedProperties: true
-  zusatzdaten:
-    type: object
+    $ref: "https://raw.githubusercontent.com/conuti-gmbh/cdoc-schema/refs/heads/main/schemas/Transaktionsdaten.schema.json"
     unevaluatedProperties: true

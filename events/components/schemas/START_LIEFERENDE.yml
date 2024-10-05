@@ -1,0 +1,33 @@
+description: "Schema für Lieferende | Schema for end of delivery"
+properties:
+    eventName:
+      $ref: items/eventName.yml
+      default: START_LIEFERENDE
+    id:
+      $ref: items/id.yml
+    absender:
+      $ref: items/absender.yml
+    empfaenger:
+      $ref: items/empfaenger.yml   
+    vertragsende:   
+      $ref: items/vertragsende.yml  
+    marktlokationsId:   
+      $ref: items/marktlokationsId.yml  
+    sparte:
+      $ref: items/sparte.yml  
+    transaktionsgrund:      
+       $ref: items/transaktionsgrund.yml   
+    transaktionsgrundergaenzung:
+      $ref: items/transaktionsgrundergaenzung.yml
+
+required:
+  - id
+  - eventName
+  - absender
+  - empfaenger
+  - vertragsende
+  - marktlokationsId
+  - sparte
+  - transaktionsgrund
+  - transaktionsgrundergaenzung
+type: object

@@ -18,13 +18,15 @@ info:
     <summary>Changelog</summary>
 
     
-    - **Version 1.1.0** - *26. September 2024* - Autor: Tu Quy Nguyen 
+    - **Version 1.1.1** - *04. Oktober 2024* - _Autor: DAS_
+      - Anpassung der default Parameter : parameter1 = LokationsId / parameter2 = LokationsTyp / parameter3 = Parameter3 - gueltigAb - stichtag
+    
+    - **Version 1.1.0** - *26. September 2024* - _Autor: Tu Quy Nguyen_
       - refactor openapi document
-
 
     - **Version 1.0.5** - *18. September 2024* - _Autor: DAS_
       - Update Default Command auf SAP_ statt NOCODB_
-      - Update Default Beispiel MaloId auf 50074561188
+      - Update Default Beispiel MaloId auf 74018657187
 
 
     - **Version 1.0.4** - *13. September 2024* - _Autor: Tu Quy Nguyen_
@@ -48,7 +50,7 @@ info:
       - Initiale Version der API-Dokumentation.
 
     </details>
-  version: 1.0.5
+  version: 1.1.1
 servers:
   - url: "https://api.macoapp.de"
     description: Mock-Umgebung | Mock environment

@@ -1,0 +1,27 @@
+post:
+  deprecated: false
+  description: Versand vom Lieferende aus dem Backend | trigger delivery end
+  operationId: START_LIEFERENDE
+  parameters: []
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../components/schemas/START_LIEFERENDE.yml"
+  responses:
+    '201':
+      content:
+        application/json:
+          schema:
+            $ref: '../components/responses/event_responses_success.yml'
+      description: Erfolg | Success
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
+  security: []
+  summary: START_LIEFERENDE
+  tags:
+    - SLIM EVENTS

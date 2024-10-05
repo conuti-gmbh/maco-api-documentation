@@ -6,7 +6,10 @@ info:
 
     <details>
     <summary>Changelog</summary>
-
+    
+    - **Version 1.0.2** - *04. Oktober 2024* - _Autor: DAS_
+      - Update START_LIEFERBEGINN und START_LIEFERENDE
+    
     **Version 1.0.1** - *08. August 2024* - _Autor: DAS_
 
     - Erweiterung der API um zusätzliche Schemas und Beispiele.
@@ -17,7 +20,7 @@ info:
     - Initiale Veröffentlichung der API mit dem `START_SPERRAUFTRAG`-Schema.
 
     </details>
-  version: 1.0.1
+  version: 1.0.2
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
