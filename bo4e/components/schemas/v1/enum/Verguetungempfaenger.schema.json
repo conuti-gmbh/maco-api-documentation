@@ -1,5 +1,4 @@
 {
-    "title": "VerguetungEmpfaenger",
     "type": "string",
     "enum": [
         "KUNDE",

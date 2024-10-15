@@ -1,4 +1,5 @@
 {
+    "title": "Katasteradresse",
     "type": "object",
     "properties": {
         "gemarkung_flur": {
