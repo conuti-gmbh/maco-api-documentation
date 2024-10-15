@@ -1,0 +1,277 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - abwicklungsmodell: MODELL_1_BILANZIERUNG_AN_MARKTLOKATION
+      aggregationsverantwortung: VNB
+      bilanzierungsbeginn: '2024-09-30T22:00:00Z'
+      bilanzkreis: 11Y0-0000-0076-N
+      boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      prognosegrundlage: WERTE
+      versionStruktur: '1'
+      zeitreihentyp: LGS
+    ENERGIELIEFERVERTRAG:
+    - boTyp: VERTRAG
+      korrespondenzpartner:
+        boTyp: GESCHAEFTSPARTNER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: ENERGIELIEFERVERTRAG
+      vertragspartner2:
+      - boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - KUNDE
+        gewerbekennzeichnung: true
+        name1: Mustermann
+        versionStruktur: '1'
+    LOKATIONSBUENDEL:
+    - boTyp: LOKATIONSBUENDEL
+      lokationsbuendelstrukturId: '9992000000026'
+      standardisierteLokationsbuendelstruktur: true
+      versionStruktur: '1'
+      zuordnungObjectcode:
+      - objectcode:
+        - objectcode: '9992000001256'
+        referenzLokationsId: E1688117482
+        referenzLokationsTyp: NELO
+      - objectcode:
+        - objectcode: '9992000001016'
+        referenzLokationsId: '50074561188'
+        referenzLokationsTyp: MALO
+      - objectcode:
+        - objectcode: '9992000001032'
+        referenzLokationsId: DE0032106765712000000000000000037
+        referenzLokationsTyp: MELO
+      - objectcode:
+        - objectcode: '9992000001024'
+        referenzLokationsId: D417MLM8164
+        referenzLokationsTyp: TECHNISCHE_RESSOURCE
+    MARKTLOKATION:
+    - bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      konfigurationsprodukt: '9991000000721'
+      leistungskurvendefinition: ABC
+      lokationsadresse:
+        hausnummer: '1'
+        landescode: DE
+        ort: Ort
+        postleitzahl: '12345'
+        strasse: Str
+        zusatzInformation:
+          zusatz1: Mustermann
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: UENB
+        rollencodenummer: '4045399000077'
+        versionStruktur: '1'
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9904446000007'
+        versionStruktur: '1'
+        weiterverpflichtet: true
+      messtechnischeEinordnung: KME_MME
+      netzebene: NSP
+      netznutzungsabrechnungsdaten:
+      - artikelId: 1-03-7
+        artikelIdTyp: GRUPPENARTIKELID
+        gemeinderabatt: 0
+      produktdatenRelevanteRolle: LF
+      regelzone: 10YDE-RWENET---I
+      sparte: STROM
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:1.29.0
+        verwendungszwecke:
+        - marktrolle: LF
+          zweck:
+          - NETZNUTZUNGSABRECHNUNG
+          - BILANZKREISABRECHNUNG
+          - ENDKUNDENABRECHNUNG
+    MESSLOKATION:
+    - ablesekartenempfaenger:
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - ABLESEKARTENEMPFAENGER
+        gewerbekennzeichnung: true
+        name1: Mustermann
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      boTyp: MESSLOKATION
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9904446000007'
+        versionStruktur: '1'
+        weiterverpflichtet: true
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: GMSB
+        rollencodenummer: '9904446000007'
+        versionStruktur: '1'
+      messlokationsId: DE0032106765712000000000000000037
+      netzebenemessung: NSP
+      sparte: STROM
+      versionStruktur: '1'
+    MESSSTELLENBETRIEBSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: DE0032106765712000000000000000037
+      lokationsTyp: MELO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: MESSSTELLENBETRIEBSVERTRAG
+      vertragskonditionen:
+        abrechnungUeberNna: true
+    NETZLOKATION:
+    - auftraggebenderMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        marktrolle: NB
+        rollencodenummer: '9900321000005'
+        versionStruktur: '1'
+      boTyp: NETZLOKATION
+      konfigurationsprodukt: '9991000000721'
+      leistungskurvendefinition: ABC
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        gewerbekennzeichnung: true
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9904446000007'
+        rollencodetyp: BDEW
+        versionStruktur: '1'
+      netzlokationsId: E1688117482
+      produktdatenRelevanteRolle: LF
+      sparte: STROM
+      steuerkanal: true
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:5.29.0
+        verwendungszwecke:
+        - marktrolle: LF
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-09-30T22:00:00Z'
+      vertragskonditionen:
+        haushaltskunde: true
+        naechstenetznutzungsabrechnung: '2025'
+        netznutzungsabrechnung:
+          abrechnungsZeitraum: '0101'
+        netznutzungsabrechnungIntervall: 1
+        netznutzungsabrechnungsgrundlage: LIEFERSCHEIN
+        netznutzungsabrechnungsvariante: ARBEITSPREIS_LEISTUNGSPREIS
+        netznutzungsvertrag: LIEFERANTEN_NB
+        netznutzungszahler: LIEFERANT
+    STEUERBARE_RESSOURCE:
+    - auftraggebenderMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        marktrolle: NB
+        rollencodenummer: '9900321000005'
+        versionStruktur: '1'
+      boTyp: STEUERBARE_RESSOURCE
+      konfigurationsprodukt: '9991000000721'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        gewerbekennzeichnung: true
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9904446000007'
+        rollencodetyp: BDEW
+        versionStruktur: '1'
+      produktdatenRelevanteRolle: LF
+      ressourcenId: C816417ST77
+      sparte: STROM
+      steuerkanal: AN_AUS
+      versionStruktur: '1'
+      zugeordneteDefinition:
+        leistungskurvendefinition: ABC
+    TECHNISCHE_RESSOURCE:
+    - art: STROMVERBRAUCH
+      artEMobilitaet: WB
+      boTyp: TECHNISCHE_RESSOURCE
+      einordnung: WECHSELMOEGLICHKEIT_EINMALIG_NOCH_MOEGLICH
+      enwg: true
+      inbetriebsetzungsdatum: INBETRIEBSETZUN_VOR_2024
+      nennleistung:
+        aufnahme: 1000
+      referenzMarktlokation: '50074561188'
+      referenzMesslokation: DE0032106765712000000000000000037
+      referenzNetzlokation: E1688117482
+      referenzSteuerbareRessource: C816417ST77
+      ressourcenId: D417MLM8164
+      sparte: STROM
+      verbrauchsart: EMOB
+      versionStruktur: '1'
+      weitereEinrichtung: false
+    ZAEHLER:
+    - boTyp: ZAEHLER
+      fernschaltung: VORHANDEN
+      geraete:
+      - geraetenummer: ABC12345678910
+      - geraeteeigenschaften:
+          geraetemerkmal: RUNDSTEUEREMPFAENGER
+          geraetetyp: STEUEREINRICHTUNG
+        geraetenummer: '666666666'
+      messlokationsId: DE0032106765712000000000000000037
+      messwerterfassung: MANUELL_AUSGELESENE
+      sparte: STROM
+      tarifart: EINTARIF
+      versionStruktur: '1'
+      zaehlerauspraegung: ZWEIRICHTUNGSZAEHLER
+      zaehlernummer: ABC12345678910
+      zaehlertyp: ELEKTRONISCHERHAUSHALTSZAEHLER
+      zaehlertypspezifikation: EDL40
+      zaehlwerke:
+      - obisKennzahl: 1-1:1.29.0
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: '12345678910'
+    antwortstatus: A51
+    antwortstatusCodeliste: E_0404
+    bilanzkreis:
+    - bezeichnung: 11Y0-0000-0076-N
+    datenaustauschreferenz: '150621'
+    dokumentennummer: 268219BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    freitext:
+      freitext1: ABC
+    kategorie: E01
+    nachrichtendatum: '2024-04-03T22:01:00Z'
+    nachrichtenreferenznummer: '268219'
+    pruefidentifikator: '55002'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: '1610071045'
+  zusatzdaten: {}

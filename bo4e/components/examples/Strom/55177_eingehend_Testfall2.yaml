@@ -1,0 +1,112 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    LOKATIONSBUENDEL:
+    - boTyp: LOKATIONSBUENDEL
+      lokationsbuendelNummer: 1
+      lokationsbuendelstrukturId: '9992000000042'
+      standardisierteLokationsbuendelstruktur: true
+      versionStruktur: '1'
+      zuordnungObjectcode:
+      - objectcode:
+        - objectcode: '9992000001256'
+        referenzLokationsId: E1688117482
+        referenzLokationsTyp: NELO
+      - objectcode:
+        - objectcode: '9992000001016'
+        referenzLokationsId: '50074561188'
+        referenzLokationsTyp: MALO
+      - objectcode:
+        - objectcode: '9992000001066'
+        referenzLokationsId: '50074561170'
+        referenzLokationsTyp: MALO
+      - objectcode:
+        - objectcode: '9992000001214'
+        referenzLokationsId: DE0032106765712000000000000000037
+        referenzLokationsTyp: MELO
+      - objectcode:
+        - objectcode: '9992000001074'
+        referenzLokationsId: D417MLM8164
+        referenzLokationsTyp: TECHNISCHE_RESSOURCE
+      - objectcode:
+        - objectcode: '9992000001024'
+        referenzLokationsId: D417MLM8165
+        referenzLokationsTyp: TECHNISCHE_RESSOURCE
+      - objectcode:
+        - objectcode: '9992000001058'
+        referenzLokationsId: D417MLM8166
+        referenzLokationsTyp: TECHNISCHE_RESSOURCE
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      lokationszuordnung: UNVERAENDERT
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+    - boTyp: MARKTLOKATION
+      lokationszuordnung: UNVERAENDERT
+      marktlokationsId: '50074561170'
+      sparte: STROM
+      versionStruktur: '1'
+    MESSLOKATION:
+    - boTyp: MESSLOKATION
+      lokationszuordnung: UNVERAENDERT
+      messlokationsId: DE0032106765712000000000000000037
+      referenzMarktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+      verwendungsumfang: MESSLOKATION_PROZESSUAL_BEHANDELT
+    NETZLOKATION:
+    - boTyp: NETZLOKATION
+      lokationszuordnung: BEGINNT
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    TECHNISCHE_RESSOURCE:
+    - boTyp: TECHNISCHE_RESSOURCE
+      lokationszuordnung: UNVERAENDERT
+      ressourcenId: D417MLM8164
+      sparte: STROM
+      versionStruktur: '1'
+    - boTyp: TECHNISCHE_RESSOURCE
+      lokationszuordnung: UNVERAENDERT
+      ressourcenId: D417MLM8165
+      sparte: STROM
+      versionStruktur: '1'
+    - boTyp: TECHNISCHE_RESSOURCE
+      lokationszuordnung: UNVERAENDERT
+      ressourcenId: D417MLM8166
+      sparte: STROM
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '726694'
+    dokumentennummer: 386911BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-10-22T07:29:00Z'
+    nachrichtenreferenznummer: '386911'
+    pruefidentifikator: '55177'
+    sparte: STROM
+    transaktionsgrund: ZJ0
+    vorgangsnummer: '495365127'
+  zusatzdaten: {}

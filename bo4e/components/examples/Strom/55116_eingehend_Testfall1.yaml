@@ -1,0 +1,61 @@
+value:
+  stammdaten:
+    NETZLOKATION:
+    - auftraggebenderMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        marktrolle: NB
+        rollencodenummer: '9900321000005'
+        versionStruktur: '1'
+      boTyp: NETZLOKATION
+      konfigurationsprodukt: '9991000000721'
+      leistungskurvendefinition: ABC
+      netzlokationsId: E1688117482
+      produktdatenRelevanteRolle: NB
+      sparte: STROM
+      steuerkanal: true
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:8.29.0
+        verwendungszwecke:
+        - marktrolle: NB
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+        - marktrolle: LF
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+      - obisKennzahl: 1-1:5.29.0
+        verwendungszwecke:
+        - marktrolle: NB
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+        - marktrolle: LF
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '199726'
+    dokumentennummer: 757660BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-01T08:04:00Z'
+    nachrichtenreferenznummer: '757660'
+    pruefidentifikator: '55116'
+    sparte: STROM
+    transaktionsgrund: ZE8
+    vorgangsnummer: '1752971454'
+  zusatzdaten: {}

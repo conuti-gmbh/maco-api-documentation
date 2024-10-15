@@ -1,0 +1,59 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - aggregationsverantwortung: VNB
+      boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - TEP
+      lastprofile:
+      - einspeisung: true
+        profilschar: ABC
+      marktlokationsId: '50074561188'
+      prognosegrundlage: PROFILE
+      temperaturarbeit:
+        einheit: KW
+        wert: 1
+      versionStruktur: '1'
+      zeitreihentyp: SES
+    MARKTLOKATION:
+    - bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: EINSP
+      marktlokationsId: '50074561188'
+      messtechnischeEinordnung: KME_MME
+      regelzone: 10YDE-RWENET---I
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC123456
+    antwortstatus: ZG2
+    antwortstatusCodeliste: S_0025
+    datenaustauschreferenz: '123519'
+    dokumentennummer: 48315BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T09:40:00Z'
+    nachrichtenreferenznummer: '948315'
+    pruefidentifikator: '55157'
+    sparte: STROM
+    transaktionsgrund: ZF8
+    vorgangsnummer: '60252608'
+  zusatzdaten: {}

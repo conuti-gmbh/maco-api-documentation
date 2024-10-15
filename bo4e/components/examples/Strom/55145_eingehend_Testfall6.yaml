@@ -1,0 +1,48 @@
+value:
+  stammdaten:
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    STEUERBARE_RESSOURCE:
+    - auftraggebenderMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        marktrolle: NB
+        rollencodenummer: '9900321000005'
+        versionStruktur: '1'
+      boTyp: STEUERBARE_RESSOURCE
+      konfigurationsprodukt: '9991000000713'
+      produktdatenRelevanteRolle: NB
+      ressourcenId: C816417ST77
+      sparte: STROM
+      steuerkanal: GESTUFT
+      versionStruktur: '1'
+      zugeordneteDefinition:
+        schaltzeitdefinition: ABC
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC12345678910
+    antwortstatus: ZG2
+    antwortstatusCodeliste: S_0036
+    datenaustauschreferenz: '613651'
+    dokumentennummer: 189899BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T09:20:00Z'
+    nachrichtenreferenznummer: '189899'
+    pruefidentifikator: '55145'
+    sparte: STROM
+    transaktionsgrund: ZF5
+    vorgangsnummer: '1962314992'
+  zusatzdaten: {}

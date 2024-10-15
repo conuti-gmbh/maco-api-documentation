@@ -1,0 +1,40 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - bilanzierungsende: '2024-06-30T22:00:00Z'
+      boTyp: BILANZIERUNG
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsende: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '715589'
+    dokumentennummer: 778046BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    freitext:
+      freitext1: Blabla
+    kategorie: E44
+    nachrichtendatum: '2024-04-26T12:43:00Z'
+    nachrichtenreferenznummer: '778046'
+    pruefidentifikator: '55240'
+    sparte: STROM
+    transaktionsgrund: ZC8
+    vorgangsnummer: '1077296538'
+  zusatzdaten: {}

@@ -1,0 +1,39 @@
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '50074561188'
+      netznutzungsabrechnungsdaten:
+      - artikelId: 1-02-0-001
+        artikelIdTyp: ARTIKELID
+        gemeinderabatt: 0
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-10-31T23:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '200172'
+    dokumentennummer: 879584BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-10-31T23:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T13:10:00Z'
+    nachrichtenreferenznummer: '879584'
+    pruefidentifikator: '55218'
+    sparte: STROM
+    transaktionsgrund: ZS3
+    vorgangsnummer: '297590681'
+  zusatzdaten: {}

@@ -1,0 +1,45 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: EINSP
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsende: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC1234567
+    antwortstatus: E15
+    antwortstatusCodeliste: S_0045
+    datenaustauschreferenz: '181269'
+    dokumentennummer: 303263BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    endezumtermin: '2024-06-30T22:00:00Z'
+    kategorie: E35
+    nachrichtendatum: '2024-04-03T07:37:00Z'
+    nachrichtenreferenznummer: '303263'
+    pruefidentifikator: '55090'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: '1505150104'
+  zusatzdaten: {}

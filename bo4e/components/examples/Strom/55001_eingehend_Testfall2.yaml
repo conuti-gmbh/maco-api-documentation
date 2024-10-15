@@ -1,0 +1,125 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - bilanzkreis: 11Y0-0000-0076-N
+      boTyp: BILANZIERUNG
+      jahresverbrauchsprognose:
+        einheit: KWH
+        wert: 2000
+      lastprofile:
+      - bezeichnung: H0
+        einspeisung: false
+        herausgeber: NB
+        profilart: ART_STANDARDLASTPROFIL
+        verfahren: SYNTHETISCH
+      versionStruktur: '1'
+    ENERGIELIEFERVERTRAG:
+    - boTyp: VERTRAG
+      enFG:
+      - grund:
+        - ENFG_STROMSPEICHER_UND_VERLUSTENERGIE
+        - ENFG_ELEKTRISCH_ANGETRIEBENE_WAERMEPUMPEN
+        - ENFG_UMLAGEERHEBUNG_BEI_ANLAGEN_ZUR_VERSTROMUNG_VON_KUPPELGASEN
+        grundlageVerringerungUmlagen: ERFUELLT_VORAUSSETZUNG_NACH_ENFG
+      korrespondenzpartner:
+        boTyp: GESCHAEFTSPARTNER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: ENERGIELIEFERVERTRAG
+      vertragspartner2:
+      - boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - KUNDE
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      lokationsadresse:
+        landescode: DE
+        ort: Ort
+        postleitzahl: '12345'
+        strasse: Str
+        zusatzInformation:
+          zusatz1: Str
+          zusatz3: '1'
+      marktlokationsId: '50074561192'
+      sparte: STROM
+      versionStruktur: '1'
+      zaehlwerke:
+      - konzessionsabgabe:
+          kategorie: '1'
+          kosten: 1
+          satz: SA
+    MESSLOKATION:
+    - ablesekartenempfaenger:
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - ABLESEKARTENEMPFAENGER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      boTyp: MESSLOKATION
+      messlokationsId: DE0032106765712000000000000000037
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      gemeinderabatt: 0
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-12-31T23:00:00Z'
+      vertragsende: '2025-01-31T23:00:00Z'
+      vertragskonditionen:
+        haushaltskunde: true
+        netznutzungsvertrag: LIEFERANTEN_NB
+        netznutzungszahler: LIEFERANT
+    ZAEHLER:
+    - boTyp: ZAEHLER
+      sparte: STROM
+      versionStruktur: '1'
+      zaehlernummer: EL001IK01013852469
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreis:
+    - bezeichnung: 11Y0-0000-0076-N
+    datenaustauschreferenz: '319364'
+    dokumentennummer: 296264BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    freitext:
+      freitext1: ABC
+    identifikationslogik: Z13
+    kategorie: E01
+    nachrichtendatum: '2024-04-01T12:37:00Z'
+    nachrichtenreferenznummer: '296264'
+    pruefidentifikator: '55001'
+    sparte: STROM
+    transaktionsgrund: E03
+    transaktionsgrundergaenzung: E03
+    vorgangsnummer: '2102478325'
+  zusatzdaten: {}

@@ -1,0 +1,37 @@
+value:
+  stammdaten:
+    NETZLOKATION:
+    - abrechnungsdaten:
+      - zahlerBlindarbeitLf: true
+      boTyp: NETZLOKATION
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '134386'
+    dokumentennummer: 771911BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T09:03:00Z'
+    nachrichtenreferenznummer: '771911'
+    pruefidentifikator: '55230'
+    sparte: STROM
+    transaktionsgrund: ZS7
+    vorgangsnummer: '238167979'
+  zusatzdaten: {}

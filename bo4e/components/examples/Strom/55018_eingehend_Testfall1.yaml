@@ -1,0 +1,26 @@
+value:
+  stammdaten: {}
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '4041409000006'
+      rollencodetyp: GLN
+      versionStruktur: '1'
+    anfragereferenznummer: PCL12123100211224799116940000024140
+    antwortstatus: A03
+    antwortstatusCodeliste: E_0400
+    datenaustauschreferenz: DECBBDCDDDDJEF
+    dokumentennummer: '36062310021222284041409000006646447'
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9911694000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: E35
+    nachrichtendatum: '2024-04-01T10:22:00Z'
+    nachrichtenreferenznummer: DECBBDCDDDDJEF
+    pruefidentifikator: '55018'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: '36325323100212222840414090000067566'
+  zusatzdaten: {}
