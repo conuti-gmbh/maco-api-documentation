@@ -1,6 +1,6 @@
 
 # build bo4e-openapi.json
-swagger-cli bundle bo4e-openapi.yaml --outfile _build/bo4e-openapi.json --dereference --type json &&
+swagger-cli bundle bo4e/bo4e-openapi.yaml --outfile _build/bo4e-openapi.json --dereference --type json &&
 
 # minify bo4e-openapi.json
 jq -c . _build/bo4e-openapi.json > _build/bo4e-openapi.min.json &&
@@ -9,7 +9,7 @@ jq -c . _build/bo4e-openapi.json > _build/bo4e-openapi.min.json &&
 rm _build/bo4e-openapi.json
 
 # build event-openapi.json
-swagger-cli bundle events-openapi.yaml --outfile _build/events-openapi.json --dereference --type json &&
+swagger-cli bundle events/events-openapi.yaml --outfile _build/events-openapi.json --dereference --type json &&
 
 # minify event-openapi.json
 jq -c . _build/events-openapi.json > _build/events-openapi.min.json &&

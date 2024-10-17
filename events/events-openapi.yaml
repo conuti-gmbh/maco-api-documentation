@@ -36,4 +36,4 @@ tags:
       Trigger Events, die alle notwendigen Informationen enthalten, ohne Daten nachlesen zu müssen. | Trigger events that contain all necessary information.
       *Die erweiterten Events dokumentieren welche Parameter ein Event eines bestimmten Type enthalten kann und mindestens muss* | *The extended events document which parameters an event of a certain type can and at least must contain.*
 paths:
-  $ref: ./events/paths/_index.yml
+  $ref: paths/_index.yml
