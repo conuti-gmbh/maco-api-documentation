@@ -4,7 +4,6 @@ get:
     (Parameter3) | Reading a tranche using location ID (Parameter1) at the time (Parameter2)
   operationId: LESEN_ZAEHLER_BASIS
   parameters:
-    - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter1.yml
     - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter3.yml

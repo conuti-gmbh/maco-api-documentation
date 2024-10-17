@@ -5,7 +5,6 @@ get:
     \  at time (Parameter2)"
   operationId: LESEN_NETZNUTZUNGSVERTRAG_BASIS
   parameters:
-    - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter1.yml
     - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter3.yml

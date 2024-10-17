@@ -5,7 +5,6 @@ get:
     at the time (Parameter2)
   operationId: LESEN_MESSSTELLENBETRIEBSVERTRAG_BASIS
   parameters:
-    - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter1.yml
     - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter3.yml

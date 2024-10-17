@@ -5,7 +5,6 @@ get:
     (Parameter1) at the time (Parameter2)
   operationId: LESEN_STEUERBARE_RESSOURCE_BASIS
   parameters:
-    - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter1.yml
     - $ref: ../../components/parameters/parameter2.yml
     - $ref: ../../components/parameters/parameter3.yml
