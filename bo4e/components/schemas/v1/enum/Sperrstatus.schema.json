@@ -1,8 +1,0 @@
-{
-    "title": "Sperrstatus",
-    "type": "string",
-    "enum": [
-        "ENTSPERRT",
-        "GESPERRT"
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Prognosegrundlage",
-    "type": "string",
-    "enum": [
-        "WERTE",
-        "PROFILE"
-    ]
-}

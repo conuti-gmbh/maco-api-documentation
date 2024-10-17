@@ -1,8 +1,0 @@
-{
-    "title": "Netznutzungsabrechnungsgrundlage",
-    "type": "string",
-    "enum": [
-        "LIEFERSCHEIN",
-        "ABWEICHENDE_GRUNDLAGE"
-    ]
-}

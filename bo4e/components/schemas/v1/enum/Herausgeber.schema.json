@@ -1,9 +1,0 @@
-{
-    "title": "Herausgeber",
-    "type": "string",
-    "enum": [
-        "NB",
-        "BDEW",
-        "TUM"
-    ]
-}

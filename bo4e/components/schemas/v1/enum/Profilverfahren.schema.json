@@ -1,8 +1,0 @@
-{
-    "title": "Profilverfahren",
-    "type": "string",
-    "enum": [
-        "SYNTHETISCH",
-        "ANALYTISCH"
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Aggregationsverantwortung",
-    "type": "string",
-    "enum": [
-        "UENB",
-        "VNB"
-    ]
-}

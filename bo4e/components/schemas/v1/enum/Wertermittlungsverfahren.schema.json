@@ -1,8 +1,0 @@
-{
-    "title": "Wertermittlungsverfahren",
-    "type": "string",
-    "enum": [
-        "PROGNOSE",
-        "MESSUNG"
-    ]
-}

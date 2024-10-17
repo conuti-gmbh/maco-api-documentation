@@ -1,8 +1,0 @@
-{
-    "title": "Inbetriebsetzung",
-    "type": "string",
-    "enum": [
-        "INBETRIEBSETZUNG_NACH_2023",
-        "INBETRIEBSETZUN_VOR_2024"
-    ]
-}

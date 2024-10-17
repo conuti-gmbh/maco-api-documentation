@@ -1,8 +1,0 @@
-{
-    "title": "Waehrungseinheit",
-    "type": "string",
-    "enum": [
-        "EUR",
-        "CT"
-    ]
-}

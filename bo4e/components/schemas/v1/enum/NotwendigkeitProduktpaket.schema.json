@@ -1,8 +1,0 @@
-{
-    "title": "NotwendigkeitProduktpaket",
-    "type": "string",
-    "enum": [
-        "ZUORDNUNG_NUR_WENN_PRODUKTPAKET_UMSETZBAR",
-        "ZUORDNUNG_AUCH_WENN_PRODUKTPAKET_NICHT_UMSETZBAR"
-    ]
-}

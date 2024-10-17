@@ -1,8 +1,0 @@
-{
-    "title": "Schwachlastfaehig",
-    "type": "string",
-    "enum": [
-        "SCHWACHLASTFAEHIG",
-        "NICHT_SCHWACHLASTFAEHIG"
-    ]
-}

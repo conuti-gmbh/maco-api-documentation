@@ -1,9 +1,0 @@
-{
-    "title": "Registeranzahl",
-    "type": "string",
-    "enum": [
-        "EINTARIF",
-        "MEHRTARIF",
-        "ZWEITARIF"
-    ]
-}

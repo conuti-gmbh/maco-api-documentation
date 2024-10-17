@@ -1,8 +1,0 @@
-{
-    "title": "Preisstatus",
-    "type": "string",
-    "enum": [
-        "VORLAEUFIG",
-        "ENDGUELTIG"
-    ]
-}

@@ -1,9 +1,0 @@
-{
-    "title": "Abonnement",
-    "type": "string",
-    "enum": [
-        "START_ABO",
-        "ENDE_ABO",
-        "OHNE_ABO"
-    ]
-}

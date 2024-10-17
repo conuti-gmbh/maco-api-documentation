@@ -1,8 +1,0 @@
-{
-    "title": "Gasqualitaet",
-    "type": "string",
-    "enum": [
-        "H_GAS",
-        "L_GAS"
-    ]
-}

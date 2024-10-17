@@ -1,8 +1,0 @@
-{
-    "title": "BeauftragungMsb",
-    "type": "string",
-    "enum": [
-        "VERTRAG_AN_MSB",
-        "VERTRAGSBEENDIGUNG_MSB"
-    ]
-}

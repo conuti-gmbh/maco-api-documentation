@@ -1,9 +1,0 @@
-{
-    "title": "MSBEigenschaft",
-    "type": "string",
-    "enum": [
-        "GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER",
-        "WETTBEWERBLICHER_MESSSTELLENBETREIBER",
-        "AUFFANGMESSSTELLENBETREIBER"
-    ]
-}

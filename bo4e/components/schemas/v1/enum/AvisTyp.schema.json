@@ -1,8 +1,0 @@
-{
-    "title": "AvisTyp",
-    "type": "string",
-    "enum": [
-        "ABGELEHNTE_FORDERUNG",
-        "ZAHLUNGSAVIS"
-    ]
-}

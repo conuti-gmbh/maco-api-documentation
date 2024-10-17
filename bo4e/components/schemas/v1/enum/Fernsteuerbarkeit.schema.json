@@ -1,9 +1,0 @@
-{
-    "title": "Fernsteuerbarkeit",
-    "type": "string",
-    "enum": [
-        "TECHNISCH_NICHT_FERNSTEUERBAR",
-        "TECHNISCH_FERNSTEUERBAR",
-        "DURCH_LF_FERNSTEUERBAR"
-    ]
-}

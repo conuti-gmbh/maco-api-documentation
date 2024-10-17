@@ -1,8 +1,0 @@
-{
-    "title": "Energieerfassung",
-    "type": "string",
-    "enum": [
-        "SEPARAT_ERFASSEN",
-        "NICHT_SEPARAT_ERFASSEN"
-    ]
-}

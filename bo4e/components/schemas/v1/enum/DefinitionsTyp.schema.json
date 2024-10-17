@@ -1,9 +1,0 @@
-{
-    "title": "DefinitionsTyp",
-    "type": "string",
-    "enum": [
-        "ZAEHLZEIT",
-        "SCHALTZEIT",
-        "LEISTUNGSKURVEN"
-    ]
-}

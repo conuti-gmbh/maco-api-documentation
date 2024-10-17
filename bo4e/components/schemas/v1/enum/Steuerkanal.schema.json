@@ -1,8 +1,0 @@
-{
-    "title": "Steuerkanal",
-    "type": "string",
-    "enum": [
-        "AN_AUS",
-        "GESTUFT"
-    ]
-}

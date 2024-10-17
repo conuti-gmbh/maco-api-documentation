@@ -1,9 +1,0 @@
-{
-    "title": "Rechnungsstatus",
-    "type": "string",
-    "enum": [
-        "DUPLIKAT",
-        "ORIGINAL",
-        "STORNIERT"
-    ]
-}

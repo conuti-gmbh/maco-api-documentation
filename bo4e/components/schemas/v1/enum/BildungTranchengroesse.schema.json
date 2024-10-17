@@ -1,8 +1,0 @@
-{
-    "title": "BildungTranchengroesse",
-    "type": "string",
-    "enum": [
-        "PROZENTUAL",
-        "AUFTEILUNGSFAKTOR"
-    ]
-}

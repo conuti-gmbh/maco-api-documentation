@@ -1,9 +1,0 @@
-{
-    "title": "Profiltyp",
-    "type": "string",
-    "enum": [
-        "SLP_SEP",
-        "TLP_TEP",
-        "TEP"
-    ]
-}

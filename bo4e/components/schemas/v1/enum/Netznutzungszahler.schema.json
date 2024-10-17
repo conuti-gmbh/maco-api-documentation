@@ -1,8 +1,0 @@
-{
-    "title": "Netznutzungszahler",
-    "type": "string",
-    "enum": [
-        "KUNDE",
-        "LIEFERANT"
-    ]
-}

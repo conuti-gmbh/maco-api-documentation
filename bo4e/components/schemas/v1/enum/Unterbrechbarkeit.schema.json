@@ -1,8 +1,0 @@
-{
-    "title": "Unterbrechbarkeit",
-    "type": "string",
-    "enum": [
-        "UV",
-        "NUV"
-    ]
-}

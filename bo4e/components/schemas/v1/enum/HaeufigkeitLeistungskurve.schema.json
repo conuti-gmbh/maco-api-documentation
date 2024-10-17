@@ -1,8 +1,0 @@
-{
-    "title": "HaeufigkeitLeistungskurve",
-    "type": "string",
-    "enum": [
-        "EINMALIG",
-        "JAEHRLICH"
-    ]
-}
