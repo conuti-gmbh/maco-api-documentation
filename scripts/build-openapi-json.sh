@@ -1,18 +1,27 @@
+#!/bin/bash
 
-# build bo4e-openapi.json
-swagger-cli bundle bo4e/bo4e-openapi.yaml --outfile _build/bo4e-openapi.json --dereference --type json &&
+# Define input and output files
+BO4E_OPENAPI_YAML="bo4e/bo4e-openapi.yaml"
+EVENTS_OPENAPI_YAML="events/events-openapi.yaml"
+OUTPUT_DIR="_build"
 
-# minify bo4e-openapi.json
-jq -c . _build/bo4e-openapi.json > _build/bo4e-openapi.min.json &&
+# Define a function to build and minify OpenAPI JSON
+build_and_minify_openapi() {
+  local input_yaml=$1
+  local output_filename=$2
 
-# remove bo4e-openapi.json
-rm _build/bo4e-openapi.json
+  # Build OpenAPI JSON
+  swagger-cli bundle "$input_yaml" --outfile "${OUTPUT_DIR}/${output_filename}.json" --dereference --type json &&
 
-# build event-openapi.json
-swagger-cli bundle events/events-openapi.yaml --outfile _build/events-openapi.json --dereference --type json &&
+  # Minify OpenAPI JSON
+  jq -c . "${OUTPUT_DIR}/${output_filename}.json" > "${OUTPUT_DIR}/${output_filename}.min.json" &&
 
-# minify event-openapi.json
-jq -c . _build/events-openapi.json > _build/events-openapi.min.json &&
+  # Remove original OpenAPI JSON
+  rm "${OUTPUT_DIR}/${output_filename}.json"
+}
 
-# remove event-openapi.json
-rm _build/events-openapi.json
+# Build and minify bo4e-openapi.json
+build_and_minify_openapi "$BO4E_OPENAPI_YAML" "bo4e-openapi"
+
+# Build and minify events-openapi.json
+build_and_minify_openapi "$EVENTS_OPENAPI_YAML" "events-openapi"
