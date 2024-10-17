@@ -22,19 +22,19 @@
             "format": "date-time"
         },
         "auftragsstatus": {
-            "$ref": "../enum/Auftragsstatus.schema.json"
+            "$ref": "../enum/Auftragsstatus"
         },
         "statusanlass": {
-            "$ref": "../enum/Statusanlass.schema.json"
+            "$ref": "../enum/Statusanlass"
         },
         "antwortstatus": {
             "type": "string"
         },
         "fehlerbeschreibung": {
-            "$ref": "../com/Fehlerbeschreibung.schema.json"
+            "$ref": "../com/Fehlerbeschreibung"
         },
         "begruendung": {
-            "$ref": "../com/Begruendung.schema.json"
+            "$ref": "../com/Begruendung"
         },
         "lokationsId": {
             "type": "string"
@@ -43,7 +43,7 @@
             "type": "string"
         },
         "allgemeineInformationen": {
-            "$ref": "../com/AllgemeineInformationen.schema.json"
+            "$ref": "../com/AllgemeineInformationen"
         },
         "statusVeraenderungsZeitpunkt": {
             "type": "string",
@@ -52,7 +52,7 @@
         "auftragsStatusListe": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Auftragsstatus.schema.json"
+                "$ref": "../enum/Auftragsstatus"
             }
         }
     }

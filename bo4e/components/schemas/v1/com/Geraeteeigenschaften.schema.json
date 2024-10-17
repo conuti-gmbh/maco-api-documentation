@@ -3,10 +3,10 @@
     "type": "object",
     "properties": {
         "geraetetyp": {
-            "$ref": "../enum/Geraetetyp.schema.json"
+            "$ref": "../enum/Geraetetyp"
         },
         "geraetemerkmal": {
-            "$ref": "../enum/Geraetemerkmal.schema.json"
+            "$ref": "../enum/Geraetemerkmal"
         },
         "faktor": {
             "type": "number",

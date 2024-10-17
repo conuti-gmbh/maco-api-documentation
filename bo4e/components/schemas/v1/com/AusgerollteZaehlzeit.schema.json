@@ -9,7 +9,7 @@
             "type": "string"
         },
         "haeufigkeit": {
-            "$ref": "../enum/HaeufigkeitZaehlzeit.schema.json"
+            "$ref": "../enum/HaeufigkeitZaehlzeit"
         }
     }
 }

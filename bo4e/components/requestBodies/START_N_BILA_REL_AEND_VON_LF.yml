@@ -56,7 +56,7 @@ properties:
     default: '01452'
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   strasse:
     default: stadtstrasse
     type: string

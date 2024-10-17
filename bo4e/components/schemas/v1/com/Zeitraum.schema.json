@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "zeiteinheit": {
-            "$ref": "../enum/Zeiteinheit.schema.json"
+            "$ref": "../enum/Zeiteinheit"
         },
         "dauer": {
             "type": "integer"
@@ -17,7 +17,7 @@
             "format": "date-time"
         },
         "einheit": {
-            "$ref": "../enum/Zeiteinheit.schema.json"
+            "$ref": "../enum/Zeiteinheit"
         },
         "ableseZeitraum": {
             "type": "string"

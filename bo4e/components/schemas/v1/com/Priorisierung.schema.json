@@ -3,10 +3,10 @@
     "type": "object",
     "properties": {
         "notwendigkeitProduktpaket": {
-            "$ref": "../enum/NotwendigkeitProduktpaket.schema.json"
+            "$ref": "../enum/NotwendigkeitProduktpaket"
         },
         "priorisierungErforderlichesProduktpaket": {
-            "$ref": "../enum/PriorisierungErforderlichesProduktpaket.schema.json"
+            "$ref": "../enum/PriorisierungErforderlichesProduktpaket"
         }
     }
 }

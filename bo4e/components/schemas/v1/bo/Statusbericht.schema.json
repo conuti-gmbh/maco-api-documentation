@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "STATUSBERICHT"
         },
         "versionStruktur": {
@@ -11,7 +11,7 @@
             "default": "1"
         },
         "status": {
-            "$ref": "../enum/BerichtStatus.schema.json"
+            "$ref": "../enum/BerichtStatus"
         },
         "pruefgegenstand": {
             "type": "string"
@@ -21,7 +21,7 @@
             "format": "date-time"
         },
         "fehler": {
-            "$ref": "../com/Fehler.schema.json"
+            "$ref": "../com/Fehler"
         }
     },
     "required": [

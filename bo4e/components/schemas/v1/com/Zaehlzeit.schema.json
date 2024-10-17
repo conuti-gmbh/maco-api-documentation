@@ -6,19 +6,19 @@
             "type": "string"
         },
         "haeufigkeit": {
-            "$ref": "../enum/HaeufigkeitZaehlzeit.schema.json"
+            "$ref": "../enum/HaeufigkeitZaehlzeit"
         },
         "uebermittelbarkeit": {
-            "$ref": "../enum/UebermittelbarkeitZaehlzeit.schema.json"
+            "$ref": "../enum/UebermittelbarkeitZaehlzeit"
         },
         "ermittlungLeistungsmaximum": {
-            "$ref": "../enum/ErmittlungLeistungsmaximum.schema.json"
+            "$ref": "../enum/ErmittlungLeistungsmaximum"
         },
         "istBestellbar": {
             "type": "boolean"
         },
         "typ": {
-            "$ref": "../enum/ZaehlzeitdefinitionTyp.schema.json"
+            "$ref": "../enum/ZaehlzeitdefinitionTyp"
         },
         "beschreibungTyp": {
             "type": "string"

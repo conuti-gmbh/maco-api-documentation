@@ -4,13 +4,13 @@
         "produkt": {
             "type": "array",
             "items": {
-                "$ref": "../com/Produkt.schema.json"
+                "$ref": "../com/Produkt"
             }
         },
         "priorisierung": {
             "type": "array",
             "items": {
-                "$ref": "../com/Priorisierung.schema.json"
+                "$ref": "../com/Priorisierung"
             }
         }
     }

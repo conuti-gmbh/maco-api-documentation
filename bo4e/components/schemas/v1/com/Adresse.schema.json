@@ -24,13 +24,13 @@
             "type": "string"
         },
         "landescode": {
-            "$ref": "../enum/Landescode.schema.json"
+            "$ref": "../enum/Landescode"
         },
         "ortsteil": {
             "type": "string"
         },
         "zusatzInformation": {
-            "$ref": "../com/AdresszusatzInformation.schema.json"
+            "$ref": "../com/AdresszusatzInformation"
         }
     }
 }

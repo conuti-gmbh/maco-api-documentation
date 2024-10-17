@@ -3,10 +3,10 @@
     "type": "object",
     "properties": {
         "art": {
-            "$ref": "../enum/StatusArt.schema.json"
+            "$ref": "../enum/StatusArt"
         },
         "status": {
-            "$ref": "../enum/Status.schema.json"
+            "$ref": "../enum/Status"
         }
     }
 }

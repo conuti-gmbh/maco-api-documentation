@@ -98,7 +98,7 @@ properties:
     default: '9900321000005'
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   vertragsartMsb:
     default: SOME_STRING
     type: string

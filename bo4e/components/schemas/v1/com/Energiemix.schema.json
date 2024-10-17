@@ -5,7 +5,7 @@
         "anteil": {
             "type": "array",
             "items": {
-                "$ref": "../com/Energieherkunft.schema.json"
+                "$ref": "../com/Energieherkunft"
             },
             "description": "Anteile der jeweiligen Erzeugungsart"
         },
@@ -28,7 +28,7 @@
             "description": "H\u00f6he des erzeugten CO2-Ausstosses in g/kWh"
         },
         "energieart": {
-            "$ref": "../enum/Sparte.schema.json",
+            "$ref": "../enum/Sparte",
             "description": "Strom oder Gas etc."
         },
         "energiemixnummer": {
@@ -46,14 +46,14 @@
         "oekolabel": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Oekolabel.schema.json"
+                "$ref": "../enum/Oekolabel"
             },
             "description": "\u00d6kolabel f\u00fcr den Energiemix"
         },
         "oekozertifikate": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Oekozertifikat.schema.json"
+                "$ref": "../enum/Oekozertifikat"
             },
             "description": "Zertifikate f\u00fcr den Energiemix"
         },

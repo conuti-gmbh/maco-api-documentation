@@ -9,7 +9,7 @@
             "type": "string"
         },
         "richtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         },
         "obisKennzahl": {
             "type": "string"
@@ -19,22 +19,22 @@
             "format": "float"
         },
         "einheit": {
-            "$ref": "../enum/Mengeneinheit.schema.json"
+            "$ref": "../enum/Mengeneinheit"
         },
         "schwachlastfaehig": {
-            "$ref": "../enum/Schwachlastfaehig.schema.json"
+            "$ref": "../enum/Schwachlastfaehig"
         },
         "verbrauchsart": {
-            "$ref": "../enum/Verbrauchsart.schema.json"
+            "$ref": "../enum/Verbrauchsart"
         },
         "unterbrechbarkeit": {
-            "$ref": "../enum/Unterbrechbarkeit.schema.json"
+            "$ref": "../enum/Unterbrechbarkeit"
         },
         "waermenutzung": {
-            "$ref": "../enum/Waermenutzung.schema.json"
+            "$ref": "../enum/Waermenutzung"
         },
         "konzessionsabgabe": {
-            "$ref": "../com/Konzessionsabgabe.schema.json"
+            "$ref": "../com/Konzessionsabgabe"
         },
         "steuerbefreit": {
             "type": "boolean"
@@ -52,7 +52,7 @@
             "type": "integer"
         },
         "zaehlzeiten": {
-            "$ref": "../com/Zaehlzeitregister.schema.json"
+            "$ref": "../com/Zaehlzeitregister"
         },
         "konfiguration": {
             "type": "string"
@@ -61,16 +61,16 @@
             "type": "string"
         },
         "wertegranularitaet": {
-            "$ref": "../enum/Wertegranularitaet.schema.json"
+            "$ref": "../enum/Wertegranularitaet"
         },
         "notwendigkeitZweiteMessung": {
-            "$ref": "../enum/NotwendigkeitZweiteMessung.schema.json"
+            "$ref": "../enum/NotwendigkeitZweiteMessung"
         },
         "werteuebermittlungVerwendungszweck": {
-            "$ref": "../enum/WerteuebermittlungVerwendungszweck.schema.json"
+            "$ref": "../enum/WerteuebermittlungVerwendungszweck"
         },
         "artEMobilitaet": {
-            "$ref": "../enum/ArtEmobilitaet.schema.json"
+            "$ref": "../enum/ArtEmobilitaet"
         },
         "konfigurationsprodukt": {
             "type": "string"
@@ -84,7 +84,7 @@
         "verwendungszwecke": {
             "type": "array",
             "items": {
-                "$ref": "../com/Verwendungszweck.schema.json"
+                "$ref": "../com/Verwendungszweck"
             }
         }
     }

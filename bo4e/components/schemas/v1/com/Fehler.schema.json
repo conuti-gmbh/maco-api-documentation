@@ -3,12 +3,12 @@
     "type": "object",
     "properties": {
         "typ": {
-            "$ref": "../enum/FehlerTyp.schema.json"
+            "$ref": "../enum/FehlerTyp"
         },
         "fehlerDetails": {
             "type": "array",
             "items": {
-                "$ref": "../com/FehlerDetail.schema.json"
+                "$ref": "../com/FehlerDetail"
             }
         }
     }

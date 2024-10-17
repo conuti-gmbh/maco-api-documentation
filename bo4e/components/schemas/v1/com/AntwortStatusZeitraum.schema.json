@@ -12,7 +12,7 @@
             "type": "integer"
         },
         "freitext": {
-            "$ref": "../com/Freitext.schema.json"
+            "$ref": "../com/Freitext"
         }
     }
 }

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "BILANZKREIS"
         },
         "versionStruktur": {

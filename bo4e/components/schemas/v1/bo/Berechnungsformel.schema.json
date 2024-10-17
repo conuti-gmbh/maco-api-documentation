@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "BERECHNUNGSFORMEL"
         },
         "versionStruktur": {
@@ -15,31 +15,31 @@
             "format": "date-time"
         },
         "notwendigkeit": {
-            "$ref": "../enum/BerechnungsformelNotwendigkeit.schema.json"
+            "$ref": "../enum/BerechnungsformelNotwendigkeit"
         },
         "lieferrichtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         },
         "rechenschrittId": {
             "type": "integer"
         },
         "rechenschritt": {
-            "$ref": "../com/Rechenschritt.schema.json"
+            "$ref": "../com/Rechenschritt"
         },
         "rechenschritte": {
             "type": "array",
             "items": {
-                "$ref": "../com/Rechenschritt.schema.json"
+                "$ref": "../com/Rechenschritt"
             }
         },
         "verwendungszweck": {
             "type": "array",
             "items": {
-                "$ref": "../com/Verwendungszweck.schema.json"
+                "$ref": "../com/Verwendungszweck"
             }
         },
         "gueltigkeitszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         }
     },
     "required": [

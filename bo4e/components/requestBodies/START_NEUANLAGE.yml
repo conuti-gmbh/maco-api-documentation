@@ -2,7 +2,7 @@ description: "Schema für start messwertuebermittlung | Scheme for start of meas
   \ value transmission"
 properties:
   energierichtung:
-    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energierichtung'
   gewerbekennzeichnung:
     default: SOME_STRING
     type: string
@@ -43,7 +43,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   transaktionsgrundergaenzung:
     default: SOME_STRING
     type: string

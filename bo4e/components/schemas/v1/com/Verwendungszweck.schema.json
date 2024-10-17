@@ -3,12 +3,12 @@
     "type": "object",
     "properties": {
         "marktrolle": {
-            "$ref": "../enum/Marktrolle.schema.json"
+            "$ref": "../enum/Marktrolle"
         },
         "zweck": {
             "type": "array",
             "items": {
-                "$ref": "../enum/VerwendungszweckValue.schema.json"
+                "$ref": "../enum/VerwendungszweckValue"
             }
         }
     }

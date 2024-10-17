@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "GESCHAEFTSPARTNER"
         },
         "versionStruktur": {
@@ -47,7 +47,7 @@
             "type": "string"
         },
         "partneradresse": {
-            "$ref": "../com/Adresse.schema.json"
+            "$ref": "../com/Adresse"
         },
         "externeKundenummerLieferant": {
             "type": "string"
@@ -55,19 +55,19 @@
         "externeReferenzen": {
             "type": "array",
             "items": {
-                "$ref": "../com/ExterneReferenz.schema.json"
+                "$ref": "../com/ExterneReferenz"
             }
         },
         "geschaeftspartnerrolle": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Geschaeftspartnerrolle.schema.json"
+                "$ref": "../enum/Geschaeftspartnerrolle"
             }
         },
         "kontaktweg": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Kontaktart.schema.json"
+                "$ref": "../enum/Kontaktart"
             }
         }
     },

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "WERTE_NACH_TYP2"
         },
         "versionStruktur": {
@@ -17,21 +17,21 @@
             "type": "string"
         },
         "zieladresse": {
-            "$ref": "../com/Zieladresse.schema.json"
+            "$ref": "../com/Zieladresse"
         },
         "aussteller": {
-            "$ref": "../com/Aussteller.schema.json"
+            "$ref": "../com/Aussteller"
         },
         "zertifikatsNutzer": {
-            "$ref": "../com/ZertifikatsNutzer.schema.json"
+            "$ref": "../com/ZertifikatsNutzer"
         },
         "aenderungsmoeglichkeitKonfiguration": {
-            "$ref": "../enum/AenderungsmoeglichkeitKonfiguration.schema.json"
+            "$ref": "../enum/AenderungsmoeglichkeitKonfiguration"
         },
         "schwellwerte": {
             "type": "array",
             "items": {
-                "$ref": "../com/Schwellwert.schema.json"
+                "$ref": "../com/Schwellwert"
             }
         }
     },

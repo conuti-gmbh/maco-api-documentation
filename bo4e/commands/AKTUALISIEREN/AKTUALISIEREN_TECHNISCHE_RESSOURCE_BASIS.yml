@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../../components/schemas/v1/bo/TechnischeRessource.schema.json'
+          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/TechnischeRessource'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/TechnischeRessource.schema.json'
+            https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/TechnischeRessource'
       description: Erfolgreiches Aktualisieren der technischen Ressource | Successful
         updating of the technical resource
     '400':

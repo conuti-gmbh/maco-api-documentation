@@ -8,7 +8,7 @@
         "abweichung": {
             "type": "array",
             "items": {
-                "$ref": "../com/Abweichung.schema.json"
+                "$ref": "../com/Abweichung"
             }
         }
     }

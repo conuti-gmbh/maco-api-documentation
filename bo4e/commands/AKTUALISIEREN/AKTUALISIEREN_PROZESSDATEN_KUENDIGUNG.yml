@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../components/schemas/v1/bo/Marktteilnehmer.schema.json"
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktteilnehmer"
     required: true
   responses:
     "200":
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Kommunikationsdaten.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Kommunikationsdaten"
       description:
         Erfolgreiches Aktualisieren der Kommunikationsdaten | Successful
         updating of communication data

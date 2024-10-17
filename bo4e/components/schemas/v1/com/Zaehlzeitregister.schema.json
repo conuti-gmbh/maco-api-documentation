@@ -9,7 +9,7 @@
             "type": "string"
         },
         "schwachlastfaehig": {
-            "$ref": "../enum/Schwachlastfaehig.schema.json"
+            "$ref": "../enum/Schwachlastfaehig"
         }
     }
 }

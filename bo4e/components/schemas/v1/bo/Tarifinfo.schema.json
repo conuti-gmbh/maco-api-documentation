@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "TARIFINFO"
         },
         "versionStruktur": {
@@ -11,7 +11,7 @@
             "default": "1"
         },
         "anbieter": {
-            "$ref": "../bo/Marktteilnehmer.schema.json",
+            "$ref": "../bo/Marktteilnehmer",
             "description": "Der Marktteilnehmer (Lieferant), der diesen Tarif anbietet"
         },
         "anbietername": {
@@ -32,37 +32,37 @@
             "description": "Name des Tarifs"
         },
         "energiemix": {
-            "$ref": "../com/Energiemix.schema.json",
+            "$ref": "../com/Energiemix",
             "description": "Der Energiemix, der f\u00fcr diesen Tarif gilt"
         },
         "kundentypen": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Kundentyp.schema.json"
+                "$ref": "../enum/Kundentyp"
             },
             "description": "Kundentypen f\u00fcr den der Tarif gilt, z.B. Privatkunden"
         },
         "registeranzahl": {
-            "$ref": "../enum/Registeranzahl.schema.json",
+            "$ref": "../enum/Registeranzahl",
             "description": "Die Art des Tarifes, z.B. Eintarif oder Mehrtarif"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json",
+            "$ref": "../enum/Sparte",
             "description": "Strom oder Gas, etc."
         },
         "tarifmerkmale": {
             "type": "array",
             "items": {
-                "$ref": "../enum/Tarifmerkmal.schema.json"
+                "$ref": "../enum/Tarifmerkmal"
             },
             "description": "Weitere Merkmale des Tarifs, z.B. Festpreis oder Vorkasse"
         },
         "tariftyp": {
-            "$ref": "../enum/Tariftyp.schema.json",
+            "$ref": "../enum/Tariftyp",
             "description": "Hinweis auf den Tariftyp, z.B. Grundversorgung oder Sondertarif"
         },
         "vertragskonditionen": {
-            "$ref": "../com/Vertragskonditionen.schema.json",
+            "$ref": "../com/Vertragskonditionen",
             "description": "Mindestlaufzeiten und K\u00fcndigungsfristen zusammengefasst"
         },
         "website": {
@@ -70,7 +70,7 @@
             "description": "Internetseite auf dem der Tarif zu finden ist"
         },
         "zeitliche_gueltigkeit": {
-            "$ref": "../com/Zeitraum.schema.json",
+            "$ref": "../com/Zeitraum",
             "description": "Angabe, in welchem Zeitraum der Tarif g\u00fcltig ist"
         }
     },

@@ -24,7 +24,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/SteuerbareRessource.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/SteuerbareRessource"
       description:
         Erfolgreiches Lesen der steuerbaren Ressource | Successful reading
         of the controllable resource

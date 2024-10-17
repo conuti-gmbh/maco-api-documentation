@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "zieladresse": {
-            "$ref": "../com/Zieladresse.schema.json"
+            "$ref": "../com/Zieladresse"
         },
         "zertifikatsAussteller": {
-            "$ref": "../com/ZertifikatsAussteller.schema.json"
+            "$ref": "../com/ZertifikatsAussteller"
         },
         "zertifikatsNutzer": {
-            "$ref": "../com/ZertifikatsNutzer.schema.json"
+            "$ref": "../com/ZertifikatsNutzer"
         }
     }
 }

@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Zaehler.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler"
       description: Erfolgreiches Lesen des Zaehlers | Successful reading of the meter
     "400":
       content:

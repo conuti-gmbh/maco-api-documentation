@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "STATUSMITTEILUNG"
         },
         "versionStruktur": {
@@ -11,18 +11,18 @@
             "default": "1"
         },
         "statusObjekt": {
-            "$ref": "../enum/Statusobjekt.schema.json"
+            "$ref": "../enum/Statusobjekt"
         },
         "statusanlass": {
-            "$ref": "../enum/Status.schema.json"
+            "$ref": "../enum/Status"
         },
         "auftragsstatus": {
-            "$ref": "../enum/Auftragsstatus.schema.json"
+            "$ref": "../enum/Auftragsstatus"
         },
         "positionsdaten": {
             "type": "array",
             "items": {
-                "$ref": "../com/StatusmitteilungPosition.schema.json"
+                "$ref": "../com/StatusmitteilungPosition"
             }
         }
     },

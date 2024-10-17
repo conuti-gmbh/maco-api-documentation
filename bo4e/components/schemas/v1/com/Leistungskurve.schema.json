@@ -10,13 +10,13 @@
             "format": "date-time"
         },
         "haeufigkeit": {
-            "$ref": "../enum/HaeufigkeitLeistungskurve.schema.json"
+            "$ref": "../enum/HaeufigkeitLeistungskurve"
         },
         "uebermittelbarkeit": {
-            "$ref": "../enum/UebermittelbarkeitLeistungskurve.schema.json"
+            "$ref": "../enum/UebermittelbarkeitLeistungskurve"
         },
         "schwellwert": {
-            "$ref": "../com/Schwellwert.schema.json"
+            "$ref": "../com/Schwellwert"
         },
         "konfigurationsprodukt": {
             "type": "string"

@@ -5,10 +5,10 @@
             "type": "boolean"
         },
         "inbetriebsetzungsdatum": {
-            "$ref": "../enum/Inbetriebsetzung.schema.json"
+            "$ref": "../enum/Inbetriebsetzung"
         },
         "einordnung": {
-            "$ref": "../enum/RessourceWechselmoeglichkeit.schema.json"
+            "$ref": "../enum/RessourceWechselmoeglichkeit"
         }
     }
 }

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "ANGEBOT"
         },
         "versionStruktur": {
@@ -21,34 +21,34 @@
             "format": "date-time"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json"
+            "$ref": "../enum/Sparte"
         },
         "bindefrist": {
             "type": "string",
             "format": "date-time"
         },
         "angebotgeber": {
-            "$ref": "Geschaeftspartner.schema.json"
+            "$ref": "Geschaeftspartner"
         },
         "angebotnehmer": {
-            "$ref": "Geschaeftspartner.schema.json"
+            "$ref": "Geschaeftspartner"
         },
         "unterzeichnerAngebotsnehmer": {
-            "$ref": "Ansprechpartner.schema.json"
+            "$ref": "Ansprechpartner"
         },
         "unterzeichnerAngebotsgeber": {
-            "$ref": "Ansprechpartner.schema.json"
+            "$ref": "Ansprechpartner"
         },
         "zeitspanneEinrichtungUebermittlungWerte": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "bindefristAngebot": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "varianten": {
             "type": "array",
             "items": {
-                "$ref": "../com/Angebotsvariante.schema.json"
+                "$ref": "../com/Angebotsvariante"
             }
         }
     },

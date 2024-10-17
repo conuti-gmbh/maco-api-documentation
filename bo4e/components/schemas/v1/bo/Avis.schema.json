@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "AVIS"
         },
         "versionStruktur": {
@@ -14,15 +14,15 @@
             "type": "string"
         },
         "avisTyp": {
-            "$ref": "../enum/AvisTyp.schema.json"
+            "$ref": "../enum/AvisTyp"
         },
         "zuZahlen": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "positionen": {
             "type": "array",
             "items": {
-                "$ref": "../com/Avisposition.schema.json"
+                "$ref": "../com/Avisposition"
             }
         }
     },

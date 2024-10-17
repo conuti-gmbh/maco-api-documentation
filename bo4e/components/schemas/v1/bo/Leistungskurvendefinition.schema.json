@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "LEISTUNGSKURVENDEFINITION"
         },
         "versionStruktur": {
@@ -26,12 +26,12 @@
             "type": "string"
         },
         "notwendigkeit": {
-            "$ref": "../enum/DefinitionenNotwendigkeit.schema.json"
+            "$ref": "../enum/DefinitionenNotwendigkeit"
         },
         "leistungskurven": {
             "type": "array",
             "items": {
-                "$ref": "../com/Leistungskurve.schema.json"
+                "$ref": "../com/Leistungskurve"
             }
         }
     },

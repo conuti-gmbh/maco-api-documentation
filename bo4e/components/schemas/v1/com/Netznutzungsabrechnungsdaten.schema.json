@@ -6,7 +6,7 @@
             "type": "string"
         },
         "artikelIdTyp": {
-            "$ref": "../enum/ArtikelIdTyp.schema.json"
+            "$ref": "../enum/ArtikelIdTyp"
         },
         "anzahl": {
             "type": "integer"
@@ -24,16 +24,16 @@
             "format": "float"
         },
         "singulaereBetriebsmittel": {
-            "$ref": "../com/Menge.schema.json"
+            "$ref": "../com/Menge"
         },
         "preisSingulaereBetriebsmittel": {
-            "$ref": "../com/Preis.schema.json"
+            "$ref": "../com/Preis"
         },
         "abrechnungBlindarbeit": {
             "type": "boolean"
         },
         "zahlerBlindarbeit": {
-            "$ref": "../enum/ZahlerBlindarbeit.schema.json"
+            "$ref": "../enum/ZahlerBlindarbeit"
         },
         "zahlerBlindarbeitLf": {
             "type": "boolean"
@@ -42,7 +42,7 @@
             "type": "boolean"
         },
         "zaehlzeiten": {
-            "$ref": "../com/Zaehlzeitregister.schema.json"
+            "$ref": "../com/Zaehlzeitregister"
         }
     }
 }

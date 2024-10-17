@@ -23,7 +23,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   startdatum:
     default: '2024-01-01T07:40:00Z'
     type: string

@@ -28,14 +28,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../components/schemas/v1/bo/Energiemenge.schema.json"
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energiemenge"
     required: true
   responses:
     "201":
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Energiemenge.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energiemenge"
       description:
         Erfolgreiches Schreiben des Lastgangs | Successful writing of the
         load profile

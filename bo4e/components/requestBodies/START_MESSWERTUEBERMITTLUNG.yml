@@ -14,7 +14,7 @@ properties:
     default: '2024-04-01T07:40:00Z'
     type: string
   energieverbrauch:
-    $ref: '../schemas/v1/enum/ENERGIEVERBRAUCH.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/ENERGIEVERBRAUCH'
   fertigstellungsdatum:
     default: '2024-04-01T07:40:00Z'
     type: string
@@ -28,7 +28,7 @@ properties:
     default: '74018657187'
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   startdatum:
     default: '2024-04-01T07:40:00Z'
     type: string

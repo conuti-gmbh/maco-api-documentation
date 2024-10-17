@@ -9,10 +9,10 @@
             "type": "string"
         },
         "energieerfassung": {
-            "$ref": "../enum/Energieerfassung.schema.json"
+            "$ref": "../enum/Energieerfassung"
         },
         "artikelnummer": {
-            "$ref": "../enum/BDEWArtikelnummer.schema.json"
+            "$ref": "../enum/BDEWArtikelnummer"
         },
         "positionsbetrag": {
             "type": "string"
@@ -32,16 +32,16 @@
             "type": "string"
         },
         "anfragegrund": {
-            "$ref": "../enum/Anfragegrund.schema.json"
+            "$ref": "../enum/Anfragegrund"
         },
         "allgemeineInformationen": {
-            "$ref": "../com/AllgemeineInformationen.schema.json"
+            "$ref": "../com/AllgemeineInformationen"
         },
         "infoAbweichung": {
-            "$ref": "../com/InfoAbweichung.schema.json"
+            "$ref": "../com/InfoAbweichung"
         },
         "definitionsTyp": {
-            "$ref": "../enum/DefinitionsTyp.schema.json"
+            "$ref": "../enum/DefinitionsTyp"
         },
         "lokationsId": {
             "type": "string"

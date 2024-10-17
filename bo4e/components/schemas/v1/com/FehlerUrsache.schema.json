@@ -12,13 +12,13 @@
             "type": "string"
         },
         "gruppe": {
-            "$ref": "../com/Gruppe.schema.json"
+            "$ref": "../com/Gruppe"
         },
         "segment": {
             "type": "string"
         },
         "beschreibung": {
-            "$ref": "../com/Beschreibung.schema.json"
+            "$ref": "../com/Beschreibung"
         }
     }
 }

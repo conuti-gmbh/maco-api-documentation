@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Marktlokation.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"
       description:
         Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location

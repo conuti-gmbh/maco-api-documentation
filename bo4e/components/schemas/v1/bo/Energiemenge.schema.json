@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "ENERGIEMENGE"
         },
         "versionStruktur": {
@@ -14,7 +14,7 @@
             "type": "string"
         },
         "lokationsTyp": {
-            "$ref": "../enum/Lokationstyp.schema.json"
+            "$ref": "../enum/Lokationstyp"
         },
         "fertigstellungsdatum": {
             "type": "string",
@@ -45,7 +45,7 @@
         "energieverbrauch": {
             "type": "array",
             "items": {
-                "$ref": "../com/Verbrauch.schema.json"
+                "$ref": "../com/Verbrauch"
             }
         }
     },

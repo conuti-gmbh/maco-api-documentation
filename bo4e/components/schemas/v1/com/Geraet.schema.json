@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "geraetetyp": {
-            "$ref": "../enum/Geraetetyp.schema.json"
+            "$ref": "../enum/Geraetetyp"
         },
         "bezeichnung": {
             "type": "string"
@@ -15,10 +15,10 @@
             "type": "string"
         },
         "geraeteeigenschaften": {
-            "$ref": "../com/Geraeteeigenschaften.schema.json"
+            "$ref": "../com/Geraeteeigenschaften"
         },
         "volumenerfassung": {
-            "$ref": "../enum/Volumenerfassung.schema.json"
+            "$ref": "../enum/Volumenerfassung"
         },
         "weitereGeraetenummern": {
             "type": "array",

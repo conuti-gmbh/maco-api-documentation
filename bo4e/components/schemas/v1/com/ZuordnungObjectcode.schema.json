@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "referenzLokationsTyp": {
-            "$ref": "../enum/Lokationstyp.schema.json"
+            "$ref": "../enum/Lokationstyp"
         },
         "referenzLokationsId": {
             "type": "string"
         },
         "vorgelagerteLokationTyp": {
-            "$ref": "../enum/Lokationstyp.schema.json"
+            "$ref": "../enum/Lokationstyp"
         },
         "vorgelagerteLokationId": {
             "type": "string"
@@ -17,7 +17,7 @@
         "objectcode": {
             "type": "array",
             "items": {
-                "$ref": "../com/Objectcode.schema.json"
+                "$ref": "../com/Objectcode"
             }
         },
         "referenzMarktlokationTechnischeRessource": {

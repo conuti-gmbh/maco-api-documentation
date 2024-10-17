@@ -7,13 +7,13 @@
             "format": "float"
         },
         "einheit": {
-            "$ref": "../enum/Waehrungseinheit.schema.json"
+            "$ref": "../enum/Waehrungseinheit"
         },
         "bezugswert": {
-            "$ref": "../enum/Mengeneinheit.schema.json"
+            "$ref": "../enum/Mengeneinheit"
         },
         "status": {
-            "$ref": "../enum/Preisstatus.schema.json"
+            "$ref": "../enum/Preisstatus"
         }
     }
 }

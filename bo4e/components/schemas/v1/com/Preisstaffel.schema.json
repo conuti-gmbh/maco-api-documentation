@@ -15,7 +15,7 @@
             "format": "float"
         },
         "sigmoidparameter": {
-            "$ref": "../com/Sigmoidparameter.schema.json"
+            "$ref": "../com/Sigmoidparameter"
         }
     }
 }

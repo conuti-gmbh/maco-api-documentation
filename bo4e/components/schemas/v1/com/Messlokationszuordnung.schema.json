@@ -6,7 +6,7 @@
             "type": "string"
         },
         "arithmetik": {
-            "$ref": "../enum/ArithmetischeOperation.schema.json"
+            "$ref": "../enum/ArithmetischeOperation"
         },
         "gueltigSeit": {
             "type": "string",

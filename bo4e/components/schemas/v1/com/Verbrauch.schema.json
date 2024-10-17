@@ -11,10 +11,10 @@
             "format": "date-time"
         },
         "wertermittlungsverfahren": {
-            "$ref": "../enum/Wertermittlungsverfahren.schema.json"
+            "$ref": "../enum/Wertermittlungsverfahren"
         },
         "messwertstatus": {
-            "$ref": "../enum/Messwertstatus.schema.json"
+            "$ref": "../enum/Messwertstatus"
         },
         "obiskennzahl": {
             "type": "string"
@@ -24,13 +24,13 @@
             "format": "float"
         },
         "einheit": {
-            "$ref": "../enum/Mengeneinheit.schema.json"
+            "$ref": "../enum/Mengeneinheit"
         },
         "type": {
-            "$ref": "../enum/Verbrauchsmengetyp.schema.json"
+            "$ref": "../enum/Verbrauchsmengetyp"
         },
         "tarifstufe": {
-            "$ref": "../enum/Tarifstufe.schema.json"
+            "$ref": "../enum/Tarifstufe"
         },
         "nutzungszeitpunkt": {
             "type": "string",
@@ -53,7 +53,7 @@
         "statuszusatzinformationen": {
             "type": "array",
             "items": {
-                "$ref": "../com/StatusZusatzInformation.schema.json"
+                "$ref": "../com/StatusZusatzInformation"
             }
         }
     }

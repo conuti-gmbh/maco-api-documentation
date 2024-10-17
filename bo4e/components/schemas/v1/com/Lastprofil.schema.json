@@ -6,10 +6,10 @@
             "type": "string"
         },
         "verfahren": {
-            "$ref": "../enum/Profilverfahren.schema.json"
+            "$ref": "../enum/Profilverfahren"
         },
         "profilart": {
-            "$ref": "../enum/Profilart.schema.json"
+            "$ref": "../enum/Profilart"
         },
         "profilschar": {
             "type": "string"
@@ -21,7 +21,7 @@
             "type": "string"
         },
         "tagesparameter": {
-            "$ref": "../com/Tagesparameter.schema.json"
+            "$ref": "../com/Tagesparameter"
         },
         "referenzprofilbezeichnung": {
             "type": "string"

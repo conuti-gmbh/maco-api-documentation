@@ -2,7 +2,7 @@
     "type": "object",
     "properties": {
         "richtigkeit": {
-            "$ref": "../enum/Handelsunstimmigkeitsrichtigkeit.schema.json"
+            "$ref": "../enum/Handelsunstimmigkeitsrichtigkeit"
         },
         "referenzDar": {
             "type": "string"
@@ -14,7 +14,7 @@
             "type": "string"
         },
         "grund": {
-            "$ref": "../enum/Handelsunstimmigkeitsgrund.schema.json"
+            "$ref": "../enum/Handelsunstimmigkeitsgrund"
         },
         "hinweis": {
             "type": "string"

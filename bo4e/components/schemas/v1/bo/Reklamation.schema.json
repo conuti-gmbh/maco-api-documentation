@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "REKLAMATION"
         },
         "versionStruktur": {
@@ -14,19 +14,19 @@
             "type": "string"
         },
         "lokationsTyp": {
-            "$ref": "../enum/Lokationstyp.schema.json"
+            "$ref": "../enum/Lokationstyp"
         },
         "obiskennzahl": {
             "type": "string"
         },
         "zeitraumMesswertanfrage": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "reklamationsgrund": {
-            "$ref": "../enum/Reklamationsgrund.schema.json"
+            "$ref": "../enum/Reklamationsgrund"
         },
         "reklamationsgrundBemerkung": {
-            "$ref": "../com/ReklamationsgrundBemerkung.schema.json"
+            "$ref": "../com/ReklamationsgrundBemerkung"
         },
         "konfiguration": {
             "type": "string"

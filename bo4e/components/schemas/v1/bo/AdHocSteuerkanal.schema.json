@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "AD_HOC_STEUERKANAL"
         },
         "versionStruktur": {
@@ -14,16 +14,16 @@
             "type": "string"
         },
         "zieladresse": {
-            "$ref": "../com/Zieladresse.schema.json"
+            "$ref": "../com/Zieladresse"
         },
         "aussteller": {
-            "$ref": "../com/Aussteller.schema.json"
+            "$ref": "../com/Aussteller"
         },
         "zertifikatsNutzer": {
-            "$ref": "../com/ZertifikatsNutzer.schema.json"
+            "$ref": "../com/ZertifikatsNutzer"
         },
         "IPAdresseCLSDevice": {
-            "$ref": "../com/IPAdresseCLSDevice.schema.json"
+            "$ref": "../com/IPAdresseCLSDevice"
         }
     },
     "required": [

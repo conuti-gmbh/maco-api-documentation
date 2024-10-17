@@ -16,10 +16,10 @@
             "type": "boolean"
         },
         "gesamtBrutto": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "zuZahlen": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "referenz": {
             "type": "string"
@@ -27,13 +27,13 @@
         "abweichung": {
             "type": "array",
             "items": {
-                "$ref": "../com/Abweichung.schema.json"
+                "$ref": "../com/Abweichung"
             }
         },
         "positionen": {
             "type": "array",
             "items": {
-                "$ref": "../com/Rueckmeldungsposition.schema.json"
+                "$ref": "../com/Rueckmeldungsposition"
             }
         }
     }

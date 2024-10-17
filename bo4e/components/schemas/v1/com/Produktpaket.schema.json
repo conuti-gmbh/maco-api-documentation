@@ -8,14 +8,14 @@
         "produkt": {
             "type": "array",
             "items": {
-                "$ref": "../com/Produkt.schema.json"
+                "$ref": "../com/Produkt"
             }
         },
         "umsetzungsgradvorgabe": {
-            "$ref": "../enum/Umsetzungsgradvorgabe.schema.json"
+            "$ref": "../enum/Umsetzungsgradvorgabe"
         },
         "priorisierung": {
-            "$ref": "../enum/Priorisierung.schema.json"
+            "$ref": "../enum/Priorisierung"
         }
     }
 }

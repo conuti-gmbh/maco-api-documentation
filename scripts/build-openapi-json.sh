@@ -15,4 +15,4 @@ swagger-cli bundle events-openapi.yaml --outfile _build/events-openapi.json --de
 jq -c . _build/events-openapi.json > _build/events-openapi.min.json &&
 
 # remove event-openapi.json
-rm _build/events-openapi.json &&
+rm _build/events-openapi.json

@@ -6,19 +6,19 @@
             "type": "string"
         },
         "positionsmenge": {
-            "$ref": "../com/Menge.schema.json"
+            "$ref": "../com/Menge"
         },
         "positionspreis": {
-            "$ref": "../com/Preis.schema.json"
+            "$ref": "../com/Preis"
         },
         "positionsbetrag": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "preisschluesselstamm": {
             "type": "string"
         },
         "artikelnummer": {
-            "$ref": "../enum/BDEWArtikelnummer.schema.json"
+            "$ref": "../enum/BDEWArtikelnummer"
         },
         "artikelId": {
             "type": "array",

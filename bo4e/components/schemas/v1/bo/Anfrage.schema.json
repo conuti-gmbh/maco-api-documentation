@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "ANFRAGE"
         },
         "versionStruktur": {
@@ -14,10 +14,10 @@
             "type": "string"
         },
         "anfragetyp": {
-            "$ref": "../enum/Anfragetyp.schema.json"
+            "$ref": "../enum/Anfragetyp"
         },
         "abonnement": {
-            "$ref": "../enum/Abonnement.schema.json"
+            "$ref": "../enum/Abonnement"
         },
         "anfragereferenz": {
             "type": "string"
@@ -26,10 +26,10 @@
             "type": "string"
         },
         "anfragekategorie": {
-            "$ref": "../enum/Anfragekategorie.schema.json"
+            "$ref": "../enum/Anfragekategorie"
         },
         "energierichtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         },
         "gueltigkeitszeitspanne": {
             "type": "string"

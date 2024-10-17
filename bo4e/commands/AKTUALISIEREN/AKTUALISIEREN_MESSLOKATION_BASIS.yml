@@ -23,14 +23,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../../components/schemas/v1/bo/Messlokation.schema.json'
+          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/bo/Messlokation.schema.json'
+            https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation'
       description: Erfolgreiches Aktualisieren der Messlokation | Successful updating
         of the metering location
     '400':

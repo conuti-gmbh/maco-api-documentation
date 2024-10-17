@@ -9,14 +9,14 @@
             "type": "string"
         },
         "aufAbschlagstyp": {
-            "$ref": "../enum/AufAbschlagstyp.schema.json"
+            "$ref": "../enum/AufAbschlagstyp"
         },
         "aufAbschlagswert": {
             "type": "number",
             "format": "float"
         },
         "aufAbschlagswaehrung": {
-            "$ref": "../enum/Waehrungseinheit.schema.json"
+            "$ref": "../enum/Waehrungseinheit"
         }
     }
 }

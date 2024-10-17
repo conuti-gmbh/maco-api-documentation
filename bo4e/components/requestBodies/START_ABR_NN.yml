@@ -20,7 +20,7 @@ properties:
     default: '74018657187'
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   vertragsbeginn:
     default: '2024-04-01T07:40:00Z'
     type: string

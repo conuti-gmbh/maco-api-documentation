@@ -25,14 +25,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../components/schemas/v1/bo/Tranche.schema.json"
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche"
     required: true
   responses:
     "200":
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Tranche.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche"
       description:
         Erfolgreiches Aktualisieren der Tranche | Successful updating of
         the tranche

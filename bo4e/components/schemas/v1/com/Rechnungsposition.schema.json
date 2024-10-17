@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "einzelpreis": {
-            "$ref": "../com/Preis.schema.json"
+            "$ref": "../com/Preis"
         },
         "lieferungBis": {
             "type": "string",
@@ -14,7 +14,7 @@
             "format": "date-time"
         },
         "positionsMenge": {
-            "$ref": "../com/Menge.schema.json"
+            "$ref": "../com/Menge"
         },
         "positionsnummer": {
             "type": "integer"
@@ -23,22 +23,22 @@
             "type": "string"
         },
         "teilsummeNetto": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "teilsummeSteuer": {
-            "$ref": "../com/Steuerbetrag.schema.json"
+            "$ref": "../com/Steuerbetrag"
         },
         "zeitbezogeneMenge": {
-            "$ref": "../com/Menge.schema.json"
+            "$ref": "../com/Menge"
         },
         "abschlag": {
-            "$ref": "../com/Abschlag.schema.json"
+            "$ref": "../com/Abschlag"
         },
         "zuschlag": {
-            "$ref": "../com/Zuschlag.schema.json"
+            "$ref": "../com/Zuschlag"
         },
         "gemeinderabatt": {
-            "$ref": "../com/Gemeinderabatt.schema.json"
+            "$ref": "../com/Gemeinderabatt"
         },
         "gesamtZuAbschlagsbetrag": {
             "type": "number",

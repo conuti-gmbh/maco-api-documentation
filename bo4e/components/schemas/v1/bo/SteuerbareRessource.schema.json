@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "STEUERBARE_RESSOURCE"
         },
         "versionStruktur": {
@@ -14,37 +14,37 @@
             "type": "string"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json"
+            "$ref": "../enum/Sparte"
         },
         "lokationszuordnung": {
-            "$ref": "../enum/Lokationszuordnung.schema.json"
+            "$ref": "../enum/Lokationszuordnung"
         },
         "konfigurationsprodukt": {
             "type": "string"
         },
         "steuerkanal": {
-            "$ref": "../enum/Steuerkanal.schema.json"
+            "$ref": "../enum/Steuerkanal"
         },
         "produktdatenRelevanteRolle": {
-            "$ref": "../enum/Marktrolle.schema.json"
+            "$ref": "../enum/Marktrolle"
         },
         "auftraggebenderMarktpartner": {
-            "$ref": "./Marktteilnehmer.schema.json"
+            "$ref": "./Marktteilnehmer"
         },
         "zugeordneteDefinition": {
-            "$ref": "../com/ZugeordneteDefinition.schema.json"
+            "$ref": "../com/ZugeordneteDefinition"
         },
         "marktrollen": {
             "type": "array",
             "items": {
-                "$ref": "./Marktteilnehmer.schema.json"
+                "$ref": "./Marktteilnehmer"
             }
         },
         "datenqualitaet": {
-            "$ref": "../enum/Datenqualitaet.schema.json"
+            "$ref": "../enum/Datenqualitaet"
         },
         "gueltigkeitszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         }
     },
     "required": [

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "SPERRAUFTRAG"
         },
         "versionStruktur": {
@@ -11,19 +11,19 @@
             "default": "1"
         },
         "treffpunkt": {
-            "$ref": "../com/Adresse.schema.json"
+            "$ref": "../com/Adresse"
         },
         "sperrauftragsart": {
-            "$ref": "../enum/Sperrauftragsart.schema.json"
+            "$ref": "../enum/Sperrauftragsart"
         },
         "sperrauftragsstatus": {
-            "$ref": "../enum/Auftragsstatus.schema.json"
+            "$ref": "../enum/Auftragsstatus"
         },
         "sperrauftragsablehngrund": {
-            "$ref": "../enum/Sperrauftragsablehngrund.schema.json"
+            "$ref": "../enum/Sperrauftragsablehngrund"
         },
         "sperrauftragsverhinderungsgrund": {
-            "$ref": "../enum/Sperrauftragsverhinderungsgrund.schema.json"
+            "$ref": "../enum/Sperrauftragsverhinderungsgrund"
         },
         "zaehlernummer": {
             "type": "string"

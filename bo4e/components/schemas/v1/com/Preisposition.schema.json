@@ -3,31 +3,31 @@
     "type": "object",
     "properties": {
         "berechnungsmethode": {
-            "$ref": "../enum/Kalkulationsmethode.schema.json"
+            "$ref": "../enum/Kalkulationsmethode"
         },
         "leistungstyp": {
-            "$ref": "../enum/Leistungstyp.schema.json"
+            "$ref": "../enum/Leistungstyp"
         },
         "leistungsbezeichnung": {
             "type": "string"
         },
         "preiseinheit": {
-            "$ref": "../enum/Waehrungseinheit.schema.json"
+            "$ref": "../enum/Waehrungseinheit"
         },
         "bezugsgroesse": {
-            "$ref": "../enum/Mengeneinheit.schema.json"
+            "$ref": "../enum/Mengeneinheit"
         },
         "zeitbasis": {
-            "$ref": "../enum/Zeiteinheit.schema.json"
+            "$ref": "../enum/Zeiteinheit"
         },
         "tarifzeit": {
-            "$ref": "../enum/Tarifzeit.schema.json"
+            "$ref": "../enum/Tarifzeit"
         },
         "bdewArtikelnummer": {
-            "$ref": "../enum/BDEWArtikelnummer.schema.json"
+            "$ref": "../enum/BDEWArtikelnummer"
         },
         "zonungsgroesse": {
-            "$ref": "../enum/Bemessungsgroesse.schema.json"
+            "$ref": "../enum/Bemessungsgroesse"
         },
         "preisschluesselstamm": {
             "type": "string"
@@ -36,13 +36,13 @@
             "type": "integer"
         },
         "messebene": {
-            "$ref": "../enum/Netzebene.schema.json"
+            "$ref": "../enum/Netzebene"
         },
         "beschreibung": {
             "type": "string"
         },
         "verarbeitungszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "artikelId": {
             "type": "string"
@@ -50,13 +50,13 @@
         "zu_abschlaege": {
             "type": "array",
             "items": {
-                "$ref": "../com/PositionsAufAbschlag.schema.json"
+                "$ref": "../com/PositionsAufAbschlag"
             }
         },
         "preisstaffeln": {
             "type": "array",
             "items": {
-                "$ref": "../com/Preisstaffel.schema.json"
+                "$ref": "../com/Preisstaffel"
             }
         }
     }

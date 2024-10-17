@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "MESSLOKATION"
         },
         "versionStruktur": {
@@ -14,13 +14,13 @@
             "type": "string"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json"
+            "$ref": "../enum/Sparte"
         },
         "energierichtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         },
         "netzebenemessung": {
-            "$ref": "../enum/Netzebene.schema.json"
+            "$ref": "../enum/Netzebene"
         },
         "messgebietNr": {
             "type": "string"
@@ -29,52 +29,52 @@
             "type": "string"
         },
         "messadresse": {
-            "$ref": "../com/Adresse.schema.json"
+            "$ref": "../com/Adresse"
         },
         "bilanzierungsmethode": {
-            "$ref": "../enum/Bilanzierungsmethode.schema.json"
+            "$ref": "../enum/Bilanzierungsmethode"
         },
         "abrechnungmessstellenbetriebnna": {
             "type": "boolean"
         },
         "gasqualitaet": {
-            "$ref": "../enum/Gasqualitaet.schema.json"
+            "$ref": "../enum/Gasqualitaet"
         },
         "verlustfaktor": {
             "type": "number",
             "format": "float"
         },
         "betriebszustand": {
-            "$ref": "../enum/Betriebszustand.schema.json"
+            "$ref": "../enum/Betriebszustand"
         },
         "ablesekartenempfaenger": {
-            "$ref": "Geschaeftspartner.schema.json"
+            "$ref": "Geschaeftspartner"
         },
         "referenzMarktlokationsId": {
             "type": "string"
         },
         "verwendungsumfang": {
-            "$ref": "../enum/Verwendungsumfang.schema.json"
+            "$ref": "../enum/Verwendungsumfang"
         },
         "zukuenftigerMeldepunkt": {
             "type": "boolean"
         },
         "lokationszuordnung": {
-            "$ref": "../enum/Lokationszuordnung.schema.json"
+            "$ref": "../enum/Lokationszuordnung"
         },
         "beteiligterMarktpartner": {
-            "$ref": "./Marktteilnehmer.schema.json"
+            "$ref": "./Marktteilnehmer"
         },
         "geraete": {
             "type": "array",
             "items": {
-                "$ref": "../com/Geraet.schema.json"
+                "$ref": "../com/Geraet"
             }
         },
         "messdienstleistung": {
             "type": "array",
             "items": {
-                "$ref": "../com/Dienstleistung.schema.json"
+                "$ref": "../com/Dienstleistung"
             }
         },
         "messlokationszaehler": {
@@ -86,20 +86,20 @@
         "zaehlwerke": {
             "type": "array",
             "items": {
-                "$ref": "../com/Zaehlwerk.schema.json"
+                "$ref": "../com/Zaehlwerk"
             }
         },
         "marktrollen": {
             "type": "array",
             "items": {
-                "$ref": "../bo/Marktteilnehmer.schema.json"
+                "$ref": "../bo/Marktteilnehmer"
             }
         },
         "datenqualitaet": {
-            "$ref": "../enum/Datenqualitaet.schema.json"
+            "$ref": "../enum/Datenqualitaet"
         },
         "gueltigkeitszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         }
     },
     "required": [

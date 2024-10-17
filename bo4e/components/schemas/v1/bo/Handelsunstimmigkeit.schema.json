@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "HANDELSUNSTIMMIGKEIT"
         },
         "versionStruktur": {
@@ -14,13 +14,13 @@
             "type": "string"
         },
         "typ": {
-            "$ref": "../enum/Handelsunstimmigkeitstyp.schema.json"
+            "$ref": "../enum/Handelsunstimmigkeitstyp"
         },
         "begruendung": {
-            "$ref": "../com/Handelsunstimmigkeitsbegruendung.schema.json"
+            "$ref": "../com/Handelsunstimmigkeitsbegruendung"
         },
         "zuZahlen": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         }
     },
     "required": [

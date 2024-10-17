@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "RECHNUNG"
         },
         "versionStruktur": {
@@ -26,25 +26,25 @@
             "format": "date-time"
         },
         "rechnungsstatus": {
-            "$ref": "../enum/Rechnungsstatus.schema.json"
+            "$ref": "../enum/Rechnungsstatus"
         },
         "vorlaeufigerAbrechnungszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "rechnungsperiode": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "rechnungstyp": {
-            "$ref": "../enum/Rechnungstyp.schema.json"
+            "$ref": "../enum/Rechnungstyp"
         },
         "istReverseCharge": {
             "type": "boolean"
         },
         "gesamtbrutto": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "zuZahlen": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "originalRechnungsnummer": {
             "type": "string"
@@ -66,20 +66,20 @@
             "type": "string"
         },
         "vorausgezahlt": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "gemeinderabatt": {
-            "$ref": "../com/Gemeinderabatt.schema.json"
+            "$ref": "../com/Gemeinderabatt"
         },
         "ausfuehrungsdatum": {
             "type": "string",
             "format": "date-time"
         },
         "sonderrechnungsart": {
-            "$ref": "../enum/SonderrechnungsArt.schema.json"
+            "$ref": "../enum/SonderrechnungsArt"
         },
         "energierichtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         },
         "beginnPeriodeBilanzierung": {
             "type": "string",
@@ -92,13 +92,13 @@
         "steuerbetraege": {
             "type": "array",
             "items": {
-                "$ref": "../com/Steuerbetrag.schema.json"
+                "$ref": "../com/Steuerbetrag"
             }
         },
         "rechnungspositionen": {
             "type": "array",
             "items": {
-                "$ref": "../com/Rechnungsposition.schema.json"
+                "$ref": "../com/Rechnungsposition"
             }
         }
     },

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "dienstleistungstyp": {
-            "$ref": "../enum/Dienstleistungstyp.schema.json"
+            "$ref": "../enum/Dienstleistungstyp"
         },
         "bezeichnung": {
             "type": "string"

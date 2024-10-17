@@ -27,14 +27,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../components/schemas/v1/bo/Lokationsbuendel.schema.json"
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Lokationsbuendel"
     required: true
   responses:
     "200":
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Lokationsbuendel.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Lokationsbuendel"
       description:
         "Erfolgreiches Aktualisieren des Lokationsbündels | Successful\
         \ updating of the location bundle"

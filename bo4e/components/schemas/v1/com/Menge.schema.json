@@ -7,7 +7,7 @@
             "format": "float"
         },
         "einheit": {
-            "$ref": "../enum/Mengeneinheit.schema.json"
+            "$ref": "../enum/Mengeneinheit"
         }
     }
 }

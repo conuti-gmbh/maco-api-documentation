@@ -12,7 +12,7 @@
             "type": "string"
         },
         "herausgeber": {
-            "$ref": "../enum/Herausgeber.schema.json"
+            "$ref": "../enum/Herausgeber"
         }
     }
 }

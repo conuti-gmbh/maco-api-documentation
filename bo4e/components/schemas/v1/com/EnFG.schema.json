@@ -3,12 +3,12 @@
     "type": "object",
     "properties": {
         "grundlageVerringerungUmlagen": {
-            "$ref": "../enum/GrundlageVerringerungUmlagen.schema.json"
+            "$ref": "../enum/GrundlageVerringerungUmlagen"
         },
         "grund": {
             "type": "array",
             "items": {
-                "$ref": "../enum/GrundlageVerringerungUmlagenGrund.schema.json"
+                "$ref": "../enum/GrundlageVerringerungUmlagenGrund"
             }
         }
     }

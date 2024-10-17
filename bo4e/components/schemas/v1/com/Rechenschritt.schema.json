@@ -9,7 +9,7 @@
             "type": "integer"
         },
         "operation": {
-            "$ref": "../enum/ArithmetischeOperation.schema.json"
+            "$ref": "../enum/ArithmetischeOperation"
         },
         "verlustfaktorTrafo": {
             "type": "number",
@@ -27,7 +27,7 @@
             "type": "string"
         },
         "energieflussrichtung": {
-            "$ref": "../enum/Energierichtung.schema.json"
+            "$ref": "../enum/Energierichtung"
         }
     }
 }

@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "VERWENDUNGSZEITRAUM"
         },
         "versionStruktur": {
@@ -22,7 +22,7 @@
             "type": "integer"
         },
         "datenqualitaet": {
-            "$ref": "../enum/Datenqualitaet.schema.json"
+            "$ref": "../enum/Datenqualitaet"
         }
     },
     "required": [

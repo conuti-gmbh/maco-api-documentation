@@ -20,7 +20,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../components/schemas/v1/bo/Vertrag.schema.json"
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"
     required: true
   responses:
     "200":

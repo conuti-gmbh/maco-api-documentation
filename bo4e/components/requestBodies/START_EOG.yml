@@ -59,7 +59,7 @@ properties:
     default: SOME_STRING
     type: string
   energierichtung:
-    $ref: '../schemas/v1/enum/Energierichtung.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energierichtung'
   fernschaltung:
     default: SOME_STRING
     type: string
@@ -213,7 +213,7 @@ properties:
     default: SOME_STRING
     type: string
   sparte:
-    $ref: '../schemas/v1/enum/Sparte.schema.json'
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
   sperrstatus:
     default: SOME_STRING
     type: string

@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../components/schemas/v1/bo/Messlokation.schema.json"
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation"
       description:
         Erfolgreiches Lesen der Messlokation | Successful reading of the
         metering location

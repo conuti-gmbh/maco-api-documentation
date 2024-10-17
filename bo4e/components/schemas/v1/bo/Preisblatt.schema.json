@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "PREISBLATT"
         },
         "versionStruktur": {
@@ -14,13 +14,13 @@
             "type": "string"
         },
         "gueltigkeit": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "preisstatus": {
-            "$ref": "../enum/Preisstatus.schema.json"
+            "$ref": "../enum/Preisstatus"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json"
+            "$ref": "../enum/Sparte"
         },
         "bilanzierungsdatum": {
             "type": "string",
@@ -30,7 +30,7 @@
             "type": "string"
         },
         "leistungstyp": {
-            "$ref": "../enum/Leistungstyp.schema.json"
+            "$ref": "../enum/Leistungstyp"
         },
         "nichtGenutzt": {
             "type": "boolean"
@@ -38,7 +38,7 @@
         "preispositionen": {
             "type": "array",
             "items": {
-                "$ref": "../com/Preisposition.schema.json"
+                "$ref": "../com/Preisposition"
             }
         }
     },

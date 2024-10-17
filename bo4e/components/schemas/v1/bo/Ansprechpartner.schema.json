@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "ANSPRECHPARTNER"
         },
         "versionStruktur": {
@@ -19,7 +19,7 @@
         "rufnummern": {
             "type": "array",
             "items": {
-                "$ref": "../com/Rufnummer.schema.json"
+                "$ref": "../com/Rufnummer"
             }
         }
     },

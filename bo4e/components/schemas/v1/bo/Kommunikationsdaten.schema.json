@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "KOMMUNIKATIONSDATEN"
         },
         "versionStruktur": {
@@ -18,12 +18,12 @@
             "type": "boolean"
         },
         "marktteilnehmer": {
-            "$ref": "../bo/Marktteilnehmer.schema.json"
+            "$ref": "../bo/Marktteilnehmer"
         },
         "kommunikationsangaben": {
             "type": "array",
             "items": {
-                "$ref": "../bo/Marktteilnehmer.schema.json"
+                "$ref": "../bo/Marktteilnehmer"
             }
         }
     },

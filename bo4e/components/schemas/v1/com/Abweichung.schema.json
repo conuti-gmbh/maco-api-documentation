@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "abweichungsgrund": {
-            "$ref": "../enum/Abweichungsgrund.schema.json"
+            "$ref": "../enum/Abweichungsgrund"
         },
         "abweichungsgrundBemerkung": {
             "type": "string"

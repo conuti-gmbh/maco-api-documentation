@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "verfuegbarkeit": {
-            "$ref": "../enum/Verfuegbarkeit.schema.json"
+            "$ref": "../enum/Verfuegbarkeit"
         },
         "zeit": {
             "type": "string"

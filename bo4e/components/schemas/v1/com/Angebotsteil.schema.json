@@ -6,27 +6,27 @@
             "type": "string"
         },
         "gesamtmengeangebotsteil": {
-            "$ref": "../com/Menge.schema.json"
+            "$ref": "../com/Menge"
         },
         "gesamtkostenangebotsteil": {
-            "$ref": "../com/Betrag.schema.json"
+            "$ref": "../com/Betrag"
         },
         "lieferzeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "verweisKatalognummer": {
-            "$ref": "../com/Katalogverweis.schema.json"
+            "$ref": "../com/Katalogverweis"
         },
         "lieferstellenangebotsteil": {
             "type": "array",
             "items": {
-                "$ref": "../bo/Marktlokation.schema.json"
+                "$ref": "../bo/Marktlokation"
             }
         },
         "positionen": {
             "type": "array",
             "items": {
-                "$ref": "../com/Angebotsposition.schema.json"
+                "$ref": "../com/Angebotsposition"
             }
         }
     }

@@ -10,13 +10,13 @@
             "format": "date-time"
         },
         "haeufigkeit": {
-            "$ref": "../enum/HaeufigkeitSchaltzeit.schema.json"
+            "$ref": "../enum/HaeufigkeitSchaltzeit"
         },
         "uebermittelbarkeit": {
-            "$ref": "../enum/UebermittelbarkeitSchaltzeit.schema.json"
+            "$ref": "../enum/UebermittelbarkeitSchaltzeit"
         },
         "schalthandlung": {
-            "$ref": "../enum/Schalthandlung.schema.json"
+            "$ref": "../enum/Schalthandlung"
         },
         "konfigurationsprodukt": {
             "type": "string"

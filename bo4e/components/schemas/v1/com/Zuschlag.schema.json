@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "typ": {
-            "$ref": "../enum/ZuschlagTyp.schema.json"
+            "$ref": "../enum/ZuschlagTyp"
         },
         "prozent": {
             "type": "number",

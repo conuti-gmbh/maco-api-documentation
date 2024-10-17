@@ -3,22 +3,22 @@
     "type": "object",
     "properties": {
         "netznutzungszahler": {
-            "$ref": "../enum/Netznutzungszahler.schema.json"
+            "$ref": "../enum/Netznutzungszahler"
         },
         "netznutzungsvertrag": {
-            "$ref": "../enum/Netznutzungsvertrag.schema.json"
+            "$ref": "../enum/Netznutzungsvertrag"
         },
         "netznutzungsabrechnung": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "beinhaltetSingulaerGenutzteBetriebsmittel": {
             "type": "boolean"
         },
         "netznutzungsabrechnungsgrundlage": {
-            "$ref": "../enum/Netznutzungsabrechnungsgrundlage.schema.json"
+            "$ref": "../enum/Netznutzungsabrechnungsgrundlage"
         },
         "netznutzungsabrechnungsvariante": {
-            "$ref": "../enum/Netznutzungsabrechnungsvariante.schema.json"
+            "$ref": "../enum/Netznutzungsabrechnungsvariante"
         },
         "haushaltskunde": {
             "type": "boolean"
@@ -27,7 +27,7 @@
             "type": "boolean"
         },
         "gemeinderabatt": {
-            "$ref": "../com/Gemeinderabatt.schema.json"
+            "$ref": "../com/Gemeinderabatt"
         },
         "startAbrechnungsjahr": {
             "type": "string",
@@ -43,22 +43,22 @@
             "type": "integer"
         },
         "geplanteTurnusablesung": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "beauftragungMsb": {
-            "$ref": "../enum/BeauftragungMsb.schema.json"
+            "$ref": "../enum/BeauftragungMsb"
         },
         "kuendigungsfrist": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "vertragslaufzeit": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "kuendigungstermin": {
             "type": "string"
         },
         "abschlagszyklus": {
-            "$ref": "../com/Zeitraum.schema.json",
+            "$ref": "../com/Zeitraum",
             "description": "In diesen Zyklen werden Abschl\u00e4ge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden."
         },
         "anzahl_abschlaege": {
@@ -71,7 +71,7 @@
             "description": "Freitext zur Beschreibung der Konditionen"
         },
         "vertragsverlaengerung": {
-            "$ref": "../com/Zeitraum.schema.json",
+            "$ref": "../com/Zeitraum",
             "description": "Falls der Vertrag nicht gek\u00fcndigt wird, verl\u00e4ngert er sich automatisch um die hier angegebene Zeit"
         }
     }

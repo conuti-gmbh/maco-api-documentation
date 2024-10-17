@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "boTyp": {
-            "$ref": "../enum/BOTyp.schema.json",
+            "$ref": "../enum/BOTyp",
             "default": "TECHNISCHE_RESSOURCE"
         },
         "versionStruktur": {
@@ -14,10 +14,10 @@
             "type": "string"
         },
         "sparte": {
-            "$ref": "../enum/Sparte.schema.json"
+            "$ref": "../enum/Sparte"
         },
         "lokationszuordnung": {
-            "$ref": "../enum/Lokationszuordnung.schema.json"
+            "$ref": "../enum/Lokationszuordnung"
         },
         "referenzMesslokation": {
             "type": "string"
@@ -32,52 +32,52 @@
             "type": "string"
         },
         "nennleistung": {
-            "$ref": "../com/Nennleistung.schema.json"
+            "$ref": "../com/Nennleistung"
         },
         "speicherkapazitaet": {
             "type": "number",
             "format": "float"
         },
         "verbrauchsart": {
-            "$ref": "../enum/Verbrauchsart.schema.json"
+            "$ref": "../enum/Verbrauchsart"
         },
         "waermenutzung": {
-            "$ref": "../enum/Waermenutzung.schema.json"
+            "$ref": "../enum/Waermenutzung"
         },
         "artEMobilitaet": {
-            "$ref": "../enum/ArtEmobilitaet.schema.json"
+            "$ref": "../enum/ArtEmobilitaet"
         },
         "erzeugungsart": {
-            "$ref": "../enum/Erzeugungsart.schema.json"
+            "$ref": "../enum/Erzeugungsart"
         },
         "speicherart": {
-            "$ref": "../enum/Speicherart.schema.json"
+            "$ref": "../enum/Speicherart"
         },
         "enwg": {
             "type": "boolean"
         },
         "inbetriebsetzungsdatum": {
-            "$ref": "../enum/Inbetriebsetzung.schema.json"
+            "$ref": "../enum/Inbetriebsetzung"
         },
         "einordnung": {
-            "$ref": "../enum/RessourceWechselmoeglichkeit.schema.json"
+            "$ref": "../enum/RessourceWechselmoeglichkeit"
         },
         "weitereEinrichtung": {
             "type": "boolean"
         },
         "art": {
-            "$ref": "../enum/TechnischeRessourceArt.schema.json"
+            "$ref": "../enum/TechnischeRessourceArt"
         },
         "datenqualitaet": {
-            "$ref": "../enum/Datenqualitaet.schema.json"
+            "$ref": "../enum/Datenqualitaet"
         },
         "gueltigkeitszeitraum": {
-            "$ref": "../com/Zeitraum.schema.json"
+            "$ref": "../com/Zeitraum"
         },
         "erforderlicheProdukte": {
             "type": "array",
             "items": {
-                "$ref": "../com/Produkt.schema.json"
+                "$ref": "../com/Produkt"
             }
         }
     },
