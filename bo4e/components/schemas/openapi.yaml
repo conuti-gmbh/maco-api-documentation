@@ -1606,7 +1606,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/AdHocSteuerkanal.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/AdHocSteuerkanal.json
     Anfrage:
       title: Anfrage
       type: object
@@ -1641,7 +1641,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Anfrage.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Anfrage.json
     Angebot:
       title: Angebot
       type: object
@@ -1685,7 +1685,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Angebot.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Angebot.json
     Ansprechpartner:
       title: Ansprechpartner
       type: object
@@ -1709,7 +1709,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Ansprechpartner.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Ansprechpartner.json
     Auftrag:
       title: Auftrag
       type: object
@@ -1770,7 +1770,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Auftrag.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Auftrag.json
     Avis:
       title: Avis
       type: object
@@ -1796,7 +1796,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Avis.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Avis.json
     Berechnungsformel:
       title: Berechnungsformel
       type: object
@@ -1833,7 +1833,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Berechnungsformel.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Berechnungsformel.json
     Bilanzierung:
       title: Bilanzierung
       type: object
@@ -1899,7 +1899,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Bilanzierung.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Bilanzierung.json
     Bilanzkreis:
       title: Bilanzkreis
       type: object
@@ -1916,7 +1916,7 @@ components:
           type: integer
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Bilanzkreis.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Bilanzkreis.json
     Energiemenge:
       title: Energiemenge
       type: object
@@ -1959,7 +1959,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Energiemenge.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Energiemenge.json
     Geschaeftspartner:
       title: Geschaeftspartner
       type: object
@@ -2015,7 +2015,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Geschaeftspartner.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Geschaeftspartner.json
     Handelsunstimmigkeit:
       title: Handelsunstimmigkeit
       type: object
@@ -2039,7 +2039,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Handelsunstimmigkeit.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Handelsunstimmigkeit.json
     Kommunikationsdaten:
       title: Kommunikationsdaten
       type: object
@@ -2066,7 +2066,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Kommunikationsdaten.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Kommunikationsdaten.json
     Leistungskurvendefinition:
       title: Leistungskurvendefinition
       type: object
@@ -2099,7 +2099,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Leistungskurvendefinition.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Leistungskurvendefinition.json
     Lokationsbuendel:
       title: Lokationsbuendel
       type: object
@@ -2129,7 +2129,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Lokationsbuendel.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Lokationsbuendel.json
     Marktlokation:
       title: Marktlokation
       type: object
@@ -2263,7 +2263,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Marktlokation.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Marktlokation.json
     Marktteilnehmer:
       title: Marktteilnehmer
       type: object
@@ -2341,7 +2341,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Marktteilnehmer.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Marktteilnehmer.json
     Messlokation:
       title: Messlokation
       type: object
@@ -2418,7 +2418,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Messlokation.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Messlokation.json
     Netzlokation:
       title: Netzlokation
       type: object
@@ -2472,7 +2472,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Netzlokation.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Netzlokation.json
     Preisblatt:
       title: Preisblatt
       type: object
@@ -2509,7 +2509,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Preisblatt.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Preisblatt.json
     Rechnung:
       title: Rechnung
       type: object
@@ -2588,7 +2588,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Rechnung.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Rechnung.json
     Reklamation:
       title: Reklamation
       type: object
@@ -2618,7 +2618,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Reklamation.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Reklamation.json
     Schaltzeitdefinition:
       title: Schaltzeitdefinition
       type: object
@@ -2651,7 +2651,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Schaltzeitdefinition.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Schaltzeitdefinition.json
     Sperrauftrag:
       title: Sperrauftrag
       type: object
@@ -2681,7 +2681,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Sperrauftrag.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Sperrauftrag.json
     Statusbericht:
       title: Statusbericht
       type: object
@@ -2706,7 +2706,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Statusbericht.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Statusbericht.json
     Statusmitteilung:
       title: Statusmitteilung
       type: object
@@ -2732,7 +2732,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Statusmitteilung.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Statusmitteilung.json
     SteuerbareRessource:
       title: SteuerbareRessource
       type: object
@@ -2772,7 +2772,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/SteuerbareRessource.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/SteuerbareRessource.json
     Tarifinfo:
       title: Tarifinfo
       type: object
@@ -2837,7 +2837,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Tarifinfo.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Tarifinfo.json
     TechnischeRessource:
       title: TechnischeRessource
       type: object
@@ -2900,7 +2900,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/TechnischeRessource.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/TechnischeRessource.json
     Tranche:
       title: Tranche
       type: object
@@ -3016,7 +3016,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Tranche.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Tranche.json
     Vertrag:
       title: Vertrag
       type: object
@@ -3076,7 +3076,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Vertrag.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Vertrag.json
     Verwendungszeitraum:
       title: Verwendungszeitraum
       type: object
@@ -3102,7 +3102,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Verwendungszeitraum.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Verwendungszeitraum.json
     WerteNachTyp2:
       title: WerteNachTyp2
       type: object
@@ -3134,7 +3134,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/WerteNachTyp2.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/WerteNachTyp2.json
     Zaehler:
       title: Zaehler
       type: object
@@ -3209,7 +3209,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Zaehler.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Zaehler.json
     Zaehlzeitdefinition:
       title: Zaehlzeitdefinition
       type: object
@@ -3248,7 +3248,7 @@ components:
         - versionStruktur
       example:
         $ref: >-
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Zaehlzeitdefinition.json
+          $ref:'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/master/docs/examples/bo/Zaehlzeitdefinition.json
     Abschlag:
       title: Abschlag
       type: object

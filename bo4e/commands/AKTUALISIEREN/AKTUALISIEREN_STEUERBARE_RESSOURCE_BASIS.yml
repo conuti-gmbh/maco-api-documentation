@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema:
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/SteuerbareRessource'
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/SteuerbareRessource'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/SteuerbareRessource'
+            $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/SteuerbareRessource'
       description: Erfolgreiches Aktualisieren der steuerbaren Ressource | Successful
         updating of the controllable resource
     '400':

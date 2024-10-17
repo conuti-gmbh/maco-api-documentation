@@ -23,14 +23,14 @@ post:
     content:
       application/json:
         schema:
-          https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
     required: true
   responses:
     '200':
       content:
         application/json:
           schema:
-            https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+            $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
       description: Erfolgreiches Aktualisieren der Marktlokation | Successful updating
         of the market location
     '400':
