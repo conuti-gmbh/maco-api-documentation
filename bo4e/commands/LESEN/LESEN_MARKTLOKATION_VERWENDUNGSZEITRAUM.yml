@@ -1,0 +1,35 @@
+get:
+  description:
+    Lesen MaLos mittels LokationsId (Parameter1) und businessKey\
+    \ Reading MaLos using LocationId (Parameter1) and businessKey
+  operationId: LESEN_MARKTLOKATION_VERWENDUNGSZEITRAUM
+  parameters:
+    - $ref: ../../components/parameters/parameter1.yml
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
+      in: query
+      name: command
+      required: true
+      schema:
+        default: LESEN_MARKTLOKATION_VERWENDUNGSZEITRAUM
+        example: SAP_LESEN_MARKTLOKATION_VERWENDUNGSZEITRAUM
+        type: string 
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"
+      description:
+        Erfolgreiches Lesen den Marktlokationen | Successful reading of the market locations
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+  summary: LESEN_MARKTLOKATION_VERWENDUNGSZEITRAUM
+  tags:
+    - LESEN | READ
