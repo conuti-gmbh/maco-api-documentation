@@ -31,9 +31,13 @@ servers:
 tags:
   - name: SLIM EVENTS
     description: Trigger Event mit Angabe vom Typ und einer BelegId, mit der Daten im ERP nachgelesen werden können. | Trigger event with specification of the type and a document ID where data can be read in the backend.
+  - name: SAP EVENTS
+    description: Trigger Events aus dem CONVISTA SAP Adapter.      
   - name: EXTENDED EVENTS
     description: | 
       Trigger Events, die alle notwendigen Informationen enthalten, ohne Daten nachlesen zu müssen. | Trigger events that contain all necessary information.
       *Die erweiterten Events dokumentieren welche Parameter ein Event eines bestimmten Type enthalten kann und mindestens muss* | *The extended events document which parameters an event of a certain type can and at least must contain.*
+  - name: LIEFERANT
+    description: Trigger Events aus dem Backend in der Rolle Lieferant         
 paths:
   $ref: paths/_index.yml

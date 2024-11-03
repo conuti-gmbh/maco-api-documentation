@@ -20,3 +20,6 @@
   $ref: inbound[EXTENDED].yml
 /inbound[SLIM]:
   $ref: inbound[SLIM].yml
+
+/SAP_START_LIEFERBEGINN:
+  $ref: SAP/START_LIEFERBEGINN.yml

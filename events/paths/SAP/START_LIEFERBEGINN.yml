@@ -1,0 +1,31 @@
+post:
+  deprecated: false
+  description: Versand des Lieferbeginns - abhängig von Sparte, Transaktionsgrund und Energierichtung - wird eine der folgenden Prüfidentifkatoren versand 44001, 55001, 55077, 55600, 55601
+  operationId: START_LIEFERBEGINN
+  parameters: []
+  requestBody:
+    content:
+      application/json:
+        examples:
+          START_LIEFERBEGINN:
+            $ref: '../../components/examples/SAP/START_LIEFERBEGINN.yml'        
+        schema:
+          $ref: "../../components/schemas/SAP/START_LIEFERBEGINN.yml"
+  responses:
+    '201':
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/responses/event_responses_success.yml'
+      description: Erfolg | Success
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
+  security: []
+  summary: START_LIEFERBEGINN
+  tags:
+    - SAP EVENTS
+    - LIEFERANT   

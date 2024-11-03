@@ -17,7 +17,9 @@ info:
 
     <summary>Changelog</summary>
 
-    
+    - **Version 1.1.2** - *24. Oktober 2024* - _Autor: DAS_
+      - LESEN_BRECHNUNGSFORMEL_BASIS ergänzt
+       
     - **Version 1.1.1** - *04. Oktober 2024* - _Autor: DAS_
       - Anpassung der default Parameter : parameter1 = LokationsId / parameter2 = LokationsTyp / parameter3 = Parameter3 - gueltigAb - stichtag
     

@@ -1,0 +1,97 @@
+description: "Schema für Lieferbeginn | Schema for the delivery start"
+properties:
+    eventName:
+      $ref: ../items/eventName.yml
+    id:
+      $ref: ../items/id.yml
+    empfaenger:
+      $ref: ../items/empfaenger.yml  
+    absender:
+      $ref: ../items/absender.yml        
+    marktlokationsId:
+      $ref: ../items/marktlokationsId.yml   
+    transaktionsgrund:
+      $ref: ../items/transaktionsgrund.yml 
+    transaktionsgrundergaenzung:
+      $ref: ../items/transaktionsgrundergaenzung.yml 
+    transaktionsgrundergaenzungBefristeteAnmeldung:
+      $ref: ../items/transaktionsgrundergaenzung.yml                   
+    sparte:
+      $ref: ../items/sparte.yml    
+    energierichtung:
+      $ref: ../items/energierichtung.yml    
+    bilanzkreis:
+      description: bilanzkreis
+      example: "bilanzkreis"
+      type: string   
+    vertragsbeginn:
+      $ref: ../items/vertragsbeginn.yml                            
+    vertragsende:
+      $ref: ../items/vertragsende.yml    
+    haushaltskunde:
+      description: Haushaltskunde
+      example: true
+      type: boolean    
+    gewerbekennzeichnung:
+      description: Gewerbekennzeichnung
+      example: true
+      type: boolean
+    verguetungEmpfaenger:
+      description: VerguetungEmpfaenger
+      example: "VerguetungEmpfaenger"
+      type: string    
+    bildungTranchengroesse:
+      description: bildungTranchengroesse
+      example: "bildungTranchengroesse"
+      type: string      
+    wert:
+      description: wert
+      example: "wert"
+      type: string      
+    einheit:
+      description: einheit
+      example: "einheit"
+      type: string      
+    anrede:
+      description: anrede
+      example: "HERR"
+      type: string  
+    name1:
+      description: name1
+      example: "name1"
+      type: string  
+    name2:
+      description: name2
+      example: "name2"
+      type: string  
+    postleitzahl:
+      description: postleitzahl
+      example: "76229"
+      type: string  
+    ort:
+      description: ort
+      example: "Karlsruhe"
+      type: string  
+    strasse:
+      description: strasse
+      example: "Greschbachstraße"
+      type: string  
+    hausnummer:
+      description: hausnummer
+      example: "5"
+      type: string                                      
+    ortsteil:
+      description: ortsteil
+      example: "Ausbau"
+      type: string                                      
+    landescode:
+      description: landescode
+      example: "DE"
+      type: string                                      
+required:
+  - id
+  - eventName
+type: object
+
+
+
