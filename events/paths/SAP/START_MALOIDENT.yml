@@ -1,7 +1,7 @@
 post:
   deprecated: false
   description: Versand einer MaloIdent Anfrage via API-Webdienst
-  operationId: START_MALOIDENT
+  operationId: SAP_START_MALOIDENT
   parameters: []
   requestBody:
     content:

@@ -2819,7 +2819,7 @@
       "post": {
         "deprecated": false,
         "description": "Versand des Lieferbeginns - abhängig von Sparte, Transaktionsgrund und Energierichtung - wird eine der folgenden Prüfidentifkatoren versand 44001, 55001, 55077, 55600, 55601",
-        "operationId": "START_LIEFERBEGINN",
+        "operationId": "SAP_START_LIEFERBEGINN",
         "parameters": [],
         "requestBody": {
           "content": {
@@ -3873,7 +3873,7 @@
       "post": {
         "deprecated": false,
         "description": "Versand einer MaloIdent Anfrage via API-Webdienst",
-        "operationId": "START_MALOIDENT",
+        "operationId": "SAP_START_MALOIDENT",
         "parameters": [],
         "requestBody": {
           "content": {
