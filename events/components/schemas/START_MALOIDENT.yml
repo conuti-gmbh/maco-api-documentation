@@ -113,15 +113,13 @@ properties:
     description: "Angabe des UTM Nordwert nach WGS84. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen"
     example: "654321"
   zone:
-    type: array
-    items:
-      type: string
-      enum:
-        - UTMZone31
-        - UTMZone32
-        - UTMZone33
+    type: string
+    enum:
+      - UTMZone31
+      - UTMZone32
+      - UTMZone33
     description: "UTM-Zone"
-    example: ["UTMZone31"]
+    example: "UTMZone31"
   hochwert:
     type: string
     description: "Gauß-Krüger Hochwert. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen."

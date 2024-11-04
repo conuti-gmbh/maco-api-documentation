@@ -1,4 +1,4 @@
-summary: Beispiel Versand einer MaloIdent Anfrage via API-Webdienst
+summary: Beispiel Versand einer MaloIdent Anfrage via API-Webdienst mit allen Feldern gefüllt
 value:
   eventName: START_MALOIDENT
   id: 12345678901
@@ -30,7 +30,6 @@ value:
   laengengrad: "13.4050"
   ostwert: "123456"
   nordwert: "654321"
-  zone:
-    - UTMZone31
+  zone:  "UTMZone31"
   hochwert: "1234567"
   rechtswert: "7654321"
