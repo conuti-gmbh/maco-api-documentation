@@ -1,0 +1,140 @@
+description: "Schema Versand einer MaloIdent Anfrage via API-Webdienst"
+type: object
+properties:
+  eventName:
+    type: string
+    enum:
+      - START_MALOIDENT
+  id:
+    $ref: items/id.yml
+  empfaenger:
+    $ref: items/empfaenger.yml  
+  absender:
+    $ref: items/absender.yml        
+  energierichtung:
+    $ref: items/energierichtung.yml  
+  ausfuehrungsdatum:
+    type: string
+    pattern: 20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ
+    description: "Zeitpunkt zu dem die Identifikation stattfinden soll. Dieser Zeitpunkt muss ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein."
+    example: "2023-08-02T22:00:00Z"
+  marktlokationsId:
+    type: string
+    pattern: \d{11}
+    description: "Identifiziert die Marktlokation mittels einer eindeutigen ID"
+    example: "57685676748"    
+  tranchenIds:
+    type: array
+    items:
+      type: string
+      pattern: \d{11}
+    description: "Identifiziert die Tranche mittels einer eindeutigen ID"
+    example: ["57685676742"]
+  meloIds:
+    type: array
+    items:
+      type: string
+      pattern: DE\\d{11}[A-Z,\\d]{20}
+    description: "Identifiziert die Messlokation mittels einer eindeutigen ID"
+    example: ["DE00014545768S0000000000000003054"]
+  zaehlernummern:
+    type: array
+    items:
+      type: string
+    description: "Identifiziert das Gerät der Messlokation mittels Gerätenummer"
+    example: ["1SM-8465929523"]
+  exRefName:
+    type: string
+    description: "Zur Angabe der Kundennummer des Kunden beim bisherigen Lieferanten (LFA)"
+    example: "V567345345"
+  name1:
+    type: string
+    description: "Angabe des Namen des Kunden"
+    example: "Becker"
+  name2:
+    type: string
+    description: "Angabe des Vornamen des Kunden"
+    example: "Michael"
+  anrede:
+    type: string
+    description: "Angabe des Titels der natürlichen Person"
+    example: "Prof.Dr."
+  landescode:
+    type: string
+    pattern: "[A-Z]{2}"
+    description: "Angabe des Ländercodes nach ISO-3166-1 Alpha-2"
+    example: "DE"
+  postleitzahl:
+    type: string
+    description: "Angabe der Postleitzahl der Marktlokationsadresse"
+    example: "12117"
+  ort:
+    type: string
+    description: "Angabe des Ortes der Marktlokationsadresse"
+    example: "Berlin"
+  strasse:
+    type: string
+    description: "Angabe der Straße der Marktlokationsadresse"
+    example: "Reinhardtstraße"
+  hausnummer:
+    type: string
+    description: "Angabe der Hausnummer der Marktlokationsadresse"
+    example: "32"
+  adresszusatz:
+    type: string
+    description: "Angabe des Ortsteils"
+    example: "Ausbau"
+  gemarkungFlur:
+    type: string
+    description: "Angabe des Gemarkungsnamens (des Flurstücks) der Marktlokationsadresse"
+    example: "Musterstadt"
+  flurstueck:
+    type: string
+    description: "Angabe der Flurnummer (des Flurstücks) der Marktlokationsadresse"
+    example: "123"
+  flurstueckNummer:
+    type: string
+    description: "Angabe der Flurstücksnummer (des Flurstücks) der Marktlokationsadresse"
+    example: "456"
+  breitengrad:
+    type: string
+    description: "Angabe der Breite (Breitengrad) nach WGS84. 46 <= X <= 59. °N"
+    example: "52.5200"
+  laengengrad:
+    type: string
+    description: "Angabe der Länge (Längengrad) nach WGS84. 4 <= X <= 18. °O"
+    example: "13.4050"
+  ostwert:
+    type: string
+    description: "Angabe des UTM Ostwert nach WGS84. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen"
+    example: "123456"
+  nordwert:
+    type: string
+    description: "Angabe des UTM Nordwert nach WGS84. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen"
+    example: "654321"
+  zone:
+    type: array
+    items:
+      type: string
+      enum:
+        - UTMZone31
+        - UTMZone32
+        - UTMZone33
+    description: "UTM-Zone"
+    example: ["UTMZone31"]
+  hochwert:
+    type: string
+    description: "Gauß-Krüger Hochwert. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen."
+    example: "1234567"
+  rechtswert:
+    type: string
+    description: "Gauß-Krüger Rechtswert. Umgerechneter Wert muss Min/Max für Länge/Breite entsprechen."
+    example: "7654321"
+
+required:
+  - id
+  - eventName
+  - empfaenger
+  - absender
+  - energierichtung
+  - ausfuehrungsdatum  

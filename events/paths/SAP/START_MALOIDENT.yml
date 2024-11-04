@@ -1,0 +1,31 @@
+post:
+  deprecated: false
+  description: Versand einer MaloIdent Anfrage via API-Webdienst
+  operationId: START_MALOIDENT
+  parameters: []
+  requestBody:
+    content:
+      application/json:
+        examples:
+          START_LIEFERBEGINN:
+            $ref: '../../components/examples/SAP/START_MALOIDENT.yml'        
+        schema:
+          $ref: "../../components/schemas/SAP/START_MALOIDENT.yml"
+  responses:
+    '201':
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/responses/event_responses_success.yml'
+      description: Erfolg | Success
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
+  security: []
+  summary: START_LIEFERBEGINN
+  tags:
+    - SAP EVENTS
+    - LIEFERANT   

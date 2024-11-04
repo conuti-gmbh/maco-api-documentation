@@ -1,93 +1,499 @@
-description: "Schema für Lieferbeginn | Schema for the delivery start"
+description: "Schema für Versand des Lieferbeginns - abhängig von Sparte, Transaktionsgrund und Energierichtung - wird eine der folgenden Prüfidentifkatoren versand 44001, 55001, 55077, 55600, 55601 "
 properties:
-    eventName:
-      $ref: ../items/eventName.yml
-    id:
-      $ref: ../items/id.yml
-    empfaenger:
-      $ref: ../items/empfaenger.yml  
-    absender:
-      $ref: ../items/absender.yml        
-    marktlokationsId:
-      $ref: ../items/marktlokationsId.yml   
-    transaktionsgrund:
-      $ref: ../items/transaktionsgrund.yml 
-    transaktionsgrundergaenzung:
-      $ref: ../items/transaktionsgrundergaenzung.yml 
-    transaktionsgrundergaenzungBefristeteAnmeldung:
-      $ref: ../items/transaktionsgrundergaenzung.yml                   
-    sparte:
-      $ref: ../items/sparte.yml    
-    energierichtung:
-      $ref: ../items/energierichtung.yml    
-    bilanzkreis:
-      description: bilanzkreis
-      example: "bilanzkreis"
-      type: string   
-    vertragsbeginn:
-      $ref: ../items/vertragsbeginn.yml                            
-    vertragsende:
-      $ref: ../items/vertragsende.yml    
-    haushaltskunde:
-      description: Haushaltskunde
-      example: true
-      type: boolean    
-    gewerbekennzeichnung:
-      description: Gewerbekennzeichnung
-      example: true
-      type: boolean
-    verguetungEmpfaenger:
-      description: VerguetungEmpfaenger
-      example: "VerguetungEmpfaenger"
-      type: string    
-    bildungTranchengroesse:
-      description: bildungTranchengroesse
-      example: "bildungTranchengroesse"
-      type: string      
-    wert:
-      description: wert
-      example: "wert"
-      type: string      
-    einheit:
-      description: einheit
-      example: "einheit"
-      type: string      
-    anrede:
-      description: anrede
-      example: "HERR"
-      type: string  
-    name1:
-      description: name1
-      example: "name1"
-      type: string  
-    name2:
-      description: name2
-      example: "name2"
-      type: string  
-    postleitzahl:
-      description: postleitzahl
-      example: "76229"
-      type: string  
-    ort:
-      description: ort
-      example: "Karlsruhe"
-      type: string  
-    strasse:
-      description: strasse
-      example: "Greschbachstraße"
-      type: string  
-    hausnummer:
-      description: hausnummer
-      example: "5"
-      type: string                                      
-    ortsteil:
-      description: ortsteil
-      example: "Ausbau"
-      type: string                                      
-    landescode:
-      description: landescode
-      example: "DE"
-      type: string                                      
+  HEADER:
+    type: object
+    properties:
+      ID:
+        type: string
+        example: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
+      EVENTNAME:
+        type: string
+        enum: ["START_LIEFERBEGINN"]        
+        example: "START_LIEFERBEGINN"
+      SENDER_ID:
+        type: string
+        example: "4045458000000"
+      SENDER_CODELIST:
+        type: string
+        example: "293"
+      RECEIVER_ID:
+        type: string
+        example: "9903790000002"
+      RECEIVER_CODELIST:
+        type: string
+        example: "293"
+  DATA:
+    type: object
+    properties:
+      MDOC_GUID:
+        type: string
+        example: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
+      HEADER:
+        type: object
+        properties:
+          MDOC_TYPE:
+            type: string
+            example: "SWTDOC"
+          MDOC_STATUS:
+            type: string
+            example: ""
+          CREATED_BY:
+            type: string
+            example: "MSKUPCH"
+          CREATED_AT:
+            type: integer
+            example: 20241004060230
+          CHANGED_BY:
+            type: string
+            example: ""
+          CHANGED_AT:
+            type: integer
+            example: 0
+      VALUES:
+        type: array
+        items:
+          oneOf:
+            - type: object
+              description: "ADD_MARKET_PARTNER - KEY"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["ADD_MARKET_PARTNER"]
+                  example: "ADD_MARKET_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "SL-NWV"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - ANREDE"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["ANREDE"]
+                  example: "ANREDE"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "0002"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - HAUSNUMMER"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["HAUSNUMMER"]
+                  example: "HAUSNUMMER"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "49"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - KEY"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "1100000087"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - LANDESCODE"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["LANDESCODE"]
+                  example: "LANDESCODE"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "DE"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - NAME1"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["NAME1"]
+                  example: "NAME1"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "Glöppel"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - NAME2"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["NAME2"]
+                  example: "NAME2"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "Walter"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - ORT"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["ORT"]
+                  example: "ORT"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "Grevenbroich"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - POSTLEITZAHL"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["POSTLEITZAHL"]
+                  example: "POSTLEITZAHL"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "41515"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - GEWERBEKENNZEICHNUNG"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["GEWERBEKENNZEICHNUNG"]
+                  example: "GEWERBEKENNZEICHNUNG"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "true"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "BUSINESS_PARTNER - STRASSE"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["BUSINESS_PARTNER"]
+                  example: "BUSINESS_PARTNER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["STRASSE"]
+                  example: "STRASSE"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "Bahnstraße"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "INT_METERING_POINT - KEY"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["INT_METERING_POINT"]
+                  example: "INT_METERING_POINT"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "ta6JJFrEgF6YNm1GLezzSm"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - KEY"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "74018657187"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - ENERGIERICHTUNG"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["ENERGIERICHTUNG"]
+                  example: "ENERGIERICHTUNG"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "AUSSP"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - SPARTE"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["SPARTE"]
+                  example: "SPARTE"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "STROM"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - HAUSHALTSKUNDE"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["HAUSHALTSKUNDE"]
+                  example: "HAUSHALTSKUNDE"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "true"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "TRANSAKTION - TRANSAKTIONSGRUND"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["TRANSAKTION"]
+                  example: "TRANSAKTION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["TRANSAKTIONSGRUND"]
+                  example: "TRANSAKTIONSGRUND"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "E01"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - BILANZKREIS"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["BILANZKREIS"]
+                  example: "BILANZKREIS"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "11Y0-0000-0077-K"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - MESSTECHNISCHEEINORDNUNG"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["MESSTECHNISCHEEINORDNUNG"]
+                  example: "MESSTECHNISCHEEINORDNUNG"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "X"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "MARKTLOKATION - NETZBETREIBER"
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["MARKTLOKATION"]
+                  example: "MARKTLOKATION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["NETZBETREIBER"]
+                  example: "NETZBETREIBER"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "1"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "TRANSAKTION - TRANSAKTIONSGRUNDERGAENZUNG"    
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["TRANSAKTION"]
+                  example: "TRANSAKTION"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["TRANSAKTIONSGRUNDERGAENZUNG"]
+                  example: "TRANSAKTIONSGRUNDERGAENZUNG"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "ZW4"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "RECEIVER - KEY" 
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["RECEIVER"]
+                  example: "RECEIVER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "SL-CCV"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+            - type: object
+              description: "SENDER - KEY" 
+              properties:
+                OBJECT:
+                  type: string
+                  enum: ["SENDER"]
+                  example: "SENDER"
+                ATTRIBUTE_NAME:
+                  type: string
+                  enum: ["KEY"]
+                  example: "KEY"
+                ATTRIBUTE_VALUE:
+                  type: string
+                  example: "SN-CCN"
+                ATTRIBUTE_TYPE:
+                  type: string
+                  example: ""
+      DATE_TYPES:
+        type: array
+        items:
+          oneOf:
+            - type: object
+              description: "START_SUPPLY"        
+              properties:
+                DATE_TYPE:
+                  type: string
+                  example: "START_SUPPLY"
+                DATE_TIME:
+                  type: integer
+                  example: 20241031220000
+            - type: object
+              description: "END_SUPPLY"        
+              properties:
+                DATE_TYPE:
+                  type: string
+                  example: "END_SUPPLY"
+                DATE_TIME:
+                  type: integer
+                  example: 20241031220000                  
+      REFERENCES:
+        type: array
+        items:
+          type: object
+          properties:
+            MA_EVENT:
+              type: string
+              example: "START_LIEFERBEGINN"
+            DEXTASKID:
+              type: string
+              example: ""
+            MA_GUID:
+              type: string
+              example: ""
+            CREATED_AT:
+              type: integer
+              example: 20241004060230
+            CHANGED_AT:
+              type: integer
+              example: 20241004060249
+            STATUS:
+              type: string
+              example: "PENDING"
+      ISUDOC:
+        type: array
+        items:
+          type: object
+          nullable: true 
 required:
   - id
   - eventName

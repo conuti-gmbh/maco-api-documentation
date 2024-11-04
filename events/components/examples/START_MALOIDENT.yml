@@ -1,0 +1,36 @@
+summary: Beispiel Versand einer MaloIdent Anfrage via API-Webdienst
+value:
+  eventName: START_MALOIDENT
+  id: 12345678901
+  absender: "9903790000002"
+  empfaenger: "9900321000005"
+  energierichtung: AUSSP
+  ausfuehrungsdatum: "2024-11-07T23:00:00Z"
+  marktlokationsId: "57685676748"
+  tranchenIds:
+    - "57685676742"
+  meloIds:
+    - "DE00014545768S0000000000000003054"
+  zaehlernummern:
+    - "1SM-8465929523"
+  exRefName: "V567345345"
+  name1: "Becker"
+  name2: "Michael"
+  anrede: "Prof.Dr."
+  landescode: "DE"
+  postleitzahl: "12117"
+  ort: "Berlin"
+  strasse: "Reinhardtstraße"
+  hausnummer: "32"
+  adresszusatz: "Ausbau"
+  gemarkungFlur: "Musterstadt"
+  flurstueck: "123"
+  flurstueckNummer: "456"
+  breitengrad: "52.5200"
+  laengengrad: "13.4050"
+  ostwert: "123456"
+  nordwert: "654321"
+  zone:
+    - UTMZone31
+  hochwert: "1234567"
+  rechtswert: "7654321"

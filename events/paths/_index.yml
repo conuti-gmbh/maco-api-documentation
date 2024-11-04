@@ -14,12 +14,21 @@
   $ref: START_NACHRICHTENEINGANG.yml
 /START_PARTIN:
   $ref: START_PARTIN.yml
+
+/START_MALOIDENT:
+  $ref: START_MALOIDENT.yml
+
 /START_ZAEHLERSTAND:
   $ref: START_ZAEHLERSTAND.yml
+
 /inbound[EXTENDED]:
   $ref: inbound[EXTENDED].yml
 /inbound[SLIM]:
   $ref: inbound[SLIM].yml
 
+
 /SAP_START_LIEFERBEGINN:
   $ref: SAP/START_LIEFERBEGINN.yml
+
+/SAP_START_MALOIDENT:
+  $ref: SAP/START_MALOIDENT.yml  
