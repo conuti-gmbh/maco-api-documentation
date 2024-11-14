@@ -3,9 +3,6 @@ get:
     Identifizierung einer Marktlokations (Funktion wurde für Demo umgesetzt)
   operationId: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
   parameters:
-    - $ref: ../../components/parameters/parameter1.yml
-    - $ref: ../../components/parameters/parameter2.yml
-    - $ref: ../../components/parameters/parameter3.yml
     - description: name1
       in: query
       name: parameter4
@@ -64,6 +61,9 @@ get:
         default: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
         example: SAP_LESEN_MARKTLOKATION_IDENTIFIZIERUNG
         type: string 
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml        
   responses:
     "200":
       content:
@@ -79,6 +79,12 @@ get:
           schema:
             $ref: "../../components/responses/ERROR_RESPONSE.yml"
       description: Fehlerhafte Anfrage | Bad Request
+    "422":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Nicht verarbeitbare Anfrage
   summary: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
   tags:
     - LESEN | READ
