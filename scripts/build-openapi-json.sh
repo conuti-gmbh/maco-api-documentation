@@ -3,6 +3,7 @@
 # Define input and output files
 BO4E_OPENAPI_YAML="bo4e/bo4e-openapi.yaml"
 EVENTS_OPENAPI_YAML="events/events-openapi.yaml"
+MALOIDENT_OPENAPI_YAML="maloidentevent/events-maloident.yaml"
 OUTPUT_DIR="_build"
 
 # Define a function to build and minify OpenAPI JSON
@@ -20,8 +21,12 @@ build_and_minify_openapi() {
   rm "${OUTPUT_DIR}/${output_filename}.json"
 }
 
+
+build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "events-maloident"
+
 # Build and minify bo4e-openapi.json
 build_and_minify_openapi "$BO4E_OPENAPI_YAML" "bo4e-openapi"
 
 # Build and minify events-openapi.json
 build_and_minify_openapi "$EVENTS_OPENAPI_YAML" "events-openapi"
+
