@@ -1,0 +1,207 @@
+description: "Schema Versand einer MaloIdent Anfrage via API-Webdienst"
+type: object
+properties:
+  data:
+    type: object
+    properties:
+      stammdaten:
+        type: object
+        properties:
+          MARKTLOKATION:
+            type: array
+            items:
+              type: object
+              properties:
+                boTyp:
+                  type: string
+                  example: "MARKTLOKATION"
+                versionStruktur:
+                  type: string
+                  example: "1"
+                marktlokationsId:
+                  type: string
+                  pattern: \d{11}
+                  example: "57685676748"
+                energierichtung:
+                  $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energierichtung"
+                lokationsadresse:
+                  $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Adresse"
+                katasterinformation:
+                  $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Katasteradresse"
+                geokoordinaten:
+                  $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Geokoordinaten"                
+              required:
+                - boTyp                      
+                - versionStruktur      
+                - energierichtung                                  
+          TRANCHE:
+            type: array
+            items:
+              type: object
+              properties:
+                boTyp:
+                  type: string
+                  example: "TRANCHE"
+                versionStruktur:
+                  type: string
+                  example: "1"
+                tranchenId:
+                  type: string
+                  pattern: \d{11}
+                  example: "57685676742"
+              required:
+                - boTyp                      
+                - versionStruktur                       
+          MESSLOKATION:
+            type: array
+            items:
+              type: object
+              properties:
+                boTyp:
+                  type: string
+                  example: "MESSLOKATION"
+                versionStruktur:
+                  type: string
+                  example: "1"
+                messlokationsId:
+                  type: string
+                  pattern: "DE\\d{11}[A-Z,\\d]{20}"
+                  example: "DE00014545768S0000000000000003054"
+              required:
+                - boTyp                      
+                - versionStruktur                    
+          ZAEHLER:
+            type: array
+            items:
+              type: object
+              properties:
+                boTyp:
+                  type: string
+                  example: "ZAEHLER"
+                versionStruktur:
+                  type: string
+                  example: "1"
+                zaehlernummer:
+                  type: string
+                  example: "1SM-8465929523"
+              required:
+                - boTyp                      
+                - versionStruktur                    
+          ENERGIELIEFERVERTRAG:
+            type: array
+            items:
+              type: object
+              properties:
+                boTyp:
+                  type: string
+                  example: "VERTRAG"
+                versionStruktur:
+                  type: string
+                  example: "1"
+                vertragsart:
+                  type: string
+                  example: "ENERGIELIEFERVERTRAG"
+                vertragspartner2:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      boTyp:
+                        type: string
+                        example: "GESCHAEFTSPARTNER"
+                      versionStruktur:
+                        type: string
+                        example: "1"
+                      anrede:
+                        type: string
+                        example: "Prof.Dr."
+                      name1:
+                        type: string
+                        example: "Becker"
+                      name2:
+                        type: string
+                        example: "Michael"
+                      gewerbekennzeichnung:
+                        type: boolean
+                        example: false
+                      geschaeftspartnerrolle:
+                        type: array
+                        items:
+                          type: string
+                          example: "KUNDE"
+                      externeReferenzen:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            exRefName:
+                              type: string
+                              example: "Kundennummer beim Altlieferanten"
+                            exRefWert:
+                              type: string
+                              example: "V567345345"
+              required:
+                - boTyp                      
+                - versionStruktur                                
+        required:
+          - MARKTLOKATION
+      transaktionsdaten:
+        type: object
+        properties:
+          vorgangsnummer:
+            type: string
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          nachrichtendatum:
+            type: string
+            pattern: "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ"            
+            example: "2023-08-01T12:30:00Z"
+          ausfuehrungsdatum:
+            type: string
+            pattern: "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ"
+            example: "2023-08-02T22:00:00Z"
+          idempodenzschluessel:
+            type: string
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          absender:
+            type: object
+            properties:
+              rollencodenummer:
+                type: string
+                example: "4045458000000"
+              rollencodetype:
+                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
+            required:
+              - rollencodenummer
+              - rollencodetype
+          empfaenger:
+            type: object
+            properties:
+              rollencodenummer:
+                type: string
+                example: "4045458000000"
+              rollencodetype:
+                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
+            required:
+              - rollencodenummer
+              - rollencodetype   
+        required:
+          - ausfuehrungsdatum
+          - vorgangsnummer                           
+      zusatzdaten:
+        type: object
+        properties:
+          prozessId:
+            type: string
+            example: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
+          eventName:
+            type: string
+            example: "START_MALOIDENT"
+        required:
+          - prozessId
+          - eventName    
+    required:
+      - stammdaten
+      - transaktionsdaten
+      - zusatzdaten                      
+required:
+  - data

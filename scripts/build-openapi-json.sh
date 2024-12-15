@@ -3,7 +3,9 @@
 # Define input and output files
 BO4E_OPENAPI_YAML="bo4e/bo4e-openapi.yaml"
 EVENTS_OPENAPI_YAML="events/events-openapi.yaml"
-MALOIDENT_OPENAPI_YAML="maloidentevent/events-maloident.yaml"
+MALOIDENT_OPENAPI_YAML="maloident-macoapp/maloident-macoapp.yaml"
+MALOIDENT_NB_YAML="maloident-netzbetreiber/maloident-netzbetreiber.yaml"
+MALOIDENT_LF_YAML="maloident-lieferant/maloident-lieferant.yaml"
 OUTPUT_DIR="_build"
 
 # Define a function to build and minify OpenAPI JSON
@@ -22,7 +24,11 @@ build_and_minify_openapi() {
 }
 
 
-build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "events-maloident"
+build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "maloident-macoapp"
+
+build_and_minify_openapi "$MALOIDENT_NB_YAML" "maloident-netzbetreiber"
+
+build_and_minify_openapi "$MALOIDENT_LF_YAML" "maloident-lieferant"
 
 # Build and minify bo4e-openapi.json
 build_and_minify_openapi "$BO4E_OPENAPI_YAML" "bo4e-openapi"

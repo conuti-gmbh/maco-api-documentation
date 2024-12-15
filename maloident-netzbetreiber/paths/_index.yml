@@ -1,0 +1,2 @@
+/core/inbound:
+  $ref: START_MALOIDENT.yml

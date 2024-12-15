@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
-  title: MaloIdent Event API
+  title: Schnittstellen des Netzbetreiber Backends für MaloIdent Lösung
   description: |
-    Schnittstelle zum Start des MaloIdent durch den Lieferanten
+    Folgende Schnittstellen muss das Backend des Netzbetreibers bereitstellen, die von der MaloIdent Lösung für eine Integration konsumiert werden müssen.
 
     <details>
     <summary>Changelog</summary>
@@ -28,7 +28,9 @@ servers:
   - url: https://demoapi.macoapp.de
     description: Beispiel URL (Test- und produktive URL weichen ab)
 tags:
-  - name: LIEFERANT
-    description: Trigger Events aus dem Backend in der Rolle Lieferant         
+  - name: IDENTIFIZIERUNG
+    description: Schnittstellen die das Backend des Netzbetreibers für die Identifizierung bereitstellen muss        
+  - name: MALODATEN
+    description: Schnittstellen die das Backend des Netzbetreibers für die Erzeugung der Marktantwort bereitstellen muss     
 paths:
   $ref: paths/_index.yml

@@ -1,8 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "MaloIdent Event API",
-    "description": "Schnittstelle zum Start des MaloIdent durch den Lieferanten\n\n<details>\n<summary>Changelog</summary>\n\n**Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Aktualisierung des Event Schema - Entferung Netznutzungsvertrag\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.\n\n</details>\n",
+    "title": "Schnittstellen des Netzbetreiber Backends für MaloIdent Lösung",
+    "description": "Folgende Schnittstellen muss das Backend des Netzbetreibers bereitstellen, die von der MaloIdent Lösung für eine Integration konsumiert werden müssen.\n\n<details>\n<summary>Changelog</summary>\n\n**Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Aktualisierung des Event Schema - Entferung Netznutzungsvertrag\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.\n\n</details>\n",
     "version": "1.0.2",
     "license": {
       "name": "Apache 2.0",
@@ -17,8 +17,12 @@
   ],
   "tags": [
     {
-      "name": "LIEFERANT",
-      "description": "Trigger Events aus dem Backend in der Rolle Lieferant"
+      "name": "IDENTIFIZIERUNG",
+      "description": "Schnittstellen die das Backend des Netzbetreibers für die Identifizierung bereitstellen muss"
+    },
+    {
+      "name": "MALODATEN",
+      "description": "Schnittstellen die das Backend des Netzbetreibers für die Erzeugung der Marktantwort bereitstellen muss"
     }
   ],
   "paths": {

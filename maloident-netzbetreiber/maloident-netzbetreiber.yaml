@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: Schnittstellen des Netzbetreiber Backends für MaloIdent Lösung
+  description: |
+    Folgende Schnittstellen muss das Backend des Netzbetreibers bereitstellen, die von der MaloIdent Lösung für eine Integration konsumiert werden müssen.
+
+    <details>
+    <summary>Changelog</summary>
+    
+    **Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_
+      - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung
+    
+    **Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_
+
+    - Aktualisierung des Event Schema - Entferung Netznutzungsvertrag
+
+    **Version 1.0.0** - *01. November 2024* - _Autor: DAS_
+
+    - Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.
+
+    </details>
+  version: 1.0.2
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+
+servers:
+  - url: https://demoapi.macoapp.de
+    description: Beispiel URL (Test- und produktive URL weichen ab)
+tags:
+  - name: IDENTIFIZIERUNG
+    description: Schnittstellen die das Backend des Netzbetreibers für die Identifizierung bereitstellen muss        
+  - name: MALODATEN
+    description: Schnittstellen die das Backend des Netzbetreibers für die Erzeugung der Marktantwort bereitstellen muss     
+paths:
+  $ref: paths/_index.yml
