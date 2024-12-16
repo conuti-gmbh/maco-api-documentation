@@ -94,7 +94,7 @@ properties:
   rollencodetypAbsender:
     default: SOME_STRING
     type: string
-  rollencodetypEmpfaenger:
+  rollencodetypmpfaenger:
     default: SOME_STRING
     type: string
   sparte:

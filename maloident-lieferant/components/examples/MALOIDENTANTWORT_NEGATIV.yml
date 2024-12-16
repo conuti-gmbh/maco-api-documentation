@@ -1,0 +1,15 @@
+data:
+  transaktionsdaten:
+    vorgangsnummer: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    nachrichtendatum: "2023-08-01T12:30:00Z"
+    idempodenzschluessel: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    vorgangsreferenznummer: "f81d4fae-7dec-11d0-a765-00a0c91e6bf7"
+    antwortstatusCodeliste: "E_0594"
+    antwortstatus: "A10"
+    freitext:
+      freitext1: "Ich bin ein Freitext"
+    beteiligterMarktpartner:
+      boTyp: "MARKTTEILNEHMER"
+      versionStruktur: "1"
+      marktrolle: "NB"
+      rollencodenummer: "9900987654321"

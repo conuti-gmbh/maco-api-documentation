@@ -168,22 +168,22 @@ properties:
               rollencodenummer:
                 type: string
                 example: "4045458000000"
-              rollencodetype:
+              rollencodetyp:
                 $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetype
+              - rollencodetyp
           empfaenger:
             type: object
             properties:
               rollencodenummer:
                 type: string
                 example: "4045458000000"
-              rollencodetype:
+              rollencodetyp:
                 $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetype   
+              - rollencodetyp   
         required:
           - ausfuehrungsdatum
           - vorgangsnummer                           

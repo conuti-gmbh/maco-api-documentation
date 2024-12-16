@@ -1,6 +1,8 @@
 post:
   deprecated: false
-  description: Versand einer MaloIdent Anfrage via API-Webdienst an den Netzbetreiber
+  description: > 
+    Triggert den Versand einer MaloIdent Anfrage via API-Webdienst an den Netzbetreiber durch die MaloIdent APP. Die Anfrage wird identifiziert durch den Eventnamen **START_MALOIDENT**. 
+    Zusätzlich ist eine eindeutige ID **prozessId** aus dem Backend mit zu übergeben, mit der die spätere Antwort vom Netzbetreiber wieder an das Backend übergeben werden kann.
   operationId: START_MALOIDENT
   parameters: []
   requestBody:

@@ -94,7 +94,7 @@ properties:
   rollencodetypabsender:
     default: '9900321000005'
     type: string
-  rollencodetypempfaenger:
+  rollencodetypmpfaenger:
     default: '9900321000005'
     type: string
   sparte:

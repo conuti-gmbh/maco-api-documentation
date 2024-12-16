@@ -1,36 +1,47 @@
 openapi: 3.1.0
 info:
-  title: Schnittstellen des Netzbetreiber Backends für MaloIdent Lösung
+  title: Schnittstellen des Lieferanten Backends für MaloIdent Lösung
   description: |
-    Folgende Schnittstellen muss das Backend des Netzbetreibers bereitstellen, die von der MaloIdent Lösung für eine Integration konsumiert werden müssen.
+    Folgende Schnittstellen muss das Backend des Lieferanten bereitstellen um die MaloIdent Antwort empfangen zu können
 
     <details>
     <summary>Changelog</summary>
     
-    **Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_
-      - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung
+    **Version 1.0.2** - *10. Dezember 2024* - _Autor: DAS_
+      - Aktualisierung der zusatzdaten
     
     **Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_
 
-    - Aktualisierung des Event Schema - Entferung Netznutzungsvertrag
+    - Ergänzung  `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_NEGATIV`-Schema.
 
     **Version 1.0.0** - *01. November 2024* - _Autor: DAS_
 
-    - Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.
+    - Initiale Veröffentlichung der Doku mit dem `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_POSITIV`-Schema.
 
     </details>
+
+    Alle Schnittstellen der MaloIdent Lösung für den Netzbetreiber befinden sich auf dieser Seite:  
+    [Netzbetreiber Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/netzbetreiber)
+
+    Alle Schnittstellen der MaloIdent Lösung für den Lieferanten befinden sich auf dieser Seite:  
+    [Lieferant Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/lieferant)
+
   version: 1.0.2
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 
+externalDocs:
+  description: "MaloIdent Dokumentation"
+  url: "https://doku.macoapp.conuti.de/maloIdent"  
+
 servers:
   - url: https://demoapi.macoapp.de
     description: Beispiel URL (Test- und produktive URL weichen ab)
 tags:
-  - name: IDENTIFIZIERUNG
-    description: Schnittstellen die das Backend des Netzbetreibers für die Identifizierung bereitstellen muss        
-  - name: MALODATEN
-    description: Schnittstellen die das Backend des Netzbetreibers für die Erzeugung der Marktantwort bereitstellen muss     
+  - name: POSITIV
+    description: Schnittstellen die das Backend des Lieferanten für den Empfang der positiven Marktantwort bereitstellen muss     
+  - name: NEGATIV
+    description: Schnittstellen die das Backend des Lieferanten für den Empfang der negativen Marktantwort bereitstellen muss      
 paths:
   $ref: paths/_index.yml

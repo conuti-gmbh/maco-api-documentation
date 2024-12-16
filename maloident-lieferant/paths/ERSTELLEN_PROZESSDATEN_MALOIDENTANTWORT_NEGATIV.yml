@@ -1,0 +1,29 @@
+post:
+  description:
+    Negative Antwort des Netzbetreibers mit den Informationen der Transaktion inklusive Ablehngrund, sowie Referenz auf ursprüngliche Anfrage, die im Backend verbucht werden sollen.
+  operationId: ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_NEGATIV
+  requestBody:
+    content:
+      application/json:
+        examples:
+          "Negative Antwort auf eine MaloIdent Anfrage via API-Webdienst":
+            $ref: "../components/examples/MALOIDENTANTWORT_NEGATIV.yml"
+        schema:
+          $ref: "../components/schemas/MALOIDENTANTWORT_NEGATIV.yml"
+    required: true
+  responses:
+    '201':
+      content:
+        application/json:
+          schema:
+            $ref: '../components/responses/event_responses_success.yml'
+      description: Die Antwort wurde erfolgreich empfangen und zur Verbuchung übergeben
+    '400':
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/event_response_fail.yml"
+      description: Fehler - die Antwort konnte nicht erfolgreich zur Verbuchung übergeben werden
+  summary: ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_NEGATIV
+  tags:
+    - NEGATIV

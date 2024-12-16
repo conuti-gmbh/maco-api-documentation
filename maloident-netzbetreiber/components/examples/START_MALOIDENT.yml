@@ -58,10 +58,10 @@ value:
       ausfuehrungsdatum: "2023-08-02T22:00:00Z"
       absender:
         rollencodenummer: "4045458000000"
-        rollencodetype: "BDEW"
+        rollencodetyp: "BDEW"
       empfaenger:
         rollencodenummer: "4045458000000"
-        rollencodetype: "BDEW"
+        rollencodetyp: "BDEW"
   zusatzdaten:
     prozessId: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
     eventName: "START_MALOIDENT"

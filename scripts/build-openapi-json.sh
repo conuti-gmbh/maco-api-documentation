@@ -23,12 +23,12 @@ build_and_minify_openapi() {
   rm "${OUTPUT_DIR}/${output_filename}.json"
 }
 
-
+build_and_minify_openapi "$MALOIDENT_LF_YAML" "maloident-lieferant"
 build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "maloident-macoapp"
 
 build_and_minify_openapi "$MALOIDENT_NB_YAML" "maloident-netzbetreiber"
 
-build_and_minify_openapi "$MALOIDENT_LF_YAML" "maloident-lieferant"
+
 
 # Build and minify bo4e-openapi.json
 build_and_minify_openapi "$BO4E_OPENAPI_YAML" "bo4e-openapi"

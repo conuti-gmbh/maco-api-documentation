@@ -40,7 +40,7 @@ properties:
                   $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Adresse"
                   description: > 
                     Angabe des Ortes, Postleitzahl, Ländercode, Straße, Hausnummer, Hausnummernergänzung der Marktlokationsadresse
-                    | Mapping auf identificationParameterId.maloId                    
+                    | Mapping auf identificationParameterAddress                    
                 katasterinformation:
                   $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Katasteradresse"
                   description: > 
@@ -255,11 +255,11 @@ properties:
                 type: string
                 example: "9904000000005"
                 description: Eigene ILN
-              rollencodetype:
+              rollencodetyp:
                 $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetype
+              - rollencodetyp
           empfaenger:
             type: object
             description: ILN und Rollencodetyp des Netzbetreibers, an den die Identanfrage gestellt werden soll    
@@ -268,11 +268,11 @@ properties:
                 type: string
                 example: "9900936000002"
                 description: ILN des Netzbetreibers, an den die Identanfrage gestellt werden soll
-              rollencodetype:
+              rollencodetyp:
                 $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetype   
+              - rollencodetyp   
         required:
           - ausfuehrungsdatum
           - vorgangsnummer 
@@ -281,7 +281,7 @@ properties:
       zusatzdaten:
         type: object
         description: > 
-          Informationscontainer z
+          Informationscontainer zur Identifikation des Prozesses
         properties:
           prozessId:
             type: string

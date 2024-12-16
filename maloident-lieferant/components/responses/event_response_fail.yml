@@ -1,6 +1,6 @@
 type: object
 description: >-
-  Fehlermeldung auf Prozessdaten API Aufruf | Error message on process
+  Fehlermeldung auf Prozessdaten API Aufruf 
   data API call
 properties:
   errorCode:
