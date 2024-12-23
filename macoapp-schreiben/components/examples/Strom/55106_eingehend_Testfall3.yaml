@@ -1,0 +1,102 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - aggregationsverantwortung: VNB
+      bilanzierungsbeginn: '2024-07-31T22:00:00Z'
+      boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - TLP_TEP
+      jahresverbrauchsprognose:
+        einheit: KWH
+        wert: 500
+      lastprofile:
+      - bezeichnung: E6
+        einspeisung: true
+        herausgeber: NB
+        profilart: ART_STANDARDLASTPROFIL
+        verfahren: SYNTHETISCH
+      - bezeichnung: XYZ
+        einspeisung: true
+        herausgeber: NB
+        profilart: ART_TAGESPARAMETERABHAENGIGES_LASTPROFIL
+        profilschar: ABC
+        tagesparameter:
+          dienstanbieter: DWD
+          herausgeber: BDEW
+          temperaturmessstelle: '1234'
+        verfahren: SYNTHETISCH
+      marktlokationsId: '50074561188'
+      prognosegrundlage: PROFILE
+      temperaturarbeit:
+        einheit: KWHK
+        wert: 50
+      versionStruktur: '1'
+      zeitreihentyp: SES
+    MARKTLOKATION:
+    - beteiligterMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        rollencodenummer: '4045458000000'
+        rollencodetyp: BDEW
+        versionStruktur: '1'
+      bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: EINSP
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZLOKATION:
+    - boTyp: NETZLOKATION
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-07-31T22:00:00Z'
+    TRANCHE:
+    - aufteilungsmenge:
+        einheit: PROZENT
+        wert: 50
+      bildungTranchengroesse: PROZENTUAL
+      boTyp: TRANCHE
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      referenzTranche: '50074561189'
+      sparte: STROM
+      tranchenId: '50074561189'
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreiszuordnung: ERFOLGREICH
+    datenaustauschreferenz: '102720'
+    dokumentennummer: 718005BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-07-31T22:00:00Z'
+    kategorie: Z22
+    nachrichtendatum: '2024-05-05T10:00:00Z'
+    nachrichtenreferenznummer: '718005'
+    pruefidentifikator: '55106'
+    sparte: STROM
+    transaktionsgrund: ZE5
+    vorgangsnummer: '572939986'
+  zusatzdaten: {}

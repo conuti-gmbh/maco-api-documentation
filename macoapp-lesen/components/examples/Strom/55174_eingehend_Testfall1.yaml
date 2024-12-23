@@ -1,0 +1,33 @@
+value:
+  stammdaten:
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC123456
+    antwortstatus: E15
+    antwortstatusCodeliste: S_0014
+    datenaustauschreferenz: '154854'
+    dokumentennummer: 462318BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-18T06:56:00Z'
+    nachrichtenreferenznummer: '462318'
+    pruefidentifikator: '55174'
+    sparte: STROM
+    transaktionsgrund: ZP6
+    vorgangsnummer: '635228818'
+  zusatzdaten: {}

@@ -65,11 +65,8 @@ properties:
                 type: string
                 example: "9900936000002"
                 description: ILN des Netzbetreibers, der auf die MaloIdent Anfrage geantwortet hat  
-              rollencodetyp:
-                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetyp
           empfaenger:
             type: object
             description: Eigene ILN und Rollencodetyp 
@@ -78,11 +75,8 @@ properties:
                 type: string
                 example: "9904000000005"
                 description: Eigene ILN
-              rollencodetyp:
-                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:                       
-              - rollencodenummer
-              - rollencodetyp   
+              - rollencodenummer 
           beteiligterMarktpartner:
             type: object
             description: Identifiziert den korrekten Netzbetreiber falls sich die Marktlokation nicht mehr im Netzgebiet des Senders befindet

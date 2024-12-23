@@ -1,0 +1,54 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:1.9.1
+        wertegranularitaet: MONATLICH
+        zaehlzeiten:
+          register: XYZ
+          zaehlzeitDefinition: ABC
+      - obisKennzahl: 1-1:1.9.2
+        wertegranularitaet: MONATLICH
+        zaehlzeiten:
+          register: XYZ
+          zaehlzeitDefinition: ABC
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC123456
+    antwortstatus: A01
+    antwortstatusCodeliste: E_0557
+    datenaustauschreferenz: '194421'
+    dokumentennummer: 589357BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: Z56
+    nachrichtendatum: '2024-04-03T12:29:00Z'
+    nachrichtenreferenznummer: '589357'
+    pruefidentifikator: '55556'
+    sparte: STROM
+    transaktionsgrund: ZT9
+    vorgangsnummer: '1189179279'
+  zusatzdaten: {}

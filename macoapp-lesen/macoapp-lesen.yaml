@@ -1,0 +1,80 @@
+openapi: 3.1.0
+info:
+  title: >-
+    MACO APP - erforderliche BO4E- und Prozessschnittstellen Backend Schnittstellen
+  license:
+    name: MIT
+    url: "https://opensource.org/licenses/MIT"
+  description: >
+    Übersicht der erforderlichen BO4E- und Prozessschnittstellen, die die MACO
+    APP für die Ausführung der Marktprozesse benötigt. 
+
+
+    <details>
+
+    <summary>Changelog</summary>
+
+    - **Version 1.2.0** - *16. Dezember 2024* - _Autor: DAS_
+      - Reduzierung auf lesende Schnittstellen
+
+    - **Version 1.1.4** - *14. November 2024* - _Autor: DAS_
+      - AKTUALISIEREN_MDOC_BASIS ergänzt
+
+    - **Version 1.1.4** - *14. November 2024* - _Autor: DAS_
+      - AKTUALISIEREN_MDOC_BASIS ergänzt
+
+    - **Version 1.1.3** - *12. November 2024* - _Autor: DAS_
+      - LESEN_BILANZIERUNG_BASIS ergänzt
+
+    - **Version 1.1.2** - *24. Oktober 2024* - _Autor: DAS_
+      - LESEN_BRECHNUNGSFORMEL_BASIS ergänzt
+
+    - **Version 1.1.1** - *04. Oktober 2024* - _Autor: DAS_
+      - Anpassung der default Parameter : parameter1 = LokationsId / parameter2 = LokationsTyp / parameter3 = Parameter3 - gueltigAb - stichtag
+    
+    - **Version 1.1.0** - *26. September 2024* - _Autor: Tu Quy Nguyen_
+      - refactor openapi document
+
+    - **Version 1.0.5** - *18. September 2024* - _Autor: DAS_
+      - Update Default Command auf SAP_ statt NOCODB_
+      - Update Default Beispiel MaloId auf 74018657187
+
+
+    - **Version 1.0.4** - *13. September 2024* - _Autor: Tu Quy Nguyen_
+      - Update Formatierungen
+
+
+    - **Version 1.0.3** - *28. August 2024* - _Autor: Tu Quy Nguyen_
+      - Aktualisierung Parameter LESEN Schnittstellen
+
+
+    - **Version 1.0.2** - *20. August 2024* - _Autor: Tu Quy Nguyen_
+      - Schema ergänzt für START_N_BILA_REL_AEND_VON_NB, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_N_BILA_REL_AEND_VON_LF, START_MESSWERTUEBERMITTLUNG, START_MALOIDENT, START_LIEFERENDE, START_KUENDIGUNG
+
+
+    - **Version 1.0.1** - *08. August 2024* - _Autor: DAS_
+      - Hinzufügen von mehrsprachigen Beschreibungen und Changelog.
+      - Anpassung der Schema-Beschreibungen in Deutsch und Englisch.
+
+
+    - **Version 1.0** - *01. August 2024* - _Autor: DAS_
+      - Initiale Version der API-Dokumentation.
+
+    </details>
+  version: 1.2.0
+servers:
+  - url: "https://api.macoapp.de"
+    description: Mock-Umgebung | Mock environment
+tags:
+  - name: EVENTDATEN | EVENT DATA
+    description: Lesen von Eventdaten im ERP System | Reading event data in the ERP system
+  - name: LESEN |
+    description: Lesender Zugriff auf Geschäftsobjekte 
+    externalDocs:
+      description: BO4E JSON Schema
+      url: 'https://github.com/conuti-gmbh/bo4e-schema'
+
+
+security: []
+paths:
+  $ref: "commands/_index.yml"

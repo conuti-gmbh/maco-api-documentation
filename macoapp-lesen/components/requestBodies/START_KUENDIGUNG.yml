@@ -1,0 +1,20 @@
+description: "Schema für Lieferende | Scheme for termination"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  marktlokationsId:
+    default: '74018657187'
+    type: string
+  sparte:
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
+  vertragsart:
+    default: ENERGIELIEFERVERTRAG
+    type: string
+  zaehlernummer:
+    default: '123456789'
+    type: string
+type: object

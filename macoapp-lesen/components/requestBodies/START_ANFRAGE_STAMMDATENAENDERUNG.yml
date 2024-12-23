@@ -1,0 +1,312 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  aLandescode:
+    default: de
+    type: string
+  aPostleitzahl:
+    default: '12345'
+    type: string
+  aanrede:
+    default: SOME_STRING
+    type: string
+  abrechnungsintervall:
+    default: SOME_STRING
+    type: string
+  absender:
+    default: '9900321000005'
+    type: string
+  ageschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  agewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  ahausnummer:
+    default: '123'
+    type: string
+  aname1:
+    default: SOME_STRING
+    type: string
+  aname2:
+    default: SOME_STRING
+    type: string
+  aname3:
+    default: SOME_STRING
+    type: string
+  aname4:
+    default: SOME_STRING
+    type: string
+  aort:
+    default: Berlin
+    type: string
+  astrasse:
+    default: SOME_STRING
+    type: string
+  bezeichnung:
+    default: SOME_STRING
+    type: string
+  bilanzkreis:
+    default: SOME_STRING
+    type: string
+  dienstanbieter:
+    default: SOME_STRING
+    type: string
+  eLandescode:
+    default: de
+    type: string
+  ePostleitzahl:
+    default: '12345'
+    type: string
+  egeschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  egewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  ehausnummer:
+    default: '123'
+    type: string
+  einheit:
+    default: SOME_STRING
+    type: string
+  einspeisung:
+    default: SOME_STRING
+    type: string
+  empfaenger7:
+    default: SOME_STRING
+    type: string
+  ename1:
+    default: SOME_STRING
+    type: string
+  eort:
+    default: Berlin
+    type: string
+  estrasse:
+    default: SOME_STRING
+    type: string
+  exRefName:
+    default: SOME_STRING
+    type: string
+  exRefWert:
+    default: SOME_STRING
+    type: string
+  gasqualitaet:
+    default: SOME_STRING
+    type: string
+  geraetemerkmal2:
+    default: SOME_STRING
+    type: string
+  geraetemerkmal3:
+    default: SOME_STRING
+    type: string
+  geraetenummer1:
+    default: SOME_STRING
+    type: string
+  geraetenummer2:
+    default: SOME_STRING
+    type: string
+  geraetenummer3:
+    default: SOME_STRING
+    type: string
+  geraetenummer4:
+    default: SOME_STRING
+    type: string
+  geraetetyp1:
+    default: SOME_STRING
+    type: string
+  geraetetyp2:
+    default: SOME_STRING
+    type: string
+  geraetetyp3:
+    default: SOME_STRING
+    type: string
+  geraetetyp4:
+    default: SOME_STRING
+    type: string
+  geschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  gewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  gmsbmarktrolle:
+    default: SOME_STRING
+    type: string
+  gmsbrollencodenummer:
+    default: SOME_STRING
+    type: string
+  gueltigAb:
+    default: SOME_STRING
+    type: string
+  hLandescode:
+    default: de
+    type: string
+  hPostleitzahl:
+    default: '12345'
+    type: string
+  herausgeber:
+    default: SOME_STRING
+    type: string
+  hgeschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  hgewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  hhausnummer:
+    default: '123'
+    type: string
+  hname1:
+    default: SOME_STRING
+    type: string
+  hort:
+    default: Berlin
+    type: string
+  hstrasse:
+    default: SOME_STRING
+    type: string
+  kLandescode:
+    default: de
+    type: string
+  kPostleitzahl:
+    default: '12345'
+    type: string
+  kanrede:
+    default: SOME_STRING
+    type: string
+  kategorie:
+    default: SOME_STRING
+    type: string
+  kgewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  khausnummer:
+    default: '123'
+    type: string
+  kname1:
+    default: SOME_STRING
+    type: string
+  kname2:
+    default: SOME_STRING
+    type: string
+  kname3:
+    default: SOME_STRING
+    type: string
+  kname4:
+    default: SOME_STRING
+    type: string
+  kort:
+    default: Berlin
+    type: string
+  kstrasse:
+    default: SOME_STRING
+    type: string
+  marktmarktlokationsId:
+    default: '74018657187'
+    type: string
+  messlokationsId:
+    default: DE12345678901234567890123456789012
+    type: string
+  messwerterfassung:
+    default: SOME_STRING
+    type: string
+  msbmarktrolle:
+    default: SOME_STRING
+    type: string
+  msbrollencodenummer:
+    default: SOME_STRING
+    type: string
+  nachkommastelle:
+    default: SOME_STRING
+    type: string
+  name1:
+    default: SOME_STRING
+    type: string
+  name2:
+    default: SOME_STRING
+    type: string
+  name3:
+    default: SOME_STRING
+    type: string
+  name4:
+    default: SOME_STRING
+    type: string
+  nnvableseZeitraum:
+    default: SOME_STRING
+    type: string
+  nnvgeschaeftspartnerrolle:
+    default: SOME_STRING
+    type: string
+  nnvgewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  nnvkLandescode:
+    default: de
+    type: string
+  nnvkPostleitzahl:
+    default: '12345'
+    type: string
+  nnvkgewerbekennzeichnung:
+    default: SOME_STRING
+    type: string
+  nnvkhausnummer:
+    default: '123'
+    type: string
+  nnvkname1:
+    default: SOME_STRING
+    type: string
+  nnvkort:
+    default: Berlin
+    type: string
+  nnvkstrasse:
+    default: SOME_STRING
+    type: string
+  nnvname1:
+    default: SOME_STRING
+    type: string
+  obisKennzahl:
+    default: SOME_STRING
+    type: string
+  profilart:
+    default: SOME_STRING
+    type: string
+  prognosegrundlage:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
+  temperaturmessstelle:
+    default: SOME_STRING
+    type: string
+  transaktionsgrund:
+    default: SOME_STRING
+    type: string
+  verfahren:
+    default: SOME_STRING
+    type: string
+  vertragsbeginn:
+    default: '2024-04-01T07:40:00Z'
+    type: string
+  vorkommastelle:
+    default: SOME_STRING
+    type: string
+  wert:
+    default: SOME_STRING
+    type: string
+  wertegranularitaet:
+    default: SOME_STRING
+    type: string
+  wertk:
+    default: SOME_STRING
+    type: string
+  zaehlergroesse:
+    default: SOME_STRING
+    type: string
+  zaehlernummer:
+    default: SOME_STRING
+    type: string
+  zaehlertyp:
+    default: SOME_STRING
+    type: string
+type: object

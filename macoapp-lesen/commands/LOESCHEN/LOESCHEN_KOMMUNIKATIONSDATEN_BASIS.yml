@@ -1,0 +1,34 @@
+post:
+  description:
+    "Löschen der Kommunikationsdaten des Serviceanbieters (Parameter1)\
+    \ zum Zeitpunkt (Parameter2) | Deleting the communication data of the service\
+    \ provider (Parameter1) at the time (Parameter2)"
+  operationId: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
+  parameters:
+    - description: Name der Operation | Name of the operation
+      in: query
+      name: command
+      required: true
+      schema:
+        default: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
+        example: NOCODB_LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
+        type: string
+    - description: ILN Nummer | ILN number
+      in: query
+      name: parameter1
+      required: true
+      schema:
+        example: "9903790000002"
+        type: string
+    - $ref: ../../components/parameters/parameter2.yml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktteilnehmer"
+    required: true
+  responses:
+    $ref: "../../components/responses/default_response.yml"
+  summary: LOESCHEN_KOMMUNIKATIONSDATEN_BASIS
+  tags:
+    - "LÖSCHEN | DELETE"

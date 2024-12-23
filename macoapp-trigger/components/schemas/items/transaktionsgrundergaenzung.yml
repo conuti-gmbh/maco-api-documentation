@@ -1,0 +1,4 @@
+description: "Transaktionsgrundergänzung | transaction reason addition"
+example: E03
+default: E03
+type: string

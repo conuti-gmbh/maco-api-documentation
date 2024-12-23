@@ -1,0 +1,76 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+    MESSLOKATION:
+    - boTyp: MESSLOKATION
+      messlokationsId: DE0032106765712000000000000000037
+      netzebenemessung: NSP
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    ZAEHLER:
+    - boTyp: ZAEHLER
+      fernschaltung: NICHT_VORHANDEN
+      gateway: 1LGZ0063539433
+      geraete:
+      - geraetenummer: 1LGZ0063539433
+      - geraeteeigenschaften:
+          geraetemerkmal: LTE_KOM
+          geraetetyp: KOMMUNIKATIONSEINRICHTUNG
+        geraetenummer: ABC1234
+      - geraeteeigenschaften:
+          geraetetyp: STEUERBOX
+        geraetenummer: 1LGZ0063539444
+      marktlokationsId: '50074561188'
+      messlokationsId: DE0032106765712000000000000000037
+      messwerterfassung: MANUELL_AUSGELESENE
+      sparte: STROM
+      tarifart: EINTARIF
+      versionStruktur: '1'
+      zaehlerauspraegung: EINRICHTUNGSZAEHLER
+      zaehlernummer: 1LGZ0063539421
+      zaehlertyp: MODERNEMESSEINRICHTUNG
+      zaehlertypspezifikation: MME_STANDARD
+      zaehlwerke:
+      - konfiguration: 34590456ujdfsdghdlktztwqq053trg
+        nachkommastelle: 3
+        obisKennzahl: 1-1:1.8.0
+        vorkommastelle: 7
+        wertegranularitaet: JAEHRLICH
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '667814'
+    dokumentennummer: 852983BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-22T10:01:00Z'
+    nachrichtenreferenznummer: '852983'
+    pruefidentifikator: '55172'
+    sparte: STROM
+    transaktionsgrund: ZF5
+    vorgangsnummer: '263372045'
+  zusatzdaten: {}

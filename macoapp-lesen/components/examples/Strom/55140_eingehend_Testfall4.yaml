@@ -1,0 +1,46 @@
+value:
+  stammdaten:
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    TECHNISCHE_RESSOURCE:
+    - art: STROMVERBRAUCH
+      boTyp: TECHNISCHE_RESSOURCE
+      enwg: true
+      nennleistung:
+        aufnahme: 1000
+      referenzMarktlokation: '50074561188'
+      referenzMesslokation: DE0032106765712000000000000000037
+      referenzNetzlokation: E1688117482
+      referenzSteuerbareRessource: C816417ST77
+      ressourcenId: D417MLM8164
+      sparte: STROM
+      verbrauchsart: W
+      versionStruktur: '1'
+      waermenutzung: WAERMEPUMPE
+      weitereEinrichtung: false
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '136508'
+    dokumentennummer: 942981BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-19T09:21:00Z'
+    nachrichtenreferenznummer: '942981'
+    pruefidentifikator: '55140'
+    sparte: STROM
+    transaktionsgrund: ZF4
+    vorgangsnummer: '190582209'
+  zusatzdaten: {}

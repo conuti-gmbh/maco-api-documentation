@@ -1,0 +1,24 @@
+description: "Schema für start messwertuebermittlung | Scheme for start of measurement\
+  \ value transmission"
+properties:
+  absender:
+    default: '9900321000005'
+    type: string
+  empfaenger:
+    default: '9900321000005'
+    type: string
+  grund:
+    default: SOME_STRING
+    type: string
+  hinweis:
+    default: SOME_STRING
+    type: string
+  nummer:
+    default: SOME_STRING
+    type: string
+  sparte:
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Sparte'
+  typ:
+    default: SOME_STRING
+    type: string
+type: object

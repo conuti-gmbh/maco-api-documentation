@@ -1,0 +1,4 @@
+description: "Transaktionsgrund | transaction reason"
+example: Z02
+default: Z02
+type: string

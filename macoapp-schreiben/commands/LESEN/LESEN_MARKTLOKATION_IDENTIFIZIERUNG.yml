@@ -1,0 +1,90 @@
+get:
+  description:
+    Identifizierung einer Marktlokations (Funktion wurde für Demo umgesetzt)
+  operationId: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
+  parameters:
+    - description: name1
+      in: query
+      name: parameter4
+      required: true
+      schema:
+        example: "Becker"
+      type: string
+    - description: name2
+      in: query
+      name: parameter5
+      required: true
+      schema:
+        example: "Michael"
+      type: string
+    - description: postleitzahl
+      in: query
+      name: parameter6
+      required: true
+      schema:
+        example: "77746"
+      type: string
+    - description: ort
+      in: query
+      name: parameter7
+      required: true
+      schema:
+        example: "Schutterwald"
+      type: string
+    - description: strasse
+      in: query
+      name: parameter8
+      required: true
+      schema:
+        example: "Ahornweg"
+      type: string
+    - description: hausnummer
+      in: query
+      name: parameter9
+      required: true
+      schema:
+        example: "5"
+      type: string
+    - description: zaehlernummer
+      in: query
+      name: parameter10
+      required: true
+      schema:
+        example: "1760136806"
+      type: string                                    
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
+      in: query
+      name: command
+      required: true
+      schema:
+        default: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
+        example: SAP_LESEN_MARKTLOKATION_IDENTIFIZIERUNG
+        type: string 
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml        
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"
+      description:
+        Erfolgreiches Lesen der Marktlokation | Successful reading of the
+        market location
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+    "422":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Nicht verarbeitbare Anfrage
+  summary: LESEN_MARKTLOKATION_IDENTIFIZIERUNG
+  tags:
+    - LESEN | READ

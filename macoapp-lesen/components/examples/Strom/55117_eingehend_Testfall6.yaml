@@ -1,0 +1,76 @@
+value:
+  stammdaten:
+    MESSLOKATION:
+    - boTyp: MESSLOKATION
+      messlokationsId: DE0032106765712000000000000000037
+      netzebenemessung: NSP
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    ZAEHLER:
+    - boTyp: ZAEHLER
+      fernschaltung: VORHANDEN
+      geraete:
+      - geraetenummer: ABC12345678910
+      - geraeteeigenschaften:
+          faktor: 1
+          geraetemerkmal: MESSWANDLERSATZ_IMS_MME
+          geraetetyp: WANDLER
+        geraetenummer: ABC1
+      - geraeteeigenschaften:
+          geraetemerkmal: RUNDSTEUEREMPFAENGER
+          geraetetyp: STEUEREINRICHTUNG
+        geraetenummer: YYY123456
+      messlokationsId: DE0032106765712000000000000000037
+      messwerterfassung: MANUELL_AUSGELESENE
+      sparte: STROM
+      tarifart: EINTARIF
+      versionStruktur: '1'
+      zaehlerauspraegung: EINRICHTUNGSZAEHLER
+      zaehlernummer: ABC12345678910
+      zaehlertyp: DREHSTROMZAEHLER
+      zaehlwerke:
+      - bezeichnung: '1'
+        nachkommastelle: 3
+        obisKennzahl: 1-1:1.8.1
+        vorkommastelle: 7
+        wertegranularitaet: JAEHRLICH
+        zaehlzeiten:
+          register: XYZ
+          zaehlzeitDefinition: ABC
+      - bezeichnung: '2'
+        nachkommastelle: 3
+        obisKennzahl: 1-1:1.8.2
+        vorkommastelle: 7
+        wertegranularitaet: JAEHRLICH
+        zaehlzeiten:
+          register: XYZ
+          zaehlzeitDefinition: ABC
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC123456
+    datenaustauschreferenz: '515108'
+    dokumentennummer: 902638BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T13:49:00Z'
+    nachrichtenreferenznummer: '902638'
+    pruefidentifikator: '55117'
+    sparte: STROM
+    transaktionsgrund: ZE8
+    vorgangsnummer: '710947104'
+  zusatzdaten: {}

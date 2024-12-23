@@ -1,0 +1,58 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: EINSP
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: UENB
+        rollencodenummer: '4045399000077'
+        versionStruktur: '1'
+      netzbetreiberCodeNr: '9900321000005'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+    TRANCHE:
+    - boTyp: TRANCHE
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      referenzTranche: '50074561189'
+      sparte: STROM
+      tranchenId: '50074561189'
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '612555'
+    dokumentennummer: 710520BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: Z38
+    nachrichtendatum: '2024-04-03T12:39:00Z'
+    nachrichtenreferenznummer: '710520'
+    pruefidentifikator: '55188'
+    sparte: STROM
+    transaktionsgrund: E03
+    verwendungBis: '2024-06-30T22:00:00Z'
+    vorgangsnummer: '1974838079'
+  zusatzdaten: {}

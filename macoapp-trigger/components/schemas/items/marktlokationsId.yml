@@ -1,0 +1,3 @@
+description: Marktlokations-ID | Market location ID
+example: "50074561188"
+type: string

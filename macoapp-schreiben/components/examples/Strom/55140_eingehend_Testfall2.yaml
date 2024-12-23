@@ -1,0 +1,122 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - SLP_SEP
+      marktlokationsId: '50074561188'
+      prognosegrundlage: PROFILE
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      eigentuemer:
+        anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - EIGENTUEMER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      energierichtung: AUSSP
+      hausverwalter:
+        anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - HAUSVERWALTER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: UENB
+        rollencodenummer: '4045399000077'
+        versionStruktur: '1'
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9904446000007'
+        versionStruktur: '1'
+        weiterverpflichtet: false
+      messtechnischeEinordnung: KME_MME
+      netzebene: NSP
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      korrespondenzpartner:
+        anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+      vertragspartner2:
+      - anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - KUNDE
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '136508'
+    dokumentennummer: 942981BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-19T09:21:00Z'
+    nachrichtenreferenznummer: '942981'
+    pruefidentifikator: '55140'
+    sparte: STROM
+    transaktionsgrund: ZF4
+    vorgangsnummer: '190582209'
+  zusatzdaten: {}

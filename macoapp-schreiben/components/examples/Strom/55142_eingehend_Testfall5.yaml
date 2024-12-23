@@ -1,0 +1,52 @@
+value:
+  stammdaten:
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+    TECHNISCHE_RESSOURCE:
+    - art: SPEICHER
+      boTyp: TECHNISCHE_RESSOURCE
+      einordnung: WECHSELMOEGLICHKEIT_EINMALIG_NOCH_MOEGLICH
+      enwg: true
+      inbetriebsetzungsdatum: INBETRIEBSETZUN_VOR_2024
+      nennleistung:
+        abgabe: 1000
+        aufnahme: 1000
+      referenzMarktlokation: '50074561188'
+      referenzMesslokation: DE0032106765712000000000000000037
+      referenzNetzlokation: E1688117482
+      referenzSteuerbareRessource: C816417ST77
+      ressourcenId: D417MLM8164
+      sparte: STROM
+      speicherart: BATTERIESPEICHER
+      speicherkapazitaet: 1000
+      versionStruktur: '1'
+      weitereEinrichtung: false
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: ABC123456
+    antwortstatus: ZG2
+    antwortstatusCodeliste: S_0021
+    datenaustauschreferenz: '130421'
+    dokumentennummer: 877316BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T08:09:00Z'
+    nachrichtenreferenznummer: '877316'
+    pruefidentifikator: '55142'
+    sparte: STROM
+    transaktionsgrund: ZF4
+    vorgangsnummer: '1681288136'
+  zusatzdaten: {}

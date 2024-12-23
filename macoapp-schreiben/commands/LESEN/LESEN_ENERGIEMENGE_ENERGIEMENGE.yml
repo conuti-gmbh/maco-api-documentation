@@ -1,0 +1,40 @@
+get:
+  summary: LESEN_ENERGIEMENGE_ENERGIEMENGE
+  description:
+    "Lesen der Energiemengen aus Abrechnungskontext über eine LokationId (Parameter1) udn LokationsTyp (Parameter2) in einer\
+    \ Range (Parameter3/Parameter4) und einer OBIS Kennzahl (Parameter5 optional)\
+    \ | Reading an energy quantity for a location (Parameter1) in a range (Parameter2/Parameter3)\
+    \ and an OBIS code (Parameter4 optional)"
+  operationId: LESEN_ENERGIEMENGE_ENERGIEMENGE
+  parameters:
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
+    - $ref: ../../components/parameters/parameter5.yml    
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
+      in: query
+      name: command
+      required: true
+      schema:
+        default: LESEN_ENERGIEMENGE_ENERGIEMENGE
+        example: SAP_LESEN_ENERGIEMENGE_ENERGIEMENGE
+        type: string    
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energiemenge"
+      description:
+        Erfolgreiches Lesen der Energiemenge | Successful reading of the
+        energy quantity
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/OK_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+  tags:
+    - LESEN | READ

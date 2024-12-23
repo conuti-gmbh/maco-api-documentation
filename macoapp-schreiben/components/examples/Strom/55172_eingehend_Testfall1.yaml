@@ -1,0 +1,54 @@
+value:
+  stammdaten:
+    NETZLOKATION:
+    - auftraggebenderMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      boTyp: NETZLOKATION
+      konfigurationsprodukt: '9991000000721'
+      leistungskurvendefinition: ABC
+      netzlokationsId: E1688117482
+      produktdatenRelevanteRolle: LF
+      sparte: STROM
+      steuerkanal: true
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:5.29.0
+        verwendungszwecke:
+        - marktrolle: NB
+          zweck:
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+        - marktrolle: LF
+          zweck:
+          - ENDKUNDENABRECHNUNG
+          - BLINDARBEITABRECHNUNG_BETRIEBSFUEHRUNG
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '667814'
+    dokumentennummer: 852983BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-22T10:01:00Z'
+    nachrichtenreferenznummer: '852983'
+    pruefidentifikator: '55172'
+    sparte: STROM
+    transaktionsgrund: ZF5
+    vorgangsnummer: '263372045'
+  zusatzdaten: {}

@@ -2,12 +2,16 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Schnittstellen der MaloIdent Lösung",
-    "description": "Folgende Schnittstellen bietet die MaloIdent Lösung für die Anbindung an ein Backendsystem  \n\n<details>\n<summary>Changelog</summary>\n\n**Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Aktualisierung des Event Schema - Entferung Netznutzungsvertrag\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.\n\n</details>\n",
-    "version": "1.0.2",
+    "description": "Folgende Schnittstellen bietet die MaloIdent Lösung für die Anbindung an ein Backendsystem.  \n\n<details>\n<summary>Changelog</summary>   \n\n**Version 1.0.3** - *17. Dezember 2024* - _Autor: DAS_\n  - Rollencodetyp bei Absender und Emfpfaenger entfernt\n\n**Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Aktualisierung des Event Schema - Entferung Netznutzungsvertrag\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `START_MALOIDENT`-Schema.\n\n</details>\n\nAlle Schnittstellen der MaloIdent Lösung für den Netzbetreiber befinden sich auf dieser Seite:  \n[Netzbetreiber Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/netzbetreiber)\n\nAlle Schnittstellen der MaloIdent Lösung für den Lieferanten befinden sich auf dieser Seite:  \n[Lieferant Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/lieferant)\n",
+    "version": "1.0.3",
     "license": {
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     }
+  },
+  "externalDocs": {
+    "description": "MaloIdent Dokumentation",
+    "url": "https://doku.macoapp.conuti.de/maloIdent"
   },
   "servers": [
     {
@@ -25,7 +29,7 @@
     "/core/inbound": {
       "post": {
         "deprecated": false,
-        "description": "Versand einer MaloIdent Anfrage via API-Webdienst an den Netzbetreiber",
+        "description": "Triggert den Versand einer MaloIdent Anfrage via API-Webdienst an den Netzbetreiber durch die MaloIdent APP. Die Anfrage wird identifiziert durch den Eventnamen **START_MALOIDENT**.  Zusätzlich ist eine eindeutige ID **prozessId** aus dem Backend mit zu übergeben, mit der die spätere Antwort vom Netzbetreiber wieder an das Backend übergeben werden kann.\n",
         "operationId": "START_MALOIDENT",
         "parameters": [],
         "requestBody": {
@@ -57,12 +61,10 @@
                       "transaktionsdaten": {
                         "ausfuehrungsdatum": "2024-11-07T23:00:00Z",
                         "absender": {
-                          "rollencodenummer": "9904000000005",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9904000000005"
                         },
                         "empfaenger": {
-                          "rollencodenummer": "9900936000002",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9900936000002"
                         }
                       }
                     },
@@ -104,12 +106,10 @@
                       "transaktionsdaten": {
                         "ausfuehrungsdatum": "2024-11-07T23:00:00Z",
                         "absender": {
-                          "rollencodenummer": "9904000000005",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9904000000005"
                         },
                         "empfaenger": {
-                          "rollencodenummer": "9900936000002",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9900936000002"
                         }
                       }
                     },
@@ -205,12 +205,10 @@
                       "transaktionsdaten": {
                         "ausfuehrungsdatum": "2023-08-02T22:00:00Z",
                         "absender": {
-                          "rollencodenummer": "9904000000005",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9904000000005"
                         },
                         "empfaenger": {
-                          "rollencodenummer": "9900936000002",
-                          "rollencodetype": "BDEW"
+                          "rollencodenummer": "9900936000002"
                         }
                       }
                     },
@@ -267,7 +265,7 @@
                                   ]
                                 },
                                 "lokationsadresse": {
-                                  "description": "Angabe des Ortes, Postleitzahl, Ländercode, Straße, Hausnummer, Hausnummernergänzung der Marktlokationsadresse | Mapping auf identificationParameterId.maloId                    \n",
+                                  "description": "Angabe des Ortes, Postleitzahl, Ländercode, Straße, Hausnummer, Hausnummernergänzung der Marktlokationsadresse | Mapping auf identificationParameterAddress                    \n",
                                   "title": "Adresse",
                                   "type": "object",
                                   "properties": {
@@ -889,21 +887,10 @@
                                 "type": "string",
                                 "example": "9904000000005",
                                 "description": "Eigene ILN"
-                              },
-                              "rollencodetype": {
-                                "title": "Rollencodetyp",
-                                "type": "string",
-                                "enum": [
-                                  "BDEW",
-                                  "GS1",
-                                  "GLN",
-                                  "DVGW"
-                                ]
                               }
                             },
                             "required": [
-                              "rollencodenummer",
-                              "rollencodetype"
+                              "rollencodenummer"
                             ]
                           },
                           "empfaenger": {
@@ -914,21 +901,10 @@
                                 "type": "string",
                                 "example": "9900936000002",
                                 "description": "ILN des Netzbetreibers, an den die Identanfrage gestellt werden soll"
-                              },
-                              "rollencodetype": {
-                                "title": "Rollencodetyp",
-                                "type": "string",
-                                "enum": [
-                                  "BDEW",
-                                  "GS1",
-                                  "GLN",
-                                  "DVGW"
-                                ]
                               }
                             },
                             "required": [
-                              "rollencodenummer",
-                              "rollencodetype"
+                              "rollencodenummer"
                             ]
                           }
                         },
@@ -941,7 +917,7 @@
                       },
                       "zusatzdaten": {
                         "type": "object",
-                        "description": "Informationscontainer z\n",
+                        "description": "Informationscontainer zur Identifikation des Prozesses\n",
                         "properties": {
                           "prozessId": {
                             "type": "string",

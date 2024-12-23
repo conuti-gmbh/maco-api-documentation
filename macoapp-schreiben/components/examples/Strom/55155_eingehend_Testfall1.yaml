@@ -1,0 +1,43 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      marktlokationsId: '50074561188'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: '12345678910'
+    antwortstatus: ZG0
+    antwortstatusCodeliste: S_0024
+    datenaustauschreferenz: '154908'
+    dokumentennummer: 681135BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T07:55:00Z'
+    nachrichtenreferenznummer: '681135'
+    pruefidentifikator: '55155'
+    sparte: STROM
+    transaktionsgrund: ZF7
+    vorgangsnummer: '1328894610'
+  zusatzdaten: {}

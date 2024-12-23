@@ -1,0 +1,47 @@
+post:
+  description:
+    Aktualisieren der Kommunikationsdaten des Serviceanbieters (Parameter1)
+    zum Zeitpunkt (Parameter2) | Updating the communication data of the service provider
+    (Parameter1) at the time (Parameter2)
+  operationId: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+  parameters:
+    - name: command
+      in: query
+      required: true
+      description: Name der Operation | Name of the operation
+      schema:
+        type: string
+        default: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+        example: NOCODB_AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+    - name: parameter1
+      description: ILN Nummer | ILN number
+      in: query
+      required: true
+      schema:
+        type: string
+        example: "9903790000002"    
+    - $ref: ../../components/parameters/parameter2.yml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktteilnehmer"
+    required: true
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Kommunikationsdaten"
+      description:
+        Erfolgreiches Aktualisieren der Kommunikationsdaten | Successful
+        updating of communication data
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+  summary: AKTUALISIEREN_KOMMUNIKATIONSDATEN_BASIS
+  tags:
+    - AKTUALISIEREN | UPDATE

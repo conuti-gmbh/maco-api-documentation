@@ -1,0 +1,84 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - boTyp: BILANZIERUNG
+      marktlokationsId: '50754153861'
+      versionStruktur: '1'
+    ENERGIELIEFERVERTRAG:
+    - boTyp: VERTRAG
+      enFG:
+      - grund:
+        - ENFG_STROMKOSTENINTENSIVE_UNTERNEHMEN
+        grundlageVerringerungUmlagen: ERFUELLT_VORAUSSETZUNG_NACH_ENFG
+      korrespondenzpartner:
+        anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        partneradresse:
+          hausnummer: '1'
+          landescode: DE
+          ort: Ort
+          postleitzahl: '12345'
+          strasse: Str
+        versionStruktur: '1'
+      lokationsId: '50754153861'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: ENERGIELIEFERVERTRAG
+      vertragspartner2:
+      - anrede: Dr.
+        boTyp: GESCHAEFTSPARTNER
+        externeReferenzen:
+        - exRefName: Kundennummer beim Lieferanten
+          exRefWert: BLABBLA1234
+        geschaeftspartnerrolle:
+        - KUNDE
+        gewerbekennzeichnung: false
+        name1: Mustermann
+        name2: Max
+        name3: von
+        name4: zu
+        versionStruktur: '1'
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      marktlokationsId: '50754153861'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50754153861'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-06-30T22:00:00Z'
+      vertragskonditionen:
+        haushaltskunde: false
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '135737'
+    dokumentennummer: 784565BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-06-30T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-04-03T08:44:00Z'
+    nachrichtenreferenznummer: '784565'
+    pruefidentifikator: '55137'
+    sparte: STROM
+    transaktionsgrund: ZF3
+    vorgangsnummer: '884808593'
+  zusatzdaten: {}

@@ -1,0 +1,13 @@
+type: object
+description: >-
+  Fehlermeldung auf Prozessdaten API Aufruf | Error message on process
+  data API call
+properties:
+  errorCode:
+    type: string
+    description: Error identifier
+    example: "400"
+  message:
+    type: string
+    description: Technische Meldung | Technische Meldung
+    example: Validation Failed

@@ -1,0 +1,89 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - abwicklungsmodell: MODELL_1_BILANZIERUNG_AN_MARKTLOKATION
+      aggregationsverantwortung: UENB
+      bilanzkreis: 11Y0-0000-0076-N
+      boTyp: BILANZIERUNG
+      marktlokationsId: '50074561188'
+      prognosegrundlage: WERTE
+      versionStruktur: '1'
+      zeitreihentyp: LGS
+    MARKTLOKATION:
+    - bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: EINSP
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: UENB
+        rollencodenummer: '4045399000077'
+        versionStruktur: '1'
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9900259000002'
+        versionStruktur: '1'
+      netzbetreiberCodeNr: '9900321000005'
+      netzebene: NSP
+      regelzone: 10YDE-RWENET---I
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+    TRANCHE:
+    - aufteilungsmenge:
+        einheit: PROZENT
+        wert: 50
+      bilanzkreis: 11Y0-0000-0076-N
+      bildungTranchengroesse: PROZENTUAL
+      boTyp: TRANCHE
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      referenzTranche: '50074561189'
+      sparte: STROM
+      tranchenId: '50074561189'
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:2.9.0
+        verwendungszwecke:
+        - marktrolle: LF
+          zweck:
+          - BILANZKREISABRECHNUNG
+        - marktrolle: UENB
+          zweck:
+          - ERMITTLUNG_AUSGEGLICHENHEIT_BILANZKREIS
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreis:
+    - bezeichnung: 11Y0-0000-0076-N
+    datenaustauschreferenz: '167862'
+    dokumentennummer: 275714BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: Z38
+    nachrichtendatum: '2024-04-03T12:01:00Z'
+    nachrichtenreferenznummer: '275714'
+    pruefidentifikator: '55185'
+    sparte: STROM
+    transaktionsgrund: ZP0
+    verarbeitungsReihenfolge: '12345'
+    verwendungAb: '2024-10-31T23:00:00Z'
+    verwendungBis: '2024-12-31T23:00:00Z'
+    vorgangsnummer: '929398201'
+  zusatzdaten: {}

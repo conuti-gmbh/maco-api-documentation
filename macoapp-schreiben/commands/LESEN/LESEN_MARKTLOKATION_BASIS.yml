@@ -1,0 +1,37 @@
+get:
+  description:
+    Lesen einer MaLo mittels LokationsId (Parameter1) zum Zeitpunkt (Parameter2) \
+    \ Reading a MaLo using location ID (Parameter1) at the time (Parameter2)
+  operationId: LESEN_MARKTLOKATION_BASIS
+  parameters:
+    - $ref: ../../components/parameters/parameter1.yml
+    - $ref: ../../components/parameters/parameter2.yml
+    - $ref: ../../components/parameters/parameter3.yml
+    - $ref: ../../components/parameters/parameter4.yml
+    - description: Name der Operation | Name of the operation (MACO APP interal assignment
+        between process and interface)
+      in: query
+      name: command
+      required: true
+      schema:
+        default: LESEN_MARKTLOKATION_BASIS
+        example: SAP_LESEN_MARKTLOKATION_BASIS
+        type: string 
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"
+      description:
+        Erfolgreiches Lesen der Marktlokation | Successful reading of the
+        market location
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+  summary: LESEN_MARKTLOKATION_BASIS
+  tags:
+    - LESEN | READ

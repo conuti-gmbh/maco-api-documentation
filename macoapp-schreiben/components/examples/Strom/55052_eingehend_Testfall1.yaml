@@ -1,0 +1,68 @@
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '20072281644'
+      sparte: STROM
+      versionStruktur: '1'
+    MESSLOKATION:
+    - boTyp: MESSLOKATION
+      messlokationsId: DE00713739359S0000000000001222221
+      sparte: STROM
+      versionStruktur: '1'
+    NETZLOKATION:
+    - boTyp: NETZLOKATION
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2023-05-27T22:00:00Z'
+      vertragsende: '2024-05-27T22:00:00Z'
+    STEUERBARE_RESSOURCE:
+    - boTyp: STEUERBARE_RESSOURCE
+      ressourcenId: C816417ST77
+      sparte: STROM
+      versionStruktur: '1'
+    TECHNISCHE_RESSOURCE:
+    - boTyp: TECHNISCHE_RESSOURCE
+      ressourcenId: D417MLM8164
+      sparte: STROM
+      versionStruktur: '1'
+    TRANCHE:
+    - boTyp: TRANCHE
+      sparte: STROM
+      tranchenId: '20072281644'
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        eMailAdresse: max@mustermann.de
+        nachname: Max Mustermann
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: NNV1000
+    antwortstatus: Z01
+    antwortstatusCodeliste: S_0059
+    datenaustauschreferenz: LUACFCSA
+    dokumentennummer: LUPSJ7UB
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: E02
+    nachrichtendatum: '2024-03-27T22:00:00Z'
+    nachrichtenreferenznummer: LUPHIJ8Y
+    pruefidentifikator: '55052'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: 0C36EE0D
+  zusatzdaten: {}

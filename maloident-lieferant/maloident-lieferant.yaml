@@ -7,6 +7,9 @@ info:
     <details>
     <summary>Changelog</summary>
     
+    **Version 1.0.3** - *17. Dezember 2024* - _Autor: DAS_
+      - Rollencodetyp bei Absender und Emfpfaenger entfernt
+
     **Version 1.0.2** - *10. Dezember 2024* - _Autor: DAS_
       - Aktualisierung der zusatzdaten
     
@@ -26,7 +29,7 @@ info:
     Alle Schnittstellen der MaloIdent Lösung für den Lieferanten befinden sich auf dieser Seite:  
     [Lieferant Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/lieferant)
 
-  version: 1.0.2
+  version: 1.0.3
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html

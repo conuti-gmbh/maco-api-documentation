@@ -1,0 +1,3 @@
+description: Art der Schalthandlung | Type of switching action
+example: LEISTUNG_AN
+type: string

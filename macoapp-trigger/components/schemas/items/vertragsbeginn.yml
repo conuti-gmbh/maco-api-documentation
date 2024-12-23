@@ -1,0 +1,4 @@
+description: Beginn des Vertrags | Start of the contract
+example: "2024-10-31T23:00:00Z"
+format: date-time
+type: string

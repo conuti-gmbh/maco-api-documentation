@@ -1,0 +1,156 @@
+post:
+  description: >
+    Aktualisieren des MDOCS anhand des BusinessKey. Neben der Aktualisierung des Status 
+    kann eine generische Liste von Object, Attribute_Name und Attribute_value übergeben 
+    werden, um zusätzliche Transaktionsinformationen wie Antwortstatus, Codeliste, etc. 
+    zu übergeben.
+  operationId: AKTUALISIEREN_MDOC_BASIS
+  parameters:
+    - description: >
+        Name der Operation | Name of the operation (MACO APP internal assignment 
+        between process and interface)
+      in: query
+      name: command
+      required: true
+      schema:
+        default: AKTUALISIEREN_MDOC_BASIS
+        example: SAP_AKTUALISIEREN_MDOC_BASIS
+        type: string
+  requestBody:
+    required: true
+    content:
+      application/xml:
+        schema:
+          type: object
+          properties:
+            BUSINESS_KEY:
+              type: string
+              description: business key, der von der MACO APP beim Senden des Events übermittelt wurde. Dieser wird genutzt um das MDOC zu identifizieren
+              example: "06c76b6d-cc75-4b4f-a29d-5e80c72a45db"
+            STATUS:
+              type: string
+              description: Status des Prozesses >
+                - SEND - Nachricht an den MP übertragen (optionaler Status)
+                - ABORTED - Abbruch des Prozesses in der MACO APP
+                - CONFIRMED - Bestätigung der Nachricht durch den MP
+                - REJECTED - Ablehnung der Nachricht durch den MP     
+              example: "SEND"
+              enum:
+                - SEND 
+                - ABORTED 
+                - CONFIRMED 
+                - REJECTED                      
+            VALUES:
+              type: array
+              description: Optionale Liste von zusätzliche Transaktionsinformationen
+              items:
+                type: object
+                properties:
+                  CS67-MA_MDOC_VALUES:
+                    type: object
+                    properties:
+                      OBJECT:
+                        type: string
+                        description: Name des Objects.
+                        example: "TRANSAKTIONSDATEN"
+                      ATTRIBUTE_NAME:
+                        type: string
+                        description: Name des Attributs.
+                        example: "ANTWORTSTATUS"
+                      ATTRIBUTE_VALUE:
+                        type: string
+                        description: Wert des Attributs.
+                        example: "A07"
+      application/json:
+        schema:
+          type: object
+          properties:
+            BUSINESS_KEY:
+              type: string
+              description: business key, der von der MACO APP beim Senden des Events übermittelt wurde. Dieser wird genutzt um das MDOC zu identifizieren
+              example: "06c76b6d-cc75-4b4f-a29d-5e80c72a45db"
+            STATUS:
+              type: string
+              description: Status des Prozesses >
+                - SEND - Nachricht an den MP übertragen (optionaler Status)
+                - ABORTED - Abbruch des Prozesses in der MACO APP
+                - CONFIRMED - Bestätigung der Nachricht durch den MP
+                - REJECTED - Ablehnung der Nachricht durch den MP     
+              example: "SEND"
+              enum:
+                - SEND 
+                - ABORTED 
+                - CONFIRMED 
+                - REJECTED     
+            VALUES:
+              type: array
+              description: Optionale Liste von zusätzliche Transaktionsinformationen
+              items:
+                type: object
+                properties:
+                  CS67-MA_MDOC_VALUES:
+                    type: object
+                    properties:
+                      OBJECT:
+                        type: string
+                        description: Name des Objects.
+                        example: "TRANSAKTIONSDATEN"
+                      ATTRIBUTE_NAME:
+                        type: string
+                        description: Name des Attributs.
+                        example: "ANTWORTSTATUS"
+                      ATTRIBUTE_VALUE:
+                        type: string
+                        description: Wert des Attributs.
+                        example: "A07"                      
+  responses:
+    "200":
+        description: Erfolgreiches Aktualisieren des MDOCS
+        content:
+          application/xml:
+            schema:
+              type: object
+              properties:
+                SUCCESS:
+                  type: string
+                  description: Bestätigung des erfolgreichen Updates.
+                  example: "X"
+    "422":
+        description: Fehler beim Aktualisieren des MDOCS
+        content:
+          application/xml:
+            schema:
+              type: object
+              properties:
+                MESSAGES:
+                  type: array
+                  description: Liste von Problemen bei der Verarbeitung
+                  items:
+                    type: object
+                    properties:
+                      _-CS67_-DIALOG_MSG:
+                        type: object
+                        properties:
+                          MSGTY:
+                            type: string
+                            description: Typ (E = error).
+                            example: "E"
+                          MSG_TXT:
+                            type: string
+                            description: Detailierte Fehlerinformationen.
+                            example: "Es ist eine Ausnahme aufgetreten"
+                          MSG_LANG:
+                            type: string
+                            description: Sprache der Fehlermeldung.
+                            example: ""
+                          MSG_DIS_TYPE:
+                            type: string
+                            description: Anzeigetyp (e.g., USER).
+                            example: "USER"
+                          TIMESTAMP:
+                            type: string
+                            description: Zeitstempel.
+                            example: "20241114224020.901058"
+  summary: AKTUALISIEREN_MDOC_BASIS
+  tags:
+    - AKTUALISIEREN | UPDATE

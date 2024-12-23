@@ -1,0 +1,3 @@
+description: BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend
+example: 110000000409
+type: string

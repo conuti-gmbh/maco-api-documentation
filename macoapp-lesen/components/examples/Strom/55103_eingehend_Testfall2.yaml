@@ -1,0 +1,98 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - aggregationsverantwortung: VNB
+      bilanzierungsbeginn: '2024-07-31T22:00:00Z'
+      bilanzierungsende: '2024-09-30T22:00:00Z'
+      boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - TLP_TEP
+      jahresverbrauchsprognose:
+        einheit: KWH
+        wert: 2000
+      lastprofile:
+      - bezeichnung: XYZ
+        einspeisung: false
+        herausgeber: NB
+        profilart: ART_TAGESPARAMETERABHAENGIGES_LASTPROFIL
+        profilschar: ABC
+        tagesparameter:
+          dienstanbieter: DWD
+          herausgeber: BDEW
+          temperaturmessstelle: '1234'
+        verfahren: SYNTHETISCH
+      marktlokationsId: '50074561188'
+      prognosegrundlage: PROFILE
+      temperaturarbeit:
+        einheit: KWHK
+        wert: 50
+      versionStruktur: '1'
+      zeitreihentyp: SLS
+    MARKTLOKATION:
+    - beteiligterMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        rollencodenummer: '4045458000000'
+        rollencodetyp: BDEW
+        versionStruktur: '1'
+      bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZLOKATION:
+    - boTyp: NETZLOKATION
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-07-31T22:00:00Z'
+      vertragsende: '2024-09-30T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        eMailAdresse: max@mustermann.de
+        nachname: Max Mustermann
+        rufnummern:
+        - nummerntyp: RUF_ZENTRALE
+          rufnummer: '+2345678930'
+        - nummerntyp: FAX_DURCHWAHL
+          rufnummer: '+2345678910'
+        - nummerntyp: RUF_DURCHWAHL
+          rufnummer: '+2345678920'
+        - nummerntyp: MOBIL_NUMMER
+          rufnummer: '+2345678940'
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreiszuordnung: ERFOLGREICH
+    datenaustauschreferenz: '144652'
+    dokumentennummer: 122438BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-07-31T22:00:00Z'
+    kategorie: Z22
+    nachrichtendatum: '2024-04-01T05:39:00Z'
+    nachrichtenreferenznummer: '122438'
+    pruefidentifikator: '55103'
+    sparte: STROM
+    transaktionsgrund: ZE5
+    vorgangsnummer: '953516351'
+  zusatzdaten: {}

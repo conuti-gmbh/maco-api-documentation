@@ -255,11 +255,8 @@ properties:
                 type: string
                 example: "9904000000005"
                 description: Eigene ILN
-              rollencodetyp:
-                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetyp
           empfaenger:
             type: object
             description: ILN und Rollencodetyp des Netzbetreibers, an den die Identanfrage gestellt werden soll    
@@ -268,11 +265,8 @@ properties:
                 type: string
                 example: "9900936000002"
                 description: ILN des Netzbetreibers, an den die Identanfrage gestellt werden soll
-              rollencodetyp:
-                $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
             required:
               - rollencodenummer
-              - rollencodetyp   
         required:
           - ausfuehrungsdatum
           - vorgangsnummer 

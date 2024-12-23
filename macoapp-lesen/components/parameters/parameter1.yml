@@ -1,0 +1,8 @@
+description: LokationsId | Location ID
+in: query
+name: parameter1
+required: true
+schema:
+  example: "74018657187"
+  type: string
+  default: "74018657187"

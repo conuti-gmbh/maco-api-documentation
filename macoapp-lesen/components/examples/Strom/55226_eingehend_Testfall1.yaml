@@ -1,0 +1,48 @@
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '20072281644'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZLOKATION:
+    - boTyp: NETZLOKATION
+      netzlokationsId: E1688117482
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2023-05-27T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        eMailAdresse: max@mustermann.de
+        nachname: Max Mustermann
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: NNV1000
+    antwortstatus: E15
+    antwortstatusCodeliste: S_0005
+    datenaustauschreferenz: LUA1WNHD
+    dokumentennummer: LV60LYJU
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-05-27T22:00:00Z'
+    kategorie: E03
+    nachrichtendatum: '2024-03-27T22:00:00Z'
+    nachrichtenreferenznummer: LV4A22CB
+    pruefidentifikator: '55226'
+    sparte: STROM
+    transaktionsgrund: ZS5
+    vorgangsnummer: 069A3354
+  zusatzdaten: {}

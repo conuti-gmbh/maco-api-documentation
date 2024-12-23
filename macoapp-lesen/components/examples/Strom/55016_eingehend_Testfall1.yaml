@@ -1,0 +1,36 @@
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      marktlokationsId: '50359445704'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsende: '2024-10-27T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904383000003'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    datenaustauschreferenz: '401309049419'
+    dokumentennummer: 000276528014
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9905079000000'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    identifikationslogik: Z12
+    kategorie: E35
+    nachrichtendatum: '2024-04-01T22:42:00Z'
+    nachrichtenreferenznummer: 000276528014
+    pruefidentifikator: '55016'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: 2P_00000000000319961872
+  zusatzdaten: {}

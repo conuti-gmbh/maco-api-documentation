@@ -1,0 +1,83 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - aggregationsverantwortung: VNB
+      bilanzierungsbeginn: '2024-07-31T22:00:00Z'
+      boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - SLP_SEP
+      jahresverbrauchsprognose:
+        einheit: KWH
+        wert: 2000
+      lastprofile:
+      - bezeichnung: H0
+        einspeisung: false
+        herausgeber: NB
+        profilart: ART_STANDARDLASTPROFIL
+        verfahren: SYNTHETISCH
+      marktlokationsId: '50074561188'
+      prognosegrundlage: PROFILE
+      versionStruktur: '1'
+      zeitreihentyp: SLS
+    MARKTLOKATION:
+    - beteiligterMarktpartner:
+        boTyp: MARKTTEILNEHMER
+        rollencodenummer: '4045458000000'
+        rollencodetyp: BDEW
+        versionStruktur: '1'
+      bilanzierungsgebiet: 11YR00000002596Z
+      boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      marktlokationsId: '50074561188'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: LF
+        rollencodenummer: '9903790000002'
+        versionStruktur: '1'
+      sparte: STROM
+      versionStruktur: '1'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50074561188'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-07-31T22:00:00Z'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        eMailAdresse: max@mustermann.de
+        nachname: Max Mustermann
+        rufnummern:
+        - nummerntyp: RUF_ZENTRALE
+          rufnummer: '+2345678930'
+        - nummerntyp: FAX_DURCHWAHL
+          rufnummer: '+2345678910'
+        - nummerntyp: RUF_DURCHWAHL
+          rufnummer: '+2345678920'
+        - nummerntyp: MOBIL_NUMMER
+          rufnummer: '+2345678940'
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreiszuordnung: ERFOLGREICH
+    datenaustauschreferenz: '119426'
+    dokumentennummer: 600551BGM
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    gueltigAb: '2024-07-31T22:00:00Z'
+    kategorie: Z22
+    nachrichtendatum: '2024-04-01T06:18:00Z'
+    nachrichtenreferenznummer: '600551'
+    pruefidentifikator: '55104'
+    sparte: STROM
+    transaktionsgrund: ZE3
+    vorgangsnummer: '930233668'
+  zusatzdaten: {}

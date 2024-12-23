@@ -1,0 +1,38 @@
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      marktlokationsId: '20072281644'
+      sparte: STROM
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        nachname: Max Mustermann
+        rufnummern:
+        - nummerntyp: MOBIL_NUMMER
+          rufnummer: +02345678940
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: NNV1000
+    antwortstatus: E15
+    antwortstatusCodeliste: S_0005
+    datenaustauschreferenz: LV2CNH8N
+    dokumentennummer: LUOPELER
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9904446000007'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: E03
+    nachrichtendatum: '2024-03-27T22:00:00Z'
+    nachrichtenreferenznummer: LUL2S43W
+    pruefidentifikator: '55219'
+    sparte: STROM
+    transaktionsgrund: ZS3
+    vorgangsnummer: 0150065E
+  zusatzdaten: {}

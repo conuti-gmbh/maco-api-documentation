@@ -1,0 +1,216 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - abwicklungsmodell: MODELL_1_BILANZIERUNG_AN_MARKTLOKATION
+      aggregationsverantwortung: VNB
+      bilanzierungsbeginn: '2024-05-30T22:00:00Z'
+      bilanzkreis: 11X0-0000-0528-Q
+      boTyp: BILANZIERUNG
+      detailsPrognosegrundlage:
+      - SLP_SEP
+      jahresverbrauchsprognose:
+        einheit: KWH
+        wert: 1263
+      lastprofile:
+      - bezeichnung: H0
+        einspeisung: false
+        herausgeber: NB
+        profilart: ART_STANDARDLASTPROFIL
+        verfahren: SYNTHETISCH
+      marktlokationsId: '50754496956'
+      prognosegrundlage: PROFILE
+      versionStruktur: '1'
+      zeitreihentyp: SLS
+    ENERGIELIEFERVERTRAG:
+    - boTyp: VERTRAG
+      korrespondenzpartner:
+        boTyp: GESCHAEFTSPARTNER
+        gewerbekennzeichnung: false
+        name1: Schmidgall
+        name2: Sandra-Martina
+        partneradresse:
+          hausnummer: '102'
+          landescode: DE
+          ort: Stuttgart
+          ortsteil: Kaltental
+          postleitzahl: '70569'
+          strasse: Schwarzwaldstr.
+        versionStruktur: '1'
+      lokationsId: '50754496956'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: ENERGIELIEFERVERTRAG
+      vertragspartner2:
+      - boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - KUNDE
+        gewerbekennzeichnung: false
+        name1: Schmidgall
+        name2: Sandra-Martina
+        versionStruktur: '1'
+    MARKTLOKATION:
+    - bilanzierungsgebiet: 11YW-STU-NETZE-R
+      boTyp: MARKTLOKATION
+      energierichtung: AUSSP
+      lokationsadresse:
+        hausnummer: '102'
+        landescode: DE
+        ort: Stuttgart
+        ortsteil: Kaltental
+        postleitzahl: '70569'
+        strasse: Schwarzwaldstr.
+      marktlokationsId: '50754496956'
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: UENB
+        rollencodenummer: '4045399000077'
+        versionStruktur: '1'
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '1234567890128'
+        versionStruktur: '1'
+        weiterverpflichtet: false
+      messtechnischeEinordnung: KME_MME
+      netzebene: NSP
+      netznutzungsabrechnungsdaten:
+      - artikelId: 1-02-0-002
+        artikelIdTyp: ARTIKELID
+        gemeinderabatt: 0
+      - anzahl: 1
+        artikelId: 1-06-7-004
+        artikelIdTyp: ARTIKELID
+        gemeinderabatt: 0
+      - artikelId: 1-08-4-004
+        artikelIdTyp: ARTIKELID
+        gemeinderabatt: 0
+      - artikelId: 1-10-1
+        artikelIdTyp: GRUPPENARTIKELID
+        gemeinderabatt: 0
+      - artikelId: 1-10-2
+        artikelIdTyp: GRUPPENARTIKELID
+        gemeinderabatt: 0
+      - artikelId: 1-10-4
+        artikelIdTyp: GRUPPENARTIKELID
+        gemeinderabatt: 0
+      regelzone: 10YDE-RWENET---I
+      sparte: STROM
+      versionStruktur: '1'
+      zaehlwerke:
+      - obisKennzahl: 1-1:1.9.0
+        unterbrechbarkeit: NUV
+        verbrauchsart: KL
+        verwendungszwecke:
+        - marktrolle: LF
+          zweck:
+          - ENDKUNDENABRECHNUNG
+          - NETZNUTZUNGSABRECHNUNG
+          - MEHRMINDERMENGENABRECHNUNG
+        wertegranularitaet: JAEHRLICH
+    MESSLOKATION:
+    - ablesekartenempfaenger:
+        boTyp: GESCHAEFTSPARTNER
+        geschaeftspartnerrolle:
+        - ABLESEKARTENEMPFAENGER
+        gewerbekennzeichnung: false
+        name1: Schmidgall
+        name2: Sandra-Martina
+        partneradresse:
+          hausnummer: '102'
+          landescode: DE
+          ort: Stuttgart
+          ortsteil: Kaltental
+          postleitzahl: '70569'
+          strasse: Schwarzwaldstr.
+        versionStruktur: '1'
+      boTyp: MESSLOKATION
+      marktrollen:
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: MSB
+        messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+        rollencodenummer: '9977764000009'
+        versionStruktur: '1'
+        weiterverpflichtet: false
+      - boTyp: MARKTTEILNEHMER
+        marktrolle: GMSB
+        rollencodenummer: '9977764000009'
+        versionStruktur: '1'
+      messlokationsId: DE0009697056900614312080040415184
+      netzebenemessung: NSP
+      sparte: STROM
+      versionStruktur: '1'
+    MESSSTELLENBETRIEBSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: DE0009697056900614312080040415184
+      lokationsTyp: MELO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: MESSSTELLENBETRIEBSVERTRAG
+      vertragskonditionen:
+        abrechnungUeberNna: true
+        geplanteTurnusablesung:
+          ableseZeitraum: '03020401'
+    NETZNUTZUNGSVERTRAG:
+    - boTyp: VERTRAG
+      lokationsId: '50754496956'
+      lokationsTyp: MALO
+      sparte: STROM
+      versionStruktur: '1'
+      vertragsart: NETZNUTZUNGSVERTRAG
+      vertragsbeginn: '2024-05-30T22:00:00Z'
+      vertragskonditionen:
+        haushaltskunde: true
+        naechstenetznutzungsabrechnung: '2025'
+        netznutzungsabrechnung:
+          abrechnungsZeitraum: '03020401'
+        netznutzungsabrechnungIntervall: 12
+        netznutzungsabrechnungsgrundlage: LIEFERSCHEIN
+        netznutzungsabrechnungsvariante: ARBEITSPREIS_GRUNDPREIS
+        netznutzungsvertrag: LIEFERANTEN_NB
+        netznutzungszahler: LIEFERANT
+    ZAEHLER:
+    - boTyp: ZAEHLER
+      fernschaltung: NICHT_VORHANDEN
+      geraete:
+      - geraetenummer: '21520022'
+      messlokationsId: DE0009697056900614312080040415184
+      messwerterfassung: MANUELL_AUSGELESENE
+      sparte: STROM
+      tarifart: MEHRTARIF
+      versionStruktur: '1'
+      zaehlerauspraegung: EINRICHTUNGSZAEHLER
+      zaehlernummer: '21520022'
+      zaehlertyp: ELEKTRONISCHERHAUSHALTSZAEHLER
+      zaehlertypspezifikation: EDL21
+      zaehlwerke:
+      - nachkommastelle: 0
+        obisKennzahl: 1-1:1.8.0
+        vorkommastelle: 6
+        wertegranularitaet: JAEHRLICH
+  transaktionsdaten:
+    absender:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900321000005'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    anfragereferenznummer: PCL10023101014163399116940000025123
+    antwortstatus: A51
+    antwortstatusCodeliste: E_0404
+    bilanzkreis:
+    - bezeichnung: 11X0-0000-0528-Q
+    datenaustauschreferenz: 040171951518
+    dokumentennummer: 040171951519
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903790000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: E01
+    nachrichtendatum: '2024-04-03T16:50:00Z'
+    nachrichtenreferenznummer: 040171951519
+    pruefidentifikator: '55002'
+    sparte: STROM
+    transaktionsgrund: E03
+    vorgangsnummer: XX50568560A21EDE99F14E7ADF35549F
+  zusatzdaten: {}

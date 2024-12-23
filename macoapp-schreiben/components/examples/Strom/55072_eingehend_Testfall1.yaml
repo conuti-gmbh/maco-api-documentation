@@ -1,0 +1,54 @@
+value:
+  stammdaten:
+    BILANZIERUNG:
+    - bilanzierungsende: '2024-05-31T22:00:00Z'
+      bilanzkreis: 11YW-KARLSRUH--7
+      boTyp: BILANZIERUNG
+      versionStruktur: '1'
+      zeitreihentyp: SLS
+    MARKTLOKATION:
+    - bilanzierungsgebiet: 11Y0-0000-0411-5
+      boTyp: MARKTLOKATION
+      sparte: STROM
+      versionStruktur: '1'
+  transaktionsdaten:
+    absender:
+      ansprechpartner:
+        boTyp: ANSPRECHPARTNER
+        eMailAdresse: kontakt@mail.de
+        nachname: '9903913000003'
+        rufnummern:
+        - nummerntyp: RUF_ZENTRALE
+          rufnummer: 016090531344
+        - nummerntyp: FAX_DURCHWAHL
+          rufnummer: 016090531343
+        - nummerntyp: RUF_DURCHWAHL
+          rufnummer: 016090531342
+        - nummerntyp: MOBIL_NUMMER
+          rufnummer: 016090531345
+        versionStruktur: '1'
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903913000003'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    beteiligterMarktpartner:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9903328000002'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    bilanzkreis:
+    - bezeichnung: 11YW-KARLSRUH--7
+    datenaustauschreferenz: MST1229112325
+    dokumentennummer: MKIDI5423
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      rollencodenummer: '9900327000009'
+      rollencodetyp: BDEW
+      versionStruktur: '1'
+    kategorie: Z17
+    nachrichtendatum: '2024-04-01T12:26:00Z'
+    nachrichtenreferenznummer: MST49764349950
+    pruefidentifikator: '55072'
+    sparte: STROM
+    vorgangsnummer: MST1407607098
+  zusatzdaten: {}

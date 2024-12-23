@@ -1,0 +1,8 @@
+description: bilanzierungsrelevant) [true/false = default null) WennParameter null ist, soll dieser in der Abfage ignoriert werden, wenn true soll explizit geprüft werden ob Lastgang bilanzierungsrelevant ist, wenn false soll explizit geprüft werden ob nicht Lastgang NICHT bilanzierungsrelevant ist
+in: query
+name: parameter7
+required: true
+schema:
+  example: null
+  type: boolean
+  default: null
