@@ -35,7 +35,9 @@ post:
           "PI 55008 - ROLLE NB : DATEN AUS ANFRAGE LF":
             $ref: "../../components/examples/PI_55008.yml"
         schema:
-          $ref: "../../components/requestBodies/stammdaten.yml"
+          oneOf: 
+            -  $ref: ../../components/requestBodies/PI_55004_STAMMDATEN_NB_ANFRAGEN_LF.yml
+            -  $ref: ../../components/requestBodies/PI_55005_STAMMDATEN_LF_ANTWORT_NB.yml
     required: true
   responses:
     "200":
