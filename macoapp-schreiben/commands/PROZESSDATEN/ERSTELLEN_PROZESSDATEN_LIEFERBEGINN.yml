@@ -31,7 +31,9 @@ post:
           "PI 55002 - ROLLE LF : DATEN AUS ANTWORT NB":
             $ref: "../../components/examples/PI_55002.yml"
         schema:
-          $ref: "../../components/requestBodies/stammdaten.yml"
+          oneOf: 
+            -  $ref: "../../components/requestBodies/STAMMDATEN_LF_ANFRAGE.yml"
+            -  $ref: "../../components/requestBodies/STAMMDATEN_LF_ANTWORT.yml"
     required: true
   responses:
     "200":

@@ -3,26 +3,14 @@ properties:
   stammdaten:
     type: object
     properties:
+      AD_HOC_STEUERKANAL:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/AdHocSteuerkanal'
       BILANZIERUNG:
         type: array
         items:
           $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung'
-      MARKTLOKATION:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
-      MESSLOKATION:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation'
-      NETZNUTZUNGSVERTRAG:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
-      MESSSTELLENBETRIEBSVERTRAG:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
       ENERGIELIEFERVERTRAG:
         type: array
         items:
@@ -31,18 +19,38 @@ properties:
         type: array
         items:
           $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Energiemenge'
-      ZAEHLER:
+      LOKATIONSBUENDEL:
         type: array
         items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler'
-      TRANCHE:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Lokationsbuendel'
+      MARKTLOKATION:
         type: array
         items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche'
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+      MARKTLOKATION_KUNDENANLAGE:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+      MESSLOKATION:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation'
+      MESSSTELLENBETRIEBSVERTRAG:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
       NETZLOKATION:
         type: array
         items:
           $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Netzlokation'
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
+      RUHENDE_MARKTLOKATION:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
       STEUERBARE_RESSOURCE:
         type: array
         items:
@@ -51,30 +59,22 @@ properties:
         type: array
         items:
           $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/TechnischeRessource'
-      LOKATIONSBUENDEL:
+      TRANCHE:
         type: array
         items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Lokationsbuendel'
-      AD_HOC_STEUERKANAL:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/AdHocSteuerkanal'
-      WERTE_NACH_TYP2:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/WerteNachTyp2'
-      RUHENDE_MARKTLOKATION:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
-      MARKTLOKATION_KUNDENANLAGE:
-        type: array
-        items:
-          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche'
       VERWENDUNGSZEITRAUM:
         type: array
         items:
           $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Verwendungszeitraum'
+      WERTE_NACH_TYP2:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/WerteNachTyp2'
+      ZAEHLER:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler'
   transaktionsdaten:
     type: object
     $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten'

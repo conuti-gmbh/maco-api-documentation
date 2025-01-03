@@ -1,40 +1,75 @@
 value:
   stammdaten:
+    BILANZIERUNG:
+      - boTyp: BILANZIERUNG
+        versionStruktur: "1"
+        bilanzkreis: Test2312312
+        jahresverbrauchsprognose:
+          einheit: KWH
+          wert: 1200
+        lastprofile:
+          - bezeichnung: H00
+            einspeisung: false
+            herausgeber: NB
+            profilart: ART_STANDARDLASTPROFIL
+            verfahren: SYNTHETISCH
+    ENERGIELIEFERVERTRAG:
+      - boTyp: VERTRAG
+        versionStruktur: "1"
+        vertragsart: ENERGIELIEFERVERTRAG
+        sparte: STROM
+        enFG:
+          - grundlageVerringerungUmlagen: KEINE_ANGABE
+        korrespondenzpartner:
+          boTyp: GESCHAEFTSPARTNER
+          versionStruktur: "1"
+          name1: Müller
+          name2: Michaela
+          gewerbekennzeichnung: false
+          partneradresse:
+            landescode: DE
+            ort: Stuttgart
+            ortsteil: Kaltental
+            postleitzahl: "70569"
+            strasse: Schwarzwaldstr.
+            hausnummer: "102"
+        vertragspartner2:
+          - boTyp: GESCHAEFTSPARTNER
+            versionStruktur: "1"
+            name1: Müller
+            name2: Michaela
+            gewerbekennzeichnung: false
+            geschaeftspartnerrolle:
+              - KUNDE
+            partneradresse:
+              landescode: DE
+              ort: Stuttgart
+              ortsteil: Kaltental
+              postleitzahl: "70569"
+              strasse: Schwarzwaldstr.
+              hausnummer: "102"
     MARKTLOKATION:
       - boTyp: MARKTLOKATION
         versionStruktur: "1"
-        marktlokationsId: "50754496956"
-        sparte: STROM
-        energierichtung: AUSSP
-        netzebene: NSP
         bilanzierungsgebiet: 11YW-STU-NETZE-R
+        energierichtung: AUSSP
         lokationsadresse:
-          postleitzahl: "70569"
+          landescode: DE
           ort: Stuttgart
+          ortsteil: Kaltental
+          postleitzahl: "70569"
           strasse: Schwarzwaldstr.
           hausnummer: "102"
-          landescode: DE
-          ortsteil: Kaltental
+        marktlokationsId: "50754496956"
         marktrollen:
           - boTyp: MARKTTEILNEHMER
             versionStruktur: "1"
-            rollencodenummer: "4045399000077"
             marktrolle: UENB
-            weiterverpflichtet: false
             messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
-        regelzone: 10YDE-RWENET---I
-        zaehlwerke:
-          - obisKennzahl: "1-1:1.9.0"
-            verwendungszwecke:
-              - marktrolle: LF
-                zweck:
-                  - ENDKUNDENABRECHNUNG
-                  - NETZNUTZUNGSABRECHNUNG
-                  - MEHRMINDERMENGENABRECHNUNG
-            verbrauchsart: KL
-            unterbrechbarkeit: NUV
-            wertegranularitaet: JAEHRLICH
+            rollencodenummer: "4045399000077"
+            weiterverpflichtet: false
         messtechnischeEinordnung: KME_MME
+        netzebene: NSP
         netznutzungsabrechnungsdaten:
           - artikelId: 1-02-0-002
             artikelIdTyp: ARTIKELID
@@ -55,12 +90,22 @@ value:
           - artikelId: 1-10-4
             artikelIdTyp: GRUPPENARTIKELID
             gemeinderabatt: 0
+        regelzone: 10YDE-RWENET---I
+        sparte: STROM
+        zaehlwerke:
+          - obisKennzahl: "1-1:1.9.0"
+            unterbrechbarkeit: NUV
+            verbrauchsart: KL
+            verwendungszwecke:
+              - marktrolle: LF
+                zweck:
+                  - ENDKUNDENABRECHNUNG
+                  - MEHRMINDERMENGENABRECHNUNG
+                  - NETZNUTZUNGSABRECHNUNG
+            wertegranularitaet: JAEHRLICH
     MESSLOKATION:
       - boTyp: MESSLOKATION
         versionStruktur: "1"
-        messlokationsId: DE0009697056900614312080040415184
-        sparte: STROM
-        netzebenemessung: NSP
         ablesekartenempfaenger:
           boTyp: GESCHAEFTSPARTNER
           versionStruktur: "1"
@@ -70,98 +115,53 @@ value:
           geschaeftspartnerrolle:
             - ABLESEKARTENEMPFAENGER
           partneradresse:
-            postleitzahl: "70569"
+            landescode: DE
             ort: Stuttgart
+            ortsteil: Kaltental
+            postleitzahl: "70569"
             strasse: Schwarzwaldstr.
             hausnummer: "102"
-            landescode: DE
-            ortsteil: Kaltental
         marktrollen:
           - boTyp: MARKTTEILNEHMER
             versionStruktur: "1"
-            rollencodenummer: "9977764000009"
             marktrolle: MSB
-            weiterverpflichtet: false
             messstellenbetreiberEigenschaft: GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+            rollencodenummer: "9977764000009"
+            weiterverpflichtet: false
           - boTyp: MARKTTEILNEHMER
             versionStruktur: "1"
-            rollencodenummer: "9977764000009"
             marktrolle: GMSB
-    NETZNUTZUNGSVERTRAG:
-      - boTyp: VERTRAG
-        versionStruktur: "1"
-        vertragsart: NETZNUTZUNGSVERTRAG
+            rollencodenummer: "9977764000009"
+        messlokationsId: DE0009697056900614312080040415184
+        netzebenemessung: NSP
         sparte: STROM
-        vertragsbeginn: "2024-05-30T22:00:00Z"
-        vertragskonditionen:
-          netznutzungsabrechnung:
-            abrechnungsZeitraum: "03020401"
-          netznutzungsabrechnungIntervall: 12
-          haushaltskunde: true
-          netznutzungsvertrag: LIEFERANTEN_NB
-          netznutzungszahler: LIEFERANT
-          netznutzungsabrechnungsvariante: ARBEITSPREIS_GRUNDPREIS
-          netznutzungsabrechnungsgrundlage: LIEFERSCHEIN
-          naechstenetznutzungsabrechnung: "2025"
-        lokationsId: "50754496956"
-        lokationsTyp: MALO
     MESSSTELLENBETRIEBSVERTRAG:
       - boTyp: VERTRAG
         versionStruktur: "1"
         vertragsart: MESSSTELLENBETRIEBSVERTRAG
         sparte: STROM
-        vertragskonditionen:
-          geplanteTurnusablesung:
-            ableseZeitraum: "03020401"
-          abrechnungUeberNna: true
         lokationsId: DE0009697056900614312080040415184
         lokationsTyp: MELO
         vertragsbeginn: "2024-05-30T22:00:00Z"
-    ENERGIELIEFERVERTRAG:
+        vertragskonditionen:
+          abrechnungUeberNna: true
+          geplanteTurnusablesung:
+            ableseZeitraum: "03020401"
+    NETZNUTZUNGSVERTRAG:
       - boTyp: VERTRAG
         versionStruktur: "1"
-        vertragsart: ENERGIELIEFERVERTRAG
+        vertragsart: NETZNUTZUNGSVERTRAG
         sparte: STROM
-        vertragspartner2:
-          - boTyp: GESCHAEFTSPARTNER
-            versionStruktur: "1"
-            name1: Müller
-            name2: Michaela
-            gewerbekennzeichnung: false
-            geschaeftspartnerrolle:
-              - KUNDE
-            partneradresse:
-              postleitzahl: "70569"
-              ort: Stuttgart
-              strasse: Schwarzwaldstr.
-              hausnummer: "102"
-              landescode: DE
-              ortsteil: Kaltental
-        korrespondenzpartner:
-          boTyp: GESCHAEFTSPARTNER
-          versionStruktur: "1"
-          name1: Müller
-          name2: Michaela
-          gewerbekennzeichnung: false
-          partneradresse:
-            postleitzahl: "70569"
-            ort: Stuttgart
-            strasse: Schwarzwaldstr.
-            hausnummer: "102"
-            landescode: DE
-            ortsteil: Kaltental
-        enFG:
-          - grundlageVerringerungUmlagen: KEINE_ANGABE
-    BILANZIERUNG:
-      - boTyp: BILANZIERUNG
-        versionStruktur: "1"
-        lastprofile:
-          - bezeichnung: H00
-            verfahren: SYNTHETISCH
-            profilart: ART_STANDARDLASTPROFIL
-            einspeisung: false
-            herausgeber: NB
-        bilanzkreis: Test2312312
-        jahresverbrauchsprognose:
-          wert: 1200
-          einheit: KWH
+        lokationsId: "50754496956"
+        lokationsTyp: MALO
+        vertragsbeginn: "2024-05-30T22:00:00Z"
+        vertragskonditionen:
+          haushaltskunde: true
+          naechstenetznutzungsabrechnung: "2025"
+          netznutzungsabrechnung:
+            abrechnungsZeitraum: "03020401"
+          netznutzungsabrechnungIntervall: 12
+          netznutzungsabrechnungsgrundlage: LIEFERSCHEIN
+          netznutzungsabrechnungsvariante: ARBEITSPREIS_GRUNDPREIS
+          netznutzungsvertrag: LIEFERANTEN_NB
+          netznutzungszahler: LIEFERANT

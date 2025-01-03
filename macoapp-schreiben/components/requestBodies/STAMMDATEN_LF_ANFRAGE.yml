@@ -1,0 +1,29 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      BILANZIERUNG:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung'
+      ENERGIELIEFERVERTRAG:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
+      MARKTLOKATION:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation'
+      MESSLOKATION:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation'
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag'
+  transaktionsdaten:
+    type: object
+    $ref: 'https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten'
+    unevaluatedProperties: true
