@@ -32,8 +32,8 @@ post:
             $ref: "../../components/examples/PI_55002.yml"
         schema:
           oneOf: 
-            -  $ref: "../../components/requestBodies/STAMMDATEN_LF_ANFRAGE.yml"
-            -  $ref: "../../components/requestBodies/STAMMDATEN_LF_ANTWORT.yml"
+            -  $ref: ../../components/requestBodies/PI_55001_STAMMDATEN_NB_ANFRAGEN_LF.yml
+            -  $ref: ../../components/requestBodies/PI_55002_STAMMDATEN_LF_ANTWORT_NB.yml
     required: true
   responses:
     "200":
