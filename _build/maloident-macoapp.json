@@ -65,11 +65,11 @@
                       "empfaenger": {
                         "rollencodenummer": "9900936000002"
                       }
+                    },
+                    "zusatzdaten": {
+                      "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
+                      "eventname": "START_MALOIDENT"
                     }
-                  },
-                  "zusatzdaten": {
-                    "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
-                    "eventname": "START_MALOIDENT"
                   }
                 },
                 "START_MALOIDENT_NAME_ZAHLER": {
@@ -108,11 +108,11 @@
                       "empfaenger": {
                         "rollencodenummer": "9900936000002"
                       }
+                    },
+                    "zusatzdaten": {
+                      "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
+                      "eventname": "START_MALOIDENT"
                     }
-                  },
-                  "zusatzdaten": {
-                    "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
-                    "eventname": "START_MALOIDENT"
                   }
                 },
                 "START_MALOIDENT": {
@@ -205,11 +205,11 @@
                       "empfaenger": {
                         "rollencodenummer": "9900936000002"
                       }
+                    },
+                    "zusatzdaten": {
+                      "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
+                      "eventname": "START_MALOIDENT"
                     }
-                  },
-                  "zusatzdaten": {
-                    "prozessId": "00505688-E4A2-1EDF-A0C2-C81842E2515E",
-                    "eventname": "START_MALOIDENT"
                   }
                 }
               },
