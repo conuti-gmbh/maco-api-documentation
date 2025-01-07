@@ -22,13 +22,6 @@ info:
     - Initiale Veröffentlichung der Doku mit dem `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_POSITIV`-Schema.
 
     </details>
-
-    Alle Schnittstellen der MaloIdent Lösung für den Netzbetreiber befinden sich auf dieser Seite:  
-    [Netzbetreiber Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/netzbetreiber)
-
-    Alle Schnittstellen der MaloIdent Lösung für den Lieferanten befinden sich auf dieser Seite:  
-    [Lieferant Schnittstellen](https://doku.macoapp.conuti.de/maloIdent/schnittstellen/lieferant)
-
   version: 1.0.3
   license:
     name: Apache 2.0

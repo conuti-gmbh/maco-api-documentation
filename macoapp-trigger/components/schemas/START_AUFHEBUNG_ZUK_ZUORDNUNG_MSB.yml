@@ -1,59 +1,54 @@
 description: "START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB - Beendigung der Zuordnung des MSB zur Marklokation bzw. Messlokation (NB)"
 type: object
 properties:
-  data:
+  stammdaten:
     type: object
+    description: > 
+      Informationscontainer für Stammdaten, die zur Identifizierung genutzt werden
     properties:
-      stammdaten:
-        type: object
-        description: > 
-          Informationscontainer für Stammdaten, die zur Identifizierung genutzt werden
-        properties:
-          MARKTLOKATION:
-            type: array
-            items:
-              $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"                                
-          ENERGIELIEFERVERTRAG:
-            type: array
-            items:
-              type: object
-              $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
-          NETZNUTZUNGSVERTRAG:
-            type: array
-            items:
-              type: object
-              $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
-        required:
-          - MARKTLOKATION
-      transaktionsdaten:
-        type: object
-        $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten"                                                                   
-        required:
-          - ausfuehrungsdatum
-          - vorgangsnummer 
-          - absender
-          - empfaenger                          
-      zusatzdaten:
-        type: object
-        description: > 
-          Informationscontainer zur Identifikation des Prozesses
-        properties:
-          prozessId:
-            type: string
-            example: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
-            description: Id des Dokuments / Beleges im Backend. Wird genutzt um die Antwort zuzuordnen.
-          eventname:
-            type: string
-            example: "START_LIEFERBEGINN"
-            description: Name des Events 
-            enum:
-              - START_LIEFERBEGINN 
-        required:
-          - prozessId
-          - eventname    
+      MARKTLOKATION:
+        type: array
+        items:
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"                                
+      ENERGIELIEFERVERTRAG:
+        type: array
+        items:
+          type: object
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          type: object
+          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
     required:
-      - stammdaten
-      - transaktionsdaten
-      - zusatzdaten                      
+      - MARKTLOKATION
+  transaktionsdaten:
+    type: object
+    $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten"                                                                   
+    required:
+      - ausfuehrungsdatum
+      - vorgangsnummer 
+      - absender
+      - empfaenger                          
+  zusatzdaten:
+    type: object
+    description: > 
+      Informationscontainer zur Identifikation des Prozesses
+    properties:
+      prozessId:
+        type: string
+        example: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
+        description: Id des Dokuments / Beleges im Backend. Wird genutzt um die Antwort zuzuordnen.
+      eventname:
+        type: string
+        example: "START_LIEFERBEGINN"
+        description: Name des Events 
+        enum:
+          - START_LIEFERBEGINN 
+    required:
+      - prozessId
+      - eventname    
 required:
-  - data
+  - stammdaten
+  - transaktionsdaten
+  - zusatzdaten                      

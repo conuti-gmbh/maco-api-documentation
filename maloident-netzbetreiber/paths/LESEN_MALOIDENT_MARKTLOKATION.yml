@@ -1,0 +1,42 @@
+get:
+  description:
+    Lesen der Stammdaten der identifierten Marktlokation für die positive Antwort mittels LokationsId (Parameter1) zum Zeitpunkt (Parameter2) 
+  operationId: LESEN_MALOIDENT_MARKTLOKATION
+  parameters:
+    - description: LokationsId der Marktlokation
+      in: query
+      name: parameter1
+      required: true
+      schema:
+        example: "74018657187"
+        type: string
+        default: "74018657187"
+    - description: "Datum (Stichtag)"
+      in: query
+      name: parameter3
+      required: true
+      schema:
+        example: "2024-06-28T12:18:00Z"
+        format: date-time
+        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$
+        type: string
+  responses:
+    "200":
+      content:
+        application/json:
+          examples:
+            "Lesen der Stammdaten der identifierten Marktlokation":
+              $ref: "../components/examples/LESEN_MALOIDENT_MARKTLOKATION.yml"        
+          schema:
+            $ref: "../components/schemas/LESEN_MALOIDENT_MARKTLOKATION.yml"
+      description:
+        Erfolgreiches Lesen der Marktlokationsdaten 
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/ERROR_RESPONSE.yml"
+      description: Fehler bei Ausführung
+  summary: LESEN_MALOIDENT_MARKTLOKATION
+  tags:
+    - MALODATEN

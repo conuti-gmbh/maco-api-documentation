@@ -1,65 +1,64 @@
 summary: Beispiel Versand einer MaloIdent Anfrage via API-Webdienst mit allen Feldern gefüllt
 value:
-  data:
-    stammdaten:
-      MARKTLOKATION:
-        - boTyp: "MARKTLOKATION"
-          versionStruktur: "1"
-          marktlokationsId: "57685676748"
-          energierichtung: "AUSSP"
-          lokationsadresse:
-            postleitzahl: "12117"
-            ort: "Berlin"
-            strasse: "Reinhardtstraße"
-            hausnummer: "32"
-            adresszusatz: "Ausbau"
-            landescode: "DE"
-          katasterinformation:
-            gemarkung_flur: "Musterstadt"
-            flurstueck: "123"
-            flurstueckNummer: "456"
-          geokoordinaten:
-            breitengrad: "52.5200"
-            laengengrad: "13.4050"
-            ostwert: "123456"
-            nordwert: "654321"
-            zone: "UTMZone31"
-            hochwert: "1234567"
-            rechtswert: "7654321"
-      TRANCHE:
-        - boTyp: "TRANCHE"
-          versionStruktur: "1"
-          tranchenId: "57685676742"
-      MESSLOKATION:
-        - boTyp: "MESSLOKATION"
-          versionStruktur: "1"
-          messlokationsId: "DE00014545768S0000000000000003054"
-      ZAEHLER:
-        - boTyp: "ZAEHLER"
-          versionStruktur: "1"
-          zaehlernummer: "1SM-8465929523"
-      ENERGIELIEFERVERTRAG:
-        - boTyp: "VERTRAG"
-          versionStruktur: "1"
-          vertragsart: "ENERGIELIEFERVERTRAG"
-          vertragspartner2:
-            - boTyp: "GESCHAEFTSPARTNER"
-              versionStruktur: "1"
-              anrede: "Prof.Dr."
-              name1: "Becker"
-              name2: "Michael"
-              gewerbekennzeichnung: false
-              geschaeftspartnerrolle:
-                - "KUNDE"
-              externeReferenzen:
-                - exRefName: "V567345345"
-                  exRefWert: "V567345345"
-    transaktionsdaten:
-      ausfuehrungsdatum: "2023-08-02T22:00:00Z"
-      absender:
-        rollencodenummer: "9904000000005"
-      empfaenger:
-        rollencodenummer: "9900936000002"
-  zusatzdaten:
-    prozessId: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
-    eventname: "START_MALOIDENT"
+  stammdaten:
+    MARKTLOKATION:
+      - boTyp: "MARKTLOKATION"
+        versionStruktur: "1"
+        marktlokationsId: "57685676748"
+        energierichtung: "AUSSP"
+        lokationsadresse:
+          postleitzahl: "12117"
+          ort: "Berlin"
+          strasse: "Reinhardtstraße"
+          hausnummer: "32"
+          adresszusatz: "Ausbau"
+          landescode: "DE"
+        katasterinformation:
+          gemarkung_flur: "Musterstadt"
+          flurstueck: "123"
+          flurstueckNummer: "456"
+        geokoordinaten:
+          breitengrad: "52.5200"
+          laengengrad: "13.4050"
+          ostwert: "123456"
+          nordwert: "654321"
+          zone: "UTMZone31"
+          hochwert: "1234567"
+          rechtswert: "7654321"
+    TRANCHE:
+      - boTyp: "TRANCHE"
+        versionStruktur: "1"
+        tranchenId: "57685676742"
+    MESSLOKATION:
+      - boTyp: "MESSLOKATION"
+        versionStruktur: "1"
+        messlokationsId: "DE00014545768S0000000000000003054"
+    ZAEHLER:
+      - boTyp: "ZAEHLER"
+        versionStruktur: "1"
+        zaehlernummer: "1SM-8465929523"
+    ENERGIELIEFERVERTRAG:
+      - boTyp: "VERTRAG"
+        versionStruktur: "1"
+        vertragsart: "ENERGIELIEFERVERTRAG"
+        vertragspartner2:
+          - boTyp: "GESCHAEFTSPARTNER"
+            versionStruktur: "1"
+            anrede: "Prof.Dr."
+            name1: "Becker"
+            name2: "Michael"
+            gewerbekennzeichnung: false
+            geschaeftspartnerrolle:
+              - "KUNDE"
+            externeReferenzen:
+              - exRefName: "V567345345"
+                exRefWert: "V567345345"
+  transaktionsdaten:
+    ausfuehrungsdatum: "2023-08-02T22:00:00Z"
+    absender:
+      rollencodenummer: "9904000000005"
+    empfaenger:
+      rollencodenummer: "9900936000002"
+zusatzdaten:
+  prozessId: "00505688-E4A2-1EDF-A0C2-C81842E2515E"
+  eventname: "START_MALOIDENT"

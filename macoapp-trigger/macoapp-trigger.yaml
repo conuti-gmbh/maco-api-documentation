@@ -7,20 +7,28 @@ info:
     <details>
     <summary>Changelog</summary>
     
+    - **Version 1.2.1** - *07. Januar 2025* - _Autor: DAS_
+      - Falsches `data` Root Element entfernt
+      - Hinzugefügtes Schemas: `START_MALOIDENT`
+
+    - **Version 1.2.0** - *16. Dezember 2024* - _Autor: DAS_
+      - Entfernung alter Event Schemas     
+      - Hinzugefügte Schemas: `START_LIEFERBEGINN`, `START_KUENDIGUNG`, `START_BESTELLUNG_KONFIGURATION`, `START_STAMMDATENAENDERUNG_MALO_AN_LF`, `START_STAMMDATENAENDERUNG_MALO_AN_MSB`, `START_LIEFERENDE`, `START_AUFHEBUNG_ZUK_ZUORDNUNG_LF`, `START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB`, `START_ABR_NN`, `START_VERSAND_ABR_BILA`, `START_VERSAND_BEARB_MELDUNG`.
+  
     - **Version 1.0.2** - *04. Oktober 2024* - _Autor: DAS_
       - Update START_LIEFERBEGINN und START_LIEFERENDE
     
-    **Version 1.0.1** - *08. August 2024* - _Autor: DAS_
+    - **Version 1.0.1** - *08. August 2024* - _Autor: DAS_
 
     - Erweiterung der API um zusätzliche Schemas und Beispiele.
     - Hinzugefügte Schemas: `START_LIEFERBEGINN_STROM`, `START_LIEFERBEGINN_GAS`, `START_ABR_NN`, `START_DEFINITION_SCHALTZEIT`, `START_DEFINITION_LEISTUNGSKURVE`, `START_DEFINITION_ZAEHLZEIT`, `START_KUENDIGUNG`.
 
-    **Version 1.0.0** - *01. August 2024* - _Autor: DAS_
+    - **Version 1.0.0** - *01. August 2024* - _Autor: DAS_
 
     - Initiale Veröffentlichung der API mit dem `START_SPERRAUFTRAG`-Schema.
 
     </details>
-  version: 1.0.2
+  version: 1.2.1
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
