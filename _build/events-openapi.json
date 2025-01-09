@@ -315,7 +315,6 @@
                 "description": "Schema für Lieferende | Schema for end of delivery",
                 "properties": {
                   "eventName": {
-                    "default": "START_LIEFERENDE",
                     "description": "Name des Events | Name of the event",
                     "example": "START_ABR_NN",
                     "type": "string",
@@ -360,7 +359,8 @@
                       "START_AUFTRAGSSTATUS",
                       "START_ANFRAGE_STAMMDATENAENDERUNG",
                       "START_UEBERM_DEFINITION"
-                    ]
+                    ],
+                    "default": "START_LIEFERENDE"
                   },
                   "id": {
                     "description": "BelegId des Datensatzes in der Tabelle im Backend | DocumentId of the data record in the table in the backend",

@@ -3054,7 +3054,6 @@
                           "type": "string"
                         },
                         "abschlagszyklus": {
-                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden.",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -3113,7 +3112,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden."
                         },
                         "anzahl_abschlaege": {
                           "type": "number",
@@ -3125,7 +3125,6 @@
                           "description": "Freitext zur Beschreibung der Konditionen"
                         },
                         "vertragsverlaengerung": {
-                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -3184,7 +3183,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit"
                         }
                       }
                     },
@@ -27067,7 +27067,6 @@
                           "type": "string"
                         },
                         "abschlagszyklus": {
-                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden.",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -27126,7 +27125,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden."
                         },
                         "anzahl_abschlaege": {
                           "type": "number",
@@ -27138,7 +27138,6 @@
                           "description": "Freitext zur Beschreibung der Konditionen"
                         },
                         "vertragsverlaengerung": {
-                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -27197,7 +27196,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit"
                         }
                       }
                     },
@@ -32632,7 +32632,6 @@
                           "type": "string"
                         },
                         "abschlagszyklus": {
-                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden.",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -32691,7 +32690,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "In diesen Zyklen werden Abschläge gestellt. Alternativ kann auch die Anzahl in den Konditionen angeben werden."
                         },
                         "anzahl_abschlaege": {
                           "type": "number",
@@ -32703,7 +32703,6 @@
                           "description": "Freitext zur Beschreibung der Konditionen"
                         },
                         "vertragsverlaengerung": {
-                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit",
                           "title": "Zeitraum",
                           "type": "object",
                           "properties": {
@@ -32762,7 +32761,8 @@
                             "zeitraumId": {
                               "type": "integer"
                             }
-                          }
+                          },
+                          "description": "Falls der Vertrag nicht gekündigt wird, verlängert er sich automatisch um die hier angegebene Zeit"
                         }
                       }
                     },
