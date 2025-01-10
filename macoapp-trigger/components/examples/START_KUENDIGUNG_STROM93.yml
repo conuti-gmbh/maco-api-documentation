@@ -12,13 +12,11 @@ value:
     absender:
       boTyp: MARKTTEILNEHMER
       versionStruktur: '1'
-      gewerbekennzeichnung: true
       rollencodenummer: '9903526000002'
       rollencodetyp: BDEW
     empfaenger:
       boTyp: MARKTTEILNEHMER
       versionStruktur: '1'
-      gewerbekennzeichnung: true
       rollencodenummer: '9979052000006'
       rollencodetyp: BDEW
     kategorie: E35
