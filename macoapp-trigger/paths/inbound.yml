@@ -7,6 +7,8 @@ post:
     content:
       application/json:
         examples:
+          ECS_LIEFERBEGINN:
+            $ref: ../components/examples/ECS_LIEFERBEGINN.yml
           START_MALOIDENT:
             $ref: ../components/examples/START_MALOIDENT.yml
           START_KUENDIGUNG:
