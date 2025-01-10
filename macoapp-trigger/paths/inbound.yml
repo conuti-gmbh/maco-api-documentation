@@ -25,8 +25,8 @@ post:
             $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
           START_LIEFERENDE:
             $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
-          #START_LIEFERENDE:
-            #$ref: ../components/examples/START_LIEFERENDE_NB.yml
+          START_LIEFERENDE:
+            $ref: ../components/examples/START_LIEFERENDE_NB.yml
           START_BESTELLUNG_KONFIGURATION:
             $ref: ../components/examples/START_BESTELLUNG_KONFIGURATION.yml   
           START_STAMMDATENAENDERUNG_MALO_AN_LF:
