@@ -17,8 +17,8 @@ def generate_pi_yaml(input_file, stammdaten_file, output_file):
     input_data = load_yaml(input_file)
     stammdaten_data = load_yaml(stammdaten_file)
 
-    # Extract the required items from the input file
-    required_items = ['BILANZIERUNG', 'ENERGIELIEFERVERTRAG', 'MARKTLOKATION', 'MESSLOKATION', 'NETZNUTZUNGSVERTRAG']
+    # Dynamically determine the required items from the input file
+    required_items = input_data['value']['stammdaten'].keys()
     extracted_data = {item: input_data['value']['stammdaten'][item] for item in required_items if item in input_data['value']['stammdaten']}
 
     # Prepare the output data in the required format
@@ -29,17 +29,18 @@ def generate_pi_yaml(input_file, stammdaten_file, output_file):
                 'type': 'object',
                 'properties': {item: stammdaten_data['properties']['stammdaten']['properties'][item] for item in extracted_data}
             },
-            'transaktionsdaten': input_data['value']['transaktionsdaten']
+            'transaktionsdaten': stammdaten_data['properties']['transaktionsdaten']
         }
     }
 
     # Write the output data to the specified file
     write_yaml(output_data, output_file)
 
+pi = 55008
 # Define file paths
-input_file = '../macoapp-schreiben/components/examples/Strom/55001_eingehend_Testfall1.yaml'
-stammdaten_file = '../bo4e/components/requestBodies/stammdaten.yml'
-output_file = '../macoapp-schreiben/components/requestBodies/PIs/PI_55001.yml'
+input_file = f"../macoapp-schreiben/components/examples/Strom/{pi}_eingehend_Testfall1.yaml"
+stammdaten_file = f"../macoapp-schreiben/components/requestBodies/stammdaten.yml"
+output_file = f"../macoapp-schreiben/components/requestBodies/PIs/PI_{pi}.yml"
 
 # Generate the PI YAML file
 generate_pi_yaml(input_file, stammdaten_file, output_file)
