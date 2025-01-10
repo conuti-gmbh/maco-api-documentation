@@ -1,0 +1,26 @@
+summary: START_KUENDIGUNG - Kündigung (LF) Strom DTM+93
+value:
+  stammdaten:
+    MARKTLOKATION:
+    - boTyp: MARKTLOKATION
+      versionStruktur: '1'
+      marktlokationsId: '50754496000'
+      sparte: STROM
+  transaktionsdaten:
+    transaktionsgrund: E03
+    transaktionsgrundergaenzung: ZW4
+    absender:
+      boTyp: MARKTTEILNEHMER
+      versionStruktur: '1'
+      rollencodenummer: '9903526000002'
+      rollencodetyp: BDEW
+    empfaenger:
+      boTyp: MARKTTEILNEHMER
+      versionStruktur: '1'
+      rollencodenummer: '9979052000006'
+      rollencodetyp: BDEW
+    kategorie: E35
+    vertragsende: '2025-10-31T23:00:00Z' #DTM+93
+  zusatzdaten:
+    prozessId: '00505688-E4A2-1EDF-A0C2-C81842E2515E'
+    eventname: START_KUENDIGUNG
