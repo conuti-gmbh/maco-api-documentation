@@ -22,7 +22,9 @@ post:
           START_LIEFERBEGINN:
             $ref: ../components/examples/START_LIEFERBEGINNZ22_befr.yml
           START_LIEFERENDE:
-            $ref: ../components/examples/START_LIEFERENDE_LF.yml
+            $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
+          START_LIEFERENDE:
+            $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
           #START_LIEFERENDE:
             #$ref: ../components/examples/START_LIEFERENDE_NB.yml
           START_BESTELLUNG_KONFIGURATION:

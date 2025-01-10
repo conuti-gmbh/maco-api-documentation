@@ -1,0 +1,24 @@
+summary: START_LIEFERENDE - Lieferende erzeug MaLo Strom LF an NB
+value:
+  stammdaten:
+    TRANCHE:
+    - boTyp: TRANCHE
+      versionStruktur: '1'
+      tranchenId: '57685676742'
+      sparte: STROM
+      energierichtung: EINSP
+  transaktionsdaten:
+    transaktionsgrund: E01
+    transaktionsgrundergaenzung: ZW3
+    absender:
+      rollencodenummer: '9904000000005'
+      rollencodetyp: BDEW
+    empfaenger:
+      rollencodenummer: '9900936000002'
+      rollencodetyp: BDEW
+    kategorie: E02
+    vertragsbeginn: '2025-10-31T23:00:00Z'
+    vertragsende: '2025-10-31T23:00:00Z'
+  zusatzdaten:
+    prozessId: '00505688-E4A2-1EDF-A0C2-C81842E2515E'
+    eventname: START_LIEFERENDE
