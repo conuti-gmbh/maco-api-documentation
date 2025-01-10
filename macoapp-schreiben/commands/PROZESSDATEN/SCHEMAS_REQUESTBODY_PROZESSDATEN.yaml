@@ -1,3 +1,3 @@
 oneOf: 
-  -  $ref: ../../components/requestBodies/PI_55001_STAMMDATEN_NB_ANFRAGEN_LF.yml
-  -  $ref: ../../components/requestBodies/PI_55002_STAMMDATEN_LF_ANTWORT_NB.yml
+  -  $ref: ../../components/requestBodies/PIs/PI_55001.yml
+  -  $ref: ../../components/requestBodies/PIs/PI_55002.yml
