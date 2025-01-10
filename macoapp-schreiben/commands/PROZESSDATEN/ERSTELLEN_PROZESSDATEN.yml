@@ -7,12 +7,9 @@ post:
   requestBody:
     content:
       application/json:
-        examples:
-          $ref: EXAMPLES.yaml
+        $ref: EXAMPLES_ERSTELLEN_PROZESSDATEN.yaml
         schema:
-          oneOf: 
-            -  $ref: ../../components/requestBodies/PI_55001_STAMMDATEN_NB_ANFRAGEN_LF.yml
-            -  $ref: ../../components/requestBodies/PI_55002_STAMMDATEN_LF_ANTWORT_NB.yml
+          $ref: SCHEMAS_REQUESTBODY_PROZESSDATEN.yaml
     required: true
   responses:
     "200":
