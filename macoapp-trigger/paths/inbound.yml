@@ -10,7 +10,11 @@ post:
           START_LIEFERBEGINN:
             $ref: ../components/examples/START_LIEFERBEGINN.yml
           START_KUENDIGUNG:
-            $ref: ../components/examples/START_KUENDIGUNG.yml  
+            $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
+          START_KUENDIGUNG:
+            $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml
+          START_KUENDIGUNG:
+            $ref: ../components/examples/START_KUENDIGUNG_GAS.yml  
           START_BESTELLUNG_KONFIGURATION:
             $ref: ../components/examples/START_BESTELLUNG_KONFIGURATION.yml   
           START_STAMMDATENAENDERUNG_MALO_AN_LF:
