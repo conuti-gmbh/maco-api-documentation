@@ -4,32 +4,11 @@ post:
     gegeben marktlokationsId (Parameter2) | Start a delivery start on the given date
     (Parameter1)  at the given market location ID (Parameter2)
   operationId: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
-  parameters:
-    - description:
-        Name der Operation | Name of the operation (MACO APP interal assignment
-        between process and interface)
-      in: query
-      name: command
-      schema:
-        default: ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
-        example: NOCODB_ERSTELLEN_PROZESSDATEN_LIEFERBEGINN
-        type: string
-    - description: marktlokationsId | market location identifier
-      in: query
-      name: parameter1
-      required: true
-      schema:
-        example: "74018657187"
-        type: string
-    - $ref: ../../components/parameters/parameter2.yml
   requestBody:
     content:
       application/json:
         examples:
-          "PI 55001 - ROLLE NB : DATEN AUS ANFRAGE LF":
-            $ref: "../../components/examples/PI_55001.yml"
-          "PI 55002 - ROLLE LF : DATEN AUS ANTWORT NB":
-            $ref: "../../components/examples/PI_55002.yml"
+          $ref: EXAMPLES.yaml
         schema:
           oneOf: 
             -  $ref: ../../components/requestBodies/PI_55001_STAMMDATEN_NB_ANFRAGEN_LF.yml
