@@ -12,21 +12,13 @@ post:
           START_MALOIDENT:
             $ref: ../components/examples/START_MALOIDENT.yml
           START_KUENDIGUNG:
-            $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
-          START_KUENDIGUNG:
-            $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml
-          START_KUENDIGUNG:
-            $ref: ../components/examples/START_KUENDIGUNG_GAS.yml  
-          START_LIEFERBEGINN:
-            $ref: ../components/examples/START_LIEFERBEGINNZ16.yml
-          START_LIEFERBEGINN:
-            $ref: ../components/examples/START_LIEFERBEGINNZ22_befr.yml
+            - $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
+            - $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml
+            - $ref: ../components/examples/START_KUENDIGUNG_GAS.yml
           START_LIEFERENDE:
-            $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
-          START_LIEFERENDE:
-            $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
-          START_LIEFERENDE:
-            $ref: ../components/examples/START_LIEFERENDE_NB.yml
+            - $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
+            - $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
+            - $ref: ../components/examples/START_LIEFERENDE_NB.yml
           START_BESTELLUNG_KONFIGURATION:
             $ref: ../components/examples/START_BESTELLUNG_KONFIGURATION.yml   
           START_STAMMDATENAENDERUNG_MALO_AN_LF:
