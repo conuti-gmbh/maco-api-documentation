@@ -7,34 +7,38 @@ post:
     content:
       application/json:
         examples:
-          START_LIEFERBEGINN:
-            $ref: ../components/examples/START_LIEFERBEGINN.yml
+          START_MALOIDENT:
+            $ref: ../components/examples/START_MALOIDENT.yml
           START_KUENDIGUNG:
             $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
           START_KUENDIGUNG:
             $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml
           START_KUENDIGUNG:
             $ref: ../components/examples/START_KUENDIGUNG_GAS.yml  
+          START_LIEFERBEGINN:
+            $ref: ../components/examples/START_LIEFERBEGINNZ16.yml
+          START_LIEFERBEGINN:
+            $ref: ../components/examples/START_LIEFERBEGINNZ22_befr.yml
+          START_LIEFERENDE:
+            $ref: ../components/examples/START_LIEFERENDE_LF.yml
+          #START_LIEFERENDE:
+            #$ref: ../components/examples/START_LIEFERENDE_NB.yml
           START_BESTELLUNG_KONFIGURATION:
             $ref: ../components/examples/START_BESTELLUNG_KONFIGURATION.yml   
           START_STAMMDATENAENDERUNG_MALO_AN_LF:
             $ref: ../components/examples/START_STAMMDATENAENDERUNG_MALO_AN_LF.yml                  
           START_STAMMDATENAENDERUNG_MALO_AN_MSB:
-            $ref: ../components/examples/START_STAMMDATENAENDERUNG_MALO_AN_MSB.yml        
-          START_LIEFERENDE:
-            $ref: ../components/examples/START_LIEFERENDE.yml                                      
+            $ref: ../components/examples/START_STAMMDATENAENDERUNG_MALO_AN_MSB.yml                                   
           START_AUFHEBUNG_ZUK_ZUORDNUNG_LF:
             $ref: ../components/examples/START_AUFHEBUNG_ZUK_ZUORDNUNG_LF.yml  
           START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB:
-            $ref: ../components/examples/START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB.yml             
+            $ref: ../components/examples/START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB.yml
           START_ABR_NN:
-            $ref: ../components/examples/START_ABR_NN.yml   
+            $ref: ../components/examples/START_ABR_NN.yml
           START_VERSAND_ABR_BILA:
-            $ref: ../components/examples/START_VERSAND_ABR_BILA.yml   
+            $ref: ../components/examples/START_VERSAND_ABR_BILA.yml
           START_VERSAND_BEARB_MELDUNG:
-            $ref: ../components/examples/START_VERSAND_BEARB_MELDUNG.yml         
-          START_MALOIDENT:
-            $ref: ../components/examples/START_MALOIDENT.yml                                                                       
+            $ref: ../components/examples/START_VERSAND_BEARB_MELDUNG.yml
         schema:
           oneOf:
             - $ref: ../components/schemas/START_LIEFERBEGINN.yml
