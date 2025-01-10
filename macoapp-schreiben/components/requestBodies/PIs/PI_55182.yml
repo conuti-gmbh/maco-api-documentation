@@ -1,17 +1,9 @@
 properties:
   stammdaten:
     properties:
-      BILANZIERUNG:
-        items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung
-        type: array
       MARKTLOKATION:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
-        type: array
-      NETZNUTZUNGSVERTRAG:
-        items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
         type: array
     type: object
   transaktionsdaten:

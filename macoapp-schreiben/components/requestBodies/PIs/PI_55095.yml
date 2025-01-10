@@ -5,10 +5,6 @@ properties:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung
         type: array
-      ENERGIELIEFERVERTRAG:
-        items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
-        type: array
       MARKTLOKATION:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
@@ -20,6 +16,14 @@ properties:
       NETZNUTZUNGSVERTRAG:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+        type: array
+      TRANCHE:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche
+        type: array
+      ZAEHLER:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler
         type: array
     type: object
   transaktionsdaten:

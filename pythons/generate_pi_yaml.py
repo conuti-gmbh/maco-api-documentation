@@ -1,7 +1,8 @@
 import yaml
 import os
+import re
 
-# This script reads specified items from '55001_eingehend_Testfall1.yaml' and writes them to a new file in the format specified in 'PI_55001.yml'.
+# This script reads specified items from all YAML files in the specified folder and writes them to new files in the required format.
 # To run this script, use the command: python generate_pi_yaml.py
 
 def load_yaml(file_path):
@@ -36,11 +37,20 @@ def generate_pi_yaml(input_file, stammdaten_file, output_file):
     # Write the output data to the specified file
     write_yaml(output_data, output_file)
 
-pi = 55008
-# Define file paths
-input_file = f"../macoapp-schreiben/components/examples/Strom/{pi}_eingehend_Testfall1.yaml"
-stammdaten_file = f"../macoapp-schreiben/components/requestBodies/stammdaten.yml"
-output_file = f"../macoapp-schreiben/components/requestBodies/PIs/PI_{pi}.yml"
+def process_all_files(input_folder, stammdaten_file, output_folder):
+    # Get all YAML files in the input folder
+    for filename in os.listdir(input_folder):
+        if filename.endswith("_eingehend_Testfall1.yaml"):
+            # Extract the PI number from the filename
+            pi = re.search(r'(\d+)_eingehend_Testfall1.yaml', filename).group(1)
+            input_file = os.path.join(input_folder, filename)
+            output_file = os.path.join(output_folder, f"PI_{pi}.yml")
+            generate_pi_yaml(input_file, stammdaten_file, output_file)
 
-# Generate the PI YAML file
-generate_pi_yaml(input_file, stammdaten_file, output_file)
+# Define file paths
+input_folder = "../macoapp-schreiben/components/examples/Strom/"
+stammdaten_file = "../macoapp-schreiben/components/requestBodies/stammdaten.yml"
+output_folder = "../macoapp-schreiben/components/requestBodies/PIs/"
+
+# Process all files in the input folder
+process_all_files(input_folder, stammdaten_file, output_folder)

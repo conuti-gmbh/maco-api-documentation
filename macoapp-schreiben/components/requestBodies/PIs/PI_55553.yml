@@ -1,13 +1,13 @@
 properties:
   stammdaten:
     properties:
+      AD_HOC_STEUERKANAL:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/AdHocSteuerkanal
+        type: array
       BILANZIERUNG:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung
-        type: array
-      ENERGIELIEFERVERTRAG:
-        items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
         type: array
       MARKTLOKATION:
         items:
@@ -20,6 +20,10 @@ properties:
       NETZNUTZUNGSVERTRAG:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+        type: array
+      ZAEHLER:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler
         type: array
     type: object
   transaktionsdaten:

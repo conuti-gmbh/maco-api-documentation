@@ -13,10 +13,6 @@ properties:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
         type: array
-      MESSLOKATION:
-        items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation
-        type: array
       NETZNUTZUNGSVERTRAG:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag

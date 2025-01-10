@@ -17,9 +17,21 @@ properties:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation
         type: array
+      MESSSTELLENBETRIEBSVERTRAG:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+        type: array
+      NETZLOKATION:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Netzlokation
+        type: array
       NETZNUTZUNGSVERTRAG:
         items:
           $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+        type: array
+      ZAEHLER:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler
         type: array
     type: object
   transaktionsdaten:
