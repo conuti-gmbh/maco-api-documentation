@@ -12,10 +12,11 @@ info:
 
     <details>
 
-    <summary>Changelog</summary>
-
-    - **Version 1.2.0** - *12. Januar 2024* - _Autor: Tu Quy Nguyen_
-      - Refactoring von ERSTELLEN_PROZESSDATEN zur Vereinheitlichung von operationId und Aktualisierung der Beispiele zur Verdeutlichung und Konsistenz
+    <summary>Changelog: </summary>
+    -
+       
+    - **Version 1.2.0** - *12. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Refactoring von ERSTELLEN_PROZESSDATEN und AKTUALISIEREN_PROZESSDATEN
 
     - **Version 1.2.0** - *16. Dezember 2024* - _Autor: DAS_
       - Reduzierung auf schreibende Schnittstellen
