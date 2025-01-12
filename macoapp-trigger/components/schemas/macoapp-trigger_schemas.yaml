@@ -1,0 +1,13 @@
+oneOf:
+  - $ref: ../schemas/START_ABR_NN.yml
+  - $ref: ../schemas/START_AUFHEBUNG_ZUK_ZUORDNUNG_LF.yml
+  - $ref: ../schemas/START_AUFHEBUNG_ZUK_ZUORDNUNG_MSB.yml
+  - $ref: ../schemas/START_BESTELLUNG_KONFIGURATION.yml
+  - $ref: ../schemas/START_KUENDIGUNG.yml
+  - $ref: ../schemas/START_LIEFERBEGINN.yml
+  - $ref: ../schemas/START_LIEFERENDE.yml
+  - $ref: ../schemas/START_MALOIDENT.yml
+  - $ref: ../schemas/START_STAMMDATENAENDERUNG_MALO_AN_LF.yml
+  - $ref: ../schemas/START_STAMMDATENAENDERUNG_MALO_AN_MSB.yml
+  - $ref: ../schemas/START_VERSAND_ABR_BILA.yml
+  - $ref: ../schemas/START_VERSAND_BEARB_MELDUNG.yml
