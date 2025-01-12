@@ -1,15 +1,13 @@
 examples: 
-  "PI 55001 - ROLLE NB : Anmeldung":
-    $ref: 
-      - ../../components/examples/Strom/55001_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55001_eingehend_Testfall2.yaml
-  "PI 55002 - ROLLE LF (entspricht LFN) : Antwort auf Anmeldung":
-    $refs:
-      - ../../components/examples/Strom/55002_eingehend_Testfall1.yaml
-  "PI 55003 - ROLLE LF (entspricht LFN) : Antwort auf Anmeldung":
-    $refs:
-      - ../../components/examples/Strom/55003_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55003_eingehend_Testfall2.yaml
+  "PI 55001 - ROLLE NB : Anmeldung Testfall1":
+    $ref: ../../components/examples/Strom/55001_eingehend_Testfall1.yaml
+  "PI 55001 - ROLLE NB : Anmeldung Testfall2":
+      $ref: ../../components/examples/Strom/55001_eingehend_Testfall2.yaml
+  "PI 55002 - ROLLE LF (entspricht LFN) : Antwort auf Anmeldung Testfall1":
+    $ref: ../../components/examples/Strom/55002_eingehend_Testfall1.yaml
+  "PI 55003 - ROLLE LF (entspricht LFN) : Antwort auf Anmeldung Testfall1":
+    $ref: ../../components/examples/Strom/55003_eingehend_Testfall1.yaml
+  "PI 55003 - ROLLE LF (entspricht LFN) : Antwort auf Anmeldung Testfall2":
     $ref: ../../components/examples/Strom/55003_eingehend_Testfall2.yaml
   "PI 55004 - ROLLE NB : Abmeldung":
     $ref: ../../components/examples/Strom/55004_eingehend_Testfall1.yaml
@@ -21,24 +19,26 @@ examples:
     $ref: ../../components/examples/Strom/55007_eingehend_Testfall1.yaml
   "PI 55008 - ROLLE NB : Antwort auf Abmeldung":
     $ref: ../../components/examples/Strom/55008_eingehend_Testfall1.yaml
-  "PI 55010 - ROLLE LF (entspricht LFA) : Abmeldeanfrage":
-    $ref: 
-      - ../../components/examples/Strom/55010_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55010_eingehend_Testfall2.yaml
+  "PI 55010 - ROLLE LF (entspricht LFA) : Abmeldeanfrage Testfall1":
+    $ref: ../../components/examples/Strom/55010_eingehend_Testfall1.yaml
+  "PI 55010 - ROLLE LF (entspricht LFA) : Abmeldeanfrage Testfall2":
+    $ref: ../../components/examples/Strom/55010_eingehend_Testfall2.yaml
   "PI 55011 - ROLLE NB : Beantwortung der Abmeldeanfrage":
     $ref: ../../components/examples/Strom/55011_eingehend_Testfall1.yaml
   "PI 55012 - ROLLE NB : Beantwortung der Abmeldeanfrage":
     $ref: ../../components/examples/Strom/55012_eingehend_Testfall1.yaml
   "PI 55013 - ROLLE LF (entspricht E/G) : Anmeldung zur E/G":
-  "PI 55016 - ROLLE LF (entspricht LFA) : Kündigung":
-    $ref: 
-      - ../../components/examples/Strom/55016_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55016_eingehend_Testfall2.yaml
-  "PI 55018 - ROLLE LF (entspricht LFN) : Antwort":
-    $ref: 
-      - ../../components/examples/Strom/55018_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55018_eingehend_Testfall2.yaml
-      - ../../components/examples/Strom/55017_eingehend_Testfall1.yaml
+    $ref: ../../components/examples/Strom/55013_eingehend_Testfall1.yaml
+  "PI 55016 - ROLLE LF (entspricht LFA) : Kündigung Testfall1":
+    $ref: ../../components/examples/Strom/55016_eingehend_Testfall1.yaml
+  "PI 55016 - ROLLE LF (entspricht LFA) : Kündigung Testfall2":
+    $ref: ../../components/examples/Strom/55016_eingehend_Testfall2.yaml
+  "PI 55018 - ROLLE LF (entspricht LFN) : Antwort Testfall1":
+    $ref: ../../components/examples/Strom/55018_eingehend_Testfall1.yaml
+  "PI 55018 - ROLLE LF (entspricht LFN) : Antwort Testfall2":
+    $ref: ../../components/examples/Strom/55018_eingehend_Testfall2.yaml
+  "PI 55018 - ROLLE LF (entspricht LFN) : Antwort Testfall3":
+    $ref: ../../components/examples/Strom/55017_eingehend_Testfall1.yaml
   "PI 55022 - ROLLE Beteiligte wie bei Ursprungsnachricht : --":
     $ref: ../../components/examples/Strom/55022_eingehend_Testfall1.yaml
   "PI 55023 - ROLLE Sender einer Stornierungsanfrage : --":
@@ -53,10 +53,10 @@ examples:
     $ref: ../../components/examples/Strom/55037_eingehend_Testfall1.yaml
   "PI 55038 - ROLLE LF (zukünftige LF) : Information über die Aufhebung einer zukünftigen Zuordnung":
     $ref: ../../components/examples/Strom/55038_eingehend_Testfall1.yaml
-  "PI 55042 - ROLLE NB : Anmeldung":
-    $ref: 
-      - ../../components/examples/Strom/55042_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55042_eingehend_Testfall2.yaml
+  "PI 55042 - ROLLE NB : Anmeldung Testfall1":
+    $ref: ../../components/examples/Strom/55042_eingehend_Testfall1.yaml
+  "PI 55042 - ROLLE NB : Anmeldung Testfall2":
+      $ref: ../../components/examples/Strom/55042_eingehend_Testfall2.yaml
   "PI 55051 - ROLLE NB : Abmeldung ":
     $ref: ../../components/examples/Strom/55051_eingehend_Testfall1.yaml
   "PI 55052 - ROLLE MSB (entspricht MSBA am Objekt Messlokation) : Antwort auf Abmeldung":
@@ -67,18 +67,18 @@ examples:
     $ref: ../../components/examples/Strom/55071_eingehend_Testfall1.yaml
   "PI 55072 - ROLLE NB : Deaktivierung der Zuordnungsermächtigung":
     $ref: ../../components/examples/Strom/55072_eingehend_Testfall1.yaml
-  "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF":
-    $ref: 
-      - ../../components/examples/Strom/55126_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55126_eingehend_Testfall2.yaml
-  "PI 55185 - ROLLE LF : Information über die Zuordnung einer Marktlokation zur Da-tenaggregation durch den ÜNB":
-    $ref: 
-      - ../../components/examples/Strom/55185_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55185_eingehend_Testfall2.yaml
-  "PI 55186 - ROLLE NB : Antwort auf Information über die Zuordnung einer Marktlokation zur Datenaggregation durch den ÜNB":
-    $ref: 
-      - ../../components/examples/Strom/55186_eingehend_Testfall1.yaml
-      - ../../components/examples/Strom/55186_eingehend_Testfall2.yaml
+  "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall1":
+    $ref: ../../components/examples/Strom/55126_eingehend_Testfall1.yaml
+  "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall2":
+    $ref: ../../components/examples/Strom/55126_eingehend_Testfall2.yaml
+  "PI 55185 - ROLLE LF : Information über die Zuordnung einer Marktlokation zur Da-tenaggregation durch den ÜNB Testfall1":
+    $ref: ../../components/examples/Strom/55185_eingehend_Testfall1.yaml
+  "PI 55185 - ROLLE LF : Information über die Zuordnung einer Marktlokation zur Da-tenaggregation durch den ÜNB Testfall2":
+    $ref: ../../components/examples/Strom/55185_eingehend_Testfall2.yaml
+  "PI 55186 - ROLLE NB : Antwort auf Information über die Zuordnung einer Marktlokation zur Datenaggregation durch den ÜNB Testfall1":
+    $ref: ../../components/examples/Strom/55186_eingehend_Testfall1.yaml
+  "PI 55186 - ROLLE NB : Antwort auf Information über die Zuordnung einer Marktlokation zur Datenaggregation durch den ÜNB Testfall2":
+    $ref: ../../components/examples/Strom/55186_eingehend_Testfall2.yaml
   "PI 55187 - ROLLE NB : Prüfergebnis auf Information über die Zuordnung einer Marktlokation zur Datenaggregation durch den ÜNB":
     $ref: ../../components/examples/Strom/55187_eingehend_Testfall1.yaml
   "PI 55188 - ROLLE LF : Information über die Beendigung an den ÜNB":
