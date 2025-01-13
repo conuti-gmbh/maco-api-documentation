@@ -8,11 +8,15 @@ info:
     <summary>Changelog</summary>
     -
 
-    - **Version 1.2.3** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
+    - **Version 1.2.4** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
       - Refactor inbound schema references and update versioning in changelog
 
-    - **Version 1.2.2** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
+    - **Version 1.2.3** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
       - Add new schema files for various transaction types and market locations
+    
+    - **Version 1.2.2** - *10. Januar 2025* - _Autor: C. Lösche_
+      - Beispiele ergänzt für START_LIEFERBEGINN, START_KUENDIGUNG, START_LIEFERENDE
+      - Hinzugefügtes Schemas: `ECS_MALOIDENT`
 
     - **Version 1.2.1** - *07. Januar 2025* - _Autor: DAS_
       - Falsches `data` Root Element entfernt
