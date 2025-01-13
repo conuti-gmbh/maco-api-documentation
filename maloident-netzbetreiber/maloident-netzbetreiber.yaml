@@ -6,7 +6,11 @@ info:
 
     <details>
     <summary>Changelog</summary>
-    
+    -
+       
+    **Version 1.0.3** - *13. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Added security schema for the API and fixed date format in the schema 
+
     **Version 1.0.2** - *09. Dezember 2024* - _Autor: DAS_
       - Aktualisierung des Event Schema in Bezug auf Zeitscheibenbehandlung
     
@@ -36,5 +40,6 @@ tags:
     description: Schnittstellen die das Backend des Netzbetreibers für die Identifizierung bereitstellen muss        
   - name: MALODATEN
     description: Schnittstellen die das Backend des Netzbetreibers für die Erzeugung der Marktantwort bereitstellen muss     
+security: []
 paths:
   $ref: paths/_index.yml
