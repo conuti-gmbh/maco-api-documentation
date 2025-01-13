@@ -6,6 +6,10 @@ info:
 
     <details>
     <summary>Changelog</summary>   
+    -
+       
+    **Version 1.0.5** - *13. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Added security schema for the API and fixed date format in the schema 
     
     **Version 1.0.4** - *07. Januar 2025* - _Autor: DAS_
       - Falsches `data` Root Element entfernt
@@ -40,5 +44,6 @@ servers:
 tags:
   - name: LIEFERANT
     description: Schnittstellen der MaloIdent Lösung für die Rolle Lieferant         
+security: []
 paths:
   $ref: paths/_index.yml
