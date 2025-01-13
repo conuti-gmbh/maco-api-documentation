@@ -271,26 +271,22 @@ properties:
         type: string
         example: "E03"
         description: >
-          Kündigung zum nächstmöglichen Termin ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
-          | Format YYYY-MM-DD'T'HH:mm:ss'Z' 
+          Transaktionsgrund : E01 Ein-/Auszug (Umzug) / E03 Wechsel 
       transaktionsgrundergaenzung:
         type: string
         example: "ZW4"
         description: >
-          Kündigung zum nächstmöglichen Termin ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
-          | Format YYYY-MM-DD'T'HH:mm:ss'Z'       
+          Transaktionsgrundergaenzung : ZW3 Erzeugende Marktlokation / ZW4 Verbrauchende Marktlokation / ZW5 Tranche / ZW6 Pauschale Marktlokation / ZW7 Gemessene Marktlokation / ZAP ruhende Marktlokation
       transaktionsgrundergaenzungBefristeteAnmeldung:
         type: string
         example: "2023-08-02T22:00:00Z"
         description: >
-          Kündigung zum nächstmöglichen Termin ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
-          | Format YYYY-MM-DD'T'HH:mm:ss'Z'      
+          Transaktionsgrundergaenzung befristete Anmeldung : E01 Ein-/Auszug (Umzug) / E03 Wechsel      
       kategorie:
         type: string
         example: "E01"
         description: >
-          Kündigung zum nächstmöglichen Termin ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
-          | Format YYYY-MM-DD'T'HH:mm:ss'Z' 
+          Kategorie der Transaktion : E01 Anmeldungen / E35 Kündigung 
     required:
       - ausfuehrungsdatum
       - vorgangsnummer 
