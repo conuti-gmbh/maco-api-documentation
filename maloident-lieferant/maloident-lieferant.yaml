@@ -6,7 +6,11 @@ info:
 
     <details>
     <summary>Changelog</summary>
-    
+    -
+       
+    **Version 1.0.4** - *13. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Added security schema for the API and fixed date format in the schema 
+
     **Version 1.0.3** - *17. Dezember 2024* - _Autor: DAS_
       - Rollencodetyp bei Absender und Emfpfaenger entfernt
 
@@ -39,5 +43,6 @@ tags:
     description: Schnittstellen die das Backend des Lieferanten für den Empfang der positiven Marktantwort bereitstellen muss     
   - name: NEGATIV
     description: Schnittstellen die das Backend des Lieferanten für den Empfang der negativen Marktantwort bereitstellen muss      
+security: []
 paths:
   $ref: paths/_index.yml
