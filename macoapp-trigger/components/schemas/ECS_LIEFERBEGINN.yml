@@ -258,41 +258,35 @@ properties:
         pattern: "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ"
         example: "2023-08-02T22:00:00Z"
         description: >
-          Kündigung zum fixen Termin angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
+          Kündigung zum fixen Termin (DTM+93) angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
           | Format YYYY-MM-DD'T'HH:mm:ss'Z' | Mapping auf identificationDateTime
       endezumtermin:
         type: string
         pattern: "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ"
         example: "2023-08-02T22:00:00Z"
         description: >
-          Kündigung zum nächstmöglichen Termin ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
+          Kündigung zum nächstmöglichen Termin (DTM+471) ab diesem Zeitpunkt angegeben in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)
           | Format YYYY-MM-DD'T'HH:mm:ss'Z' 
       transaktionsgrund:
         type: string
         example: "E03"
         description: >
-          Transaktionsgrund : E01 Ein-/Auszug (Umzug) / E03 Wechsel 
+          Transaktionsgrund, der in Anmeldung gesendet werden soll : E01 Ein-/Auszug (Umzug) / E03 Wechsel 
       transaktionsgrundergaenzung:
         type: string
         example: "ZW4"
         description: >
-          Transaktionsgrundergaenzung : ZW3 Erzeugende Marktlokation / ZW4 Verbrauchende Marktlokation / ZW5 Tranche / ZW6 Pauschale Marktlokation / ZW7 Gemessene Marktlokation / ZAP ruhende Marktlokation
+          Transaktionsgrundergaenzung der Anmeldung: ZW3 Erzeugende Marktlokation / ZW4 Verbrauchende Marktlokation / ZW5 Tranche / ZW6 Pauschale Marktlokation / ZW7 Gemessene Marktlokation / ZAP ruhende Marktlokation
       transaktionsgrundergaenzungBefristeteAnmeldung:
-        type: string
-        example: "2023-08-02T22:00:00Z"
-        description: >
-          Transaktionsgrundergaenzung befristete Anmeldung : E01 Ein-/Auszug (Umzug) / E03 Wechsel      
-      kategorie:
         type: string
         example: "E01"
         description: >
-          Kategorie der Transaktion : E01 Anmeldungen / E35 Kündigung 
+          Transaktionsgrundergaenzung befristete Anmeldung: E01 Ein-/Auszug (Umzug) / E03 Wechsel      
     required:
       - ausfuehrungsdatum
       - vorgangsnummer 
       - absender
       - empfaenger 
-      - kategorie
       - transaktionsgrund
       - transaktionsgrundergaenzung                         
   zusatzdaten:
