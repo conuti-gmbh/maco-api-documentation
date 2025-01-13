@@ -313,7 +313,7 @@ properties:
         example: "ECS_LIEFERBEGINN"
         description: Name des Events 
         enum:
-          - START_MALOIDENT 
+          - ECS_LIEFERBEGINN 
     required:
       - prozessId
       - eventname    

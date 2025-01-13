@@ -9,20 +9,22 @@ post:
         examples:
           START_MALOIDENT:
             $ref: ../components/examples/START_MALOIDENT.yml
-          START_KUENDIGUNG:
-            oneOf:
-              - $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
-              - $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml              
-              - $ref: ../components/examples/START_KUENDIGUNG_GAS.yml  
-          START_LIEFERBEGINN:
-            oneOf:
-             - $ref: ../components/examples/START_LIEFERBEGINN_STROMZ16.yml
-             - $ref: ../components/examples/START_LIEFERBEGINN_STROMZ22_befr.yml
-          START_LIEFERENDE:
-            oneOf:
-            - $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
-            - $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
-            - $ref: ../components/examples/START_LIEFERENDE_NB.yml
+          START_KUENDIGUNG-STROM93:
+            $ref: ../components/examples/START_KUENDIGUNG_STROM93.yml
+          START_KUENDIGUNG-STROM471:
+            $ref: ../components/examples/START_KUENDIGUNG_STROM471.yml 
+          START_KUENDIGUNG-GAS:
+            $ref: ../components/examples/START_KUENDIGUNG_GAS.yml 
+          START_LIEFERBEGINN-STROMZ16:
+            $ref: ../components/examples/START_LIEFERBEGINN_STROMZ16.yml
+          START_LIEFERBEGINN-STROMZ33:
+            $ref: ../components/examples/START_LIEFERBEGINN_STROMZ22_befr.yml
+          START_LIEFERENDE-LF-Z16:
+            $ref: ../components/examples/START_LIEFERENDE_LF_Z16.yml
+          START_LIEFERENDE-LF-Z22:
+            $ref: ../components/examples/START_LIEFERENDE_LF_Z22.yml
+          START_LIEFERENDE-NB:
+            $ref: ../components/examples/START_LIEFERENDE_NB.yml
           START_BESTELLUNG_KONFIGURATION:
             $ref: ../components/examples/START_BESTELLUNG_KONFIGURATION.yml   
           START_STAMMDATENAENDERUNG_MALO_AN_LF:
