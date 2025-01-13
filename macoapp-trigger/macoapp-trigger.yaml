@@ -7,6 +7,10 @@ info:
     <details>
     <summary>Changelog</summary>
     
+    - **Version 1.2.2** - *10. Januar 2025* - _Autor: C. Lösche_
+      - Beispiele ergänzt für START_LIEFERBEGINN, START_KUENDIGUNG, START_LIEFERENDE
+      - Hinzugefügtes Schemas: `ECS_MALOIDENT`
+
     - **Version 1.2.1** - *07. Januar 2025* - _Autor: DAS_
       - Falsches `data` Root Element entfernt
       - Hinzugefügtes Schemas: `START_MALOIDENT`
