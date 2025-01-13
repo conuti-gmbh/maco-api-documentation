@@ -6,7 +6,11 @@ info:
 
     <details>
     <summary>Changelog</summary>
-    
+    -
+
+    - **Version 1.2.1** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Add new schema files for various transaction types and market locations
+
     - **Version 1.2.1** - *07. Januar 2025* - _Autor: DAS_
       - Falsches `data` Root Element entfernt
       - Hinzugefügtes Schemas: `START_MALOIDENT`
