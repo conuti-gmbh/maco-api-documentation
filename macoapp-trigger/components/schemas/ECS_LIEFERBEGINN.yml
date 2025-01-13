@@ -233,8 +233,11 @@ properties:
             type: string
             example: "9904000000005"
             description: Eigene ILN    
+          rollencodetyp:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
         required:
           - rollencodenummer
+          - rollencodetyp 
       empfaenger:
         type: object
         description: ILN und Rollencodetyp des Netzbetreibers, an den die Identanfrage gestellt werden soll    
@@ -243,8 +246,11 @@ properties:
             type: string
             example: "9900936000002"
             description: ILN des Netzbetreibers, an den die Identanfrage gestellt werden soll
+          rollencodetyp:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
         required:
           - rollencodenummer
+          - rollencodetyp 
       beteiligterMarktpartner:
         type: object
         description: Identifiziert den LFA an den die Kündigung gesendet werden soll. Ist das Feld leer, wird keine Kündigung ausgelöst
@@ -252,7 +258,12 @@ properties:
           rollencodenummer:
             type: string
             description: "Identifiziert den Alterlieferanten (Marktpartner-ID)."
-            example: "9980000000029"            
+            example: "9980000000029"     
+          rollencodetyp:
+            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Rollencodetyp"                
+        required:
+          - rollencodenummer
+          - rollencodetyp                   
       vertragsende:
         type: string
         pattern: "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ"
