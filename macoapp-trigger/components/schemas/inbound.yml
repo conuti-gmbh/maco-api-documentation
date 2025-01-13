@@ -6,21 +6,21 @@ post:
   requestBody:
     content:
       application/json:
-        $ref: ../components/schemas/macoapp-trigger_examples.yaml
+        $ref: macoapp-trigger_examples.yaml
         schema:
-          $ref: ../components/schemas/macoapp-trigger_schemas.yaml
+          $ref: macoapp_trigger_schemas.yaml
   responses:
     201:
       content:
         application/json:
           schema:
-            $ref: '../components/responses/event_responses_success.yml'
+            $ref: '../responses/event_responses_success.yml'
       description: Erfolg | Success
     400:
       content:
         application/json:
           schema:
-            $ref: ../components/responses/event_response_fail.yml
+            $ref: ../responses/event_response_fail.yml
       description: Fehler | Fail
   security: []
   summary: Trigger Events

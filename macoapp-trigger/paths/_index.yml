@@ -1,2 +1,2 @@
 /inbound:
-  $ref: inbound.yml
+  $ref: ../components/schemas/inbound.yml
