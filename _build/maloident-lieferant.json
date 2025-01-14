@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Schnittstellen des Lieferanten Backends für MaloIdent Lösung",
-    "description": "Folgende Schnittstellen muss das Backend des Lieferanten bereitstellen um die MaloIdent Antwort empfangen zu können\n\n<details>\n<summary>Changelog</summary>\n-\n   \n**Version 1.0.4** - *13. Januar 2025* - _Autor: Tu Quy Nguyen_\n  - Added security schema for the API and fixed date format in the schema \n\n**Version 1.0.3** - *17. Dezember 2024* - _Autor: DAS_\n  - Rollencodetyp bei Absender und Emfpfaenger entfernt\n\n**Version 1.0.2** - *10. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung der zusatzdaten\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Ergänzung  `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_NEGATIV`-Schema.\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_POSITIV`-Schema.\n\n</details>\n",
+    "description": "Folgende Schnittstellen muss das Backend des Lieferanten bereitstellen um die MaloIdent Antwort empfangen zu können\n\n<details>\n<summary>Changelog</summary>\n\n**Version 1.0.3** - *17. Dezember 2024* - _Autor: DAS_\n  - Rollencodetyp bei Absender und Emfpfaenger entfernt\n\n**Version 1.0.2** - *10. Dezember 2024* - _Autor: DAS_\n  - Aktualisierung der zusatzdaten\n\n**Version 1.0.1** - *02. Dezember 2024* - _Autor: DAS_\n\n- Ergänzung  `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_NEGATIV`-Schema.\n\n**Version 1.0.0** - *01. November 2024* - _Autor: DAS_\n\n- Initiale Veröffentlichung der Doku mit dem `ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_POSITIV`-Schema.\n\n</details>\n",
     "version": "1.0.3",
     "license": {
       "name": "Apache 2.0",
@@ -29,7 +29,6 @@
       "description": "Schnittstellen die das Backend des Lieferanten für den Empfang der negativen Marktantwort bereitstellen muss"
     }
   ],
-  "security": [],
   "paths": {
     "/ERSTELLEN_PROZESSDATEN_MALOIDENTANTWORT_POSITIV": {
       "post": {
@@ -715,13 +714,13 @@
                                       "zuordnungVon": {
                                         "type": "string",
                                         "description": "Beginnzeitpunkt, Zeitpunkt zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-09-01T00:00:00Z"
                                       },
                                       "zuordnungBis": {
                                         "type": "string",
                                         "description": "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-10-01T00:00:00Z"
                                       }
                                     },
@@ -940,13 +939,13 @@
                                       "zuordnungVon": {
                                         "type": "string",
                                         "description": "Beginnzeitpunkt, Zeitpunkt zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-09-01T00:00:00Z"
                                       },
                                       "zuordnungBis": {
                                         "type": "string",
                                         "description": "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-10-01T00:00:00Z"
                                       }
                                     },
@@ -1036,13 +1035,13 @@
                                       "zuordnungVon": {
                                         "type": "string",
                                         "description": "Beginnzeitpunkt, Zeitpunkt zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-09-01T00:00:00Z"
                                       },
                                       "zuordnungBis": {
                                         "type": "string",
                                         "description": "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-10-01T00:00:00Z"
                                       }
                                     },
@@ -1240,13 +1239,13 @@
                                       "zuordnungVon": {
                                         "type": "string",
                                         "description": "Beginnzeitpunkt, Zeitpunkt zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-09-01T00:00:00Z"
                                       },
                                       "zuordnungBis": {
                                         "type": "string",
                                         "description": "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-10-01T00:00:00Z"
                                       }
                                     },
@@ -1327,13 +1326,13 @@
                                       "zuordnungVon": {
                                         "type": "string",
                                         "description": "Beginnzeitpunkt, Zeitpunkt zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-09-01T00:00:00Z"
                                       },
                                       "zuordnungBis": {
                                         "type": "string",
                                         "description": "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden in Zeitzone UTC. (umgerechnet muss dieser Zeitpunkt ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein)",
-                                        "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                                        "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                                         "example": "2023-10-01T00:00:00Z"
                                       }
                                     },
@@ -1370,7 +1369,7 @@
                           },
                           "nachrichtendatum": {
                             "type": "string",
-                            "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                            "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                             "example": "2023-08-01T12:30:00Z",
                             "description": "Zeitpunkt an dem der Aufruf erstellt wurde in Zeitzone UTC - falls der Wert aus dem Backend nicht befüllt ist, wird die MaloIdent Lösung das Datum zum Zeitpunkt des Empfang befüllen. | Format YYYY-MM-DD'T'HH:mm:ss'Z' | Mapping auf [header] creationDateTime\n"
                           },
@@ -1559,7 +1558,7 @@
                           },
                           "nachrichtendatum": {
                             "type": "string",
-                            "pattern": "20(\\\\d{2}(\\\\-(0[13578]|1[02])\\\\-(0[1-9]|[12]\\\\d|3[01])|\\\\-02\\\\-(0[1-9]|1\\\\d|2[0-8])|\\\\-(0[469]|11)\\\\-(0[1-9]|[12]\\\\d|30))|([02468][048]|[13579][26])\\\\-02\\\\-(29))T([01]\\\\d|2[0-3]):[0-5]\\\\d:[0-5]\\\\dZ",
+                            "pattern": "20(\\d{2}(\\-(0[13578]|1[02])\\-(0[1-9]|[12]\\d|3[01])|\\-02\\-(0[1-9]|1\\d|2[0-8])|\\-(0[469]|11)\\-(0[1-9]|[12]\\d|30))|([02468][048]|[13579][26])\\-02\\-(29))T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\dZ",
                             "example": "2023-08-01T12:30:00Z",
                             "description": "Zeitpunkt an dem der Aufruf erstellt wurde in Zeitzone UTC - falls der Wert aus dem Backend nicht befüllt ist, wird die MaloIdent Lösung das Datum zum Zeitpunkt des Empfang befüllen. | Format YYYY-MM-DD'T'HH:mm:ss'Z' | Mapping auf [header] creationDateTime\n"
                           },
