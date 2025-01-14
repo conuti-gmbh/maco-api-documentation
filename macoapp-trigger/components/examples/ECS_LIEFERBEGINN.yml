@@ -93,11 +93,13 @@ value:
     ausfuehrungsdatum: '2025-04-02T22:00:00Z'
     absender:
       rollencodenummer: '9904000000005'
+      rollencodetyp: BDEW
     empfaenger:
       rollencodenummer: '9900936000002'
+      rollencodetyp: BDEW
     beteiligterMarktpartner:
       rollencodenummer: '9900936000002'
-    kategorie: E01
+      rollencodetyp: BDEW
     vertragsende: '2025-10-31T23:00:00Z'
     endezumtermin: '2025-10-31T23:00:00Z'
   zusatzdaten:
