@@ -21,7 +21,7 @@ value:
       zaehlwerke:
       - messprodukt: '9991000000044'
         zaehlzeiten:
-        - zaehlzeitDefinition: ETS
+          zaehlzeitDefinition: ETS
         verwendungszwecke:
         - marktrolle: NB
           zweck:
