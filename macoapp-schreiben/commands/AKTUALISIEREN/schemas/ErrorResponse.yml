@@ -1,0 +1,32 @@
+ErrorResponse:
+  type: object
+  properties:
+    MESSAGES:
+      type: array
+      description: Liste von Problemen bei der Verarbeitung
+      items:
+        type: object
+        properties:
+          _-CS67_-DIALOG_MSG:
+            type: object
+            properties:
+              MSGTY:
+                type: string
+                description: Typ (E = error).
+                example: "E"
+              MSG_TXT:
+                type: string
+                description: Detailierte Fehlerinformationen.
+                example: "Es ist eine Ausnahme aufgetreten"
+              MSG_LANG:
+                type: string
+                description: Sprache der Fehlermeldung.
+                example: ""
+              MSG_DIS_TYPE:
+                type: string
+                description: Anzeigetyp (e.g., USER).
+                example: "USER"
+              TIMESTAMP:
+                type: string
+                description: Zeitstempel.
+                example: "20241114224020.901058"

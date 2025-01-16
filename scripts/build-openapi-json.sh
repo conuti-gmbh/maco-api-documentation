@@ -17,10 +17,10 @@ build_and_minify_openapi() {
   local output_filename=$2
 
   # Build OpenAPI JSON
-  swagger-cli bundle "$input_yaml" --outfile "${OUTPUT_DIR}/${output_filename}.json" --dereference --type json 
+  swagger-cli bundle "$input_yaml" --outfile "${OUTPUT_DIR}/${output_filename}.json" --dereference --type json
 
   # Minify OpenAPI JSON
- # jq -c . "${OUTPUT_DIR}/${output_filename}.json" > "${OUTPUT_DIR}/${output_filename}.min.json" &&
+  jq -c . "${OUTPUT_DIR}/${output_filename}.json" > "${OUTPUT_DIR}/${output_filename}.min.json"
 
   # Remove original OpenAPI JSON
   #rm "${OUTPUT_DIR}/${output_filename}.json"

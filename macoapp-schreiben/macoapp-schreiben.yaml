@@ -12,7 +12,11 @@ info:
 
     <details>
 
-    <summary>Changelog</summary>
+    <summary>Changelog: </summary>
+    -
+       
+    - **Version 1.2.0** - *12. Januar 2025* - _Autor: Tu Quy Nguyen_
+      - Refactoring von ERSTELLEN_PROZESSDATEN und AKTUALISIEREN_PROZESSDATEN
 
     - **Version 1.2.0** - *16. Dezember 2024* - _Autor: DAS_
       - Reduzierung auf schreibende Schnittstellen
@@ -63,10 +67,10 @@ servers:
   - url: "https://api.macoapp.de"
     description: Mock-Umgebung | Mock environment
 tags:
-  - name: AKTUALISIEREN 
+  - name: AKTUALISIEREN | UPDATE
     description: |
       Aktualisierung bestehender Daten 
-  - name: PROZESSDATEN 
+  - name: PROZESSDATEN | PROCESSING DATA
     description: |
        Verbuchung von Daten aus Marktprozesen im Backend
 

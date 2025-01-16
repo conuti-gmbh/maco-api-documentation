@@ -1,0 +1,31 @@
+post:
+  description:
+    Starten eines Lieferbeginns zum gegebenen Datum (Parameter1) an der
+    gegeben marktlokationsId (Parameter2) | Start a delivery start on the given date
+    (Parameter1)  at the given market location ID (Parameter2)
+  operationId: ERSTELLEN_PROZESSDATEN
+  requestBody:
+    content:
+      application/json:
+        $ref: EXAMPLES_ERSTELLEN_PROZESSDATEN.yaml
+        schema:
+          $ref: SCHEMAS_REQUESTBODY_PROZESSDATEN.yaml
+    required: true
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/OK_RESPONSE.yml"
+      description:
+        Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
+        of communication data
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/responses/ERROR_RESPONSE.yml"
+      description: Fehlerhafte Anfrage | Bad Request
+  summary: ERSTELLEN_PROZESSDATEN
+  tags:
+    - PROZESSDATEN | PROCESSING DATA

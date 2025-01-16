@@ -1,0 +1,7 @@
+SuccessResponse:
+  type: object
+  properties:
+    SUCCESS:
+      type: string
+      description: Bestätigung des erfolgreichen Updates.
+      example: "X"

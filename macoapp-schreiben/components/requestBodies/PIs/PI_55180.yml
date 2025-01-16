@@ -1,0 +1,29 @@
+properties:
+  stammdaten:
+    properties:
+      MARKTLOKATION:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
+        type: array
+      MESSLOKATION:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation
+        type: array
+      NETZLOKATION:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Netzlokation
+        type: array
+      NETZNUTZUNGSVERTRAG:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+        type: array
+      TECHNISCHE_RESSOURCE:
+        items:
+          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/TechnischeRessource
+        type: array
+    type: object
+  transaktionsdaten:
+    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    type: object
+    unevaluatedProperties: true
+type: object

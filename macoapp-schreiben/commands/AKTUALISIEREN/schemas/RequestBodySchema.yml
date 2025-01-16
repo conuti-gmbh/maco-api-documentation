@@ -1,0 +1,41 @@
+RequestBody:
+  type: object
+  properties:
+    BUSINESS_KEY:
+      type: string
+      description: business key, der von der MACO APP beim Senden des Events übermittelt wurde. Dieser wird genutzt um das MDOC zu identifizieren
+      example: "06c76b6d-cc75-4b4f-a29d-5e80c72a45db"
+    STATUS:
+      type: string
+      description: Status des Prozesses >
+        - SEND - Nachricht an den MP übertragen (optionaler Status)
+        - ABORTED - Abbruch des Prozesses in der MACO APP
+        - CONFIRMED - Bestätigung der Nachricht durch den MP
+        - REJECTED - Ablehnung der Nachricht durch den MP     
+      example: "SEND"
+      enum:
+        - SEND 
+        - ABORTED 
+        - CONFIRMED 
+        - REJECTED                      
+    VALUES:
+      type: array
+      description: Optionale Liste von zusätzliche Transaktionsinformationen
+      items:
+        type: object
+        properties:
+          CS67-MA_MDOC_VALUES:
+            type: object
+            properties:
+              OBJECT:
+                type: string
+                description: Name des Objects.
+                example: "TRANSAKTIONSDATEN"
+              ATTRIBUTE_NAME:
+                type: string
+                description: Name des Attributs.
+                example: "ANTWORTSTATUS"
+              ATTRIBUTE_VALUE:
+                type: string
+                description: Wert des Attributs.
+                example: "A07"
