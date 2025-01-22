@@ -41,3 +41,7 @@ tags:
     description: Trigger Events aus dem Backend in der Rolle Lieferant         
 paths:
   $ref: paths/_index.yml
+
+components:
+  schemas:
+    $ref: "../_schemas/openapi.yml#/components/schemas"

@@ -6,7 +6,8 @@ info:
 
     <details>
     <summary>Changelog</summary>
-    -
+    - **Version 1.2.5** - *20. Januar 2025* - _Autor: DAS
+      - Beschreibungen für Transaktionsdaten und Stammdaten erweitert
 
     - **Version 1.2.4** - *07. Januar 2025* - _Autor: Tu Quy Nguyen_
       - Refactor inbound schema references and update versioning in changelog
@@ -39,7 +40,7 @@ info:
     - Initiale Veröffentlichung der API mit dem `START_SPERRAUFTRAG`-Schema.
 
     </details>
-  version: 1.2.2
+  version: 1.2.5
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
@@ -51,4 +52,8 @@ tags:
   - name: TRIGGER
     description: Trigger Events aus dem Backend       
 paths:
-  $ref: paths/_index.yml
+  $ref: components/schemas/inbound.yml  
+
+components:
+  schemas:
+    $ref: "../_schemas/openapi.yml#/components/schemas"

@@ -1,9 +1,0 @@
-description: The requested resource was not found.
-content:
-  application/json:
-    schema:
-      $ref: '../schemas/Error.yml'
-    example:
-      error: Not Found
-      message: The requested resource was not found.
-      statusCode: 404

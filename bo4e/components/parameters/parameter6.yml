@@ -1,9 +1,0 @@
-description: abrechnungsrevant? [true/false = default null) Wenn Parameter null ist, soll dieser in der Abfage ignoriert werden, wenn true soll explizit geprüft werden ob Lastgang abrechnungsrelevant ist, wenn false soll explizit geprüft werden ob nicht Lastgang NICHT abrechnungsrelevant ist
-in: query
-name: parameter6
-required: true
-schema:
-  example: null
-  type: boolean
-  default: null
-  

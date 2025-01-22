@@ -9,8 +9,8 @@ info:
     APP für die Ausführung der Marktprozesse benötigt.
     <details>
     <summary>Changelog</summary>
-    - 
-      
+    - **Version 1.2.1** - *20. Januar 2025* - _Autor: DAS_
+      - Beschreibungen für Stammdaten erweitert      
     - **Version 1.2.0** - *16. Dezember 2024* - _Autor: DAS_
       - Reduzierung auf lesende Schnittstellen
     - **Version 1.1.4** - *14. November 2024* - _Autor: DAS_
@@ -38,7 +38,7 @@ info:
     - **Version 1.0** - *01. August 2024* - _Autor: DAS_
       - Initiale Version der API-Dokumentation.
     </details>
-  version: 1.2.0
+  version: 1.2.1
 servers:
   - url: "https://api.macoapp.de"
     description: Mock-Umgebung | Mock environment
@@ -53,3 +53,7 @@ tags:
 security: []
 paths:
   $ref: "commands/_index.yml"
+
+components:
+  schemas:
+    $ref: "../_schemas/openapi.yml#/components/schemas"

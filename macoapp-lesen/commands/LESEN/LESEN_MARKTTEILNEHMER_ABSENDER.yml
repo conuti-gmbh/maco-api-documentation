@@ -27,7 +27,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktteilnehmer"
+            $ref: "_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
       description:
         Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data

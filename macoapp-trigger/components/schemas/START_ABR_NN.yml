@@ -1,3 +1,4 @@
+name: "START_ABR_NN"
 description: "START_ABR_NN - Abrechnungsdaten Netznutzungsabrechnung (NB)"
 type: object
 properties:
@@ -9,22 +10,22 @@ properties:
       MARKTLOKATION:
         type: array
         items:
-          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation"                                
+          $ref: "#/components/schemas/Marktlokation"                                
       ENERGIELIEFERVERTRAG:
         type: array
         items:
           type: object
-          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
+          $ref: "#/components/schemas/Vertrag"                                                           
       NETZNUTZUNGSVERTRAG:
         type: array
         items:
           type: object
-          $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"                                                           
+          $ref: "#/components/schemas/Vertrag"                                                           
     required:
       - MARKTLOKATION
   transaktionsdaten:
     type: object
-    $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten"                                                                   
+    $ref: "#/components/schemas/Transaktionsdaten"                                                                   
     required:
       - ausfuehrungsdatum
       - vorgangsnummer 

@@ -1,0 +1,21 @@
+summary: Beispiel Anfrage  mit Name, Adresse und Zaehlernummer
+value:
+  stammdaten:
+    MARKTLOKATION:
+      - boTyp: "MARKTLOKATION"
+        versionStruktur: "1"
+        marktlokationsId: "12345678901"  # Beispiel für eine MarktlokationsId
+        energierichtung: "AUSSP"
+        lokationsadresse:
+          postleitzahl: "76229"
+          ort: "Karlsruhe"
+          strasse: "Greschbachstrasse"
+          hausnummer: "3"
+          adresszusatz: ""  # Optional, wenn nicht angegeben
+          landescode: "DE"
+    ZAEHLER:
+      - boTyp: "ZAEHLER"
+        versionStruktur: "1"
+        zaehlernummer: "1760136806"  # Beispiel für eine Zaehlernummer
+  transaktionsdaten:
+    ausfuehrungsdatum: "2024-11-07T23:00:00Z"

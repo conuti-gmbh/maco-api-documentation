@@ -1,0 +1,107 @@
+description: Schema für die Basis-Antwort der Maloident-Identifizierung. Das Ergebnis ist die Grundlage für die EBD Prüfung
+type: object
+properties:
+  maloIdentDaten:
+    type: array
+    description: Liste von Treffern der Maloident-Suche
+    items:
+      type: object
+      properties:
+        lokationsId:
+          type: string
+          description: Die ID der Marktlokation
+          example: "74018657187"
+        trefferMaloid:
+          type: boolean
+          description: Gibt an, ob primäres Trefferkriterium MaloId ein Treffer war. Die Übereinstimmung der MaLo-ID liegt vor, wenn die vollständige, 11-stellige Zeichenkette übereinstimmt. 
+        trefferTrancheId:
+          type: boolean
+          description: Gibt an, ob primäres Trefferkriterium TrancheId ein Treffer war. Die Prüfung ist für jede angegebene Tranchen-ID durchzuführen. Die Übereinstimmung der Tranchen-ID liegt vor, wenn die vollständige 11-stellige Zeichenkette übereinstimmt. 
+        trefferAdresse1:
+          type: boolean
+          description: >
+            -Gibt an, ob primäres Trefferkriterium Adresse1 ein Treffer war 
+            Die zu prüfende Adresse der Marktlokation besteht aus Straße, Hausnummer/Hausnummernergänzung, PLZ, Ort und Ländercode. 
+            · Bei Marktlokationen ohne zugeordnete Adressdaten kann zudem über das Tupel bestehend aus Gemarkung, Flurnummer und Flurstücknummer identifiziert werden. 
+            · Es kann auch eine Identifizierung über geographische Koordinaten erfolgen. 
+            Bei der Adressprüfung gelten die folgenden Regeln: 
+            · Die Zeichenketten „straße“, „str.“ oder „strasse“ am Ende eines Straßennamens werden durch einen Stern „*“ ersetzt, um damit alle Straßen zu finden, deren Name mit den links vom Stern stehenden Buchstaben beginnen. Der Stern gilt somit als Platzhalter. 
+        trefferKundennummer:
+          type: boolean
+          description: Gibt an, ob primäres Trefferkriterium Kundennummer ein Treffer war. Übermittelt wird die Kundennummer des LFA. Die Übereinstimmung der Kundennummer liegt vor, wenn die Zeichenkette der Kundennummer, wie sie dem Kunden mitgeteilt wurde übereinstimmt. 
+        trefferName:
+          type: boolean
+          description: >
+            - Gibt an, ob primäres Trefferkriterium Name ein Treffer war. 
+            Der zu prüfende Name besteht bei natürlichen Personen aus dem Vor- und Nachnamen. Bei juristischen Personen aus dem Namen der Firma. 
+            Mindestens folgende Gegebenheiten sollten abgefangen werden: 
+            · Identifikation durch Vertauschen von Vor- und Nachnamen 
+            · Identifikation aus dem String "Vor- und Nachname" gegen jeweils Vor- und Nachname in beide Richtungen (z.B. für Kunden, die im Vor- und Nachnamen jeweils einen kompletten Namen eingetragen haben (Wohngemeinschaften)) 
+            · Angabe der Firmenbezeichnung wird gegen Vor- und Nachnamen sowie dem kompletten String aus "Vor- und Nachname" verglichen. 
+            · Angabe der Kundennummer wird gegen die Kundennummer des LFA verglichen. 
+            · Identifikation aus dem String "Vor- und Nachname" gegen jeweils Vor- und Nachname in beide Richtungen (z.B. für Kunden, die im Vor- und Nachnamen jeweils einen kompletten Namen eingetragen haben (Wohngemeinschaften)) 
+            · Angabe der Firmenbezeichnung wird gegen Vor- und Nachnamen sowie dem kompletten String aus "Vor- und Nachname" verglichen. 
+        trefferGeraetenummer:
+          type: boolean
+          description: >
+            - Gibt an, ob primäres Trefferkriterium Gerätenummer ein Treffer war. Die Prüfung ist für jede angegebene Gerätenummer durchzuführen.  
+            - Es sind alle Geräte vom Typ kME, mME und Smart-Meter-Gateways mit der übergebenen Gerätenummer zu suchen.  
+            - Die Reihenfolge der Zeichen in der Gerätenummer ist wichtig.  
+            - Bei einer Prüfung der Gerätenummer ist es wichtig, dass die Reihenfolge der Zeichen identisch ist.  
+            - Die Prüfung ist case-sensitiv.  
+            - Zusätzlich sind schließende Nullen ebenfalls zu ignorieren.  
+            - Dabei sind für jeden Zeichen in der Reihenfolge folgende Regeln zu beachten:  
+            - Zusammen mit schließenden Nullen werden auch alle Zeichen in der Reihenfolge berücksichtigt.  
+            - Eine Identifizierung soll auch erfolgen, wenn ein Marktpartner einen Zähler/Gateway sendet, der bereits im Rahmen eines Gerätewechsels innerhalb der letzten 36 Monate ausgetauscht wurde (Ausnahme Netzbetreiberwechsel). 
+            - Die Übereinstimmung einer Gerätenummer liegt vor, wenn alle Zeichen in genannter Reihenfolge mit der aufgebrachten Nummer auf dem Gerät identisch sind.  
+            - Gegebenenfalls im System vorhandene Prä- und Suffixe sind zu ignorieren. 
+        trefferMeloid:
+          type: boolean
+          description: Gibt an, ob primäres Trefferkriterium MeloId ein Treffer war. Die Prüfung ist für jede angegebene MeLo-ID durchzuführen. Die Übereinstimmung der MeLo-ID liegt vor, wenn die vollständige 33-stellige Zeichenkette übereinstimmt. 
+        trefferAdresse2:
+          type: boolean
+          description: Gibt an, ob sekundäres Trefferkriterium zweite Adresse ein Treffer war. Ermittlung, ob ermittelte Malo alle Adressidentifizierungsparameter erfüllt  (Vollständige Adrressprüfung) 
+        trefferMakorelevant:
+          type: boolean
+          description: Gibt an, ob sekundäres Trefferkriterium Makorelevanz ein Treffer war. Ermittlung, ob ermittelte Malo an der Mako teilnimmt 
+        trefferStillgelegt:
+          type: boolean
+          description: Gibt an, ob sekundäres Trefferkriterium Stilllegungsstatus ein Treffer war. Ermittlung, ob ermittelte Malo stillgelegt ist. 
+        trefferNetzgebiet:
+          type: boolean
+          description: Gibt an, ob sekundäres Trefferkriterium Netzgebiet ein Treffer war. Ermittlung, ob ermittelte Malo zum Selektionszeitpunkt einem Netz zugeordnet ist, welches durch eine Serviceanbieter mit Kennzeichen „eigener Service“ versorgt wird. 
+        trefferNetzgebiet3KJ:
+          type: boolean
+          description: Gibt an, ob sekundäres Trefferkriterium 3KJ-Netzgebiet ein Treffer war.Ermittlung, ob ermittelte Malo zum innerhalb der letzten 3 KJ einem Netz zugeordnet ist oder war, welches durch eine Serviceanbieter mit Kennzeichen „eigener Service“ versorgt wird. 
+      required:
+        - lokationsId
+        - trefferMaloid
+        - trefferTrancheId
+        - trefferAdresse1
+        - trefferKundennummer
+        - trefferName
+        - trefferGeraetenummer
+        - trefferMeloid
+        - trefferAdresse2
+        - trefferMakorelevant
+        - trefferStillgelegt
+        - trefferNetzgebiet
+        - trefferNetzgebiet3KJ
+required:
+  - maloIdentDaten
+
+example:
+  maloIdentDaten:
+    - lokationsId: "74018657187"
+      trefferMaloid: true
+      trefferTrancheId: false
+      trefferAdresse1: true
+      trefferKundennummer: false
+      trefferName: false
+      trefferGeraetenummer: false
+      trefferMeloid: false
+      trefferAdresse2: true
+      trefferMakorelevant: true
+      trefferStillgelegt: false
+      trefferNetzgebiet: true
+      trefferNetzgebiet3KJ: true

@@ -1,37 +1,44 @@
+description: "55013 - NB an LF (Notz "entspricht E/G") - Ankündigung der Zuordnung des E/G zur Marktlokation"
 properties:
   stammdaten:
     properties:
       BILANZIERUNG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Bilanzierung
         type: array
       ENERGIELIEFERVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
       MARKTLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Marktlokation
         type: array
       MESSLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Messlokation
         type: array
       MESSSTELLENBETRIEBSVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
       NETZNUTZUNGSVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
       ZAEHLER:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Zaehler
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Zaehler
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: ../../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object
+
+
+
+
+
+

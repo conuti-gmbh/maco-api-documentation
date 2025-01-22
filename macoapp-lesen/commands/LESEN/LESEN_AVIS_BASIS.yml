@@ -26,7 +26,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Avis"
+            $ref: "_schema/openapi.yaml#/components/schemas/Avis"
       description:
         Erfolgreiches Lesen des Avises | Successful reading of energy delivery
         contract

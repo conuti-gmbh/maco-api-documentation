@@ -1,17 +1,24 @@
+description: "55051 - MSB (entspricht MSBA am Objekt Messlokation) an NB - Abmeldung"
 properties:
   stammdaten:
     properties:
       MESSLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Messlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Messlokation
         type: array
       NETZNUTZUNGSVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: ../../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object
+
+
+
+
+
+

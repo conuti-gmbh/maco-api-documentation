@@ -1,7 +1,0 @@
-description: OBIS Kennzahl | OBIS code
-in: query
-name: parameter5
-required: true
-schema:
-  example: "123456789"
-  type: string

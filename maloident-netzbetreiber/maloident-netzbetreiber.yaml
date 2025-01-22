@@ -6,7 +6,6 @@ info:
 
     <details>
     <summary>Changelog</summary>
-    -
        
     **Version 1.0.3** - *13. Januar 2025* - _Autor: Tu Quy Nguyen_
       - Added security schema for the API and fixed date format in the schema 
@@ -43,3 +42,7 @@ tags:
 security: []
 paths:
   $ref: paths/_index.yml
+
+components:
+  schemas:
+    $ref: "../_schemas/openapi.yml#/components/schemas"

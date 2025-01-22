@@ -1,17 +1,18 @@
+description: "55233"
 properties:
   stammdaten:
     properties:
       NETZLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Netzlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Netzlokation
         type: array
       NETZNUTZUNGSVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: ../../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object

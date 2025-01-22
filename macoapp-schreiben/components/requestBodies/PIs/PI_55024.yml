@@ -1,13 +1,20 @@
+description: "55024 - Empfänger einer Stornierungsanfrage an Sender einer Stornierungsanfrage - Ablehnung Anfrage Stornierung"
 properties:
   stammdaten:
     properties:
       MARKTLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Marktlokation
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: ../../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object
+
+
+
+
+
+

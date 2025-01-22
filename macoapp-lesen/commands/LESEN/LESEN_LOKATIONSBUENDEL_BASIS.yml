@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Lokationsbuendel"
+            $ref: "_schema/openapi.yaml#/components/schemas/Lokationsbuendel"
       description:
         "Erfolgreiches Lesen des Lokationsbündels | Successful reading\
         \ of the location bundle"

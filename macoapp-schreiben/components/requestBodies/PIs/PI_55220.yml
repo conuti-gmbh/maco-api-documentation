@@ -1,17 +1,23 @@
+
+description: "55220 - LF an NB - Rückmeldung auf Abrechnungsdaten"
 properties:
   stammdaten:
     properties:
       MARKTLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Marktlokation
         type: array
       NETZNUTZUNGSVERTRAG:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag
+          $ref: ../../../../_schemas/openapi.yml#/components/schemas/Vertrag
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: ../../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object
+
+
+
+

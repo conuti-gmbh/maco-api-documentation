@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/TechnischeRessource"
+            $ref: "_schema/openapi.yaml#/components/schemas/TechnischeRessource"
       description:
         Erfolgreiches Lesen der technischen Ressource | Successful reading
         of the technical resource

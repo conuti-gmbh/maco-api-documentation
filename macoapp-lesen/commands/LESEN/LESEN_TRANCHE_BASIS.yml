@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Tranche"
+            $ref: "_schema/openapi.yaml#/components/schemas/Tranche"
       description: Erfolgreiches Lesen der Tranche | Successful reading of the tranche
     "400":
       content:

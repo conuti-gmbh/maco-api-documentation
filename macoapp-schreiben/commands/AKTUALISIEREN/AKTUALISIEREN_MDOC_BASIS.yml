@@ -22,20 +22,17 @@ post:
       application/json:
         schema:
           $ref: 'schemas/RequestBodySchema.yml#/RequestBody'
-      application/xml:
-        schema:
-          $ref: 'schemas/RequestBodySchema.yml#/RequestBody'
   responses:
     "200":
       description: Erfolgreiches Aktualisieren des MDOCS
       content:
-        application/xml:
+        application/json:
           schema:
             $ref: 'schemas/SuccessResponse.yml#/SuccessResponse'
     "422":
       description: Fehler beim Aktualisieren des MDOCS
       content:
-        application/xml:
+        application/json:
           schema:
             $ref: 'schemas/ErrorResponse.yml#/ErrorResponse'
   summary: AKTUALISIEREN_MDOC_BASIS

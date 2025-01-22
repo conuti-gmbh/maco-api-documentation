@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Vertrag"
+            $ref: "_schema/openapi.yaml#/components/schemas/Vertrag"
       description:
         Erfolgreiches Lesen des Energieliefervertrages | Successful reading
         of energy delivery contract

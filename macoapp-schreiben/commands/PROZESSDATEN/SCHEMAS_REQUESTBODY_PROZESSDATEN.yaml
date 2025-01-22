@@ -7,7 +7,6 @@ oneOf:
   - $ref: ../../components/requestBodies/PIs/PI_55006.yml
   - $ref: ../../components/requestBodies/PIs/PI_55007.yml
   - $ref: ../../components/requestBodies/PIs/PI_55008.yml
-  - $ref: ../../components/requestBodies/PIs/PI_55009.yml
   - $ref: ../../components/requestBodies/PIs/PI_55010.yml
   - $ref: ../../components/requestBodies/PIs/PI_55011.yml
   - $ref: ../../components/requestBodies/PIs/PI_55012.yml

@@ -3,11 +3,11 @@ properties:
     properties:
       MARKTLOKATION:
         items:
-          $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Marktlokation
+          $ref: #/components/schemas/Marktlokation
         type: array
     type: object
   transaktionsdaten:
-    $ref: https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Transaktionsdaten
+    $ref: #/components/schemas/Transaktionsdaten
     type: object
     unevaluatedProperties: true
 type: object

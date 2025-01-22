@@ -1,28 +1,30 @@
-post:
-  deprecated: false
-  description: Triggert den Versand von EDIFACT Nachrichten an Marktpartner durch die MACO APP. Die Anfrage wird identifiziert durch den Eventnamen z.B. START_LIEFERBEGINN. Zusätzlich ist eine eindeutige ID prozessId aus dem Backend mit zu übergeben, mit der die spätere Antwort vom Marktpartner wieder an das Backend übergeben werden kann.
-  operationId: inbound
-  parameters: []
-  requestBody:
-    content:
-      application/json:
-        $ref: macoapp-trigger_examples.yaml
-        schema:
-          $ref: macoapp_trigger_schemas.yaml
-  responses:
-    201:
+/inbound:
+  post:
+    deprecated: false
+    description: Triggert den Versand von EDIFACT Nachrichten an Marktpartner durch die MACO APP. Die Anfrage wird identifiziert durch den Eventnamen z.B. START_LIEFERBEGINN. Zusätzlich ist eine eindeutige ID prozessId aus dem Backend mit zu übergeben, mit der die spätere Antwort vom Marktpartner wieder an das Backend übergeben werden kann.
+    operationId: inbound
+    parameters: []
+    requestBody:
       content:
         application/json:
+          examples:
+            $ref: macoapp_trigger_examples.yml
           schema:
-            $ref: '../responses/event_responses_success.yml'
-      description: Erfolg | Success
-    400:
-      content:
-        application/json:
-          schema:
-            $ref: ../responses/event_response_fail.yml
-      description: Fehler | Fail
-  security: []
-  summary: Trigger Events
-  tags:
-    - TRIGGER
+            $ref: macoapp_trigger_schemas.yml
+    responses:
+      201:
+        content:
+          application/json:
+            schema:
+              $ref: ../responses/event_responses_success.yml
+        description: Erfolg | Success
+      400:
+        content:
+          application/json:
+            schema:
+              $ref: ../responses/event_response_fail.yml
+        description: Fehler | Fail
+    security: []
+    summary: Trigger Events
+    tags:
+      - TRIGGER

@@ -1,0 +1,39 @@
+post:
+  deprecated: false
+  description: > 
+    Triggert den Versand einer MaloIdent Anfrage via API-Webdienst an den Netzbetreiber durch die MaloIdent APP. Die Anfrage wird identifiziert durch den Eventnamen **START_MALOIDENT**. 
+    Zusätzlich ist eine eindeutige ID **prozessId** aus dem Backend mit zu übergeben, mit der die spätere Antwort vom Netzbetreiber wieder an das Backend übergeben werden kann.
+  operationId: LESEN_MALOIDENT_BASIS
+  parameters: []
+  requestBody:
+    content:
+      application/json:
+        examples:
+          START_MALOIDENT_NUR_NAME:
+            $ref: '../components/examples/START_MALOIDENT_NUR_NAME.yml'        
+          START_MALOIDENT_NAME_ZAHLER:
+            $ref: '../components/examples/START_MALOIDENT_NAME_ZAHLER.yml'    
+          START_MALOIDENT:
+            $ref: '../components/examples/START_MALOIDENT.yml'                            
+        schema:
+          $ref: "../components/schemas/START_MALOIDENT.yml"
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/LESEN_MALOIDENT_BASIS.yml'
+        examples:
+          LESEN_MALOIDENT_BASIS:
+            $ref: '../components/examples/LESEN_MALOIDENT_BASIS.yml'            
+      description: Erfolg | Success
+    "400":
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/event_response_fail.yml"
+      description: Fehler | Fail
+  security: []
+  summary: LESEN_MALOIDENT_BASIS
+  tags:
+  - IDENTIFIZIERUNG

@@ -1,4 +1,3 @@
-examples: 
   "PI 55001 - ROLLE NB : Anmeldung Testfall1":
     $ref: ../../components/examples/Strom/55001_eingehend_Testfall1.yaml
   "PI 55001 - ROLLE NB : Anmeldung Testfall2":

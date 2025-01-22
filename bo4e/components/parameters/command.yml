@@ -1,9 +1,0 @@
-description:
-  Name der Operation | Name of the operation (MACO APP interal assignment
-  between process and interface)
-in: query
-name: command
-schema:
-  default: AKTUALISEREN_TECHNISCHE_RESSOURCE_BASIS
-  example: NOCODB_AKTUALISEREN_TECHNISCHE_RESSOURCE_BASIS
-  type: string

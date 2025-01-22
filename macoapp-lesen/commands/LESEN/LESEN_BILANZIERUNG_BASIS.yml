@@ -21,10 +21,10 @@ get:
       content:
         application/json:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung"
+            $ref: "_schema/openapi.yaml#/components/schemas/Bilanzierung"
         application/xml:
           schema:
-            $ref: "https://raw.githubusercontent.com/conuti-gmbh/bo4e-schema/refs/heads/master/docs/openapi.yaml#/components/schemas/Bilanzierung"
+            $ref: "_schema/openapi.yaml#/components/schemas/Bilanzierung"
       description:
         Erfolgreiches Lesen der Bilanzierung | Successful reading of the
         market location
