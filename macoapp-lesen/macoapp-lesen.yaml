@@ -1,6 +1,10 @@
 openapi: 3.1.0
 info:
   title: MACO APP - erforderliche BO4E- und Prozessschnittstellen Backend Schnittstellen
+  contact:
+    name: CONUTI GmbH
+    url: https://www.conuti.de
+    email: support@conuti.de
   license:
     name: MIT
     url: "https://opensource.org/licenses/MIT"

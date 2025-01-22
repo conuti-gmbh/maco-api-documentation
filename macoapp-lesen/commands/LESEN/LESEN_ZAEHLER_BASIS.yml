@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Zaehler"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Zaehler"
       description: Erfolgreiches Lesen des Zaehlers | Successful reading of the meter
     "400":
       content:

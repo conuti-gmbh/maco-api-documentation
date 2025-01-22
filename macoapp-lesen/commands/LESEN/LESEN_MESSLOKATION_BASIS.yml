@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Messlokation"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Messlokation"
       description:
         Erfolgreiches Lesen der Messlokation | Successful reading of the
         metering location

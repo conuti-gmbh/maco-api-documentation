@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Tranche"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Tranche"
       description: Erfolgreiches Lesen der Tranche | Successful reading of the tranche
     "400":
       content:

@@ -21,7 +21,7 @@ get:
           schema:
             type: array
             items:
-              $ref: "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Marktlokation"
       description:
         Erfolgreiches Lesen den Marktlokationen | Successful reading of the market locations
     "400":

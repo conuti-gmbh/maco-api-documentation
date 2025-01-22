@@ -24,7 +24,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Energiemenge"
       description:
         "Erfolgreiches Lesen der Zählerstände | Successful reading\
         \ of the meter readings"

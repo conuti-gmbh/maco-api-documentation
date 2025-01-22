@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/SteuerbareRessource"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/SteuerbareRessource"
       description:
         Erfolgreiches Lesen der steuerbaren Ressource | Successful reading
         of the controllable resource

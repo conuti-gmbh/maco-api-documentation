@@ -21,7 +21,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Bilanzierung"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Bilanzierung"
       description:
         Erfolgreiches Lesen der Bilanzierung | Successful reading of the
         market location

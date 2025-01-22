@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/TechnischeRessource"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/TechnischeRessource"
       description:
         Erfolgreiches Lesen der technischen Ressource | Successful reading
         of the technical resource

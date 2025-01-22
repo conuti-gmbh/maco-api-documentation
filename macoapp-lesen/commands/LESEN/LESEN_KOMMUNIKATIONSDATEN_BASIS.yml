@@ -27,7 +27,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Kommunikationsdaten"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Kommunikationsdaten"
       description:
         Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data

@@ -46,11 +46,11 @@ build_and_minify_openapi() {
 }
 
 # Verarbeiten jeder YAML-Datei
-build_and_minify_openapi "$MACOAPP_SCHREIBEN_YAML" "macoapp-schreiben"
-build_and_minify_openapi "$MACOAPP_TRIGGER_YAML" "macoapp-trigger"
+#build_and_minify_openapi "$MACOAPP_SCHREIBEN_YAML" "macoapp-schreiben"
+#build_and_minify_openapi "$MACOAPP_TRIGGER_YAML" "macoapp-trigger"
 build_and_minify_openapi "$MACOAPP_LESEN_YAML" "macoapp-lesen"
-build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "maloident-macoapp"
-build_and_minify_openapi "$MALOIDENT_NB_YAML" "maloident-netzbetreiber"
-build_and_minify_openapi "$MALOIDENT_LF_YAML" "maloident-lieferant"
-build_and_minify_openapi "$MACOAPP_TRIGGER_YAML" "events-openapi"
+#build_and_minify_openapi "$MALOIDENT_OPENAPI_YAML" "maloident-macoapp"
+#build_and_minify_openapi "$MALOIDENT_NB_YAML" "maloident-netzbetreiber"
+#build_and_minify_openapi "$MALOIDENT_LF_YAML" "maloident-lieferant"
+#build_and_minify_openapi "$MACOAPP_TRIGGER_YAML" "events-openapi"
 build_and_minify_openapi "$MACOAPP_LESEN_YAML" "bo4e-openapi"

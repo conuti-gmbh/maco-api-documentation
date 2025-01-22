@@ -23,7 +23,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
+            $ref: "../../../_schemas/openapi.yml#/components/schemas/Vertrag"
       description:
         Erfolgreiches Lesen des Energieliefervertrages | Successful reading
         of energy delivery contract
