@@ -26,7 +26,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Avis"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Avis"
       description:
         Erfolgreiches Lesen des Avises | Successful reading of energy delivery
         contract

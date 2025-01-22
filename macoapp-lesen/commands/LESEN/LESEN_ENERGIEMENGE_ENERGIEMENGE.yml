@@ -26,7 +26,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Energiemenge"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
       description:
         Erfolgreiches Lesen der Energiemenge | Successful reading of the
         energy quantity

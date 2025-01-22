@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Netzlokation"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Netzlokation"
       description:
         Erfolgreiches Lesen der Netzlokation | Successful reading of the
         network location

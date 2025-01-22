@@ -27,7 +27,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
       description:
         Erfolgreiches Lesen der Kommunikationsdaten | Successful reading
         of communication data

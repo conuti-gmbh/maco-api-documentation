@@ -21,7 +21,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Berechnungsformel"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Berechnungsformel"
       description:
         Erfolgreiches Lesen der Berechnunungsformel 
         contract

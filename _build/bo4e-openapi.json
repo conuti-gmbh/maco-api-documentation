@@ -65,7 +65,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Avis"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Avis"
                 }
               }
             },
@@ -128,7 +128,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Berechnungsformel"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Berechnungsformel"
                 }
               }
             },
@@ -195,12 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Bilanzierung"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Bilanzierung"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Bilanzierung"
                 }
               }
             },
@@ -256,7 +251,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
                 }
               }
             },
@@ -317,7 +312,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -382,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -442,7 +437,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -499,7 +494,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Kommunikationsdaten"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Kommunikationsdaten"
                 }
               }
             },
@@ -556,7 +551,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Lokationsbuendel"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Lokationsbuendel"
                 }
               }
             },
@@ -613,7 +608,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Marktlokation"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
                 }
               }
             },
@@ -663,7 +658,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "_schema/openapi.yaml#/components/schemas/Marktlokation"
+                    "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
                   }
                 }
               }
@@ -721,7 +716,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
                 }
               }
             },
@@ -778,7 +773,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
                 }
               }
             },
@@ -835,7 +830,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Messlokation"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Messlokation"
                 }
               }
             },
@@ -892,7 +887,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
                 }
               }
             },
@@ -949,7 +944,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Netzlokation"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Netzlokation"
                 }
               }
             },
@@ -1006,7 +1001,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
                 }
               }
             },
@@ -1063,7 +1058,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/SteuerbareRessource"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/SteuerbareRessource"
                 }
               }
             },
@@ -1120,7 +1115,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/TechnischeRessource"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/TechnischeRessource"
                 }
               }
             },
@@ -1177,7 +1172,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Tranche"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Tranche"
                 }
               }
             },
@@ -1234,7 +1229,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "_schema/openapi.yaml#/components/schemas/Zaehler"
+                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Zaehler"
                 }
               }
             },

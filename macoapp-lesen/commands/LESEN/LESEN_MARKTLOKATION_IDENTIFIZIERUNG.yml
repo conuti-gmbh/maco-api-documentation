@@ -69,7 +69,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "_schema/openapi.yaml#/components/schemas/Marktlokation"
+            $ref: "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
       description:
         Erfolgreiches Lesen der Marktlokation | Successful reading of the
         market location
