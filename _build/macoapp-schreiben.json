@@ -192,6 +192,9 @@
                 "PI 55072 - ROLLE NB : Deaktivierung der Zuordnungsermächtigung": {
                   "$ref": "#/components/examples/55072_eingehend_Testfall1"
                 },
+                "PI 55109 - ROLLE LF : Bestätigung der Deaktivierung der Zuordnungsermächtigung": {
+                  "$ref": "#/components/examples/55109_eingehend_Testfall1"
+                },
                 "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall1": {
                   "$ref": "#/components/examples/55126_eingehend_Testfall1"
                 },
@@ -9152,6 +9155,156 @@
         },
         "type": "object"
       },
+      "PI_55013": {
+        "description": "55013 - NB an LF (Notz 'entspricht E/G') - Ankündigung der Zuordnung des E/G zur Marktlokation",
+        "properties": {
+          "stammdaten": {
+            "properties": {
+              "BILANZIERUNG": {
+                "items": {
+                  "$ref": "#/components/schemas/Bilanzierung"
+                },
+                "type": "array"
+              },
+              "ENERGIELIEFERVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "MARKTLOKATION": {
+                "items": {
+                  "$ref": "#/components/schemas/Marktlokation"
+                },
+                "type": "array"
+              },
+              "MESSLOKATION": {
+                "items": {
+                  "$ref": "#/components/schemas/Messlokation"
+                },
+                "type": "array"
+              },
+              "MESSSTELLENBETRIEBSVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "NETZNUTZUNGSVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "ZAEHLER": {
+                "items": {
+                  "$ref": "#/components/schemas/Zaehler"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "transaktionsdaten": {
+            "$ref": "#/components/schemas/Transaktionsdaten",
+            "type": "object",
+            "unevaluatedProperties": true
+          }
+        },
+        "type": "object"
+      },
+      "PI_55014": {
+        "description": "55014 - LF (Notz 'entspricht E/G') an NB - Antwort auf Ankündigung der Zuordnung des E/G zur Marktlokation",
+        "properties": {
+          "stammdaten": {
+            "properties": {
+              "BILANZIERUNG": {
+                "items": {
+                  "$ref": "#/components/schemas/Bilanzierung"
+                },
+                "type": "array"
+              },
+              "ENERGIELIEFERVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "MARKTLOKATION": {
+                "items": {
+                  "$ref": "#/components/schemas/Marktlokation"
+                },
+                "type": "array"
+              },
+              "MESSLOKATION": {
+                "items": {
+                  "$ref": "#/components/schemas/Messlokation"
+                },
+                "type": "array"
+              },
+              "MESSSTELLENBETRIEBSVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "NETZNUTZUNGSVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              },
+              "ZAEHLER": {
+                "items": {
+                  "$ref": "#/components/schemas/Zaehler"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "transaktionsdaten": {
+            "$ref": "#/components/schemas/Transaktionsdaten",
+            "type": "object",
+            "unevaluatedProperties": true
+          }
+        },
+        "type": "object"
+      },
+      "PI_55015": {
+        "description": "55015 - LF (Notz 'entspricht E/G') an NB - Antwort auf Ankündigung der Zuordnung des E/G zur Marktlokation",
+        "properties": {
+          "stammdaten": {
+            "properties": {
+              "BILANZIERUNG": {
+                "items": {
+                  "$ref": "#/components/schemas/Bilanzierung"
+                },
+                "type": "array"
+              },
+              "MARKTLOKATION": {
+                "items": {
+                  "$ref": "#/components/schemas/Marktlokation"
+                },
+                "type": "array"
+              },
+              "NETZNUTZUNGSVERTRAG": {
+                "items": {
+                  "$ref": "#/components/schemas/Vertrag"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "transaktionsdaten": {
+            "$ref": "#/components/schemas/Transaktionsdaten",
+            "type": "object",
+            "unevaluatedProperties": true
+          }
+        },
+        "type": "object"
+      },
       "PI_55016": {
         "description": "55016 - LFN an LFA - Kündigung",
         "properties": {
@@ -12697,13 +12850,13 @@
             "$ref": "#/components/schemas/PI_55012"
           },
           {
-            "$ref": "../../components/requestBodies/PIs/PI_55013.yml"
+            "$ref": "#/components/schemas/PI_55013"
           },
           {
-            "$ref": "../../components/requestBodies/PIs/PI_55014.yml"
+            "$ref": "#/components/schemas/PI_55014"
           },
           {
-            "$ref": "../../components/requestBodies/PIs/PI_55015.yml"
+            "$ref": "#/components/schemas/PI_55015"
           },
           {
             "$ref": "#/components/schemas/PI_55016"
@@ -16220,6 +16373,123 @@
             "pruefidentifikator": "55072",
             "sparte": "STROM",
             "vorgangsnummer": "MST1407607098"
+          },
+          "zusatzdaten": {}
+        }
+      },
+      "55109_eingehend_Testfall1": {
+        "value": {
+          "stammdaten": {
+            "BILANZIERUNG": [
+              {
+                "boTyp": "BILANZIERUNG",
+                "marktlokationsId": "50074561188",
+                "versionStruktur": "1"
+              }
+            ],
+            "ENERGIELIEFERVERTRAG": [
+              {
+                "boTyp": "VERTRAG",
+                "enFG": [
+                  {
+                    "grund": [
+                      "ENFG_ELEKTRISCH_ANGETRIEBENE_WAERMEPUMPEN"
+                    ],
+                    "grundlageVerringerungUmlagen": "ERFUELLT_VORAUSSETZUNG_NACH_ENFG"
+                  }
+                ],
+                "korrespondenzpartner": {
+                  "anrede": "Dr.",
+                  "boTyp": "GESCHAEFTSPARTNER",
+                  "gewerbekennzeichnung": false,
+                  "name1": "Mustermann",
+                  "name2": "Max",
+                  "name3": "von",
+                  "name4": "zu",
+                  "partneradresse": {
+                    "hausnummer": "1",
+                    "landescode": "DE",
+                    "ort": "Ort",
+                    "postleitzahl": "12345",
+                    "strasse": "Str"
+                  },
+                  "versionStruktur": "1"
+                },
+                "lokationsId": "50074561188",
+                "lokationsTyp": "MALO",
+                "sparte": "STROM",
+                "versionStruktur": "1",
+                "vertragsart": "ENERGIELIEFERVERTRAG",
+                "vertragspartner2": [
+                  {
+                    "anrede": "Dr.",
+                    "boTyp": "GESCHAEFTSPARTNER",
+                    "externeReferenzen": [
+                      {
+                        "exRefName": "Kundennummer beim Lieferanten",
+                        "exRefWert": "ABC123456"
+                      }
+                    ],
+                    "geschaeftspartnerrolle": [
+                      "KUNDE"
+                    ],
+                    "gewerbekennzeichnung": false,
+                    "name1": "Mustermann",
+                    "name2": "Max",
+                    "name3": "von",
+                    "name4": "zu",
+                    "versionStruktur": "1"
+                  }
+                ]
+              }
+            ],
+            "MARKTLOKATION": [
+              {
+                "boTyp": "MARKTLOKATION",
+                "energierichtung": "AUSSP",
+                "marktlokationsId": "50074561188",
+                "sparte": "STROM",
+                "versionStruktur": "1"
+              }
+            ],
+            "NETZNUTZUNGSVERTRAG": [
+              {
+                "boTyp": "VERTRAG",
+                "lokationsId": "50074561188",
+                "lokationsTyp": "MALO",
+                "sparte": "STROM",
+                "versionStruktur": "1",
+                "vertragsart": "NETZNUTZUNGSVERTRAG",
+                "vertragsbeginn": "2024-06-30T22:00:00Z",
+                "vertragskonditionen": {
+                  "haushaltskunde": true
+                }
+              }
+            ]
+          },
+          "transaktionsdaten": {
+            "absender": {
+              "boTyp": "MARKTTEILNEHMER",
+              "rollencodenummer": "9903790000002",
+              "rollencodetyp": "BDEW",
+              "versionStruktur": "1"
+            },
+            "datenaustauschreferenz": "928723",
+            "dokumentennummer": "678687BGM",
+            "empfaenger": {
+              "boTyp": "MARKTTEILNEHMER",
+              "rollencodenummer": "9900321000005",
+              "rollencodetyp": "BDEW",
+              "versionStruktur": "1"
+            },
+            "gueltigAb": "2024-06-30T22:00:00Z",
+            "kategorie": "E03",
+            "nachrichtendatum": "2024-04-18T06:55:00Z",
+            "nachrichtenreferenznummer": "678687",
+            "pruefidentifikator": "55109",
+            "sparte": "STROM",
+            "transaktionsgrund": "ZE6",
+            "vorgangsnummer": "777963536"
           },
           "zusatzdaten": {}
         }
