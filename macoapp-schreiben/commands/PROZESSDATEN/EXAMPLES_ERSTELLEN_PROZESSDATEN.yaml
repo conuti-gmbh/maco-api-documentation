@@ -66,6 +66,8 @@
     $ref: ../../components/examples/Strom/55071_eingehend_Testfall1.yaml
   "PI 55072 - ROLLE NB : Deaktivierung der Zuordnungsermächtigung":
     $ref: ../../components/examples/Strom/55072_eingehend_Testfall1.yaml
+  "PI 55109 - ROLLE LF : Bestätigung der Deaktivierung der Zuordnungsermächtigung":
+    $ref: ../../components/examples/Strom/55109_eingehend_Testfall1.yaml
   "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall1":
     $ref: ../../components/examples/Strom/55126_eingehend_Testfall1.yaml
   "PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall2":
