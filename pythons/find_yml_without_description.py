@@ -18,5 +18,5 @@ def find_yml_without_description(directory):
                         print(f"Error parsing {file_path}: {exc}")
 
 if __name__ == "__main__":
-    directory = "/home/lena/projekts/maco-api-documentation/macoapp-schreiben/components/requestBodies/PIs"
+    directory = "../macoapp-schreiben/components/requestBodies/PIs"
     find_yml_without_description(directory)
