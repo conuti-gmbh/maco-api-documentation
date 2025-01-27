@@ -10,6 +10,7 @@ value:
   transaktionsdaten:
     transaktionsgrund: E01
     transaktionsgrundergaenzung: ZW3
+    sparte: STROM
     absender:
       rollencodenummer: '9904000000005'
       rollencodetyp: BDEW
