@@ -52,7 +52,7 @@ value:
             grund:
               - "ENFG_ELEKTRISCH_ANGETRIEBENE_WAERMEPUMPEN"
   transaktionsdaten:
-    sparte: "STROM"
+    sparte: STROM
     transaktionsgrund: "E01"
     transaktionsgrundergaenzung: "ZW4"
     absender:

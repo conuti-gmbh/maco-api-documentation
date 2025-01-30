@@ -90,7 +90,7 @@ value:
     transaktionsgrund: E03
     transaktionsgrundergaenzung: ZW4
     transaktionsgrundergaenzungBefristeteAnmeldung: E03
-    sparte: "STROM"
+    sparte: STROM
     ausfuehrungsdatum: '2025-04-02T22:00:00Z'
     absender:
       rollencodenummer: '9904000000005'
