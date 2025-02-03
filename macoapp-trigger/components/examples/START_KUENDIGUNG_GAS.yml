@@ -29,7 +29,7 @@ value:
             exRefName: Kundennummer beim Altlieferanten
             exRefWert: '123456789'
   transaktionsdaten:
-    sparte: STROM
+    sparte: GAS
     transaktionsgrund: E03
     absender:
       boTyp: MARKTTEILNEHMER

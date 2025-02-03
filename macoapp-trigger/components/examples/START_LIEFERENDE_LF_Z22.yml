@@ -10,6 +10,7 @@ value:
   transaktionsdaten:
     transaktionsgrund: E01
     transaktionsgrundergaenzung: ZW3
+    sparte: STROM
     absender:
       rollencodenummer: '9904000000005'
       rollencodetyp: BDEW
@@ -17,7 +18,6 @@ value:
       rollencodenummer: '9900936000002'
       rollencodetyp: BDEW
     kategorie: E02
-    vertragsbeginn: '2025-10-31T23:00:00Z'
     vertragsende: '2025-10-31T23:00:00Z'
   zusatzdaten:
     prozessId: '00505688-E4A2-1EDF-A0C2-C81842E2515E'

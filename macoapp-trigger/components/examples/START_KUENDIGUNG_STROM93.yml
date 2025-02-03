@@ -9,6 +9,7 @@ value:
   transaktionsdaten:
     transaktionsgrund: E03
     transaktionsgrundergaenzung: ZW4
+    sparte: STROM
     absender:
       boTyp: MARKTTEILNEHMER
       versionStruktur: '1'

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 type: object
+=======
+description: "55013 - NB an LF (Notz 'entspricht E/G') - Ankündigung der Zuordnung des E/G zur Marktlokation"
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
 properties:
   stammdaten:
     type: object

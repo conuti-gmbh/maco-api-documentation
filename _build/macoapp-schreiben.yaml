@@ -194,6 +194,11 @@ paths:
                 $ref: '#/components/examples/55071_eingehend_Testfall1'
               'PI 55072 - ROLLE NB : Deaktivierung der Zuordnungsermächtigung':
                 $ref: '#/components/examples/55072_eingehend_Testfall1'
+<<<<<<< HEAD
+=======
+              'PI 55109 - ROLLE LF : Bestätigung der Deaktivierung der Zuordnungsermächtigung':
+                $ref: '#/components/examples/55109_eingehend_Testfall1'
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
               'PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall1':
                 $ref: '#/components/examples/55126_eingehend_Testfall1'
               'PI 55126 - ROLLE LF (entspricht LFN) : Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF Testfall2':
@@ -7234,6 +7239,7 @@ components:
                     description: Zeitstempel.
                     example: '20241114224020.901058'
     PI_55001:
+<<<<<<< HEAD
       type: object
       properties:
         stammdaten:
@@ -83997,6 +84003,2861 @@ components:
       description: >-
         55692 - ÜNB an NB - Bestellung einer Änderung von Stammdaten vom ÜNB an
         NB
+=======
+      description: >-
+        55001 - LFN an NB - Anmeldung einer Zuordnung des LFN zur Marktlokation
+        bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55002:
+      description: 55002 - NB an LFN - Zuordnung des LFN zur Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55003:
+      description: >-
+        55003 - NB an LFN - Ablehnung der Anmeldung einer Zuordnung des LFN zur
+        Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55004:
+      description: >-
+        55004 - LF an NB - Abmeldung einer Zuordnung des LF zur Marktlokation
+        bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55005:
+      description: >-
+        55005 - NB an LF - Beendigung der Zuordnung des LF zur Marktlokation
+        bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55006:
+      description: >-
+        55006 - NB an LF - Ablehnung der Abmeldung einer Zuordnung des LF zur
+        Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55007:
+      description: >-
+        55007 - NB an LF - Ankündigung der Beendigung der Zuordnung des LF zur
+        Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55008:
+      description: >-
+        55008 - LF an NB - Antwort auf Ankündigung der Beendigung der Zuordnung
+        des LF zur Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55010:
+      description: >-
+        55010 - NB an LFA - Anfrage zur Beendigung der Zuordnung des LFA zur
+        Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55011:
+      description: >-
+        55011 - LFA an NB - Antwort auf Anfrage zur Beendigung der Zuordnung des
+        LFA zur Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55012:
+      description: >-
+        55012 - LFA an NB - Antwort auf Anfrage zur Beendigung der Zuordnung des
+        LFA zur Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55013:
+      description: >-
+        55013 - NB an LF (Notz 'entspricht E/G') - Ankündigung der Zuordnung des
+        E/G zur Marktlokation
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55014:
+      description: >-
+        55014 - LF (Notz 'entspricht E/G') an NB - Antwort auf Ankündigung der
+        Zuordnung des E/G zur Marktlokation
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55015:
+      description: >-
+        55015 - LF (Notz 'entspricht E/G') an NB - Antwort auf Ankündigung der
+        Zuordnung des E/G zur Marktlokation
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55016:
+      description: 55016 - LFN an LFA - Kündigung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55017:
+      description: 55017 - LFA an LFN - Antwort auf Kündigung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55018:
+      description: 55018 - LFA an LFN - Antwort auf Kündigung
+      properties:
+        stammdaten:
+          properties: {}
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55022:
+      description: >-
+        55022 - Beteiligte wie bei Ursprungsnachricht an Beteiligte wie bei
+        Ursprungsnachricht - Anfrage nach Stornierung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55023:
+      description: >-
+        55023 - Empfänger einer Stornierungsanfrage an Sender einer
+        Stornierungsanfrage - Bestätigung Anfrage Stornierung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55024:
+      description: >-
+        55024 - Empfänger einer Stornierungsanfrage an Sender einer
+        Stornierungsanfrage - Ablehnung Anfrage Stornierung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55035:
+      description: 55035 - NB an LF - Antwort
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55036:
+      description: 55036 - NB an LFN - Information über existierende Zuordnung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55037:
+      description: >-
+        55037 - NB an LFA - Beendigung der Zuordnung des LFA zur Marktlokation
+        bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55038:
+      description: >-
+        55038 - NB an LFZ - Aufhebung der Zuordnung des LFZ zur Marklokation
+        bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55042:
+      description: 55042 - MSBN an NB - Anmeldung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55051:
+      description: 55051 - MSB (entspricht MSBA am Objekt Messlokation) an NB - Abmeldung
+      properties:
+        stammdaten:
+          properties:
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55052:
+      description: >-
+        55052 - NB an MSB (entspricht MSBA am Objekt Messlokation) - Antwort auf
+        Abmeldung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            STEUERBARE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/SteuerbareRessource'
+              type: array
+            TECHNISCHE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/TechnischeRessource'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55053:
+      description: >-
+        55053 - NB an MSB (entspricht MSBA am Objekt Messlokation) - Antwort auf
+        Abmeldung
+      properties:
+        stammdaten:
+          properties:
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55071:
+      description: 55071 - BKV an NB - Aktivierung der Zu-ordnungsermächtigung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55072:
+      description: 55072 - BKV an NB - Deaktivierung der Zuordnungsermächtigung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55078:
+      description: 55078 - NB an LFN - Zuordnung des LFN zur Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55079:
+      description: PI_55079
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55080:
+      description: >-
+        55080 - NB an LFN - Ablehnung der Anmeldung einer Zuordnung des LFN zur
+        Marktlokation bzw. Tranche
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55082:
+      description: PI_55082
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55083:
+      description: PI_55083
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55084:
+      description: PI_55084
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55086:
+      description: PI_55086
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55089:
+      description: PI_55089
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55090:
+      description: PI_55090
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55091:
+      description: PI_55091
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55092:
+      description: PI_55092
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55093:
+      description: PI_55093
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55094:
+      description: PI_55094
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55095:
+      description: 55095 - NB an LF - Antwort
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55103:
+      description: PI_55103
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55104:
+      description: PI_55104
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55106:
+      description: PI_55106
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55107:
+      description: PI_55107
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55109:
+      description: 55109 - LF an NB - Änderung vom LF an NB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55111:
+      description: PI_55111
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55112:
+      description: PI_55112
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55115:
+      description: PI_55115
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55116:
+      description: PI_55116
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55117:
+      description: PI_55117
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55119:
+      description: PI_55119
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55120:
+      description: PI_55120
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55121:
+      description: PI_55121
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55123:
+      description: PI_55123
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55124:
+      description: PI_55124
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55126:
+      description: 55126 - NB an LF - Abrechnungsdaten Bilanzkreis-abrechnung vom NB an LF
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55127:
+      description: PI_55127
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55133:
+      description: PI_55133
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55136:
+      description: 55136 - MSB an LF - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55137:
+      description: 55137 - NB an LF - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55138:
+      description: PI_55138
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55139:
+      description: PI_55139
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55140:
+      description: PI_55140
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55142:
+      description: PI_55142
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55143:
+      description: PI_55143
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55145:
+      description: PI_55145
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55146:
+      description: PI_55146
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55149:
+      description: PI_55149
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55150:
+      description: PI_55150
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55151:
+      description: PI_55151
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55152:
+      description: PI_55152
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55153:
+      description: PI_55153
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55154:
+      description: PI_55154
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55155:
+      description: PI_55155
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55156:
+      description: 55156 - LF an NB - Rückmeldung auf Abrechnungsdaten
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55157:
+      description: PI_55157
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55159:
+      description: PI_55159
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55160:
+      description: PI_55160
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55161:
+      description: PI_55161
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55162:
+      description: PI_55162
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55163:
+      description: PI_55163
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55164:
+      description: PI_55164
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55167:
+      description: PI_55167
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55169:
+      description: >-
+        55169 - MSB (entspricht gMSB am Objekt Messlokation) an NB - Antwort auf
+        Verpflichtungs-anfrage
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            ENERGIELIEFERVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            MESSSTELLENBETRIEBSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55170:
+      description: >-
+        55170 - MSB (entspricht gMSB am Objekt Messlokation) an NB - Antwort auf
+        Verpflichtungs-anfrage
+      properties:
+        stammdaten:
+          properties:
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55172:
+      description: PI_55172
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55174:
+      description: PI_55174
+      properties:
+        stammdaten:
+          properties:
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55175:
+      description: 55175 - NB an LF - Änderung vom NB an LF
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            STEUERBARE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/SteuerbareRessource'
+              type: array
+            TECHNISCHE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/TechnischeRessource'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55176:
+      description: PI_55176
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55177:
+      description: 55177 - MSB an NB - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            STEUERBARE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/SteuerbareRessource'
+              type: array
+            TECHNISCHE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/TechnischeRessource'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55180:
+      description: 55180 - LF an NB - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TECHNISCHE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/TechnischeRessource'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55181:
+      description: PI_55181
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            STEUERBARE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/SteuerbareRessource'
+              type: array
+            TECHNISCHE_RESSOURCE:
+              items:
+                $ref: '#/components/schemas/TechnischeRessource'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55182:
+      description: PI_55182
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55185:
+      description: >-
+        55185 - NB an LF - Information über die Zuordnung einer Marktlokation
+        zur Da-tenaggregation durch den ÜNB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55186:
+      description: >-
+        55186 - NB an ÜNB - Weiterleiten der Information über die Zuordnung
+        einer Marktlokation zur Datenaggregation durch den ÜNB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55187:
+      description: >-
+        55187 - ÜNB an NB - Prüfergebnis auf Information über die Zuordnung
+        einer Marktlokation zur Datenaggregation durch den ÜNB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55188:
+      description: 55188 - NB an LF - Information über die Beendigung an den ÜNB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55189:
+      description: >-
+        55189 - LF an ÜNB - Weiterleitung der Information über die Beendigung an
+        den ÜNB 
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55190:
+      description: >-
+        55190 - ÜNB an NB - Prüfergebnis auf Information über die Beendigung an
+        den ÜNB
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            TRANCHE:
+              items:
+                $ref: '#/components/schemas/Tranche'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55191:
+      description: PI_55191
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55218:
+      description: 55218 - NB an LF - Abrechnungsdaten Netznutzungsabrechnung
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55219:
+      description: PI_55219
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55220:
+      description: 55220 - LF an NB - Rückmeldung auf Abrechnungsdaten
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55221:
+      description: PI_55221
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55222:
+      description: PI_55222
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55225:
+      description: 55225 - NB an LF - Änderung vom NB an LF
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55226:
+      description: PI_55226
+      properties:
+        stammdaten:
+          properties:
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55227:
+      description: 55227 - LF an NB - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55228:
+      description: PI_55228
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55229:
+      description: '55229'
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55230:
+      description: 55230 - LF an NB - Änderung vom LF an NB
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55231:
+      description: '55231'
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55232:
+      description: 55232 - NB an LF - Rückmeldung auf Änderung
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55233:
+      description: '55233'
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55234:
+      description: '55234'
+      properties:
+        stammdaten:
+          properties:
+            NETZLOKATION:
+              items:
+                $ref: '#/components/schemas/Netzlokation'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55240:
+      description: 55240 - NB (VNB) an LF - Beendigung der Zuordnung zur Marktlokation
+      properties:
+        stammdaten:
+          properties:
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55553:
+      description: 55553 - MSB an NB - Änderung vom MSB an NB
+      properties:
+        stammdaten:
+          properties:
+            AD_HOC_STEUERKANAL:
+              items:
+                $ref: '#/components/schemas/AdHocSteuerkanal'
+              type: array
+            BILANZIERUNG:
+              items:
+                $ref: '#/components/schemas/Bilanzierung'
+              type: array
+            MARKTLOKATION:
+              items:
+                $ref: '#/components/schemas/Marktlokation'
+              type: array
+            MESSLOKATION:
+              items:
+                $ref: '#/components/schemas/Messlokation'
+              type: array
+            NETZNUTZUNGSVERTRAG:
+              items:
+                $ref: '#/components/schemas/Vertrag'
+              type: array
+            ZAEHLER:
+              items:
+                $ref: '#/components/schemas/Zaehler'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+    PI_55556:
+      description: '55556'
+      properties:
+        stammdaten:
+          properties:
+            AD_HOC_STEUERKANAL:
+              items:
+                $ref: '#/components/schemas/AdHocSteuerkanal'
+              type: array
+          type: object
+        transaktionsdaten:
+          $ref: '#/components/schemas/Transaktionsdaten'
+          type: object
+          unevaluatedProperties: true
+      type: object
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
     SCHEMAS_REQUESTBODY_PROZESSDATEN:
       oneOf:
         - $ref: '#/components/schemas/PI_55001'
@@ -84007,7 +86868,10 @@ components:
         - $ref: '#/components/schemas/PI_55006'
         - $ref: '#/components/schemas/PI_55007'
         - $ref: '#/components/schemas/PI_55008'
+<<<<<<< HEAD
         - $ref: '#/components/schemas/PI_55009'
+=======
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
         - $ref: '#/components/schemas/PI_55010'
         - $ref: '#/components/schemas/PI_55011'
         - $ref: '#/components/schemas/PI_55012'
@@ -84024,6 +86888,7 @@ components:
         - $ref: '#/components/schemas/PI_55036'
         - $ref: '#/components/schemas/PI_55037'
         - $ref: '#/components/schemas/PI_55038'
+<<<<<<< HEAD
         - $ref: '#/components/schemas/PI_55039'
         - $ref: '#/components/schemas/PI_55040'
         - $ref: '#/components/schemas/PI_55041'
@@ -84135,6 +87000,106 @@ components:
         - $ref: '#/components/schemas/PI_55688'
         - $ref: '#/components/schemas/PI_55691'
         - $ref: '#/components/schemas/PI_55692'
+=======
+        - $ref: '#/components/schemas/PI_55042'
+        - $ref: '#/components/schemas/PI_55051'
+        - $ref: '#/components/schemas/PI_55052'
+        - $ref: '#/components/schemas/PI_55053'
+        - $ref: '#/components/schemas/PI_55071'
+        - $ref: '#/components/schemas/PI_55072'
+        - $ref: '#/components/schemas/PI_55078'
+        - $ref: '#/components/schemas/PI_55079'
+        - $ref: '#/components/schemas/PI_55080'
+        - $ref: '#/components/schemas/PI_55082'
+        - $ref: '#/components/schemas/PI_55083'
+        - $ref: '#/components/schemas/PI_55084'
+        - $ref: '#/components/schemas/PI_55086'
+        - $ref: '#/components/schemas/PI_55089'
+        - $ref: '#/components/schemas/PI_55090'
+        - $ref: '#/components/schemas/PI_55091'
+        - $ref: '#/components/schemas/PI_55092'
+        - $ref: '#/components/schemas/PI_55093'
+        - $ref: '#/components/schemas/PI_55094'
+        - $ref: '#/components/schemas/PI_55095'
+        - $ref: '#/components/schemas/PI_55103'
+        - $ref: '#/components/schemas/PI_55104'
+        - $ref: '#/components/schemas/PI_55106'
+        - $ref: '#/components/schemas/PI_55107'
+        - $ref: '#/components/schemas/PI_55109'
+        - $ref: '#/components/schemas/PI_55111'
+        - $ref: '#/components/schemas/PI_55112'
+        - $ref: '#/components/schemas/PI_55115'
+        - $ref: '#/components/schemas/PI_55116'
+        - $ref: '#/components/schemas/PI_55117'
+        - $ref: '#/components/schemas/PI_55119'
+        - $ref: '#/components/schemas/PI_55120'
+        - $ref: '#/components/schemas/PI_55121'
+        - $ref: '#/components/schemas/PI_55123'
+        - $ref: '#/components/schemas/PI_55124'
+        - $ref: '#/components/schemas/PI_55126'
+        - $ref: '#/components/schemas/PI_55127'
+        - $ref: '#/components/schemas/PI_55133'
+        - $ref: '#/components/schemas/PI_55136'
+        - $ref: '#/components/schemas/PI_55137'
+        - $ref: '#/components/schemas/PI_55138'
+        - $ref: '#/components/schemas/PI_55139'
+        - $ref: '#/components/schemas/PI_55140'
+        - $ref: '#/components/schemas/PI_55142'
+        - $ref: '#/components/schemas/PI_55143'
+        - $ref: '#/components/schemas/PI_55145'
+        - $ref: '#/components/schemas/PI_55146'
+        - $ref: '#/components/schemas/PI_55149'
+        - $ref: '#/components/schemas/PI_55150'
+        - $ref: '#/components/schemas/PI_55151'
+        - $ref: '#/components/schemas/PI_55152'
+        - $ref: '#/components/schemas/PI_55153'
+        - $ref: '#/components/schemas/PI_55154'
+        - $ref: '#/components/schemas/PI_55155'
+        - $ref: '#/components/schemas/PI_55156'
+        - $ref: '#/components/schemas/PI_55157'
+        - $ref: '#/components/schemas/PI_55159'
+        - $ref: '#/components/schemas/PI_55160'
+        - $ref: '#/components/schemas/PI_55161'
+        - $ref: '#/components/schemas/PI_55162'
+        - $ref: '#/components/schemas/PI_55163'
+        - $ref: '#/components/schemas/PI_55164'
+        - $ref: '#/components/schemas/PI_55167'
+        - $ref: '#/components/schemas/PI_55169'
+        - $ref: '#/components/schemas/PI_55170'
+        - $ref: '#/components/schemas/PI_55172'
+        - $ref: '#/components/schemas/PI_55174'
+        - $ref: '#/components/schemas/PI_55175'
+        - $ref: '#/components/schemas/PI_55176'
+        - $ref: '#/components/schemas/PI_55177'
+        - $ref: '#/components/schemas/PI_55180'
+        - $ref: '#/components/schemas/PI_55181'
+        - $ref: '#/components/schemas/PI_55182'
+        - $ref: '#/components/schemas/PI_55185'
+        - $ref: '#/components/schemas/PI_55186'
+        - $ref: '#/components/schemas/PI_55187'
+        - $ref: '#/components/schemas/PI_55188'
+        - $ref: '#/components/schemas/PI_55189'
+        - $ref: '#/components/schemas/PI_55190'
+        - $ref: '#/components/schemas/PI_55191'
+        - $ref: '#/components/schemas/PI_55218'
+        - $ref: '#/components/schemas/PI_55219'
+        - $ref: '#/components/schemas/PI_55220'
+        - $ref: '#/components/schemas/PI_55221'
+        - $ref: '#/components/schemas/PI_55222'
+        - $ref: '#/components/schemas/PI_55225'
+        - $ref: '#/components/schemas/PI_55226'
+        - $ref: '#/components/schemas/PI_55227'
+        - $ref: '#/components/schemas/PI_55228'
+        - $ref: '#/components/schemas/PI_55229'
+        - $ref: '#/components/schemas/PI_55230'
+        - $ref: '#/components/schemas/PI_55231'
+        - $ref: '#/components/schemas/PI_55232'
+        - $ref: '#/components/schemas/PI_55233'
+        - $ref: '#/components/schemas/PI_55234'
+        - $ref: '#/components/schemas/PI_55240'
+        - $ref: '#/components/schemas/PI_55553'
+        - $ref: '#/components/schemas/PI_55556'
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
     OK_RESPONSE:
       type: object
       description: >-
@@ -86486,6 +89451,94 @@ components:
           sparte: STROM
           vorgangsnummer: MST1407607098
         zusatzdaten: {}
+<<<<<<< HEAD
+=======
+    55109_eingehend_Testfall1:
+      value:
+        stammdaten:
+          BILANZIERUNG:
+            - boTyp: BILANZIERUNG
+              marktlokationsId: '50074561188'
+              versionStruktur: '1'
+          ENERGIELIEFERVERTRAG:
+            - boTyp: VERTRAG
+              enFG:
+                - grund:
+                    - ENFG_ELEKTRISCH_ANGETRIEBENE_WAERMEPUMPEN
+                  grundlageVerringerungUmlagen: ERFUELLT_VORAUSSETZUNG_NACH_ENFG
+              korrespondenzpartner:
+                anrede: Dr.
+                boTyp: GESCHAEFTSPARTNER
+                gewerbekennzeichnung: false
+                name1: Mustermann
+                name2: Max
+                name3: von
+                name4: zu
+                partneradresse:
+                  hausnummer: '1'
+                  landescode: DE
+                  ort: Ort
+                  postleitzahl: '12345'
+                  strasse: Str
+                versionStruktur: '1'
+              lokationsId: '50074561188'
+              lokationsTyp: MALO
+              sparte: STROM
+              versionStruktur: '1'
+              vertragsart: ENERGIELIEFERVERTRAG
+              vertragspartner2:
+                - anrede: Dr.
+                  boTyp: GESCHAEFTSPARTNER
+                  externeReferenzen:
+                    - exRefName: Kundennummer beim Lieferanten
+                      exRefWert: ABC123456
+                  geschaeftspartnerrolle:
+                    - KUNDE
+                  gewerbekennzeichnung: false
+                  name1: Mustermann
+                  name2: Max
+                  name3: von
+                  name4: zu
+                  versionStruktur: '1'
+          MARKTLOKATION:
+            - boTyp: MARKTLOKATION
+              energierichtung: AUSSP
+              marktlokationsId: '50074561188'
+              sparte: STROM
+              versionStruktur: '1'
+          NETZNUTZUNGSVERTRAG:
+            - boTyp: VERTRAG
+              lokationsId: '50074561188'
+              lokationsTyp: MALO
+              sparte: STROM
+              versionStruktur: '1'
+              vertragsart: NETZNUTZUNGSVERTRAG
+              vertragsbeginn: '2024-06-30T22:00:00Z'
+              vertragskonditionen:
+                haushaltskunde: true
+        transaktionsdaten:
+          absender:
+            boTyp: MARKTTEILNEHMER
+            rollencodenummer: '9903790000002'
+            rollencodetyp: BDEW
+            versionStruktur: '1'
+          datenaustauschreferenz: '928723'
+          dokumentennummer: 678687BGM
+          empfaenger:
+            boTyp: MARKTTEILNEHMER
+            rollencodenummer: '9900321000005'
+            rollencodetyp: BDEW
+            versionStruktur: '1'
+          gueltigAb: '2024-06-30T22:00:00Z'
+          kategorie: E03
+          nachrichtendatum: '2024-04-18T06:55:00Z'
+          nachrichtenreferenznummer: '678687'
+          pruefidentifikator: '55109'
+          sparte: STROM
+          transaktionsgrund: ZE6
+          vorgangsnummer: '777963536'
+        zusatzdaten: {}
+>>>>>>> 382a5f9c08b905f65c5579e8097e6d0ce7fe42ca
     55126_eingehend_Testfall1:
       value:
         stammdaten:

@@ -6,10 +6,14 @@ _build/events-openapi.min.json
 ```
 
 ### Developing/buidling
-if you need to change some thing in this repo, you can run the following command to start the development server.
+If you need to change some thing in this repo, you can run the following command to start the development server.
 ```
 nodemon
 ```
+if any were not correct, you will see errors like this:
+![Example Image](docs/images/error.png)
+
+
 
 ### requiments for develop/build
 - nodejs
