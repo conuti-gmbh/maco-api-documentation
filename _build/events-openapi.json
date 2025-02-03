@@ -10263,6 +10263,7 @@
             "transaktionsgrund": "E03",
             "transaktionsgrundergaenzung": "ZW4",
             "transaktionsgrundergaenzungBefristeteAnmeldung": "E03",
+            "sparte": "STROM",
             "ausfuehrungsdatum": "2025-04-02T22:00:00Z",
             "absender": {
               "rollencodenummer": "9904000000005",
@@ -10399,6 +10400,7 @@
           "transaktionsdaten": {
             "transaktionsgrund": "E03",
             "transaktionsgrundergaenzung": "ZW4",
+            "sparte": "STROM",
             "absender": {
               "boTyp": "MARKTTEILNEHMER",
               "versionStruktur": "1",
@@ -10502,7 +10504,7 @@
             ]
           },
           "transaktionsdaten": {
-            "sparte": "STROM",
+            "sparte": "GAS",
             "transaktionsgrund": "E03",
             "absender": {
               "boTyp": "MARKTTEILNEHMER",
@@ -10547,6 +10549,7 @@
           "transaktionsdaten": {
             "transaktionsgrund": "E01",
             "transaktionsgrundergaenzung": "ZW4",
+            "sparte": "STROM",
             "absender": {
               "rollencodenummer": "9904000000005",
               "rollencodetyp": "BDEW"
@@ -10556,7 +10559,6 @@
               "rollencodetyp": "BDEW"
             },
             "kategorie": "E02",
-            "vertragsbeginn": "2025-10-31T23:00:00Z",
             "vertragsende": "2025-10-31T23:00:00Z"
           },
           "zusatzdaten": {
@@ -10582,6 +10584,7 @@
           "transaktionsdaten": {
             "transaktionsgrund": "E01",
             "transaktionsgrundergaenzung": "ZW3",
+            "sparte": "STROM",
             "absender": {
               "rollencodenummer": "9904000000005",
               "rollencodetyp": "BDEW"
@@ -10591,7 +10594,6 @@
               "rollencodetyp": "BDEW"
             },
             "kategorie": "E02",
-            "vertragsbeginn": "2025-10-31T23:00:00Z",
             "vertragsende": "2025-10-31T23:00:00Z"
           },
           "zusatzdaten": {
@@ -10622,6 +10624,7 @@
           "transaktionsdaten": {
             "transaktionsgrund": "Z33",
             "transaktionsgrundergaenzung": "ZW4",
+            "sparte": "STROM",
             "absender": {
               "rollencodenummer": "9904000000005",
               "rollencodetyp": "BDEW"
@@ -10973,6 +10976,7 @@
           "transaktionsdaten": {
             "transaktionsgrund": "ZG5",
             "transaktionsgrundergaenzung": "ZW4",
+            "sparte": "STROM",
             "absender": {
               "rollencodenummer": "9904000000005",
               "rollencodetyp": "BDEW"
