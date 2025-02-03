@@ -1,0 +1,956 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            lokationsadresse:
+              type: object
+              properties:
+                zusatzInformation:
+                  type: object
+                  properties:
+                    zusatz3:
+                      type: string
+                      description: 'Adresszusatz 3 | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                    zusatz1:
+                      type: string
+                      description: 'Adresszusatz 1 | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                    zusatz5:
+                      type: string
+                      description: 'Adresszusatz 5 | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                    zusatz4:
+                      type: string
+                      description: 'Adresszusatz 4 | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                    zusatz2:
+                      type: string
+                      description: 'Adresszusatz 2 | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                ortsteil:
+                  type: string
+                  description: 'Ortsteil | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                postleitzahl:
+                  type: string
+                  description: 'Postleitzahl | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                strasse:
+                  type: string
+                  description: 'Strasse | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                landescode:
+                  type: string
+                  title: Landescode
+                  description: 'Der ISO-Landescode als Enumeration | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                  enum:
+                  - AC
+                  - AD
+                  - AE
+                  - AF
+                  - AG
+                  - AI
+                  - AL
+                  - AM
+                  - AN
+                  - AO
+                  - AQ
+                  - AR
+                  - AS
+                  - AT
+                  - AU
+                  - AW
+                  - AX
+                  - AZ
+                  - BA
+                  - BB
+                  - BD
+                  - BE
+                  - BF
+                  - BG
+                  - BH
+                  - BI
+                  - BJ
+                  - BL
+                  - BM
+                  - BN
+                  - BO
+                  - BQ
+                  - BR
+                  - BS
+                  - BT
+                  - BU
+                  - BV
+                  - BW
+                  - BY
+                  - BZ
+                  - CA
+                  - CC
+                  - CD
+                  - CF
+                  - CG
+                  - CH
+                  - CI
+                  - CK
+                  - CL
+                  - CM
+                  - CN
+                  - CO
+                  - CP
+                  - CR
+                  - CS
+                  - CU
+                  - CV
+                  - CW
+                  - CX
+                  - CY
+                  - CZ
+                  - DE
+                  - DG
+                  - DJ
+                  - DK
+                  - DM
+                  - DO
+                  - DZ
+                  - EA
+                  - EC
+                  - EE
+                  - EG
+                  - EH
+                  - ER
+                  - ES
+                  - ET
+                  - EU
+                  - FI
+                  - FJ
+                  - FK
+                  - FM
+                  - FO
+                  - FR
+                  - FX
+                  - GA
+                  - GB
+                  - GD
+                  - GE
+                  - GF
+                  - GG
+                  - GH
+                  - GI
+                  - GL
+                  - GM
+                  - GN
+                  - GP
+                  - GQ
+                  - GR
+                  - GS
+                  - GT
+                  - GU
+                  - GW
+                  - GY
+                  - HK
+                  - HM
+                  - HN
+                  - HR
+                  - HT
+                  - HU
+                  - IC
+                  - ID
+                  - IE
+                  - IL
+                  - IM
+                  - IN
+                  - IO
+                  - IQ
+                  - IR
+                  - IS
+                  - IT
+                  - JE
+                  - JM
+                  - JO
+                  - JP
+                  - KE
+                  - KG
+                  - KH
+                  - KI
+                  - KM
+                  - KN
+                  - KP
+                  - KR
+                  - KW
+                  - KY
+                  - KZ
+                  - LA
+                  - LB
+                  - LC
+                  - LI
+                  - LK
+                  - LR
+                  - LS
+                  - LT
+                  - LU
+                  - LV
+                  - LY
+                  - MA
+                  - MC
+                  - MD
+                  - ME
+                  - MF
+                  - MG
+                  - MH
+                  - MK
+                  - ML
+                  - MM
+                  - MN
+                  - MO
+                  - MP
+                  - MQ
+                  - MR
+                  - MS
+                  - MT
+                  - MU
+                  - MV
+                  - MW
+                  - MX
+                  - MY
+                  - MZ
+                  - NA
+                  - NC
+                  - NE
+                  - NF
+                  - NG
+                  - NI
+                  - NL
+                  - 'NO'
+                  - NP
+                  - NR
+                  - NT
+                  - NU
+                  - NZ
+                  - OM
+                  - PA
+                  - PE
+                  - PF
+                  - PG
+                  - PH
+                  - PK
+                  - PL
+                  - PM
+                  - PN
+                  - PR
+                  - PS
+                  - PT
+                  - PW
+                  - PY
+                  - QA
+                  - RE
+                  - RO
+                  - RS
+                  - RU
+                  - RW
+                  - SA
+                  - SB
+                  - SC
+                  - SD
+                  - SE
+                  - SF
+                  - SG
+                  - SH
+                  - SI
+                  - SJ
+                  - SK
+                  - SL
+                  - SM
+                  - SN
+                  - SO
+                  - SR
+                  - SS
+                  - ST
+                  - SU
+                  - SV
+                  - SX
+                  - SY
+                  - SZ
+                  - TA
+                  - TC
+                  - TD
+                  - TF
+                  - TG
+                  - TJ
+                  - TK
+                  - TL
+                  - TM
+                  - TN
+                  - TO
+                  - TP
+                  - TR
+                  - TT
+                  - TV
+                  - TW
+                  - TZ
+                  - UA
+                  - UG
+                  - UK
+                  - UM
+                  - US
+                  - UY
+                  - UZ
+                  - VA
+                  - VC
+                  - VE
+                  - VG
+                  - VI
+                  - VN
+                  - VU
+                  - WF
+                  - WS
+                  - XK
+                  - YE
+                  - YT
+                  - YU
+                  - ZA
+                  - ZM
+                  - ZR
+                  - ZW
+                hausnummer:
+                  type: string
+                  description: 'Hausnummer und Ergänzung | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                ort:
+                  type: string
+                  description: 'Ort | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+                postfach:
+                  type: string
+                  description: 'Postfach | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z02.PIA+5'
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z89'
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z89'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16, SG4.IDE+24.SG8.SEQ+Z02.RFF+Z18'
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG12.NAD+DP'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            energieherkunft:
+              type: array
+              items:
+                type: object
+                properties:
+                  erzeugungsart:
+                    type: string
+                    title: Erzeugungsart
+                    description: 'Auflistung der Erzeugungsarten von Energie. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++Z34.CAV'
+                    enum:
+                    - EEG
+                    - KWK
+                    - EEG_DV
+                    - KWK_DV
+                    - WIND
+                    - SOLAR
+                    - KERNKRAFT
+                    - WASSER
+                    - GEOTHERMIE
+                    - BIOMASSE
+                    - KOHLE
+                    - GAS
+                    - SONSTIGE
+                    - SONSTIGE_EEG
+                    - SONSTIGE_ERZEUGUNGSART
+            statusErzeugendeMalo:
+              type: string
+              title: StatusErzeugendeMarktlokation
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+Z22'
+              enum:
+              - EINSPEISEVERGUETUNG_PARAGRAPH_37
+              - GEFOERDERTE_DIREKTVERMARKTUNG
+              - SONSTIGE_DIREKTVERMARKTUNG
+              - VERMARKTUNG_OHNE_GESETZL_VERGUETUNG
+              - KWKG_VERGUETUNG
+              - EINSPEISEVERGUETUNG_PARAGRAPH_38_AUSFALLVERGUETUNG
+            foerderungsLand:
+              type: string
+              description: 'foerderungsLand | EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+Z23'
+      BILANZIERUNG:
+        type: array
+        items:
+          type: object
+          properties:
+            zeitreihentyp:
+              type: string
+              title: Zeitreihentyp
+              description: 'Zeitreihentyp | EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+15+Z21.CAV'
+              enum:
+              - EGS
+              - LGS
+              - NZR
+              - SES
+              - SLS
+              - TES
+              - TLS
+              - SLS_TLS
+              - SES_TES
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.RFF+Z18'
+            bilanzkreis:
+              type: object
+              title: Bilanzkreis
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+Z19'
+      ZAEHLER:
+        type: array
+        items:
+          type: object
+          properties:
+            geraete:
+              type: array
+              items:
+                type: object
+                properties:
+                  geraeteeigenschaften:
+                    type: object
+                    properties:
+                      faktor:
+                        type: number
+                        description: 'faktor | EDIFACT: SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV'
+                        format: float
+                      geraetemerkmal:
+                        type: string
+                        title: Geraetemerkmal
+                        description: 'Geraetemerkmal | EDIFACT: SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV'
+                        enum:
+                        - EINTARIF
+                        - ZWEITARIF
+                        - MEHRTARIF
+                        - GAS_G2P5
+                        - GAS_G4
+                        - GAS_G6
+                        - GAS_G10
+                        - GAS_G16
+                        - GAS_G25
+                        - GAS_G40
+                        - GAS_G65
+                        - GAS_G100
+                        - GAS_G160
+                        - GAS_G250
+                        - GAS_G350
+                        - GAS_G400
+                        - GAS_G4000
+                        - GAS_G650
+                        - GAS_G6500
+                        - GAS_G1000
+                        - GAS_G10000
+                        - GAS_G12500
+                        - GAS_G1600
+                        - GAS_G16000
+                        - GAS_G2500
+                        - IMPULSGEBER_G4_G100
+                        - IMPULSGEBER_G100
+                        - MODEM_GSM
+                        - MODEM_GPRS
+                        - MODEM_FUNK
+                        - MODEM_GSM_O_LG
+                        - MODEM_GSM_M_LG
+                        - MODEM_FESTNETZ
+                        - MODEM_GPRS_M_LG
+                        - PLC_COM
+                        - ETHERNET_KOM
+                        - DSL_KOM
+                        - LTE_KOM
+                        - RUNDSTEUEREMPFAENGER
+                        - TARIFSCHALTGERAET
+                        - ZUSTANDS_MU
+                        - TEMPERATUR_MU
+                        - KOMPAKT_MU
+                        - SYSTEM_MU
+                        - UNBESTIMMT
+                        - WASSER_MWZW
+                        - WASSER_WZWW
+                        - WASSER_WZ01
+                        - WASSER_WZ02
+                        - WASSER_WZ03
+                        - WASSER_WZ04
+                        - WASSER_WZ05
+                        - WASSER_WZ06
+                        - WASSER_WZ07
+                        - WASSER_WZ08
+                        - WASSER_WZ09
+                        - WASSER_WZ10
+                        - WASSER_VWZ04
+                        - WASSER_VWZ05
+                        - WASSER_VWZ06
+                        - WASSER_VWZ07
+                        - WASSER_VWZ10
+                        - DICHTEMENGENUMWERTER
+                        - TEMPERATURMENGENUMWERTER
+                        - ZUSTANDSMENGENUMWERTER
+                        - BLOCKSTROMWANDLER
+                        - MESSWANDLERSATZ_IMS_MME
+                        - KOMBIMESSWANDLER
+                        - SPANNUNGSWANDLER
+                  geraetetyp:
+                    type: string
+                    title: Geraetetyp
+                    description: 'Auflistung möglicher abzurechnender Gerätetypen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14,
+                      SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30'
+                    enum:
+                    - WECHSELSTROMZAEHLER
+                    - DREHSTROMZAEHLER
+                    - ZWEIRICHTUNGSZAEHLER
+                    - RLM_ZAEHLER
+                    - IMS_ZAEHLER
+                    - BALGENGASZAEHLER
+                    - MAXIMUMZAEHLER
+                    - MULTIPLEXANLAGE
+                    - PAUSCHALANLAGE
+                    - VERSTAERKERANLAGE
+                    - SUMMATIONSGERAET
+                    - IMPULSGEBER
+                    - EDL_21_ZAEHLERAUFSATZ
+                    - VIER_QUADRANTEN_LASTGANGZAEHLER
+                    - MENGENUMWERTER
+                    - STROMWANDLER
+                    - SPANNUNGSWANDLER
+                    - DATENLOGGER
+                    - KOMMUNIKATIONSANSCHLUSS
+                    - MODEM
+                    - TELEKOMMUNIKATIONSEINRICHTUNG
+                    - KOMMUNIKATIONSEINRICHTUNG
+                    - DREHKOLBENGASZAEHLER
+                    - TURBINENRADGASZAEHLER
+                    - ULTRASCHALLZAEHLER
+                    - WIRBELGASZAEHLER
+                    - MODERNE_MESSEINRICHTUNG
+                    - ELEKTRONISCHER_HAUSHALTSZAEHLER
+                    - STEUEREINRICHTUNG
+                    - TECHNISCHESTEUEREINRICHTUNG
+                    - TARIFSCHALTGERAET
+                    - RUNDSTEUEREMPFAENGER
+                    - OPTIONALE_ZUS_ZAEHLEINRICHTUNG
+                    - MESSWANDLERSATZ_IMS_MME
+                    - KOMBIMESSWANDLER_IMS_MME
+                    - TARIFSCHALTGERAET_IMS_MME
+                    - RUNDSTEUEREMPFAENGER_IMS_MME
+                    - TEMPERATUR_KOMPENSATION
+                    - HOECHSTBELASTUNGS_ANZEIGER
+                    - SONSTIGES_GERAET
+                    - SMARTMETERGATEWAY
+                    - STEUERBOX
+                    - BLOCKSTROMWANDLER
+                    - KOMBIMESSWANDLER
+                    - MODEM_GSM
+                    - ETHERNET_KOM
+                    - PLC_COM
+                    - MODEM_FESTNETZ
+                    - DSL_KOM
+                    - LTE_KOM
+                    - DICHTEMENGENUMWERTER
+                    - TEMPERATURMENGENUMWERTER
+                    - ZUSTANDSMENGENUMWERTER
+                    - MESSDATENREGISTRIERGERAET
+                    - WANDLER
+                  geraetenummer:
+                    type: string
+                    description: 'Die auf dem Geräte aufgedruckte Nummer, die vom
+                      MSB vergeben wird. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14],
+                      SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z13.SG10.CCI+++Z75.CAV+Z30,
+                      SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30'
+            zaehlertyp:
+              type: string
+              title: Zaehlertyp
+              description: 'Zaehlertyp | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV'
+              enum:
+              - DREHSTROMZAEHLER
+              - BALGENGASZAEHLER
+              - DREHKOLBENZAEHLER
+              - SMARTMETER
+              - LEISTUNGSZAEHLER
+              - MAXIMUMZAEHLER
+              - TURBINENRADGASZAEHLER
+              - ULTRASCHALLGASZAEHLER
+              - WECHSELSTROMZAEHLER
+              - WIRBELGASZAEHLER
+              - MESSDATENREGISTRIERGERAET
+              - ELEKTRONISCHERHAUSHALTSZAEHLER
+              - SONDERAUSSTATTUNG
+              - WASSERZAEHLER
+              - MODERNEMESSEINRICHTUNG
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  wertegranularitaet:
+                    type: string
+                    title: Wertegranularitaet
+                    description: 'Wertegranularitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+++ZE4.CAV'
+                    enum:
+                    - JAEHRLICH
+                    - HALBJAEHRLICH
+                    - QUARTALSWEISE
+                    - MONATLICH
+                  nachkommastelle:
+                    type: integer
+                    description: 'nachkommastelle | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV'
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.PIA+5'
+                  vorkommastelle:
+                    type: integer
+                    description: 'vorkommastelle | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV'
+                  konfiguration:
+                    type: string
+                    title: AenderungsmoeglichkeitKonfiguration
+                    description: 'AenderungsmoeglichkeitKonfiguration | EDIFACT: SG4.IDE+24.SG8.SEQ+Z20.RFF+AGK'
+                    enum:
+                    - ERFORDERLICH
+                    - NICHT_ERFORDERLICH
+            gateway:
+              type: string
+              description: 'Angabe eines SMGW, mit dem der Zaehler parametrisiert
+                ist | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14]'
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z14.RFF+Z18'
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.RFF+Z19,
+                SG4.IDE+24.SG8.SEQ+Z20.RFF+Z19'
+            zaehlertypspezifikation:
+              type: string
+              title: ZaehlertypSpezifikation
+              description: 'ZaehlertypSpezifikation | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV'
+              enum:
+              - EDL40
+              - EDL21
+              - SONSTIGER_EHZ
+              - MME_STANDARD
+              - MME_MEDA
+            zaehlernummer:
+              type: string
+              description: 'Die Nummer des zu sperrenden Zählers | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z30,
+                SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z04.RFF+MG'
+      TRANCHE:
+        type: array
+        items:
+          type: object
+          properties:
+            bildungTranchengroesse:
+              type: string
+              title: BildungTranchengroesse
+              description: 'BildungTranchengroesse | EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+Z37'
+              enum:
+              - PROZENTUAL
+              - AUFTEILUNGSFAKTOR
+            aufteilungsmenge:
+              type: object
+              properties:
+                wert:
+                  type: object
+                  title: Schwellwert
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11'
+                einheit:
+                  type: string
+                  title: Mengeneinheit
+                  description: 'Einheit: Messgrößen, die per Messung oder Vorgabe
+                    ermittelt werden können | EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11'
+                  enum:
+                  - W
+                  - WH
+                  - KW
+                  - KWH
+                  - KVARH
+                  - MW
+                  - MWH
+                  - STUECK
+                  - KUBIKMETER
+                  - STUNDE
+                  - TAG
+                  - MONAT
+                  - JAHR
+                  - PROZENT
+                  - ANZAHL
+                  - VAR
+                  - KVAR
+                  - VARH
+                  - KWHK
+                  - Z16
+                  - KWT
+            tranchenId:
+              type: string
+              description: 'tranchenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z21, SG4.IDE+24.SG8.SEQ+Z15.RFF+Z20,
+                SG4.IDE+24.SG8.SEQ+Z17.RFF+Z20'
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+++ZB3.CAV+Z89'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+++ZB3.CAV+Z89'
+            bilanzkreis:
+              type: object
+              title: Bilanzkreis
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+Z19'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z17.PIA+5'
+      MESSLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG5.LOC+Z17'
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+E03'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+E03'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      gueltigAb:
+        type: string
+        description: 'Gültigkeitsdatum/-zeit / DTM+7 | EDIFACT: SG4.IDE+24.DTM+157'
+        format: date-time
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55075 - NB an RB HKN-R - Verteilung geänderte Stammdaten

@@ -2,6 +2,11 @@
   "openapi": "3.1.0",
   "info": {
     "title": "MACO APP - erforderliche BO4E- und Prozessschnittstellen Backend Schnittstellen",
+    "contact": {
+      "name": "CONUTI GmbH",
+      "url": "https://www.conuti.de",
+      "email": "support@conuti.de"
+    },
     "license": {
       "name": "MIT",
       "url": "https://opensource.org/licenses/MIT"
@@ -65,7 +70,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Avis"
+                  "$ref": "#/components/schemas/Avis"
                 }
               }
             },
@@ -128,7 +133,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Berechnungsformel"
+                  "$ref": "#/components/schemas/Berechnungsformel"
                 }
               }
             },
@@ -195,7 +200,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Bilanzierung"
+                  "$ref": "#/components/schemas/Bilanzierung"
                 }
               }
             },
@@ -251,7 +256,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "#/components/schemas/Vertrag"
                 }
               }
             },
@@ -312,7 +317,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -377,7 +382,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -437,7 +442,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Energiemenge"
+                  "$ref": "#/components/schemas/Energiemenge"
                 }
               }
             },
@@ -494,7 +499,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Kommunikationsdaten"
+                  "$ref": "#/components/schemas/Kommunikationsdaten"
                 }
               }
             },
@@ -551,7 +556,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Lokationsbuendel"
+                  "$ref": "#/components/schemas/Lokationsbuendel"
                 }
               }
             },
@@ -608,7 +613,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
+                  "$ref": "#/components/schemas/Marktlokation"
                 }
               }
             },
@@ -658,7 +663,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktlokation"
+                    "$ref": "#/components/schemas/Marktlokation"
                   }
                 }
               }
@@ -716,7 +721,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
+                  "$ref": "#/components/schemas/Marktteilnehmer"
                 }
               }
             },
@@ -773,7 +778,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Marktteilnehmer"
+                  "$ref": "#/components/schemas/Marktteilnehmer"
                 }
               }
             },
@@ -830,7 +835,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Messlokation"
+                  "$ref": "#/components/schemas/Messlokation"
                 }
               }
             },
@@ -887,7 +892,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "#/components/schemas/Vertrag"
                 }
               }
             },
@@ -944,7 +949,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Netzlokation"
+                  "$ref": "#/components/schemas/Netzlokation"
                 }
               }
             },
@@ -1001,7 +1006,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Vertrag"
+                  "$ref": "#/components/schemas/Vertrag"
                 }
               }
             },
@@ -1058,7 +1063,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/SteuerbareRessource"
+                  "$ref": "#/components/schemas/SteuerbareRessource"
                 }
               }
             },
@@ -1115,7 +1120,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/TechnischeRessource"
+                  "$ref": "#/components/schemas/TechnischeRessource"
                 }
               }
             },
@@ -1172,7 +1177,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Tranche"
+                  "$ref": "#/components/schemas/Tranche"
                 }
               }
             },
@@ -1229,7 +1234,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../../_schema/openapi.yaml#/components/schemas/Zaehler"
+                  "$ref": "#/components/schemas/Zaehler"
                 }
               }
             },

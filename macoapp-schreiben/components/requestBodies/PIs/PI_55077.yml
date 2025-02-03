@@ -1,0 +1,248 @@
+type: object
+properties:
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+E01'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+E01'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      abtretungserklaerung:
+        type: object
+        properties:
+          link3:
+            type: string
+            description: 'Link Zeile 3 | EDIFACT: SG4.IDE+24.FTX+Z13'
+          link1:
+            type: string
+            description: 'Link Zeile 1 | EDIFACT: SG4.IDE+24.FTX+Z13'
+          passwort:
+            type: string
+            description: 'Passwort zum Abruf | EDIFACT: SG4.IDE+24.FTX+Z13'
+          link5:
+            type: string
+            description: 'Link Zeile 5 | EDIFACT: SG4.IDE+24.FTX+Z13'
+          link2:
+            type: string
+            description: 'Link Zeile 2 | EDIFACT: SG4.IDE+24.FTX+Z13'
+          link4:
+            type: string
+            description: 'Link Zeile 4 | EDIFACT: SG4.IDE+24.FTX+Z13'
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      vertragsbeginn:
+        type: string
+        description: 'Datum Vertragsbeginn / DTM+92 | EDIFACT: SG4.IDE+24.DTM+92'
+        format: date-time
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      transaktionsgrundergaenzung:
+        type: string
+        description: 'Ergänzung zum Transaktionsgrund / UTILMD STS+7++E01+###+E03
+          | EDIFACT: SG4.IDE+24.STS+7'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+  stammdaten:
+    type: object
+    properties:
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            erforderlichesProduktpaket:
+              type: array
+              items:
+                type: object
+                properties:
+                  produktpaket:
+                    type: object
+                    properties:
+                      priorisierung:
+                        type: string
+                        title: Priorisierung
+                        description: 'Priorisierung | EDIFACT: SG4.IDE+24.SG8.SEQ+ZH0.SG10.CCI+Z65.CAV'
+                        enum:
+                        - PRIORITAET1
+                        - PRIORITAET2
+                        - PRIORITAET3
+                        - PRIORITAET4
+                        - PRIORITAET5
+                      produktpaketId:
+                        type: integer
+                        description: 'produktpaketId | EDIFACT: SG4.IDE+24.SG8.SEQ+Z79,
+                          SG4.IDE+24.SG8.SEQ+ZH0'
+                      umsetzungsgradvorgabe:
+                        type: string
+                        title: Umsetzungsgradvorgabe
+                        description: 'Umsetzungsgradvorgabe | EDIFACT: SG4.IDE+24.SG8.SEQ+ZH0.SG10.CCI+Z65'
+                        enum:
+                        - ZUORDNUNG_NUR_WENN_PRODUKTPAKET_UMSETZBAR
+                        - ZUORDNUNG_AUCH_WENN_PRODUKTPAKET_NICHT_UMSETZBAR
+                  produkt:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        produkt:
+                          type: object
+                          properties:
+                            wertedetails:
+                              type: string
+                              description: 'wertedetails | EDIFACT: SG4.IDE+24.SG8.SEQ+Z79.SG10.CCI+Z66.CAV+ZV4'
+                            produktCode:
+                              type: string
+                              description: 'produktCode | EDIFACT: SG4.IDE+24.SG8.SEQ+Z79.PIA+5'
+                            codeProdukteigenschaft:
+                              type: string
+                              description: 'codeProdukteigenschaft | EDIFACT: SG4.IDE+24.SG8.SEQ+Z79.SG10.CCI+Z66.CAV+ZH9'
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16'
+            foerderungsLand:
+              type: string
+              description: 'foerderungsLand | EDIFACT: SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+Z23'
+      TRANCHE:
+        type: array
+        items:
+          type: object
+          properties:
+            tranchenId:
+              type: string
+              description: 'tranchenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z21'
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          type: object
+          properties:
+            vertragsbeginn:
+              type: string
+              description: 'Datum Vertragsbeginn / DTM+92 | EDIFACT: SG4.IDE+24.DTM+92'
+              format: date-time
+required:
+- transaktionsdaten
+- stammdaten
+description: 55077 - LFN an NB - Anmeldung einer Zuordnung des LFN zur Marktlokation
+  bzw. Tranche

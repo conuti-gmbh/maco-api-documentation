@@ -1,0 +1,44 @@
+stammdaten.MARKTLOKATION[].marktlokationsId; SG4.IDE+24.SG5.LOC+Z16
+stammdaten.MARKTLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].weiterverpflichtet; SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0
+stammdaten.MESSLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0
+stammdaten.MESSLOKATION[].marktrollen[].weiterverpflichtet; SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].messlokationsId; SG4.IDE+24.SG5.LOC+Z17, SG4.IDE+24.SG8.SEQ+ZF3.RFF+Z19
+stammdaten.NETZLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].netzlokationsId; SG4.IDE+24.SG5.LOC+Z18, SG4.IDE+24.SG8.SEQ+ZD7.RFF+Z32
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragsbeginn; SG4.IDE+24.DTM+92
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].ressourcenId; SG4.IDE+24.SG5.LOC+Z19, SG4.IDE+24.SG8.SEQ+ZF1.RFF+Z38
+stammdaten.TECHNISCHE_RESSOURCE[].ressourcenId; SG4.IDE+24.SG5.LOC+Z20
+stammdaten.TRANCHE[].aufteilungsmenge.einheit; SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11
+stammdaten.TRANCHE[].aufteilungsmenge.wert; SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11
+stammdaten.TRANCHE[].bildungTranchengroesse; SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+Z37
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.anfragereferenznummer; SG4.IDE+24.SG6.RFF+TN
+transaktionsdaten.antwortstatus; SG4.IDE+24.STS+E01
+transaktionsdaten.antwortstatusCodeliste; SG4.IDE+24.STS+E01
+transaktionsdaten.dokumentennummer; BGM+E01
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.geplantesProduktpaket; SG4.IDE+24.SG6.RFF+Z60
+transaktionsdaten.kategorie; BGM+E01
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.transaktionsgrundergaenzung; SG4.IDE+24.STS+7
+transaktionsdaten.vertragsbeginn; SG4.IDE+24.DTM+92
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

@@ -1,0 +1,530 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      AD_HOC_STEUERKANAL:
+        type: array
+        items:
+          type: object
+          properties:
+            IPAdresseCLSDevice:
+              type: object
+              properties:
+                IPAdresseCLSDevice1:
+                  type: string
+                  description: 'IPAdresseCLSDevice1 | EDIFACT: SG4.IDE+24.FTX+Z18'
+                IPAdresseCLSDevice3:
+                  type: string
+                  description: 'IPAdresseCLSDevice3 | EDIFACT: SG4.IDE+24.FTX+Z18'
+                IPAdresseCLSDevice2:
+                  type: string
+                  description: 'IPAdresseCLSDevice2 | EDIFACT: SG4.IDE+24.FTX+Z18'
+                IPAdresseCLSDevice5:
+                  type: string
+                  description: 'IPAdresseCLSDevice5 | EDIFACT: SG4.IDE+24.FTX+Z18'
+                IPAdresseCLSDevice4:
+                  type: string
+                  description: 'IPAdresseCLSDevice4 | EDIFACT: SG4.IDE+24.FTX+Z18'
+            zieladresse:
+              type: object
+              properties:
+                zieladresse1:
+                  type: string
+                  description: 'zieladresse1 | EDIFACT: SG4.IDE+24.FTX+Z17'
+                zieladresse5:
+                  type: string
+                  description: 'zieladresse5 | EDIFACT: SG4.IDE+24.FTX+Z17'
+                zieladresse4:
+                  type: string
+                  description: 'zieladresse4 | EDIFACT: SG4.IDE+24.FTX+Z17'
+                zieladresse3:
+                  type: string
+                  description: 'zieladresse3 | EDIFACT: SG4.IDE+24.FTX+Z17'
+                zieladresse2:
+                  type: string
+                  description: 'zieladresse2 | EDIFACT: SG4.IDE+24.FTX+Z17'
+            zertifikatsNutzer:
+              type: object
+              properties:
+                zertifikatsNutzer3:
+                  type: string
+                  description: 'zertifikatsNutzer3 | EDIFACT: SG4.IDE+24.FTX+Z23'
+                zertifikatsNutzer4:
+                  type: string
+                  description: 'zertifikatsNutzer4 | EDIFACT: SG4.IDE+24.FTX+Z23'
+                zertifikatsNutzer2:
+                  type: string
+                  description: 'zertifikatsNutzer2 | EDIFACT: SG4.IDE+24.FTX+Z23'
+                zertifikatsNutzer1:
+                  type: string
+                  description: 'zertifikatsNutzer1 | EDIFACT: SG4.IDE+24.FTX+Z23'
+                zertifikatsNutzer5:
+                  type: string
+                  description: 'zertifikatsNutzer5 | EDIFACT: SG4.IDE+24.FTX+Z23'
+            aussteller:
+              type: object
+              properties:
+                aussteller3:
+                  type: string
+                  description: 'aussteller3 | EDIFACT: SG4.IDE+24.FTX+Z24'
+                aussteller4:
+                  type: string
+                  description: 'aussteller4 | EDIFACT: SG4.IDE+24.FTX+Z24'
+                aussteller5:
+                  type: string
+                  description: 'aussteller5 | EDIFACT: SG4.IDE+24.FTX+Z24'
+                aussteller1:
+                  type: string
+                  description: 'aussteller1 | EDIFACT: SG4.IDE+24.FTX+Z24'
+                aussteller2:
+                  type: string
+                  description: 'aussteller2 | EDIFACT: SG4.IDE+24.FTX+Z24'
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2].PIA+5'
+                  wertegranularitaet:
+                    type: string
+                    title: Wertegranularitaet
+                    description: 'Wertegranularitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2].SG10.CCI+++ZE4.CAV+[ZD9|ZE8|ZE9|ZB7]'
+                    enum:
+                    - JAEHRLICH
+                    - HALBJAEHRLICH
+                    - QUARTALSWEISE
+                    - MONATLICH
+                  zaehlzeiten:
+                    type: object
+                    properties:
+                      zaehlzeitDefinition:
+                        type: object
+                        title: Zaehlzeitdefinition
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2].SG10.CCI+Z39'
+                        properties:
+                          boTyp:
+                            type: string
+                            title: BOTyp
+                            description: Typ des BO
+                            enum:
+                            - ZAEHLZEITDEFINITION
+                          versionStruktur:
+                            type: string
+                            description: versionStruktur
+                            default: '1'
+                        required:
+                        - boTyp
+                        - versionStruktur
+                      register:
+                        type: object
+                        title: Zaehlzeitregister
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2].SG10.CCI+Z38'
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            gueltigkeitszeitraum:
+              type: object
+              properties:
+                zeitraumId:
+                  type: integer
+                  description: 'zeitraumId | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA1|ZA2]'
+      ZAEHLER:
+        type: array
+        items:
+          type: object
+          properties:
+            gueltigkeitszeitraum:
+              type: object
+              properties:
+                zeitraumId:
+                  type: integer
+                  description: 'zeitraumId | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA3|ZA4],
+                    SG4.IDE+24.SG8.SEQ+[ZA5|ZA6]'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  zaehlzeiten:
+                    type: object
+                    properties:
+                      zaehlzeitDefinition:
+                        type: object
+                        title: Zaehlzeitdefinition
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+Z39'
+                        properties:
+                          boTyp:
+                            type: string
+                            title: BOTyp
+                            description: Typ des BO
+                            enum:
+                            - ZAEHLZEITDEFINITION
+                          versionStruktur:
+                            type: string
+                            description: versionStruktur
+                            default: '1'
+                        required:
+                        - boTyp
+                        - versionStruktur
+                      register:
+                        type: object
+                        title: Zaehlzeitregister
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+Z38'
+                  bezeichnung:
+                    type: string
+                    description: 'Externe Bezeichnung | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+++Z63'
+                  wertegranularitaet:
+                    type: string
+                    title: Wertegranularitaet
+                    description: 'Wertegranularitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+++ZE4.CAV+[ZD9|ZE8|ZE9|ZB7]'
+                    enum:
+                    - JAEHRLICH
+                    - HALBJAEHRLICH
+                    - QUARTALSWEISE
+                    - MONATLICH
+                  nachkommastelle:
+                    type: integer
+                    description: 'nachkommastelle | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+11++Z33.CAV'
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].PIA+5'
+                  vorkommastelle:
+                    type: integer
+                    description: 'vorkommastelle | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].SG10.CCI+11++Z33.CAV'
+                  konfiguration:
+                    type: string
+                    title: AenderungsmoeglichkeitKonfiguration
+                    description: 'AenderungsmoeglichkeitKonfiguration | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].RFF+AGK'
+                    enum:
+                    - ERFORDERLICH
+                    - NICHT_ERFORDERLICH
+            geraete:
+              type: array
+              items:
+                type: object
+                properties:
+                  geraetetyp:
+                    type: string
+                    title: Geraetetyp
+                    description: 'Auflistung möglicher abzurechnender Gerätetypen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].RFF+Z14'
+                    enum:
+                    - WECHSELSTROMZAEHLER
+                    - DREHSTROMZAEHLER
+                    - ZWEIRICHTUNGSZAEHLER
+                    - RLM_ZAEHLER
+                    - IMS_ZAEHLER
+                    - BALGENGASZAEHLER
+                    - MAXIMUMZAEHLER
+                    - MULTIPLEXANLAGE
+                    - PAUSCHALANLAGE
+                    - VERSTAERKERANLAGE
+                    - SUMMATIONSGERAET
+                    - IMPULSGEBER
+                    - EDL_21_ZAEHLERAUFSATZ
+                    - VIER_QUADRANTEN_LASTGANGZAEHLER
+                    - MENGENUMWERTER
+                    - STROMWANDLER
+                    - SPANNUNGSWANDLER
+                    - DATENLOGGER
+                    - KOMMUNIKATIONSANSCHLUSS
+                    - MODEM
+                    - TELEKOMMUNIKATIONSEINRICHTUNG
+                    - KOMMUNIKATIONSEINRICHTUNG
+                    - DREHKOLBENGASZAEHLER
+                    - TURBINENRADGASZAEHLER
+                    - ULTRASCHALLZAEHLER
+                    - WIRBELGASZAEHLER
+                    - MODERNE_MESSEINRICHTUNG
+                    - ELEKTRONISCHER_HAUSHALTSZAEHLER
+                    - STEUEREINRICHTUNG
+                    - TECHNISCHESTEUEREINRICHTUNG
+                    - TARIFSCHALTGERAET
+                    - RUNDSTEUEREMPFAENGER
+                    - OPTIONALE_ZUS_ZAEHLEINRICHTUNG
+                    - MESSWANDLERSATZ_IMS_MME
+                    - KOMBIMESSWANDLER_IMS_MME
+                    - TARIFSCHALTGERAET_IMS_MME
+                    - RUNDSTEUEREMPFAENGER_IMS_MME
+                    - TEMPERATUR_KOMPENSATION
+                    - HOECHSTBELASTUNGS_ANZEIGER
+                    - SONSTIGES_GERAET
+                    - SMARTMETERGATEWAY
+                    - STEUERBOX
+                    - BLOCKSTROMWANDLER
+                    - KOMBIMESSWANDLER
+                    - MODEM_GSM
+                    - ETHERNET_KOM
+                    - PLC_COM
+                    - MODEM_FESTNETZ
+                    - DSL_KOM
+                    - LTE_KOM
+                    - DICHTEMENGENUMWERTER
+                    - TEMPERATURMENGENUMWERTER
+                    - ZUSTANDSMENGENUMWERTER
+                    - MESSDATENREGISTRIERGERAET
+                    - WANDLER
+                  geraetenummer:
+                    type: string
+                    description: 'Die auf dem Geräte aufgedruckte Nummer, die vom
+                      MSB vergeben wird. | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA5|ZA6].RFF+Z14'
+            gateway:
+              type: string
+              description: 'Angabe eines SMGW, mit dem der Zaehler parametrisiert
+                ist | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA3|ZA4].RFF+Z14'
+            zaehlernummer:
+              type: string
+              description: 'Die Nummer des zu sperrenden Zählers | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA3|ZA4].SG10.CCI+++E13.CAV+Z30'
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+[ZA3|ZA4],
+                SG4.IDE+24.SG8.SEQ+[ZA5|ZA6]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+      VERWENDUNGSZEITRAUM:
+        type: array
+        items:
+          type: object
+          properties:
+            verwendungBis:
+              type: string
+              description: 'Verarbeitung, Endedatum/-zeit / DTM+164 | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z26'
+              format: date-time
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            verwendungAb:
+              type: string
+              description: 'Verarbeitung, Beginndatum/-zeit / DTM+163 | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z25'
+              format: date-time
+            zeitraumId:
+              type: integer
+              description: 'zeitraumId | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]'
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+[E03|Z88]'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+[E03|Z88]'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ipAdresse:
+            type: string
+            description: 'ipAdresse | EDIFACT: SG4.IDE+24.FTX+Z27'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          ipRange:
+            type: object
+            properties:
+              obereGrenze:
+                type: string
+                description: 'obereGrenze | EDIFACT: SG4.IDE+24.FTX+Z28'
+              untereGrenze:
+                type: string
+                description: 'untereGrenze | EDIFACT: SG4.IDE+24.FTX+Z28'
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      antwortStatusZeitraum:
+        type: array
+        items:
+          type: object
+          properties:
+            code:
+              type: object
+              title: Objectcode
+              description: 'EDIFACT: SG4.IDE+24.STS+E01'
+            liste:
+              type: string
+              description: 'liste | EDIFACT: SG4.IDE+24.STS+E01'
+            zeitraumId:
+              type: integer
+              description: 'zeitraumId | EDIFACT: SG4.IDE+24.STS+E01'
+      nachrichtenReferenzBestellbestaetigung:
+        type: string
+        description: 'Referenznummer der Nachricht der betroffenen Antwort auf Bestellung
+          ''Bestellbestätigung'' / ORDERS RFF+Z42 | EDIFACT: SG4.IDE+24.SG6.RFF+Z42'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      vorgangsReferenzBestellbestaetigung:
+        type: string
+        description: 'Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung
+          ''Bestellbestätigung'' / ORDERS RFF+Z43 | EDIFACT: SG4.IDE+24.SG6.RFF+Z43'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55555 - weiterer MSB an MSB - Bestellung einer Änderung von Stammdaten
+  vom weiteren MSB an MSB

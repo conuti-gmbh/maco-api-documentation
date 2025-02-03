@@ -1,0 +1,32 @@
+stammdaten.MARKTLOKATION[].datenqualitaet; SG4.IDE+24.SG6.RFF+Z50, SG4.IDE+24.SG8.SEQ+Z02, SG4.IDE+24.SG8.SEQ+Z59
+stammdaten.MARKTLOKATION[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG6.RFF+Z50, SG4.IDE+24.SG8.SEQ+Z02, SG4.IDE+24.SG8.SEQ+Z59
+stammdaten.MARKTLOKATION[].konfigurationsprodukt; SG4.IDE+24.SG8.SEQ+Z59.PIA+5, SG4.IDE+24.SG8.SEQ+Z59.SG10.CCI+11
+stammdaten.MARKTLOKATION[].leistungskurvendefinition; SG4.IDE+24.SG8.SEQ+Z59.SG10.CCI+Z53
+stammdaten.MARKTLOKATION[].marktlokationsId; SG4.IDE+24.SG5.LOC+Z16
+stammdaten.MARKTLOKATION[].produktdatenRelevanteRolle; SG4.IDE+24.SG8.SEQ+Z59.SG10.CCI+++ZA8
+stammdaten.MARKTLOKATION[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+Z02.PIA+5
+stammdaten.MARKTLOKATION[].zaehlwerke[].verwendungszwecke[].marktrolle; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA8.CAV
+stammdaten.MARKTLOKATION[].zaehlwerke[].verwendungszwecke[].zweck[]; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA8.CAV
+stammdaten.MARKTLOKATION[].zaehlwerke[].wertegranularitaet; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZE4.CAV+[ZD9|ZE8|ZE9|ZB7]
+stammdaten.MARKTLOKATION[].zaehlwerke[].zaehlzeiten.register; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+Z38
+stammdaten.MARKTLOKATION[].zaehlwerke[].zaehlzeiten.zaehlzeitDefinition; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+Z39
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragskonditionen.geplanteTurnusablesung.ableseZeitraum; SG4.IDE+24.SG6.RFF+Z50.DTM+752
+stammdaten.VERWENDUNGSZEITRAUM[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungAb; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z25
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungBis; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z26
+stammdaten.VERWENDUNGSZEITRAUM[].zeitraumId; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.dokumentennummer; BGM+E03
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+E03
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

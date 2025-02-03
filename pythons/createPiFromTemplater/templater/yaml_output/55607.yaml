@@ -1,0 +1,489 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      MESSLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0'
+                  weiterverpflichtet:
+                    type: boolean
+                    description: 'weiterverpflichtet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91'
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG5.LOC+Z17, SG4.IDE+24.SG8.SEQ+ZF3.RFF+Z19'
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  weiterverpflichtet:
+                    type: boolean
+                    description: 'weiterverpflichtet | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16'
+            energieherkunft:
+              type: array
+              items:
+                type: object
+                properties:
+                  erzeugungsart:
+                    type: string
+                    title: Erzeugungsart
+                    description: 'Auflistung der Erzeugungsarten von Energie. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++Z34.CAV'
+                    enum:
+                    - EEG
+                    - KWK
+                    - EEG_DV
+                    - KWK_DV
+                    - WIND
+                    - SOLAR
+                    - KERNKRAFT
+                    - WASSER
+                    - GEOTHERMIE
+                    - BIOMASSE
+                    - KOHLE
+                    - GAS
+                    - SONSTIGE
+                    - SONSTIGE_EEG
+                    - SONSTIGE_ERZEUGUNGSART
+            statusErzeugendeMalo:
+              type: string
+              title: StatusErzeugendeMarktlokation
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+Z22'
+              enum:
+              - EINSPEISEVERGUETUNG_PARAGRAPH_37
+              - GEFOERDERTE_DIREKTVERMARKTUNG
+              - SONSTIGE_DIREKTVERMARKTUNG
+              - VERMARKTUNG_OHNE_GESETZL_VERGUETUNG
+              - KWKG_VERGUETUNG
+              - EINSPEISEVERGUETUNG_PARAGRAPH_38_AUSFALLVERGUETUNG
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          type: object
+          properties:
+            vertragsende:
+              type: string
+              description: 'Datum Vertragsende / DTM+93 | EDIFACT: SG4.IDE+24.DTM+93'
+              format: date-time
+            vertragsbeginn:
+              type: string
+              description: 'Datum Vertragsbeginn / DTM+92 | EDIFACT: SG4.IDE+24.DTM+92'
+              format: date-time
+      NETZLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+            netzlokationsId:
+              type: string
+              description: 'Identifikationsnummer einer Netzlokation, an der Energie
+                entweder
+
+                verbraucht, oder erzeugt wird (Like MarktlokationsId Marktlokation)
+                | EDIFACT: SG4.IDE+24.SG5.LOC+Z18, SG4.IDE+24.SG8.SEQ+ZD7.RFF+Z32'
+      TRANCHE:
+        type: array
+        items:
+          type: object
+          properties:
+            bildungTranchengroesse:
+              type: string
+              title: BildungTranchengroesse
+              description: 'BildungTranchengroesse | EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+Z37'
+              enum:
+              - PROZENTUAL
+              - AUFTEILUNGSFAKTOR
+            aufteilungsmenge:
+              type: object
+              properties:
+                wert:
+                  type: object
+                  title: Schwellwert
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11'
+                einheit:
+                  type: string
+                  title: Mengeneinheit
+                  description: 'Einheit: Messgrößen, die per Messung oder Vorgabe
+                    ermittelt werden können | EDIFACT: SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11'
+                  enum:
+                  - W
+                  - WH
+                  - KW
+                  - KWH
+                  - KVARH
+                  - MW
+                  - MWH
+                  - STUECK
+                  - KUBIKMETER
+                  - STUNDE
+                  - TAG
+                  - MONAT
+                  - JAHR
+                  - PROZENT
+                  - ANZAHL
+                  - VAR
+                  - KVAR
+                  - VARH
+                  - KWHK
+                  - Z16
+                  - KWT
+            tranchenId:
+              type: string
+              description: 'tranchenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z21'
+      STEUERBARE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z19, SG4.IDE+24.SG8.SEQ+ZF1.RFF+Z38'
+      TECHNISCHE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z20'
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+[E01|Z89]'
+      vertragsende:
+        type: string
+        description: 'Datum Vertragsende / DTM+93 | EDIFACT: SG4.IDE+24.DTM+93'
+        format: date-time
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+[E01|Z89]'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      transaktionsgrundergaenzungBefristeteAnmeldung:
+        type: string
+        description: 'Ergänzung zum Transaktionsgrund bei befristeten An-/Abmeldungen
+          / UTILMD STS+7++E01+ZW4+### | EDIFACT: SG4.IDE+24.STS+7'
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      vertragsbeginn:
+        type: string
+        description: 'Datum Vertragsbeginn / DTM+92 | EDIFACT: SG4.IDE+24.DTM+92'
+        format: date-time
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      anfragereferenznummer:
+        type: string
+        description: 'Referenz Vorgangsnummer ''aus Anfragenachricht'' / ORDERS RFF+TN
+          / IFTSTA RFF+AAV / INSRPT RFF+TN RFF+AAV | EDIFACT: SG4.IDE+24.SG6.RFF+TN'
+      transaktionsgrundergaenzung:
+        type: string
+        description: 'Ergänzung zum Transaktionsgrund / UTILMD STS+7++E01+###+E03
+          | EDIFACT: SG4.IDE+24.STS+7'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55607 - NB an LFN - Zuordnung des LFN zur Tranche aufgrund fehlender
+  Antwort

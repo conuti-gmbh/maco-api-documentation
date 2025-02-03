@@ -1,0 +1,580 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      MESSLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            messadresse:
+              type: object
+              properties:
+                postleitzahl:
+                  type: string
+                  description: 'Postleitzahl | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                zusatzInformation:
+                  type: object
+                  properties:
+                    zusatz5:
+                      type: string
+                      description: 'Adresszusatz 5 | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                    zusatz2:
+                      type: string
+                      description: 'Adresszusatz 2 | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                    zusatz1:
+                      type: string
+                      description: 'Adresszusatz 1 | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                    zusatz3:
+                      type: string
+                      description: 'Adresszusatz 3 | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                    zusatz4:
+                      type: string
+                      description: 'Adresszusatz 4 | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                strasse:
+                  type: string
+                  description: 'Strasse | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                postfach:
+                  type: string
+                  description: 'Postfach | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                ortsteil:
+                  type: string
+                  description: 'Ortsteil | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                landescode:
+                  type: string
+                  title: Landescode
+                  description: 'Der ISO-Landescode als Enumeration | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                  enum:
+                  - AC
+                  - AD
+                  - AE
+                  - AF
+                  - AG
+                  - AI
+                  - AL
+                  - AM
+                  - AN
+                  - AO
+                  - AQ
+                  - AR
+                  - AS
+                  - AT
+                  - AU
+                  - AW
+                  - AX
+                  - AZ
+                  - BA
+                  - BB
+                  - BD
+                  - BE
+                  - BF
+                  - BG
+                  - BH
+                  - BI
+                  - BJ
+                  - BL
+                  - BM
+                  - BN
+                  - BO
+                  - BQ
+                  - BR
+                  - BS
+                  - BT
+                  - BU
+                  - BV
+                  - BW
+                  - BY
+                  - BZ
+                  - CA
+                  - CC
+                  - CD
+                  - CF
+                  - CG
+                  - CH
+                  - CI
+                  - CK
+                  - CL
+                  - CM
+                  - CN
+                  - CO
+                  - CP
+                  - CR
+                  - CS
+                  - CU
+                  - CV
+                  - CW
+                  - CX
+                  - CY
+                  - CZ
+                  - DE
+                  - DG
+                  - DJ
+                  - DK
+                  - DM
+                  - DO
+                  - DZ
+                  - EA
+                  - EC
+                  - EE
+                  - EG
+                  - EH
+                  - ER
+                  - ES
+                  - ET
+                  - EU
+                  - FI
+                  - FJ
+                  - FK
+                  - FM
+                  - FO
+                  - FR
+                  - FX
+                  - GA
+                  - GB
+                  - GD
+                  - GE
+                  - GF
+                  - GG
+                  - GH
+                  - GI
+                  - GL
+                  - GM
+                  - GN
+                  - GP
+                  - GQ
+                  - GR
+                  - GS
+                  - GT
+                  - GU
+                  - GW
+                  - GY
+                  - HK
+                  - HM
+                  - HN
+                  - HR
+                  - HT
+                  - HU
+                  - IC
+                  - ID
+                  - IE
+                  - IL
+                  - IM
+                  - IN
+                  - IO
+                  - IQ
+                  - IR
+                  - IS
+                  - IT
+                  - JE
+                  - JM
+                  - JO
+                  - JP
+                  - KE
+                  - KG
+                  - KH
+                  - KI
+                  - KM
+                  - KN
+                  - KP
+                  - KR
+                  - KW
+                  - KY
+                  - KZ
+                  - LA
+                  - LB
+                  - LC
+                  - LI
+                  - LK
+                  - LR
+                  - LS
+                  - LT
+                  - LU
+                  - LV
+                  - LY
+                  - MA
+                  - MC
+                  - MD
+                  - ME
+                  - MF
+                  - MG
+                  - MH
+                  - MK
+                  - ML
+                  - MM
+                  - MN
+                  - MO
+                  - MP
+                  - MQ
+                  - MR
+                  - MS
+                  - MT
+                  - MU
+                  - MV
+                  - MW
+                  - MX
+                  - MY
+                  - MZ
+                  - NA
+                  - NC
+                  - NE
+                  - NF
+                  - NG
+                  - NI
+                  - NL
+                  - 'NO'
+                  - NP
+                  - NR
+                  - NT
+                  - NU
+                  - NZ
+                  - OM
+                  - PA
+                  - PE
+                  - PF
+                  - PG
+                  - PH
+                  - PK
+                  - PL
+                  - PM
+                  - PN
+                  - PR
+                  - PS
+                  - PT
+                  - PW
+                  - PY
+                  - QA
+                  - RE
+                  - RO
+                  - RS
+                  - RU
+                  - RW
+                  - SA
+                  - SB
+                  - SC
+                  - SD
+                  - SE
+                  - SF
+                  - SG
+                  - SH
+                  - SI
+                  - SJ
+                  - SK
+                  - SL
+                  - SM
+                  - SN
+                  - SO
+                  - SR
+                  - SS
+                  - ST
+                  - SU
+                  - SV
+                  - SX
+                  - SY
+                  - SZ
+                  - TA
+                  - TC
+                  - TD
+                  - TF
+                  - TG
+                  - TJ
+                  - TK
+                  - TL
+                  - TM
+                  - TN
+                  - TO
+                  - TP
+                  - TR
+                  - TT
+                  - TV
+                  - TW
+                  - TZ
+                  - UA
+                  - UG
+                  - UK
+                  - UM
+                  - US
+                  - UY
+                  - UZ
+                  - VA
+                  - VC
+                  - VE
+                  - VG
+                  - VI
+                  - VN
+                  - VU
+                  - WF
+                  - WS
+                  - XK
+                  - YE
+                  - YT
+                  - YU
+                  - ZA
+                  - ZM
+                  - ZR
+                  - ZW
+                ort:
+                  type: string
+                  description: 'Ort | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+                hausnummer:
+                  type: string
+                  description: 'Hausnummer und Ergänzung | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG5.LOC+Z17, SG4.IDE+24.SG12.NAD+Z07.RFF+Z19,
+                SG4.IDE+24.SG12.NAD+Z03.RFF+Z19'
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG12.NAD+Z03'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+      NETZNUTZUNGSVERTRAG:
+        type: array
+        items:
+          type: object
+          properties:
+            vertragsende:
+              type: string
+              description: 'Datum Vertragsende / DTM+93 | EDIFACT: SG4.IDE+24.DTM+93'
+              format: date-time
+      MESSSTELLENBETRIEBSVERTRAG:
+        type: array
+        items:
+          type: object
+          properties:
+            vertragspartner2:
+              type: array
+              items:
+                type: object
+                properties:
+                  name2:
+                    type: string
+                    description: 'Zweiter Teil des Namens. Hier kann der eine Erweiterung
+                      zum Firmennamen oder
+
+                      bei Privatpersonen beispielsweise der Vorname dargestellt werden.
+                      Beispiele:
+
+                      Bereich Süd oder Nina | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+                  name3:
+                    type: string
+                    description: 'Dritter Teil des Namens. Hier können weitere Ergänzungen
+                      zum Firmennamen oder
+
+                      bei Privatpersonen Zusätze zum Namen dargestellt werden. Beispiele:
+                      und Afrika
+
+                      oder Sängerin | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+                  anrede:
+                    type: string
+                    description: 'Die Anrede für den GePa, Z.B. Herr. | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+                  geschaeftspartnerrolle:
+                    type: string
+                    title: Geschaeftspartnerrolle
+                    description: 'Geschaeftspartnerrolle | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+                    enum:
+                    - KUNDE
+                    - LIEFERANT
+                    - DIENSTLEISTER
+                    - INTERESSENT
+                    - MARKTPARTNER
+                    - EIGENTUEMER
+                    - HAUSVERWALTER
+                    - KORRESPONDENZEMPFAENGER
+                    - ABLESEKARTENEMPFAENGER
+                  name4:
+                    type: string
+                    description: 'name4 | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+                  name1:
+                    type: string
+                    description: 'Erster Teil des Namens. Hier kann der Firmenname
+                      oder bei Privatpersonen
+
+                      beispielsweise der Nachname dargestellt werden. Beispiele: Yellow
+                      Strom GmbH
+
+                      oder Hagen | EDIFACT: SG4.IDE+24.SG12.NAD+Z07'
+      ZAEHLER:
+        type: array
+        items:
+          type: object
+          properties:
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.RFF+Z19'
+            zaehlernummer:
+              type: string
+              description: 'Die Nummer des zu sperrenden Zählers | EDIFACT: SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z30'
+  transaktionsdaten:
+    type: object
+    properties:
+      vertragsende:
+        type: string
+        description: 'Datum Vertragsende / DTM+93 | EDIFACT: SG4.IDE+24.DTM+93'
+        format: date-time
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+E35'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+E35'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      anfragereferenznummer:
+        type: string
+        description: 'Referenz Vorgangsnummer ''aus Anfragenachricht'' / ORDERS RFF+TN
+          / IFTSTA RFF+AAV / INSRPT RFF+TN RFF+AAV | EDIFACT: SG4.IDE+24.SG6.RFF+TN'
+      endezumtermin:
+        type: string
+        description: 'Kündigungsdatum / DTM+471 | EDIFACT: SG4.IDE+24.DTM+471'
+        format: date-time
+      antwortstatusCodeliste:
+        type: string
+        description: 'Antwortstatus Codeliste / STS+E01 | EDIFACT: SG4.IDE+24.STS+E01'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      antwortstatus:
+        type: string
+        description: 'Antwortstatus / STS+E01 | EDIFACT: SG4.IDE+24.STS+E01'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55040 - MSB (entspricht MSBA am Objekt Messlokation) an MSB (entspricht
+  MSBN am Objekt Messlokation) - Antwort der Kündigung

@@ -1,0 +1,92 @@
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.anrede; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.gewerbekennzeichnung; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name1; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name2; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name3; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name4; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].datenqualitaet; SG4.IDE+24.SG8.SEQ+Z18, SG4.IDE+24.SG12.NAD+Z03, SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG8.SEQ+Z18, SG4.IDE+24.SG12.NAD+Z03.RFF+Z46, SG4.IDE+24.SG12.NAD+Z05.RFF+Z46
+stammdaten.MESSLOKATION[].messadresse.hausnummer; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.landescode; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.ort; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.ortsteil; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.postfach; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.strasse; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz1; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz2; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz3; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz4; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz5; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messlokationsId; SG4.IDE+24.SG5.LOC+Z17
+stammdaten.MESSLOKATION[].netzebenemessung; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++E04.CAV
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].datenqualitaet; SG4.IDE+24.SG12.NAD+Z07, SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG12.NAD+Z07.RFF+Z46, SG4.IDE+24.SG12.NAD+Z08.RFF+Z46
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.anrede; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name1; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name2; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name3; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name4; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].anrede; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].geschaeftspartnerrolle; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name1; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name2; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name3; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name4; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.VERWENDUNGSZEITRAUM[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungAb; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z25
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungBis; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z26
+stammdaten.VERWENDUNGSZEITRAUM[].zeitraumId; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+stammdaten.ZAEHLER[].befestigungsart; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++Z28.CAV+[BKE|DPA|HUT]
+stammdaten.ZAEHLER[].datenqualitaet; SG4.IDE+24.SG8.SEQ+Z03, SG4.IDE+24.SG8.SEQ+Z20, SG4.IDE+24.SG8.SEQ+Z04, SG4.IDE+24.SG8.SEQ+Z05, SG4.IDE+24.SG8.SEQ+Z06, SG4.IDE+24.SG8.SEQ+Z13, SG4.IDE+24.SG8.SEQ+Z14
+stammdaten.ZAEHLER[].fernschaltung; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z58
+stammdaten.ZAEHLER[].gateway; SG4.IDE+24.SG8.SEQ+Z03.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14]
+stammdaten.ZAEHLER[].geraete[].geraeteeigenschaften.faktor; SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV
+stammdaten.ZAEHLER[].geraete[].geraeteeigenschaften.geraetemerkmal; SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV, SG4.IDE+24.SG8.SEQ+Z05.SG10.CCI+++Z26.CAV, SG4.IDE+24.SG8.SEQ+Z06.SG10.CCI+++Z27.CAV
+stammdaten.ZAEHLER[].geraete[].geraetenummer; SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z05.SG10.CCI+++Z26.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z06.SG10.CCI+++Z27.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z13.SG10.CCI+++Z75.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30
+stammdaten.ZAEHLER[].geraete[].geraetetyp; SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30
+stammdaten.ZAEHLER[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG8.SEQ+Z03, SG4.IDE+24.SG8.SEQ+Z20, SG4.IDE+24.SG8.SEQ+Z04, SG4.IDE+24.SG8.SEQ+Z05, SG4.IDE+24.SG8.SEQ+Z06, SG4.IDE+24.SG8.SEQ+Z13, SG4.IDE+24.SG8.SEQ+Z14
+stammdaten.ZAEHLER[].messwerterfassung; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E12.CAV+[AMR|MMR]
+stammdaten.ZAEHLER[].tarifart; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+[ETZ|ZTZ|NTZ
+stammdaten.ZAEHLER[].zaehlerauspraegung; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+[ERZ|ZRZ]
+stammdaten.ZAEHLER[].zaehlernummer; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z04.RFF+MG, SG4.IDE+24.SG8.SEQ+Z05.RFF+MG, SG4.IDE+24.SG8.SEQ+Z06.RFF+MG
+stammdaten.ZAEHLER[].zaehlertyp; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+[AHZ|WSZ|LAZ|MAZ|MME|EHZ|IVA]
+stammdaten.ZAEHLER[].zaehlertypspezifikation; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+[AHZ|WSZ|LAZ|MAZ|MME|EHZ|IVA]
+stammdaten.ZAEHLER[].zaehlwerke[].bezeichnung; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+++Z63
+stammdaten.ZAEHLER[].zaehlwerke[].konfiguration; SG4.IDE+24.SG8.SEQ+Z20.RFF+AGK
+stammdaten.ZAEHLER[].zaehlwerke[].nachkommastelle; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+Z20.PIA+5
+stammdaten.ZAEHLER[].zaehlwerke[].schwachlastfaehig; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+Z10
+stammdaten.ZAEHLER[].zaehlwerke[].vorkommastelle; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].wertegranularitaet; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+++ZE4.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].zaehlzeiten.register; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+Z38
+stammdaten.ZAEHLER[].zaehlwerke[].zaehlzeiten.zaehlzeitDefinition; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+Z39
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.dokumentennummer; BGM+E03
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+E03
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

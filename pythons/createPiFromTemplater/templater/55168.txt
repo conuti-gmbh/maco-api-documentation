@@ -1,0 +1,229 @@
+stammdaten.BILANZIERUNG[].abwicklungsmodell; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+ZA2++[ZE9|ZF0]
+stammdaten.BILANZIERUNG[].aggregationsverantwortung; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+6
+stammdaten.BILANZIERUNG[].detailsPrognosegrundlage[]; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++[ZC0|ZA6].CAV+CAV+[E02|E14|Z36]
+stammdaten.BILANZIERUNG[].jahresverbrauchsprognose.einheit; SG4.IDE+24.SG8.SEQ+Z01.SG9.QTY+31
+stammdaten.BILANZIERUNG[].jahresverbrauchsprognose.wert; SG4.IDE+24.SG8.SEQ+Z01.SG9.QTY+31
+stammdaten.BILANZIERUNG[].lastprofile[].bezeichnung; SG4.IDE+24.SG8.SEQ+Z21.SG10.CCI+[Z02|Z04].CAV, SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI+[Z03|Z05].CAV
+stammdaten.BILANZIERUNG[].lastprofile[].einspeisung; SG4.IDE+24.SG8.SEQ+Z21.SG10.CCI+[Z02|Z04], SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI+[Z03|Z05]
+stammdaten.BILANZIERUNG[].lastprofile[].profilart; SG4.IDE+24.SG8.SEQ+Z21.SG10.CCI+[Z02|Z04], SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI+[Z03|Z05]
+stammdaten.BILANZIERUNG[].lastprofile[].referenzprofilbezeichnung; SG4.IDE+24.SG8.SEQ+Z38.SG10.CCI+Z05.CAV
+stammdaten.BILANZIERUNG[].lastprofile[].tagesparameter.dienstanbieter; SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI
+stammdaten.BILANZIERUNG[].lastprofile[].tagesparameter.herausgeber; SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI
+stammdaten.BILANZIERUNG[].lastprofile[].tagesparameter.klimazone; SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI
+stammdaten.BILANZIERUNG[].lastprofile[].tagesparameter.temperaturmessstelle; SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI
+stammdaten.BILANZIERUNG[].lastprofile[].verfahren; SG4.IDE+24.SG8.SEQ+Z21.SG10.CCI+[Z02|Z04], SG4.IDE+24.SG8.SEQ+Z08.SG10.CCI+[Z03|Z05]
+stammdaten.BILANZIERUNG[].marktlokationsId; SG4.IDE+24.SG8.SEQ+Z01.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z21.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z08.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z38.RFF+Z18
+stammdaten.BILANZIERUNG[].prognosegrundlage; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++[ZC0|ZA6]
+stammdaten.BILANZIERUNG[].temperaturarbeit.einheit; SG4.IDE+24.SG8.SEQ+Z01.SG9.QTY+[265|Z08]
+stammdaten.BILANZIERUNG[].temperaturarbeit.wert; SG4.IDE+24.SG8.SEQ+Z01.SG9.QTY+[265|Z08]
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.anrede; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.name1; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.name2; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.name3; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.name4; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].korrespondenzpartner.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z04
+stammdaten.ENERGIELIEFERVERTRAG[].lokationsId; SG4.IDE+24.SG12.NAD+Z09.RFF+Z18, SG4.IDE+24.SG12.NAD+Z04.RFF+Z18
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].anrede; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].geschaeftspartnerrolle; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].name1; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].name2; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].name3; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.ENERGIELIEFERVERTRAG[].vertragspartner2[].name4; SG4.IDE+24.SG12.NAD+Z09
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].objectcode[].lokationsbuendelNummer; SG4.IDE+24.SG8.SEQ+Z58.RFF+Z33
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].objectcode[].objectcode; SG4.IDE+24.SG8.SEQ+Z58.RFF+Z33
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].referenzLokationsId; SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z32|Z18|Z19|Z37]
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].referenzLokationsTyp; SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z32|Z18|Z19|Z37]
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].referenzMarktlokationTechnischeRessource[]; SG4.IDE+24.SG8.SEQ+Z58.RFF+Z16
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].vorgelagerteLokationId; SG4.IDE+24.SG8.SEQ+Z58.RFF+Z34
+stammdaten.LOKATIONSBUENDEL.zuordnungObjectcode[].vorgelagerteLokationTyp; SG4.IDE+24.SG8.SEQ+Z58.RFF+Z34
+stammdaten.LOKATIONSBUENDEL[].lokationsbuendelNummer; SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]
+stammdaten.LOKATIONSBUENDEL[].lokationsbuendelstrukturId; SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]
+stammdaten.LOKATIONSBUENDEL[].standardisierteLokationsbuendelstruktur; SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]
+stammdaten.MARKTLOKATION[].energieherkunft[].erzeugungsart; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++Z34.CAV
+stammdaten.MARKTLOKATION[].konfigurationsprodukt; SG4.IDE+24.SG8.SEQ+Z59.PIA+5
+stammdaten.MARKTLOKATION[].leistungskurvendefinition; SG4.IDE+24.SG8.SEQ+Z59.SG10.CCI+Z53
+stammdaten.MARKTLOKATION[].marktlokationsId; SG4.IDE+24.SG5.LOC+Z16, SG4.IDE+24.SG5.LOC+Z22, SG4.IDE+24.SG6.RFF+Z50, SG4.IDE+24.SG8.SEQ+Z27.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z02.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z59.RFF+Z18
+stammdaten.MARKTLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z89, SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z90, SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z89, SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z90, SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].marktrollen[].weiterverpflichtet; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MARKTLOKATION[].messtechnischeEinordnung; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++Z83.CAV
+stammdaten.MARKTLOKATION[].netzebene; SG4.IDE+24.SG8.SEQ+Z01.SG10.CCI+++E03.CAV
+stammdaten.MARKTLOKATION[].produktdatenRelevanteRolle; SG4.IDE+24.SG8.SEQ+Z59.SG10.CCI+++[ZA8|ZA7]
+stammdaten.MARKTLOKATION[].zaehlwerke[].messprodukt; SG4.IDE+24.SG8.SEQ+Z27.PIA+5
+stammdaten.MARKTLOKATION[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+Z02.PIA+5
+stammdaten.MARKTLOKATION[].zaehlwerke[].verwendungszwecke[].marktrolle; SG4.IDE+24.SG8.SEQ+Z27.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z27.SG10.CCI+++ZA7.CAV, SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA7.CAV
+stammdaten.MARKTLOKATION[].zaehlwerke[].verwendungszwecke[].zweck[]; SG4.IDE+24.SG8.SEQ+Z27.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z27.SG10.CCI+++ZA7.CAV, SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZA7.CAV
+stammdaten.MARKTLOKATION[].zaehlwerke[].wertegranularitaet; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+++ZE4.CAV
+stammdaten.MARKTLOKATION[].zaehlwerke[].zaehlzeiten.register; SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+Z38
+stammdaten.MARKTLOKATION[].zaehlwerke[].zaehlzeiten.zaehlzeitDefinition; SG4.IDE+24.SG8.SEQ+Z27.SG10.CCI+[Z39|Z41], SG4.IDE+24.SG8.SEQ+Z02.SG10.CCI+Z39
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.anrede; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.gewerbekennzeichnung; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name1; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name2; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name3; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.name4; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].ablesekartenempfaenger.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].betriebszustand; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+Z32
+stammdaten.MESSLOKATION[].datenqualitaet; SG4.IDE+24.SG12.NAD+Z03, SG4.IDE+24.SG12.NAD+Z05
+stammdaten.MESSLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZF0, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZB4
+stammdaten.MESSLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZF0, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZB4
+stammdaten.MESSLOKATION[].marktrollen[].weiterverpflichtet; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].messadresse.hausnummer; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.landescode; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.ort; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.ortsteil; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.postfach; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.strasse; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz1; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz2; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz3; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz4; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messadresse.zusatzInformation.zusatz5; SG4.IDE+24.SG12.NAD+Z03
+stammdaten.MESSLOKATION[].messlokationsId; SG4.IDE+24.SG5.LOC+Z17, SG4.IDE+24.SG8.SEQ+Z18.RFF+Z19, SG4.IDE+24.SG8.SEQ+Z19.RFF+Z19, SG4.IDE+24.SG12.NAD+Z03.RFF+Z19, SG4.IDE+24.SG12.NAD+Z05.RFF+Z19
+stammdaten.MESSLOKATION[].netzebenemessung; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++E04.CAV
+stammdaten.MESSLOKATION[].referenzMarktlokationsId; SG4.IDE+24.SG8.SEQ+Z18.RFF+Z16, SG4.IDE+24.SG8.SEQ+Z19.RFF+Z18
+stammdaten.MESSLOKATION[].verwendungsumfang; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+Z01
+stammdaten.MESSLOKATION[].zaehlwerke[].messprodukt; SG4.IDE+24.SG8.SEQ+Z19.PIA+5
+stammdaten.MESSLOKATION[].zaehlwerke[].notwendigkeitZweiteMessung; SG4.IDE+24.SG8.SEQ+Z19.SG10.CCI+Z35.CAV+ZC9
+stammdaten.MESSLOKATION[].zaehlwerke[].werteuebermittlungVerwendungszweck; SG4.IDE+24.SG8.SEQ+Z19.SG10.CCI+Z35.CAV+Z88
+stammdaten.MESSLOKATION[].zaehlwerke[].zaehlzeiten.zaehlzeitDefinition; SG4.IDE+24.SG8.SEQ+Z19.SG10.CCI+[Z39|Z41]
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.anrede; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name1; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name2; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name3; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.name4; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].korrespondenzpartner.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z08
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].lokationsId; SG4.IDE+24.SG12.NAD+Z07.RFF+Z19
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].lokationsTyp; SG4.IDE+24.SG12.NAD+Z07.RFF+Z19
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragskonditionen.geplanteTurnusablesung.ableseZeitraum; SG4.IDE+24.SG6.RFF+Z50.DTM+752
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].anrede; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].geschaeftspartnerrolle; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name1; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name2; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name3; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragspartner2[].name4; SG4.IDE+24.SG12.NAD+Z07
+stammdaten.NETZLOKATION[].auftraggebenderMarktpartner.marktrolle; SG4.IDE+24.SG8.SEQ+Z60.SG10.CCI+++ZB3.CAV+[Z88|Z89]
+stammdaten.NETZLOKATION[].auftraggebenderMarktpartner.rollencodenummer; SG4.IDE+24.SG8.SEQ+Z60.SG10.CCI+++ZB3.CAV+[Z88|Z89]
+stammdaten.NETZLOKATION[].konfigurationsprodukt; SG4.IDE+24.SG8.SEQ+Z60.PIA+5
+stammdaten.NETZLOKATION[].leistungskurvendefinition; SG4.IDE+24.SG8.SEQ+Z60.SG10.CCI+Z53
+stammdaten.NETZLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z51.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z51.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z51.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.NETZLOKATION[].netzlokationsId; SG4.IDE+24.SG5.LOC+Z18, SG4.IDE+24.SG8.SEQ+Z51.RFF+Z32, SG4.IDE+24.SG8.SEQ+Z57.RFF+Z32, SG4.IDE+24.SG8.SEQ+Z60.RFF+Z32
+stammdaten.NETZLOKATION[].produktdatenRelevanteRolle; SG4.IDE+24.SG8.SEQ+Z60.SG10.CCI+++[ZA7|ZA8]
+stammdaten.NETZLOKATION[].steuerkanal; SG4.IDE+24.SG8.SEQ+Z51.SG10.CCI+Z49
+stammdaten.NETZLOKATION[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+Z57.PIA+5
+stammdaten.NETZLOKATION[].zaehlwerke[].verwendungszwecke[].marktrolle; SG4.IDE+24.SG8.SEQ+Z57.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z57.SG10.CCI+++ZA7.CAV
+stammdaten.NETZLOKATION[].zaehlwerke[].verwendungszwecke[].zweck[]; SG4.IDE+24.SG8.SEQ+Z57.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z57.SG10.CCI+++ZA7.CAV
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.anrede; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.name1; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.name2; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.name3; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.name4; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.hausnummer; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.landescode; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.ort; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.ortsteil; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.postfach; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.postleitzahl; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].korrespondenzpartner.partneradresse.strasse; SG4.IDE+24.SG12.NAD+Z26
+stammdaten.NETZNUTZUNGSVERTRAG[].lokationsId; SG4.IDE+24.SG12.NAD+Z25.RFF+Z18, SG4.IDE+24.SG12.NAD+Z26.RFF+Z18
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].anrede; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].geschaeftspartnerrolle; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].name1; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].name2; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].name3; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragspartner2[].name4; SG4.IDE+24.SG12.NAD+Z25
+stammdaten.STEUERBARE_RESSOURCE[].auftraggebenderMarktpartner.marktrolle; SG4.IDE+24.SG8.SEQ+Z61.SG10.CCI+++ZB3.CAV+[Z88|Z89]
+stammdaten.STEUERBARE_RESSOURCE[].auftraggebenderMarktpartner.rollencodenummer; SG4.IDE+24.SG8.SEQ+Z61.SG10.CCI+++ZB3.CAV+[Z88|Z89]
+stammdaten.STEUERBARE_RESSOURCE[].konfigurationsprodukt; SG4.IDE+24.SG8.SEQ+Z61.PIA+5
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z62.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z62.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z62.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.STEUERBARE_RESSOURCE[].produktdatenRelevanteRolle; SG4.IDE+24.SG8.SEQ+Z61.SG10.CCI+++[ZA8|ZA7]
+stammdaten.STEUERBARE_RESSOURCE[].ressourcenId; SG4.IDE+24.SG5.LOC+Z19, SG4.IDE+24.SG8.SEQ+Z62.RFF+Z38, SG4.IDE+24.SG8.SEQ+Z61.RFF+Z38
+stammdaten.STEUERBARE_RESSOURCE[].steuerkanal; SG4.IDE+24.SG8.SEQ+Z62.SG10.CCI+Z49.CAV+ZF2
+stammdaten.STEUERBARE_RESSOURCE[].zugeordneteDefinition.leistungskurvendefinition; SG4.IDE+24.SG8.SEQ+Z61.SG10.CCI+[Z52|Z53]
+stammdaten.STEUERBARE_RESSOURCE[].zugeordneteDefinition.schaltzeitdefinition; SG4.IDE+24.SG8.SEQ+Z61.SG10.CCI+[Z52|Z53]
+stammdaten.TECHNISCHE_RESSOURCE[].art; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56]
+stammdaten.TECHNISCHE_RESSOURCE[].artEMobilitaet; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[ZE6|Z87|ZE7]
+stammdaten.TECHNISCHE_RESSOURCE[].enwg; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[ZG8|ZG9]
+stammdaten.TECHNISCHE_RESSOURCE[].erzeugungsart; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[ZF5|ZF6|ZG0|ZG1|ZG5]
+stammdaten.TECHNISCHE_RESSOURCE[].nennleistung.abgabe; SG4.IDE+24.SG8.SEQ+Z52.SG9.QTY+Z44
+stammdaten.TECHNISCHE_RESSOURCE[].nennleistung.aufnahme; SG4.IDE+24.SG8.SEQ+Z52.SG9.QTY+Z43
+stammdaten.TECHNISCHE_RESSOURCE[].referenzMarktlokation; SG4.IDE+24.SG8.SEQ+Z52.RFF+Z16
+stammdaten.TECHNISCHE_RESSOURCE[].referenzMesslokation; SG4.IDE+24.SG8.SEQ+Z52.RFF+Z34
+stammdaten.TECHNISCHE_RESSOURCE[].referenzNetzlokation; SG4.IDE+24.SG8.SEQ+Z52.RFF+Z32
+stammdaten.TECHNISCHE_RESSOURCE[].referenzSteuerbareRessource; SG4.IDE+24.SG8.SEQ+Z52.RFF+Z38
+stammdaten.TECHNISCHE_RESSOURCE[].ressourcenId; SG4.IDE+24.SG5.LOC+Z20, SG4.IDE+24.SG8.SEQ+Z52.RFF+Z37
+stammdaten.TECHNISCHE_RESSOURCE[].speicherart; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[ZF7|ZF8|ZF9|ZG6]
+stammdaten.TECHNISCHE_RESSOURCE[].speicherkapazitaet; SG4.IDE+24.SG8.SEQ+Z52.SG9.QTY+Z42
+stammdaten.TECHNISCHE_RESSOURCE[].verbrauchsart; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[Z64|Z65|ZE5|ZA8]
+stammdaten.TECHNISCHE_RESSOURCE[].waermenutzung; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+[Z17|Z50|Z56].CAV+[Z56|Z57|Z61|ZV5|ZV6|ZV7]
+stammdaten.TECHNISCHE_RESSOURCE[].weitereEinrichtung; SG4.IDE+24.SG8.SEQ+Z52.SG10.CCI+Z63.CAV+[ZH7|ZH8]
+stammdaten.TRANCHE[].aufteilungsmenge.einheit; SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11
+stammdaten.TRANCHE[].aufteilungsmenge.wert; SG4.IDE+24.SG8.SEQ+Z15.SG9.QTY+11
+stammdaten.TRANCHE[].bildungTranchengroesse; SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+Z37
+stammdaten.TRANCHE[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+++ZB3.CAV+Z89
+stammdaten.TRANCHE[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z15.SG10.CCI+++ZB3.CAV+Z89
+stammdaten.TRANCHE[].referenzMarktlokationsId; SG4.IDE+24.SG8.SEQ+Z15.RFF+Z16
+stammdaten.TRANCHE[].tranchenId; SG4.IDE+24.SG5.LOC+Z21, SG4.IDE+24.SG8.SEQ+Z15.RFF+Z20, SG4.IDE+24.SG8.SEQ+Z16.RFF+Z20
+stammdaten.TRANCHE[].zaehlwerke[].messprodukt; SG4.IDE+24.SG8.SEQ+Z16.PIA+5
+stammdaten.TRANCHE[].zaehlwerke[].verwendungszwecke[].marktrolle; SG4.IDE+24.SG8.SEQ+Z16.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z16.SG10.CCI+++ZA7.CAV
+stammdaten.TRANCHE[].zaehlwerke[].verwendungszwecke[].zweck[]; SG4.IDE+24.SG8.SEQ+Z16.SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+Z16.SG10.CCI+++ZA7.CAV
+stammdaten.ZAEHLER[].befestigungsart; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++Z28.CAV
+stammdaten.ZAEHLER[].fernschaltung; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z58
+stammdaten.ZAEHLER[].gateway; SG4.IDE+24.SG8.SEQ+Z03.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14]
+stammdaten.ZAEHLER[].geraete[].geraeteeigenschaften.faktor; SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV
+stammdaten.ZAEHLER[].geraete[].geraeteeigenschaften.geraetemerkmal; SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV, SG4.IDE+24.SG8.SEQ+Z05.SG10.CCI+++Z26.CAV, SG4.IDE+24.SG8.SEQ+Z06.SG10.CCI+++Z27.CAV
+stammdaten.ZAEHLER[].geraete[].geraetenummer; SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z04.SG10.CCI+++Z25.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z05.SG10.CCI+++Z26.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z06.SG10.CCI+++Z27.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z13.SG10.CCI+++Z75.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30
+stammdaten.ZAEHLER[].geraete[].geraetetyp; SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z14.RFF+Z14, SG4.IDE+24.SG8.SEQ+Z14.SG10.CCI+++Z76.CAV+Z30
+stammdaten.ZAEHLER[].marktlokationsId; SG4.IDE+24.SG8.SEQ+Z20.RFF+Z18, SG4.IDE+24.SG8.SEQ+Z14.RFF+Z18
+stammdaten.ZAEHLER[].messlokationsId; SG4.IDE+24.SG8.SEQ+Z03.RFF+Z19, SG4.IDE+24.SG8.SEQ+Z20.RFF+Z19
+stammdaten.ZAEHLER[].messwerterfassung; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E12.CAV
+stammdaten.ZAEHLER[].zaehlernummer; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV+Z30, SG4.IDE+24.SG8.SEQ+Z20.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+Z04.RFF+MG, SG4.IDE+24.SG8.SEQ+Z05.RFF+MG, SG4.IDE+24.SG8.SEQ+Z06.RFF+MG
+stammdaten.ZAEHLER[].zaehlertyp; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV
+stammdaten.ZAEHLER[].zaehlertypspezifikation; SG4.IDE+24.SG8.SEQ+Z03.SG10.CCI+++E13.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].bezeichnung; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+++Z63
+stammdaten.ZAEHLER[].zaehlwerke[].konfiguration; SG4.IDE+24.SG8.SEQ+Z20.RFF+AGK
+stammdaten.ZAEHLER[].zaehlwerke[].nachkommastelle; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+Z20.PIA+5
+stammdaten.ZAEHLER[].zaehlwerke[].vorkommastelle; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+11++Z33.CAV
+stammdaten.ZAEHLER[].zaehlwerke[].wertegranularitaet; SG4.IDE+24.SG8.SEQ+Z20.SG10.CCI+++ZE4.CAV
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.datumleistungsbeginn; SG4.IDE+24.DTM+76
+transaktionsdaten.dokumentennummer; BGM+[E01|Z40]
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+[E01|Z40]
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

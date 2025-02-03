@@ -1,0 +1,220 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            paketId:
+              type: string
+              description: 'paketId | EDIFACT: SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+Z67'
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16'
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+[Z80|Z81]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+      VERWENDUNGSZEITRAUM:
+        type: array
+        items:
+          type: object
+          properties:
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            verwendungAb:
+              type: string
+              description: 'Verarbeitung, Beginndatum/-zeit / DTM+163 | EDIFACT: SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z25'
+              format: date-time
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+[E03|Z88]'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+[E03|Z88]'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      anfragereferenznummer:
+        type: string
+        description: 'Referenz Vorgangsnummer ''aus Anfragenachricht'' / ORDERS RFF+TN
+          / IFTSTA RFF+AAV / INSRPT RFF+TN RFF+AAV | EDIFACT: SG4.IDE+24.SG6.RFF+TN'
+      beteiligterMarktpartner:
+        type: object
+        properties:
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG4.IDE+24.SG12.NAD+VY'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG4.IDE+24.SG12.NAD+VY'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      antwortstatusCodeliste:
+        type: string
+        description: 'Antwortstatus Codeliste / STS+E01 | EDIFACT: SG4.IDE+24.STS+E01'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      antwortstatus:
+        type: string
+        description: 'Antwortstatus / STS+E01 | EDIFACT: SG4.IDE+24.STS+E01'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55692 - ÜNB an NB - Bestellung einer Änderung von Stammdaten vom ÜNB
+  an NB

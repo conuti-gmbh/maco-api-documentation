@@ -1,0 +1,27 @@
+stammdaten.MESSLOKATION[].datenqualitaet; SG4.IDE+24.SG8.SEQ+Z18
+stammdaten.MESSLOKATION[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG8.SEQ+Z18
+stammdaten.MESSLOKATION[].marktrollen[].marktrolle; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZF0
+stammdaten.MESSLOKATION[].marktrollen[].messstellenbetreiberEigenschaft; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].marktrollen[].rollencodenummer; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+ZF0
+stammdaten.MESSLOKATION[].marktrollen[].weiterverpflichtet; SG4.IDE+24.SG8.SEQ+Z18.SG10.CCI+++ZB3.CAV+Z91
+stammdaten.MESSLOKATION[].messlokationsId; SG4.IDE+24.SG5.LOC+Z17
+stammdaten.MESSSTELLENBETRIEBSVERTRAG[].vertragskonditionen.abrechnungUeberNna; SG4.IDE+24.SG8.SEQ+Z18.RFF+Z05
+stammdaten.VERWENDUNGSZEITRAUM[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungAb; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z25
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungBis; SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z26
+stammdaten.VERWENDUNGSZEITRAUM[].zeitraumId; SG4.IDE+24.SG6.RFF+[Z49|Z53]
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.dokumentennummer; BGM+E03
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+E03
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

@@ -1,0 +1,1617 @@
+type: object
+properties:
+  stammdaten:
+    type: object
+    properties:
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16, SG4.IDE+24.SG5.LOC+Z22, SG4.IDE+24.SG8.SEQ+Z98.RFF+Z18,
+                SG4.IDE+24.SG8.SEQ+ZE2.RFF+Z18, SG4.IDE+24.SG8.SEQ+ZE3.RFF+Z18, SG4.IDE+24.SG8.SEQ+ZE4.RFF+Z18'
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  weiterverpflichtet:
+                    type: boolean
+                    description: 'weiterverpflichtet | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z89, SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z90,
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z89, SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z90,
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++ZB3.CAV+Z91'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  wertegranularitaet:
+                    type: string
+                    title: Wertegranularitaet
+                    description: 'Wertegranularitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE3.SG10.CCI+++ZE4.CAV+[ZD9|ZE8|ZE9|ZB7]'
+                    enum:
+                    - JAEHRLICH
+                    - HALBJAEHRLICH
+                    - QUARTALSWEISE
+                    - MONATLICH
+                  messprodukt:
+                    type: string
+                    description: 'messprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE2.PIA+5'
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE3.PIA+5'
+                  zaehlzeiten:
+                    type: object
+                    properties:
+                      register:
+                        type: object
+                        title: Zaehlzeitregister
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZE3.SG10.CCI+Z38'
+                      zaehlzeitDefinition:
+                        type: object
+                        title: Zaehlzeitdefinition
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZE2.SG10.CCI+[Z39|Z41],
+                          SG4.IDE+24.SG8.SEQ+ZE3.SG10.CCI+Z39'
+                        properties:
+                          boTyp:
+                            type: string
+                            title: BOTyp
+                            description: Typ des BO
+                            enum:
+                            - ZAEHLZEITDEFINITION
+                          versionStruktur:
+                            type: string
+                            description: versionStruktur
+                            default: '1'
+                        required:
+                        - boTyp
+                        - versionStruktur
+            leistungskurvendefinition:
+              type: object
+              title: Leistungskurvendefinition
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZE4.SG10.CCI+Z53'
+              properties:
+                boTyp:
+                  type: string
+                  title: BOTyp
+                  description: Typ des BO
+                  enum:
+                  - LEISTUNGSKURVENDEFINITION
+                versionStruktur:
+                  type: string
+                  description: versionStruktur
+                  default: '1'
+              required:
+              - boTyp
+              - versionStruktur
+            energieherkunft:
+              type: array
+              items:
+                type: object
+                properties:
+                  erzeugungsart:
+                    type: string
+                    title: Erzeugungsart
+                    description: 'Auflistung der Erzeugungsarten von Energie. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++Z34.CAV+[Z33|Z34|Z35|Z37|Z46]'
+                    enum:
+                    - EEG
+                    - KWK
+                    - EEG_DV
+                    - KWK_DV
+                    - WIND
+                    - SOLAR
+                    - KERNKRAFT
+                    - WASSER
+                    - GEOTHERMIE
+                    - BIOMASSE
+                    - KOHLE
+                    - GAS
+                    - SONSTIGE
+                    - SONSTIGE_EEG
+                    - SONSTIGE_ERZEUGUNGSART
+            messtechnischeEinordnung:
+              type: string
+              title: MesstechnischeEinordnung
+              description: 'MesstechnischeEinordnung | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++Z83.CAV+[Z52|Z53]'
+              enum:
+              - IMS
+              - KME_MME
+              - KEINE_MESSUNG
+            konfigurationsprodukt:
+              type: string
+              description: 'konfigurationsprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE4.PIA+5'
+            netzebene:
+              type: string
+              title: Netzebene
+              description: 'Netzebene | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++E03.CAV'
+              enum:
+              - NSP
+              - MSP
+              - HSP
+              - HSS
+              - MSP_NSP_UMSP
+              - HSP_MSP_UMSP
+              - HSS_HSP_UMSP
+              - HD
+              - MD
+              - ND
+      ZAEHLER:
+        type: array
+        items:
+          type: object
+          properties:
+            geraete:
+              type: array
+              items:
+                type: object
+                properties:
+                  geraeteeigenschaften:
+                    type: object
+                    properties:
+                      faktor:
+                        type: number
+                        description: 'faktor | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF7.SG10.CCI+++Z25.CAV+[MIW|MPW|MBW|MUW]'
+                        format: float
+                      geraetemerkmal:
+                        type: string
+                        title: Geraetemerkmal
+                        description: 'Geraetemerkmal | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF7.SG10.CCI+++Z25.CAV+[MIW|MPW|MBW|MUW],
+                          SG4.IDE+24.SG8.SEQ+ZF8.SG10.CCI+++Z26.CAV+[GSM|ETH|PLC|PST|DSL|LTE],
+                          SG4.IDE+24.SG8.SEQ+ZF9.SG10.CCI+++Z27.CAV+[RSU|TSU]'
+                        enum:
+                        - EINTARIF
+                        - ZWEITARIF
+                        - MEHRTARIF
+                        - GAS_G2P5
+                        - GAS_G4
+                        - GAS_G6
+                        - GAS_G10
+                        - GAS_G16
+                        - GAS_G25
+                        - GAS_G40
+                        - GAS_G65
+                        - GAS_G100
+                        - GAS_G160
+                        - GAS_G250
+                        - GAS_G350
+                        - GAS_G400
+                        - GAS_G4000
+                        - GAS_G650
+                        - GAS_G6500
+                        - GAS_G1000
+                        - GAS_G10000
+                        - GAS_G12500
+                        - GAS_G1600
+                        - GAS_G16000
+                        - GAS_G2500
+                        - IMPULSGEBER_G4_G100
+                        - IMPULSGEBER_G100
+                        - MODEM_GSM
+                        - MODEM_GPRS
+                        - MODEM_FUNK
+                        - MODEM_GSM_O_LG
+                        - MODEM_GSM_M_LG
+                        - MODEM_FESTNETZ
+                        - MODEM_GPRS_M_LG
+                        - PLC_COM
+                        - ETHERNET_KOM
+                        - DSL_KOM
+                        - LTE_KOM
+                        - RUNDSTEUEREMPFAENGER
+                        - TARIFSCHALTGERAET
+                        - ZUSTANDS_MU
+                        - TEMPERATUR_MU
+                        - KOMPAKT_MU
+                        - SYSTEM_MU
+                        - UNBESTIMMT
+                        - WASSER_MWZW
+                        - WASSER_WZWW
+                        - WASSER_WZ01
+                        - WASSER_WZ02
+                        - WASSER_WZ03
+                        - WASSER_WZ04
+                        - WASSER_WZ05
+                        - WASSER_WZ06
+                        - WASSER_WZ07
+                        - WASSER_WZ08
+                        - WASSER_WZ09
+                        - WASSER_WZ10
+                        - WASSER_VWZ04
+                        - WASSER_VWZ05
+                        - WASSER_VWZ06
+                        - WASSER_VWZ07
+                        - WASSER_VWZ10
+                        - DICHTEMENGENUMWERTER
+                        - TEMPERATURMENGENUMWERTER
+                        - ZUSTANDSMENGENUMWERTER
+                        - BLOCKSTROMWANDLER
+                        - MESSWANDLERSATZ_IMS_MME
+                        - KOMBIMESSWANDLER
+                        - SPANNUNGSWANDLER
+                  geraetetyp:
+                    type: string
+                    title: Geraetetyp
+                    description: 'Auflistung möglicher abzurechnender Gerätetypen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF6.RFF+[MG|Z14]'
+                    enum:
+                    - WECHSELSTROMZAEHLER
+                    - DREHSTROMZAEHLER
+                    - ZWEIRICHTUNGSZAEHLER
+                    - RLM_ZAEHLER
+                    - IMS_ZAEHLER
+                    - BALGENGASZAEHLER
+                    - MAXIMUMZAEHLER
+                    - MULTIPLEXANLAGE
+                    - PAUSCHALANLAGE
+                    - VERSTAERKERANLAGE
+                    - SUMMATIONSGERAET
+                    - IMPULSGEBER
+                    - EDL_21_ZAEHLERAUFSATZ
+                    - VIER_QUADRANTEN_LASTGANGZAEHLER
+                    - MENGENUMWERTER
+                    - STROMWANDLER
+                    - SPANNUNGSWANDLER
+                    - DATENLOGGER
+                    - KOMMUNIKATIONSANSCHLUSS
+                    - MODEM
+                    - TELEKOMMUNIKATIONSEINRICHTUNG
+                    - KOMMUNIKATIONSEINRICHTUNG
+                    - DREHKOLBENGASZAEHLER
+                    - TURBINENRADGASZAEHLER
+                    - ULTRASCHALLZAEHLER
+                    - WIRBELGASZAEHLER
+                    - MODERNE_MESSEINRICHTUNG
+                    - ELEKTRONISCHER_HAUSHALTSZAEHLER
+                    - STEUEREINRICHTUNG
+                    - TECHNISCHESTEUEREINRICHTUNG
+                    - TARIFSCHALTGERAET
+                    - RUNDSTEUEREMPFAENGER
+                    - OPTIONALE_ZUS_ZAEHLEINRICHTUNG
+                    - MESSWANDLERSATZ_IMS_MME
+                    - KOMBIMESSWANDLER_IMS_MME
+                    - TARIFSCHALTGERAET_IMS_MME
+                    - RUNDSTEUEREMPFAENGER_IMS_MME
+                    - TEMPERATUR_KOMPENSATION
+                    - HOECHSTBELASTUNGS_ANZEIGER
+                    - SONSTIGES_GERAET
+                    - SMARTMETERGATEWAY
+                    - STEUERBOX
+                    - BLOCKSTROMWANDLER
+                    - KOMBIMESSWANDLER
+                    - MODEM_GSM
+                    - ETHERNET_KOM
+                    - PLC_COM
+                    - MODEM_FESTNETZ
+                    - DSL_KOM
+                    - LTE_KOM
+                    - DICHTEMENGENUMWERTER
+                    - TEMPERATURMENGENUMWERTER
+                    - ZUSTANDSMENGENUMWERTER
+                    - MESSDATENREGISTRIERGERAET
+                    - WANDLER
+                  geraetenummer:
+                    type: string
+                    description: 'Die auf dem Geräte aufgedruckte Nummer, die vom
+                      MSB vergeben wird. | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF6.RFF+[MG|Z14],
+                      SG4.IDE+24.SG8.SEQ+ZF7.SG10.CCI+++Z25.CAV+Z30, SG4.IDE+24.SG8.SEQ+ZF8.SG10.CCI+++Z26.CAV+Z30,
+                      SG4.IDE+24.SG8.SEQ+ZF9.SG10.CCI+++Z27.CAV+Z30, SG4.IDE+24.SG8.SEQ+ZG0.SG10.CCI+++Z75.CAV+Z30'
+            zaehlertyp:
+              type: string
+              title: Zaehlertyp
+              description: 'Zaehlertyp | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.SG10.CCI+++E13.CAV+[AHZ|WSZ|LAZ|MAZ|MME|EHZ|IVA]'
+              enum:
+              - DREHSTROMZAEHLER
+              - BALGENGASZAEHLER
+              - DREHKOLBENZAEHLER
+              - SMARTMETER
+              - LEISTUNGSZAEHLER
+              - MAXIMUMZAEHLER
+              - TURBINENRADGASZAEHLER
+              - ULTRASCHALLGASZAEHLER
+              - WECHSELSTROMZAEHLER
+              - WIRBELGASZAEHLER
+              - MESSDATENREGISTRIERGERAET
+              - ELEKTRONISCHERHAUSHALTSZAEHLER
+              - SONDERAUSSTATTUNG
+              - WASSERZAEHLER
+              - MODERNEMESSEINRICHTUNG
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.RFF+Z19'
+            zaehlertypspezifikation:
+              type: string
+              title: ZaehlertypSpezifikation
+              description: 'ZaehlertypSpezifikation | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.SG10.CCI+++E13.CAV+[AHZ|WSZ|LAZ|MAZ|MME|EHZ|IVA]'
+              enum:
+              - EDL40
+              - EDL21
+              - SONSTIGER_EHZ
+              - MME_STANDARD
+              - MME_MEDA
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF6.PIA+5'
+                  wertegranularitaet:
+                    type: string
+                    title: Wertegranularitaet
+                    description: 'Wertegranularitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF6.SG10.CCI+++ZE4.CAV+[ZD9|ZE8|ZE9|ZB7]'
+                    enum:
+                    - JAEHRLICH
+                    - HALBJAEHRLICH
+                    - QUARTALSWEISE
+                    - MONATLICH
+                  konfiguration:
+                    type: string
+                    title: AenderungsmoeglichkeitKonfiguration
+                    description: 'AenderungsmoeglichkeitKonfiguration | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF6.RFF+AGK'
+                    enum:
+                    - ERFORDERLICH
+                    - NICHT_ERFORDERLICH
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF7'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            gueltigkeitszeitraum:
+              type: object
+              properties:
+                zeitraumId:
+                  type: integer
+                  description: 'zeitraumId | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF7'
+            gateway:
+              type: string
+              description: 'Angabe eines SMGW, mit dem der Zaehler parametrisiert
+                ist | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.RFF+Z14, SG4.IDE+24.SG8.SEQ+ZF6.RFF+[MG|Z14]'
+            zaehlernummer:
+              type: string
+              description: 'Die Nummer des zu sperrenden Zählers | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.SG10.CCI+++E13.CAV+Z30,
+                SG4.IDE+24.SG8.SEQ+ZF6.RFF+[MG|Z14], SG4.IDE+24.SG8.SEQ+ZF7.RFF+MG,
+                SG4.IDE+24.SG8.SEQ+ZF8.RFF+MG, SG4.IDE+24.SG8.SEQ+ZF9.RFF+MG'
+            messwerterfassung:
+              type: string
+              title: Messwerterfassung
+              description: 'Die Messwerterfassung des Zählers | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF5.SG10.CCI+++E12.CAV+[AMR|MMR]'
+              enum:
+              - FERNAUSLESBAR
+              - MANUELL_AUSGELESENE
+      NETZLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+            konfigurationsprodukt:
+              type: string
+              description: 'konfigurationsprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE0.PIA+5'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  obisKennzahl:
+                    type: string
+                    description: 'Die OBIS-Kennzahl für das Zählwerk, die festlegt,
+                      welche auf die gemessene Größe mit dem Stand gemeldet wird.
+
+                      Nur Zählwerkstände mit dieser OBIS-Kennzahl werden an diesem
+                      Zählwerk registriert. Beispiel:1-0:1.8.1 für
+
+                      elektrische Wirkarbeit. | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD9.PIA+5'
+            steuerkanal:
+              type: object
+              title: AdHocSteuerkanal
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD7.SG10.CCI+Z49'
+              properties:
+                boTyp:
+                  type: string
+                  title: BOTyp
+                  description: Typ des BO
+                  enum:
+                  - AD_HOC_STEUERKANAL
+                versionStruktur:
+                  type: string
+                  description: versionStruktur
+                  default: '1'
+              required:
+              - boTyp
+              - versionStruktur
+            netzlokationsId:
+              type: string
+              description: 'Identifikationsnummer einer Netzlokation, an der Energie
+                entweder
+
+                verbraucht, oder erzeugt wird (Like MarktlokationsId Marktlokation)
+                | EDIFACT: SG4.IDE+24.SG5.LOC+Z18, SG4.IDE+24.SG8.SEQ+ZD7.RFF+Z32,
+                SG4.IDE+24.SG8.SEQ+ZD9.RFF+Z32, SG4.IDE+24.SG8.SEQ+ZE0.RFF+Z32'
+            leistungskurvendefinition:
+              type: object
+              title: Leistungskurvendefinition
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZE0.SG10.CCI+Z53'
+              properties:
+                boTyp:
+                  type: string
+                  title: BOTyp
+                  description: Typ des BO
+                  enum:
+                  - LEISTUNGSKURVENDEFINITION
+                versionStruktur:
+                  type: string
+                  description: versionStruktur
+                  default: '1'
+              required:
+              - boTyp
+              - versionStruktur
+      TRANCHE:
+        type: array
+        items:
+          type: object
+          properties:
+            bildungTranchengroesse:
+              type: string
+              title: BildungTranchengroesse
+              description: 'BildungTranchengroesse | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE7.SG10.CCI+Z37'
+              enum:
+              - PROZENTUAL
+              - AUFTEILUNGSFAKTOR
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE7.SG10.CCI+++ZB3.CAV+Z89'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZE7.SG10.CCI+++ZB3.CAV+Z89'
+            referenzMarktlokationsId:
+              type: string
+              description: 'referenzMarktlokationsId | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE7.RFF+Z16'
+            aufteilungsmenge:
+              type: object
+              properties:
+                einheit:
+                  type: string
+                  title: Mengeneinheit
+                  description: 'Einheit: Messgrößen, die per Messung oder Vorgabe
+                    ermittelt werden können | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE7.SG9.QTY+11'
+                  enum:
+                  - W
+                  - WH
+                  - KW
+                  - KWH
+                  - KVARH
+                  - MW
+                  - MWH
+                  - STUECK
+                  - KUBIKMETER
+                  - STUNDE
+                  - TAG
+                  - MONAT
+                  - JAHR
+                  - PROZENT
+                  - ANZAHL
+                  - VAR
+                  - KVAR
+                  - VARH
+                  - KWHK
+                  - Z16
+                  - KWT
+                wert:
+                  type: object
+                  title: Schwellwert
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZE7.SG9.QTY+11'
+            tranchenId:
+              type: string
+              description: 'tranchenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z21, SG4.IDE+24.SG8.SEQ+ZE7.RFF+Z20,
+                SG4.IDE+24.SG8.SEQ+ZE8.RFF+Z20'
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  messprodukt:
+                    type: string
+                    description: 'messprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZE8.PIA+5'
+      LOKATIONSBUENDEL:
+        type: object
+        properties:
+          zuordnungObjectcode:
+            type: array
+            items:
+              type: object
+              properties:
+                objectcode:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      objectcode:
+                        type: object
+                        title: Objectcode
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+Z33'
+                      lokationsbuendelNummer:
+                        type: integer
+                        description: 'lokationsbuendelNummer | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+Z33'
+                referenzLokationsTyp:
+                  type: string
+                  title: Lokationstyp
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+[Z32|Z18|Z19|Z37]'
+                  enum:
+                  - MALO
+                  - MELO
+                  - NELO
+                  - TECHNISCHE_RESSOURCE
+                vorgelagerteLokationTyp:
+                  type: string
+                  title: Lokationstyp
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+[Z34|Z35]'
+                  enum:
+                  - MALO
+                  - MELO
+                  - NELO
+                  - TECHNISCHE_RESSOURCE
+                referenzLokationsId:
+                  type: string
+                  description: 'referenzLokationsId | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+[Z32|Z18|Z19|Z37]'
+                vorgelagerteLokationId:
+                  type: string
+                  description: 'vorgelagerteLokationId | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD6.RFF+[Z34|Z35]'
+                referenzMarktlokationTechnischeRessource:
+                  type: array
+                  items:
+                    type: array
+                    description: 'referenzMarktlokationTechnischeRessource | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZD6.RFF+Z16'
+                    items:
+                      type: string
+          standardisierteLokationsbuendelstruktur:
+            type: boolean
+            description: 'standardisierteLokationsbuendelstruktur | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD5.RFF+[Z31|Z39]'
+          lokationsbuendelNummer:
+            type: integer
+            description: 'lokationsbuendelNummer | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD5.RFF+[Z31|Z39]'
+          lokationsbuendelstrukturId:
+            type: string
+            description: 'lokationsbuendelstrukturId | EDIFACT: SG4.IDE+24.SG8.SEQ+ZD5.RFF+[Z31|Z39]'
+      MESSLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            messadresse:
+              type: object
+              properties:
+                strasse:
+                  type: string
+                  description: 'Strasse | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                zusatzInformation:
+                  type: object
+                  properties:
+                    zusatz2:
+                      type: string
+                      description: 'Adresszusatz 2 | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                    zusatz1:
+                      type: string
+                      description: 'Adresszusatz 1 | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                    zusatz4:
+                      type: string
+                      description: 'Adresszusatz 4 | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                    zusatz5:
+                      type: string
+                      description: 'Adresszusatz 5 | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                    zusatz3:
+                      type: string
+                      description: 'Adresszusatz 3 | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                hausnummer:
+                  type: string
+                  description: 'Hausnummer und Ergänzung | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                ortsteil:
+                  type: string
+                  description: 'Ortsteil | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                ort:
+                  type: string
+                  description: 'Ort | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                postleitzahl:
+                  type: string
+                  description: 'Postleitzahl | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                postfach:
+                  type: string
+                  description: 'Postfach | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                landescode:
+                  type: string
+                  title: Landescode
+                  description: 'Der ISO-Landescode als Enumeration | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+                  enum:
+                  - AC
+                  - AD
+                  - AE
+                  - AF
+                  - AG
+                  - AI
+                  - AL
+                  - AM
+                  - AN
+                  - AO
+                  - AQ
+                  - AR
+                  - AS
+                  - AT
+                  - AU
+                  - AW
+                  - AX
+                  - AZ
+                  - BA
+                  - BB
+                  - BD
+                  - BE
+                  - BF
+                  - BG
+                  - BH
+                  - BI
+                  - BJ
+                  - BL
+                  - BM
+                  - BN
+                  - BO
+                  - BQ
+                  - BR
+                  - BS
+                  - BT
+                  - BU
+                  - BV
+                  - BW
+                  - BY
+                  - BZ
+                  - CA
+                  - CC
+                  - CD
+                  - CF
+                  - CG
+                  - CH
+                  - CI
+                  - CK
+                  - CL
+                  - CM
+                  - CN
+                  - CO
+                  - CP
+                  - CR
+                  - CS
+                  - CU
+                  - CV
+                  - CW
+                  - CX
+                  - CY
+                  - CZ
+                  - DE
+                  - DG
+                  - DJ
+                  - DK
+                  - DM
+                  - DO
+                  - DZ
+                  - EA
+                  - EC
+                  - EE
+                  - EG
+                  - EH
+                  - ER
+                  - ES
+                  - ET
+                  - EU
+                  - FI
+                  - FJ
+                  - FK
+                  - FM
+                  - FO
+                  - FR
+                  - FX
+                  - GA
+                  - GB
+                  - GD
+                  - GE
+                  - GF
+                  - GG
+                  - GH
+                  - GI
+                  - GL
+                  - GM
+                  - GN
+                  - GP
+                  - GQ
+                  - GR
+                  - GS
+                  - GT
+                  - GU
+                  - GW
+                  - GY
+                  - HK
+                  - HM
+                  - HN
+                  - HR
+                  - HT
+                  - HU
+                  - IC
+                  - ID
+                  - IE
+                  - IL
+                  - IM
+                  - IN
+                  - IO
+                  - IQ
+                  - IR
+                  - IS
+                  - IT
+                  - JE
+                  - JM
+                  - JO
+                  - JP
+                  - KE
+                  - KG
+                  - KH
+                  - KI
+                  - KM
+                  - KN
+                  - KP
+                  - KR
+                  - KW
+                  - KY
+                  - KZ
+                  - LA
+                  - LB
+                  - LC
+                  - LI
+                  - LK
+                  - LR
+                  - LS
+                  - LT
+                  - LU
+                  - LV
+                  - LY
+                  - MA
+                  - MC
+                  - MD
+                  - ME
+                  - MF
+                  - MG
+                  - MH
+                  - MK
+                  - ML
+                  - MM
+                  - MN
+                  - MO
+                  - MP
+                  - MQ
+                  - MR
+                  - MS
+                  - MT
+                  - MU
+                  - MV
+                  - MW
+                  - MX
+                  - MY
+                  - MZ
+                  - NA
+                  - NC
+                  - NE
+                  - NF
+                  - NG
+                  - NI
+                  - NL
+                  - 'NO'
+                  - NP
+                  - NR
+                  - NT
+                  - NU
+                  - NZ
+                  - OM
+                  - PA
+                  - PE
+                  - PF
+                  - PG
+                  - PH
+                  - PK
+                  - PL
+                  - PM
+                  - PN
+                  - PR
+                  - PS
+                  - PT
+                  - PW
+                  - PY
+                  - QA
+                  - RE
+                  - RO
+                  - RS
+                  - RU
+                  - RW
+                  - SA
+                  - SB
+                  - SC
+                  - SD
+                  - SE
+                  - SF
+                  - SG
+                  - SH
+                  - SI
+                  - SJ
+                  - SK
+                  - SL
+                  - SM
+                  - SN
+                  - SO
+                  - SR
+                  - SS
+                  - ST
+                  - SU
+                  - SV
+                  - SX
+                  - SY
+                  - SZ
+                  - TA
+                  - TC
+                  - TD
+                  - TF
+                  - TG
+                  - TJ
+                  - TK
+                  - TL
+                  - TM
+                  - TN
+                  - TO
+                  - TP
+                  - TR
+                  - TT
+                  - TV
+                  - TW
+                  - TZ
+                  - UA
+                  - UG
+                  - UK
+                  - UM
+                  - US
+                  - UY
+                  - UZ
+                  - VA
+                  - VC
+                  - VE
+                  - VG
+                  - VI
+                  - VN
+                  - VU
+                  - WF
+                  - WS
+                  - XK
+                  - YE
+                  - YT
+                  - YU
+                  - ZA
+                  - ZM
+                  - ZR
+                  - ZW
+            zaehlwerke:
+              type: array
+              items:
+                type: object
+                properties:
+                  messprodukt:
+                    type: string
+                    description: 'messprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF4.PIA+5'
+                  zaehlzeiten:
+                    type: object
+                    properties:
+                      zaehlzeitDefinition:
+                        type: object
+                        title: Zaehlzeitdefinition
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF4.SG10.CCI+[Z39|Z41]'
+                        properties:
+                          boTyp:
+                            type: string
+                            title: BOTyp
+                            description: Typ des BO
+                            enum:
+                            - ZAEHLZEITDEFINITION
+                          versionStruktur:
+                            type: string
+                            description: versionStruktur
+                            default: '1'
+                        required:
+                        - boTyp
+                        - versionStruktur
+                  werteuebermittlungVerwendungszweck:
+                    type: string
+                    title: WerteuebermittlungVerwendungszweck
+                    description: 'WerteuebermittlungVerwendungszweck | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF4.SG10.CCI+Z35.CAV+Z88'
+                    enum:
+                    - VORHANDEN
+                    - NICHT_VORHANDEN
+                  notwendigkeitZweiteMessung:
+                    type: string
+                    title: NotwendigkeitZweiteMessung
+                    description: 'NotwendigkeitZweiteMessung | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF4.SG10.CCI+Z35.CAV+ZC9'
+                    enum:
+                    - VORHANDEN
+                    - NICHT_VORHANDEN
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG12.NAD+Z64'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  weiterverpflichtet:
+                    type: boolean
+                    description: 'weiterverpflichtet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91'
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0'
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+Z91, SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++ZB3.CAV+ZF0'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+            netzebenemessung:
+              type: string
+              title: Netzebene
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF3.SG10.CCI+++E04.CAV+[E03|E04|E05|E06]'
+              enum:
+              - NSP
+              - MSP
+              - HSP
+              - HSS
+              - MSP_NSP_UMSP
+              - HSP_MSP_UMSP
+              - HSS_HSP_UMSP
+              - HD
+              - MD
+              - ND
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG5.LOC+Z17, SG4.IDE+24.SG8.SEQ+ZF3.RFF+Z19,
+                SG4.IDE+24.SG8.SEQ+ZF4.RFF+Z19, SG4.IDE+24.SG12.NAD+Z64.RFF+Z19'
+      STEUERBARE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            konfigurationsprodukt:
+              type: string
+              description: 'konfigurationsprodukt | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF2.PIA+5'
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z19, SG4.IDE+24.SG8.SEQ+ZF1.RFF+Z38,
+                SG4.IDE+24.SG8.SEQ+ZF2.RFF+Z38'
+            marktrollen:
+              type: array
+              items:
+                type: object
+                properties:
+                  marktrolle:
+                    type: string
+                    title: Marktrolle
+                    description: 'Diese Rollen kann ein Marktteilnehmer einnehmen
+                      | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - NB
+                    - LF
+                    - MSB
+                    - MSBA
+                    - GMSB
+                    - MDL
+                    - DL
+                    - BKV
+                    - BKO
+                    - UENB
+                    - KUNDE-SELBST-NN
+                    - MGV
+                    - EIV
+                    - RB
+                    - KUNDE
+                    - INTERESSENT
+                    - KN
+                    - UBA
+                    - BIKO
+                    - ESA
+                  rollencodenummer:
+                    type: string
+                    description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                  messstellenbetreiberEigenschaft:
+                    type: string
+                    title: MSBEigenschaft
+                    description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+++ZB3.CAV+Z91'
+                    enum:
+                    - GRUNDZUSTAENDIGER_MESSSTELLENBETREIBER
+                    - WETTBEWERBLICHER_MESSSTELLENBETREIBER
+                    - AUFFANGMESSSTELLENBETREIBER
+            steuerkanal:
+              type: object
+              title: AdHocSteuerkanal
+              description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF1.SG10.CCI+Z49.CAV+ZF2'
+              properties:
+                boTyp:
+                  type: string
+                  title: BOTyp
+                  description: Typ des BO
+                  enum:
+                  - AD_HOC_STEUERKANAL
+                versionStruktur:
+                  type: string
+                  description: versionStruktur
+                  default: '1'
+              required:
+              - boTyp
+              - versionStruktur
+            zugeordneteDefinition:
+              type: object
+              properties:
+                schaltzeitdefinition:
+                  type: object
+                  title: Schaltzeitdefinition
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF2.SG10.CCI+[Z52|Z53]'
+                  properties:
+                    boTyp:
+                      type: string
+                      title: BOTyp
+                      description: Typ des BO
+                      enum:
+                      - SCHALTZEITDEFINITION
+                    versionStruktur:
+                      type: string
+                      description: versionStruktur
+                      default: '1'
+                  required:
+                  - boTyp
+                  - versionStruktur
+                leistungskurvendefinition:
+                  type: object
+                  title: Leistungskurvendefinition
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF2.SG10.CCI+[Z52|Z53]'
+                  properties:
+                    boTyp:
+                      type: string
+                      title: BOTyp
+                      description: Typ des BO
+                      enum:
+                      - LEISTUNGSKURVENDEFINITION
+                    versionStruktur:
+                      type: string
+                      description: versionStruktur
+                      default: '1'
+                  required:
+                  - boTyp
+                  - versionStruktur
+      BILANZIERUNG:
+        type: array
+        items:
+          type: object
+          properties:
+            prognosegrundlage:
+              type: string
+              title: Prognosegrundlage
+              description: 'Prognosegrundlage | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++[ZC0|ZA6]'
+              enum:
+              - WERTE
+              - PROFILE
+            temperaturarbeit:
+              type: object
+              properties:
+                wert:
+                  type: object
+                  title: Schwellwert
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG9.QTY+[265|Z08]'
+                einheit:
+                  type: string
+                  title: Mengeneinheit
+                  description: 'Einheit: Messgrößen, die per Messung oder Vorgabe
+                    ermittelt werden können | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG9.QTY+[265|Z08]'
+                  enum:
+                  - W
+                  - WH
+                  - KW
+                  - KWH
+                  - KVARH
+                  - MW
+                  - MWH
+                  - STUECK
+                  - KUBIKMETER
+                  - STUNDE
+                  - TAG
+                  - MONAT
+                  - JAHR
+                  - PROZENT
+                  - ANZAHL
+                  - VAR
+                  - KVAR
+                  - VARH
+                  - KWHK
+                  - Z16
+                  - KWT
+            jahresverbrauchsprognose:
+              type: object
+              properties:
+                einheit:
+                  type: string
+                  title: Mengeneinheit
+                  description: 'Einheit: Messgrößen, die per Messung oder Vorgabe
+                    ermittelt werden können | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG9.QTY+31'
+                  enum:
+                  - W
+                  - WH
+                  - KW
+                  - KWH
+                  - KVARH
+                  - MW
+                  - MWH
+                  - STUECK
+                  - KUBIKMETER
+                  - STUNDE
+                  - TAG
+                  - MONAT
+                  - JAHR
+                  - PROZENT
+                  - ANZAHL
+                  - VAR
+                  - KVAR
+                  - VARH
+                  - KWHK
+                  - Z16
+                  - KWT
+                wert:
+                  type: object
+                  title: Schwellwert
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG9.QTY+31'
+            detailsPrognosegrundlage:
+              type: array
+              items:
+                type: array
+                description: 'Prognosegrundlage - Besteht der Bedarf ein tagesparameteräbhängiges
+                  Lastprofil mit gemeinsamer Messung anzugeben, so ist dies über die
+                  2 -malige Wiederholung des CAV Segments mit der Angabe der Codes
+                  E02 und E14 möglich. | EDIFACT: SG4.IDE+24.SG8.SEQ+Z98.SG10.CCI+++[ZC0|ZA6].CAV+[E02|E14|Z36]'
+                items:
+                  type: string
+                  title: Profiltyp
+                  description: Profiltyp
+                  enum:
+                  - SLP_SEP
+                  - TLP_TEP
+                  - TEP
+      TECHNISCHE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            waermenutzung:
+              type: string
+              title: Waermenutzung
+              description: 'Waermenutzung | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[Z56|Z57|Z61|ZV5|ZV6|ZV7]'
+              enum:
+              - SPEICHERHEIZUNG
+              - WAERMEPUMPE
+              - DIREKTHEIZUNG
+              - WAERMEPUMPE_WAERME_KAELTE
+              - WAERMEPUMPE_KAELTE
+              - WAERMEPUMPE_WAERME
+            speicherkapazitaet:
+              type: number
+              description: 'Speicherkapazität
+
+                Beispiel: QTY+Z42:100:KWH'' | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG9.QTY+Z42'
+              format: float
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z20, SG4.IDE+24.SG8.SEQ+ZF0.RFF+Z37'
+            verbrauchsart:
+              type: string
+              title: Verbrauchsart
+              description: 'Verbrauchsart | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[Z64|Z65|ZE5|ZA8]'
+              enum:
+              - KL
+              - W
+              - EMOB
+              - SB
+              - SW
+              - WK
+            referenzNetzlokation:
+              type: string
+              description: 'referenzNetzlokation | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.RFF+Z32'
+            nennleistung:
+              type: object
+              properties:
+                abgabe:
+                  type: object
+                  title: Konzessionsabgabe
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG9.QTY+Z44'
+                aufnahme:
+                  type: number
+                  description: 'Aufnahme der Nennleistung | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG9.QTY+Z43'
+                  format: float
+            erzeugungsart:
+              type: string
+              title: Erzeugungsart
+              description: 'Auflistung der Erzeugungsarten von Energie. | EDIFACT:
+                SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[ZF5|ZF6|ZG0|ZG1|ZG5]'
+              enum:
+              - EEG
+              - KWK
+              - EEG_DV
+              - KWK_DV
+              - WIND
+              - SOLAR
+              - KERNKRAFT
+              - WASSER
+              - GEOTHERMIE
+              - BIOMASSE
+              - KOHLE
+              - GAS
+              - SONSTIGE
+              - SONSTIGE_EEG
+              - SONSTIGE_ERZEUGUNGSART
+            artEMobilitaet:
+              type: string
+              title: ArtEmobilitaet
+              description: 'ArtEmobilitaet | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[ZE6|Z87|ZE7]'
+              enum:
+              - WB
+              - LS
+              - LP
+            speicherart:
+              type: string
+              title: Speicherart
+              description: 'Speicherart | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[ZF7|ZF8|ZF9|ZG6]'
+              enum:
+              - WASSERSTOFFSPEICHER
+              - PUMPSPEICHER
+              - BATTERIESPEICHER
+              - SONSTIGE_SPEICHERART
+            art:
+              type: string
+              title: AbgabeArt
+              description: 'Art der Konzessionsabgabe | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56]'
+              enum:
+              - KAS
+              - SA
+              - SAS
+              - TA
+              - TAS
+              - TK
+              - TKS
+              - TS
+              - TSS
+            weitereEinrichtung:
+              type: boolean
+              description: 'weitereEinrichtung | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+Z63.CAV+[ZH7|ZH8]'
+            enwg:
+              type: boolean
+              description: 'enwg | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.SG10.CCI+[Z17|Z50|Z56].CAV+[ZG8|ZG9]'
+            referenzSteuerbareRessource:
+              type: string
+              description: 'referenzSteuerbareRessource | EDIFACT: SG4.IDE+24.SG8.SEQ+ZF0.RFF+Z38'
+  transaktionsdaten:
+    type: object
+    properties:
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      anfragereferenznummer:
+        type: string
+        description: 'Referenz Vorgangsnummer ''aus Anfragenachricht'' / ORDERS RFF+TN
+          / IFTSTA RFF+AAV / INSRPT RFF+TN RFF+AAV | EDIFACT: SG4.IDE+24.SG6.RFF+AAV'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+E44'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+E44'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+required:
+- stammdaten
+- transaktionsdaten
+description: 55060 - NB an MSB - Antwort

@@ -1,0 +1,287 @@
+type: object
+properties:
+  transaktionsdaten:
+    type: object
+    properties:
+      dokumentennummer:
+        type: string
+        description: 'EDIFact Referenz aus dem BGM Segment / BGM | EDIFACT: BGM+E03'
+      kategorie:
+        type: string
+        title: Anfragekategorie
+        description: 'Anfragekategorie | EDIFACT: BGM+E03'
+        enum:
+        - PROZESSDATENBERICHT
+        - GERAETEUEBERNAHME
+        - WEITERVERPFLICHTUNG_BETRIEB_MELO
+        - AENDERUNG_MELO
+        - STAMMDATEN_MALO_ODER_MELO
+        - BILANZIERTE_MENGE_MEHR_MINDER_MENGEN
+        - ALLOKATIONSLISTE_MEHR_MINDER_MENGEN
+        - ENERGIEMENGE_UND_LEISTUNGSMAXIMUM
+        - ABRECHNUNG_MESSSTELLENBETRIEB_MSB_AN_LF
+        - AENDERUNG_PROGNOSEGRUNDLAGE_GERAETEKONFIGURATION
+        - AENDERUNG_GERAETEKONFIGURATION
+        - REKLAMATION_VON_WERTEN
+        - LASTGANG_MALO_TRANCHE
+        - SPERRUNG
+        - ENTSPERRUNG
+        - REKLAMATION_ZAEHLZEITDEFINITION
+        - ZEITREIHEN_IM_RAHMEN_BILANZKREISABRECHNUNG
+        - GERAETEWECHSELABSICHT
+        - AENDERUNG_KONZESSIONSABGABE
+        - AENDERUNG_ZAEHLZEITDEFINITION
+        - UEBERMITTLUNG_WERTE_AN_ESA
+        - AENDERUNG
+        - BILANZKREISZUORDNUNGSLISTE
+        - CLEARINGLISTE
+        - NORMIERTES_PROFIL_PROFILSCHAR
+        - REDISPATCH_EINZELZEITREIHE_AUSFALLARBEIT
+        - REKLAMATION_PROFIL_PROFILSCHAR
+        - STAMMDATEN_MALO
+        - STAMMDATEN_MELO
+        - STAMMDATEN_TRANCHE
+        - BEENDIGUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINER_KONFIGURATION
+        - BESTELLUNG_EINES_ANGEBOTS_EINER_KONFIGURATION
+        - REKLAMATION_EINER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_NETZENTGELTE_NETZORIENTIERTER_STEUERUNGSMOEGLICHKEIT
+        - AENDERUNG_DER_TECHNIK_DER_LOKATION
+        - AENDERUNG_INDIVIDUELLER_KONFIGURATION
+        - BESTELLUNG_AENDERUNG_ABRECHNUNGSDATEN
+        - EINRICHTUNG_KONFIGURATION_AUFGRUND_ZUORDNUNG_LF
+        - REKLAMATION_DEFINITION
+      absender:
+        type: object
+        properties:
+          rufnummern:
+            type: array
+            items:
+              type: object
+              properties:
+                rufnummer:
+                  type: object
+                  title: Rufnummer
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                nummerntyp:
+                  type: string
+                  title: Rufnummernart
+                  description: 'EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+                  enum:
+                  - RUF_ZENTRALE
+                  - FAX_ZENTRALE
+                  - SAMMELRUF
+                  - SAMMELFAX
+                  - ABTEILUNGRUF
+                  - ABTEILUNGFAX
+                  - RUF_DURCHWAHL
+                  - FAX_DURCHWAHL
+                  - MOBIL_NUMMER
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MS'
+          ansprechpartner:
+            type: object
+            properties:
+              nachname:
+                type: string
+                description: 'Nachname (Familienname) des Ansprechpartners | EDIFACT:
+                  SG2.NAD+MS.SG3.CTA'
+              eMailAdresse:
+                type: string
+                description: 'E-Mail Adresse | EDIFACT: SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]'
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MS'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+      nachrichtendatum:
+        type: string
+        description: 'Erstellungdatum der EDIFact / DTM+137 | EDIFACT: DTM+137'
+        format: date-time
+      nachrichtenreferenznummer:
+        type: string
+        description: 'EDIFact Referenz aus dem UNT Segment / UTILMD UNT+21 | EDIFACT:
+          UNH'
+      empfaenger:
+        type: object
+        properties:
+          rollencodetyp:
+            type: string
+            title: Rollencodetyp
+            description: 'Rollencodetyp | EDIFACT: SG2.NAD+MR'
+            enum:
+            - BDEW
+            - GS1
+            - GLN
+            - DVGW
+          rollencodenummer:
+            type: string
+            description: 'Gibt die Codenummer der Marktrolle an. | EDIFACT: SG2.NAD+MR'
+      vorgangsnummer:
+        type: string
+        description: 'Nummer des Vorgangs / UTILMD UTILTS IDE+24 / INSRPT INVOIC DOC
+          | EDIFACT: SG4.IDE+24'
+      pruefidentifikator:
+        type: string
+        description: 'Enthält den Prüfidentifikator aus der EDIFact Kommunikation
+          / RFF+Z13 | EDIFACT: SG4.IDE+24.SG6.RFF+Z13'
+      transaktionsgrund:
+        type: string
+        description: 'Der Transaktionsgrund beschreibt den Geschäftsvorfall zur Kategorie
+          genauer / UTILMD STS+7++###+ZW4+E03 | EDIFACT: SG4.IDE+24.STS+7'
+  stammdaten:
+    type: object
+    properties:
+      MARKTLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            marktlokationsId:
+              type: string
+              description: 'Die ID der Marktlokation der der zu sperrende Zähler zugeordnet
+                ist. | EDIFACT: SG4.IDE+24.SG5.LOC+Z16, SG4.IDE+24.SG5.LOC+Z22'
+      LOKATIONSBUENDEL:
+        type: array
+        items:
+          type: object
+          properties:
+            lokationsbuendelNummer:
+              type: integer
+              description: 'lokationsbuendelNummer | EDIFACT: SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]'
+            lokationsbuendelstrukturId:
+              type: string
+              description: 'lokationsbuendelstrukturId | EDIFACT: SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]'
+            standardisierteLokationsbuendelstruktur:
+              type: boolean
+              description: 'standardisierteLokationsbuendelstruktur | EDIFACT: SG4.IDE+24.SG8.SEQ+Z78.RFF+[Z31|Z39]'
+        properties:
+          zuordnungObjectcode:
+            type: array
+            items:
+              type: object
+              properties:
+                objectcode:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      lokationsbuendelNummer:
+                        type: integer
+                        description: 'lokationsbuendelNummer | EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+Z33'
+                      objectcode:
+                        type: object
+                        title: Objectcode
+                        description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+Z33'
+                vorgelagerteLokationId:
+                  type: string
+                  description: 'vorgelagerteLokationId | EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z34|Z35]'
+                referenzMarktlokationTechnischeRessource:
+                  type: array
+                  items:
+                    type: array
+                    description: 'referenzMarktlokationTechnischeRessource | EDIFACT:
+                      SG4.IDE+24.SG8.SEQ+Z58.RFF+Z16'
+                    items:
+                      type: string
+                referenzLokationsTyp:
+                  type: string
+                  title: Lokationstyp
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z32|Z18|Z19|Z37]'
+                  enum:
+                  - MALO
+                  - MELO
+                  - NELO
+                  - TECHNISCHE_RESSOURCE
+                vorgelagerteLokationTyp:
+                  type: string
+                  title: Lokationstyp
+                  description: 'EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z34|Z35]'
+                  enum:
+                  - MALO
+                  - MELO
+                  - NELO
+                  - TECHNISCHE_RESSOURCE
+                referenzLokationsId:
+                  type: string
+                  description: 'referenzLokationsId | EDIFACT: SG4.IDE+24.SG8.SEQ+Z58.RFF+[Z32|Z18|Z19|Z37]'
+      NETZLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            netzlokationsId:
+              type: string
+              description: 'Identifikationsnummer einer Netzlokation, an der Energie
+                entweder
+
+                verbraucht, oder erzeugt wird (Like MarktlokationsId Marktlokation)
+                | EDIFACT: SG4.IDE+24.SG5.LOC+Z18'
+      STEUERBARE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z19'
+      VERWENDUNGSZEITRAUM:
+        type: array
+        items:
+          type: object
+          properties:
+            verwendungBis:
+              type: string
+              description: 'Verarbeitung, Endedatum/-zeit / DTM+164 | EDIFACT: SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z26'
+              format: date-time
+            datenqualitaet:
+              type: string
+              title: Datenqualitaet
+              description: 'Datenqualitaet | EDIFACT: SG4.IDE+24.SG6.RFF+[Z49|Z53]'
+              enum:
+              - ERWARTETE_DATEN
+              - IM_SYSTEM_VORHANDENE_DATEN
+              - INFORMATIVE_DATEN
+              - GUELTIGE_DATEN
+              - KEINE_DATEN
+              - IM_SYSTEM_KEINE_DATEN_VORHANDEN
+              - KEINE_DATEN_ERWARTET
+              - DIFFERENZ_DATEN
+              - DIFFERENZ_ERWARTETE_DATEN
+              - DIFFERENZ_IM_SYSTEM_VORHANDENE_DATEN
+            verwendungAb:
+              type: string
+              description: 'Verarbeitung, Beginndatum/-zeit / DTM+163 | EDIFACT: SG4.IDE+24.SG6.RFF+[Z49|Z53].DTM+Z25'
+              format: date-time
+            zeitraumId:
+              type: integer
+              description: 'zeitraumId | EDIFACT: SG4.IDE+24.SG6.RFF+[Z49|Z53], SG4.IDE+24.SG8.SEQ+Z78,
+                SG4.IDE+24.SG8.SEQ+Z58'
+      MESSLOKATION:
+        type: array
+        items:
+          type: object
+          properties:
+            messlokationsId:
+              type: string
+              description: 'Die Messlokations-Identifikation. Das ist die frühere
+                Zählpunktbezeichnung,
+
+                z.B. DE 47108151234567 | EDIFACT: SG4.IDE+24.SG5.LOC+Z17'
+      TECHNISCHE_RESSOURCE:
+        type: array
+        items:
+          type: object
+          properties:
+            ressourcenId:
+              type: string
+              description: 'ressourcenId | EDIFACT: SG4.IDE+24.SG5.LOC+Z20'
+required:
+- transaktionsdaten
+- stammdaten
+description: 55173 - NB an MSB - Änderung vom NB an MSB

@@ -1,0 +1,44 @@
+stammdaten.BILANZIERUNG[].verbrauchsaufteilung.einheit; SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+++E17.CAV+Z22
+stammdaten.BILANZIERUNG[].verbrauchsaufteilung.wert; SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+++E17.CAV+Z22
+stammdaten.MARKTLOKATION[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z51|Z52], SG4.IDE+24.SG8.SEQ+[Z80|Z81], SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97]
+stammdaten.MARKTLOKATION[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG6.RFF+[Z51|Z52], SG4.IDE+24.SG8.SEQ+[Z80|Z81], SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97]
+stammdaten.MARKTLOKATION[].marktlokationsId; SG4.IDE+24.SG5.LOC+Z16
+stammdaten.MARKTLOKATION[].netzbetreiberCodeNr; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG10.CCI+++ZB3.CAV+Z88
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].abschlag; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].anzahl; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY+Z38
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].artikelId; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].PIA+Z02
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].artikelIdTyp; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].PIA+Z02
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].gemeinderabatt; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY+Z16, SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].singulaereBetriebsmittel.wert; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY+Z33, SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG10.CCI+Z44+ZD8
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].zaehlzeiten.register; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG10.CCI+Z38
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].zaehlzeiten.zaehlzeitDefinition; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG10.CCI+Z39
+stammdaten.MARKTLOKATION[].netznutzungsabrechnungsdaten[].zuschlag; SG4.IDE+24.SG8.SEQ+[Z82|Z83|Z96|Z97].SG9.QTY
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.naechstenetznutzungsabrechnung; SG4.IDE+24.SG6.RFF+[Z51|Z52].DTM+Z09
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.netznutzungsabrechnung.abrechnungsZeitraum; SG4.IDE+24.SG6.RFF+[Z51|Z52].DTM+Z21
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.netznutzungsabrechnungIntervall; SG4.IDE+24.SG6.RFF+[Z51|Z52].DTM+Z22
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.netznutzungsabrechnungsgrundlage; SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+++Z88.CAV+ZA7
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.netznutzungsvertrag; SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+++Z88.CAV+Z74
+stammdaten.NETZNUTZUNGSVERTRAG[].vertragskonditionen.netznutzungszahler; SG4.IDE+24.SG8.SEQ+[Z80|Z81].SG10.CCI+++Z88.CAV+Z73
+stammdaten.VERWENDUNGSZEITRAUM[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungAb; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z25
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungBis; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z26
+stammdaten.VERWENDUNGSZEITRAUM[].zeitraumId; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.anfragereferenznummer; SG4.IDE+24.SG6.RFF+TN
+transaktionsdaten.antwortStatusZeitraum[].code; SG4.IDE+24.STS+E01
+transaktionsdaten.antwortStatusZeitraum[].liste; SG4.IDE+24.STS+E01
+transaktionsdaten.antwortStatusZeitraum[].zeitraumId; SG4.IDE+24.STS+E01
+transaktionsdaten.dokumentennummer; BGM+[E03|Z88]
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+[E03|Z88]
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24

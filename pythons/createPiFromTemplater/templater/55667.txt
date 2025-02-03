@@ -1,0 +1,29 @@
+stammdaten.TRANCHE[].datenqualitaet; SG4.IDE+24.SG8.SEQ+[Z99|ZA0]
+stammdaten.TRANCHE[].gueltigkeitszeitraum.zeitraumId; SG4.IDE+24.SG8.SEQ+[Z99|ZA0]
+stammdaten.TRANCHE[].tranchenId; SG4.IDE+24.SG5.LOC+Z21
+stammdaten.TRANCHE[].zaehlwerke[].obisKennzahl; SG4.IDE+24.SG8.SEQ+[Z99|ZA0].PIA+5
+stammdaten.TRANCHE[].zaehlwerke[].verwendungszwecke[].marktrolle; SG4.IDE+24.SG8.SEQ+[Z99|ZA0].SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+[Z99|ZA0].SG10.CCI+++ZA7.CAV
+stammdaten.TRANCHE[].zaehlwerke[].verwendungszwecke[].zweck[]; SG4.IDE+24.SG8.SEQ+[Z99|ZA0].SG10.CCI+++ZA8.CAV, SG4.IDE+24.SG8.SEQ+[Z99|ZA0].SG10.CCI+++ZA7.CAV
+stammdaten.VERWENDUNGSZEITRAUM[].datenqualitaet; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungAb; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z25
+stammdaten.VERWENDUNGSZEITRAUM[].verwendungBis; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55].DTM+Z26
+stammdaten.VERWENDUNGSZEITRAUM[].zeitraumId; SG4.IDE+24.SG6.RFF+[Z47|Z48|Z54|Z55]
+transaktionsdaten.absender.ansprechpartner.eMailAdresse; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.ansprechpartner.nachname; SG2.NAD+MS.SG3.CTA
+transaktionsdaten.absender.rollencodenummer; SG2.NAD+MS
+transaktionsdaten.absender.rollencodetyp; SG2.NAD+MS
+transaktionsdaten.absender.rufnummern[].nummerntyp; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.absender.rufnummern[].rufnummer; SG2.NAD+MS.SG3.CTA.COM+[EM|FX|TE|AJ|AL]
+transaktionsdaten.anfragereferenznummer; SG4.IDE+24.SG6.RFF+TN
+transaktionsdaten.antwortStatusZeitraum[].code; SG4.IDE+24.STS+E01
+transaktionsdaten.antwortStatusZeitraum[].liste; SG4.IDE+24.STS+E01
+transaktionsdaten.antwortStatusZeitraum[].zeitraumId; SG4.IDE+24.STS+E01
+transaktionsdaten.dokumentennummer; BGM+[E03|Z88]
+transaktionsdaten.empfaenger.rollencodenummer; SG2.NAD+MR
+transaktionsdaten.empfaenger.rollencodetyp; SG2.NAD+MR
+transaktionsdaten.kategorie; BGM+[E03|Z88]
+transaktionsdaten.nachrichtendatum; DTM+137
+transaktionsdaten.nachrichtenreferenznummer; UNH
+transaktionsdaten.pruefidentifikator; SG4.IDE+24.SG6.RFF+Z13
+transaktionsdaten.transaktionsgrund; SG4.IDE+24.STS+7
+transaktionsdaten.vorgangsnummer; SG4.IDE+24
