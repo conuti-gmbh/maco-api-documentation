@@ -5,7 +5,6 @@ value:
     - boTyp: MARKTLOKATION
       versionStruktur: '1'
       marktlokationsId: '50754496000'
-      sparte: STROM
   transaktionsdaten:
     sparte: STROM
     transaktionsgrund: E03
