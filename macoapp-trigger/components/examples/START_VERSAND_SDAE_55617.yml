@@ -1,6 +1,7 @@
 summary: START_VERSAND_SDAE_55617
 value:
-VERWENDUNGSZEITRAUM:
+stammdaten:
+  VERWENDUNGSZEITRAUM:
   - boTyp: VERWENDUNGSZEITRAUM
     versionStruktur: '1'
     zeitraumId: 1

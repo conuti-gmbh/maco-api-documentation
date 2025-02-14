@@ -1,0 +1,29 @@
+summary: START_VERSAND_SDAE_55619
+value:
+stammdaten:
+  VERWENDUNGSZEITRAUM:
+  - boTyp: VERWENDUNGSZEITRAUM
+    versionStruktur: '1'
+    zeitraumId: 1
+    datenqualitaet: GUELTIGE_DATEN
+    verwendungAb: '2025-04-02T22:00:00Z'
+  TRANCHE:
+  - boTyp: TRANCHE
+    versionStruktur: '1'
+    tranchenId: '50074561199'
+    sparte: STROM
+    zeitraumId: 1
+    datenqualitaet: DATEN
+    verguetungEmpfaenger: LIEFERANT
+transaktionsdaten:
+  sparte: STROM
+  transaktionsgrund: ZY1
+  absender:
+    rollencodenummer: '9900321000005'
+    rollencodetyp: BDEW
+  empfaenger:
+    rollencodenummer: '9903790000002'
+    rollencodetyp: BDEW
+zusatzdaten:
+  prozessId: '00505688-E4A2-1EDF-A0C2-C81842E2515E'
+  eventname: START_VERSAND_SDAE
