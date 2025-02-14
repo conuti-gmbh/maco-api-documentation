@@ -1,0 +1,66 @@
+summary: START_VERSAND_SDAE_55175
+value:
+  stammdaten:
+  VERWENDUNGSZEITRAUM:
+  - boTyp: VERWENDUNGSZEITRAUM
+    versionStruktur: '1'
+    zeitraumId: 1
+    datenqualitaet: GUELTIGE_DATEN
+    verwendungAb: '2024-11-22T23:00:00Z'
+  MARKTLOKATION:
+  - boTyp: MARKTLOKATION
+    versionStruktur: '1'
+    marktlokationsId: '50363198102'
+    marktlokationsTyp:
+    - typ: RUHENDE_MARKTLOKATION
+    sparte: STROM
+  - boTyp: MARKTLOKATION
+    versionStruktur: '1'
+    marktlokationsId: '50361128000'
+    marktlokationsTyp:
+    - typ: STANDARD_MARKTLOKATION
+    sparte: STROM
+  MESSLOKATION:
+  - boTyp: MESSLOKATION
+    versionStruktur: '1'
+    messlokationsId: DE0032106765712000000000000001234
+    sparte: STROM
+  LOKATIONSBUENDEL:
+  - boTyp: LOKATIONSBUENDEL
+    versionStruktur: '1'
+    lokationsbuendelstrukturId: '9992000000026'
+    lokationsbuendelNummer: 1
+    gueltigkeitszeitraum:
+      zeitraumId: 1
+      startdatum: '2024-11-22T23:00:00Z'
+    datenqualitaet: GUELTIGE_DATEN
+    standardisierteLokationsbuendelstruktur: true
+    zuordnungObjectcode:
+    - referenzLokationsTyp: MALO
+      referenzLokationsId: '50363198102'
+      objectcode:
+      - objectcode: '9992000001016'
+    - referenzLokationsTyp: MELO
+      referenzLokationsId: DE0032106765712000000000000001234
+      objectcode:
+      - objectcode: '9992000001032'
+  NETZNUTZUNGSVERTRAG:
+  - boTyp: VERTRAG
+    versionStruktur: '1'
+    vertragsart: NETZNUTZUNGSVERTRAG
+    sparte: STROM
+    lokationsId: '50363198102'
+    lokationsTyp: MALO
+transaktionsdaten:
+  sparte: STROM
+  transaktionsgrund: ZY2
+  pruefidentifikator: '55175'
+  absender:
+    rollencodenummer: '9980000000001'
+    rollencodetyp: BDEW
+  empfaenger:
+    rollencodenummer: '9980000000002'
+    rollencodetyp: BDEW
+zusatzdaten:
+  prozessId: '00505688-E4A2-1EDF-A0C2-C81842E2515E'
+  eventname: START_VERSAND_SDAE
